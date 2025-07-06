@@ -17,7 +17,7 @@ const Hero = () => {
               TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
             </h1>
             <p className="font-poppins text-xl text-gray-700 mb-6 leading-relaxed">
-              Guia de IAs, exercícios práticos e linguagem simples - lendo 5 minutos por dia.
+              Guia de IAs, exercícios práticos e linguagem simples - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -26,14 +26,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
               >
-                Começar Agora
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-ai-blue text-ai-blue hover:bg-ai-blue hover:text-white font-poppins font-semibold text-lg px-8 py-4"
-              >
-                Ver Demonstração
+                Quero acessar o manual
               </Button>
             </div>
 
@@ -46,13 +39,12 @@ const Hero = () => {
 
           <div className="relative">
             <Card className="p-8 bg-white shadow-2xl border-0">
-              <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">📚</div>
-                  <p className="font-poppins text-gray-600 font-medium">
-                    Aqui vai o Mockup [Hero Image]
-                  </p>
-                </div>
+              <div className="aspect-[3/4] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/lovable-uploads/12555f99-96ca-47c9-bc24-74a2677becf4.png" 
+                  alt="Capa do Manual Inteligência Artificial Para Todos"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
             </Card>
             
