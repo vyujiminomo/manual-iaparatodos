@@ -10,8 +10,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-ai-black z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="font-bebas text-2xl font-bold text-white">
-          IA PARA TODOS
+        <div className="font-bebas text-2xl text-white">
+          <span className="text-ai-blue">IA</span> PARA TODOS
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <button 
