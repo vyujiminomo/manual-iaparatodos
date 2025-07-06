@@ -29,12 +29,6 @@ const Hero = () => {
                 Quero acessar o manual
               </Button>
             </div>
-
-            <div className="flex items-center space-x-4 text-sm text-gray-600 font-poppins">
-              <span>✅ Garantia de 7 dias</span>
-              <span>✅ Acesso imediato</span>
-              <span>✅ Método testado</span>
-            </div>
           </div>
 
           <div className="relative">
@@ -48,18 +42,9 @@ const Hero = () => {
               </div>
             </Card>
             
-            {/* Floating testimonials */}
-            <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-lg border">
-              <p className="font-poppins text-sm text-gray-700">"Finalmente entendi IA!"</p>
-              <div className="flex items-center mt-2">
-                <div className="w-8 h-8 bg-ai-blue rounded-full flex items-center justify-center text-white text-sm font-bold">A</div>
-                <span className="ml-2 font-poppins text-xs text-gray-600">Aluno do método</span>
-              </div>
-            </div>
-            
             <div className="absolute -top-4 -right-4 bg-ai-blue text-white p-4 rounded-lg shadow-lg">
-              <p className="font-poppins text-sm font-semibold">+400 alunos</p>
-              <p className="font-poppins text-xs">já transformaram</p>
+              <p className="font-poppins text-sm font-semibold">+100 alunos</p>
+              <p className="font-poppins text-xs">já transformados</p>
             </div>
           </div>
         </div>
