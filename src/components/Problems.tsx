@@ -22,21 +22,19 @@ const Problems = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-red-900 via-red-800 to-gray-900 text-white">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-ai-black relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-red-600/30 via-transparent to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="font-bebas text-4xl md:text-6xl mb-6 text-white">
-            POR QUE A MAIORIA DOS PROFISSIONAIS FALHA AO TENTAR USAR IA NO TRABALHO
-          </h2>
-          <p className="font-poppins text-xl text-gray-200 max-w-3xl mx-auto mb-8">
-            A verdade incômoda é que <span className="text-ai-blue">enquanto você luta contra prazos apertados e sobrecarga de trabalho</span>, a inteligência artificial já poderia estar resolvendo metade dos seus problemas.
+          <p className="font-poppins text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Você já se pegou pensando: "Todo mundo está falando de IA, mas eu ainda não sei como usar isso no meu trabalho"?
           </p>
-          <p className="font-poppins text-lg text-gray-300 max-w-2xl mx-auto">
-            O problema não é falta de ferramentas – elas existem aos montes. O verdadeiro obstáculo é mais sutil:
-          </p>
+          <h3 className="font-poppins text-2xl text-white mb-8 font-bold">
+            Por Que Aprender IA É Tão Difícil Hoje:
+          </h3>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => {
             const IconComponent = problem.icon;
             return (
@@ -53,18 +51,6 @@ const Problems = () => {
               </Card>
             );
           })}
-        </div>
-
-        <div className="text-center">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="font-poppins text-2xl text-red-400 mb-4 font-bold">Resultado:</h3>
-            <p className="font-poppins text-xl text-white mb-6 leading-relaxed">
-              Um ciclo frustrante onde você continua sobrecarregado, enquanto vê colegas de profissão entregando trabalhos impressionantes em metade do tempo.
-            </p>
-            <p className="font-poppins text-ai-blue text-lg font-semibold">
-              Mas não precisa ser assim.
-            </p>
-          </div>
         </div>
       </div>
     </section>
