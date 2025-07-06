@@ -14,7 +14,7 @@ const Webinar = () => {
               O Webinar IA Para Todos
             </h2>
             <p className="font-poppins text-lg text-gray-700 leading-relaxed mb-8">
-              Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais.
+              Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
             </p>
             
             <div className="space-y-6">
