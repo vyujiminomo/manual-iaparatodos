@@ -22,7 +22,7 @@ const Problems = () => {
   ];
 
   return (
-    <section className="py-16 bg-ai-black text-white">
+    <section className="py-16 bg-gradient-to-br from-red-900/20 via-ai-black to-ai-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-bebas text-4xl md:text-6xl mb-6">
