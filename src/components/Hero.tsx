@@ -30,13 +30,24 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-              <p className="font-poppins text-gray-700 text-sm italic mb-2">
-                "Você conseguiu desbloquear a minha dificuldade com a tecnologia."
-              </p>
-              <p className="font-poppins font-semibold text-ai-black text-sm">
-                Osvaldo Araki
-              </p>
+            <div className="space-y-4">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <p className="font-poppins text-gray-700 text-sm italic mb-2">
+                  "Você conseguiu desbloquear a minha dificuldade com a tecnologia."
+                </p>
+                <p className="font-poppins font-semibold text-ai-black text-sm">
+                  Osvaldo Araki
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <p className="font-poppins text-gray-700 text-sm italic mb-2">
+                  "Eu interagia timidamente, agora mudou 80%"
+                </p>
+                <p className="font-poppins font-semibold text-ai-black text-sm">
+                  Isabella Salim
+                </p>
+              </div>
             </div>
           </div>
 
