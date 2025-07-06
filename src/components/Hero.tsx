@@ -29,6 +29,15 @@ const Hero = () => {
                 Quero acessar o manual
               </Button>
             </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+              <p className="font-poppins text-gray-700 text-sm italic mb-2">
+                "Você conseguiu desbloquear a minha dificuldade com a tecnologia."
+              </p>
+              <p className="font-poppins font-semibold text-ai-black text-sm">
+                Osvaldo Araki
+              </p>
+            </div>
           </div>
 
           <div className="relative">
