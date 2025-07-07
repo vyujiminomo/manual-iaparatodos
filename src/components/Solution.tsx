@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
 
@@ -141,7 +142,7 @@ const Solution = () => {
         <div className="text-center">
           <div className="bg-ai-blue/5 border border-ai-blue/20 rounded-lg p-6">
             <p className="font-poppins text-lg text-gray-700">
-              Enquanto outros recursos te afundam em teoria, o Manual IA Para Todos te coloca para agir em minutos.
+              Enquanto outros recursos te afundam em teoria, o Manual IA Para Todos te coloca para agir <span className="text-ai-blue font-semibold">em minutos</span>.
             </p>
           </div>
         </div>

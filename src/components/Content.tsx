@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Brain, Target, Settings, Book, Users, Zap } from "lucide-react";
 
@@ -90,7 +91,6 @@ const Content = () => {
 
         <div className="text-center">
           <div className="bg-gradient-to-r from-ai-blue/10 to-purple-500/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
-            <h3 className="font-bebas text-3xl text-ai-black mb-4">MAIS DE 100 PÁGINAS DE CONTEÚDO EXCLUSIVO</h3>
             <p className="font-poppins text-lg text-gray-700 leading-relaxed">
               <strong>Diferente de outros recursos</strong> que ficam obsoletos em meses, este manual foi projetado para ser 
               <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: os fundamentos que 
