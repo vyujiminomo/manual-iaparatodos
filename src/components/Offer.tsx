@@ -19,6 +19,11 @@ const Offer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                ACESSE O MANUAL
+              </span>
+            </div>
             <h2 className="font-bebas text-5xl md:text-7xl text-ai-black mb-4">
               DESBLOQUEIE SUA CRIATIVIDADE
             </h2>

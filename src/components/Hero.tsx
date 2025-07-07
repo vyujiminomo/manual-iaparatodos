@@ -13,6 +13,11 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                MANUAL IA PARA TODOS
+              </span>
+            </div>
             <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-6">
               TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
             </h1>

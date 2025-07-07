@@ -19,6 +19,11 @@ const Author = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                SOBRE MIM
+              </span>
+            </div>
             <h2 className="font-bebas text-4xl md:text-6xl mb-6">
               MAS PORQUE OUVIR UM MOLEQUE DE 14 ANOS FALANDO SOBRE IA?
             </h2>

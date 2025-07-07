@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
 
@@ -74,6 +73,11 @@ const Solution = () => {
 
         <div className="mb-16">
           <div className="text-center mb-12">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                MÉTODO PPP
+              </span>
+            </div>
             <h3 className="font-bebas text-4xl md:text-5xl text-ai-black mb-4">MÉTODO PPP</h3>
             <p className="font-poppins text-xl text-gray-700 max-w-3xl mx-auto">
               O Manual IA Para Todos é um sistema completo baseado no método PPP:
@@ -126,7 +130,14 @@ const Solution = () => {
         </div>
 
         <div className="mb-12">
-          <h3 className="font-bebas text-4xl text-ai-black mb-8 text-center">O QUE TORNA ESTE MANUAL ÚNICO:</h3>
+          <div className="text-center mb-8">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                ESPECIALIDADES
+              </span>
+            </div>
+            <h3 className="font-bebas text-4xl text-ai-black">O QUE TORNA ESTE MANUAL ÚNICO:</h3>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {uniqueFeatures.map((feature, index) => {
               const IconComponent = feature.icon;

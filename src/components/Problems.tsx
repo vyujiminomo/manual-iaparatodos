@@ -26,6 +26,11 @@ const Problems = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-red-600/30 via-transparent to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
+          <div className="mb-4">
+            <span className="font-poppins text-sm text-red-400 font-semibold uppercase tracking-wider">
+              PROBLEMA
+            </span>
+          </div>
           <p className="font-poppins text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             Você já se pegou pensando: "Todo mundo está falando de IA, mas eu ainda não sei como usar isso no meu trabalho"?
           </p>

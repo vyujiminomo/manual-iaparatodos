@@ -39,6 +39,11 @@ const Content = () => {
     <section id="conteudo" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+          <div className="mb-4">
+            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+              ÍNDICE
+            </span>
+          </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
             O QUE O MANUAL OFERECE
           </h2>
