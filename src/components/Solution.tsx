@@ -1,5 +1,6 @@
+
 import { Card } from "@/components/ui/card";
-import { CheckCircle, Brain, Target, Lightbulb } from "lucide-react";
+import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
 
 const Solution = () => {
   const pppMethod = [
@@ -21,12 +22,42 @@ const Solution = () => {
   ];
 
   const uniqueFeatures = [
-    "Diga não ao 'tecniquês' - Linguagem simples que qualquer profissional entende",
-    "Biblioteca de Prompts por profissão - Médicos, professores, advogados…",
-    "Você aprende usando - Cada capítulo termina com exercícios de 5 minutos",
-    "Atemporalidade - Os princípios funcionam hoje e continuarão funcionando em décadas",
-    "Parceria de Pensamento - Em vez de te deixar dependente da IA, ele te ensina a pensar melhor com ela",
-    "Filtrado e Testado - Filtrei tudo de melhor que existe sobre IAs nesse manual"
+    {
+      icon: BookOpen,
+      title: "Diga não ao 'tecniquês'",
+      description: "Linguagem simples que qualquer profissional entende",
+      color: "bg-blue-500"
+    },
+    {
+      icon: Users,
+      title: "Biblioteca de Prompts por profissão",
+      description: "Médicos, professores, advogados…",
+      color: "bg-green-500"
+    },
+    {
+      icon: Clock,
+      title: "Você aprende usando",
+      description: "Cada capítulo termina com exercícios de 5 minutos",
+      color: "bg-purple-500"
+    },
+    {
+      icon: Shield,
+      title: "Atemporalidade",
+      description: "Os princípios funcionam hoje e continuarão funcionando em décadas",
+      color: "bg-orange-500"
+    },
+    {
+      icon: Zap,
+      title: "Parceria de Pensamento",
+      description: "Em vez de te deixar dependente da IA, ele te ensina a pensar melhor com ela",
+      color: "bg-pink-500"
+    },
+    {
+      icon: Filter,
+      title: "Filtrado e Testado",
+      description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
+      color: "bg-teal-500"
+    }
   ];
 
   return (
@@ -84,15 +115,27 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-8 mb-12">
-          <h3 className="font-bebas text-3xl text-ai-black mb-6 text-center">O QUE TORNA ESTE MANUAL ÚNICO:</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {uniqueFeatures.map((feature, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <CheckCircle className="text-ai-blue mt-1 flex-shrink-0" size={20} />
-                <p className="font-poppins text-gray-700">{feature}</p>
-              </div>
-            ))}
+        <div className="mb-12">
+          <h3 className="font-bebas text-4xl text-ai-black mb-8 text-center">O QUE TORNA ESTE MANUAL ÚNICO:</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {uniqueFeatures.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <Card key={index} className="p-6 border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
+                  <div className="flex flex-col items-center text-center">
+                    <div className={`${feature.color} p-4 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent className="text-white" size={32} />
+                    </div>
+                    <h4 className="font-poppins font-bold text-ai-black mb-3 text-lg">
+                      {feature.title}
+                    </h4>
+                    <p className="font-poppins text-gray-700 text-sm leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
 
