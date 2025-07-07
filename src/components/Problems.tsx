@@ -7,7 +7,7 @@ const Problems = () => {
     {
       icon: AlertTriangle,
       title: "Cursos que ficam obsoletos",
-      description: "A maioria dos cursos ensina apenas táticas e dicas que se tornam inúteis nas atualizações seguintes."
+      description: "A maioria dos cursos e materiais ensinam apenas táticas e dicas que se tornam inúteis nas atualizações seguintes."
     },
     {
       icon: Clock,
