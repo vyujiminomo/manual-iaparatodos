@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
 
@@ -64,11 +63,6 @@ const Solution = () => {
     <section id="sobre" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="mb-4">
-            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-              MÉTODO PPP
-            </span>
-          </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
             O SISTEMA ANTI-OBSOLESCÊNCIA QUE FUNCIONA MESMO QUANDO TUDO MUDA
           </h2>
@@ -79,6 +73,11 @@ const Solution = () => {
 
         <div className="mb-16">
           <div className="text-center mb-12">
+            <div className="mb-4">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+                MÉTODO PPP
+              </span>
+            </div>
             <h3 className="font-bebas text-4xl md:text-5xl text-ai-black mb-4">MÉTODO PPP</h3>
             <p className="font-poppins text-xl text-gray-700 max-w-3xl mx-auto">
               O Manual IA Para Todos é um sistema completo baseado no método PPP:
@@ -110,9 +109,7 @@ const Solution = () => {
                       <div className="text-ai-blue mb-4 flex justify-center">
                         <IconComponent size={40} />
                       </div>
-                      <h4 className="font-bebas text-3xl text-ai-black mb-4 flex items-center justify-center gap-2">
-                        <span className="text-ai-blue">></span> {item.title}
-                      </h4>
+                      <h4 className="font-bebas text-3xl text-ai-black mb-4">{item.title}</h4>
                       <p className="font-poppins text-gray-700 leading-relaxed">{item.description}</p>
                     </div>
                   </Card>
