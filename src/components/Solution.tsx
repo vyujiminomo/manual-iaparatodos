@@ -63,6 +63,11 @@ const Solution = () => {
     <section id="sobre" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+          <div className="mb-4">
+            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+              MÉTODO PPP
+            </span>
+          </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
             O SISTEMA ANTI-OBSOLESCÊNCIA QUE FUNCIONA MESMO QUANDO TUDO MUDA
           </h2>
@@ -73,11 +78,6 @@ const Solution = () => {
 
         <div className="mb-16">
           <div className="text-center mb-12">
-            <div className="mb-4">
-              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-                MÉTODO PPP
-              </span>
-            </div>
             <h3 className="font-bebas text-4xl md:text-5xl text-ai-black mb-4">MÉTODO PPP</h3>
             <p className="font-poppins text-xl text-gray-700 max-w-3xl mx-auto">
               O Manual IA Para Todos é um sistema completo baseado no método PPP:
