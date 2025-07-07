@@ -9,32 +9,22 @@ const Solution = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Images for each principle
-  const principleImages = {
-    principios: [
-      "/lovable-uploads/07ff4029-69c1-4c4c-ad44-09c3fef5ffb9.png",
-      "/lovable-uploads/1ec57c68-14ed-4068-99ef-c272c88d7087.png",
-      "/lovable-uploads/95bfc734-b20c-4dc1-a53f-ed633d13e36f.png",
-      "/lovable-uploads/4faf59a6-dab3-4edc-8df4-763d2e0f0250.png",
-      "/lovable-uploads/8ed7a803-fa2b-4bb1-be1f-3651936a6689.png"
-    ]
-  };
+  // Images for Princípios section only
+  const principleImages = [
+    "/lovable-uploads/07ff4029-69c1-4c4c-ad44-09c3fef5ffb9.png",
+    "/lovable-uploads/1ec57c68-14ed-4068-99ef-c272c88d7087.png",
+    "/lovable-uploads/95bfc734-b20c-4dc1-a53f-ed633d13e36f.png",
+    "/lovable-uploads/4faf59a6-dab3-4edc-8df4-763d2e0f0250.png",
+    "/lovable-uploads/8ed7a803-fa2b-4bb1-be1f-3651936a6689.png"
+  ];
 
-  const [currentImageIndexes, setCurrentImageIndexes] = useState({
-    principios: 0,
-    pratica: 0,
-    pensamento: 0
-  });
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Auto-advance images every 3 seconds
+  // Auto-advance images every 1.5 seconds (faster)
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndexes(prev => ({
-        principios: (prev.principios + 1) % principleImages.principios.length,
-        pratica: (prev.pratica + 1) % principleImages.principios.length,
-        pensamento: (prev.pensamento + 1) % principleImages.principios.length
-      }));
-    }, 3000);
+      setCurrentImageIndex(prev => (prev + 1) % principleImages.length);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
@@ -44,19 +34,19 @@ const Solution = () => {
       icon: Brain,
       title: "Princípios",
       description: "Aprenda os fundamentos universais da IA que nunca mudam, mesmo quando as ferramentas evoluem",
-      key: "principios"
+      hasCarousel: true
     },
     {
       icon: Target,
       title: "Prática", 
       description: "Saia com resultados reais com exercícios de 5 minutos ao final de cada capítulo",
-      key: "pratica"
+      hasCarousel: false
     },
     {
       icon: Lightbulb,
       title: "Pensamento",
       description: "Fique mais inteligente transformando a IA numa parceira de pensamento",
-      key: "pensamento"
+      hasCarousel: false
     }
   ];
 
@@ -127,34 +117,42 @@ const Solution = () => {
           <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {pppMethod.map((item, index) => {
               const IconComponent = item.icon;
-              const currentImageIndex = currentImageIndexes[item.key as keyof typeof currentImageIndexes];
               
               return (
                 <div key={index} className="flex flex-col items-center">
-                  {/* Image Carousel Container */}
-                  <div className="w-full max-w-sm mb-8">
-                    <div className="aspect-[9/16] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
-                      <div className="w-full h-full relative">
-                        <img 
-                          src={principleImages.principios[currentImageIndex]}
-                          alt={`${item.title} - Slide ${currentImageIndex + 1}`}
-                          className="w-full h-full object-cover transition-opacity duration-500"
-                        />
-                        
-                        {/* Dots indicator */}
-                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                          {principleImages.principios.map((_, dotIndex) => (
-                            <div
-                              key={dotIndex}
-                              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                                dotIndex === currentImageIndex ? 'bg-ai-blue' : 'bg-white/50'
-                              }`}
-                            />
-                          ))}
+                  {/* Image Carousel Container - only for Princípios */}
+                  {item.hasCarousel ? (
+                    <div className="w-full max-w-sm mb-8">
+                      <div className="aspect-[9/16] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
+                        <div className="w-full h-full relative">
+                          <img 
+                            src={principleImages[currentImageIndex]}
+                            alt={`${item.title} - Slide ${currentImageIndex + 1}`}
+                            className="w-full h-full object-cover transition-opacity duration-500"
+                          />
+                          
+                          {/* Dots indicator */}
+                          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            {principleImages.map((_, dotIndex) => (
+                              <div
+                                key={dotIndex}
+                                className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                                  dotIndex === currentImageIndex ? 'bg-ai-blue' : 'bg-white/50'
+                                }`}
+                              />
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ) : (
+                    // Placeholder for other sections
+                    <div className="w-full max-w-sm mb-8">
+                      <div className="aspect-[9/16] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg flex items-center justify-center">
+                        <IconComponent size={80} className="text-gray-400" />
+                      </div>
+                    </div>
+                  )}
 
                   {/* Content Card */}
                   <Card className="p-6 w-full border-2 border-gray-100 hover:border-ai-blue transition-colors bg-white shadow-sm">
