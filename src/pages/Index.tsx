@@ -8,6 +8,7 @@ import Solution from "@/components/Solution";
 import Content from "@/components/Content";
 import Transformation from "@/components/Transformation";
 import Offer from "@/components/Offer";
+import Guarantee from "@/components/Guarantee";
 import Author from "@/components/Author";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ const Index = () => {
       <Content />
       <Transformation />
       <Offer />
+      <Guarantee />
       <Author />
       <Footer />
     </div>
