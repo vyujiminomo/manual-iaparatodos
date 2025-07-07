@@ -44,7 +44,7 @@ const Content = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto mb-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Content Modules */}
           <div className="space-y-8">
             {modules.map((module, index) => {
@@ -86,16 +86,6 @@ const Content = () => {
                 />
               </Card>
             </div>
-          </div>
-        </div>
-
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-ai-blue/10 to-purple-500/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
-            <p className="font-poppins text-lg text-gray-700 leading-relaxed">
-              <strong>Diferente de outros recursos</strong> que ficam obsoletos em meses, este manual foi projetado para ser 
-              <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: os fundamentos que 
-              funcionarão hoje, amanhã e nos próximos anos.
-            </p>
           </div>
         </div>
       </div>
