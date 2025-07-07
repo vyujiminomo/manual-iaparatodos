@@ -1,8 +1,13 @@
-
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { AlertTriangle, Clock, Zap } from "lucide-react";
 
 const Problems = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('oferta');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const problems = [
     {
       icon: AlertTriangle,
@@ -56,6 +61,16 @@ const Problems = () => {
               </Card>
             );
           })}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button 
+            onClick={scrollToOffer}
+            size="lg" 
+            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
+          >
+            Quero acessar o Manual
+          </Button>
         </div>
       </div>
     </section>

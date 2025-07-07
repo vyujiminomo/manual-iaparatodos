@@ -1,8 +1,13 @@
-
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Author = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('oferta');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const achievements = [
     "Pesquisador independente de IA",
     "Trainee da ADAPTA.org - maior ecossistema de IA da América Latina",
@@ -78,6 +83,16 @@ const Author = () => {
               </p>
             </div>
           </Card>
+
+          <div className="text-center mt-12">
+            <Button 
+              onClick={scrollToOffer}
+              size="lg" 
+              className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
+            >
+              Quero acessar o Manual
+            </Button>
+          </div>
         </div>
       </div>
     </section>

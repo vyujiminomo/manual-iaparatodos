@@ -1,7 +1,13 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
 
 const Solution = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('oferta');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const pppMethod = [
     {
       icon: Brain,
@@ -161,11 +167,19 @@ const Solution = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-ai-blue/5 border border-ai-blue/20 rounded-lg p-6">
+          <div className="bg-ai-blue/5 border border-ai-blue/20 rounded-lg p-6 mb-8">
             <p className="font-poppins text-lg text-gray-700">
               Enquanto outros recursos te afundam em teoria, o Manual IA Para Todos te coloca para agir <span className="text-ai-blue font-semibold">em minutos</span>.
             </p>
           </div>
+          
+          <Button 
+            onClick={scrollToOffer}
+            size="lg" 
+            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
+          >
+            Quero acessar o Manual
+          </Button>
         </div>
       </div>
     </section>
