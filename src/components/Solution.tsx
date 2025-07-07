@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Solution = () => {
   const scrollToOffer = () => {
@@ -8,21 +9,54 @@ const Solution = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Images for each principle
+  const principleImages = {
+    principios: [
+      "/lovable-uploads/07ff4029-69c1-4c4c-ad44-09c3fef5ffb9.png",
+      "/lovable-uploads/1ec57c68-14ed-4068-99ef-c272c88d7087.png",
+      "/lovable-uploads/95bfc734-b20c-4dc1-a53f-ed633d13e36f.png",
+      "/lovable-uploads/4faf59a6-dab3-4edc-8df4-763d2e0f0250.png",
+      "/lovable-uploads/8ed7a803-fa2b-4bb1-be1f-3651936a6689.png"
+    ]
+  };
+
+  const [currentImageIndexes, setCurrentImageIndexes] = useState({
+    principios: 0,
+    pratica: 0,
+    pensamento: 0
+  });
+
+  // Auto-advance images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndexes(prev => ({
+        principios: (prev.principios + 1) % principleImages.principios.length,
+        pratica: (prev.pratica + 1) % principleImages.principios.length,
+        pensamento: (prev.pensamento + 1) % principleImages.principios.length
+      }));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const pppMethod = [
     {
       icon: Brain,
       title: "Princípios",
-      description: "Aprenda os fundamentos universais da IA que nunca mudam, mesmo quando as ferramentas evoluem"
+      description: "Aprenda os fundamentos universais da IA que nunca mudam, mesmo quando as ferramentas evoluem",
+      key: "principios"
     },
     {
       icon: Target,
       title: "Prática", 
-      description: "Saia com resultados reais com exercícios de 5 minutos ao final de cada capítulo"
+      description: "Saia com resultados reais com exercícios de 5 minutos ao final de cada capítulo",
+      key: "pratica"
     },
     {
       icon: Lightbulb,
       title: "Pensamento",
-      description: "Fique mais inteligente transformando a IA numa parceira de pensamento"
+      description: "Fique mais inteligente transformando a IA numa parceira de pensamento",
+      key: "pensamento"
     }
   ];
 
@@ -93,17 +127,30 @@ const Solution = () => {
           <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {pppMethod.map((item, index) => {
               const IconComponent = item.icon;
+              const currentImageIndex = currentImageIndexes[item.key as keyof typeof currentImageIndexes];
+              
               return (
                 <div key={index} className="flex flex-col items-center">
-                  {/* Video Container */}
+                  {/* Image Carousel Container */}
                   <div className="w-full max-w-sm mb-8">
-                    <div className="aspect-[9/16] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-b from-gray-50 to-gray-100 flex items-center justify-center">
-                        <div className="text-center">
-                          <IconComponent size={48} className="text-ai-blue mx-auto mb-4" />
-                          <p className="font-poppins text-gray-500 text-sm">
-                            Vídeo do {item.title}
-                          </p>
+                    <div className="aspect-[9/16] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
+                      <div className="w-full h-full relative">
+                        <img 
+                          src={principleImages.principios[currentImageIndex]}
+                          alt={`${item.title} - Slide ${currentImageIndex + 1}`}
+                          className="w-full h-full object-cover transition-opacity duration-500"
+                        />
+                        
+                        {/* Dots indicator */}
+                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                          {principleImages.principios.map((_, dotIndex) => (
+                            <div
+                              key={dotIndex}
+                              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                                dotIndex === currentImageIndex ? 'bg-ai-blue' : 'bg-white/50'
+                              }`}
+                            />
+                          ))}
                         </div>
                       </div>
                     </div>
