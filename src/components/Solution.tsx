@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Brain, Target, Lightbulb } from "lucide-react";
 
@@ -11,7 +10,7 @@ const Solution = () => {
     },
     {
       icon: Target,
-      title: "Prática",
+      title: "Prática", 
       description: "Saia com resultados reais com exercícios de 5 minutos ao final de cada capítulo"
     },
     {
@@ -43,24 +42,43 @@ const Solution = () => {
         </div>
 
         <div className="mb-16">
-          <Card className="bg-gradient-to-r from-ai-blue to-blue-600 text-white p-8 mb-8">
-            <h3 className="font-bebas text-3xl mb-4 text-center">MÉTODO PPP</h3>
-            <p className="font-poppins text-center text-lg opacity-90">
+          <div className="text-center mb-12">
+            <h3 className="font-bebas text-4xl md:text-5xl text-ai-black mb-4">MÉTODO PPP</h3>
+            <p className="font-poppins text-xl text-gray-700 max-w-3xl mx-auto">
               O Manual IA Para Todos é um sistema completo baseado no método PPP:
             </p>
-          </Card>
+          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {pppMethod.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <Card key={index} className="p-6 border-2 border-gray-100 hover:border-ai-blue transition-colors">
-                  <div className="text-ai-blue mb-4">
-                    <IconComponent size={48} />
+                <div key={index} className="flex flex-col items-center">
+                  {/* Video Container */}
+                  <div className="w-full max-w-sm mb-8">
+                    <div className="aspect-[9/16] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-b from-gray-50 to-gray-100 flex items-center justify-center">
+                        <div className="text-center">
+                          <IconComponent size={48} className="text-ai-blue mx-auto mb-4" />
+                          <p className="font-poppins text-gray-500 text-sm">
+                            Vídeo do {item.title}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="font-bebas text-2xl text-ai-black mb-4">{item.title}:</h4>
-                  <p className="font-poppins text-gray-700 leading-relaxed">{item.description}</p>
-                </Card>
+
+                  {/* Content Card */}
+                  <Card className="p-6 w-full border-2 border-gray-100 hover:border-ai-blue transition-colors bg-white shadow-sm">
+                    <div className="text-center">
+                      <div className="text-ai-blue mb-4 flex justify-center">
+                        <IconComponent size={40} />
+                      </div>
+                      <h4 className="font-bebas text-3xl text-ai-black mb-4">{item.title}</h4>
+                      <p className="font-poppins text-gray-700 leading-relaxed">{item.description}</p>
+                    </div>
+                  </Card>
+                </div>
               );
             })}
           </div>
