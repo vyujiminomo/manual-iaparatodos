@@ -2,11 +2,6 @@
 import { Button } from "@/components/ui/button";
 
 const Guarantee = () => {
-  const scrollToOffer = () => {
-    const element = document.getElementById('oferta');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -33,16 +28,6 @@ const Guarantee = () => {
                   <span className="font-bold text-ai-black">sem burocracia ou letras miúdas</span>.
                 </p>
               </div>
-            </div>
-            
-            <div className="text-center mt-8">
-              <Button 
-                onClick={scrollToOffer}
-                size="lg" 
-                className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
-              >
-                Quero acessar o Manual
-              </Button>
             </div>
           </div>
         </div>
