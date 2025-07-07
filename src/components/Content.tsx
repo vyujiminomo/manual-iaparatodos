@@ -87,12 +87,6 @@ const Content = () => {
                   alt="Índice do Manual IA Para Todos"
                   className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
                 />
-                <div className="mt-6 text-center">
-                  <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-ai-blue to-purple-500 text-white rounded-full font-poppins font-semibold text-sm">
-                    <Zap size={16} className="mr-2" />
-                    Conteúdo Prático e Direto
-                  </div>
-                </div>
               </Card>
             </div>
           </div>
