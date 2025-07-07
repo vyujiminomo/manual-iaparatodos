@@ -10,24 +10,24 @@ const Transformation = () => {
       after: "Ter um mapa claro e prático pra usar IA na rotina"
     },
     {
-      before: "Sobrecarregado com tarefas cansativas",
-      after: "Produzir mais em menos tempo e esforço"
+      before: "Frustrado porque tentou usar o ChatGPT e não funcionou",
+      after: "Escrever prompts melhores e ter respostas realmente úteis"
     },
     {
-      before: "Inseguro em tomar decisões importantes",
-      after: "Ter um parceiro de pensamento confiável e inteligente"
+      before: "Ultrapassado no trabalho",
+      after: "se destacar com entregas melhores e mais rápidas"
     },
     {
-      before: "Com bloqueio criativo",
-      after: "Destravar sua criatividade em segundos"
+      before: "Sem entender nada de tecnologia",
+      after: "usar IA com uma linguagem simples e leve"
     },
     {
-      before: "Sem tempo/dinheiro para cursos longos",
-      after: "Aprender IA em minutos, sem gastar quase nada"
+      before: "Sem saber por onde começar",
+      after: "aprender passo a passo, mesmo do zero"
     },
     {
-      before: "Desmotivado com o que faz",
-      after: "Tirar ideias do papel e dar sentido ao que faz"
+      before: "Sem tempo ou dinheiro pra cursos longos",
+      after: "aprender IA em minutos, por um preço muito mais acessível"
     }
   ];
 
