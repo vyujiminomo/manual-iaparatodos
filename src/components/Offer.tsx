@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 const Offer = () => {
   const benefits = [
-    "PDF Completo com 58 Páginas",
+    "PDF Completo com 127 Páginas",
     "12 Exercícios Transformadores", 
     "Glossário Relâmpago",
     "Mapa do ChatGPT",
@@ -28,28 +28,17 @@ const Offer = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Product showcase */}
+            {/* Left side - Manual cover image */}
             <div className="flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-xl"></div>
-                <Card className="relative bg-ai-black text-white p-8 shadow-2xl border-0 rounded-2xl max-w-sm">
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 bg-ai-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                      <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                      </div>
-                    </div>
-                    <h3 className="font-bebas text-3xl text-white mb-2">MANUAL</h3>
-                    <h4 className="font-bebas text-2xl text-ai-blue mb-2">INTELIGÊNCIA</h4>
-                    <h4 className="font-bebas text-2xl text-ai-blue mb-2">ARTIFICIAL</h4>
-                    <h4 className="font-bebas text-2xl text-white mb-4">PARA TODOS</h4>
-                    <p className="font-poppins text-sm text-gray-300 mb-2">IA na prática</p>
-                    <p className="font-poppins text-sm text-gray-300">Crie mais em menos tempo</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-poppins text-white text-sm">Vitor Yuji Minomo</p>
-                  </div>
-                </Card>
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/e3b97765-2679-4f84-8bcf-d18d57b7e9c5.png" 
+                    alt="Manual Inteligência Artificial Para Todos - Capa"
+                    className="w-full max-w-sm mx-auto rounded-lg shadow-2xl"
+                  />
+                </div>
               </div>
             </div>
 
@@ -60,8 +49,8 @@ const Offer = () => {
                   MANUAL INTELIGÊNCIA ARTIFICIAL PARA TODOS
                 </h3>
                 <div className="flex items-baseline mb-6">
-                  <span className="font-poppins text-red-500 text-lg line-through mr-2">R$45,00</span>
-                  <span className="font-bebas text-5xl text-ai-blue">POR R$20</span>
+                  <span className="font-poppins text-red-500 text-lg line-through mr-2">R$127,00</span>
+                  <span className="font-bebas text-5xl text-ai-blue">POR R$47</span>
                 </div>
               </div>
 
