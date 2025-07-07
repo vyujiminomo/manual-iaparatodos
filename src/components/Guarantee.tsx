@@ -20,7 +20,7 @@ const Guarantee = () => {
               {/* Guarantee text */}
               <div className="flex-1 text-center md:text-left">
                 <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6 uppercase">
-                  Garantia Incondicional de Satisfação
+                  Garantia Total de Satisfação
                 </h3>
                 <p className="font-poppins text-gray-700 text-base md:text-lg leading-relaxed">
                   Pra você se sentir ainda mais seguro(a), a lei te oferece uma garantia total de{" "}
