@@ -73,24 +73,40 @@ const Content = () => {
             })}
           </div>
 
-          {/* Manual Preview Image */}
+          {/* Manual Preview Image - More Highlighted */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-xl"></div>
-              <Card className="relative bg-white p-8 shadow-2xl border-0 rounded-2xl transform hover:scale-105 transition-transform duration-300">
-                <div className="text-center mb-6">
-                  <h4 className="font-bebas text-3xl text-ai-black mb-2">MANUAL COMPLETO</h4>
-                  <p className="font-poppins text-ai-blue font-semibold">Índice do Conteúdo</p>
+              {/* Enhanced glow effect */}
+              <div className="absolute -inset-6 bg-gradient-to-r from-ai-blue/30 to-purple-500/30 rounded-3xl blur-2xl animate-pulse"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-lg"></div>
+              
+              <Card className="relative bg-white p-10 shadow-2xl border-2 border-ai-blue/20 rounded-3xl transform hover:scale-105 transition-all duration-500 hover:shadow-3xl">
+                <div className="text-center mb-8">
+                  <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-ai-blue to-purple-500 text-white rounded-full font-poppins font-bold text-lg mb-4 shadow-lg">
+                    <Book size={24} className="mr-3" />
+                    ÍNDICE COMPLETO
+                  </div>
+                  <h4 className="font-bebas text-4xl text-ai-black mb-3 bg-gradient-to-r from-ai-blue to-purple-500 bg-clip-text text-transparent">
+                    MANUAL COMPLETO
+                  </h4>
+                  <p className="font-poppins text-ai-blue font-semibold text-lg">
+                    Veja todo o conteúdo que você terá acesso
+                  </p>
                 </div>
-                <img 
-                  src="/lovable-uploads/d5acbe2b-ff36-4c23-b566-681c78b81721.png" 
-                  alt="Índice do Manual IA Para Todos"
-                  className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
-                />
-                <div className="mt-6 text-center">
-                  <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-ai-blue to-purple-500 text-white rounded-full font-poppins font-semibold text-sm">
-                    <Zap size={16} className="mr-2" />
-                    Conteúdo Prático e Direto
+                
+                <div className="relative">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-ai-blue/10 to-purple-500/10 rounded-xl"></div>
+                  <img 
+                    src="/lovable-uploads/d5acbe2b-ff36-4c23-b566-681c78b81721.png" 
+                    alt="Índice do Manual IA Para Todos"
+                    className="relative w-full max-w-sm mx-auto rounded-xl shadow-2xl border-2 border-white transform hover:scale-105 transition-all duration-300"
+                  />
+                </div>
+                
+                <div className="mt-8 text-center">
+                  <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-full font-poppins font-bold text-lg shadow-lg inline-flex items-center">
+                    <Zap size={20} className="mr-2" />
+                    +100 Páginas de Valor Puro
                   </div>
                 </div>
               </Card>
