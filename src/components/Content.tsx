@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Brain, Target, Settings, Book, Users, Zap } from "lucide-react";
 
@@ -42,9 +41,6 @@ const Content = () => {
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
             O QUE O MANUAL OFERECE
           </h2>
-          <p className="font-poppins text-xl text-gray-700 max-w-3xl mx-auto">
-            Enquanto outros recursos te afundam em teoria, o Manual IA Para Todos te coloca para agir em minutos.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto mb-12">
