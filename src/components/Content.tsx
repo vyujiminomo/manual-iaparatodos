@@ -47,41 +47,66 @@ const Content = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {modules.map((module, index) => {
-            const IconComponent = module.icon;
-            return (
-              <Card key={index} className="p-6 bg-white shadow-lg border-0 hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-6">
-                  <div className="text-ai-blue mr-4">
-                    <IconComponent size={32} />
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto mb-12">
+          {/* Content Modules */}
+          <div className="space-y-8">
+            {modules.map((module, index) => {
+              const IconComponent = module.icon;
+              return (
+                <Card key={index} className="p-6 bg-white shadow-lg border-0 hover:shadow-xl transition-shadow">
+                  <div className="flex items-center mb-6">
+                    <div className="text-ai-blue mr-4">
+                      <IconComponent size={32} />
+                    </div>
+                    <h3 className="font-bebas text-2xl text-ai-black">{module.title}</h3>
                   </div>
-                  <h3 className="font-bebas text-2xl text-ai-black">{module.title}</h3>
+                  <ul className="space-y-3">
+                    {module.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start">
+                        <div className="w-2 h-2 bg-ai-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="font-poppins text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              );
+            })}
+          </div>
+
+          {/* Manual Preview Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-xl"></div>
+              <Card className="relative bg-white p-8 shadow-2xl border-0 rounded-2xl transform hover:scale-105 transition-transform duration-300">
+                <div className="text-center mb-6">
+                  <h4 className="font-bebas text-3xl text-ai-black mb-2">MANUAL COMPLETO</h4>
+                  <p className="font-poppins text-ai-blue font-semibold">Índice do Conteúdo</p>
                 </div>
-                <ul className="space-y-3">
-                  {module.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start">
-                      <div className="w-2 h-2 bg-ai-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="font-poppins text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <img 
+                  src="/lovable-uploads/d5acbe2b-ff36-4c23-b566-681c78b81721.png" 
+                  alt="Índice do Manual IA Para Todos"
+                  className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
+                />
+                <div className="mt-6 text-center">
+                  <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-ai-blue to-purple-500 text-white rounded-full font-poppins font-semibold text-sm">
+                    <Zap size={16} className="mr-2" />
+                    Conteúdo Prático e Direto
+                  </div>
+                </div>
               </Card>
-            );
-          })}
+            </div>
+          </div>
         </div>
 
         <div className="text-center">
-          <Card className="inline-block bg-white p-8 shadow-lg border-0">
-            <div className="aspect-video w-80 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300 mx-auto">
-              <div className="text-center">
-                <Book className="mx-auto mb-2 text-ai-blue" size={48} />
-                <p className="font-poppins text-gray-600 font-medium">
-                  Aqui vai o Mockup [Conteúdo Preview]
-                </p>
-              </div>
-            </div>
-          </Card>
+          <div className="bg-gradient-to-r from-ai-blue/10 to-purple-500/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
+            <h3 className="font-bebas text-3xl text-ai-black mb-4">MAIS DE 100 PÁGINAS DE CONTEÚDO EXCLUSIVO</h3>
+            <p className="font-poppins text-lg text-gray-700 leading-relaxed">
+              <strong>Diferente de outros recursos</strong> que ficam obsoletos em meses, este manual foi projetado para ser 
+              <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: os fundamentos que 
+              funcionarão hoje, amanhã e nos próximos anos.
+            </p>
+          </div>
         </div>
       </div>
     </section>
