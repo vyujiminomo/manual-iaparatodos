@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Brain, Target, Settings, Book, Users, Zap } from "lucide-react";
@@ -105,7 +106,7 @@ const Content = () => {
             size="lg" 
             className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
           >
-            Quero acessar o Manual
+            Quero Acessar
           </Button>
         </div>
       </div>

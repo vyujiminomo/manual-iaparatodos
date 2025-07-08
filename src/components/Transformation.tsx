@@ -1,4 +1,5 @@
 
+
 import { Card } from "@/components/ui/card";
 import { X, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -91,7 +92,7 @@ const Transformation = () => {
 
         <div className="text-center mt-12">
           <Button className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-3 text-lg rounded-lg">
-            Quero Acessar o Manual
+            Quero Acessar
           </Button>
         </div>
       </div>

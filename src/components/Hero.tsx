@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -31,7 +32,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
               >
-                Quero acessar o manual
+                Quero Acessar
               </Button>
             </div>
 
