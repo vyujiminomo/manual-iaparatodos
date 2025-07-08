@@ -69,14 +69,20 @@ const Author = () => {
               </div>
             </div>
 
-            <div className="flex justify-center">
-              <div className="aspect-square w-full max-w-md bg-gray-800 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-600">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">👨‍💻</div>
-                  <p className="font-poppins text-gray-400 font-medium">
-                    Aqui vai a foto do Vitor
-                  </p>
-                </div>
+            <div className="space-y-6">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/lovable-uploads/95d51d12-d306-4a6e-a135-f37e2521d0d1.png" 
+                  alt="Vitor Yuji palestrando para jovens" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/lovable-uploads/dbb1e59a-4b1a-4bb5-8659-005a775bc0a8.png" 
+                  alt="Vitor Yuji com sua equipe e alunos" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </div>
