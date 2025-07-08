@@ -82,11 +82,9 @@ const Problems = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-ai-blue/10 to-ai-blue/20 border border-ai-blue/30 rounded-2xl p-8 max-w-3xl mx-auto">
-            <p className="font-bebas text-3xl md:text-4xl text-ai-black font-bold">
-              Mas não precisa ser assim.
-            </p>
-          </div>
+          <p className="font-poppins text-xl text-gray-600 max-w-3xl mx-auto">
+            Mas não precisa ser assim.
+          </p>
         </div>
       </div>
     </section>
