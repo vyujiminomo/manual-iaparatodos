@@ -75,7 +75,7 @@ const Problems = () => {
         <div className="text-center">
           <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-100 rounded-2xl p-8 max-w-4xl mx-auto">
             <p className="font-poppins text-lg text-gray-700 leading-relaxed">
-              <strong className="text-red-600">O resultado:</strong> Você fica perdido em um mar de informações desatualizadas, 
+              <strong className="text-red-600">O resultado:</strong> Você fica perdido com informações desatualizadas, 
               perde tempo com métodos que não funcionam e acaba mais confuso do que quando começou.
             </p>
           </div>
