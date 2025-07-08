@@ -19,14 +19,11 @@ const Author = () => {
                 SOBRE MIM
               </span>
             </div>
-            <h2 className="font-bebas text-4xl md:text-6xl mb-6">
-              QUEM É VITOR YUJI?
-            </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h3 className="font-bebas text-3xl text-ai-blue mb-6">VITOR YUJI</h3>
+              <h3 className="font-bebas text-4xl md:text-5xl text-white mb-6">QUEM É VITOR YUJI?</h3>
               
               <div className="space-y-6 text-gray-300 font-poppins leading-relaxed">
                 <p>
