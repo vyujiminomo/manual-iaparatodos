@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -48,12 +47,6 @@ const Author = () => {
               </div>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
-                  16 anos
-                </Badge>
-                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
-                  ADAPTA.org
-                </Badge>
                 <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
                   Max Peters
                 </Badge>
