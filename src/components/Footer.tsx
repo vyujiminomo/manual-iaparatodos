@@ -1,4 +1,5 @@
 
+import { Mail, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,11 +22,11 @@ const Footer = () => {
             </h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <span className="text-ai-blue">✉</span>
+                <Mail className="text-ai-blue w-4 h-4" />
                 <span className="font-poppins text-gray-300 text-sm">contato.vitoryujiminomo@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-ai-blue">📸</span>
+                <Instagram className="text-ai-blue w-4 h-4" />
                 <a 
                   href="https://www.instagram.com/vitoryujim" 
                   target="_blank" 
@@ -36,7 +37,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-ai-blue">💼</span>
+                <Linkedin className="text-ai-blue w-4 h-4" />
                 <a 
                   href="https://www.linkedin.com/in/vitor-yuji-minomo/" 
                   target="_blank" 
@@ -55,4 +56,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
