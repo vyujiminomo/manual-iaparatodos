@@ -73,16 +73,12 @@ const Solution = () => {
       description: "Linguagem simples que qualquer profissional entende",
       color: "bg-blue-500",
       placeholder: (
-        <div className="w-full h-32 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-4 flex flex-col justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
-            <div className="h-2 bg-blue-300 rounded w-20"></div>
-          </div>
-          <div className="space-y-2">
-            <div className="h-2 bg-blue-200 rounded w-full"></div>
-            <div className="h-2 bg-blue-200 rounded w-3/4"></div>
-            <div className="h-2 bg-blue-200 rounded w-1/2"></div>
-          </div>
+        <div className="w-full h-32 bg-white rounded-lg border border-blue-200 overflow-hidden">
+          <img 
+            src="/lovable-uploads/545fc929-943d-4d7b-918f-836e0b0fd7fe.png"
+            alt="Exemplo de linguagem simples"
+            className="w-full h-full object-cover"
+          />
         </div>
       )
     },
