@@ -17,27 +17,41 @@ const Solution = () => {
     "/lovable-uploads/8ed7a803-fa2b-4bb1-be1f-3651936a6689.png"
   ];
 
+  // Images for Prática section
+  const practiceImages = [
+    "/lovable-uploads/0a778b6f-1582-4867-b659-cbf2a7bd90a4.png",
+    "/lovable-uploads/48a92a74-4727-4fec-90cd-4e255785ad05.png",
+    "/lovable-uploads/435ee866-b1f4-4f06-8a0b-d7981495160f.png"
+  ];
+
   // Duplicate images for seamless infinite scroll
-  const infiniteImages = [...principleImages, ...principleImages];
+  const infinitePrincipleImages = [...principleImages, ...principleImages];
+  const infinitePracticeImages = [...practiceImages, ...practiceImages];
 
   const pppMethod = [
     {
       icon: Brain,
       title: "Princípios",
       description: "Aprenda os fundamentos universais da IA que nunca mudam, mesmo quando as ferramentas evoluem",
-      hasCarousel: true
+      hasCarousel: true,
+      images: infinitePrincipleImages,
+      animationDuration: "15s"
     },
     {
       icon: Target,
       title: "Prática", 
       description: "Saia com resultados reais com exercícios de 5 minutos ao final de cada capítulo",
-      hasCarousel: false
+      hasCarousel: true,
+      images: infinitePracticeImages,
+      animationDuration: "12s"
     },
     {
       icon: Lightbulb,
       title: "Pensamento",
       description: "Fique mais inteligente transformando a IA numa parceira de pensamento",
-      hasCarousel: false
+      hasCarousel: false,
+      images: [],
+      animationDuration: ""
     }
   ];
 
@@ -111,7 +125,7 @@ const Solution = () => {
               
               return (
                 <div key={index} className="flex flex-col items-center">
-                  {/* Infinite Scroll Container - only for Princípios */}
+                  {/* Infinite Scroll Container - for Princípios and Prática */}
                   {item.hasCarousel ? (
                     <div className="w-full max-w-sm mb-8">
                       <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden relative">
@@ -119,12 +133,9 @@ const Solution = () => {
                           {/* Infinite scroll container */}
                           <div className="absolute inset-0 overflow-hidden">
                             <div 
-                              className="flex flex-col animate-infinite-scroll"
-                              style={{
-                                animation: 'infiniteScroll 15s linear infinite',
-                              }}
+                              className={`flex flex-col animate-infinite-scroll-${index}`}
                             >
-                              {infiniteImages.map((image, imgIndex) => (
+                              {item.images.map((image, imgIndex) => (
                                 <div 
                                   key={imgIndex} 
                                   className="w-full flex-shrink-0 p-4 flex items-center justify-center"
@@ -132,7 +143,7 @@ const Solution = () => {
                                 >
                                   <img 
                                     src={image}
-                                    alt={`${item.title} - Slide ${(imgIndex % principleImages.length) + 1}`}
+                                    alt={`${item.title} - Slide ${(imgIndex % (item.images.length / 2)) + 1}`}
                                     className="w-full h-full object-contain"
                                   />
                                 </div>
@@ -143,7 +154,7 @@ const Solution = () => {
                       </div>
                     </div>
                   ) : (
-                    // Placeholder for other sections
+                    // Placeholder for Pensamento section
                     <div className="w-full max-w-sm mb-8">
                       <div className="aspect-[3/4] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg flex items-center justify-center">
                         <IconComponent size={60} className="text-gray-400" />
@@ -225,14 +236,31 @@ const Solution = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes infiniteScroll {
+      <style>{`
+        @keyframes infiniteScrollPrinciples {
           0% {
             transform: translateY(0);
           }
           100% {
             transform: translateY(-50%);
           }
+        }
+        
+        @keyframes infiniteScrollPractice {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
+        .animate-infinite-scroll-0 {
+          animation: infiniteScrollPrinciples 15s linear infinite;
+        }
+        
+        .animate-infinite-scroll-1 {
+          animation: infiniteScrollPractice 12s linear infinite;
         }
       `}</style>
     </section>
