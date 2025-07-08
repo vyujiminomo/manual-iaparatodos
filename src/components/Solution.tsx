@@ -24,9 +24,20 @@ const Solution = () => {
     "/lovable-uploads/435ee866-b1f4-4f06-8a0b-d7981495160f.png"
   ];
 
+  // Images for Pensamento section - conversation examples
+  const thinkingImages = [
+    "/lovable-uploads/7fe09aaa-a0c0-4a0a-955a-0524e1055922.png",
+    "/lovable-uploads/1cd60e77-bac8-4c8a-a4fd-5a8a3af1ebe5.png",
+    "/lovable-uploads/b16aaa39-a1d3-4600-8e7f-995ef0d0ab46.png",
+    "/lovable-uploads/8b6554b3-8fea-4638-8544-06568d76c98e.png",
+    "/lovable-uploads/b44a23ed-7132-4008-aeda-7ff0c996406e.png",
+    "/lovable-uploads/c7227f2a-0d74-41a1-b759-be8eab66e4f6.png"
+  ];
+
   // Duplicate images for seamless infinite scroll
   const infinitePrincipleImages = [...principleImages, ...principleImages];
   const infinitePracticeImages = [...practiceImages, ...practiceImages];
+  const infiniteThinkingImages = [...thinkingImages, ...thinkingImages];
 
   const pppMethod = [
     {
@@ -49,9 +60,9 @@ const Solution = () => {
       icon: Lightbulb,
       title: "Pensamento",
       description: "Fique mais inteligente transformando a IA numa parceira de pensamento",
-      hasCarousel: false,
-      images: [],
-      animationDuration: ""
+      hasCarousel: true,
+      images: infiniteThinkingImages,
+      animationDuration: "18s"
     }
   ];
 
@@ -125,7 +136,7 @@ const Solution = () => {
               
               return (
                 <div key={index} className="flex flex-col items-center">
-                  {/* Infinite Scroll Container - for Princípios and Prática */}
+                  {/* Infinite Scroll Container */}
                   {item.hasCarousel ? (
                     <div className="w-full max-w-sm mb-8">
                       <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden relative">
@@ -154,7 +165,7 @@ const Solution = () => {
                       </div>
                     </div>
                   ) : (
-                    // Placeholder for Pensamento section
+                    // This shouldn't happen anymore since all have carousels now
                     <div className="w-full max-w-sm mb-8">
                       <div className="aspect-[3/4] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg flex items-center justify-center">
                         <IconComponent size={60} className="text-gray-400" />
@@ -255,12 +266,25 @@ const Solution = () => {
           }
         }
 
+        @keyframes infiniteScrollThinking {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
         .animate-infinite-scroll-0 {
           animation: infiniteScrollPrinciples 15s linear infinite;
         }
         
         .animate-infinite-scroll-1 {
           animation: infiniteScrollPractice 12s linear infinite;
+        }
+
+        .animate-infinite-scroll-2 {
+          animation: infiniteScrollThinking 18s linear infinite;
         }
       `}</style>
     </section>
