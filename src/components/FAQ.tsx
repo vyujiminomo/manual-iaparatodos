@@ -36,11 +36,11 @@ const FAQ = () => {
         <div className="text-center mb-12">
           <div className="mb-4">
             <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-              DÚVIDAS FREQUENTES
+              F.A.Q.
             </span>
           </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
-            PERGUNTAS FREQUENTES
+            Restou alguma dúvida?
           </h2>
         </div>
 
