@@ -10,6 +10,7 @@ import Transformation from "@/components/Transformation";
 import Offer from "@/components/Offer";
 import Guarantee from "@/components/Guarantee";
 import Author from "@/components/Author";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
       <Offer />
       <Guarantee />
       <Author />
+      <FAQ />
       <Footer />
     </div>
   );
