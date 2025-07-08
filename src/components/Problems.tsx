@@ -22,7 +22,7 @@ const Problems = () => {
     },
     {
       icon: Zap,
-      title: "Dependência da máquina",
+      title: "Emburrecimento",
       description: "Muitos materiais te ensinam a entregar todo seu pensamento para a máquina, te deixando dependente ao invés de mais inteligente."
     }
   ];
