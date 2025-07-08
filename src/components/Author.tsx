@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -26,23 +27,23 @@ const Author = () => {
               
               <div className="space-y-6 text-gray-300 font-poppins leading-relaxed">
                 <p>
-                  <strong className="text-white">Pesquisador independente de IA</strong> <strong className="text-white">e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.</strong>
+                  Pesquisador independente de IA e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.
                 </p>
                 
                 <p>
-                  Aos 12 anos, iniciou sua jornada na robótica pelo torneio First Lego League (FLL), participando de três temporadas e criando o <strong className="text-ai-blue">Mangue Mania</strong>, uma das principais metodologias ativas sobre manguezais de Sergipe, com mais de 400 alunos impactados.
+                  Aos 12 anos, iniciou sua jornada na robótica pelo torneio First Lego League (FLL), participando de três temporadas e criando o Mangue Mania, uma das principais metodologias ativas sobre manguezais de Sergipe, com mais de 400 alunos impactados.
                 </p>
                 
                 <p>
-                  Em 2024, foi selecionado por <strong className="text-white">Max Peters</strong>, referência nacional em IA generativa e mentor de centenas de empresários, para ser jovem aprendiz da ADAPTA aos 16 anos.
+                  Em 2024, foi selecionado por Max Peters, referência nacional em IA generativa e mentor de centenas de empresários, para ser jovem aprendiz da ADAPTA aos 16 anos.
                 </p>
                 
                 <p>
-                  É também músico no <strong className="text-white">Movimento Escalada</strong> e o único adolescente brasileiro com mais de 8 mil impressões no LinkedIn.
+                  É também músico no Movimento Escalada e o único adolescente brasileiro com mais de 8 mil impressões no LinkedIn.
                 </p>
                 
                 <p>
-                  Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de <strong className="text-ai-blue">tornar a IA acessível para todos</strong>.
+                  Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
                 </p>
               </div>
 
