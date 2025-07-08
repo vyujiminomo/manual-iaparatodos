@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -87,7 +86,7 @@ const Solution = () => {
       title: "Você aprende usando",
       description: "Cada capítulo termina com exercícios de 5 minutos",
       color: "bg-purple-500",
-      image: null
+      image: "/lovable-uploads/98cff980-1875-4949-9dcd-6541063246ff.png"
     },
     {
       icon: Shield,
