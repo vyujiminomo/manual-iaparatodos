@@ -19,22 +19,11 @@ const Solution = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   // Auto-advance images every 1.5 seconds (faster)
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex(prev => {
-        const nextIndex = (prev + 1) % principleImages.length;
-        // Reset scroll position when cycling back to first image
-        if (nextIndex === 0) {
-          setScrollPosition(0);
-        } else {
-          // Create smooth vertical scroll effect
-          setScrollPosition(nextIndex * -100);
-        }
-        return nextIndex;
-      });
+      setCurrentImageIndex(prev => (prev + 1) % principleImages.length);
     }, 1500);
 
     return () => clearInterval(interval);
@@ -135,25 +124,12 @@ const Solution = () => {
                   {item.hasCarousel ? (
                     <div className="w-full max-w-sm mb-8">
                       <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
-                        <div className="w-full h-full relative">
-                          {/* Vertical scrolling container */}
-                          <div 
-                            className="flex flex-col transition-transform duration-1000 ease-in-out"
-                            style={{ 
-                              transform: `translateY(${scrollPosition}%)`,
-                              height: `${principleImages.length * 100}%`
-                            }}
-                          >
-                            {principleImages.map((image, imageIndex) => (
-                              <div key={imageIndex} className="w-full h-full flex-shrink-0 p-4 flex items-center justify-center">
-                                <img 
-                                  src={image}
-                                  alt={`${item.title} - Slide ${imageIndex + 1}`}
-                                  className="w-full h-full object-contain"
-                                />
-                              </div>
-                            ))}
-                          </div>
+                        <div className="w-full h-full relative p-4 flex items-center justify-center">
+                          <img 
+                            src={principleImages[currentImageIndex]}
+                            alt={`${item.title} - Slide ${currentImageIndex + 1}`}
+                            className="w-full h-full object-contain"
+                          />
                           
                           {/* Dots indicator */}
                           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
