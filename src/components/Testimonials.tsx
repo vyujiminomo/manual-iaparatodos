@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Testimonials = () => {
@@ -29,6 +30,9 @@ const Testimonials = () => {
               <p className="font-poppins font-bold text-ai-black text-sm">
                 Gabriela Coelho
               </p>
+              <p className="font-poppins text-gray-500 text-xs">
+                [Profissão a ser definida]
+              </p>
             </div>
           </div>
           
@@ -40,6 +44,9 @@ const Testimonials = () => {
               <p className="font-poppins font-bold text-ai-black text-sm">
                 Isadora Helena
               </p>
+              <p className="font-poppins text-gray-500 text-xs">
+                [Profissão a ser definida]
+              </p>
             </div>
           </div>
           
@@ -50,6 +57,9 @@ const Testimonials = () => {
             <div>
               <p className="font-poppins font-bold text-ai-black text-sm">
                 Arthur Lucena
+              </p>
+              <p className="font-poppins text-gray-500 text-xs">
+                [Profissão a ser definida]
               </p>
             </div>
           </div>

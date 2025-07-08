@@ -31,18 +31,28 @@ const Webinar = () => {
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
                   "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso"
                 </p>
-                <p className="font-poppins font-bold text-ai-black text-sm">
-                  Marta Romilda
-                </p>
+                <div>
+                  <p className="font-poppins font-bold text-ai-black text-sm">
+                    Osvaldo Araki
+                  </p>
+                  <p className="font-poppins text-gray-500 text-xs">
+                    Médico Endoscopista
+                  </p>
+                </div>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
                   "A aula foi bem didática e sensação q tive foi q a IA não ficará tão distante de nós depois de sua apresentação."
                 </p>
-                <p className="font-poppins font-bold text-ai-black text-sm">
-                  Ana Isabel
-                </p>
+                <div>
+                  <p className="font-poppins font-bold text-ai-black text-sm">
+                    Ana Isabel
+                  </p>
+                  <p className="font-poppins text-gray-500 text-xs">
+                    Servidora Pública
+                  </p>
+                </div>
               </div>
             </div>
           </div>
