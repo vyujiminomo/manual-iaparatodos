@@ -46,18 +46,6 @@ const Author = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-3 pt-4">
-                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
-                  Max Peters
-                </Badge>
-                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
-                  +400 alunos
-                </Badge>
-                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
-                  +8k LinkedIn
-                </Badge>
-              </div>
-
               <div className="pt-6">
                 <Button 
                   onClick={scrollToOffer}
