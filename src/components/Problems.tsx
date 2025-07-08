@@ -1,14 +1,8 @@
 
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { AlertTriangle, Clock, Zap } from "lucide-react";
 
 const Problems = () => {
-  const scrollToOffer = () => {
-    const element = document.getElementById('oferta');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const problems = [
     {
       icon: AlertTriangle,
@@ -46,8 +40,11 @@ const Problems = () => {
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
             POR QUE APRENDER IA É TÃO DIFÍCIL HOJE?
           </h2>
-          <p className="font-poppins text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="font-poppins text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             Você já se pegou pensando: <span className="text-ai-black font-semibold">"Todo mundo está falando de IA, mas eu ainda não sei como usar isso no meu trabalho"</span>?
+          </p>
+          <p className="font-poppins text-2xl font-semibold text-ai-black max-w-4xl mx-auto">
+            Aprender IA hoje tem três grandes problemas:
           </p>
         </div>
 
@@ -76,20 +73,12 @@ const Problems = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-100 rounded-2xl p-8 mb-8 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-100 rounded-2xl p-8 max-w-4xl mx-auto">
             <p className="font-poppins text-lg text-gray-700 leading-relaxed">
               <strong className="text-red-600">O resultado:</strong> Você fica perdido em um mar de informações desatualizadas, 
               perde tempo com métodos que não funcionam e acaba mais confuso do que quando começou.
             </p>
           </div>
-          
-          <Button 
-            onClick={scrollToOffer}
-            size="lg" 
-            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Quero uma solução definitiva
-          </Button>
         </div>
       </div>
     </section>
