@@ -1,12 +1,14 @@
 
+
 const Footer = () => {
   return (
     <footer className="bg-ai-black text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-start">
           <div className="flex flex-col">
-            <div className="font-bebas text-2xl text-ai-blue mb-4">
-              IA PARA TODOS
+            <div className="font-bebas text-2xl mb-4">
+              <span className="text-ai-blue">IA</span>
+              <span className="text-white"> PARA TODOS</span>
             </div>
             <p className="font-poppins text-gray-300 text-sm max-w-xs">
               Enquanto o mundo complica, a gente simplifica.
@@ -19,11 +21,11 @@ const Footer = () => {
             </h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <span className="text-ai-blue">📧</span>
+                <span className="text-ai-blue">✉</span>
                 <span className="font-poppins text-gray-300 text-sm">contato.vitoryujiminomo@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-ai-blue">📷</span>
+                <span className="text-ai-blue">📸</span>
                 <a 
                   href="https://www.instagram.com/vitoryujim" 
                   target="_blank" 
@@ -53,3 +55,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
