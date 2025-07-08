@@ -133,8 +133,8 @@ const Solution = () => {
                 <div key={index} className="flex flex-col items-center">
                   {/* Image Carousel Container - only for Princípios */}
                   {item.hasCarousel ? (
-                    <div className="w-full max-w-xs mb-8">
-                      <div className="aspect-[4/5] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
+                    <div className="w-full max-w-sm mb-8">
+                      <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
                         <div className="w-full h-full relative">
                           {/* Vertical scrolling container */}
                           <div 
@@ -145,11 +145,11 @@ const Solution = () => {
                             }}
                           >
                             {principleImages.map((image, imageIndex) => (
-                              <div key={imageIndex} className="w-full h-full flex-shrink-0">
+                              <div key={imageIndex} className="w-full h-full flex-shrink-0 p-4 flex items-center justify-center">
                                 <img 
                                   src={image}
                                   alt={`${item.title} - Slide ${imageIndex + 1}`}
-                                  className="w-full h-full object-cover"
+                                  className="w-full h-full object-contain"
                                 />
                               </div>
                             ))}
@@ -171,8 +171,8 @@ const Solution = () => {
                     </div>
                   ) : (
                     // Placeholder for other sections
-                    <div className="w-full max-w-xs mb-8">
-                      <div className="aspect-[4/5] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg flex items-center justify-center">
+                    <div className="w-full max-w-sm mb-8">
+                      <div className="aspect-[3/4] bg-gray-100 rounded-2xl border-4 border-gray-200 shadow-lg flex items-center justify-center">
                         <IconComponent size={60} className="text-gray-400" />
                       </div>
                     </div>
