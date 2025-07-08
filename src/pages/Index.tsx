@@ -7,6 +7,7 @@ import Problems from "@/components/Problems";
 import Solution from "@/components/Solution";
 import Content from "@/components/Content";
 import Transformation from "@/components/Transformation";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import Offer from "@/components/Offer";
 import Guarantee from "@/components/Guarantee";
 import Author from "@/components/Author";
@@ -24,6 +25,7 @@ const Index = () => {
       <Solution />
       <Content />
       <Transformation />
+      <TestimonialsCarousel />
       <Offer />
       <Guarantee />
       <Author />
