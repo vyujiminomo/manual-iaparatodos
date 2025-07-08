@@ -229,7 +229,7 @@ const Solution = () => {
                       <img 
                         src={feature.image}
                         alt={feature.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-300"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
@@ -242,8 +242,8 @@ const Solution = () => {
                   
                   {/* Content Section */}
                   <div className="p-6">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className={`${feature.color} p-2 rounded-full flex-shrink-0 mt-1`}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className={`${feature.color} p-2 rounded-full flex-shrink-0`}>
                         <IconComponent className="text-white" size={16} />
                       </div>
                       <h4 className="font-poppins font-bold text-ai-black text-lg leading-tight">
