@@ -1,9 +1,19 @@
+
 import { Button } from "@/components/ui/button";
+import { Play } from "lucide-react";
+import { useState } from "react";
 
 const Webinar = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoId = "RoT5Rt6qaFI";
+
   const scrollToOffer = () => {
     const element = document.getElementById('oferta');
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handlePlayVideo = () => {
+    setIsVideoPlaying(true);
   };
 
   return (
@@ -45,11 +55,42 @@ const Webinar = () => {
           </div>
           
           <div className="relative">
-            <div className="aspect-[4/3] bg-gray-100 rounded-lg flex items-center justify-center">
-              <p className="font-poppins text-gray-500 text-center">
-                Imagem do encontro<br />
-                (será adicionada)
-              </p>
+            <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-lg relative group">
+              {!isVideoPlaying ? (
+                <>
+                  {/* YouTube thumbnail */}
+                  <img
+                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    alt="Webinar IA Para Todos"
+                    className="w-full h-full object-cover"
+                  />
+                  
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                    <button
+                      onClick={handlePlayVideo}
+                      className="bg-red-600 hover:bg-red-700 text-white rounded-full p-4 shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center justify-center"
+                      aria-label="Reproduzir vídeo"
+                    >
+                      <Play size={32} className="ml-1" fill="currentColor" />
+                    </button>
+                  </div>
+                  
+                  {/* YouTube watermark */}
+                  <div className="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-xs font-medium">
+                    YouTube
+                  </div>
+                </>
+              ) : (
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                  title="Webinar IA Para Todos"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              )}
             </div>
           </div>
         </div>
