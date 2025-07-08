@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
-import { useState, useEffect } from "react";
 
 const Solution = () => {
   const scrollToOffer = () => {
@@ -18,23 +17,8 @@ const Solution = () => {
     "/lovable-uploads/8ed7a803-fa2b-4bb1-be1f-3651936a6689.png"
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  // Auto-advance images every 1.5 seconds with scroll animation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      
-      // After a short delay, change the image
-      setTimeout(() => {
-        setCurrentImageIndex(prev => (prev + 1) % principleImages.length);
-        setIsTransitioning(false);
-      }, 300);
-    }, 1500);
-
-    return () => clearInterval(interval);
-  }, []);
+  // Duplicate images for seamless infinite scroll
+  const infiniteImages = [...principleImages, ...principleImages];
 
   const pppMethod = [
     {
@@ -127,38 +111,33 @@ const Solution = () => {
               
               return (
                 <div key={index} className="flex flex-col items-center">
-                  {/* Image Carousel Container - only for Princípios */}
+                  {/* Infinite Scroll Container - only for Princípios */}
                   {item.hasCarousel ? (
                     <div className="w-full max-w-sm mb-8">
-                      <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden">
+                      <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-lg overflow-hidden relative">
                         <div className="w-full h-full relative">
-                          {/* Scrolling container with vertical animation */}
-                          <div 
-                            className="absolute inset-0 transition-transform duration-700 ease-in-out"
-                            style={{ 
-                              transform: `translateY(${isTransitioning ? '-10px' : '0px'})`,
-                              opacity: isTransitioning ? 0.3 : 1
-                            }}
-                          >
-                            <div className="w-full h-full p-4 flex items-center justify-center">
-                              <img 
-                                src={principleImages[currentImageIndex]}
-                                alt={`${item.title} - Slide ${currentImageIndex + 1}`}
-                                className="w-full h-full object-contain transition-all duration-700 ease-in-out"
-                              />
+                          {/* Infinite scroll container */}
+                          <div className="absolute inset-0 overflow-hidden">
+                            <div 
+                              className="flex flex-col animate-infinite-scroll"
+                              style={{
+                                animation: 'infiniteScroll 15s linear infinite',
+                              }}
+                            >
+                              {infiniteImages.map((image, imgIndex) => (
+                                <div 
+                                  key={imgIndex} 
+                                  className="w-full flex-shrink-0 p-4 flex items-center justify-center"
+                                  style={{ height: '100%' }}
+                                >
+                                  <img 
+                                    src={image}
+                                    alt={`${item.title} - Slide ${(imgIndex % principleImages.length) + 1}`}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                              ))}
                             </div>
-                          </div>
-                          
-                          {/* Dots indicator */}
-                          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-                            {principleImages.map((_, dotIndex) => (
-                              <div
-                                key={dotIndex}
-                                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                  dotIndex === currentImageIndex ? 'bg-ai-blue scale-125' : 'bg-white/50'
-                                }`}
-                              />
-                            ))}
                           </div>
                         </div>
                       </div>
@@ -245,6 +224,17 @@ const Solution = () => {
           </Button>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes infiniteScroll {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+      `}</style>
     </section>
   );
 };
