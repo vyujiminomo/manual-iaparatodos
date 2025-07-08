@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,21 +9,10 @@ const Author = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const achievements = [
-    "Pesquisador independente de IA",
-    "Trainee da ADAPTA.org - maior ecossistema de IA da América Latina",
-    "3 temporadas do torneio de robótica FLL",
-    "Criador do projeto Mangue Mania - +400 alunos educados",
-    "Selecionado por Max Peters como futuro jovem aprendiz",
-    "Palestrante sobre IA",
-    "Criador de conteúdo no LinkedIn (+7 mil impressões)",
-    "Músico no Movimento Escalada"
-  ];
-
   return (
     <section id="autor" className="py-16 bg-ai-black text-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="mb-4">
               <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
@@ -30,59 +20,66 @@ const Author = () => {
               </span>
             </div>
             <h2 className="font-bebas text-4xl md:text-6xl mb-6">
-              MAS PORQUE OUVIR UM MOLEQUE DE 14 ANOS FALANDO SOBRE IA?
+              QUEM É VITOR YUJI?
             </h2>
           </div>
 
-          <Card className="bg-gray-900 border-gray-800 p-8">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="aspect-square bg-gray-800 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600 mb-6">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👨‍💻</div>
-                    <p className="font-poppins text-gray-400 font-medium">
-                      Aqui vai o Mockup [Foto do Vitor]
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-bebas text-3xl text-ai-blue mb-6">VITOR YUJI</h3>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h3 className="font-bebas text-3xl text-ai-blue mb-6">VITOR YUJI</h3>
+              
+              <div className="space-y-6 text-gray-300 font-poppins leading-relaxed">
+                <p>
+                  <strong className="text-white">Pesquisador independente de IA</strong> e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.
+                </p>
                 
-                <div className="space-y-4 mb-6">
-                  {achievements.map((achievement, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-ai-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="font-poppins text-gray-300">{achievement}</span>
-                    </div>
-                  ))}
-                </div>
+                <p>
+                  Aos 12 anos, iniciou sua jornada na robótica pelo torneio First Lego League (FLL), participando de três temporadas e criando o <strong className="text-ai-blue">Mangue Mania</strong>, uma das principais metodologias ativas sobre manguezais de Sergipe, com mais de 400 alunos impactados.
+                </p>
+                
+                <p>
+                  Em 2024, foi selecionado por <strong className="text-white">Max Peters</strong>, referência nacional em IA generativa e mentor de centenas de empresários, para ser jovem aprendiz da ADAPTA aos 16 anos.
+                </p>
+                
+                <p>
+                  É também músico no <strong className="text-white">Movimento Escalada</strong> e o único adolescente brasileiro com mais de 8 mil impressões no LinkedIn.
+                </p>
+                
+                <p>
+                  Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de <strong className="text-ai-blue">tornar a IA acessível para todos</strong>.
+                </p>
+              </div>
 
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40">
-                    16 anos
-                  </Badge>
-                  <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40">
-                    ADAPTA.org
-                  </Badge>
-                  <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40">
-                    Max Peters
-                  </Badge>
-                  <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40">
-                    +400 alunos
-                  </Badge>
+              <div className="flex flex-wrap gap-3 pt-4">
+                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
+                  16 anos
+                </Badge>
+                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
+                  ADAPTA.org
+                </Badge>
+                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
+                  Max Peters
+                </Badge>
+                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
+                  +400 alunos
+                </Badge>
+                <Badge variant="secondary" className="bg-ai-blue/20 text-ai-blue border-ai-blue/40 font-poppins">
+                  +8k LinkedIn
+                </Badge>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="aspect-square w-full max-w-md bg-gray-800 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-600">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">👨‍💻</div>
+                  <p className="font-poppins text-gray-400 font-medium">
+                    Aqui vai a foto do Vitor
+                  </p>
                 </div>
               </div>
             </div>
-            
-            <div className="mt-8 bg-ai-blue/10 border border-ai-blue/20 rounded-lg p-6">
-              <p className="font-poppins text-gray-300 text-center italic">
-                "Foi selecionado por Max Peters - referência nacional em IA generativa para negócios - 
-                como futuro jovem aprendiz da ADAPTA aos 16 anos."
-              </p>
-            </div>
-          </Card>
+          </div>
 
           <div className="text-center mt-12">
             <Button 
