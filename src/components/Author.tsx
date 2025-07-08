@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -23,11 +22,11 @@ const Author = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h3 className="font-bebas text-4xl md:text-5xl text-white mb-6">QUEM É VITOR YUJI?</h3>
+              <h3 className="font-bebas text-4xl md:text-5xl text-white mb-6">Quem é Vitor Yuji?</h3>
               
               <div className="space-y-6 text-gray-300 font-poppins leading-relaxed">
                 <p>
-                  <strong className="text-white">Pesquisador independente de IA</strong> e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.
+                  <strong className="text-white">Pesquisador independente de IA</strong> <strong className="text-white">e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.</strong>
                 </p>
                 
                 <p>
