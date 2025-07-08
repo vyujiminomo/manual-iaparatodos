@@ -71,37 +71,148 @@ const Solution = () => {
       icon: BookOpen,
       title: "Diga não ao 'tecniquês'",
       description: "Linguagem simples que qualquer profissional entende",
-      color: "bg-blue-500"
+      color: "bg-blue-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-4 flex flex-col justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+            <div className="h-2 bg-blue-300 rounded w-20"></div>
+          </div>
+          <div className="space-y-2">
+            <div className="h-2 bg-blue-200 rounded w-full"></div>
+            <div className="h-2 bg-blue-200 rounded w-3/4"></div>
+            <div className="h-2 bg-blue-200 rounded w-1/2"></div>
+          </div>
+        </div>
+      )
     },
     {
       icon: Users,
       title: "Biblioteca de Prompts por profissão",
       description: "Médicos, professores, advogados…",
-      color: "bg-green-500"
+      color: "bg-green-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-green-50 to-green-100 rounded-lg border border-green-200 p-3">
+          <div className="grid grid-cols-2 gap-2 h-full">
+            <div className="bg-green-200 rounded p-2 flex flex-col justify-center items-center">
+              <div className="w-6 h-6 bg-green-400 rounded-full mb-1"></div>
+              <div className="h-1 bg-green-300 rounded w-8"></div>
+            </div>
+            <div className="bg-green-200 rounded p-2 flex flex-col justify-center items-center">
+              <div className="w-6 h-6 bg-green-400 rounded-full mb-1"></div>
+              <div className="h-1 bg-green-300 rounded w-8"></div>
+            </div>
+            <div className="bg-green-200 rounded p-2 flex flex-col justify-center items-center">
+              <div className="w-6 h-6 bg-green-400 rounded-full mb-1"></div>
+              <div className="h-1 bg-green-300 rounded w-8"></div>
+            </div>
+            <div className="bg-green-200 rounded p-2 flex flex-col justify-center items-center">
+              <div className="w-6 h-6 bg-green-400 rounded-full mb-1"></div>
+              <div className="h-1 bg-green-300 rounded w-8"></div>
+            </div>
+          </div>
+        </div>
+      )
     },
     {
       icon: Clock,
       title: "Você aprende usando",
       description: "Cada capítulo termina com exercícios de 5 minutos",
-      color: "bg-purple-500"
+      color: "bg-purple-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg border border-purple-200 p-4 flex items-center justify-center">
+          <div className="relative">
+            <div className="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-purple-400 rounded-full relative">
+                <div className="absolute top-1 left-1/2 w-0.5 h-3 bg-purple-600 transform -translate-x-1/2"></div>
+                <div className="absolute top-1/2 left-1 w-2 h-0.5 bg-purple-600 transform -translate-y-1/2"></div>
+              </div>
+            </div>
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xs text-purple-600 font-medium">5 min</div>
+          </div>
+        </div>
+      )
     },
     {
       icon: Shield,
       title: "Atemporalidade",
       description: "Os princípios funcionam hoje e continuarão funcionando em décadas",
-      color: "bg-orange-500"
+      color: "bg-orange-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg border border-orange-200 p-4">
+          <div className="flex items-center justify-between h-full">
+            <div className="flex flex-col space-y-3">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                <div className="h-1.5 bg-orange-300 rounded w-12"></div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                <div className="h-1.5 bg-orange-300 rounded w-16"></div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                <div className="h-1.5 bg-orange-300 rounded w-10"></div>
+              </div>
+            </div>
+            <div className="w-8 h-8 bg-orange-300 rounded-full flex items-center justify-center">
+              <Shield size={16} className="text-orange-600" />
+            </div>
+          </div>
+        </div>
+      )
     },
     {
       icon: Zap,
       title: "Parceria de Pensamento",
       description: "Em vez de te deixar dependente da IA, ele te ensina a pensar melhor com ela",
-      color: "bg-pink-500"
+      color: "bg-pink-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg border border-pink-200 p-4">
+          <div className="flex items-center justify-center h-full space-x-3">
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 bg-pink-300 rounded-full mb-2"></div>
+              <div className="h-1 bg-pink-300 rounded w-8"></div>
+            </div>
+            <div className="flex flex-col items-center space-y-1">
+              <Zap size={16} className="text-pink-500" />
+              <div className="w-1 h-4 bg-pink-400 rounded"></div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 bg-pink-300 rounded-full mb-2 flex items-center justify-center">
+                <Brain size={12} className="text-pink-600" />
+              </div>
+              <div className="h-1 bg-pink-300 rounded w-8"></div>
+            </div>
+          </div>
+        </div>
+      )
     },
     {
       icon: Filter,
       title: "Filtrado e Testado",
       description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
-      color: "bg-teal-500"
+      color: "bg-teal-500",
+      placeholder: (
+        <div className="w-full h-32 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg border border-teal-200 p-4">
+          <div className="h-full flex flex-col justify-between">
+            <div className="flex justify-between items-start">
+              <div className="space-y-1">
+                <div className="h-2 bg-teal-400 rounded w-6"></div>
+                <div className="h-2 bg-teal-300 rounded w-8"></div>
+                <div className="h-2 bg-teal-200 rounded w-4"></div>
+              </div>
+              <Filter size={16} className="text-teal-500" />
+            </div>
+            <div className="flex space-x-1">
+              <div className="w-3 h-6 bg-teal-400 rounded"></div>
+              <div className="w-3 h-4 bg-teal-300 rounded"></div>
+              <div className="w-3 h-8 bg-teal-500 rounded"></div>
+              <div className="w-3 h-3 bg-teal-200 rounded"></div>
+            </div>
+          </div>
+        </div>
+      )
     }
   ];
 
@@ -214,6 +325,11 @@ const Solution = () => {
               return (
                 <Card key={index} className="p-6 border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
                   <div className="flex flex-col items-center text-center">
+                    {/* Visual Placeholder */}
+                    <div className="w-full mb-6">
+                      {feature.placeholder}
+                    </div>
+                    
                     <div className={`${feature.color} p-4 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300`}>
                       <IconComponent className="text-white" size={32} />
                     </div>
