@@ -86,7 +86,7 @@ const Solution = () => {
       title: "Você aprende usando",
       description: "Cada capítulo termina com exercícios de 5 minutos",
       color: "bg-purple-500",
-      image: "/lovable-uploads/98cff980-1875-4949-9dcd-6541063246ff.png"
+      image: "/lovable-uploads/c2b00846-c61d-406a-ba4a-dc1ccf8e0e61.png"
     },
     {
       icon: Shield,
@@ -228,7 +228,7 @@ const Solution = () => {
                       <img 
                         src={feature.image}
                         alt={feature.title}
-                        className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
