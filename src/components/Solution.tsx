@@ -73,9 +73,9 @@ const Solution = () => {
       description: "Linguagem simples que qualquer profissional entende",
       color: "bg-blue-500",
       placeholder: (
-        <div className="w-full h-32 bg-white rounded-lg border border-blue-200 overflow-hidden">
+        <div className="w-full aspect-square bg-white rounded-lg border border-blue-200 overflow-hidden">
           <img 
-            src="/lovable-uploads/545fc929-943d-4d7b-918f-836e0b0fd7fe.png"
+            src="/lovable-uploads/56b87aa1-b0d1-4356-b7f2-06ad26542fd1.png"
             alt="Exemplo de linguagem simples"
             className="w-full h-full object-cover"
           />
@@ -329,7 +329,8 @@ const Solution = () => {
                     <div className={`${feature.color} p-4 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300`}>
                       <IconComponent className="text-white" size={32} />
                     </div>
-                    <h4 className="font-poppins font-bold text-ai-black mb-3 text-lg">
+                    <h4 className="font-poppins font-bold text-ai-black mb-3 text-lg flex items-center gap-2">
+                      {index === 0 && <div className="w-2 h-2 bg-ai-blue rounded-full flex-shrink-0"></div>}
                       {feature.title}
                     </h4>
                     <p className="font-poppins text-gray-700 text-sm leading-relaxed">
