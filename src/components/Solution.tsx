@@ -1,6 +1,3 @@
-
-
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -110,7 +107,7 @@ const Solution = () => {
       title: "Filtrado e Testado",
       description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
       color: "bg-teal-500",
-      image: null
+      image: "/lovable-uploads/3d1a5878-5224-4fbf-8cb0-f178df27b79e.png"
     }
   ];
 
@@ -330,5 +327,3 @@ const Solution = () => {
 };
 
 export default Solution;
-
-
