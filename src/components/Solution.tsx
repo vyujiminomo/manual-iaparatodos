@@ -1,5 +1,6 @@
 
 
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -222,6 +223,12 @@ const Solution = () => {
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {uniqueFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
+              const getImageAlignment = () => {
+                if (feature.title === "Atemporalidade") return "object-left";
+                if (feature.title === "Parceria de Pensamento" || feature.title === "Você aprende usando") return "object-center";
+                return "object-left";
+              };
+              
               return (
                 <Card key={index} className="overflow-hidden border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
                   {/* Image Section */}
@@ -230,7 +237,7 @@ const Solution = () => {
                       <img 
                         src={feature.image}
                         alt={feature.title}
-                        className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-300"
+                        className={`w-full h-full object-cover ${getImageAlignment()} group-hover:scale-105 transition-transform duration-300`}
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
@@ -323,4 +330,5 @@ const Solution = () => {
 };
 
 export default Solution;
+
 
