@@ -30,14 +30,14 @@ const Webinar = () => {
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
-                  "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso"
+                  "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso. Gratidão."
                 </p>
                 <div>
                   <p className="font-poppins font-bold text-ai-black text-sm">
-                    Osvaldo Araki
+                    Marta Romilda
                   </p>
                   <p className="font-poppins text-gray-500 text-xs">
-                    Médico Endoscopista
+                    Administradora
                   </p>
                 </div>
               </div>
