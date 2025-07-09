@@ -38,6 +38,11 @@ const TestimonialsCarousel = () => {
     <section id="depoimentos" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+          <div className="mb-4">
+            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+              DEPOIMENTOS
+            </span>
+          </div>
           <h2 className="font-bebas text-4xl md:text-5xl text-ai-black mb-8">
             Veja o que dizem os alunos do método
           </h2>
