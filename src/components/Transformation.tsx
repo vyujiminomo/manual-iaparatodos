@@ -1,5 +1,4 @@
 
-
 import { Card } from "@/components/ui/card";
 import { X, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,28 +6,28 @@ import { Button } from "@/components/ui/button";
 const Transformation = () => {
   const transformations = [
     {
-      before: "Perdido com tanta informação sobre IA",
-      after: "Ter um mapa claro e prático pra usar IA na rotina"
+      before: "Perdido Com Tanta Informação Sobre IA",
+      after: "Ter Um Mapa Claro E Prático Pra Usar IA Na Rotina"
     },
     {
-      before: "Frustrado porque tentou usar o ChatGPT e não funcionou",
-      after: "Escrever prompts melhores e ter respostas realmente úteis"
+      before: "Frustrado Porque Tentou Usar O ChatGPT E Não Funcionou",
+      after: "Escrever Prompts Melhores E Ter Respostas Realmente Úteis"
     },
     {
-      before: "Ultrapassado no trabalho",
-      after: "se destacar com entregas melhores e mais rápidas"
+      before: "Ultrapassado No Trabalho",
+      after: "Se Destacar Com Entregas Melhores E Mais Rápidas"
     },
     {
-      before: "Sem entender nada de tecnologia",
-      after: "usar IA com uma linguagem simples e leve"
+      before: "Sem Entender Nada De Tecnologia",
+      after: "Usar IA Com Uma Linguagem Simples E Leve"
     },
     {
-      before: "Sem saber por onde começar",
-      after: "aprender passo a passo, mesmo do zero"
+      before: "Sem Saber Por Onde Começar",
+      after: "Aprender Passo A Passo, Mesmo Do Zero"
     },
     {
-      before: "Sem tempo ou dinheiro pra cursos longos",
-      after: "aprender IA em minutos, por um preço muito mais acessível"
+      before: "Sem Tempo Ou Dinheiro Pra Cursos Longos",
+      after: "Aprender IA Em Minutos, Por Um Preço Muito Mais Acessível"
     }
   ];
 
