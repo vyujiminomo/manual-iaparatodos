@@ -26,11 +26,11 @@ const TestimonialsCarousel = () => {
     },
     {
       name: "Carla Carvalho",
-      text: "Perdi o medo de utilizar IA e já está sendo ferramenta indispensável no meu dia a dia"
+      text: "Gostei das Personas no  prompt. Perdi o medo de utilizar IA e já está sendo ferramenta indispensável no meu dia a dia"
     },
     {
       name: "Bruno Correira",
-      text: "Melhorou muito minha produtividade no trabalho"
+      text: "Não tente se substituir, tente ser 10x melhor. O conceito acima melhorou muito na minha produtividade no trabalho."
     }
   ];
 
