@@ -1,4 +1,5 @@
 
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -229,7 +230,7 @@ const Solution = () => {
                       <img 
                         src={feature.image}
                         alt={feature.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-300"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
@@ -322,3 +323,4 @@ const Solution = () => {
 };
 
 export default Solution;
+
