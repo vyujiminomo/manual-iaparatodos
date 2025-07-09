@@ -107,7 +107,7 @@ const Solution = () => {
       title: "Filtrado e Testado",
       description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
       color: "bg-teal-500",
-      image: "/lovable-uploads/3d1a5878-5224-4fbf-8cb0-f178df27b79e.png"
+      image: "/lovable-uploads/36ba6e53-bb23-4e54-b711-54d9337a15b3.png"
     }
   ];
 
