@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -15,7 +14,7 @@ const Offer = () => {
   ];
 
   return (
-    <section id="oferta" className="py-16 bg-gray-50">
+    <section id="oferta" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
