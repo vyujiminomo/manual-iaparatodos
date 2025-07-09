@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -101,7 +100,7 @@ const Solution = () => {
       title: "Parceria de Pensamento",
       description: "Em vez de te deixar dependente da IA, ele te ensina a pensar melhor com ela",
       color: "bg-pink-500",
-      image: null
+      image: "/lovable-uploads/eaa9a025-99f4-4631-b973-2091968f65bc.png"
     },
     {
       icon: Filter,
