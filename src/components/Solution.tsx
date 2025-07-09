@@ -80,7 +80,7 @@ const Solution = () => {
     {
       icon: Users,
       title: "Biblioteca de Prompts por profissão",
-      description: "Médicos, professores, advogados…",
+      description: "Médicos, professores, advogados, engenheiros, marketing...",
       color: "bg-green-500",
       image: "/lovable-uploads/6cd183cf-0aea-4ffb-910b-4e8da9885ab0.png"
     },
