@@ -35,7 +35,7 @@ const TestimonialsCarousel = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-16 bg-gray-50">
+    <section id="depoimentos" className="py-16 bg-ai-blue/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="mb-4">
@@ -59,10 +59,10 @@ const TestimonialsCarousel = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2">
-                  <Card className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm h-full">
+                  <Card className="bg-white p-8 rounded-xl border-0 shadow-md h-full">
                     <div className="flex flex-col h-full">
                       <div className="text-4xl text-ai-blue mb-4 font-serif">"</div>
-                      <p className="font-poppins text-gray-700 mb-6 text-base leading-relaxed flex-grow">
+                      <p className="font-poppins text-gray-600 mb-6 text-base leading-relaxed flex-grow">
                         {testimonial.text}
                       </p>
                       <div className="mt-auto">
@@ -75,8 +75,8 @@ const TestimonialsCarousel = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            <CarouselPrevious className="left-4 bg-white border-ai-blue/20 hover:bg-ai-blue hover:text-white" />
+            <CarouselNext className="right-4 bg-white border-ai-blue/20 hover:bg-ai-blue hover:text-white" />
           </Carousel>
         </div>
 
