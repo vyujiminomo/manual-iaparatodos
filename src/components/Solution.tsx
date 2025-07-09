@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -198,9 +199,9 @@ const Solution = () => {
           <div className="text-center mt-8">
             <div className="bg-gradient-to-r from-ai-blue/10 to-purple-500/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
               <p className="font-poppins text-lg text-gray-700 leading-relaxed">
-                <strong>Diferente de outros recursos</strong> que ficam obsoletos em meses, este manual foi projetado para ser 
-                <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: os fundamentos que 
-                funcionarão hoje, amanhã e nos próximos anos.
+                Diferente de outros recursos que ficam obsoletos em meses, este manual foi projetado para ter 
+                <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: <strong className="text-ai-blue">os fundamentos que 
+                funcionarão hoje, amanhã e nos próximos anos.</strong>
               </p>
             </div>
           </div>
