@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 const Offer = () => {
   const benefits = [
-    "PDF Completo com 127 Páginas",
+    "PDF Completo com 58 Páginas",
     "12 Exercícios Transformadores", 
     "Glossário Relâmpago",
     "Mapa do ChatGPT",
