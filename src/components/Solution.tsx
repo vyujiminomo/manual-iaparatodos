@@ -94,7 +94,7 @@ const Solution = () => {
     {
       icon: Shield,
       title: "Atemporalidade",
-      description: "Os princípios funcionam hoje e continuarão funcionando em décadas",
+      description: "Os princípios funcionarão sempre e em qualquer ferramenta",
       color: "bg-orange-500",
       image: "/lovable-uploads/dadc7835-77ea-4576-9bfe-2b06114ecdc0.png"
     },
