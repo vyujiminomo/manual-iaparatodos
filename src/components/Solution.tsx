@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -93,7 +94,7 @@ const Solution = () => {
       title: "Atemporalidade",
       description: "Os princípios funcionam hoje e continuarão funcionando em décadas",
       color: "bg-orange-500",
-      image: null
+      image: "/lovable-uploads/dadc7835-77ea-4576-9bfe-2b06114ecdc0.png"
     },
     {
       icon: Zap,
