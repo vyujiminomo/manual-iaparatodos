@@ -6,28 +6,28 @@ import { Button } from "@/components/ui/button";
 const Transformation = () => {
   const transformations = [
     {
-      before: "Perdido Com Tanta Informação Sobre IA",
-      after: "Ter Um Mapa Claro E Prático Pra Usar IA Na Rotina"
+      before: "Perdido com tanta informação sobre IA",
+      after: "Ter um mapa claro e prático pra usar IA na rotina"
     },
     {
-      before: "Frustrado Porque Tentou Usar O ChatGPT E Não Funcionou",
-      after: "Escrever Prompts Melhores E Ter Respostas Realmente Úteis"
+      before: "Frustrado porque tentou usar o ChatGPT e não funcionou",
+      after: "Escrever prompts melhores e ter respostas realmente úteis"
     },
     {
-      before: "Ultrapassado No Trabalho",
-      after: "Se Destacar Com Entregas Melhores E Mais Rápidas"
+      before: "Ultrapassado no trabalho",
+      after: "Se destacar com entregas melhores e mais rápidas"
     },
     {
-      before: "Sem Entender Nada De Tecnologia",
-      after: "Usar IA Com Uma Linguagem Simples E Leve"
+      before: "Sem entender nada de tecnologia",
+      after: "Usar IA com uma linguagem simples e leve"
     },
     {
-      before: "Sem Saber Por Onde Começar",
-      after: "Aprender Passo A Passo, Mesmo Do Zero"
+      before: "Sem saber por onde começar",
+      after: "Aprender passo a passo, mesmo do zero"
     },
     {
-      before: "Sem Tempo Ou Dinheiro Pra Cursos Longos",
-      after: "Aprender IA Em Minutos, Por Um Preço Muito Mais Acessível"
+      before: "Sem tempo ou dinheiro pra cursos longos",
+      after: "Aprender IA em minutos, por um preço muito mais acessível"
     }
   ];
 
