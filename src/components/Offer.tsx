@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -77,12 +78,6 @@ const Offer = () => {
               <p className="text-center font-poppins text-sm text-gray-600">
                 Pague uma vez e tenha acesso <strong>para sempre</strong>
               </p>
-
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-6">
-                <p className="font-poppins text-sm text-green-700 text-center">
-                  🔒 Compra 100% segura | Pagamento processado pela Hotmart
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -85,15 +85,11 @@ const Content = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-xl"></div>
-              <Card className="relative bg-white p-8 shadow-2xl border-0 rounded-2xl transform hover:scale-105 transition-transform duration-300">
-                <div className="text-center mb-6">
-                  <h4 className="font-bebas text-3xl text-ai-black mb-2">MANUAL COMPLETO</h4>
-                  <p className="font-poppins text-ai-blue font-semibold">Índice do Conteúdo</p>
-                </div>
+              <Card className="relative bg-white shadow-2xl border-0 rounded-2xl transform hover:scale-105 transition-transform duration-300 overflow-hidden">
                 <img 
                   src="/lovable-uploads/d5acbe2b-ff36-4c23-b566-681c78b81721.png" 
                   alt="Índice do Manual IA Para Todos"
-                  className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </Card>
             </div>
