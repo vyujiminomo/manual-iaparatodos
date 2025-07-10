@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 
 const Testimonials = () => {
@@ -9,7 +8,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-ai-blue/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="mb-4">
@@ -23,7 +22,7 @@ const Testimonials = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-md">
             <p className="font-poppins text-gray-600 mb-6 text-sm leading-relaxed">
               "O ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk."
             </p>
@@ -34,7 +33,7 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-md">
             <p className="font-poppins text-gray-600 mb-6 text-sm leading-relaxed">
               "Achava que IA era coisa complicada, mas ele explicou de uma forma simples e leve. Depois de ler, comecei a usar a IA nos meus estudos e projetos. É um conteúdo que serve pra todo mundo, independente da idade ou do quanto já entende de tecnologia."
             </p>
@@ -45,7 +44,7 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-md">
             <p className="font-poppins text-gray-600 mb-6 text-sm leading-relaxed">
               "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar."
             </p>
