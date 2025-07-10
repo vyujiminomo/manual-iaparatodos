@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { Mail, Linkedin } from "lucide-react";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,8 +9,43 @@ const Home = () => {
     navigate('/manual');
   };
 
+  const goToContact = () => {
+    navigate('/contato');
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 py-4">
+        <div className="container mx-auto px-4">
+          <nav className="flex items-center space-x-8">
+            <a href="/" className="text-black font-medium hover:text-gray-600">
+              Home
+            </a>
+            <button 
+              onClick={goToManual}
+              className="text-black font-medium hover:text-gray-600"
+            >
+              Manual IA Para Todos
+            </button>
+            <a 
+              href="https://linkedin.com/in/vitor-yuji-minomo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-black font-medium hover:text-gray-600"
+            >
+              LinkedIn
+            </a>
+            <button 
+              onClick={goToContact}
+              className="text-black font-medium hover:text-gray-600"
+            >
+              Contato
+            </button>
+          </nav>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section id="home" className="pt-16 pb-16 bg-white">
         <div className="container mx-auto px-4">
@@ -20,6 +54,17 @@ const Home = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
                 Oi, eu sou Vitor Yuji
               </h1>
+              
+              {/* Mobile image - shows only on small screens */}
+              <div className="flex justify-center lg:hidden">
+                <div className="w-96 h-96 rounded-full overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/0a0b2111-6a29-4abd-87fa-d4698c7c621c.png" 
+                    alt="Vitor Yuji"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
               
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
@@ -45,21 +90,22 @@ const Home = () => {
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3"
                 >
-                  Acessar Manual de IA
+                  Manual IA Para Todos
                 </Button>
                 <Button 
                   variant="outline"
                   size="lg"
                   className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold px-8 py-3"
-                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={goToContact}
                 >
                   Entre em Contato
                 </Button>
               </div>
             </div>
 
-            <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
+            {/* Desktop image - shows only on large screens */}
+            <div className="hidden lg:flex justify-center">
+              <div className="w-96 h-96 rounded-full overflow-hidden shadow-lg">
                 <img 
                   src="/lovable-uploads/0a0b2111-6a29-4abd-87fa-d4698c7c621c.png" 
                   alt="Vitor Yuji"
@@ -120,7 +166,7 @@ const Home = () => {
                 <strong>Gosto</strong> de treinar capoeira, praticar animal flow, tocar violão e cavaquinho, correr e criar conteúdo pra o Linkedin (sou o único adolescente nessa rede social com +8mil impressões).
               </p>
               
-              <p className="italic">
+              <p>
                 Desde então, tenho criado projetos interessantes sem deixar de lado meu propósito e a natureza (escrevi esse artigo de cócoras no mato, sério.)
               </p>
             </div>
@@ -133,7 +179,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">
-              Pronto para aprender IA?
+              Acesse o Manual IA Para Todos
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -159,7 +205,7 @@ const Home = () => {
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-12 py-4 text-lg"
                 >
-                  Acessar Manual de IA
+                  Acessar o Manual
                 </Button>
               </div>
             </div>
@@ -174,7 +220,10 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
               Quer conversar?
             </h2>
-            <p className="text-2xl text-gray-700 font-semibold">
+            <p className="text-xl text-gray-700 mb-2">
+              Me mande um e-mail para:
+            </p>
+            <p className="text-2xl text-gray-700 font-bold">
               contato.vitoryujiminomo@gmail.com
             </p>
           </div>
