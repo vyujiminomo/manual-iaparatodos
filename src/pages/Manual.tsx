@@ -14,7 +14,7 @@ import Author from "@/components/Author";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Manual = () => {
   return (
     <div className="min-h-screen bg-white font-poppins">
       <Header />
@@ -35,4 +35,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Manual;
