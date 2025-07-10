@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -236,7 +237,7 @@ const Solution = () => {
                 return "object-left";
               };
 
-              // Add button after "Você aprende usando" card (index 2)
+              // Add button after "Você aprende usando" card (index 2) - ONLY FOR MOBILE
               return (
                 <div key={index} className="flex flex-col">
                   <Card className="overflow-hidden border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
@@ -273,9 +274,9 @@ const Solution = () => {
                     </div>
                   </Card>
 
-                  {/* Add button after "Você aprende usando" card */}
+                  {/* Add button after "Você aprende usando" card - ONLY FOR MOBILE */}
                   {index === 2 && (
-                    <div className="text-center mt-8 mb-8">
+                    <div className="text-center mt-8 mb-8 md:hidden">
                       <Button 
                         onClick={scrollToOffer}
                         size="lg" 
