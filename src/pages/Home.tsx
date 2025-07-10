@@ -57,7 +57,7 @@ const Home = () => {
               
               {/* Mobile image - shows only on small screens */}
               <div className="flex justify-center lg:hidden">
-                <div className="w-96 h-96 rounded-full overflow-hidden shadow-lg">
+                <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
                   <img 
                     src="/lovable-uploads/0a0b2111-6a29-4abd-87fa-d4698c7c621c.png" 
                     alt="Vitor Yuji"
@@ -105,7 +105,7 @@ const Home = () => {
 
             {/* Desktop image - shows only on large screens */}
             <div className="hidden lg:flex justify-center">
-              <div className="w-96 h-96 rounded-full overflow-hidden shadow-lg">
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
                 <img 
                   src="/lovable-uploads/0a0b2111-6a29-4abd-87fa-d4698c7c621c.png" 
                   alt="Vitor Yuji"

@@ -27,6 +27,32 @@ const Header = () => {
     }
   };
 
+  // Renderizar cabeçalho diferente para a página do manual
+  if (location.pathname === '/manual') {
+    return (
+      <header className="fixed top-0 w-full bg-ai-black border-b border-gray-200 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <nav className="flex items-center justify-between">
+            <div 
+              className="font-bebas text-2xl cursor-pointer"
+              onClick={handleLogoClick}
+            >
+              <span className="text-ai-blue">IA</span>
+              <span className="text-white"> PARA TODOS</span>
+            </div>
+            <Button 
+              onClick={handleButtonClick}
+              className="bg-ai-blue hover:bg-ai-blue/90 text-white font-semibold px-6 py-2 rounded-md"
+            >
+              Quero Acessar
+            </Button>
+          </nav>
+        </div>
+      </header>
+    );
+  }
+
+  // Cabeçalho para outras páginas
   return (
     <header className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
       <div className="container mx-auto px-4 py-4">
