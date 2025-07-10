@@ -14,6 +14,10 @@ const Offer = () => {
     "Guia de Ferramentas"
   ];
 
+  const handlePurchaseClick = () => {
+    window.open("https://pay.hotmart.com/X99318289U", "_blank");
+  };
+
   return (
     <section id="oferta" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -69,6 +73,7 @@ const Offer = () => {
               </div>
 
               <Button 
+                onClick={handlePurchaseClick}
                 size="lg" 
                 className="w-full bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-bold text-xl py-6 mb-4"
               >
