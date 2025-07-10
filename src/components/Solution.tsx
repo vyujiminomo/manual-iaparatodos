@@ -196,7 +196,7 @@ const Solution = () => {
           </div>
 
           <div className="text-center mt-8">
-            <div className="bg-ai-blue/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-ai-blue/10 to-purple-500/10 border border-ai-blue/20 rounded-xl p-8 max-w-4xl mx-auto">
               <p className="font-poppins text-lg text-gray-700 leading-relaxed">
                 Diferente de outros recursos que ficam obsoletos em meses, este manual foi projetado para ter 
                 <strong className="text-ai-blue"> valor duradouro</strong>, focando no que realmente importa: <strong className="text-gray-800">os fundamentos que 
