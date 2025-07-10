@@ -51,7 +51,47 @@ const Transformation = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="p-8 md:p-12 bg-white shadow-lg border-0">
+          {/* Mobile: Separate cards */}
+          <div className="md:hidden space-y-8">
+            <Card className="p-8 bg-white shadow-lg border-0">
+              <h3 className="font-poppins text-xl font-semibold text-gray-700 mb-6 text-center">
+                Se sente...
+              </h3>
+              <div className="space-y-4">
+                {transformations.map((transformation, index) => (
+                  <div key={`before-${index}`} className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-1">
+                      <X className="text-red-500" size={20} />
+                    </div>
+                    <p className="font-poppins text-gray-700">
+                      {transformation.before}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="p-8 bg-white shadow-lg border-0">
+              <h3 className="font-poppins text-xl font-semibold text-gray-700 mb-6 text-center">
+                Mas quer...
+              </h3>
+              <div className="space-y-4">
+                {transformations.map((transformation, index) => (
+                  <div key={`after-${index}`} className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-1">
+                      <Check className="text-green-500" size={20} />
+                    </div>
+                    <p className="font-poppins text-gray-700">
+                      {transformation.after}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
+          {/* Tablet and Desktop: Side by side */}
+          <Card className="p-8 md:p-12 bg-white shadow-lg border-0 hidden md:block">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Se sente... */}
               <div>

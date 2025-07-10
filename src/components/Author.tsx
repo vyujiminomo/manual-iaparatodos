@@ -25,6 +25,24 @@ const Author = () => {
             <div className="space-y-6">
               <h3 className="font-bebas text-4xl md:text-5xl text-white mb-6">Quem é Vitor Yuji?</h3>
               
+              {/* Mobile/Tablet: Show images after title, before text */}
+              <div className="space-y-6 lg:hidden">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/95d51d12-d306-4a6e-a135-f37e2521d0d1.png" 
+                    alt="Vitor Yuji palestrando para jovens" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/dbb1e59a-4b1a-4bb5-8659-005a775bc0a8.png" 
+                    alt="Vitor Yuji com sua equipe e alunos" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+              
               <div className="space-y-6 text-gray-300 font-poppins leading-relaxed">
                 <p>
                   Pesquisador independente de IA e trainee da Adapta.org, a maior empresa de IA generativa para negócios da América Latina, já palestrou para públicos de diferentes idades.
@@ -58,7 +76,8 @@ const Author = () => {
               </div>
             </div>
 
-            <div className="space-y-6">
+            {/* Desktop: Show images on the right side */}
+            <div className="space-y-6 hidden lg:block">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/lovable-uploads/95d51d12-d306-4a6e-a135-f37e2521d0d1.png" 

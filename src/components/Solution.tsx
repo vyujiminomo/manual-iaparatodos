@@ -235,41 +235,57 @@ const Solution = () => {
                 if (feature.title === "Parceria de Pensamento" || feature.title === "Você aprende usando") return "object-center";
                 return "object-left";
               };
-              
+
+              // Add button after "Você aprende usando" card (index 2)
               return (
-                <Card key={index} className="overflow-hidden border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
-                  {/* Image Section */}
-                  <div className="aspect-square bg-gray-50 flex items-center justify-center overflow-hidden">
-                    {feature.image ? (
-                      <img 
-                        src={feature.image}
-                        alt={feature.title}
-                        className={`w-full h-full object-cover ${getImageAlignment()} group-hover:scale-105 transition-transform duration-300`}
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                        <div className={`${feature.color} p-8 rounded-full`}>
-                          <IconComponent className="text-white" size={48} />
+                <div key={index} className="flex flex-col">
+                  <Card className="overflow-hidden border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
+                    {/* Image Section */}
+                    <div className="aspect-square bg-gray-50 flex items-center justify-center overflow-hidden">
+                      {feature.image ? (
+                        <img 
+                          src={feature.image}
+                          alt={feature.title}
+                          className={`w-full h-full object-cover ${getImageAlignment()} group-hover:scale-105 transition-transform duration-300`}
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                          <div className={`${feature.color} p-8 rounded-full`}>
+                            <IconComponent className="text-white" size={48} />
+                          </div>
                         </div>
-                      </div>
-                    )}
-                  </div>
-                  
-                  {/* Content Section */}
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className={`${feature.color} p-2 rounded-full flex-shrink-0`}>
-                        <IconComponent className="text-white" size={16} />
-                      </div>
-                      <h4 className="font-poppins font-bold text-ai-black text-lg leading-tight">
-                        {feature.title}
-                      </h4>
+                      )}
                     </div>
-                    <p className="font-poppins text-gray-700 leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </Card>
+                    
+                    {/* Content Section */}
+                    <div className="p-6">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className={`${feature.color} p-2 rounded-full flex-shrink-0`}>
+                          <IconComponent className="text-white" size={16} />
+                        </div>
+                        <h4 className="font-poppins font-bold text-ai-black text-lg leading-tight">
+                          {feature.title}
+                        </h4>
+                      </div>
+                      <p className="font-poppins text-gray-700 leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </Card>
+
+                  {/* Add button after "Você aprende usando" card */}
+                  {index === 2 && (
+                    <div className="text-center mt-8 mb-8">
+                      <Button 
+                        onClick={scrollToOffer}
+                        size="lg" 
+                        className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
+                      >
+                        Quero Acessar
+                      </Button>
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
