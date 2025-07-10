@@ -1,6 +1,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +12,8 @@ import {
 } from "@/components/ui/carousel";
 
 const TestimonialsCarousel = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
   const scrollToOffer = () => {
     const element = document.getElementById('oferta');
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -34,6 +38,14 @@ const TestimonialsCarousel = () => {
     }
   ];
 
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
   return (
     <section id="depoimentos" className="py-16 bg-ai-blue/5">
       <div className="container mx-auto px-4">
@@ -48,7 +60,55 @@ const TestimonialsCarousel = () => {
           </h2>
         </div>
         
-        <div className="max-w-6xl mx-auto">
+        {/* Mobile and Tablet Layout - Single testimonial with carousel */}
+        <div className="lg:hidden">
+          <div className="relative mb-8">
+            <Card className="bg-white p-8 rounded-xl border-0 shadow-md mx-4">
+              <div className="flex flex-col h-full">
+                <div className="text-4xl text-ai-blue mb-4 font-serif">"</div>
+                <p className="font-poppins text-gray-600 mb-6 text-base leading-relaxed flex-grow">
+                  {testimonials[currentTestimonial].text}
+                </p>
+                <div className="mt-auto">
+                  <p className="font-poppins font-bold text-ai-black text-base">
+                    – {testimonials[currentTestimonial].name}
+                  </p>
+                </div>
+              </div>
+            </Card>
+            
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevTestimonial}
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-ai-blue/20 hover:bg-ai-blue hover:text-white"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            
+            <button
+              onClick={nextTestimonial}
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-ai-blue/20 hover:bg-ai-blue hover:text-white"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+
+            {/* Dots indicator */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`w-2 h-2 rounded-full ${
+                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Original carousel */}
+        <div className="hidden lg:block max-w-6xl mx-auto">
           <Carousel
             opts={{
               align: "start",
