@@ -1,3 +1,5 @@
+
+
 import { Button } from "@/components/ui/button";
 
 const Webinar = () => {
@@ -9,7 +11,7 @@ const Webinar = () => {
   };
 
   return (
-    <section className="py-16 bg-ai-blue/5">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
@@ -26,7 +28,7 @@ const Webinar = () => {
             </p>
             
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-md">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
                   "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso. Gratidão."
                 </p>
@@ -40,7 +42,7 @@ const Webinar = () => {
                 </div>
               </div>
               
-              <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-md">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
                   "A aula foi bem didática e sensação q tive foi q a IA não ficará tão distante de nós depois de sua apresentação."
                 </p>

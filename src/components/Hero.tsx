@@ -1,3 +1,5 @@
+
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -8,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="pt-24 pb-16 bg-white">
+    <section className="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
@@ -35,7 +37,7 @@ const Hero = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="bg-ai-blue/5 p-4 rounded-lg border border-ai-blue/20">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <p className="font-poppins text-gray-700 text-sm italic mb-2">
                   "Você conseguiu desbloquear a minha dificuldade com a tecnologia."
                 </p>
@@ -44,7 +46,7 @@ const Hero = () => {
                 </p>
               </div>
               
-              <div className="bg-ai-blue/5 p-4 rounded-lg border border-ai-blue/20">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <p className="font-poppins text-gray-700 text-sm italic mb-2">
                   "Eu interagia timidamente, agora mudou 80%"
                 </p>
