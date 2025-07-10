@@ -1,10 +1,34 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const Hero = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  
+  const testimonials = [
+    {
+      text: "Você conseguiu desbloquear a minha dificuldade com a tecnologia.",
+      name: "Osvaldo Araki"
+    },
+    {
+      text: "Eu interagia timidamente, agora mudou 80%",
+      name: "Isabella Salim"
+    }
+  ];
+
   const scrollToOffer = () => {
     const element = document.getElementById('oferta');
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
@@ -14,19 +38,12 @@ const Hero = () => {
         <div className="lg:hidden">
           {/* Manual Cover */}
           <div className="relative mb-8 flex justify-center">
-            <div className="relative">
-              <div className="aspect-[3/4] w-64 rounded-xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/lovable-uploads/12555f99-96ca-47c9-bc24-74a2677becf4.png" 
-                  alt="Capa do Manual Inteligência Artificial Para Todos"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              <div className="absolute -top-3 -right-3 bg-ai-blue text-white p-3 rounded-lg shadow-lg">
-                <p className="font-poppins text-sm font-semibold">+100 alunos</p>
-                <p className="font-poppins text-xs">já transformados</p>
-              </div>
+            <div className="aspect-[3/4] w-64 rounded-xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/12555f99-96ca-47c9-bc24-74a2677becf4.png" 
+                alt="Capa do Manual Inteligência Artificial Para Todos"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -51,24 +68,43 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Testimonials */}
-          <div className="space-y-4">
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+          {/* Testimonials Carousel */}
+          <div className="relative">
+            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 mx-4">
               <p className="font-poppins text-gray-700 text-sm italic mb-2">
-                "Você conseguiu desbloquear a minha dificuldade com a tecnologia."
+                "{testimonials[currentTestimonial].text}"
               </p>
               <p className="font-poppins font-semibold text-ai-black text-sm">
-                Osvaldo Araki
+                {testimonials[currentTestimonial].name}
               </p>
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-              <p className="font-poppins text-gray-700 text-sm italic mb-2">
-                "Eu interagia timidamente, agora mudou 80%"
-              </p>
-              <p className="font-poppins font-semibold text-ai-black text-sm">
-                Isabella Salim
-              </p>
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevTestimonial}
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+            >
+              <ChevronLeft className="w-4 h-4 text-ai-blue" />
+            </button>
+            
+            <button
+              onClick={nextTestimonial}
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+            >
+              <ChevronRight className="w-4 h-4 text-ai-blue" />
+            </button>
+
+            {/* Dots indicator */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`w-2 h-2 rounded-full ${
+                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
