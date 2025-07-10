@@ -4,6 +4,11 @@ import { X, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Transformation = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('oferta');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const transformations = [
     {
       before: "Perdido com tanta informação sobre IA",
@@ -90,7 +95,10 @@ const Transformation = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-3 text-lg rounded-lg">
+          <Button 
+            onClick={scrollToOffer}
+            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-3 text-lg rounded-lg"
+          >
             Quero Acessar
           </Button>
         </div>
