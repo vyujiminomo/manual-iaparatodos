@@ -13,8 +13,15 @@ import Guarantee from "@/components/Guarantee";
 import Author from "@/components/Author";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Manual = () => {
+  useDynamicMeta({
+    title: "Manual IA Para Todos - Aprenda IA de Forma Simples e Prática",
+    description: "Guia de IAs para Táticas de IA - aprenda IA com exercícios e linguagem simples",
+    image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
+  });
+
   return (
     <div className="min-h-screen bg-white font-poppins">
       <Header />
