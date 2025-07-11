@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -73,7 +72,7 @@ const Solution = () => {
       title: "Diga não ao 'tecniquês'",
       description: "Linguagem simples que qualquer profissional entende",
       color: "bg-blue-500",
-      image: "/lovable-uploads/d910c3c6-b122-45d0-9eca-5573475bfb9f.png"
+      image: "/lovable-uploads/bdae49bb-2b4d-426b-ba2d-200cbd0833de.png"
     },
     {
       icon: Users,
@@ -94,7 +93,7 @@ const Solution = () => {
       title: "Atemporalidade",
       description: "Os princípios funcionarão sempre e em qualquer ferramenta",
       color: "bg-orange-500",
-      image: "/lovable-uploads/dadc7835-77ea-4576-9bfe-2b06114ecdc0.png"
+      image: "/lovable-uploads/a5582990-cb62-41bf-813d-2648636bcf22.png"
     },
     {
       icon: Zap,
@@ -231,11 +230,6 @@ const Solution = () => {
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {uniqueFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
-              const getImageAlignment = () => {
-                if (feature.title === "Atemporalidade") return "object-left";
-                if (feature.title === "Parceria de Pensamento" || feature.title === "Você aprende usando") return "object-center";
-                return "object-left";
-              };
 
               // Add button after "Você aprende usando" card (index 2) - ONLY FOR MOBILE
               return (
@@ -247,7 +241,7 @@ const Solution = () => {
                         <img 
                           src={feature.image}
                           alt={feature.title}
-                          className={`w-full h-full object-cover ${getImageAlignment()} group-hover:scale-105 transition-transform duration-300`}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">

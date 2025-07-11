@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -165,11 +164,6 @@ const Hero = () => {
                 />
               </div>
             </Card>
-            
-            <div className="absolute -top-4 -right-4 bg-ai-blue text-white p-4 rounded-lg shadow-lg">
-              <p className="font-poppins text-sm font-semibold">+100 alunos</p>
-              <p className="font-poppins text-xs">já transformados</p>
-            </div>
           </div>
         </div>
       </div>
