@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -72,7 +73,7 @@ const Solution = () => {
       title: "Diga não ao 'tecniquês'",
       description: "Linguagem simples que qualquer profissional entende",
       color: "bg-blue-500",
-      image: "/lovable-uploads/bdae49bb-2b4d-426b-ba2d-200cbd0833de.png"
+      image: "/lovable-uploads/401fc603-a6a2-4c69-91d8-8c60dac03068.png"
     },
     {
       icon: Users,
@@ -93,7 +94,7 @@ const Solution = () => {
       title: "Atemporalidade",
       description: "Os princípios funcionarão sempre e em qualquer ferramenta",
       color: "bg-orange-500",
-      image: "/lovable-uploads/a5582990-cb62-41bf-813d-2648636bcf22.png"
+      image: "/lovable-uploads/3ea804ae-cb54-48dc-b715-59f9f81cd7ea.png"
     },
     {
       icon: Zap,
@@ -241,7 +242,7 @@ const Solution = () => {
                         <img 
                           src={feature.image}
                           alt={feature.title}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
