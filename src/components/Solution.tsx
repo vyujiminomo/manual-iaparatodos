@@ -60,7 +60,7 @@ const Solution = () => {
     {
       icon: Lightbulb,
       title: "Pensamento",
-      description: "Fique mais inteligente transformando a IA numa parceira de pensamento",
+      description: "Fique mais inteligente e confiante aprendendo a julgar e validar as respostas da IA",
       hasCarousel: true,
       images: infiniteThinkingImages,
       animationDuration: "18s"
@@ -73,14 +73,16 @@ const Solution = () => {
       title: "Diga não ao 'tecniquês'",
       description: "Linguagem simples que qualquer profissional entende",
       color: "bg-blue-500",
-      image: "/lovable-uploads/401fc603-a6a2-4c69-91d8-8c60dac03068.png"
+      image: "/lovable-uploads/401fc603-a6a2-4c69-91d8-8c60dac03068.png",
+      alignLeft: true
     },
     {
       icon: Users,
       title: "Biblioteca de Prompts por profissão",
       description: "Médicos, professores, advogados, engenheiros, marketing...",
       color: "bg-green-500",
-      image: "/lovable-uploads/6cd183cf-0aea-4ffb-910b-4e8da9885ab0.png"
+      image: "/lovable-uploads/6cd183cf-0aea-4ffb-910b-4e8da9885ab0.png",
+      alignLeft: true
     },
     {
       icon: Clock,
@@ -108,7 +110,8 @@ const Solution = () => {
       title: "Filtrado e Testado",
       description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
       color: "bg-teal-500",
-      image: "/lovable-uploads/36ba6e53-bb23-4e54-b711-54d9337a15b3.png"
+      image: "/lovable-uploads/36ba6e53-bb23-4e54-b711-54d9337a15b3.png",
+      alignLeft: true
     }
   ];
 
@@ -232,7 +235,6 @@ const Solution = () => {
             {uniqueFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
 
-              // Add button after "Você aprende usando" card (index 2) - ONLY FOR MOBILE
               return (
                 <div key={index} className="flex flex-col">
                   <Card className="overflow-hidden border-2 border-gray-100 hover:border-ai-blue transition-all duration-300 hover:shadow-lg bg-white group">
@@ -242,7 +244,7 @@ const Solution = () => {
                         <img 
                           src={feature.image}
                           alt={feature.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          className={`w-full h-full ${feature.alignLeft ? 'object-cover object-left' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
                         />
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">

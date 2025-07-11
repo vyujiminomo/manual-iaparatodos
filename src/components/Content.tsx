@@ -17,7 +17,8 @@ const Content = () => {
         "Princípios atemporais da IA Generativa",
         "Mapa visual da Interface do ChatGPT",
         "Glossário Relâmpago: entenda os termos de IA em minutos",
-        "A Equação da IA Generativa"
+        "A Equação da IA Generativa",
+        "O 'Filtro da Verdade' pra evitar respostas erradas"
       ]
     },
     {
