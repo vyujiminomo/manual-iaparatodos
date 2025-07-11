@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { trackPurchaseIntent } from "@/hooks/useAnalytics";
 
 const Offer = () => {
   const benefits = [
@@ -15,6 +16,7 @@ const Offer = () => {
   ];
 
   const handlePurchaseClick = () => {
+    trackPurchaseIntent('offer_section');
     window.open("https://pay.hotmart.com/X99318289U", "_blank");
   };
 

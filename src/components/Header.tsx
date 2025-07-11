@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useLocation, useNavigate } from "react-router-dom";
+import { trackEvent } from "@/hooks/useAnalytics";
 
 const Header = () => {
   const location = useLocation();
@@ -12,6 +13,7 @@ const Header = () => {
   };
 
   const handleLogoClick = () => {
+    trackEvent('logo_click', { section: 'header' });
     if (location.pathname === '/manual') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
@@ -21,8 +23,10 @@ const Header = () => {
 
   const handleButtonClick = () => {
     if (location.pathname === '/manual') {
+      trackEvent('cta_click', { button: 'quero_acessar', section: 'header' });
       scrollToSection('oferta');
     } else {
+      trackEvent('navigation_click', { button: 'ver_manual', section: 'header' });
       navigate('/manual');
     }
   };
