@@ -52,7 +52,7 @@ const Hero = () => {
               TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
             </h1>
             <p className="font-poppins text-lg text-gray-700 mb-6 leading-relaxed">
-              Guia de IAs, exercícios práticos e linguagem simples - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
+              Guia de IAs para Táticas de IA - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ const Hero = () => {
               TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
             </h1>
             <p className="font-poppins text-xl text-gray-700 mb-6 leading-relaxed">
-              Guia de IAs, exercícios práticos e linguagem simples - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
+              Guia de IAs para Táticas de IA - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
