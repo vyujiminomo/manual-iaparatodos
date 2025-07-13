@@ -13,11 +13,6 @@ const UpsellPnp = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white font-poppins">
       <div className="container mx-auto px-4 py-24 max-w-4xl">
         <div className="text-center mb-16">
-          <div className="mb-6">
-            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-              OFERTA EXCLUSIVA
-            </span>
-          </div>
           <h1 className="font-bebas text-4xl md:text-6xl font-bold text-ai-black mb-8 leading-tight">
             PARABÉNS PELA DECISÃO DE ENTRAR NO MANUAL IA PARA TODOS!
           </h1>
@@ -113,16 +108,30 @@ const UpsellPnp = () => {
         </Card>
         
         <div className="text-center">
-          <Button 
-            size="lg" 
-            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-bold py-6 px-12 text-xl rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse"
-          >
-            ADICIONAR PROMPT NA PRÁTICA
-          </Button>
+          {/* HOTMART - Sales Funnel Widget */}
+          <div id="hotmart-sales-funnel"></div>
           
-          <p className="font-poppins text-sm text-gray-500 mt-4">
-            Oferta exclusiva • Disponível apenas nesta página
-          </p>
+          <script 
+            src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
+            async
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                if (typeof checkoutElements !== 'undefined') {
+                  checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+                } else {
+                  // Wait for script to load
+                  window.addEventListener('load', function() {
+                    if (typeof checkoutElements !== 'undefined') {
+                      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+                    }
+                  });
+                }
+              `
+            }}
+          ></script>
+          {/* HOTMART - Sales Funnel Widget */}
         </div>
       </div>
     </div>
