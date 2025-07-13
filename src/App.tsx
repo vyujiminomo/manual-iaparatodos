@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Manual from "./pages/Manual";
 import UpsellPnp from "./pages/UpsellPnp";
 import Contact from "./pages/Contact";
+import Obrigado from "./pages/Obrigado";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const AppContent = () => {
       <Route path="/manual" element={<Manual />} />
       <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
+      <Route path="/obrigado" element={<Obrigado />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
