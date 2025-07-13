@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { usePageTracking } from "@/hooks/useAnalytics";
 import Home from "./pages/Home";
 import Manual from "./pages/Manual";
+import UpsellPnp from "./pages/UpsellPnp";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -19,6 +20,7 @@ const AppContent = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/manual" element={<Manual />} />
+      <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
