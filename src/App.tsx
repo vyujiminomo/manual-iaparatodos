@@ -10,6 +10,7 @@ import Manual from "./pages/Manual";
 import UpsellPnp from "./pages/UpsellPnp";
 import Contact from "./pages/Contact";
 import Obrigado from "./pages/Obrigado";
+import VitorYuji from "./pages/VitorYuji";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const AppContent = () => {
       <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/obrigado" element={<Obrigado />} />
+      <Route path="/vitor-yuji" element={<VitorYuji />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
