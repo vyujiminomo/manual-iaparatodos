@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
+import { useEffect } from "react";
 
 const UpsellPnp = () => {
   useDynamicMeta({
@@ -8,6 +10,31 @@ const UpsellPnp = () => {
     description: "Veja um expert em IA usando prompts na prática com 10 vídeos curtos exclusivos.",
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });
+
+  useEffect(() => {
+    // Carregar o script da Hotmart
+    const script = document.createElement('script');
+    script.src = 'https://checkout.hotmart.com/lib/hotmart-checkout-elements.js';
+    script.async = true;
+    
+    script.onload = () => {
+      // Aguardar um pouco para garantir que a biblioteca foi carregada
+      setTimeout(() => {
+        if (window.checkoutElements) {
+          window.checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        }
+      }, 100);
+    };
+    
+    document.head.appendChild(script);
+    
+    return () => {
+      // Cleanup - remover o script quando o componente for desmontado
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white font-poppins">
@@ -110,32 +137,18 @@ const UpsellPnp = () => {
         <div className="text-center">
           {/* HOTMART - Sales Funnel Widget */}
           <div id="hotmart-sales-funnel"></div>
-          
-          <script 
-            src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
-            async
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                if (typeof checkoutElements !== 'undefined') {
-                  checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-                } else {
-                  // Wait for script to load
-                  window.addEventListener('load', function() {
-                    if (typeof checkoutElements !== 'undefined') {
-                      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-                    }
-                  });
-                }
-              `
-            }}
-          ></script>
           {/* HOTMART - Sales Funnel Widget */}
         </div>
       </div>
     </div>
   );
 };
+
+// Declarar o tipo para window.checkoutElements
+declare global {
+  interface Window {
+    checkoutElements: any;
+  }
+}
 
 export default UpsellPnp;
