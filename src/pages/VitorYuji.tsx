@@ -11,33 +11,36 @@ const VitorYuji = () => {
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });
 
-  const achievements = [
+  const trajectoryEvents = [
     {
       year: "2022",
       age: "12 anos",
-      title: "Primeira temporada da FLL",
-      description: "Criou sensor para evitar curtos-circuitos em áreas periféricas",
+      description: "Foi convidado para sua primeira temporada da FLL. Com sua equipe, criou um sensor para evitar curtos-circuitos em áreas periféricas.",
       icon: Zap
     },
     {
       year: "2023",
-      age: "13 anos", 
-      title: "Projeto de Acessibilidade",
-      description: "Criou impressões 3D das obras de Beto Pezão para cegos \"enxergarem com as mãos\". Aprovado pelo Museu da Gente Sergipana",
+      description: "Criou impressões 3D das obras do artista sergipano Beto Pezão, para que cegos possam \"enxergar com as mãos\". O projeto foi aprovado pelo Museu da Gente Sergipana, o mais importante do estado.",
       icon: Heart
     },
     {
       year: "2024",
-      age: "14 anos",
-      title: "Adapta Summit & Mangue Mania",
-      description: "Chamou atenção do CEO da ADAPTA e criou metodologia que impactou 400+ alunos. Finalista entre 1500 projetos no Prêmio Criativos da Escola",
+      description: "Participou do Adapta Summit, o maior evento de IA generativa para negócios da América Latina. Por ser um moleque entre vários empresários, chamou a atenção do Max Peters, CEO da ADAPTA, que o escolheu pra ser jovem aprendiz do time quando completar 16 anos.",
+      icon: Users
+    },
+    {
+      year: "2024",
+      description: "Criou o Mangue Mania, uma das principais metodologias ativas de manguezais do Nordeste. Em apenas 4 meses, impactou mais de 400 alunos e foi finalista entre 1500 projetos no Prêmio Criativos da Escola, além de vencer o prêmio de Excelência em Engenharia na FLL.",
+      icon: Award
+    },
+    {
+      year: "2024",
+      description: "Palestrou sobre IA em diversos eventos - incluindo no Instituto JCPM e na escola de empregabilidade SuperClass",
       icon: Users
     },
     {
       year: "2025",
-      age: "14 anos",
-      title: "Manual IA Para Todos",
-      description: "Lançou o guia mais prático de IA Generativa para profissionais ocupados no Brasil",
+      description: "Criou o Webinar IA Para Todos, ajudando 20 iniciantes a usarem IA em seus trabalhos. Também lançou o Manual IA Para Todos, o guia mais prático de IA Generativa para profissionais ocupados no Brasil.",
       icon: Award
     }
   ];
@@ -79,17 +82,9 @@ const VitorYuji = () => {
                     SOBRE MIM
                   </span>
                 </div>
-                <h1 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6 leading-tight">
-                  QUEM É VITOR YUJI?
+                <h1 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
+                  QUEM É VITOR YUJI, 14 ANOS E CRIADOR DO MANUAL IA PARA TODOS, O GUIA Nº1 DE IA GENERATIVA DO BRASIL?
                 </h1>
-                <div className="font-poppins text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-                  <strong className="text-ai-black">14 anos</strong> e criador do{" "}
-                  <strong className="text-ai-blue">Manual IA Para Todos</strong>, o guia nº1 de IA Generativa no Brasil
-                </div>
-                <p className="font-poppins text-gray-600 text-lg leading-relaxed mb-8">
-                  Onde ensino você a usar IA em 5 minutos por dia. Co-fundador do Mangue Mania, 
-                  trainee da Adapta.org e participante de 3 temporadas da First Lego League.
-                </p>
               </div>
               
               <div className="flex justify-center">
@@ -109,42 +104,58 @@ const VitorYuji = () => {
         </div>
       </section>
 
-      {/* Achievements Timeline */}
+      {/* Introduction */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6 text-lg leading-relaxed font-poppins text-gray-700">
+              <p>
+                <strong className="text-ai-black">Vitor Yuji tem apenas 14 anos</strong> e é criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
+              </p>
+              <p>
+                Também é <strong className="text-ai-black">co-fundador do Mangue Mania</strong> (uma das maiores metodologias de educação ambiental de Sergipe)
+              </p>
+              <p>
+                <strong className="text-ai-black">Trainee da Adapta.org</strong> (a maior startup de IA Generativa da América Latina).
+              </p>
+              <p>
+                E participou de <strong className="text-ai-black">3 temporadas da First Lego League</strong> (um dos maiores torneios de robótica do mundo).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trajetória */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <div className="mb-4">
-                <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-                  TRAJETÓRIA
-                </span>
-              </div>
               <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
-                JORNADA DE IMPACTO
+                TRAJETÓRIA
               </h2>
             </div>
 
             <div className="space-y-8">
-              {achievements.map((achievement, index) => (
-                <Card key={index} className="p-8 border-l-4 border-ai-blue bg-gradient-to-r from-gray-50 to-white">
+              {trajectoryEvents.map((event, index) => (
+                <Card key={index} className="p-8 border-l-4 border-ai-blue bg-white">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0">
                       <div className="w-16 h-16 bg-ai-blue rounded-full flex items-center justify-center">
-                        <achievement.icon className="w-8 h-8 text-white" />
+                        <event.icon className="w-8 h-8 text-white" />
                       </div>
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-4 mb-3">
-                        <span className="font-bebas text-2xl text-ai-blue">{achievement.year}</span>
-                        <span className="font-poppins text-sm bg-ai-blue text-white px-3 py-1 rounded-full">
-                          {achievement.age}
-                        </span>
+                        <span className="font-bebas text-2xl text-ai-blue">{event.year}</span>
+                        {event.age && (
+                          <span className="font-poppins text-sm bg-ai-blue text-white px-3 py-1 rounded-full">
+                            {event.age}
+                          </span>
+                        )}
                       </div>
-                      <h3 className="font-bebas text-xl text-ai-black mb-2">
-                        {achievement.title}
-                      </h3>
                       <p className="font-poppins text-gray-700 leading-relaxed">
-                        {achievement.description}
+                        {event.description}
                       </p>
                     </div>
                   </div>
@@ -155,39 +166,30 @@ const VitorYuji = () => {
         </div>
       </section>
 
-      {/* Curiosities */}
-      <section className="py-16 bg-gray-50">
+      {/* Curiosidades */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="mb-4">
-                <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-                  CURIOSIDADES
-                </span>
-              </div>
               <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
-                MUITO ALÉM DA IA
+                CURIOSIDADES
               </h2>
-              <p className="font-poppins text-gray-600 text-lg">
-                Também já foi judoca, editor de vídeos, designer, líder de turma e youtuber gamer.
+            </div>
+
+            <div className="space-y-6 text-lg leading-relaxed font-poppins text-gray-700 mb-8">
+              <p>
+                Também já foi <strong className="text-ai-black">judoca, editor de vídeos, designer, líder de turma e youtuber gamer</strong>.
+              </p>
+              <p>
+                Gosta de treinar <strong className="text-ai-black">capoeira, praticar animal flow, correr, tocar violão e cavaquinho</strong>.
+              </p>
+              <p>
+                Além disso, é <strong className="text-ai-black">músico no Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Brasil.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-              {curiosities.map((curiosity, index) => (
-                <div 
-                  key={index}
-                  className="bg-white rounded-lg p-4 text-center border border-gray-200 hover:border-ai-blue transition-colors"
-                >
-                  <span className="font-poppins text-sm text-gray-700">
-                    {curiosity}
-                  </span>
-                </div>
-              ))}
-            </div>
-
             <div className="text-center">
-              <p className="font-poppins text-lg text-ai-black font-semibold bg-gradient-to-r from-ai-blue/10 to-purple-500/10 p-6 rounded-lg">
+              <p className="font-poppins text-xl text-ai-black font-semibold bg-gradient-to-r from-ai-blue/10 to-purple-500/10 p-6 rounded-lg">
                 Sua maior motivação é criar projetos interessantes para entregar valor para o máximo de pessoas.
               </p>
             </div>
@@ -195,8 +197,8 @@ const VitorYuji = () => {
         </div>
       </section>
 
-      {/* Call to Actions */}
-      <section className="py-16 bg-white">
+      {/* Acompanhe o Vitor Yuji */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -240,7 +242,7 @@ const VitorYuji = () => {
                   </h3>
                   <p className="font-poppins text-gray-600 mb-6">
                     Vitor Yuji compartilha suas histórias profissionais e pessoais mais interessantes no LinkedIn, 
-                    sendo o adolescente mais jovem com alto engajamento na rede social:
+                    sua 'vitrine profissional', sendo o adolescente mais jovem com alto engajamento na rede social:
                   </p>
                 </div>
                 <Button 
