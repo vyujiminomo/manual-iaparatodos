@@ -8,7 +8,7 @@ const VitorYuji = () => {
   useDynamicMeta({
     title: "Vitor Yuji - Criador do Manual IA Para Todos",
     description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa no Brasil.",
-    image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
+    image: "/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png"
   });
 
   return (
@@ -21,9 +21,9 @@ const VitorYuji = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/profile-photo.png" 
+                src="/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png" 
                 alt="Vitor Yuji"
-                className="w-64 h-64 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30"
+                className="w-64 h-64 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30 object-cover"
               />
             </div>
             
@@ -34,7 +34,7 @@ const VitorYuji = () => {
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm">
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  <strong className="text-ai-blue">Vitor Yuji tem apenas 14 anos</strong> e é criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
+                  Vitor Yuji tem apenas 14 anos e é <strong className="text-ai-blue">criador do Manual IA Para Todos</strong>, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
                 </p>
                 <p>
                   Também é <strong className="text-ai-blue">co-fundador do Mangue Mania</strong> (uma das maiores metodologias de educação ambiental de Sergipe)
