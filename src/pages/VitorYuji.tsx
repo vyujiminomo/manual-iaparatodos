@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
@@ -28,7 +27,7 @@ const VitorYuji = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-              Quem é <span className="text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa do Brasil?
+              Quem é <span className="text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
             </h1>
 
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm">
