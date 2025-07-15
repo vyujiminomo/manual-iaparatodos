@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Brain, Target, Lightbulb, BookOpen, Users, Clock, Shield, Zap, Filter } from "lucide-react";
@@ -108,7 +107,7 @@ const Solution = () => {
     {
       icon: Filter,
       title: "Filtrado e Testado",
-      description: "Filtrei tudo de melhor que existe sobre IAs nesse manual",
+      description: "Filtrei tudo de melhor que existe sobre IAs nesse manual - para você não perder tempo procurando",
       color: "bg-teal-500",
       image: "/lovable-uploads/36ba6e53-bb23-4e54-b711-54d9337a15b3.png",
       alignLeft: true
