@@ -17,7 +17,7 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Manual = () => {
   useDynamicMeta({
-    title: "Manual IA Para Todos - Aprenda IA sem precisar entender de tecnologia",
+    title: "Manual IA Para Todos - O guia mais prático",
     description: "Guia prático de IA pra aumentar sua produtividade. Táticas de IA, exercícios, linguagem simples e mais. Saia na frente com IA Para Todos.",
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });

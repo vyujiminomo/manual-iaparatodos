@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const UpsellPnp = () => {
   useDynamicMeta({
-    title: "Prompt na Prática - Manual IA Para Todos",
+    title: "Prompt na Prática",
     description: "Veja um expert em IA usando prompts na prática com 10 vídeos curtos exclusivos.",
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });

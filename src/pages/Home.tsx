@@ -1,8 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
+import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Home = () => {
+  useDynamicMeta({
+    title: "Vitor Yuji - IA Para Todos",
+    description: "Vitor Yuji - IA Para Todos. Aprenda IA de forma simples e prática.",
+    image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
+  });
+
   const handleManualClick = () => {
     window.location.href = '/manual';
   };

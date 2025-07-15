@@ -1,10 +1,11 @@
+
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Card } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const Obrigado = () => {
   useDynamicMeta({
-    title: "Compra Realizada - IA Para Todos",
+    title: "Obrigado pela compra!",
     description: "Compra realizada com sucesso! Obrigado pela confiança no IA Para Todos.",
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });
