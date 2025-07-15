@@ -153,7 +153,10 @@ const VitorYuji = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold text-ai-blue mb-2">IA PARA TODOS</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                <span className="text-ai-blue">IA</span>
+                <span className="text-white"> PARA TODOS</span>
+              </h3>
               <p className="text-gray-300 text-sm max-w-md">
                 Enquanto o mundo complica, a gente simplifica.
               </p>
@@ -168,11 +171,25 @@ const VitorYuji = () => {
                 </div>
                 <div className="flex items-center justify-end space-x-2">
                   <Instagram className="w-4 h-4 text-ai-blue" />
-                  <span className="text-sm text-gray-300">@vitoryujim</span>
+                  <a 
+                    href="https://www.instagram.com/vitoryujim" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
+                  >
+                    @vitoryujim
+                  </a>
                 </div>
                 <div className="flex items-center justify-end space-x-2">
                   <Linkedin className="w-4 h-4 text-ai-blue" />
-                  <span className="text-sm text-gray-300">Vitor Yuji Minomo</span>
+                  <a 
+                    href="https://linkedin.com/in/vitor-yuji-minomo" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
+                  >
+                    Vitor Yuji Minomo
+                  </a>
                 </div>
               </div>
             </div>
