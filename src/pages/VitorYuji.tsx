@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Award, Users, Zap, Heart, Linkedin, ExternalLink } from "lucide-react";
+import { Award, Users, Zap, Heart, Linkedin, ExternalLink, Mail, Instagram } from "lucide-react";
 
 const VitorYuji = () => {
   useDynamicMeta({
@@ -147,6 +147,38 @@ const VitorYuji = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer - IA PARA TODOS */}
+      <footer className="bg-black border-t border-gray-800 py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div className="mb-6 md:mb-0">
+              <h3 className="text-2xl font-bold text-ai-blue mb-2">IA PARA TODOS</h3>
+              <p className="text-gray-300 text-sm max-w-md">
+                Enquanto o mundo complica, a gente simplifica.
+              </p>
+            </div>
+            
+            <div className="text-right">
+              <h4 className="text-lg font-semibold text-white mb-4">Contato</h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-end space-x-2">
+                  <Mail className="w-4 h-4 text-ai-blue" />
+                  <span className="text-sm text-gray-300">contato.vitoryujiminomo@gmail.com</span>
+                </div>
+                <div className="flex items-center justify-end space-x-2">
+                  <Instagram className="w-4 h-4 text-ai-blue" />
+                  <span className="text-sm text-gray-300">@vitoryujim</span>
+                </div>
+                <div className="flex items-center justify-end space-x-2">
+                  <Linkedin className="w-4 h-4 text-ai-blue" />
+                  <span className="text-sm text-gray-300">Vitor Yuji Minomo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
