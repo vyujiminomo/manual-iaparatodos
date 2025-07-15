@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Award, Users, Zap, Heart, Linkedin, ExternalLink } from "lucide-react";
-import Header from "@/components/Header";
 
 const VitorYuji = () => {
   useDynamicMeta({
@@ -93,13 +92,13 @@ const VitorYuji = () => {
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  Também já foi judoca, editor de vídeos, designer, líder de turma e youtuber gamer.
+                  Também já foi <strong className="text-ai-blue">judoca, editor de vídeos, designer, líder de turma e youtuber gamer</strong>.
                 </p>
                 <p>
-                  Gosta de treinar capoeira, praticar animal flow, correr, tocar violão e cavaquinho.
+                  Gosta de treinar <strong className="text-ai-blue">capoeira, praticar animal flow, correr, tocar violão e cavaquinho</strong>.
                 </p>
                 <p>
-                  Além disso, é músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Brasil.
+                  Além disso, é <strong className="text-ai-blue">músico no Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Brasil.
                 </p>
                 <p className="text-xl font-semibold text-ai-blue text-center mt-8">
                   Sua maior motivação é criar projetos interessantes para entregar valor para o máximo de pessoas.
@@ -124,7 +123,7 @@ const VitorYuji = () => {
                   Toque no botão abaixo para conhecer mais sobre o Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil:
                 </p>
                 <Button 
-                  onClick={() => window.open("https://vitoryuji.com/manual", "_blank")}
+                  onClick={() => window.open("/manual", "_blank")}
                   className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   CLIQUE AQUI →
@@ -148,11 +147,6 @@ const VitorYuji = () => {
           </div>
         </div>
       </section>
-
-      {/* IA Para Todos Header */}
-      <div className="fixed bottom-0 w-full bg-ai-black border-t border-gray-200 z-50">
-        <Header />
-      </div>
     </div>
   );
 };
