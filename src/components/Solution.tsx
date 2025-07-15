@@ -107,7 +107,7 @@ const Solution = () => {
     {
       icon: Filter,
       title: "Filtrado e Testado",
-      description: "Filtrei tudo de melhor que existe sobre IAs nesse manual - para você não perder tempo procurando",
+      description: "Filtrei tudo de melhor que existe sobre IA - para você não perder tempo procurando",
       color: "bg-teal-500",
       image: "/lovable-uploads/36ba6e53-bb23-4e54-b711-54d9337a15b3.png",
       alignLeft: true
