@@ -1,233 +1,201 @@
 
-import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Mail, Instagram, Linkedin, ArrowRight, BookOpen, Users, Target } from 'lucide-react';
+import { Card } from "@/components/ui/card";
+import { useDynamicMeta } from "@/hooks/useDynamicMeta";
+import { Award, Users, Zap, Heart, Linkedin, ExternalLink, Mail, Instagram } from "lucide-react";
 
 const VitorYuji = () => {
   useDynamicMeta({
-    title: "Vitor Yuji Minomo - Especialista em IA e Automação",
-    description: "Desenvolvedor especializado em Inteligência Artificial, automação e tecnologia. Criador do Manual IA Para Todos.",
-    image: "/lovable-uploads/profile-photo.png",
+    title: "Vitor Yuji - Criador do Manual IA Para Todos",
+    description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa no Brasil.",
+    image: "/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png"
   });
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
+    <div className="min-h-screen bg-black text-white font-poppins">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section className="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+        
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png" 
+                alt="Vitor Yuji"
+                className="w-64 h-64 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30 object-cover"
+              />
+            </div>
+            
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+              Quem é <span className="text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa do Brasil?
+            </h1>
+
+            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm">
+              <div className="space-y-4 text-lg leading-relaxed">
+                <p>
+                  Vitor Yuji tem apenas 14 anos e é <strong className="text-ai-blue">criador do Manual IA Para Todos</strong>, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
+                </p>
+                <p>
+                  Também é <strong className="text-ai-blue">co-fundador do Mangue Mania</strong> (uma das maiores metodologias de educação ambiental de Sergipe)
+                </p>
+                <p>
+                  <strong className="text-ai-blue">Trainee da Adapta.org</strong> (a maior startup de IA Generativa da América Latina).
+                </p>
+                <p>
+                  E participou de <strong className="text-ai-blue">3 temporadas da First Lego League</strong> (um dos maiores torneios de robótica do mundo).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trajetória */}
+      <section className="py-16 bg-gray-900/30">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Olá, eu sou
-                <span className="block text-blue-600">Vitor Yuji</span>
-              </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Desenvolvedor especializado em <strong>Inteligência Artificial</strong> e <strong>Automação</strong>. 
-                Ajudo pessoas e empresas a simplificar processos complexos através da tecnologia.
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Trajetória</h2>
+
+            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
+              <div className="space-y-6 text-lg leading-relaxed">
+                <p>
+                  <strong className="text-ai-blue">Em 2022, aos 12 anos,</strong> foi convidado para sua primeira temporada da FLL. Com sua equipe, criou um sensor para evitar curtos-circuitos em áreas periféricas.
+                </p>
+                <p>
+                  <strong className="text-ai-blue">Em 2023,</strong> criou impressões 3D das obras do artista sergipano Beto Pezão, para que cegos possam "enxergar com as mãos". O projeto foi aprovado pelo Museu da Gente Sergipana, o mais importante do estado.
+                </p>
+                <p>
+                  <strong className="text-ai-blue">Em 2024,</strong> participou do Adapta Summit, o maior evento de IA generativa para negócios da América Latina. Por ser um moleque entre vários empresários, chamou a atenção do Max Peters, CEO da ADAPTA, que o escolheu pra ser jovem aprendiz do time quando completar 16 anos.
+                </p>
+                <p>
+                  <strong className="text-ai-blue">Ainda em 2024,</strong> criou o Mangue Mania, uma das principais metodologias ativas de manguezais do Nordeste. Em apenas 4 meses, impactou mais de 400 alunos e foi finalista entre 1500 projetos no Prêmio Criativos da Escola, além de vencer o prêmio de Excelência em Engenharia na FLL.
+                </p>
+                <p>
+                  <strong className="text-ai-blue">No mesmo ano,</strong> palestrou sobre IA em diversos eventos - incluindo no Instituto JCPM e na escola de empregabilidade SuperClass
+                </p>
+                <p>
+                  <strong className="text-ai-blue">Em 2025,</strong> criou o Webinar IA Para Todos, ajudando 20 iniciantes a usarem IA em seus trabalhos. Também lançou o Manual IA Para Todos, o guia mais prático de IA Generativa para profissionais ocupados no Brasil.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Curiosidades */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Curiosidades</h2>
+
+            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
+              <div className="space-y-4 text-lg leading-relaxed">
+                <p>
+                  Também já foi judoca, editor de vídeos, designer, líder de turma e youtuber gamer.
+                </p>
+                <p>
+                  Gosta de treinar capoeira, praticar animal flow, correr, tocar violão e cavaquinho.
+                </p>
+                <p>
+                  Além disso, é músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Brasil.
+                </p>
+                <p className="text-xl font-semibold text-ai-blue text-center mt-8">
+                  <strong>Sua maior motivação é criar projetos interessantes para entregar valor para o máximo de pessoas.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Acompanhe o Vitor Yuji */}
+      <section className="py-16 bg-gray-900/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Acompanhe o Vitor Yuji</h2>
+
+            <div className="space-y-8">
+              {/* Manual IA Para Todos */}
+              <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
+                <h3 className="text-2xl font-bold mb-4">Conheça o Manual IA Para Todos</h3>
+                <p className="text-lg mb-6 leading-relaxed">
+                  Toque no botão abaixo para conhecer mais sobre o Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil:
+                </p>
+                <Button 
+                  onClick={() => window.open("https://vitoryuji.com/manual", "_blank")}
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                >
+                  CLIQUE AQUI →
+                </Button>
+              </div>
+
+              {/* LinkedIn */}
+              <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
+                <h3 className="text-2xl font-bold mb-4">Perfil no LinkedIn</h3>
+                <p className="text-lg mb-6 leading-relaxed">
+                  Vitor Yuji compartilha suas histórias profissionais e pessoais mais interessantes no LinkedIn, sua 'vitrine profissional', sendo o adolescente mais jovem com alto engajamento na rede social:
+                </p>
+                <Button 
+                  onClick={() => window.open("https://www.linkedin.com/in/vitor-yuji-minomo/", "_blank")}
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                >
+                  QUERO ACESSAR →
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer - IA PARA TODOS */}
+      <footer className="bg-black border-t border-gray-800 py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div className="mb-6 md:mb-0">
+              <h3 className="text-2xl font-bold mb-2">
+                <span className="text-ai-blue">IA</span>
+                <span className="text-white"> PARA TODOS</span>
+              </h3>
+              <p className="text-gray-300 text-sm max-w-md">
+                Enquanto o mundo complica, a gente simplifica.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button 
-                  onClick={() => scrollToSection('contato')}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
-                >
-                  Entre em Contato
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button 
-                  variant="outline"
-                  onClick={() => window.open('/manual', '_blank')}
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
-                >
-                  Ver Manual IA
-                  <BookOpen className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
             </div>
-            <div className="flex-1 flex justify-center">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/profile-photo.png" 
-                  alt="Vitor Yuji Minomo"
-                  className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white"
-                />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600/20 to-transparent"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="sobre" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              Sobre Mim
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="h-8 w-8 text-blue-600" />
+            
+            <div className="text-right">
+              <h4 className="text-lg font-semibold text-white mb-4">Contato</h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-end space-x-2">
+                  <Mail className="w-4 h-4 text-ai-blue" />
+                  <span className="text-sm text-gray-300">contato.vitoryujiminomo@gmail.com</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Especialização</h3>
-                <p className="text-gray-700">
-                  Focado em IA, automação e desenvolvimento de soluções tecnológicas inovadoras.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Missão</h3>
-                <p className="text-gray-700">
-                  Democratizar o acesso à IA e ajudar pessoas a aproveitarem todo o potencial da tecnologia.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Educação</h3>
-                <p className="text-gray-700">
-                  Criador do "Manual IA Para Todos", ensinando IA de forma simples e prática.
-                </p>
-              </div>
-            </div>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Sou desenvolvedor apaixonado por tecnologia e inovação. Minha jornada começou com curiosidade sobre como a tecnologia 
-              pode simplificar nossas vidas, e hoje me dedico a criar soluções que realmente fazem a diferença. 
-              Acredito que a IA deve ser acessível a todos, não apenas aos especialistas técnicos.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Manual IA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              Manual IA Para Todos
-            </h2>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Um guia completo e prático para você dominar a Inteligência Artificial, 
-              mesmo sem conhecimento técnico. Aprenda a usar as melhores ferramentas 
-              de IA para otimizar seu trabalho e vida pessoal.
-            </p>
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="text-left">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">O que você vai aprender:</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      Fundamentos da IA de forma simples
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      Como use ChatGPT, Claude e outras IAs
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      Automação de tarefas repetitivas
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      Criação de conteúdo com IA
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      Casos práticos para diferentes áreas
-                    </li>
-                  </ul>
-                </div>
-                <div className="text-center">
-                  <img 
-                    src="/lovable-uploads/115d1d1e-2183-495c-abc3-2d8f83b190cd.png" 
-                    alt="Manual IA Para Todos"
-                    className="w-full max-w-xs mx-auto rounded-lg shadow-md mb-6"
-                  />
-                  <Button 
-                    onClick={() => window.open('/manual', '_blank')}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg w-full"
+                <div className="flex items-center justify-end space-x-2">
+                  <Instagram className="w-4 h-4 text-ai-blue" />
+                  <a 
+                    href="https://www.instagram.com/vitoryujim" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
                   >
-                    Acessar Manual
-                    <BookOpen className="ml-2 h-5 w-5" />
-                  </Button>
+                    @vitoryujim
+                  </a>
+                </div>
+                <div className="flex items-center justify-end space-x-2">
+                  <Linkedin className="w-4 h-4 text-ai-blue" />
+                  <a 
+                    href="https://linkedin.com/in/vitor-yuji-minomo" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
+                  >
+                    Vitor Yuji Minomo
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contato" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              Vamos Conversar?
-            </h2>
-            <p className="text-xl text-gray-700 mb-12">
-              Está interessado em automação, IA ou tem algum projeto em mente? 
-              Entre em contato comigo através dos canais abaixo.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                <a 
-                  href="mailto:contato.vitoryujiminomo@gmail.com"
-                  className="text-blue-600 hover:text-blue-700 transition-colors"
-                >
-                  contato.vitoryujiminomo@gmail.com
-                </a>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Instagram className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Instagram</h3>
-                <a 
-                  href="https://www.instagram.com/vitoryujim" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 transition-colors"
-                >
-                  @vitoryujim
-                </a>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Linkedin className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">LinkedIn</h3>
-                <a 
-                  href="https://www.linkedin.com/in/vitor-yuji-minomo/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 transition-colors"
-                >
-                  Vitor Yuji Minomo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+      </footer>
     </div>
   );
 };
