@@ -25,7 +25,7 @@ const AppContent = () => {
       <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/obrigado" element={<Obrigado />} />
-      <Route path="/vitor-yuji" element={<VitorYuji />} />
+      <Route path="/bio-yuji" element={<VitorYuji />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

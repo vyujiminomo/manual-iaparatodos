@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   const handleAboutClick = () => {
-    window.location.href = '/vitor-yuji';
+    window.location.href = '/bio-yuji';
   };
 
   return (
