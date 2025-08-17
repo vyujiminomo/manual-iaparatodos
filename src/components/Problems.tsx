@@ -1,26 +1,26 @@
 
 import { Card } from "@/components/ui/card";
-import { AlertTriangle, Clock, Zap } from "lucide-react";
+import { DollarSign, Code, Clock } from "lucide-react";
 
 const Problems = () => {
   const problems = [
     {
-      icon: AlertTriangle,
-      title: "Cursos que envelhecem rápido",
-      description: "A maioria ensina truques e dicas temporárias que mudam a cada atualização.",
-      subtitle: "Você aprende hoje o que já não serve amanhã."
+      icon: DollarSign,
+      title: "💸 CAROS DEMAIS",
+      description: "Cursos de IA custam entre R$ 497 a R$ 2.997. Consultores cobram R$ 300/hora para ensinar o básico.",
+      subtitle: "Para um profissional que quer apenas usar IA no trabalho, esses valores são completamente fora da realidade."
     },
     {
-      icon: Clock,
-      title: "Falta de prática real",
-      description: "Te enchem de teoria, mas você continua sem saber usar. Sem um passo a passo simples, você gasta mais tempo tentando entender do que usando.",
+      icon: Code,
+      title: "MUITO TÉCNICOS",
+      description: "A maioria dos conteúdos é criada por programadores para programadores. Te bombardeiam com jargões incompreensíveis, códigos e algoritmos, termos que você nunca vai usar.",
       subtitle: ""
     },
     {
-      icon: Zap,
-      title: "Emburrecimento",
-      description: "Muitos ensinam a usar IA pra pensar no seu lugar, copiando e colando instruções e respostas prontas.",
-      subtitle: "Isso te deixa mais dependente, e não mais inteligente."
+      icon: Clock,
+      title: "⏰ MUITO LONGOS",
+      description: "Cursos de 40+ horas que você nunca termina. Videoaulas intermináveis cheias de teoria desnecessária.",
+      subtitle: "Entre suas responsabilidades profissionais e pessoais, onde você vai encontrar tempo para isso?"
     }
   ];
 
@@ -42,24 +42,24 @@ const Problems = () => {
             </span>
           </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
-            POR QUE APRENDER IA PARECE TÃO DIFÍCIL<br />
-            <span className="text-red-600">(MESMO COM TANTO CONTEÚDO POR AÍ)?</span>
+            POR QUE PROFISSIONAIS OCUPADOS DESISTEM DE APRENDER IA<br />
+            <span className="text-red-600">(MESMO SABENDO QUE PRECISAM DOMINAR ESSA TECNOLOGIA)</span>
           </h2>
           
           <div className="max-w-4xl mx-auto mb-8">
             <p className="font-poppins text-xl text-gray-600 mb-6 leading-relaxed">
-              Você já pensou algo como:
+              Você já se pegou pensando:
             </p>
             
             {/* Quote block with enhanced styling */}
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-l-4 border-red-500 p-6 rounded-r-lg shadow-sm mb-8 mx-4 md:mx-0">
               <blockquote className="font-poppins text-xl md:text-2xl text-gray-700 italic font-medium leading-relaxed">
-                "Todo mundo fala de IA, mas eu ainda não sei como usar isso no meu trabalho."
+                "Todo mundo fala de IA, mas eu ainda não sei como usar isso no meu trabalho... e nem tenho tempo pra isso."
               </blockquote>
             </div>
             
-            <p className="font-poppins text-2xl font-semibold text-ai-black">
-              Hoje, aprender IA é confuso por <span className="text-red-600">três motivos principais:</span>
+            <p className="font-poppins text-2xl font-semibold text-ai-black mb-4">
+              Se você é médico, advogado, professor, empreendedor ou qualquer profissional ocupado, aprender IA parece impossível porque a maioria dos materiais disponíveis são:
             </p>
           </div>
         </div>
@@ -102,11 +102,26 @@ const Problems = () => {
             <div className="absolute bottom-4 left-8 w-2 h-2 bg-red-200 rounded-full opacity-60"></div>
             
             <div className="relative z-10">
-              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                <strong className="text-red-600 text-xl">O resultado:</strong>
+              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                <strong className="text-red-600 text-xl">O Resultado:</strong>
               </p>
+              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                Você fica perdido entre opções caras, complicadas e demoradas...
+              </p>
+              
+              <div className="mb-6">
+                <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
+                  Enquanto isso, seus concorrentes já estão usando IA para:
+                </p>
+                <div className="text-left max-w-2xl mx-auto space-y-2">
+                  <p className="font-poppins text-lg text-gray-700">✅ Ser muito mais produtivo</p>
+                  <p className="font-poppins text-lg text-gray-700">✅ Terminar trabalhos em metade do tempo</p>
+                  <p className="font-poppins text-lg text-gray-700">✅ Se destacar e não ficar para trás</p>
+                </div>
+              </div>
+              
               <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed">
-                Você fica perdido, com medo de parecer ultrapassado, e sai mais confuso do que quando começou.
+                <strong>E você?</strong> Continua procurando uma solução acessível, simples e rápida.
               </p>
             </div>
           </div>
