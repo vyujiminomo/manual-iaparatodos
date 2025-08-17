@@ -42,7 +42,7 @@ const Solution = () => {
       title: "ACESSÍVEL",
       description: "Sem mensalidades, sem cursos caros. Um investimento único que cabe no seu orçamento. Menos que você gasta em um almoço executivo.",
       hasCarousel: true,
-      images: infiniteChatGptImages,
+      images: infiniteManualImages,
       color: "text-green-600"
     },
     {
@@ -92,84 +92,72 @@ const Solution = () => {
 
         {/* Solution Section */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 border-2 border-blue-200 rounded-2xl p-8 relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-4 right-4 text-blue-300">
-              <CheckCircle size={24} />
-            </div>
-            <div className="absolute top-8 left-6 w-2 h-2 bg-green-300 rounded-full opacity-60"></div>
-            <div className="absolute bottom-6 right-12 w-3 h-3 bg-blue-300 rounded-full opacity-40"></div>
-            
-            <div className="text-center mb-6 relative z-10">
-              <h3 className="font-poppins text-2xl md:text-3xl font-bold text-blue-600 mb-4">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 relative">
+            <div className="text-center">
+              <h3 className="font-poppins text-xl md:text-2xl font-bold text-blue-700 mb-4">
                 💡 Mas eu tenho uma solução diferente.
               </h3>
-            </div>
-            
-            <div className="space-y-4 text-center relative z-10">
-              <p className="font-poppins text-lg md:text-xl text-gray-700 font-semibold">
-                <strong>Estudei todos esses cursos caros e complicados.</strong>
-              </p>
-              <p className="font-poppins text-lg md:text-xl text-gray-700 font-semibold">
-                <strong>Testei centenas de técnicas com mais de 100 profissionais.</strong>
-              </p>
-              <p className="font-poppins text-lg md:text-xl text-gray-700 font-semibold">
-                <strong>Filtrei apenas o que realmente funciona no dia a dia.</strong>
-              </p>
               
-              <div className="mt-6 pt-6 border-t border-blue-200">
-                <p className="font-poppins text-xl md:text-2xl text-ai-black font-bold">
-                  <strong>E agora reuni tudo de melhor no Manual IA Para Todos:</strong>
+              <div className="space-y-3 text-center">
+                <p className="font-poppins text-base md:text-lg text-gray-700">
+                  <strong>Estudei todos esses cursos caros e complicados.</strong>
                 </p>
+                <p className="font-poppins text-base md:text-lg text-gray-700">
+                  <strong>Testei centenas de técnicas com mais de 100 profissionais.</strong>
+                </p>
+                <p className="font-poppins text-base md:text-lg text-gray-700">
+                  <strong>Filtrei apenas o que realmente funciona no dia a dia.</strong>
+                </p>
+                
+                <div className="mt-4 pt-4 border-t border-blue-200">
+                  <p className="font-poppins text-lg md:text-xl text-ai-black font-bold">
+                    <strong>E agora reuni tudo de melhor no Manual IA Para Todos:</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Solution Features Grid */}
-        <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {solutionFeatures.map((feature, index) => {
             const IconComponent = feature.icon;
             
             return (
               <div key={index} className="flex flex-col items-center">
-                {/* Video/Image Carousel */}
-                {feature.hasCarousel && (
-                  <div className="w-full max-w-sm mb-8">
-                    <div className="aspect-square bg-white rounded-2xl border-4 border-gray-200 shadow-xl overflow-hidden relative">
-                      <div className="w-full h-full relative">
-                        {/* Infinite scroll container */}
-                        <div className="absolute inset-0 overflow-hidden">
-                          <div 
-                            className={`flex flex-col animate-infinite-scroll-${index}`}
-                          >
-                            {feature.images.map((image, imgIndex) => (
-                              <div 
-                                key={imgIndex} 
-                                className="w-full flex-shrink-0 p-4 flex items-center justify-center"
-                                style={{ height: '100%' }}
-                              >
-                                <img 
-                                  src={image}
-                                  alt={`${feature.title} - Manual Page ${(imgIndex % (feature.images.length / 2)) + 1}`}
-                                  className="w-full h-full object-contain"
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* Content Card */}
-                <Card className="p-6 w-full aspect-square flex flex-col justify-center border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl bg-white group relative overflow-hidden rounded-2xl">
+                {/* Combined Card with Text and Images */}
+                <Card className="p-6 w-full aspect-square border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl bg-white group relative overflow-hidden rounded-2xl">
                   {/* Enhanced gradient background on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-purple-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="relative z-10 text-center">
-                    <div className="bg-gray-100 p-3 rounded-full mb-4 inline-flex group-hover:bg-blue-100 transition-colors duration-300">
+                  {/* Background Images with Infinite Scroll */}
+                  {feature.hasCarousel && (
+                    <div className="absolute inset-0 opacity-10 overflow-hidden">
+                      <div 
+                        className={`flex flex-col animate-infinite-scroll-${index}`}
+                        style={{ height: '200%' }}
+                      >
+                        {feature.images.map((image, imgIndex) => (
+                          <div 
+                            key={imgIndex} 
+                            className="w-full flex-shrink-0 p-2 flex items-center justify-center"
+                            style={{ height: '50%' }}
+                          >
+                            <img 
+                              src={image}
+                              alt={`${feature.title} - Background ${(imgIndex % (feature.images.length / 2)) + 1}`}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* Content */}
+                  <div className="relative z-10 h-full flex flex-col justify-center text-center">
+                    <div className="bg-gray-100 p-3 rounded-full mb-4 inline-flex mx-auto group-hover:bg-blue-100 transition-colors duration-300">
                       <IconComponent className={`${feature.color} group-hover:text-blue-600`} size={28} />
                     </div>
                     
