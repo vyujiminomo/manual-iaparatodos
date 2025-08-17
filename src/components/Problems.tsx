@@ -6,19 +6,19 @@ const Problems = () => {
   const problems = [
     {
       icon: DollarSign,
-      title: "💸 CAROS DEMAIS",
+      title: "CAROS DEMAIS",
       description: "Cursos de IA custam entre R$ 497 a R$ 2.997. Consultores cobram R$ 300/hora para ensinar o básico.",
       subtitle: "Para um profissional que quer apenas usar IA no trabalho, esses valores são completamente fora da realidade."
     },
     {
       icon: Code,
       title: "MUITO TÉCNICOS",
-      description: "A maioria dos conteúdos é criada por programadores para programadores. Te bombardeiam com jargões incompreensíveis, códigos e algoritmos, termos que você nunca vai usar.",
-      subtitle: ""
+      description: "A maioria dos conteúdos é criada para programadores.",
+      subtitle: "Te bombardeiam com jargões, códigos e termos que você nunca vai usar."
     },
     {
       icon: Clock,
-      title: "⏰ MUITO LONGOS",
+      title: "MUITO LONGOS",
       description: "Cursos de 40+ horas que você nunca termina. Videoaulas intermináveis cheias de teoria desnecessária.",
       subtitle: "Entre suas responsabilidades profissionais e pessoais, onde você vai encontrar tempo para isso?"
     }
@@ -42,8 +42,7 @@ const Problems = () => {
             </span>
           </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
-            POR QUE PROFISSIONAIS OCUPADOS DESISTEM DE APRENDER IA<br />
-            <span className="text-red-600">(MESMO SABENDO QUE PRECISAM DOMINAR ESSA TECNOLOGIA)</span>
+            POR QUE PROFISSIONAIS OCUPADOS DESISTEM DE APRENDER IA
           </h2>
           
           <div className="max-w-4xl mx-auto mb-8">
@@ -59,7 +58,7 @@ const Problems = () => {
             </div>
             
             <p className="font-poppins text-2xl font-semibold text-ai-black mb-4">
-              Se você é médico, advogado, professor, empreendedor ou qualquer profissional ocupado, aprender IA parece impossível porque a maioria dos materiais disponíveis são:
+              Se você é um profissional ocupado, aprender IA parece impossível porque a maioria dos materiais disponíveis são:
             </p>
           </div>
         </div>
