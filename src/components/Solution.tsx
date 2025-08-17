@@ -17,15 +17,24 @@ const Solution = () => {
 
   // Images for manual pages - strategic selection for different sections
   const manualPageImages = [
-    "/lovable-uploads/07ff4029-69c1-4c4c-ad44-09c3fef5ffb9.png",
     "/lovable-uploads/1ec57c68-14ed-4068-99ef-c272c88d7087.png",
     "/lovable-uploads/401fc603-a6a2-4c69-91d8-8c60dac03068.png",
-    "/lovable-uploads/6cd183cf-0aea-4ffb-910b-4e8da9885ab0.png"
+    "/lovable-uploads/6cd183cf-0aea-4ffb-910b-4e8da9885ab0.png",
+    "/lovable-uploads/75fbd01a-85c6-43f4-bdd9-1d7114badae7.png"
+  ];
+
+  // ChatGPT scrolling images for accessible section
+  const chatGptImages = [
+    "/lovable-uploads/c7227f2a-0d74-41a1-b759-be8eab66e4f6.png",
+    "/lovable-uploads/10d139d2-587f-4287-8b4d-29e3cdb8824a.png",
+    "/lovable-uploads/12d9bc2f-23d7-48d3-a6b1-214766d6aa53.png",
+    "/lovable-uploads/19e8a63d-0fe7-4828-868c-5acf461e91c7.png"
   ];
 
   // Duplicate images for seamless infinite scroll
   const infiniteExerciseImages = [...exerciseImages, ...exerciseImages];
   const infiniteManualImages = [...manualPageImages, ...manualPageImages];
+  const infiniteChatGptImages = [...chatGptImages, ...chatGptImages];
 
   const solutionFeatures = [
     {
@@ -33,7 +42,7 @@ const Solution = () => {
       title: "ACESSÍVEL",
       description: "Sem mensalidades, sem cursos caros. Um investimento único que cabe no seu orçamento. Menos que você gasta em um almoço executivo.",
       hasCarousel: true,
-      images: infiniteManualImages,
+      images: infiniteChatGptImages,
       color: "text-green-600"
     },
     {
@@ -81,21 +90,23 @@ const Solution = () => {
           </p>
         </div>
 
-        {/* Alert Section */}
+        {/* Solution Section */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8 relative">
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 border-2 border-blue-200 rounded-2xl p-8 relative overflow-hidden">
             {/* Decorative elements */}
-            <div className="absolute top-4 right-4 text-red-300">
-              <AlertCircle size={24} />
+            <div className="absolute top-4 right-4 text-blue-300">
+              <CheckCircle size={24} />
             </div>
+            <div className="absolute top-8 left-6 w-2 h-2 bg-green-300 rounded-full opacity-60"></div>
+            <div className="absolute bottom-6 right-12 w-3 h-3 bg-blue-300 rounded-full opacity-40"></div>
             
-            <div className="text-center mb-6">
-              <h3 className="font-poppins text-2xl md:text-3xl font-bold text-red-600 mb-4">
-                🚨 Mas eu tenho uma solução diferente.
+            <div className="text-center mb-6 relative z-10">
+              <h3 className="font-poppins text-2xl md:text-3xl font-bold text-blue-600 mb-4">
+                💡 Mas eu tenho uma solução diferente.
               </h3>
             </div>
             
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-center relative z-10">
               <p className="font-poppins text-lg md:text-xl text-gray-700 font-semibold">
                 <strong>Estudei todos esses cursos caros e complicados.</strong>
               </p>
@@ -106,7 +117,7 @@ const Solution = () => {
                 <strong>Filtrei apenas o que realmente funciona no dia a dia.</strong>
               </p>
               
-              <div className="mt-6 pt-6 border-t border-red-200">
+              <div className="mt-6 pt-6 border-t border-blue-200">
                 <p className="font-poppins text-xl md:text-2xl text-ai-black font-bold">
                   <strong>E agora reuni tudo de melhor no Manual IA Para Todos:</strong>
                 </p>
@@ -125,7 +136,7 @@ const Solution = () => {
                 {/* Video/Image Carousel */}
                 {feature.hasCarousel && (
                   <div className="w-full max-w-sm mb-8">
-                    <div className="aspect-[3/4] bg-white rounded-2xl border-4 border-gray-200 shadow-xl overflow-hidden relative">
+                    <div className="aspect-square bg-white rounded-2xl border-4 border-gray-200 shadow-xl overflow-hidden relative">
                       <div className="w-full h-full relative">
                         {/* Infinite scroll container */}
                         <div className="absolute inset-0 overflow-hidden">
@@ -153,31 +164,31 @@ const Solution = () => {
                 )}
 
                 {/* Content Card */}
-                <Card className="p-8 w-full border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl bg-white group relative overflow-hidden">
+                <Card className="p-6 w-full aspect-square flex flex-col justify-center border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl bg-white group relative overflow-hidden rounded-2xl">
                   {/* Enhanced gradient background on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-purple-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
                   <div className="relative z-10 text-center">
-                    <div className="bg-gray-100 p-4 rounded-full mb-6 inline-flex group-hover:bg-blue-100 transition-colors duration-300">
-                      <IconComponent className={`${feature.color} group-hover:text-blue-600`} size={32} />
+                    <div className="bg-gray-100 p-3 rounded-full mb-4 inline-flex group-hover:bg-blue-100 transition-colors duration-300">
+                      <IconComponent className={`${feature.color} group-hover:text-blue-600`} size={28} />
                     </div>
                     
-                    <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-4 leading-tight">
+                    <h3 className="font-bebas text-2xl md:text-3xl text-ai-black mb-3 leading-tight">
                       {feature.title}
                     </h3>
                     
                     {feature.subtitle && (
-                      <h4 className="font-poppins text-lg font-bold text-gray-800 mb-2">
+                      <h4 className="font-poppins text-base font-bold text-gray-800 mb-2">
                         {feature.subtitle}
                       </h4>
                     )}
                     
-                    <p className="font-poppins text-gray-700 leading-relaxed mb-4">
+                    <p className="font-poppins text-sm text-gray-700 leading-relaxed mb-3">
                       {feature.description}
                     </p>
                     
                     {feature.finalText && (
-                      <p className="font-poppins text-blue-600 font-semibold leading-relaxed">
+                      <p className="font-poppins text-sm text-blue-600 font-semibold leading-relaxed">
                         {feature.finalText}
                       </p>
                     )}
