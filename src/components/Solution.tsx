@@ -77,17 +77,20 @@ const Solution = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Title Section */}
         <div className="text-center mb-16">
-          <div className="mb-6">
-            <span className="font-poppins text-sm text-red-500 font-semibold uppercase tracking-wider bg-red-50 px-4 py-2 rounded-full border border-red-100">
+          <div className="mb-8">
+            <span className="font-poppins text-sm text-blue-600 font-semibold uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
               A SOLUÇÃO
             </span>
           </div>
-          <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6 leading-tight">
-            O MANUAL QUE RESOLVE TODOS ESSES PROBLEMAS
-          </h2>
-          <p className="font-poppins text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8 italic">
-            Tudo de melhor sobre IA, filtrado e simplificado para pessoas ocupadas
+          <h1 className="font-bebas text-4xl md:text-6xl text-ai-black mb-4 leading-tight">
+            DOMINE O CHATGPT EM 5 MINUTOS POR DIA
+          </h1>
+          <p className="font-poppins text-lg md:text-xl text-gray-500 mb-6">
+            (mesmo sendo leigo)
           </p>
+          <h2 className="font-poppins text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 font-medium leading-relaxed">
+            Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
+          </h2>
         </div>
 
         {/* Solution Section */}
