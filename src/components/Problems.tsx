@@ -8,19 +8,19 @@ const Problems = () => {
       icon: DollarSign,
       title: "CAROS DEMAIS",
       description: "Cursos de IA custam entre R$ 497 a R$ 2.997. Consultores cobram R$ 300/hora para ensinar o básico.",
-      subtitle: "Para um profissional que quer apenas usar IA no trabalho, esses valores são completamente fora da realidade."
+      subtitle: "Para alguém que quer apenas usar IA no trabalho, esses valores são absurdos."
     },
     {
       icon: Code,
       title: "MUITO TÉCNICOS",
-      description: "A maioria dos conteúdos é criada para programadores.",
-      subtitle: "Te bombardeiam com jargões, códigos e termos que você nunca vai usar."
+      description: "Criados por programadores para programadores.",
+      subtitle: "Te bombardeiam com jargões e códigos que você nunca vai usar."
     },
     {
       icon: Clock,
       title: "MUITO LONGOS",
-      description: "Cursos de 40+ horas que você nunca termina. Videoaulas intermináveis cheias de teoria desnecessária.",
-      subtitle: "Entre suas responsabilidades profissionais e pessoais, onde você vai encontrar tempo para isso?"
+      description: "Cursos de 40+ horas cheios de teoria desnecessária.",
+      subtitle: "Com sua agenda lotada, onde você vai encontrar tempo pra isso?"
     }
   ];
 
@@ -53,12 +53,12 @@ const Problems = () => {
             {/* Quote block with enhanced styling */}
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-l-4 border-red-500 p-6 rounded-r-lg shadow-sm mb-8 mx-4 md:mx-0">
               <blockquote className="font-poppins text-xl md:text-2xl text-gray-700 italic font-medium leading-relaxed">
-                "Todo mundo fala de IA, mas eu ainda não sei como usar isso no meu trabalho... e nem tenho tempo pra isso."
+                "Todo mundo fala de IA, mas eu ainda não sei como usar isso no meu trabalho."
               </blockquote>
             </div>
             
             <p className="font-poppins text-2xl font-semibold text-ai-black mb-4">
-              Se você é um profissional ocupado, aprender IA parece impossível porque a maioria dos materiais disponíveis são:
+              Se você é um profissional ocupado, aprender IA parece difícil porque a maioria dos materiais disponíveis são:
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Problems = () => {
           })}
         </div>
 
-        {/* Enhanced result section */}
+        {/* O Custo de Não Agir Agora section */}
         <div className="text-center mb-12">
           <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-100 rounded-2xl p-8 max-w-5xl mx-auto relative">
             {/* Decorative elements */}
@@ -101,16 +101,17 @@ const Problems = () => {
             <div className="absolute bottom-4 left-8 w-2 h-2 bg-red-200 rounded-full opacity-60"></div>
             
             <div className="relative z-10">
+              <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6">
+                O Custo de Não Agir Agora
+              </h3>
+              
               <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                <strong className="text-red-600 text-xl">O Resultado:</strong>
-              </p>
-              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Você fica perdido entre opções caras, complicadas e demoradas...
+                Enquanto você fica perdido entre opções caras, complicadas e demoradas...
               </p>
               
               <div className="mb-6">
                 <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                  Enquanto isso, seus concorrentes já estão usando IA para:
+                  Seus concorrentes já estão usando IA para:
                 </p>
                 <div className="text-left max-w-2xl mx-auto space-y-2">
                   <p className="font-poppins text-lg text-gray-700">✅ Ser muito mais produtivo</p>
@@ -119,8 +120,12 @@ const Problems = () => {
                 </div>
               </div>
               
+              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                Em poucos meses, a diferença entre quem domina IA e quem não domina será gritante.
+              </p>
+              
               <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed">
-                <strong>E você?</strong> Continua procurando uma solução acessível, simples e rápida.
+                <strong>E você:</strong> Continua procurando uma solução acessível, simples e rápida.
               </p>
             </div>
           </div>
