@@ -92,45 +92,6 @@ const Problems = () => {
           })}
         </div>
 
-        {/* O Custo de Não Agir Agora section */}
-        <div className="text-center mb-12">
-          <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-100 rounded-2xl p-8 max-w-5xl mx-auto relative">
-            {/* Decorative elements */}
-            <div className="absolute top-4 left-4 w-3 h-3 bg-red-200 rounded-full opacity-60"></div>
-            <div className="absolute top-6 right-8 w-2 h-2 bg-orange-200 rounded-full opacity-60"></div>
-            <div className="absolute bottom-4 left-8 w-2 h-2 bg-red-200 rounded-full opacity-60"></div>
-            
-            <div className="relative z-10">
-              <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6">
-                O Custo de Não Agir Agora
-              </h3>
-              
-              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Enquanto você fica perdido entre opções caras, complicadas e demoradas...
-              </p>
-              
-              <div className="mb-6">
-                <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                  Seus concorrentes já estão usando IA para:
-                </p>
-                <div className="text-left max-w-2xl mx-auto space-y-2">
-                  <p className="font-poppins text-lg text-gray-700">✅ Ser muito mais produtivo</p>
-                  <p className="font-poppins text-lg text-gray-700">✅ Terminar trabalhos em metade do tempo</p>
-                  <p className="font-poppins text-lg text-gray-700">✅ Se destacar e não ficar para trás</p>
-                </div>
-              </div>
-              
-              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Em poucos meses, a diferença entre quem domina IA e quem não domina será gritante.
-              </p>
-              
-              <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed">
-                <strong>E você:</strong> Continua procurando uma solução acessível, simples e rápida.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Enhanced closing statement */}
         <div className="text-center">
           <div className="inline-block bg-white border-2 border-gray-200 rounded-full px-8 py-4 shadow-sm">
