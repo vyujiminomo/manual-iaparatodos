@@ -49,11 +49,14 @@ const Hero = () => {
 
           {/* Text Content */}
           <div className="text-center mb-8">
-            <h1 className="font-bebas text-4xl leading-tight text-ai-black mb-6">
-              TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
+            <h1 className="font-bebas text-4xl leading-tight text-ai-black mb-4">
+              DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
+            <p className="font-poppins text-base text-gray-500 mb-4">
+              (mesmo sendo leigo)
+            </p>
             <p className="font-poppins text-lg text-gray-700 mb-6 leading-relaxed">
-              Táticas de IA, exercícios práticos e linguagem simples - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
+              Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
             </p>
           </div>
 
@@ -117,11 +120,14 @@ const Hero = () => {
                 MANUAL IA PARA TODOS
               </span>
             </div>
-            <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-6">
-              TUDO DE MELHOR SOBRE IA, EM UM SÓ MANUAL
+            <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-4">
+              DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
+            <p className="font-poppins text-lg text-gray-500 mb-4">
+              (mesmo sendo leigo)
+            </p>
             <p className="font-poppins text-xl text-gray-700 mb-6 leading-relaxed">
-              Táticas de IA, exercícios práticos e linguagem simples - <span className="text-ai-blue font-semibold">lendo 5 minutos por dia</span>.
+              Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
