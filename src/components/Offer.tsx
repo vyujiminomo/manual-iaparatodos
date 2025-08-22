@@ -39,10 +39,10 @@ const Offer = () => {
           <Card className="bg-white border border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <div className="grid lg:grid-cols-5 gap-0 items-stretch min-h-[700px]">
               {/* Left side - Large Manual Image */}
-              <div className="lg:col-span-2 p-8 lg:p-12 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
-                <div className="relative w-full max-w-md">
+              <div className="lg:col-span-2 p-4 lg:p-8 flex items-center justify-center">
+                <div className="relative w-full max-w-2xl">
                   <img 
-                    src="/lovable-uploads/da078bb2-a0c0-4b5a-8c5b-5a0fa821b032.png" 
+                    src="/lovable-uploads/9474d9b2-8b25-48c8-a45c-de82f72e9873.png" 
                     alt="Manual Inteligência Artificial Para Todos - Mockup Completo"
                     className="w-full h-auto mx-auto drop-shadow-2xl"
                   />
@@ -65,7 +65,7 @@ const Offer = () => {
                 <div className="space-y-4 mb-8">
                   {benefits.map((benefit, index) => (
                     <div key={index} className="flex items-center pb-4 border-b border-gray-100 last:border-b-0">
-                      <div className="bg-blue-500 p-2 rounded-full mr-4 flex-shrink-0">
+                      <div className="bg-gradient-to-r from-sky-400 to-cyan-400 p-2 rounded-full mr-4 flex-shrink-0 shadow-lg shadow-sky-400/50 glow-effect">
                         <Check className="text-white" size={16} strokeWidth={3} />
                       </div>
                       <span className="font-poppins text-gray-800 text-lg font-medium">
@@ -77,17 +77,19 @@ const Offer = () => {
 
                 {/* Price Section */}
                 <div className="mb-8">
-                  <p className="font-poppins text-lg text-gray-600 mb-4">Total:</p>
-                  <div className="flex items-baseline mb-6">
-                    <span className="font-poppins text-3xl text-black font-normal">R$</span>
-                    <span className="font-poppins text-6xl text-black font-normal leading-none ml-1">47</span>
+                  <div className="flex items-baseline justify-between mb-6">
+                    <span className="font-poppins text-2xl text-gray-600 font-medium">Total:</span>
+                    <div className="flex items-baseline">
+                      <span className="font-poppins text-2xl text-black font-light">R$</span>
+                      <span className="font-poppins text-4xl text-black font-light leading-none ml-1">47</span>
+                    </div>
                   </div>
 
                   {/* CTA Button */}
                   <Button 
                     onClick={handlePurchaseClick}
                     size="lg" 
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-poppins font-bold text-xl py-8 mb-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-poppins font-bold text-xl py-8 mb-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     Quero Adquirir Agora →
                   </Button>

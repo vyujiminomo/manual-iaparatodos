@@ -103,3 +103,15 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .glow-effect {
+    @apply before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-sky-400/20 before:to-cyan-400/20 before:blur-md before:-z-10;
+    position: relative;
+  }
+  
+  .glow-effect::before {
+    content: '';
+    animation: pulse 2s infinite;
+  }
+}
