@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import Webinar from "@/components/Webinar";
 import Problems from "@/components/Problems";
 import Solution from "@/components/Solution";
+import BonusSpecials from "@/components/BonusSpecials";
 import CostOfNotActing from "@/components/CostOfNotActing";
 import Content from "@/components/Content";
 import Transformation from "@/components/Transformation";
@@ -31,6 +32,7 @@ const Manual = () => {
       <Webinar />
       <Problems />
       <Solution />
+      <BonusSpecials />
       <CostOfNotActing />
       <Content />
       <Transformation />
