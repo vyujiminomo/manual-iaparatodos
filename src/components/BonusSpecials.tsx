@@ -5,32 +5,32 @@ const BonusSpecials = () => {
     {
       title: "Biblioteca de Prompts",
       description: "Tenha acesso a Prompts prontos para cada profissão - médicos, advogados, professores, marketing. Copie, cole e adapte para suas necessidades específicas.",
-      image: "/lovable-uploads/51961545-03f5-4984-ada4-47bea3a60a0a.png"
+      image: "/lovable-uploads/d368635f-dc6f-4c32-aed8-9a274f2613bf.png"
     },
     {
       title: "Guia de Ferramentas", 
       description: "Lista das melhores ferramentas de IA para cada tarefa. Você saberá exatamente qual ferramenta usar para cada situação.",
-      image: "/lovable-uploads/65eca0f6-64c3-496e-9586-db11331729a4.png"
+      image: "/lovable-uploads/8bea39da-de69-4211-92d9-dda89bf17542.png"
     },
     {
       title: "Guia do ChatGPT",
       description: "Guia Visual do ChatGPT com todas as funcionalidades explicadas de forma prática. Utilize a IA com confiança.",
-      image: "/lovable-uploads/46e43bcb-bd7a-455c-a458-2d92846cfae3.png"
+      image: "/lovable-uploads/c388ae2a-9746-4410-9629-82fa56db1da8.png"
     },
     {
       title: "Glossário de Termos",
       description: "Dicionário de IA em linguagem simples para você nunca mais se sentir perdido nunca conversa sobre IA.",
-      image: "/lovable-uploads/c6bac77d-003f-44b5-8dbe-26927111e0dd.png"
+      image: "/lovable-uploads/19e051a1-1ae2-403b-b275-bb3a45649206.png"
     },
     {
       title: "Resumo Técnico",
       description: "Entenda como funcionam as IAs por dentro. Explicação simples e breve do funcionamento técnico da IA.",  
-      image: "/lovable-uploads/5f4a7866-a84c-446e-a217-fa61dc3833a5.png"
+      image: "/lovable-uploads/7ca38de0-a6be-4df5-8c61-9d41b99dd8a4.png"
     },
     {
       title: "12 Exercícios Práticos",
       description: "Atividades de 5 minutos para você praticar e sair com resultados logo no primeiro dia.",
-      image: "/lovable-uploads/b10859d6-787b-45d3-b42e-909263a9e1fc.png"
+      image: "/lovable-uploads/dbce59f7-0e4c-4bc1-a4e0-c20d7a499136.png"
     }
   ];
 
