@@ -79,7 +79,7 @@ const Offer = () => {
                   <span className="font-poppins text-lg text-gray-600 font-medium">Total:</span>
                   <div className="flex items-baseline">
                     <span className="font-poppins text-lg text-black font-light">R$</span>
-                    <span className="font-poppins text-3xl text-black font-light leading-none ml-1">47</span>
+                    <span className="font-poppins text-lg text-black font-light leading-none ml-1">47</span>
                   </div>
                 </div>
 
@@ -94,8 +94,14 @@ const Offer = () => {
 
                 {/* Guarantee Section */}
                 <div className="text-center space-y-1">
-                  <p className="font-poppins text-xs text-gray-600 font-medium">7 Dias de Garantia</p>
-                  <p className="font-poppins text-xs text-gray-600 font-medium">Compra Segura</p>
+                  <div className="flex items-center justify-center gap-1">
+                    <Shield size={12} className="text-gray-600" />
+                    <p className="font-poppins text-xs text-gray-600 font-medium">7 Dias de Garantia</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <CreditCard size={12} className="text-gray-600" />
+                    <p className="font-poppins text-xs text-gray-600 font-medium">Compra Segura</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -149,7 +155,7 @@ const Offer = () => {
                     <span className="font-poppins text-2xl text-gray-600 font-medium">Total:</span>
                     <div className="flex items-baseline">
                       <span className="font-poppins text-2xl text-black font-light">R$</span>
-                      <span className="font-poppins text-4xl text-black font-light leading-none ml-1">47</span>
+                      <span className="font-poppins text-2xl text-black font-light leading-none ml-1">47</span>
                     </div>
                   </div>
 
@@ -164,8 +170,14 @@ const Offer = () => {
 
                   {/* Guarantee Section */}
                   <div className="text-center space-y-2">
-                    <p className="font-poppins text-sm text-gray-600 font-medium">7 Dias de Garantia</p>
-                    <p className="font-poppins text-sm text-gray-600 font-medium">Compra Segura</p>
+                    <div className="flex items-center justify-center gap-2">
+                      <Shield size={16} className="text-gray-600" />
+                      <p className="font-poppins text-sm text-gray-600 font-medium">7 Dias de Garantia</p>
+                    </div>
+                    <div className="flex items-center justify-center gap-2">
+                      <CreditCard size={16} className="text-gray-600" />
+                      <p className="font-poppins text-sm text-gray-600 font-medium">Compra Segura</p>
+                    </div>
                   </div>
                 </div>
               </div>
