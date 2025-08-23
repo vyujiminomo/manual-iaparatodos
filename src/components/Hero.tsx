@@ -53,7 +53,7 @@ const Hero = () => {
               DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
             <p className="font-poppins text-sm sm:text-base text-gray-500 mb-2">
-              (mesmo sendo leigo)
+              (sem precisar entender de tecnologia)
             </p>
             <p className="font-poppins text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
               Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
@@ -124,7 +124,7 @@ const Hero = () => {
               DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
             <p className="font-poppins text-lg text-gray-500 mb-3">
-              (mesmo sendo leigo)
+              (sem precisar entender de tecnologia)
             </p>
             <p className="font-poppins text-xl text-gray-700 mb-6 leading-relaxed">
               Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
