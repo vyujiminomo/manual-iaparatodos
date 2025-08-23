@@ -82,12 +82,9 @@ const Solution = () => {
               A SOLUÇÃO
             </span>
           </div>
-          <h1 className="font-bebas text-4xl md:text-6xl text-ai-black mb-4 leading-tight">
-            DOMINE O CHATGPT EM 5 MINUTOS POR DIA
+          <h1 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6 leading-tight">
+            O Manual Que Resolve todos esses problemas
           </h1>
-          <p className="font-poppins text-lg md:text-xl text-gray-500 mb-6">
-            (mesmo sendo leigo)
-          </p>
           <h2 className="font-poppins text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 font-medium leading-relaxed">
             Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
           </h2>
