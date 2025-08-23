@@ -1,7 +1,5 @@
 
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Brain, Target, Settings, Book, Users, Zap } from "lucide-react";
 
 const Content = () => {
   const scrollToOffer = () => {
@@ -11,34 +9,42 @@ const Content = () => {
 
   const modules = [
     {
-      icon: Brain,
-      title: "🧠 Preparando sua mente",
+      title: "Módulo 1: Os 6 princípios da IA Generativa",
       items: [
-        "Princípios atemporais da IA Generativa",
-        "Mapa visual da Interface do ChatGPT",
-        "Glossário Relâmpago: entenda os termos de IA em minutos",
-        "A Equação da IA Generativa",
-        "O 'Filtro da Verdade' pra evitar respostas erradas"
-      ]
+        "As 'leis eternas' do ChatGPT que sempre funcionam",
+        "O que é IA Generativa",
+        "Como, quando e porque usar cada IA"
+      ],
+      image: "/lovable-uploads/8ab76f20-cc37-4b6d-b7f3-6c63001dd380.png"
     },
     {
-      icon: Target,
-      title: "🎯 Como criar prompts magnéticos",
+      title: "Módulo 2: A estrutura de prompts perfeitos",
       items: [
-        "Estrutura 3I AI para prompts",
-        "Táticas Avançadas: persona, emoção, few-shot...",
-        "Como criar um bom contexto",
-        "Interagindo com o modelo"
-      ]
+        "A estrutura 3IAI para prompts perfeitos",
+        "Técnicas avançadas de engenharia de prompt",
+        "Como melhorar absurdamente as respostas do ChatGPT",
+        "Como criar um bom contexto"
+      ],
+      image: "/lovable-uploads/cea83d38-6f49-4377-8ef4-b6627810357d.png"
     },
     {
-      icon: Settings,
-      title: "🛠️ Ferramentas e Aplicações Reais",
+      title: "Módulo 3: As 5 práticas da IA generativa",
       items: [
-        "As 5 Práticas da IA Generativa",
+        "3 técnicas para pesquisar com IA",
+        "3 técnicas para idealizar com IA",
+        "3 técnicas para aprender com IA",
+        "3 técnicas para gerir com IA",
+        "3 técnicas para escrever com IA"
+      ],
+      image: "/lovable-uploads/f292bd43-0884-4ee2-8e13-0b8020fd9f9c.png"
+    },
+    {
+      title: "Módulo 4: Bônus Especiais",
+      items: [
         "Biblioteca de Prompts por Profissão",
         "Guia de Ferramentas"
-      ]
+      ],
+      image: "/lovable-uploads/d7bd923c-e514-4583-ad0f-013f7814002e.png"
     }
   ];
 
@@ -56,55 +62,40 @@ const Content = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Content Modules */}
-          <div className="space-y-8">
-            {modules.map((module, index) => {
-              const IconComponent = module.icon;
-              return (
-                <Card key={index} className="p-6 bg-white shadow-lg border-0 hover:shadow-xl transition-shadow">
-                  <div className="flex items-center mb-6">
-                    <div className="text-ai-blue mr-4">
-                      <IconComponent size={32} />
-                    </div>
-                    <h3 className="font-bebas text-2xl text-ai-black">{module.title}</h3>
-                  </div>
-                  <ul className="space-y-3">
-                    {module.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start">
-                        <div className="w-2 h-2 bg-ai-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="font-poppins text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
-              );
-            })}
-          </div>
+        <div className="space-y-16">
+          {modules.map((module, index) => (
+            <div key={index} className="grid lg:grid-cols-2 gap-8 items-center">
+              {/* Module Info */}
+              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6">{module.title}</h3>
+                <ul className="space-y-4 mb-8">
+                  {module.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start">
+                      <div className="w-2 h-2 bg-ai-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="font-poppins text-gray-700 text-lg">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button 
+                  onClick={scrollToOffer}
+                  className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-6 py-3 rounded-lg"
+                >
+                  QUERO FAZER PARTE →
+                </Button>
+              </div>
 
-          {/* Manual Preview Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-ai-blue/20 to-purple-500/20 rounded-2xl blur-xl"></div>
-              <Card className="relative bg-white shadow-2xl border-0 rounded-2xl transform hover:scale-105 transition-transform duration-300 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/d5acbe2b-ff36-4c23-b566-681c78b81721.png" 
-                  alt="Índice do Manual IA Para Todos"
-                  className="w-full h-full object-cover rounded-2xl"
-                />
-              </Card>
+              {/* Module Image */}
+              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} flex justify-center`}>
+                <div className="relative">
+                  <img 
+                    src={module.image}
+                    alt={`${module.title} - Módulo do Manual IA Para Todos`}
+                    className="w-full max-w-md h-auto object-contain rounded-2xl shadow-2xl"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <Button 
-            onClick={scrollToOffer}
-            size="lg" 
-            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
-          >
-            Quero Acessar
-          </Button>
+          ))}
         </div>
       </div>
     </section>
