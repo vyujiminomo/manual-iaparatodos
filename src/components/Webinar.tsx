@@ -131,7 +131,7 @@ const Webinar = () => {
 
         {/* Desktop Layout */}
         <div className="hidden lg:block">
-          <div className="text-center mb-16">
+          <div className="text-left mb-16">
             <div className="mb-6">
               <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full border border-blue-100">
                 TESTADO NA PRÁTICA
@@ -140,7 +140,7 @@ const Webinar = () => {
             <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
               O Webinar IA Para Todos
             </h2>
-            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl">
               Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
             </p>
           </div>
