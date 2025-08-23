@@ -50,13 +50,13 @@ const Testimonials = () => {
         
         {/* Mobile and Tablet Layout - Single testimonial with carousel */}
         <div className="lg:hidden">
-          <div className="relative mb-8">
-            <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm mx-4">
-              <p className="font-poppins text-gray-600 mb-6 text-sm leading-relaxed">
+          <div className="relative mb-6 px-2">
+            <div className="bg-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm mx-2 sm:mx-4">
+              <p className="font-poppins text-gray-600 mb-4 text-xs sm:text-sm leading-relaxed">
                 "{testimonials[currentTestimonial].text}"
               </p>
               <div>
-                <p className="font-poppins font-bold text-ai-black text-sm">
+                <p className="font-poppins font-bold text-ai-black text-xs sm:text-sm">
                   {testimonials[currentTestimonial].name}
                 </p>
               </div>
@@ -65,20 +65,20 @@ const Testimonials = () => {
             {/* Navigation Arrows */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
             >
-              <ChevronLeft className="w-4 h-4 text-ai-blue" />
+              <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
             >
-              <ChevronRight className="w-4 h-4 text-ai-blue" />
+              <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
             </button>
 
             {/* Dots indicator */}
-            <div className="flex justify-center mt-4 space-x-2">
+            <div className="flex justify-center mt-3 space-x-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}

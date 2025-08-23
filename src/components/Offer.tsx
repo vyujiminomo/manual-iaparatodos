@@ -20,22 +20,90 @@ const Offer = () => {
   };
 
   return (
-    <section id="oferta" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="oferta" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-2 sm:px-4">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <div className="mb-8">
-            <span className="font-poppins text-sm text-blue-600 font-semibold uppercase tracking-wider bg-blue-50 px-6 py-3 rounded-full border border-blue-200">
+        <div className="text-center mb-8 md:mb-16">
+          <div className="mb-4 md:mb-8">
+            <span className="font-poppins text-xs sm:text-sm text-blue-600 font-semibold uppercase tracking-wider bg-blue-50 px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-blue-200">
               ACESSE O MANUAL
             </span>
           </div>
-          <h2 className="font-bebas text-5xl md:text-7xl text-ai-black mb-4 leading-tight">
+          <h2 className="font-bebas text-3xl sm:text-5xl md:text-7xl text-ai-black mb-4 leading-tight px-2">
             ACESSE O MANUAL
           </h2>
         </div>
 
-        {/* Main Offer Card */}
-        <div className="max-w-7xl mx-auto">
+        {/* Mobile Layout */}
+        <div className="lg:hidden">
+          <Card className="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden mx-2">
+            <div className="p-4 sm:p-6">
+              {/* Image */}
+              <div className="mb-6 flex justify-center">
+                <div className="relative w-full max-w-xs">
+                  <img 
+                    src="/lovable-uploads/9474d9b2-8b25-48c8-a45c-de82f72e9873.png" 
+                    alt="Manual Inteligência Artificial Para Todos - Mockup Completo"
+                    className="w-full h-auto drop-shadow-2xl"
+                  />
+                </div>
+              </div>
+
+              {/* Title Section */}
+              <div className="mb-6 text-center">
+                <h3 className="font-bebas text-2xl sm:text-3xl text-ai-black mb-2 leading-tight">
+                  MANUAL IA PARA TODOS COMPLETO
+                </h3>
+                <p className="font-poppins text-lg text-gray-600 font-medium">
+                  Acesso Definitivo
+                </p>
+              </div>
+
+              {/* Benefits List */}
+              <div className="space-y-3 mb-6">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start pb-3 border-b border-gray-100 last:border-b-0">
+                    <div className="bg-gradient-to-r from-sky-400 to-cyan-400 p-1.5 rounded-full mr-3 flex-shrink-0 shadow-lg shadow-sky-400/50 glow-effect mt-0.5">
+                      <Check className="text-white" size={12} strokeWidth={3} />
+                    </div>
+                    <span className="font-poppins text-gray-800 text-sm font-medium leading-relaxed">
+                      {benefit}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Price Section */}
+              <div className="mb-6">
+                <div className="flex items-baseline justify-between mb-4">
+                  <span className="font-poppins text-lg text-gray-600 font-medium">Total:</span>
+                  <div className="flex items-baseline">
+                    <span className="font-poppins text-lg text-black font-light">R$</span>
+                    <span className="font-poppins text-3xl text-black font-light leading-none ml-1">47</span>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <Button 
+                  onClick={handlePurchaseClick}
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-poppins font-bold text-base sm:text-lg py-6 mb-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Quero Adquirir Agora →
+                </Button>
+
+                {/* Guarantee Section */}
+                <div className="text-center space-y-1">
+                  <p className="font-poppins text-xs text-gray-600 font-medium">7 Dias de Garantia</p>
+                  <p className="font-poppins text-xs text-gray-600 font-medium">Compra Segura</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:block max-w-7xl mx-auto">
           <Card className="bg-white border border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <div className="grid lg:grid-cols-5 gap-0 items-stretch min-h-[700px]">
               {/* Left side - Large Manual Image */}

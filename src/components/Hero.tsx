@@ -37,8 +37,8 @@ const Hero = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden">
           {/* Manual Cover */}
-          <div className="relative mb-8 flex justify-center">
-            <div className="aspect-[3/4] w-64 rounded-xl overflow-hidden shadow-2xl">
+          <div className="relative mb-6 flex justify-center px-4">
+            <div className="aspect-[3/4] w-56 sm:w-64 rounded-xl overflow-hidden shadow-2xl">
               <img 
                 src="/lovable-uploads/12555f99-96ca-47c9-bc24-74a2677becf4.png" 
                 alt="Capa do Manual Inteligência Artificial Para Todos"
@@ -48,36 +48,36 @@ const Hero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center mb-8">
-            <h1 className="font-bebas text-4xl leading-tight text-ai-black mb-4">
+          <div className="text-center mb-6 px-4">
+            <h1 className="font-bebas text-3xl sm:text-4xl leading-tight text-ai-black mb-3">
               DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
-            <p className="font-poppins text-base text-gray-500 mb-4">
+            <p className="font-poppins text-sm sm:text-base text-gray-500 mb-3">
               (mesmo sendo leigo)
             </p>
-            <p className="font-poppins text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="font-poppins text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
               Tudo de melhor sobre IA, filtrado e simplificado para profissionais ocupados
             </p>
           </div>
 
           {/* Button */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6 px-4">
             <Button 
               onClick={scrollToOffer}
               size="lg" 
-              className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4 w-full max-w-sm"
+              className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-base sm:text-lg px-6 py-3 w-full max-w-sm"
             >
               Quero Acessar
             </Button>
           </div>
 
           {/* Testimonials Carousel */}
-          <div className="relative">
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 mx-4">
-              <p className="font-poppins text-gray-700 text-sm italic mb-2">
+          <div className="relative px-2">
+            <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border border-gray-200 mx-2 sm:mx-4">
+              <p className="font-poppins text-gray-700 text-xs sm:text-sm italic mb-2 leading-relaxed">
                 "{testimonials[currentTestimonial].text}"
               </p>
-              <p className="font-poppins font-semibold text-ai-black text-sm">
+              <p className="font-poppins font-semibold text-ai-black text-xs sm:text-sm">
                 {testimonials[currentTestimonial].name}
               </p>
             </div>
@@ -85,20 +85,20 @@ const Hero = () => {
             {/* Navigation Arrows */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
             >
-              <ChevronLeft className="w-4 h-4 text-ai-blue" />
+              <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
             >
-              <ChevronRight className="w-4 h-4 text-ai-blue" />
+              <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
             </button>
 
             {/* Dots indicator */}
-            <div className="flex justify-center mt-4 space-x-2">
+            <div className="flex justify-center mt-3 space-x-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}

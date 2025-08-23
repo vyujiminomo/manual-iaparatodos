@@ -31,31 +31,31 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="mb-4">
-            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+    <section className="py-12 md:py-16 bg-gray-50">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="text-center mb-8 md:mb-12 px-2">
+          <div className="mb-3 md:mb-4">
+            <span className="font-poppins text-xs sm:text-sm text-ai-blue font-semibold uppercase tracking-wider">
               F.A.Q.
             </span>
           </div>
-          <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
+          <h2 className="font-bebas text-3xl sm:text-4xl md:text-6xl text-ai-black mb-4 md:mb-6 px-2">
             Restou alguma dúvida?
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+        <div className="max-w-4xl mx-auto px-2">
+          <Accordion type="single" collapsible className="w-full space-y-3 sm:space-y-4">
             {faqItems.map((item) => (
               <AccordionItem 
                 key={item.id} 
                 value={item.id}
-                className="bg-white border border-gray-200 rounded-lg px-6 py-2 shadow-sm"
+                className="bg-white border border-gray-200 rounded-lg px-3 sm:px-6 py-1 sm:py-2 shadow-sm"
               >
-                <AccordionTrigger className="font-poppins font-semibold text-lg text-ai-black hover:text-ai-blue transition-colors text-left">
+                <AccordionTrigger className="font-poppins font-semibold text-sm sm:text-base md:text-lg text-ai-black hover:text-ai-blue transition-colors text-left">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-poppins text-gray-700 leading-relaxed pt-2">
+                <AccordionContent className="font-poppins text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed pt-2">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
