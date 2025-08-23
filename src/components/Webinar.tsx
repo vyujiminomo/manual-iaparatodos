@@ -137,12 +137,13 @@ const Webinar = () => {
             <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
               O Webinar IA Para Todos
             </h2>
-            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl mb-8">
+            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl">
               Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
             </p>
+          </div>
 
-            {/* Cards dos depoimentos alinhados com a headline */}
-            <div className="space-y-6 max-w-4xl mb-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl">
+            <div className="space-y-8">
               <Card className="bg-white border-2 border-gray-100 p-8">
                 <div>
                   <p className="font-poppins text-gray-700 mb-4 leading-relaxed italic">
@@ -175,11 +176,8 @@ const Webinar = () => {
                 </div>
               </Card>
             </div>
-          </div>
-
-          {/* Vídeo centralizado */}
-          <div className="flex justify-center">
-            <div className="relative max-w-4xl w-full">
+            
+            <div className="relative">
               <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100">
                 <iframe
                   src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
