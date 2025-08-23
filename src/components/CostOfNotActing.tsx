@@ -68,7 +68,7 @@ const CostOfNotActing = () => {
         <div className="text-center">
           <button
             onClick={scrollToOffer}
-            className="bg-ai-blue hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+            className="bg-ai-blue hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2 mx-auto"
           >
             Quero Acessar <ArrowRight className="w-5 h-5" />
           </button>

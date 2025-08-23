@@ -189,16 +189,8 @@ const Solution = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-8 max-w-4xl mx-auto mb-8 relative">
-            {/* Decorative elements */}
-            <div className="absolute top-4 left-4 w-3 h-3 bg-blue-200 rounded-full opacity-60"></div>
-            <div className="absolute top-6 right-8 w-2 h-2 bg-purple-200 rounded-full opacity-60"></div>
-            <div className="absolute bottom-4 left-8 w-2 h-2 bg-blue-200 rounded-full opacity-60"></div>
-            
-            <div className="relative z-10">
-              <div className="flex justify-center mb-4">
-                <CheckCircle className="text-green-500" size={32} />
-              </div>
+          <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 max-w-4xl mx-auto mb-8">
+            <div>
               <p className="font-poppins text-xl md:text-2xl text-ai-black font-bold mb-2">
                 Enquanto outros recursos te afundam em teoria...
               </p>
