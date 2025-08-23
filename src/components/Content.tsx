@@ -66,7 +66,7 @@ const Content = () => {
           {modules.map((module, index) => (
             <div key={index} className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Module Info */}
-              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''} ${index === 3 ? 'lg:pl-8' : ''}`}>
                 <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6">{module.title}</h3>
                 <ul className="space-y-4 mb-8">
                   {module.items.map((item, itemIndex) => (
