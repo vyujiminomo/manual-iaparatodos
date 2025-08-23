@@ -80,11 +80,8 @@ const Webinar = () => {
 
           {/* Testimonials Carousel */}
           <div className="relative mb-6 px-2">
-            <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-6 transition-all duration-300 hover:shadow-xl group relative overflow-hidden mx-2 sm:mx-4">
-              {/* Enhanced gradient background on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              <div className="relative z-10">
+            <Card className="bg-white border-2 border-gray-100 p-6 mx-2 sm:mx-4">
+              <div>
                 <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
                   "{testimonials[currentTestimonial].text}"
                 </p>
@@ -102,14 +99,14 @@ const Webinar = () => {
             {/* Navigation Arrows */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 transition-all duration-200"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200"
             >
               <ChevronLeft className="w-4 h-4 text-ai-blue" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 transition-all duration-200"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200"
             >
               <ChevronRight className="w-4 h-4 text-ai-blue" />
             </button>
@@ -120,8 +117,8 @@ const Webinar = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
-                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300 hover:bg-gray-400'
+                  className={`w-2 h-2 rounded-full ${
+                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300'
                   }`}
                 />
               ))}
@@ -140,18 +137,14 @@ const Webinar = () => {
             <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
               O Webinar IA Para Todos
             </h2>
-            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl">
+            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl mb-8">
               Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
             </p>
-          </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-            <div className="space-y-8">
-              <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-8 transition-all duration-300 hover:shadow-xl group relative overflow-hidden">
-                {/* Enhanced gradient background on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="relative z-10">
+            {/* Cards dos depoimentos alinhados com a headline */}
+            <div className="space-y-6 max-w-4xl mb-16">
+              <Card className="bg-white border-2 border-gray-100 p-8">
+                <div>
                   <p className="font-poppins text-gray-700 mb-4 leading-relaxed italic">
                     "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso. Gratidão."
                   </p>
@@ -166,11 +159,8 @@ const Webinar = () => {
                 </div>
               </Card>
               
-              <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-8 transition-all duration-300 hover:shadow-xl group relative overflow-hidden">
-                {/* Enhanced gradient background on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="relative z-10">
+              <Card className="bg-white border-2 border-gray-100 p-8">
+                <div>
                   <p className="font-poppins text-gray-700 mb-4 leading-relaxed italic">
                     "A aula foi bem didática e sensação q tive foi q a IA não ficará tão distante de nós depois de sua apresentação."
                   </p>
@@ -185,9 +175,12 @@ const Webinar = () => {
                 </div>
               </Card>
             </div>
-            
-            <div className="relative">
-              <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100 hover:border-blue-200 transition-all duration-300">
+          </div>
+
+          {/* Vídeo centralizado */}
+          <div className="flex justify-center">
+            <div className="relative max-w-4xl w-full">
+              <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100">
                 <iframe
                   src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
                   title="Webinar IA Para Todos"
