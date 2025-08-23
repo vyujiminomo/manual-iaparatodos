@@ -85,7 +85,7 @@ const Content = () => {
               </div>
 
               {/* Module Image */}
-              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} flex justify-center`}>
+              <div className={`${index % 2 === 1 ? 'lg:order-1 flex justify-start' : 'flex justify-center'}`}>
                 <div className="relative">
                   <img 
                     src={module.image}
