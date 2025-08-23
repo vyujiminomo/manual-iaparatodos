@@ -49,10 +49,10 @@ const Hero = () => {
 
           {/* Text Content */}
           <div className="text-center mb-6 px-4">
-            <h1 className="font-bebas text-3xl sm:text-4xl leading-tight text-ai-black mb-3">
+            <h1 className="font-bebas text-3xl sm:text-4xl leading-tight text-ai-black mb-2">
               DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
-            <p className="font-poppins text-sm sm:text-base text-gray-500 mb-3">
+            <p className="font-poppins text-sm sm:text-base text-gray-500 mb-2">
               (mesmo sendo leigo)
             </p>
             <p className="font-poppins text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
@@ -120,10 +120,10 @@ const Hero = () => {
                 MANUAL IA PARA TODOS
               </span>
             </div>
-            <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-4">
+            <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-2">
               DOMINE O CHATGPT EM 5 MINUTOS POR DIA
             </h1>
-            <p className="font-poppins text-lg text-gray-500 mb-4">
+            <p className="font-poppins text-lg text-gray-500 mb-3">
               (mesmo sendo leigo)
             </p>
             <p className="font-poppins text-xl text-gray-700 mb-6 leading-relaxed">
