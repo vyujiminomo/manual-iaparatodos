@@ -35,13 +35,38 @@ const Webinar = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden">
+      {/* Enhanced background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 w-32 h-32 border border-blue-200 rounded-full"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 border border-cyan-200 rounded-full"></div>
+        <div className="absolute bottom-20 left-1/4 w-16 h-16 border border-blue-200 rounded-full"></div>
+        <div className="absolute top-1/2 right-1/3 w-20 h-20 border border-blue-100 rounded-full"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Mobile and Tablet Layout */}
         <div className="lg:hidden">
+          {/* Badge */}
+          <div className="text-center mb-6 px-4">
+            <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full border border-blue-100">
+              TESTADO NA PRÁTICA
+            </span>
+          </div>
+
+          {/* Title */}
+          <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight text-center px-4">
+            O Webinar IA Para Todos
+          </h2>
+
+          {/* Text */}
+          <p className="font-poppins text-lg text-gray-600 leading-relaxed mb-8 text-center px-4">
+            Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
+          </p>
+
           {/* Video */}
-          <div className="relative mb-6 px-2">
-            <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-lg">
+          <div className="relative mb-8 px-2">
+            <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100">
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
                 title="Webinar IA Para Todos"
@@ -53,62 +78,50 @@ const Webinar = () => {
             </div>
           </div>
 
-          {/* Badge */}
-          <div className="text-center mb-3 px-4">
-            <span className="font-poppins text-xs sm:text-sm text-ai-blue font-semibold uppercase tracking-wider">
-              TESTADO NA PRÁTICA
-            </span>
-          </div>
-
-          {/* Title */}
-          <h2 className="font-bebas text-3xl sm:text-4xl text-ai-black mb-4 leading-tight text-center px-4">
-            O Webinar IA Para Todos
-          </h2>
-
-          {/* Text */}
-          <p className="font-poppins text-sm sm:text-base text-gray-700 leading-relaxed mb-6 text-center px-4">
-            Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
-          </p>
-
           {/* Testimonials Carousel */}
           <div className="relative mb-6 px-2">
-            <div className="bg-gray-50 p-4 sm:p-6 rounded-xl border border-gray-100 mx-2 sm:mx-4">
-              <p className="font-poppins text-gray-700 mb-3 text-xs sm:text-sm leading-relaxed italic">
-                "{testimonials[currentTestimonial].text}"
-              </p>
-              <div>
-                <p className="font-poppins font-bold text-ai-black text-xs sm:text-sm">
-                  {testimonials[currentTestimonial].name}
+            <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-6 transition-all duration-300 hover:shadow-xl group relative overflow-hidden mx-2 sm:mx-4">
+              {/* Enhanced gradient background on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div className="relative z-10">
+                <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
+                  "{testimonials[currentTestimonial].text}"
                 </p>
-                <p className="font-poppins text-gray-500 text-xs">
-                  {testimonials[currentTestimonial].role}
-                </p>
+                <div>
+                  <p className="font-poppins font-bold text-ai-black text-sm">
+                    {testimonials[currentTestimonial].name}
+                  </p>
+                  <p className="font-poppins text-gray-500 text-xs">
+                    {testimonials[currentTestimonial].role}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Card>
             
             {/* Navigation Arrows */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 transition-all duration-200"
             >
-              <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
+              <ChevronLeft className="w-4 h-4 text-ai-blue" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 sm:p-2 shadow-lg border border-gray-200 hover:bg-gray-50"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 transition-all duration-200"
             >
-              <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-ai-blue" />
+              <ChevronRight className="w-4 h-4 text-ai-blue" />
             </button>
 
             {/* Dots indicator */}
-            <div className="flex justify-center mt-3 space-x-2">
+            <div className="flex justify-center mt-4 space-x-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
-                  className={`w-2 h-2 rounded-full ${
-                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300'
+                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                    index === currentTestimonial ? 'bg-ai-blue' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
               ))}
@@ -116,55 +129,65 @@ const Webinar = () => {
           </div>
         </div>
 
-        {/* Desktop Layout - Original */}
+        {/* Desktop Layout */}
         <div className="hidden lg:block">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <div className="mb-4">
-                <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-                  TESTADO NA PRÁTICA
-                </span>
-              </div>
-              <h2 className="font-bebas text-4xl md:text-5xl text-ai-black mb-6 leading-tight">
-                O Webinar IA Para Todos
-              </h2>
-              <p className="font-poppins text-lg text-gray-700 leading-relaxed mb-8">
-                Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
-              </p>
-              
-              <div className="space-y-6">
-                <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                  <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
+          <div className="text-center mb-16">
+            <div className="mb-6">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full border border-blue-100">
+                TESTADO NA PRÁTICA
+              </span>
+            </div>
+            <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
+              O Webinar IA Para Todos
+            </h2>
+            <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+              Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+            <div className="space-y-8">
+              <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-8 transition-all duration-300 hover:shadow-xl group relative overflow-hidden">
+                {/* Enhanced gradient background on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                <div className="relative z-10">
+                  <p className="font-poppins text-gray-700 mb-4 leading-relaxed italic">
                     "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso. Gratidão."
                   </p>
                   <div>
-                    <p className="font-poppins font-bold text-ai-black text-sm">
+                    <p className="font-poppins font-bold text-ai-black">
                       Marta Romilda
                     </p>
-                    <p className="font-poppins text-gray-500 text-xs">
+                    <p className="font-poppins text-gray-500 text-sm">
                       Administradora
                     </p>
                   </div>
                 </div>
+              </Card>
+              
+              <Card className="bg-white border-2 border-gray-100 hover:border-blue-200 p-8 transition-all duration-300 hover:shadow-xl group relative overflow-hidden">
+                {/* Enhanced gradient background on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 to-cyan-50/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
-                <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                  <p className="font-poppins text-gray-700 mb-4 text-sm leading-relaxed italic">
+                <div className="relative z-10">
+                  <p className="font-poppins text-gray-700 mb-4 leading-relaxed italic">
                     "A aula foi bem didática e sensação q tive foi q a IA não ficará tão distante de nós depois de sua apresentação."
                   </p>
                   <div>
-                    <p className="font-poppins font-bold text-ai-black text-sm">
+                    <p className="font-poppins font-bold text-ai-black">
                       Ana Isabel
                     </p>
-                    <p className="font-poppins text-gray-500 text-xs">
+                    <p className="font-poppins text-gray-500 text-sm">
                       Servidora Pública
                     </p>
                   </div>
                 </div>
-              </div>
+              </Card>
             </div>
             
             <div className="relative">
-              <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100 hover:border-blue-200 transition-all duration-300">
                 <iframe
                   src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
                   title="Webinar IA Para Todos"
@@ -178,11 +201,10 @@ const Webinar = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <Button 
             onClick={scrollToOffer}
-            size="lg" 
-            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
+            className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
