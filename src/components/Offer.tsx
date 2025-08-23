@@ -20,7 +20,7 @@ const Offer = () => {
   };
 
   return (
-    <section id="oferta" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="oferta" className="py-12 md:py-20 md:pb-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-2 sm:px-4">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-16">

@@ -66,7 +66,7 @@ const Solution = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section id="sobre" className="pt-8 pb-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-24 h-24 border border-blue-200 rounded-full"></div>

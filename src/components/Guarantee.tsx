@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Guarantee = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="pt-8 pb-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border-2 border-yellow-300 p-8 md:p-12">

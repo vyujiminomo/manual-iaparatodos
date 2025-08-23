@@ -25,7 +25,7 @@ const Problems = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section className="py-20 pb-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* Enhanced background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 border border-red-200 rounded-full"></div>

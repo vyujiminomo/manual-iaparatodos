@@ -31,11 +31,18 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-gray-50">
-      <div className="container mx-auto px-2 sm:px-4">
+    <section className="py-12 md:py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 w-24 h-24 border border-blue-200 rounded-full"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 border border-blue-200 rounded-full"></div>
+        <div className="absolute bottom-20 left-1/4 w-16 h-16 border border-blue-200 rounded-full"></div>
+      </div>
+      
+      <div className="container mx-auto px-2 sm:px-4 relative z-10">
         <div className="text-center mb-8 md:mb-12 px-2">
-          <div className="mb-3 md:mb-4">
-            <span className="font-poppins text-xs sm:text-sm text-ai-blue font-semibold uppercase tracking-wider">
+          <div className="mb-6">
+            <span className="font-poppins text-sm text-blue-600 font-semibold uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
               F.A.Q.
             </span>
           </div>
@@ -45,17 +52,17 @@ const FAQ = () => {
         </div>
 
         <div className="max-w-4xl mx-auto px-2">
-          <Accordion type="single" collapsible className="w-full space-y-3 sm:space-y-4">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {faqItems.map((item) => (
               <AccordionItem 
                 key={item.id} 
                 value={item.id}
-                className="bg-white border border-gray-200 rounded-lg px-3 sm:px-6 py-1 sm:py-2 shadow-sm"
+                className="bg-white border-2 border-gray-100 hover:border-blue-200 rounded-xl px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <AccordionTrigger className="font-poppins font-semibold text-sm sm:text-base md:text-lg text-ai-black hover:text-ai-blue transition-colors text-left">
+                <AccordionTrigger className="font-poppins font-bold text-base md:text-lg text-ai-black hover:text-blue-600 transition-colors text-left group-hover:text-blue-600">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-poppins text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed pt-2">
+                <AccordionContent className="font-poppins text-sm md:text-base text-gray-700 leading-relaxed pt-2 pb-4">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
