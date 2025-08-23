@@ -67,9 +67,6 @@ const Transformation = () => {
               
               <div className="relative z-10">
                 <div className="text-center mb-6">
-                  <div className="bg-red-100 p-4 rounded-full mb-4 inline-flex group-hover:bg-red-200 transition-colors duration-300">
-                    <X className="text-red-600" size={32} />
-                  </div>
                   <h3 className="font-poppins text-2xl font-bold text-ai-black mb-2">
                     Se sente...
                   </h3>
@@ -95,9 +92,6 @@ const Transformation = () => {
               
               <div className="relative z-10">
                 <div className="text-center mb-6">
-                  <div className="bg-blue-100 p-4 rounded-full mb-4 inline-flex group-hover:bg-blue-200 transition-colors duration-300">
-                    <Check className="text-ai-blue" size={32} />
-                  </div>
                   <h3 className="font-poppins text-2xl font-bold text-ai-black mb-2">
                     Mas quer...
                   </h3>
@@ -127,9 +121,6 @@ const Transformation = () => {
               {/* Se sente... */}
               <div className="border-r border-gray-200 pr-8">
                 <div className="text-center mb-8">
-                  <div className="bg-red-100 p-4 rounded-full mb-4 inline-flex group-hover:bg-red-200 transition-colors duration-300">
-                    <X className="text-red-600" size={32} />
-                  </div>
                   <h3 className="font-poppins text-2xl font-bold text-ai-black">
                     Se sente...
                   </h3>
@@ -151,9 +142,6 @@ const Transformation = () => {
               {/* Mas quer... */}
               <div className="pl-4">
                 <div className="text-center mb-8">
-                  <div className="bg-blue-100 p-4 rounded-full mb-4 inline-flex group-hover:bg-blue-200 transition-colors duration-300">
-                    <Check className="text-ai-blue" size={32} />
-                  </div>
                   <h3 className="font-poppins text-2xl font-bold text-ai-black">
                     Mas quer...
                   </h3>
@@ -175,16 +163,7 @@ const Transformation = () => {
           </Card>
         </div>
 
-        {/* Enhanced closing statement */}
         <div className="text-center mt-16">
-          <div className="mb-8">
-            <div className="inline-block bg-white border-2 border-gray-200 rounded-full px-8 py-4 shadow-sm">
-              <p className="font-poppins text-xl md:text-2xl text-ai-black font-semibold">
-                Então o Manual IA para Todos é perfeito pra você!
-              </p>
-            </div>
-          </div>
-          
           <Button 
             onClick={scrollToOffer}
             className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
