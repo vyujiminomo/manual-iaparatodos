@@ -58,7 +58,7 @@ const Content = () => {
             </span>
           </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-6">
-            O QUE O MANUAL OFERECE
+            O QUE VOCÊ VAI APRENDER
           </h2>
         </div>
 
@@ -66,7 +66,7 @@ const Content = () => {
           {modules.map((module, index) => (
             <div key={index} className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Module Info */}
-              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+              <div>
                 <h3 className="font-bebas text-3xl md:text-4xl text-ai-black mb-6">{module.title}</h3>
                 <ul className="space-y-4 mb-8">
                   {module.items.map((item, itemIndex) => (
@@ -80,12 +80,12 @@ const Content = () => {
                   onClick={scrollToOffer}
                   className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-6 py-3 rounded-lg"
                 >
-                  QUERO FAZER PARTE →
+                  Quero Acessar Agora
                 </Button>
               </div>
 
               {/* Module Image */}
-              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} flex justify-center`}>
+              <div className="flex justify-center">
                 <div className="relative">
                   <img 
                     src={module.image}
