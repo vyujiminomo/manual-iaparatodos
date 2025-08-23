@@ -10,22 +10,14 @@ const Author = () => {
   };
 
   return (
-    <section id="autor" className="relative py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-ai-black text-white overflow-hidden">
-      {/* Decorative circles */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-ai-blue/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-10 w-24 h-24 bg-white/5 rounded-full blur-lg"></div>
-      <div className="absolute top-1/2 right-1/4 w-40 h-40 bg-ai-blue/5 rounded-full blur-2xl"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="autor" className="py-16 bg-ai-black text-white">
+      <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="mb-4">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-ai-blue/20 rounded-full mb-4">
-                <div className="w-8 h-8 bg-ai-blue rounded-full"></div>
-              </div>
-              <div className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
+              <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
                 SOBRE MIM
-              </div>
+              </span>
             </div>
           </div>
 
