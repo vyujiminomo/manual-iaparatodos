@@ -89,7 +89,7 @@ const Offer = () => {
                   size="lg" 
                   className="w-full bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-poppins font-bold text-base sm:text-lg py-6 mb-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Quero Adquirir Agora →
+                  Quero Acessar →
                 </Button>
 
                 {/* Guarantee Section */}
@@ -159,7 +159,7 @@ const Offer = () => {
                     size="lg" 
                     className="w-full bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-poppins font-bold text-xl py-8 mb-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    Quero Adquirir Agora →
+                    Quero Acessar →
                   </Button>
 
                   {/* Guarantee Section */}
