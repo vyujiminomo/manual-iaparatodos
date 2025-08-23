@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import {
   Carousel,
@@ -146,7 +146,7 @@ const TestimonialsCarousel = () => {
             size="lg" 
             className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
           >
-            Quero Acessar
+            Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>

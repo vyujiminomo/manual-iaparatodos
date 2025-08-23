@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { X, Check } from "lucide-react";
+import { X, Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Transformation = () => {
@@ -139,7 +139,7 @@ const Transformation = () => {
             onClick={scrollToOffer}
             className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-8 py-3 text-lg rounded-lg"
           >
-            Quero Acessar
+            Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>

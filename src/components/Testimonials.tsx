@@ -1,7 +1,8 @@
 
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -134,7 +135,7 @@ const Testimonials = () => {
             size="lg" 
             className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
           >
-            Quero Acessar
+            Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>

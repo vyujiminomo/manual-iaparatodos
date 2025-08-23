@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Content = () => {
   const scrollToOffer = () => {
@@ -81,7 +82,7 @@ const Content = () => {
                     onClick={scrollToOffer}
                     className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold px-6 py-3 rounded-lg"
                   >
-                    Quero Acessar Agora
+                    Quero Acessar Agora <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </div>
 

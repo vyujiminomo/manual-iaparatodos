@@ -1,7 +1,8 @@
 
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
 
 const Author = () => {
   const scrollToOffer = () => {
@@ -71,7 +72,7 @@ const Author = () => {
                   size="lg" 
                   className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
                 >
-                  Quero Acessar
+                  Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </div>
             </div>

@@ -1,7 +1,8 @@
 
 import { Button } from "@/components/ui/button";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from 'react-router-dom';
 import { trackEvent } from "@/hooks/useAnalytics";
+import { ArrowRight } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -48,7 +49,7 @@ const Header = () => {
               onClick={handleButtonClick}
               className="bg-ai-blue hover:bg-ai-blue/90 text-white font-semibold px-6 py-2 rounded-md"
             >
-              Quero Acessar
+              Quero Acessar <ArrowRight className="w-4 h-4 ml-1" />
             </Button>
           </nav>
         </div>
@@ -90,9 +91,10 @@ const Header = () => {
           </div>
           <Button 
             onClick={handleButtonClick}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md flex items-center gap-1"
           >
             {location.pathname === '/manual' ? 'Quero Acessar' : 'Ver Manual'}
+            <ArrowRight className="w-4 h-4" />
           </Button>
         </nav>
       </div>

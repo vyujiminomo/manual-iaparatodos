@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const Hero = () => {
@@ -67,7 +67,7 @@ const Hero = () => {
               size="lg" 
               className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-base sm:text-lg px-6 py-3 w-full max-w-sm"
             >
-              Quero Acessar
+              Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
 
@@ -136,7 +136,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-ai-blue hover:bg-ai-blue/90 text-white font-poppins font-semibold text-lg px-8 py-4"
               >
-                Quero Acessar
+                Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
 

@@ -1,6 +1,12 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const BonusSpecials = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('oferta');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
   const bonuses = [
     {
       title: "Biblioteca de Prompts",
@@ -74,6 +80,17 @@ const BonusSpecials = () => {
               </div>
             </Card>
           ))}
+        </div>
+        
+        {/* Call to Action Button */}
+        <div className="text-center mt-16">
+          <Button 
+            onClick={scrollToOffer}
+            size="lg" 
+            className="bg-cyan-400 hover:bg-cyan-500 text-black font-poppins font-semibold text-lg px-8 py-4"
+          >
+            Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
+          </Button>
         </div>
       </div>
     </section>
