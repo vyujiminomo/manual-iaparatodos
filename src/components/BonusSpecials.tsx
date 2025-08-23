@@ -58,8 +58,44 @@ const BonusSpecials = () => {
 
         {/* Bonus Cards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {bonuses.map((bonus, index) => (
+          {/* First 3 bonuses */}
+          {bonuses.slice(0, 3).map((bonus, index) => (
             <Card key={index} className="bg-gray-800/50 border border-gray-700/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 backdrop-blur-sm">
+              {/* Image Section */}
+              <div className="aspect-video bg-gray-900 p-4 flex items-center justify-center">
+                <img 
+                  src={bonus.image} 
+                  alt={bonus.title}
+                  className="w-full h-full object-contain rounded-lg"
+                />
+              </div>
+              
+              {/* Content Section */}
+              <div className="p-6">
+                <h3 className="font-bebas text-2xl text-white mb-3 leading-tight">
+                  {bonus.title}
+                </h3>
+                <p className="font-poppins text-gray-300 text-sm leading-relaxed">
+                  {bonus.description}
+                </p>
+              </div>
+            </Card>
+          ))}
+          
+          {/* Mobile CTA Button - Only visible on mobile between first 3 and last 3 */}
+          <div className="md:hidden col-span-full flex justify-center my-8">
+            <Button 
+              onClick={scrollToOffer}
+              size="lg" 
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-poppins font-semibold text-lg px-8 py-4"
+            >
+              Quero Acessar <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
+          
+          {/* Last 3 bonuses */}
+          {bonuses.slice(3).map((bonus, index) => (
+            <Card key={index + 3} className="bg-gray-800/50 border border-gray-700/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 backdrop-blur-sm">
               {/* Image Section */}
               <div className="aspect-video bg-gray-900 p-4 flex items-center justify-center">
                 <img 
