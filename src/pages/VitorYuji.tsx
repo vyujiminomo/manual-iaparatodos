@@ -1,14 +1,46 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Award, Users, Zap, Heart, Linkedin, ExternalLink, Mail, Instagram } from "lucide-react";
+import { Award, Users, Zap, Heart, Linkedin, ExternalLink, Mail, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const VitorYuji = () => {
+  const [currentPalestra, setCurrentPalestra] = useState(0);
+  
   useDynamicMeta({
     title: "Vitor Yuji - Sobre",
     description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa no Brasil.",
     image: "/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png"
   });
+
+  const palestras = [
+    {
+      title: "IA Generativa para Profissionais",
+      local: "Instituto JCPM",
+      ano: "2024",
+      image: "/placeholder-palestra-1.jpg"
+    },
+    {
+      title: "Inteligência Artificial na Educação",
+      local: "SuperClass",
+      ano: "2024", 
+      image: "/placeholder-palestra-2.jpg"
+    },
+    {
+      title: "O Futuro da IA no Brasil",
+      local: "Adapta Summit",
+      ano: "2024",
+      image: "/placeholder-palestra-3.jpg"
+    }
+  ];
+
+  const nextPalestra = () => {
+    setCurrentPalestra((prev) => (prev + 1) % palestras.length);
+  };
+
+  const prevPalestra = () => {
+    setCurrentPalestra((prev) => (prev - 1 + palestras.length) % palestras.length);
+  };
 
   return (
     <div className="min-h-screen bg-black text-white font-poppins">
@@ -44,6 +76,74 @@ const VitorYuji = () => {
                 <p>
                   E participou de <strong className="text-ai-blue">3 temporadas da First Lego League</strong> (um dos maiores torneios de robótica do mundo).
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Palestras */}
+      <section className="py-16 bg-gray-900/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Palestras:</h2>
+            
+            <div className="relative">
+              <Card className="bg-gray-900/50 border-gray-700 p-8 backdrop-blur-sm">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  {/* Placeholder da Imagem */}
+                  <div className="w-full md:w-1/2">
+                    <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600">
+                      <div className="text-center text-gray-400">
+                        <div className="w-16 h-16 mx-auto mb-4 bg-gray-600 rounded-lg flex items-center justify-center">
+                          <Award className="w-8 h-8" />
+                        </div>
+                        <p className="text-sm">Imagem da Palestra</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Conteúdo */}
+                  <div className="w-full md:w-1/2 text-center md:text-left">
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      {palestras[currentPalestra].title}
+                    </h3>
+                    <p className="text-lg text-gray-300 mb-2">
+                      <strong>Local:</strong> {palestras[currentPalestra].local}
+                    </p>
+                    <p className="text-lg text-gray-300">
+                      <strong>Ano:</strong> {palestras[currentPalestra].ano}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Setas de Navegação */}
+              <button
+                onClick={prevPalestra}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-ai-blue hover:bg-ai-blue/80 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              
+              <button
+                onClick={nextPalestra}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-ai-blue hover:bg-ai-blue/80 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+
+              {/* Indicadores */}
+              <div className="flex justify-center mt-6 space-x-2">
+                {palestras.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentPalestra(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentPalestra ? 'bg-ai-blue' : 'bg-gray-600 hover:bg-gray-500'
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           </div>
