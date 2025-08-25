@@ -15,22 +15,41 @@ const VitorYuji = () => {
 
   const palestras = [
     {
-      title: "IA Generativa para Profissionais",
+      title: "O Mínimo de IA que você Precisa Saber (para não ficar para trás)",
+      local: "Youtube",
+      ano: "2025",
+      youtubeId: "gP-6fEO0dMM"
+    },
+    {
+      title: "3 anos usando IA na FLL (eis os resultados)",
+      local: "Colégio Master",
+      ano: "2025",
+      placeholder: true
+    },
+    {
+      title: "Webinar BETA IA Para Todos",
+      local: "Zoom",
+      ano: "2025",
+      youtubeId: "RoT5Rt6qaFI",
+      autoplay: true
+    },
+    {
+      title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
+      local: "SuperClass Itirapina e Brotas",
+      ano: "2025",
+      placeholder: true
+    },
+    {
+      title: "IA como Ferramenta de Inovação",
       local: "Instituto JCPM",
-      ano: "2024",
-      image: "/placeholder-palestra-1.jpg"
+      ano: "2025",
+      placeholder: true
     },
     {
-      title: "Inteligência Artificial na Educação",
-      local: "SuperClass",
-      ano: "2024", 
-      image: "/placeholder-palestra-2.jpg"
-    },
-    {
-      title: "O Futuro da IA no Brasil",
-      local: "Adapta Summit",
+      title: "iA e como usá-la na FLL",
+      local: "Colégio Master",
       ano: "2024",
-      image: "/placeholder-palestra-3.jpg"
+      placeholder: true
     }
   ];
 
@@ -91,16 +110,29 @@ const VitorYuji = () => {
             <div className="relative">
               <Card className="bg-gray-900/50 border-gray-700 p-8 backdrop-blur-sm">
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                  {/* Placeholder da Imagem */}
+                  {/* Vídeo ou Placeholder */}
                   <div className="w-full md:w-1/2">
-                    <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600">
-                      <div className="text-center text-gray-400">
-                        <div className="w-16 h-16 mx-auto mb-4 bg-gray-600 rounded-lg flex items-center justify-center">
-                          <Award className="w-8 h-8" />
-                        </div>
-                        <p className="text-sm">Imagem da Palestra</p>
+                    {palestras[currentPalestra].youtubeId ? (
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${palestras[currentPalestra].youtubeId}${palestras[currentPalestra].autoplay ? '?autoplay=1&mute=1' : ''}`}
+                          title={palestras[currentPalestra].title}
+                          className="w-full h-full"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
                       </div>
-                    </div>
+                    ) : (
+                      <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600">
+                        <div className="text-center text-gray-400">
+                          <div className="w-16 h-16 mx-auto mb-4 bg-gray-600 rounded-lg flex items-center justify-center">
+                            <Award className="w-8 h-8" />
+                          </div>
+                          <p className="text-sm">Imagem da Palestra</p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                   
                   {/* Conteúdo */}
