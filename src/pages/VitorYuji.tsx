@@ -67,13 +67,13 @@ const VitorYuji = () => {
       <section className="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
         
-        <div className="relative z-10 container mx-auto px-4 py-12">
+        <div className="relative z-10 container mx-auto px-4 py-8">
           <div className="max-w-6xl mx-auto text-center">
             <div className="mb-6">
               <img 
                 src="/lovable-uploads/49547bb5-5891-4afd-bd12-b86e6ffbf6ba.png" 
                 alt="Vitor Yuji"
-                className="w-full max-w-5xl mx-auto rounded-lg shadow-2xl object-cover"
+                className="w-full mx-auto rounded-lg shadow-2xl object-cover"
               />
             </div>
             
@@ -102,7 +102,7 @@ const VitorYuji = () => {
       </section>
 
       {/* Palestras */}
-      <section className="py-4 bg-gray-900/20">
+      <section className="py-2 bg-gray-900/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-center">Palestras:</h2>
