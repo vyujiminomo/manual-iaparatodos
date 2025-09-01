@@ -24,7 +24,7 @@ const VitorYuji = () => {
       title: "3 anos usando IA na FLL (eis os resultados)",
       local: "Colégio Master",
       ano: "2025",
-      placeholder: true
+      image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
     },
     {
       title: "Webinar BETA IA Para Todos",
@@ -37,19 +37,19 @@ const VitorYuji = () => {
       title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
       local: "SuperClass Itirapina e Brotas",
       ano: "2025",
-      placeholder: true
+      image: "/lovable-uploads/3e9a6853-41e4-4868-85a4-9e00dd89e8ba.png"
     },
     {
       title: "IA como Ferramenta de Inovação",
       local: "Instituto JCPM",
       ano: "2025",
-      placeholder: true
+      image: "/lovable-uploads/f28b235a-271a-4252-9cc8-aaa4125075e6.png"
     },
     {
-      title: "iA e como usá-la na FLL",
+      title: "IA e como usá-la na FLL",
       local: "Colégio Master",
       ano: "2024",
-      placeholder: true
+      image: "/lovable-uploads/0d61bede-6460-4053-b671-0f1423a5871f.png"
     }
   ];
 
@@ -110,7 +110,7 @@ const VitorYuji = () => {
             <div className="relative">
               <Card className="bg-gray-900/50 border-gray-700 p-8 backdrop-blur-sm">
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                  {/* Vídeo ou Placeholder */}
+                  {/* Vídeo, Imagem ou Placeholder */}
                   <div className="w-full md:w-1/2">
                     {palestras[currentPalestra].youtubeId ? (
                       <div className="aspect-video rounded-lg overflow-hidden">
@@ -121,6 +121,14 @@ const VitorYuji = () => {
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
+                        />
+                      </div>
+                    ) : palestras[currentPalestra].image ? (
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img
+                          src={palestras[currentPalestra].image}
+                          alt={palestras[currentPalestra].title}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     ) : (
