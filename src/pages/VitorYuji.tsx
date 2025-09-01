@@ -69,20 +69,20 @@ const VitorYuji = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
+            <div className="mb-12">
               <img 
-                src="/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png" 
+                src="/lovable-uploads/9a5fe97f-ff63-497c-9f31-acce1ae533ed.png" 
                 alt="Vitor Yuji"
-                className="w-64 h-64 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30 object-cover"
+                className="w-80 h-80 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30 object-cover"
               />
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Quem é <span className="text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
             </h1>
 
-            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm">
-              <div className="space-y-4 text-lg leading-relaxed">
+            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm max-w-4xl mx-auto">
+              <div className="space-y-4 text-lg leading-relaxed text-center">
                 <p>
                   Vitor Yuji tem apenas 14 anos e é <strong className="text-ai-blue">criador do Manual IA Para Todos</strong>, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
                 </p>
