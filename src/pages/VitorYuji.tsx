@@ -67,18 +67,18 @@ const VitorYuji = () => {
       <section className="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
         
-        <div className="relative z-10 container mx-auto px-4 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
+        <div className="relative z-10 container mx-auto px-4 py-12">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="mb-6">
               <img 
                 src="/lovable-uploads/49547bb5-5891-4afd-bd12-b86e6ffbf6ba.png" 
                 alt="Vitor Yuji"
-                className="w-full max-w-md mx-auto rounded-lg shadow-2xl object-cover"
+                className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl object-cover"
               />
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Quem é <span className="text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
+            <h1 className="text-3xl md:text-5xl font-normal mb-6 leading-tight text-white">
+              Quem é <span className="font-bold text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
             </h1>
 
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm max-w-4xl mx-auto">
@@ -102,10 +102,10 @@ const VitorYuji = () => {
       </section>
 
       {/* Palestras */}
-      <section className="py-16 bg-gray-900/20">
+      <section className="py-8 bg-gray-900/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Palestras:</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Palestras:</h2>
             
             <div className="relative">
               <Card className="bg-gray-900/50 border-gray-700 p-8 backdrop-blur-sm">
@@ -191,10 +191,10 @@ const VitorYuji = () => {
       </section>
 
       {/* Trajetória */}
-      <section className="py-16 bg-gray-900/30">
+      <section className="py-8 bg-gray-900/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Trajetória</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Trajetória</h2>
 
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
               <div className="space-y-6 text-lg leading-relaxed">
@@ -223,10 +223,10 @@ const VitorYuji = () => {
       </section>
 
       {/* Curiosidades */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Curiosidades</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Curiosidades</h2>
 
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
               <div className="space-y-4 text-lg leading-relaxed">
@@ -249,10 +249,10 @@ const VitorYuji = () => {
       </section>
 
       {/* Acompanhe o Vitor Yuji */}
-      <section className="py-16 bg-gray-900/30">
+      <section className="py-8 bg-gray-900/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Acompanhe o Vitor Yuji</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Acompanhe o Vitor Yuji</h2>
 
             <div className="space-y-8">
               {/* Manual IA Para Todos */}
