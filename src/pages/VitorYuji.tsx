@@ -73,11 +73,11 @@ const VitorYuji = () => {
               <img 
                 src="/lovable-uploads/49547bb5-5891-4afd-bd12-b86e6ffbf6ba.png" 
                 alt="Vitor Yuji"
-                className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl object-cover"
+                className="w-full max-w-5xl mx-auto rounded-lg shadow-2xl object-cover"
               />
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-normal mb-6 leading-tight text-white">
+            <h1 className="text-3xl md:text-5xl font-playfair font-normal mb-6 leading-tight text-white">
               Quem é <span className="font-bold text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
             </h1>
 
@@ -102,7 +102,7 @@ const VitorYuji = () => {
       </section>
 
       {/* Palestras */}
-      <section className="py-8 bg-gray-900/20">
+      <section className="py-4 bg-gray-900/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-center">Palestras:</h2>

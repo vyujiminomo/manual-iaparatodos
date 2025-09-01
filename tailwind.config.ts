@@ -69,6 +69,7 @@ export default {
 			fontFamily: {
 				'bebas': ['Bebas Neue', 'sans-serif'],
 				'poppins': ['Poppins', 'sans-serif'],
+				'playfair': ['Playfair Display', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
