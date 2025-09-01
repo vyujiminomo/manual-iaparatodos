@@ -69,11 +69,11 @@ const VitorYuji = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-12">
+            <div className="mb-8">
               <img 
-                src="/lovable-uploads/9a5fe97f-ff63-497c-9f31-acce1ae533ed.png" 
+                src="/lovable-uploads/49547bb5-5891-4afd-bd12-b86e6ffbf6ba.png" 
                 alt="Vitor Yuji"
-                className="w-80 h-80 mx-auto rounded-full shadow-2xl border-4 border-ai-blue/30 object-cover"
+                className="w-full max-w-md mx-auto rounded-lg shadow-2xl object-cover"
               />
             </div>
             
