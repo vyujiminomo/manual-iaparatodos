@@ -77,7 +77,7 @@ const VitorYuji = () => {
               />
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-playfair font-normal mb-6 leading-tight text-white">
+            <h1 className="text-3xl md:text-5xl font-poppins font-semibold mb-6 leading-tight text-white">
               Quem é <span className="font-bold text-ai-blue">Vitor Yuji</span>, 14 anos e criador do Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil?
             </h1>
 
