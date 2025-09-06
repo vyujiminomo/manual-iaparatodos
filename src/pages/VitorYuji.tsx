@@ -90,16 +90,19 @@ const VitorYuji = () => {
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm max-w-4xl mx-auto">
               <div className="space-y-4 text-lg leading-relaxed text-center">
                 <p>
-                  Vitor Yuji tem apenas 14 anos e é <strong className="text-ai-blue">criador do Manual IA Para Todos</strong>, o guia mais prático de IA Generativa do Brasil - onde ensino você a usar IA em 5 minutos por dia.
+                  Vitor Yuji tem apenas 15 anos e já educou <strong className="text-ai-blue">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                 </p>
                 <p>
-                  Também é <strong className="text-ai-blue">co-fundador do Mangue Mania</strong> (uma das maiores metodologias de educação ambiental de Sergipe)
+                  <strong className="text-ai-blue">Criador do Manual IA Para Todos</strong> - o guia mais prático de IA Generativa do Brasil, onde ensina você a dominar IA em apenas 5 minutos por dia.
                 </p>
                 <p>
-                  <strong className="text-ai-blue">Trainee da Adapta.org</strong> (a maior startup de IA Generativa da América Latina).
+                  <strong className="text-ai-blue">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, finalista entre 1.500 projetos no prêmio nacional Criativos Escola.
                 </p>
                 <p>
-                  E participou de <strong className="text-ai-blue">3 temporadas da First Lego League</strong> (um dos maiores torneios de robótica do mundo).
+                  <strong className="text-ai-blue">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                </p>
+                <p>
+                  <strong className="text-ai-blue">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
                 </p>
               </div>
             </div>
