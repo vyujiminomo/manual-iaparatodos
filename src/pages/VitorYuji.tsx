@@ -24,7 +24,7 @@ const VitorYuji = () => {
       title: "Como usar IA pra aprender 3X mais e 3X melhor",
       local: "Colégio Estadual Dom Luciano",
       participantes: "186",
-      image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
+      image: "/lovable-uploads/3a323486-a631-4952-9d0e-7af151ef7d0d.png"
     },
     {
       title: "3 anos usando IA na FLL (eis os resultados)",
