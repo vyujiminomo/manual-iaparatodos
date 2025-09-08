@@ -67,6 +67,8 @@ export default {
 				'ai-black': '#000000'
 			},
 			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'system': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 				'bebas': ['Bebas Neue', 'sans-serif'],
 				'poppins': ['Poppins', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
