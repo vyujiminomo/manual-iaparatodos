@@ -11,6 +11,7 @@ import UpsellPnp from "./pages/UpsellPnp";
 import Contact from "./pages/Contact";
 import Obrigado from "./pages/Obrigado";
 import VitorYuji from "./pages/VitorYuji";
+import Consultoria from "./pages/Consultoria";
 import Guia from "./pages/Guia";
 import NotFound from "./pages/NotFound";
 
@@ -21,7 +22,8 @@ const AppContent = () => {
   
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Consultoria />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/manual" element={<Manual />} />
       <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
