@@ -19,7 +19,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Consultoria = () => {
   const [formData, setFormData] = useState({
@@ -91,30 +91,59 @@ const Consultoria = () => {
   
   const capacitacoes = [
     {
+      title: "O Mínimo de IA que você Precisa Saber (para não ficar para trás)",
+      local: "Youtube",
+      participantes: "173",
+      youtubeId: "gP-6fEO0dMM"
+    },
+    {
       title: "Como usar IA pra aprender 3X mais e 3X melhor",
       local: "Colégio Estadual Dom Luciano",
-      participantes: "+120",
+      participantes: "186",
       image: "/lovable-uploads/3a323486-a631-4952-9d0e-7af151ef7d0d.png"
     },
     {
       title: "3 anos usando IA na FLL (eis os resultados)",
-      local: "Equipes de FLL do Colégio Master", 
-      participantes: "+30",
+      local: "Colégio Master",
+      participantes: "31",
       image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
     },
     {
-      title: "Estratégias de IA Para Liderar o Mercado de Trabalho",
-      local: "Escola SuperClass",
-      participantes: "+40", 
+      title: "Webinar BETA IA Para Todos",
+      local: "Zoom",
+      participantes: "20",
+      youtubeId: "RoT5Rt6qaFI",
+      autoplay: true
+    },
+    {
+      title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
+      local: "SuperClass Itirapina e Brotas",
+      participantes: "19",
       image: "/lovable-uploads/3e9a6853-41e4-4868-85a4-9e00dd89e8ba.png"
     },
     {
       title: "IA como Ferramenta de Inovação",
       local: "Instituto JCPM",
-      participantes: "+60",
+      participantes: "53",
       image: "/lovable-uploads/f28b235a-271a-4252-9cc8-aaa4125075e6.png"
+    },
+    {
+      title: "IA e como usá-la na FLL",
+      local: "Colégio Master",
+      participantes: "29",
+      image: "/lovable-uploads/0d61bede-6460-4053-b671-0f1423a5871f.png"
     }
   ];
+
+  // Preload images to prevent delay
+  useEffect(() => {
+    capacitacoes.forEach(cap => {
+      if (cap.image) {
+        const img = new Image();
+        img.src = cap.image;
+      }
+    });
+  }, []);
 
   const nextCapacitacao = () => {
     setCurrentCapacitacao((prev) => (prev + 1) % capacitacoes.length);
@@ -237,15 +266,38 @@ const Consultoria = () => {
               <div className="relative">
                 <Card className="p-8 bg-card border-border">
                   <div className="flex flex-col md:flex-row items-center gap-8">
-                    {/* Imagem */}
+                    {/* Vídeo, Imagem ou Placeholder */}
                     <div className="w-full md:w-1/2">
-                      <div className="aspect-video rounded-lg overflow-hidden">
-                        <img
-                          src={capacitacoes[currentCapacitacao].image}
-                          alt={capacitacoes[currentCapacitacao].title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                      {capacitacoes[currentCapacitacao].youtubeId ? (
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <iframe
+                            src={`https://www.youtube.com/embed/${capacitacoes[currentCapacitacao].youtubeId}${capacitacoes[currentCapacitacao].autoplay ? '?autoplay=1&mute=1' : ''}`}
+                            title={capacitacoes[currentCapacitacao].title}
+                            className="w-full h-full"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      ) : capacitacoes[currentCapacitacao].image ? (
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <img
+                            src={capacitacoes[currentCapacitacao].image}
+                            alt={capacitacoes[currentCapacitacao].title}
+                            className="w-full h-full object-cover"
+                            loading="eager"
+                          />
+                        </div>
+                      ) : (
+                        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border">
+                          <div className="text-center text-muted-foreground">
+                            <div className="w-16 h-16 mx-auto mb-4 bg-muted-foreground/20 rounded-lg flex items-center justify-center">
+                              <Award className="w-8 h-8" />
+                            </div>
+                            <p className="text-sm">Imagem da Palestra</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
                     
                     {/* Conteúdo */}
