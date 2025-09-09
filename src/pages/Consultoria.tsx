@@ -232,31 +232,225 @@ const Consultoria = () => {
         </div>
       </section>
 
-      {/* Palestras */}
+      {/* Treinamentos */}
       <section className="py-24">
         <div className="container mx-auto px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-16 text-center">Palestras</h2>
+            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-16 text-center">TREINAMENTOS</h2>
             
             <div className="mb-16">
-              <h3 className="text-3xl font-sans font-bold mb-12">Temas Disponíveis:</h3>
+              <h3 className="text-3xl font-sans font-bold mb-12 text-center">Conheça os temas</h3>
               
-              <div className="space-y-10">
-                {palestras.map((categoria, index) => (
-                  <Card key={index} className="p-8 bg-card border-border">
-                    <h4 className="text-2xl font-sans font-bold text-primary mb-6">{categoria.categoria}</h4>
-                    <div className="space-y-4">
-                      {categoria.temas.map((tema, temaIndex) => (
-                        <div key={temaIndex} className="flex justify-between items-center py-2">
-                          <span className="text-lg text-foreground">{tema.titulo}</span>
-                          <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full font-medium">
-                            {tema.duracao}
-                          </span>
-                        </div>
-                      ))}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                {/* IA na Prática em 60 minutos */}
+                <Card className="relative overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 border-0 text-white">
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
+                      ADAPTA
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <GraduationCap className="w-4 h-4" />
                     </div>
-                  </Card>
-                ))}
+                  </div>
+                  
+                  <div className="p-8 pt-16 relative z-10">
+                    <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
+                      IA na Prática em 60 minutos
+                    </h4>
+                    
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1">
+                        <CheckCircle className="w-4 h-4" />
+                        COM CERTIFICADO
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        60min
+                      </span>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed opacity-90">
+                      Imagine dominar uma ferramenta que pode transformar completamente sua forma de trabalhar, pensar e criar. O curso 'IA na Prática em 60 minutos' não é apenas um treinamento, é uma experiência de transformação digital que vai reescrever suas possibilidades
+                    </p>
+                  </div>
+                  
+                  {/* Placeholder para imagem de fundo */}
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-black/20 rounded-tl-full flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white/10 rounded flex items-center justify-center">
+                      <span className="text-xs opacity-70">Imagem</span>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Como usar IA pra aprender 3x mais */}
+                <Card className="relative overflow-hidden bg-gradient-to-br from-red-900 via-red-800 to-red-700 border-0 text-white">
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
+                      ADAPTA
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <Users className="w-4 h-4" />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8 pt-16 relative z-10">
+                    <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
+                      Como usar IA pra aprender 3x mais e 3x melhor
+                    </h4>
+                    
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1">
+                        <CheckCircle className="w-4 h-4" />
+                        COM CERTIFICADO
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        90min
+                      </span>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed opacity-90">
+                      Descubra como usar diferentes ferramentas de IA para ter um tipo de escrita diferente, criativa e que coloca dinheiro no seu bolso.
+                    </p>
+                  </div>
+                  
+                  {/* Placeholder para imagem de fundo */}
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-black/20 rounded-tl-full flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white/10 rounded flex items-center justify-center">
+                      <span className="text-xs opacity-70">Imagem</span>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Pesquisando artigos científicos */}
+                <Card className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700 border-0 text-white">
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
+                      ADAPTA
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <Award className="w-4 h-4" />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8 pt-16 relative z-10">
+                    <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
+                      Pesquisando artigos científicos MUITO mais rápido com IA
+                    </h4>
+                    
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1">
+                        <CheckCircle className="w-4 h-4" />
+                        COM CERTIFICADO
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        30min
+                      </span>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed opacity-90">
+                      Aprenda como os melhores médicos estão usando IA generativa pra fazer pesquisas científicas
+                    </p>
+                  </div>
+                  
+                  {/* Placeholder para imagem de fundo */}
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-black/20 rounded-tl-full flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white/10 rounded flex items-center justify-center">
+                      <span className="text-xs opacity-70">Imagem</span>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* 3 anos usando IA na FLL */}
+                <Card className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 border-0 text-white">
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
+                      ADAPTA
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <Briefcase className="w-4 h-4" />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8 pt-16 relative z-10">
+                    <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
+                      3 anos usando IA na FLL: eis os resultados
+                    </h4>
+                    
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1">
+                        <CheckCircle className="w-4 h-4" />
+                        COM CERTIFICADO
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        90min
+                      </span>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed opacity-90">
+                      Descubra como a minha equipe premiada de FLL usou IA generativa no projeto de inovação pra ter ideias, pesquisar e pensar 10x mais rápido.
+                    </p>
+                  </div>
+                  
+                  {/* Placeholder para imagem de fundo */}
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-black/20 rounded-tl-full flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white/10 rounded flex items-center justify-center">
+                      <span className="text-xs opacity-70">Imagem</span>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Treinamento personalizado */}
+                <Card className="relative overflow-hidden bg-gradient-to-br from-amber-900 via-amber-800 to-amber-700 border-0 text-white md:col-span-2 lg:col-span-1">
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
+                      ADAPTA
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <Star className="w-4 h-4" />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8 pt-16 relative z-10">
+                    <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
+                      Treinamento Personalizado
+                    </h4>
+                    
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1">
+                        <CheckCircle className="w-4 h-4" />
+                        COM CERTIFICADO
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        Sob consulta
+                      </span>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed opacity-90">
+                      Tem um público específico? Vamos criar uma palestra sob medida.
+                    </p>
+                  </div>
+                  
+                  {/* Placeholder para imagem de fundo */}
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-black/20 rounded-tl-full flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white/10 rounded flex items-center justify-center">
+                      <span className="text-xs opacity-70">Imagem</span>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
 
