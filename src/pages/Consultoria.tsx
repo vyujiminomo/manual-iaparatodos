@@ -15,7 +15,9 @@ import {
   Phone,
   MessageCircle,
   ExternalLink,
-  Linkedin
+  Linkedin,
+  ChevronLeft,
+  ChevronRight
 } from "lucide-react";
 import { useState } from "react";
 
@@ -85,12 +87,42 @@ const Consultoria = () => {
     }
   ];
 
+  const [currentCapacitacao, setCurrentCapacitacao] = useState(0);
+  
   const capacitacoes = [
-    { local: "Colégio Estadual Dom Luciano", participantes: "+120" },
-    { local: "Equipes de FLL do Colégio Master", participantes: "+30" },
-    { local: "Escola SuperClass", participantes: "+40" },
-    { local: "Instituto JCPM", participantes: "+60" }
+    {
+      title: "Como usar IA pra aprender 3X mais e 3X melhor",
+      local: "Colégio Estadual Dom Luciano",
+      participantes: "+120",
+      image: "/lovable-uploads/3a323486-a631-4952-9d0e-7af151ef7d0d.png"
+    },
+    {
+      title: "3 anos usando IA na FLL (eis os resultados)",
+      local: "Equipes de FLL do Colégio Master", 
+      participantes: "+30",
+      image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
+    },
+    {
+      title: "Estratégias de IA Para Liderar o Mercado de Trabalho",
+      local: "Escola SuperClass",
+      participantes: "+40", 
+      image: "/lovable-uploads/3e9a6853-41e4-4868-85a4-9e00dd89e8ba.png"
+    },
+    {
+      title: "IA como Ferramenta de Inovação",
+      local: "Instituto JCPM",
+      participantes: "+60",
+      image: "/lovable-uploads/f28b235a-271a-4252-9cc8-aaa4125075e6.png"
+    }
   ];
+
+  const nextCapacitacao = () => {
+    setCurrentCapacitacao((prev) => (prev + 1) % capacitacoes.length);
+  };
+
+  const prevCapacitacao = () => {
+    setCurrentCapacitacao((prev) => (prev - 1 + capacitacoes.length) % capacitacoes.length);
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-system">
@@ -201,15 +233,63 @@ const Consultoria = () => {
 
             <div className="mb-12">
               <h3 className="text-3xl font-sans font-bold mb-8">Já capacitei:</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                {capacitacoes.map((cap, index) => (
-                  <Card key={index} className="p-6 bg-card border-border">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium text-lg">{cap.local}</span>
-                      <span className="text-primary font-sans font-bold">Participantes: {cap.participantes}</span>
+              
+              <div className="relative">
+                <Card className="p-8 bg-card border-border">
+                  <div className="flex flex-col md:flex-row items-center gap-8">
+                    {/* Imagem */}
+                    <div className="w-full md:w-1/2">
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img
+                          src={capacitacoes[currentCapacitacao].image}
+                          alt={capacitacoes[currentCapacitacao].title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
-                  </Card>
-                ))}
+                    
+                    {/* Conteúdo */}
+                    <div className="w-full md:w-1/2 text-center md:text-left">
+                      <h4 className="text-2xl font-sans font-bold text-foreground mb-4">
+                        {capacitacoes[currentCapacitacao].title}
+                      </h4>
+                      <p className="text-lg text-muted-foreground mb-2">
+                        <strong>Local:</strong> {capacitacoes[currentCapacitacao].local}
+                      </p>
+                      <p className="text-lg text-muted-foreground">
+                        <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Setas de Navegação */}
+                <button
+                  onClick={prevCapacitacao}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                
+                <button
+                  onClick={nextCapacitacao}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+
+                {/* Indicadores */}
+                <div className="flex justify-center mt-6 space-x-2">
+                  {capacitacoes.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentCapacitacao(index)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        index === currentCapacitacao ? 'bg-primary' : 'bg-muted hover:bg-muted-foreground/50'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
 
