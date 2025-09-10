@@ -95,41 +95,35 @@ const Consultoria = () => {
       titulo: "IA na Prática em 60 minutos",
       duracao: "60min",
       descricao: "Imagine dominar uma ferramenta que pode transformar completamente sua forma de trabalhar, pensar e criar. O curso 'IA na Prática em 60 minutos' não é apenas um treinamento, é uma experiência de transformação digital que vai reescrever suas possibilidades",
-      gradiente: "from-purple-600 to-purple-800"
+      capa: "/lovable-uploads/profile-photo.png"
     },
     {
       titulo: "Como usar IA pra aprender 3x mais e 3x melhor", 
       duracao: "90min",
       descricao: "Descubra técnicas avançadas para otimizar seu aprendizado usando inteligência artificial de forma estratégica e eficiente.",
-      gradiente: "from-blue-600 to-blue-800"
+      capa: "/lovable-uploads/profile-photo.png"
     },
     {
       titulo: "Pesquisando artigos científicos MUITO mais rápido com IA",
       duracao: "30min", 
       descricao: "Aprenda como os melhores médicos estão usando IA generativa para fazer pesquisas científicas de forma mais eficiente.",
-      gradiente: "from-emerald-600 to-emerald-800"
+      capa: "/lovable-uploads/profile-photo.png"
     },
     {
       titulo: "3 anos usando IA na FLL: eis os resultados",
       duracao: "90min",
       descricao: "Descubra como a minha equipe premiada de FLL usou IA generativa no projeto de inovação pra ter ideias, pesquisar e pensar 10x mais rápido.",
-      gradiente: "from-orange-600 to-orange-800"
+      capa: "/lovable-uploads/profile-photo.png"
     },
     {
       titulo: "Treinamento Personalizado",
       duracao: "Sob consulta",
       descricao: "Tem um público específico? Vamos criar uma palestra sob medida para suas necessidades específicas.",
-      gradiente: "from-gray-600 to-gray-800"
+      capa: "/lovable-uploads/profile-photo.png"
     }
   ];
   
   const capacitacoes = [
-    {
-      title: "O Mínimo de IA que você Precisa Saber (para não ficar para trás)",
-      local: "Youtube",
-      participantes: "173",
-      youtubeId: "gP-6fEO0dMM"
-    },
     {
       title: "Como usar IA pra aprender 3X mais e 3X melhor",
       local: "Colégio Estadual Dom Luciano",
@@ -141,13 +135,6 @@ const Consultoria = () => {
       local: "Colégio Master",
       participantes: "31",
       image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
-    },
-    {
-      title: "Webinar BETA IA Para Todos",
-      local: "Zoom",
-      participantes: "20",
-      youtubeId: "RoT5Rt6qaFI",
-      autoplay: true
     },
     {
       title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
@@ -284,63 +271,71 @@ const Consultoria = () => {
               <h3 className="text-3xl font-sans font-bold mb-16 text-center">Conheça os temas</h3>
               
               {/* Carrossel de Treinamentos */}
-              <div className="relative overflow-hidden">
-                <div className="transition-transform duration-500 ease-in-out"
-                     style={{ transform: `translateX(-${currentTreinamento * 50}%)` }}>
-                  <div className="flex space-x-8">
-                    {treinamentos.map((treinamento, index) => (
-                      <div key={index} className="w-1/2 flex-shrink-0">
-                        <Card className={`relative overflow-hidden bg-gradient-to-r ${treinamento.gradiente} border-0 text-white h-64 group hover:scale-105 transition-all duration-300`}>
-                          {/* Conteúdo Principal */}
-                          <div className="p-8 h-full flex flex-col justify-between relative z-10">
-                            <div>
-                              <h4 className="text-2xl font-sans font-bold mb-4 leading-tight">
+              <div className="relative px-4">
+                <div className="overflow-hidden rounded-xl">
+                  <div className="transition-transform duration-500 ease-in-out"
+                       style={{ transform: `translateX(-${currentTreinamento * 50}%)` }}>
+                    <div className="flex gap-6">
+                      {treinamentos.map((treinamento, index) => (
+                        <div key={index} className="w-1/2 flex-shrink-0">
+                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl">
+                            {/* Imagem de Capa */}
+                            <div className="aspect-[16/9] relative overflow-hidden">
+                              <img
+                                src={treinamento.capa}
+                                alt={treinamento.titulo}
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                              
+                              {/* Duração Overlay */}
+                              <div className="absolute top-4 right-4">
+                                <span className="flex items-center gap-1 text-sm bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
+                                  <Clock className="w-4 h-4" />
+                                  {treinamento.duracao}
+                                </span>
+                              </div>
+                            </div>
+                            
+                            {/* Conteúdo */}
+                            <div className="p-6">
+                              <h4 className="text-xl font-sans font-bold mb-3 leading-tight">
                                 {treinamento.titulo}
                               </h4>
                               
-                              <p className="text-sm leading-relaxed opacity-90 mb-4">
+                              <p className="text-sm leading-relaxed opacity-90 line-clamp-3">
                                 {treinamento.descricao}
                               </p>
                             </div>
                             
-                            <div className="flex items-center justify-between">
-                              <span className="flex items-center gap-1 text-sm bg-white/20 px-3 py-1 rounded-full">
-                                <Clock className="w-4 h-4" />
-                                {treinamento.duracao}
-                              </span>
-                              
-                              {/* Placeholder para imagem */}
-                              <div className="w-16 h-10 bg-white/10 rounded flex items-center justify-center">
-                                <span className="text-xs opacity-70">Capa</span>
-                              </div>
-                            </div>
-                          </div>
-                          
-                          {/* Efeito de hover */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </Card>
-                      </div>
-                    ))}
+                            {/* Efeito de brilho no hover */}
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-all duration-700"></div>
+                          </Card>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 
                 {/* Setas de Navegação */}
-                <button
-                  onClick={prevTreinamento}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 z-10"
-                >
-                  <ChevronLeft className="w-6 h-6" />
-                </button>
-                
-                <button
-                  onClick={nextTreinamento}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 z-10"
-                >
-                  <ChevronRight className="w-6 h-6" />
-                </button>
+                <div className="flex justify-center mt-8 gap-4">
+                  <button
+                    onClick={prevTreinamento}
+                    className="bg-primary/10 backdrop-blur-sm hover:bg-primary/20 text-primary rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 border border-primary/20"
+                  >
+                    <ChevronLeft className="w-6 h-6" />
+                  </button>
+                  
+                  <button
+                    onClick={nextTreinamento}
+                    className="bg-primary/10 backdrop-blur-sm hover:bg-primary/20 text-primary rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 border border-primary/20"
+                  >
+                    <ChevronRight className="w-6 h-6" />
+                  </button>
+                </div>
                 
                 {/* Indicadores */}
-                <div className="flex justify-center mt-8 space-x-2">
+                <div className="flex justify-center mt-6 space-x-2">
                   {Array.from({ length: Math.ceil(treinamentos.length / 2) }).map((_, index) => (
                     <button
                       key={index}
@@ -360,38 +355,16 @@ const Consultoria = () => {
               <div className="relative">
                 <Card className="p-8 bg-card border-border">
                   <div className="flex flex-col md:flex-row items-center gap-8">
-                    {/* Vídeo, Imagem ou Placeholder */}
+                    {/* Imagem da Palestra */}
                     <div className="w-full md:w-1/2">
-                      {capacitacoes[currentCapacitacao].youtubeId ? (
-                        <div className="aspect-video rounded-lg overflow-hidden">
-                          <iframe
-                            src={`https://www.youtube.com/embed/${capacitacoes[currentCapacitacao].youtubeId}${capacitacoes[currentCapacitacao].autoplay ? '?autoplay=1&mute=1' : ''}`}
-                            title={capacitacoes[currentCapacitacao].title}
-                            className="w-full h-full"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        </div>
-                      ) : capacitacoes[currentCapacitacao].image ? (
-                        <div className="aspect-video rounded-lg overflow-hidden">
-                          <img
-                            src={capacitacoes[currentCapacitacao].image}
-                            alt={capacitacoes[currentCapacitacao].title}
-                            className="w-full h-full object-cover"
-                            loading="eager"
-                          />
-                        </div>
-                      ) : (
-                        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border">
-                          <div className="text-center text-muted-foreground">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-muted-foreground/20 rounded-lg flex items-center justify-center">
-                              <Award className="w-8 h-8" />
-                            </div>
-                            <p className="text-sm">Imagem da Palestra</p>
-                          </div>
-                        </div>
-                      )}
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img
+                          src={capacitacoes[currentCapacitacao].image}
+                          alt={capacitacoes[currentCapacitacao].title}
+                          className="w-full h-full object-cover"
+                          loading="eager"
+                        />
+                      </div>
                     </div>
                     
                     {/* Conteúdo */}
