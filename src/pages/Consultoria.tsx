@@ -95,31 +95,31 @@ const Consultoria = () => {
       titulo: "IA na Prática em 60 minutos",
       duracao: "60min",
       descricao: "Imagine dominar uma ferramenta que pode transformar completamente sua forma de trabalhar, pensar e criar. O curso 'IA na Prática em 60 minutos' não é apenas um treinamento, é uma experiência de transformação digital que vai reescrever suas possibilidades",
-      capa: "/lovable-uploads/profile-photo.png"
+      capa: "/lovable-uploads/5aff8bfc-ba6c-4cde-9e22-f59fd7d642a3.png"
     },
     {
       titulo: "Como usar IA pra aprender 3x mais e 3x melhor", 
       duracao: "90min",
       descricao: "Descubra técnicas avançadas para otimizar seu aprendizado usando inteligência artificial de forma estratégica e eficiente.",
-      capa: "/lovable-uploads/profile-photo.png"
+      capa: "/lovable-uploads/7963fa9b-ac69-401e-b201-e1beb09e1edc.png"
     },
     {
       titulo: "Pesquisando artigos científicos MUITO mais rápido com IA",
       duracao: "30min", 
       descricao: "Aprenda como os melhores médicos estão usando IA generativa para fazer pesquisas científicas de forma mais eficiente.",
-      capa: "/lovable-uploads/profile-photo.png"
+      capa: "/lovable-uploads/40fa3ac8-a26f-40b9-bc04-ac71610a29cb.png"
     },
     {
       titulo: "3 anos usando IA na FLL: eis os resultados",
       duracao: "90min",
       descricao: "Descubra como a minha equipe premiada de FLL usou IA generativa no projeto de inovação pra ter ideias, pesquisar e pensar 10x mais rápido.",
-      capa: "/lovable-uploads/profile-photo.png"
+      capa: "/lovable-uploads/acdc887b-9134-46e5-9485-3fe8a4fe8948.png"
     },
     {
       titulo: "Treinamento Personalizado",
       duracao: "Sob consulta",
       descricao: "Tem um público específico? Vamos criar uma palestra sob medida para suas necessidades específicas.",
-      capa: "/lovable-uploads/profile-photo.png"
+      capa: "/lovable-uploads/727f4450-845d-487e-bde0-1652bf131e35.png"
     }
   ];
   
@@ -278,9 +278,9 @@ const Consultoria = () => {
                     <div className="flex gap-6">
                       {treinamentos.map((treinamento, index) => (
                         <div key={index} className="w-1/2 flex-shrink-0">
-                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl">
+                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl h-[420px] flex flex-col">
                             {/* Imagem de Capa */}
-                            <div className="aspect-[16/9] relative overflow-hidden">
+                            <div className="aspect-[16/9] relative overflow-hidden flex-shrink-0">
                               <img
                                 src={treinamento.capa}
                                 alt={treinamento.titulo}
@@ -298,12 +298,12 @@ const Consultoria = () => {
                             </div>
                             
                             {/* Conteúdo */}
-                            <div className="p-6">
+                            <div className="p-6 flex flex-col flex-grow">
                               <h4 className="text-xl font-sans font-bold mb-3 leading-tight">
                                 {treinamento.titulo}
                               </h4>
                               
-                              <p className="text-sm leading-relaxed opacity-90 line-clamp-3">
+                              <p className="text-sm leading-relaxed opacity-90 flex-grow">
                                 {treinamento.descricao}
                               </p>
                             </div>
@@ -424,36 +424,50 @@ const Consultoria = () => {
       {/* Quem é Vitor Yuji */}
       <section className="py-24 bg-muted/5">
         <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-sans font-bold mb-12 text-center">Quem é Vitor Yuji</h2>
             
             <Card className="p-12 bg-card border-border">
-              <div className="space-y-8 text-xl leading-relaxed">
-                <p>
-                  Vitor Yuji tem apenas 15 anos e já educou <strong className="text-primary">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
-                </p>
-                
-                <div className="space-y-6">
-                  <p>
-                    <strong className="text-primary">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
-                  </p>
-                  
-                  <p>
-                    <strong className="text-primary">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.
-                  </p>
-                  
-                  <p>
-                    <strong className="text-primary">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
-                  </p>
-                  
-                  <p>
-                    <strong className="text-primary">Músico no Movimento Escalada</strong> - grupo católico de jovens do Nordeste
-                  </p>
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                {/* Foto do Vitor */}
+                <div className="lg:w-1/3 flex-shrink-0">
+                  <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
+                    <img
+                      src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
+                      alt="Vitor Yuji apresentando palestra"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
                 
-                <p className="text-2xl font-sans font-semibold text-primary text-center mt-12">
-                  E com uma missão clara: tornar a IA acessível para todos.
-                </p>
+                {/* Conteúdo Textual */}
+                <div className="lg:w-2/3 space-y-8 text-xl leading-relaxed">
+                  <p>
+                    Vitor Yuji tem apenas 15 anos e já educou <strong className="text-primary">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
+                  </p>
+                  
+                  <div className="space-y-6">
+                    <p>
+                      <strong className="text-primary">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                    </p>
+                    
+                    <p>
+                      <strong className="text-primary">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.
+                    </p>
+                    
+                    <p>
+                      <strong className="text-primary">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
+                    </p>
+                    
+                    <p>
+                      <strong className="text-primary">Músico no Movimento Escalada</strong> - grupo católico de jovens do Nordeste
+                    </p>
+                  </div>
+                  
+                  <p className="text-2xl font-sans font-semibold text-primary text-center mt-12">
+                    E com uma missão clara: tornar a IA acessível para todos.
+                  </p>
+                </div>
               </div>
             </Card>
           </div>
