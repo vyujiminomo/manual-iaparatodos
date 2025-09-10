@@ -125,32 +125,27 @@ const Consultoria = () => {
   
   const capacitacoes = [
     {
-      title: "Como usar IA pra aprender 3X mais e 3X melhor",
-      local: "Colégio Estadual Dom Luciano",
+      title: "Colégio Estadual Dom Luciano",
       participantes: "186",
       image: "/lovable-uploads/3a323486-a631-4952-9d0e-7af151ef7d0d.png"
     },
     {
-      title: "3 anos usando IA na FLL (eis os resultados)",
-      local: "Colégio Master",
+      title: "Colégio Master",
       participantes: "31",
       image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
     },
     {
-      title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
-      local: "SuperClass Itirapina e Brotas",
+      title: "SuperClass Itirapina e Brotas",
       participantes: "19",
       image: "/lovable-uploads/3e9a6853-41e4-4868-85a4-9e00dd89e8ba.png"
     },
     {
-      title: "IA como Ferramenta de Inovação",
-      local: "Instituto JCPM",
+      title: "Instituto JCPM",
       participantes: "53",
       image: "/lovable-uploads/f28b235a-271a-4252-9cc8-aaa4125075e6.png"
     },
     {
-      title: "IA e como usá-la na FLL",
-      local: "Colégio Master",
+      title: "Colégio Master",
       participantes: "29",
       image: "/lovable-uploads/0d61bede-6460-4053-b671-0f1423a5871f.png"
     }
@@ -278,7 +273,7 @@ const Consultoria = () => {
                     <div className="flex gap-6">
                       {treinamentos.map((treinamento, index) => (
                         <div key={index} className="w-1/2 flex-shrink-0">
-                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl h-[420px] flex flex-col">
+                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl h-[520px] flex flex-col">
                             {/* Imagem de Capa */}
                             <div className="aspect-[16/9] relative overflow-hidden flex-shrink-0">
                               <img
@@ -299,7 +294,7 @@ const Consultoria = () => {
                             
                             {/* Conteúdo */}
                             <div className="p-6 flex flex-col flex-grow">
-                              <h4 className="text-xl font-sans font-bold mb-3 leading-tight">
+                              <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
                                 {treinamento.titulo}
                               </h4>
                               
@@ -372,9 +367,6 @@ const Consultoria = () => {
                       <h4 className="text-2xl font-sans font-bold text-foreground mb-4">
                         {capacitacoes[currentCapacitacao].title}
                       </h4>
-                      <p className="text-lg text-muted-foreground mb-2">
-                        <strong>Local:</strong> {capacitacoes[currentCapacitacao].local}
-                      </p>
                       <p className="text-lg text-muted-foreground">
                         <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
                       </p>
@@ -430,7 +422,7 @@ const Consultoria = () => {
             <Card className="p-12 bg-card border-border">
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 {/* Foto do Vitor */}
-                <div className="lg:w-1/3 flex-shrink-0">
+                <div className="lg:w-2/5 flex-shrink-0">
                   <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
                     <img
                       src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
@@ -441,7 +433,7 @@ const Consultoria = () => {
                 </div>
                 
                 {/* Conteúdo Textual */}
-                <div className="lg:w-2/3 space-y-8 text-xl leading-relaxed">
+                <div className="lg:w-3/5 space-y-8 text-xl leading-relaxed">
                   <p>
                     Vitor Yuji tem apenas 15 anos e já educou <strong className="text-primary">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                   </p>
