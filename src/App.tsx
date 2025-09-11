@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Obrigado from "./pages/Obrigado";
 import VitorYuji from "./pages/VitorYuji";
 import Consultoria from "./pages/Consultoria";
+import Consultor from "./pages/Consultor";
 import Guia from "./pages/Guia";
 import NotFound from "./pages/NotFound";
 
@@ -22,13 +23,14 @@ const AppContent = () => {
   
   return (
     <Routes>
-      <Route path="/" element={<Consultoria />} />
+      <Route path="/" element={<VitorYuji />} />
+      <Route path="/consultoria" element={<Consultoria />} />
+      <Route path="/consultor" element={<Consultor />} />
       <Route path="/home" element={<Home />} />
       <Route path="/manual" element={<Manual />} />
       <Route path="/upsell-pnp" element={<UpsellPnp />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/obrigado" element={<Obrigado />} />
-      <Route path="/bio-yuji" element={<VitorYuji />} />
       <Route path="/guia" element={<Guia />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

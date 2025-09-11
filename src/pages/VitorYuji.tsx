@@ -1,349 +1,291 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Award, Users, Zap, Heart, Linkedin, ExternalLink, Mail, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { Quote, Users, Clock, CheckCircle, Award, Star } from "lucide-react";
 
 const VitorYuji = () => {
-  const [currentPalestra, setCurrentPalestra] = useState(0);
-  
   useDynamicMeta({
-    title: "Vitor Yuji - Sobre",
-    description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa no Brasil.",
-    image: "/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png"
+    title: "Treinamento Gratuito de IA para Escolas de Sergipe - Vitor Yuji",
+    description: "Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe. Treinamento 100% gratuito para escolas.",
+    image: "/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
   });
 
-  const palestras = [
+  const depoimentos = [
     {
-      title: "O Mínimo de IA que você Precisa Saber (para não ficar para trás)",
-      local: "Youtube",
-      participantes: "173",
-      youtubeId: "gP-6fEO0dMM"
+      texto: "Achava que IA era coisa complicada, mas ele explicou de uma forma simples e leve. Depois do treinamento, comecei a usar a IA nos meus estudos. É um conteúdo que serve pra todo mundo, independente da idade ou do quanto já entende de tecnologia.",
+      nome: "Isadora Helena"
     },
     {
-      title: "Como usar IA pra aprender 3X mais e 3X melhor",
-      local: "Colégio Estadual Dom Luciano",
-      participantes: "186",
-      image: "/lovable-uploads/3a323486-a631-4952-9d0e-7af151ef7d0d.png"
+      texto: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.",
+      nome: "Arthur Lucena"
     },
     {
-      title: "3 anos usando IA na FLL (eis os resultados)",
-      local: "Colégio Master",
-      participantes: "31",
-      image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
-    },
-    {
-      title: "Webinar BETA IA Para Todos",
-      local: "Zoom",
-      participantes: "20",
-      youtubeId: "RoT5Rt6qaFI",
-      autoplay: true
-    },
-    {
-      title: "Estratégias de IA Para Liderar o Mercado de Trabalho (Independente da Carreira que você Escolha)",
-      local: "SuperClass Itirapina e Brotas",
-      participantes: "19",
-      image: "/lovable-uploads/3e9a6853-41e4-4868-85a4-9e00dd89e8ba.png"
-    },
-    {
-      title: "IA como Ferramenta de Inovação",
-      local: "Instituto JCPM",
-      participantes: "53",
-      image: "/lovable-uploads/f28b235a-271a-4252-9cc8-aaa4125075e6.png"
-    },
-    {
-      title: "IA e como usá-la na FLL",
-      local: "Colégio Master",
-      participantes: "29",
-      image: "/lovable-uploads/0d61bede-6460-4053-b671-0f1423a5871f.png"
+      texto: "O ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.",
+      nome: "Gabriela Coelho"
     }
   ];
 
-  const nextPalestra = () => {
-    setCurrentPalestra((prev) => (prev + 1) % palestras.length);
-  };
+  const escolas = ["DOM LUCIANO", "COLÉGIO MASTER", "INSTITUTO JCPM", "SuperClass Itirapina e Brotas"];
 
-  const prevPalestra = () => {
-    setCurrentPalestra((prev) => (prev - 1 + palestras.length) % palestras.length);
+  const handleInscricao = () => {
+    // Aqui você pode adicionar a lógica para abrir um formulário ou redirecionar
+    console.log("Inscrever escola");
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-poppins">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
-        
-        <div className="relative z-10 container mx-auto px-4 py-8">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="mb-6">
-              <img 
-                src="/lovable-uploads/49547bb5-5891-4afd-bd12-b86e6ffbf6ba.png" 
-                alt="Vitor Yuji"
-                className="w-full mx-auto rounded-lg shadow-2xl object-cover"
-              />
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-poppins font-semibold mb-6 leading-tight text-white">
-              Quem é <span className="font-bold text-ai-blue">Vitor Yuji</span>, 15 anos que já palestrou pra +660 jovens e foi selecionado pelo CEO da maior empresa de IA do Brasil?
+      <section className="relative pt-16 pb-24 bg-gradient-to-br from-blue-600 via-green-600 to-yellow-500">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+              TREINAMENTO DE IA GRATUITO<br />
+              <span className="text-yellow-300">PARA ESCOLAS DE SERGIPE</span>
             </h1>
-
-            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 mb-8 backdrop-blur-sm max-w-4xl mx-auto">
-              <div className="space-y-4 text-lg leading-relaxed text-center">
-                <p>
-                  Vitor Yuji tem apenas 15 anos e já educou <strong className="text-ai-blue">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Criador do Manual IA Para Todos</strong> - o guia mais prático de IA Generativa do Brasil, onde ensina você a dominar IA em apenas 5 minutos por dia.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, finalista entre 1.500 projetos no prêmio nacional Criativos Escola.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
-                </p>
+            <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
+              Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
+            </p>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl font-bold text-yellow-300 mb-2">100%</div>
+                <div className="text-lg">Gratuito</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl font-bold text-yellow-300 mb-2">1h30</div>
+                <div className="text-lg">Por Palestra</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl font-bold text-yellow-300 mb-2">5</div>
+                <div className="text-lg">Escolas Selecionadas</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Palestras */}
-      <section className="py-2 bg-gray-900/20">
+      {/* Depoimentos */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Palestras:</h2>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+              DEPOIMENTOS
+            </h2>
             
-            <div className="relative">
-              <Card className="bg-gray-900/50 border-gray-700 p-8 backdrop-blur-sm">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  {/* Vídeo, Imagem ou Placeholder */}
-                  <div className="w-full md:w-1/2">
-                    {palestras[currentPalestra].youtubeId ? (
-                      <div className="aspect-video rounded-lg overflow-hidden">
-                        <iframe
-                          src={`https://www.youtube.com/embed/${palestras[currentPalestra].youtubeId}${palestras[currentPalestra].autoplay ? '?autoplay=1&mute=1' : ''}`}
-                          title={palestras[currentPalestra].title}
-                          className="w-full h-full"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        />
-                      </div>
-                    ) : palestras[currentPalestra].image ? (
-                      <div className="aspect-video rounded-lg overflow-hidden">
-                        <img
-                          src={palestras[currentPalestra].image}
-                          alt={palestras[currentPalestra].title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : (
-                      <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600">
-                        <div className="text-center text-gray-400">
-                          <div className="w-16 h-16 mx-auto mb-4 bg-gray-600 rounded-lg flex items-center justify-center">
-                            <Award className="w-8 h-8" />
-                          </div>
-                          <p className="text-sm">Imagem da Palestra</p>
-                        </div>
-                      </div>
-                    )}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {depoimentos.map((depoimento, index) => (
+                <Card key={index} className="p-8 bg-gradient-to-br from-blue-50 to-green-50 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300">
+                  <Quote className="w-8 h-8 text-blue-600 mb-4" />
+                  <p className="text-gray-700 mb-6 text-lg leading-relaxed italic">
+                    "{depoimento.texto}"
+                  </p>
+                  <div className="font-semibold text-blue-800">
+                    {depoimento.nome}
                   </div>
-                  
-                  {/* Conteúdo */}
-                  <div className="w-full md:w-1/2 text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      {palestras[currentPalestra].title}
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-2">
-                      <strong>Local:</strong> {palestras[currentPalestra].local}
-                    </p>
-                    <p className="text-lg text-gray-300">
-                      <strong>Participantes:</strong> {palestras[currentPalestra].participantes}
-                    </p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quem é Vitor Yuji */}
+      <section className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+              QUEM É VITOR YUJI
+            </h2>
+            
+            <Card className="p-12 bg-white shadow-2xl">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="lg:w-2/5 flex-shrink-0">
+                  <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl">
+                    <img
+                      src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
+                      alt="Vitor Yuji"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
+                
+                <div className="lg:w-3/5 space-y-6 text-lg leading-relaxed text-gray-700">
+                  <p>
+                    Vitor Yuji tem apenas 15 anos e foi selecionado pelo CEO <strong className="text-blue-600">Max Peters</strong> para ser jovem aprendiz da <strong className="text-blue-600">Adapta.org</strong>, a maior startup de IA do Brasil.
+                  </p>
+                  <p>
+                    Ele já palestrou sobre IA para <strong className="text-green-600">+200 jovens de todo Sergipe</strong>.
+                  </p>
+                  <p>
+                    É co-fundador do <strong className="text-blue-600">Mangue Mania</strong>, a primeira metodologia infantil de educação de manguezais de Sergipe, projeto finalista no prêmio nacional <strong className="text-green-600">Criativos Escola</strong>.
+                  </p>
+                  <p>
+                    Também foi <strong className="text-blue-600">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl mt-8">
+                    <h4 className="font-bold text-xl mb-4 text-gray-800">Já capacitei:</h4>
+                    <div className="flex flex-wrap gap-3">
+                      {escolas.map((escola, index) => (
+                        <span key={index} className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
+                          {escola}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* O Desafio */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-800">
+              O DESAFIO
+            </h2>
+            
+            <Card className="p-12 bg-gradient-to-br from-yellow-50 to-orange-50 border-l-4 border-yellow-500">
+              <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+                <p>
+                  Depois de fazer uma mentoria com o <strong className="text-yellow-600">Max Peters, CEO da Adapta.org</strong>, seu método de estudos mudou completamente.
+                </p>
+                <p>
+                  Aplicando IA de forma estratégica, conseguiu aumentar sua média para <strong className="text-green-600 text-2xl">9.5</strong> estudando <strong className="text-blue-600">MENOS tempo</strong>.
+                </p>
+                <p>
+                  Agora ele quer testar se esse método funciona em escala maior.
+                </p>
+                <p className="text-xl font-bold text-yellow-600">
+                  E Sergipe foi escolhido como seu "laboratório de testes".
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Não é Convencional */}
+      <section className="py-20 bg-gradient-to-r from-blue-50 to-green-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+              ESSE NÃO É UM TREINAMENTO CONVENCIONAL
+            </h2>
+            
+            <Card className="p-12 bg-white shadow-xl">
+              <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+                <p>
+                  Uma boa palestra não deveria ser com um profissional que consegue te dar uma palestra motivacional.
+                </p>
+                <p>
+                  Deveria ser com um <strong className="text-blue-600 text-xl">praticante</strong>, que está testando e implementando IA em seus estudos. Na vida real.
+                </p>
+                <p className="text-xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                  Vitor Yuji é exatamente isso.
+                </p>
+                <p className="text-center text-xl">
+                  Ele não é motivacional. É <strong className="text-yellow-600">acional</strong>.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* O que vão aprender */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+              O QUE SEUS ALUNOS VÃO APRENDER
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-500">
+                <CheckCircle className="w-8 h-8 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Como aprender qualquer coisa em segundos</h3>
               </Card>
-
-              {/* Setas de Navegação */}
-              <button
-                onClick={prevPalestra}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-ai-blue hover:bg-ai-blue/80 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              
-              <button
-                onClick={nextPalestra}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-ai-blue hover:bg-ai-blue/80 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-
-              {/* Indicadores */}
-              <div className="flex justify-center mt-6 space-x-2">
-                {palestras.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentPalestra(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentPalestra ? 'bg-ai-blue' : 'bg-gray-600 hover:bg-gray-500'
-                    }`}
-                  />
-                ))}
-              </div>
+              <Card className="p-6 bg-gradient-to-br from-green-50 to-green-100 border-l-4 border-green-500">
+                <Star className="w-8 h-8 text-green-600 mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Os '3 passos' pra alcançar a média de 9.5 (rápido)</h3>
+              </Card>
+              <Card className="p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 border-l-4 border-yellow-500">
+                <Award className="w-8 h-8 text-yellow-600 mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Os 2 tipos de conhecimento que todo estudante precisa saber</h3>
+              </Card>
+              <Card className="p-6 bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-500">
+                <Users className="w-8 h-8 text-purple-600 mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-gray-800">4 técnicas práticas de IA nos estudos</h3>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trajetória */}
-      <section className="py-8 bg-gray-900/30">
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-600 via-green-600 to-yellow-500">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Trajetória</h2>
-
-            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
-              <div className="space-y-6 text-lg leading-relaxed">
-                <p>
-                  <strong className="text-ai-blue">Em 2022, aos 12 anos,</strong> foi convidado para sua primeira temporada da FLL. Com sua equipe, criou um sensor para evitar curtos-circuitos em áreas periféricas.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Em 2023,</strong> criou impressões 3D das obras do artista sergipano Beto Pezão, para que cegos possam "enxergar com as mãos". O projeto foi aprovado pelo Museu da Gente Sergipana, o mais importante do estado.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Em 2024,</strong> participou do Adapta Summit, o maior evento de IA generativa para negócios da América Latina. Por ser um moleque entre vários empresários, chamou a atenção do Max Peters, CEO da ADAPTA, que o escolheu pra ser jovem aprendiz do time quando completar 16 anos.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Ainda em 2024,</strong> criou o Mangue Mania, uma das principais metodologias ativas de manguezais do Nordeste. Em apenas 4 meses, impactou mais de 400 alunos e foi finalista entre 1500 projetos no Prêmio Criativos da Escola, além de vencer o prêmio de Excelência em Engenharia na FLL.
-                </p>
-                <p>
-                  <strong className="text-ai-blue">No mesmo ano,</strong> palestrou sobre IA em diversos eventos - incluindo no Instituto JCPM e na escola de empregabilidade SuperClass
-                </p>
-                <p>
-                  <strong className="text-ai-blue">Em 2025,</strong> criou o Webinar IA Para Todos, ajudando 20 iniciantes a usarem IA em seus trabalhos. Também lançou o Manual IA Para Todos, o guia mais prático de IA Generativa para profissionais ocupados no Brasil.
-                </p>
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              7 PALESTRAS COMPLETAMENTE GRATUITAS
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <Clock className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+                <div className="text-2xl font-bold mb-2">Duração</div>
+                <div className="text-lg">1h30 por palestra</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <Users className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+                <div className="text-2xl font-bold mb-2">Formato</div>
+                <div className="text-lg">Presencial na sua escola</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <CheckCircle className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+                <div className="text-2xl font-bold mb-2">Investimento</div>
+                <div className="text-lg">R$ 0,00</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Curiosidades */}
-      <section className="py-8">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Curiosidades</h2>
-
-            <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
-              <div className="space-y-4 text-lg leading-relaxed">
-                <p>
-                  Também já foi judoca, editor de vídeos, designer, líder de turma e youtuber gamer.
-                </p>
-                <p>
-                  Gosta de treinar capoeira, praticar animal flow, correr, tocar violão e cavaquinho.
-                </p>
-                <p>
-                  Além disso, é músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Brasil.
-                </p>
-                <p className="text-xl font-semibold text-ai-blue text-center mt-8">
-                  <strong>Sua maior motivação é criar projetos interessantes para entregar valor para o máximo de pessoas.</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Acompanhe o Vitor Yuji */}
-      <section className="py-8 bg-gray-900/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Acompanhe o Vitor Yuji</h2>
-
-            <div className="space-y-8">
-              {/* Manual IA Para Todos */}
-              <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-4">Conheça o Manual IA Para Todos</h3>
-                <p className="text-lg mb-6 leading-relaxed">
-                  Toque no botão abaixo para conhecer mais sobre o Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil:
-                </p>
-                <Button 
-                  onClick={() => window.open("https://vitoryuji.com/manual", "_blank")}
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                >
-                  CLIQUE AQUI →
-                </Button>
-              </div>
-
-              {/* LinkedIn */}
-              <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-4">Perfil no LinkedIn</h3>
-                <p className="text-lg mb-6 leading-relaxed">
-                  Vitor Yuji compartilha suas histórias profissionais e pessoais mais interessantes no LinkedIn, sua 'vitrine profissional', sendo o adolescente mais jovem com alto engajamento na rede social:
-                </p>
-                <Button 
-                  onClick={() => window.open("https://www.linkedin.com/in/vitor-yuji-minomo/", "_blank")}
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                >
-                  QUERO ACESSAR →
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer - IA PARA TODOS */}
-      <footer className="bg-black border-t border-gray-800 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold mb-2">
-                <span className="text-ai-blue">IA</span>
-                <span className="text-white"> PARA TODOS</span>
-              </h3>
-              <p className="text-gray-300 text-sm max-w-md">
-                Enquanto o mundo complica, a gente simplifica.
+            <div className="bg-red-500 text-white p-8 rounded-xl mb-12 shadow-2xl">
+              <h3 className="text-3xl font-bold mb-4">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
+              <p className="text-xl mb-4">
+                <strong>Apenas 5 escolas serão selecionadas em todo o estado de Sergipe.</strong>
+              </p>
+              <p className="text-lg">
+                Esta é uma oportunidade única de oferecer aos seus alunos uma vantagem competitiva no mundo dos estudos.
               </p>
             </div>
-            
-            <div className="text-right">
-              <h4 className="text-lg font-semibold text-white mb-4">Contato</h4>
-              <div className="space-y-2">
-                <div className="flex items-center justify-end space-x-2">
-                  <Mail className="w-4 h-4 text-ai-blue" />
-                  <span className="text-sm text-gray-300">contato.vitoryujiminomo@gmail.com</span>
-                </div>
-                <div className="flex items-center justify-end space-x-2">
-                  <Instagram className="w-4 h-4 text-ai-blue" />
-                  <a 
-                    href="https://www.instagram.com/vitoryujim" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
-                  >
-                    @vitoryujim
-                  </a>
-                </div>
-                <div className="flex items-center justify-end space-x-2">
-                  <Linkedin className="w-4 h-4 text-ai-blue" />
-                  <a 
-                    href="https://linkedin.com/in/vitor-yuji-minomo" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
-                  >
-                    Vitor Yuji Minomo
-                  </a>
-                </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-12">
+              <h3 className="text-3xl font-bold mb-6">COMO INSCREVER SUA ESCOLA</h3>
+              <div className="space-y-4 text-lg">
+                <p><strong>1.</strong> Preencha o formulário abaixo</p>
+                <p><strong>2.</strong> Aguarde nossa análise</p>
+                <p><strong>3.</strong> Se selecionada, sua escola receberá confirmação</p>
               </div>
             </div>
+
+            <div className="text-2xl font-bold mb-8">
+              ⏰ PRAZO FINAL: <span className="text-yellow-300">15 de setembro</span>
+            </div>
+
+            <Button 
+              onClick={handleInscricao}
+              className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-2xl px-12 py-6 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              🔥 INSCREVER MINHA ESCOLA GRATUITAMENTE
+            </Button>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
