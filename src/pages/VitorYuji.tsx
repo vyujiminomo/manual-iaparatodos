@@ -28,38 +28,37 @@ const VitorYuji = () => {
   const escolas = ["DOM LUCIANO", "COLÉGIO MASTER", "INSTITUTO JCPM", "SuperClass Itirapina e Brotas"];
 
   const handleInscricao = () => {
-    // Aqui você pode adicionar a lógica para abrir um formulário ou redirecionar
-    console.log("Inscrever escola");
+    window.open("https://forms.gle/qhCN6PATCzwSYGbV7", "_blank");
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-24 bg-gradient-to-br from-blue-600 via-green-600 to-yellow-500">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative py-20 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
         <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+          <div className="max-w-5xl mx-auto text-center text-white">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               TREINAMENTO DE IA GRATUITO<br />
-              <span className="text-yellow-300">PARA ESCOLAS DE SERGIPE</span>
+              <span className="text-yellow-200 font-extrabold">PARA ESCOLAS DE SERGIPE</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/90">
               Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
             </p>
             
             {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">100%</div>
-                <div className="text-lg">Gratuito</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">100%</div>
+                <div className="text-sm md:text-base text-white/90">Gratuito</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">1h30</div>
-                <div className="text-lg">Por Palestra</div>
+              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">1h30</div>
+                <div className="text-sm md:text-base text-white/90">Por Palestra</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">5</div>
-                <div className="text-lg">Escolas Selecionadas</div>
+              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">5</div>
+                <div className="text-sm md:text-base text-white/90">Escolas Selecionadas</div>
               </div>
             </div>
           </div>
@@ -67,22 +66,22 @@ const VitorYuji = () => {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
               DEPOIMENTOS
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {depoimentos.map((depoimento, index) => (
-                <Card key={index} className="p-8 bg-gradient-to-br from-blue-50 to-green-50 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300">
-                  <Quote className="w-8 h-8 text-blue-600 mb-4" />
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed italic">
+                <Card key={index} className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all duration-300 rounded-xl">
+                  <Quote className="w-6 h-6 text-blue-500 mb-4" />
+                  <p className="text-gray-600 mb-4 text-base leading-relaxed italic">
                     "{depoimento.texto}"
                   </p>
-                  <div className="font-semibold text-blue-800">
-                    {depoimento.nome}
+                  <div className="font-semibold text-gray-800 text-sm">
+                    — {depoimento.nome}
                   </div>
                 </Card>
               ))}
@@ -92,19 +91,19 @@ const VitorYuji = () => {
       </section>
 
       {/* Quem é Vitor Yuji */}
-      <section className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
               QUEM É VITOR YUJI
             </h2>
             
-            <Card className="p-12 bg-white shadow-2xl">
+            <Card className="p-8 bg-white shadow-lg rounded-xl border border-gray-200">
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="lg:w-2/5 flex-shrink-0">
-                  <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl">
+                  <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
                     <img
-                      src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
+                      src="/lovable-uploads/e2717431-8bdc-443c-b20a-b59da15e4d70.png"
                       alt="Vitor Yuji"
                       className="w-full h-full object-cover"
                     />
@@ -125,13 +124,13 @@ const VitorYuji = () => {
                     Também foi <strong className="text-blue-600">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
                   </p>
                   
-                  <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl mt-8">
-                    <h4 className="font-bold text-xl mb-4 text-gray-800">Já capacitei:</h4>
-                    <div className="flex flex-wrap gap-3">
+                  <div className="mt-8">
+                    <h4 className="font-bold text-xl mb-6 text-gray-800">Já capacitei:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {escolas.map((escola, index) => (
-                        <span key={index} className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
-                          {escola}
-                        </span>
+                        <div key={index} className="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg border border-gray-200">
+                          <h5 className="font-semibold text-gray-800 text-sm">{escola}</h5>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -143,25 +142,25 @@ const VitorYuji = () => {
       </section>
 
       {/* O Desafio */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800">
               O DESAFIO
             </h2>
             
-            <Card className="p-12 bg-gradient-to-br from-yellow-50 to-orange-50 border-l-4 border-yellow-500">
-              <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <Card className="p-8 bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl">
+                <div className="space-y-4 text-base leading-relaxed text-gray-700">
                 <p>
                   Depois de fazer uma mentoria com o <strong className="text-yellow-600">Max Peters, CEO da Adapta.org</strong>, seu método de estudos mudou completamente.
                 </p>
                 <p>
-                  Aplicando IA de forma estratégica, conseguiu aumentar sua média para <strong className="text-green-600 text-2xl">9.5</strong> estudando <strong className="text-blue-600">MENOS tempo</strong>.
+                  Aplicando IA de forma estratégica, conseguiu aumentar sua média para <strong className="text-green-600 text-xl">9.5</strong> estudando <strong className="text-blue-600">MENOS tempo</strong>.
                 </p>
                 <p>
                   Agora ele quer testar se esse método funciona em escala maior.
                 </p>
-                <p className="text-xl font-bold text-yellow-600">
+                <p className="text-lg font-bold text-yellow-600">
                   E Sergipe foi escolhido como seu "laboratório de testes".
                 </p>
               </div>
@@ -171,25 +170,25 @@ const VitorYuji = () => {
       </section>
 
       {/* Não é Convencional */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
               ESSE NÃO É UM TREINAMENTO CONVENCIONAL
             </h2>
             
-            <Card className="p-12 bg-white shadow-xl">
-              <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <Card className="p-8 bg-white shadow-lg rounded-xl border border-gray-200">
+              <div className="space-y-4 text-base leading-relaxed text-gray-700">
                 <p>
                   Uma boa palestra não deveria ser com um profissional que consegue te dar uma palestra motivacional.
                 </p>
                 <p>
-                  Deveria ser com um <strong className="text-blue-600 text-xl">praticante</strong>, que está testando e implementando IA em seus estudos. Na vida real.
+                  Deveria ser com um <strong className="text-blue-600">praticante</strong>, que está testando e implementando IA em seus estudos. Na vida real.
                 </p>
-                <p className="text-xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                <p className="text-lg font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                   Vitor Yuji é exatamente isso.
                 </p>
-                <p className="text-center text-xl">
+                <p className="text-center text-lg">
                   Ele não é motivacional. É <strong className="text-yellow-600">acional</strong>.
                 </p>
               </div>
@@ -199,29 +198,29 @@ const VitorYuji = () => {
       </section>
 
       {/* O que vão aprender */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
               O QUE SEUS ALUNOS VÃO APRENDER
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-500">
-                <CheckCircle className="w-8 h-8 text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2 text-gray-800">Como aprender qualquer coisa em segundos</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Card className="p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                <CheckCircle className="w-6 h-6 text-blue-600 mb-3" />
+                <h3 className="text-base font-semibold text-gray-800">Como aprender qualquer coisa em segundos</h3>
               </Card>
-              <Card className="p-6 bg-gradient-to-br from-green-50 to-green-100 border-l-4 border-green-500">
-                <Star className="w-8 h-8 text-green-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2 text-gray-800">Os '3 passos' pra alcançar a média de 9.5 (rápido)</h3>
+              <Card className="p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                <Star className="w-6 h-6 text-green-600 mb-3" />
+                <h3 className="text-base font-semibold text-gray-800">Os '3 passos' pra alcançar a média de 9.5 (rápido)</h3>
               </Card>
-              <Card className="p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 border-l-4 border-yellow-500">
-                <Award className="w-8 h-8 text-yellow-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2 text-gray-800">Os 2 tipos de conhecimento que todo estudante precisa saber</h3>
+              <Card className="p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                <Award className="w-6 h-6 text-yellow-600 mb-3" />
+                <h3 className="text-base font-semibold text-gray-800">Os 2 tipos de conhecimento que todo estudante precisa saber</h3>
               </Card>
-              <Card className="p-6 bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-500">
-                <Users className="w-8 h-8 text-purple-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2 text-gray-800">4 técnicas práticas de IA nos estudos</h3>
+              <Card className="p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                <Users className="w-6 h-6 text-purple-600 mb-3" />
+                <h3 className="text-base font-semibold text-gray-800">4 técnicas práticas de IA nos estudos</h3>
               </Card>
             </div>
           </div>
@@ -229,57 +228,57 @@ const VitorYuji = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-green-600 to-yellow-500">
+      <section className="py-16 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
               7 PALESTRAS COMPLETAMENTE GRATUITAS
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <Clock className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
-                <div className="text-2xl font-bold mb-2">Duração</div>
-                <div className="text-lg">1h30 por palestra</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+                <Clock className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
+                <div className="text-xl font-bold mb-1">Duração</div>
+                <div className="text-base text-white/90">1h30 por palestra</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <Users className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
-                <div className="text-2xl font-bold mb-2">Formato</div>
-                <div className="text-lg">Presencial na sua escola</div>
+              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+                <Users className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
+                <div className="text-xl font-bold mb-1">Formato</div>
+                <div className="text-base text-white/90">Presencial na sua escola</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <CheckCircle className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
-                <div className="text-2xl font-bold mb-2">Investimento</div>
-                <div className="text-lg">R$ 0,00</div>
+              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+                <CheckCircle className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
+                <div className="text-xl font-bold mb-1">Investimento</div>
+                <div className="text-base text-white/90">R$ 0,00</div>
               </div>
             </div>
 
-            <div className="bg-red-500 text-white p-8 rounded-xl mb-12 shadow-2xl">
-              <h3 className="text-3xl font-bold mb-4">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
-              <p className="text-xl mb-4">
+            <div className="bg-red-500 text-white p-6 rounded-xl mb-10 shadow-lg">
+              <h3 className="text-2xl font-bold mb-3">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
+              <p className="text-lg mb-3">
                 <strong>Apenas 5 escolas serão selecionadas em todo o estado de Sergipe.</strong>
               </p>
-              <p className="text-lg">
+              <p className="text-base">
                 Esta é uma oportunidade única de oferecer aos seus alunos uma vantagem competitiva no mundo dos estudos.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-12">
-              <h3 className="text-3xl font-bold mb-6">COMO INSCREVER SUA ESCOLA</h3>
-              <div className="space-y-4 text-lg">
+            <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 mb-10 border border-white/10">
+              <h3 className="text-2xl font-bold mb-4">COMO INSCREVER SUA ESCOLA</h3>
+              <div className="space-y-3 text-base">
                 <p><strong>1.</strong> Preencha o formulário abaixo</p>
                 <p><strong>2.</strong> Aguarde nossa análise</p>
                 <p><strong>3.</strong> Se selecionada, sua escola receberá confirmação</p>
               </div>
             </div>
 
-            <div className="text-2xl font-bold mb-8">
-              ⏰ PRAZO FINAL: <span className="text-yellow-300">15 de setembro</span>
+            <div className="text-xl font-bold mb-6">
+              ⏰ PRAZO FINAL: <span className="text-yellow-200">15 de setembro</span>
             </div>
 
             <Button 
               onClick={handleInscricao}
-              className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-2xl px-12 py-6 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-lg px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               🔥 INSCREVER MINHA ESCOLA GRATUITAMENTE
             </Button>
