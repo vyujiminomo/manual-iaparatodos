@@ -141,27 +141,33 @@ const VitorYuji = () => {
         </div>
       </section>
 
-      {/* O Desafio */}
+      {/* O Manifesto */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800">
-              O DESAFIO
+              O MANIFESTO
             </h2>
             
             <Card className="p-8 bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl">
                 <div className="space-y-4 text-base leading-relaxed text-gray-700">
                 <p>
-                  Depois de fazer uma mentoria com o <strong className="text-yellow-600">Max Peters, CEO da Adapta.org</strong>, seu método de estudos mudou completamente.
+                  <strong className="text-blue-600">Sergipe pode exportar mais que forró e caranguejo.</strong>
                 </p>
                 <p>
-                  Aplicando IA de forma estratégica, conseguiu aumentar sua média para <strong className="text-green-600 text-xl">9.5</strong> estudando <strong className="text-blue-600">MENOS tempo</strong>.
+                  Temos talentos incríveis que podem dominar tecnologias que transformam vidas em todo o mundo.
                 </p>
                 <p>
-                  Agora ele quer testar se esse método funciona em escala maior.
+                  Depois de fazer uma mentoria com <strong className="text-yellow-600">Max Peters, CEO da Adapta.org</strong>, meu método de estudos mudou completamente. Aplicando IA de forma estratégica, consegui aumentar minha média para <strong className="text-green-600 text-xl">9.5</strong> estudando <strong className="text-blue-600">MENOS tempo</strong>.
+                </p>
+                <p>
+                  Agora quero provar que essa transformação pode acontecer em escala maior.
+                </p>
+                <p>
+                  <strong className="text-blue-600">Minha missão é tornar Sergipe, o menor estado do Brasil, na maior potência nordestina em educação com IA.</strong>
                 </p>
                 <p className="text-lg font-bold text-yellow-600">
-                  E Sergipe foi escolhido como seu "laboratório de testes".
+                  Estas 7 palestras gratuitas são o primeiro passo para provar que os sergipanos também podem liderar a revolução da educação com IA.
                 </p>
               </div>
             </Card>
