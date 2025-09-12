@@ -221,34 +221,16 @@ const VitorYuji = () => {
       <section className="py-16 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
               5 PALESTRAS COMPLETAMENTE GRATUITAS
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
-                <Clock className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
-                <div className="text-xl font-bold mb-1">Duração</div>
-                <div className="text-base text-white/90">1h30 por palestra</div>
-              </div>
-              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
-                <Users className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
-                <div className="text-xl font-bold mb-1">Formato</div>
-                <div className="text-base text-white/90">Presencial na sua escola</div>
-              </div>
-              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/10">
-                <CheckCircle className="w-10 h-10 text-yellow-200 mx-auto mb-3" />
-                <div className="text-xl font-bold mb-1">Investimento</div>
-                <div className="text-base text-white/90">R$ 0,00</div>
-              </div>
-            </div>
-
-            <div className="bg-red-500 text-white p-6 rounded-xl mb-10 shadow-lg">
-              <h3 className="text-2xl font-bold mb-3">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
-              <p className="text-lg mb-3">
+            <div className="bg-red-500 text-white p-8 rounded-2xl mb-12 shadow-xl border-2 border-red-400">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
+              <p className="text-lg md:text-xl mb-4">
                 <strong>Apenas 5 escolas serão selecionadas em todo o estado de Sergipe.</strong>
               </p>
-              <p className="text-base">
+              <p className="text-base md:text-lg">
                 Esta é uma oportunidade única de oferecer aos seus alunos uma vantagem competitiva no mundo dos estudos.
               </p>
             </div>
