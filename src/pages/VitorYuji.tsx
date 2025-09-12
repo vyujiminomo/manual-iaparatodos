@@ -75,52 +75,84 @@ const VitorYuji = () => {
       </section>
 
       {/* Quem é Vitor Yuji */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-              QUEM É VITOR YUJI
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                QUEM É VITOR YUJI?
+              </h2>
+            </div>
             
-            <Card className="p-8 bg-white shadow-lg rounded-xl border border-gray-200">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
-                <div className="lg:w-2/5 flex-shrink-0">
-                  <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src="/lovable-uploads/e2717431-8bdc-443c-b20a-b59da15e4d70.png"
-                      alt="Vitor Yuji"
-                      className="w-full h-full object-cover"
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                {/* Mobile/Tablet: Show images after title, before text */}
+                <div className="space-y-6 lg:hidden">
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <img 
+                      src="/lovable-uploads/vitor-yuji-palestra-1.png" 
+                      alt="Vitor Yuji palestrando para jovens" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <img 
+                      src="/lovable-uploads/vitor-yuji-palestra-2.png" 
+                      alt="Vitor Yuji com sua equipe e alunos" 
+                      className="w-full h-auto object-cover"
                     />
                   </div>
                 </div>
                 
-                <div className="lg:w-3/5 space-y-6 text-lg leading-relaxed text-gray-700">
+                <div className="space-y-6 text-gray-300 leading-relaxed">
                   <p>
-                    Vitor Yuji tem apenas 15 anos e foi selecionado pelo CEO <strong className="text-blue-600">Max Peters</strong> para ser jovem aprendiz da <strong className="text-blue-600">Adapta.org</strong>, a maior startup de IA do Brasil.
-                  </p>
-                  <p>
-                    Ele já palestrou sobre IA para <strong className="text-green-600">+200 jovens de todo Sergipe</strong>.
-                  </p>
-                  <p>
-                    É co-fundador do <strong className="text-blue-600">Mangue Mania</strong>, a primeira metodologia infantil de educação de manguezais de Sergipe, projeto finalista no prêmio nacional <strong className="text-green-600">Criativos Escola</strong>.
-                  </p>
-                  <p>
-                    Também foi <strong className="text-blue-600">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
+                    Vitor Yuji tem apenas 15 anos e já é referência em IA Generativa no Nordeste.
                   </p>
                   
-                  <div className="mt-8">
-                    <h4 className="font-bold text-xl mb-6 text-gray-800">Já capacitei:</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {escolas.map((escola, index) => (
-                        <div key={index} className="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg border border-gray-200">
-                          <h5 className="font-semibold text-gray-800 text-sm">{escola}</h5>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  <p>
+                    Membro do time da Adapta.org, a maior empresa de IA Generativa do Brasil, foi selecionado pelo CEO Max Peters para integrar a equipe como jovem aprendiz.
+                  </p>
+                  
+                  <p>
+                    Foi 3x competidor no torneio de robótica First Lego League, em que venceu o prêmio de Excelência em Engenharia. Hoje, é mentor das principais equipes sergipanas.
+                  </p>
+                  
+                  <p>
+                    É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
+                  </p>
+                  
+                  <p>
+                    Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e SuperClass.
+                  </p>
+                  
+                  <p>
+                    É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
+                  </p>
+                  
+                  <p>
+                    Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+                  </p>
                 </div>
               </div>
-            </Card>
+
+              {/* Desktop: Show images on the right side */}
+              <div className="space-y-6 hidden lg:block">
+                <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/vitor-yuji-palestra-1.png" 
+                    alt="Vitor Yuji palestrando para jovens" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/vitor-yuji-palestra-2.png" 
+                    alt="Vitor Yuji com sua equipe e alunos" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
