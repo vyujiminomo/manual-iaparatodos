@@ -288,9 +288,10 @@ const VitorYuji = () => {
 
               <Button 
                 onClick={handleInscricao}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg md:text-xl px-8 md:px-16 py-4 md:py-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-sm md:text-xl px-4 md:px-16 py-4 md:py-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300 w-full max-w-md mx-auto"
               >
-                INSCREVER MINHA ESCOLA GRATUITAMENTE
+                <span className="block md:hidden">INSCREVER ESCOLA</span>
+                <span className="hidden md:block">INSCREVER MINHA ESCOLA GRATUITAMENTE</span>
               </Button>
             </div>
           </div>
