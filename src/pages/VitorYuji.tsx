@@ -75,11 +75,11 @@ const VitorYuji = () => {
       </section>
 
       {/* Quem é Vitor Yuji */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 QUEM É VITOR YUJI?
               </h2>
             </div>
@@ -104,33 +104,21 @@ const VitorYuji = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-6 text-gray-300 leading-relaxed">
+                <div className="space-y-6 text-lg leading-relaxed text-gray-700">
                   <p>
-                    Vitor Yuji tem apenas 15 anos e já é referência em IA Generativa no Nordeste.
+                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600">+460 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                   </p>
                   
                   <p>
-                    Membro do time da Adapta.org, a maior empresa de IA Generativa do Brasil, foi selecionado pelo CEO Max Peters para integrar a equipe como jovem aprendiz.
+                    Membro da <strong className="text-blue-600">Adapta.org</strong> - selecionado pessoalmente pelo CEO <strong className="text-blue-600">Max Peters</strong> para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
                   </p>
                   
                   <p>
-                    Foi 3x competidor no torneio de robótica First Lego League, em que venceu o prêmio de Excelência em Engenharia. Hoje, é mentor das principais equipes sergipanas.
+                    Co-fundador do <strong className="text-green-600">Mangue Mania</strong> - a primeira metodologia infantil de educação de manguezais de Sergipe, projeto <strong className="text-yellow-600">top30</strong> no prêmio nacional <strong className="text-green-600">Criativos Escola</strong>.
                   </p>
                   
                   <p>
-                    É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
-                  </p>
-                  
-                  <p>
-                    Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e SuperClass.
-                  </p>
-                  
-                  <p>
-                    É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
-                  </p>
-                  
-                  <p>
-                    Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+                    Também foi <strong className="text-blue-600">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
                   </p>
                 </div>
               </div>
