@@ -84,22 +84,22 @@ const VitorYuji = () => {
               </h2>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-3 space-y-6">
                 {/* Mobile/Tablet: Show images after title, before text */}
-                <div className="space-y-6 lg:hidden">
-                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <div className="space-y-4 lg:hidden">
+                  <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
                       src="/lovable-uploads/vitor-yuji-palestra-1.png" 
                       alt="Vitor Yuji palestrando para jovens" 
-                      className="w-full h-auto object-cover"
+                      className="w-full h-64 object-cover"
                     />
                   </div>
-                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
                       src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                       alt="Vitor Yuji com sua equipe e alunos" 
-                      className="w-full h-auto object-cover"
+                      className="w-full h-64 object-cover"
                     />
                   </div>
                 </div>
@@ -124,19 +124,19 @@ const VitorYuji = () => {
               </div>
 
               {/* Desktop: Show images on the right side */}
-              <div className="space-y-6 hidden lg:block">
-                <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <div className="lg:col-span-2 space-y-4 hidden lg:block">
+                <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                   <img 
                     src="/lovable-uploads/vitor-yuji-palestra-1.png" 
                     alt="Vitor Yuji palestrando para jovens" 
-                    className="w-full h-auto object-cover"
+                    className="w-full h-48 object-cover"
                   />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                   <img 
                     src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                     alt="Vitor Yuji com sua equipe e alunos" 
-                    className="w-full h-auto object-cover"
+                    className="w-full h-48 object-cover"
                   />
                 </div>
               </div>
