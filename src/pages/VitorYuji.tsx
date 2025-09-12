@@ -1,9 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Quote, Users, Clock, CheckCircle, Award, Star } from "lucide-react";
+import { Quote, Users, Clock, CheckCircle, Award, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import useEmblaCarousel from 'embla-carousel-react';
+import { useCallback } from 'react';
 
 const VitorYuji = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
   useDynamicMeta({
     title: "Treinamento Gratuito de IA para Escolas de Sergipe - Vitor Yuji",
     description: "Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe. Treinamento 100% gratuito para escolas.",
@@ -146,14 +158,96 @@ const VitorYuji = () => {
       </section>
 
       {/* Já Capacitei */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-gray-900 tracking-tight">
               JÁ CAPACITEI
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {/* Mobile Carousel */}
+            <div className="md:hidden relative">
+              <div className="overflow-hidden" ref={emblaRef}>
+                <div className="flex">
+                  <div className="flex-[0_0_85%] min-w-0 mr-4">
+                    <Card className="p-6 bg-white border-0 shadow-lg rounded-2xl mx-2">
+                      <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/instituto-jcpm.png" 
+                          alt="Palestra no Instituto JCPM" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-lg font-bold text-center text-gray-900">
+                        Instituto JCPM
+                      </h3>
+                    </Card>
+                  </div>
+
+                  <div className="flex-[0_0_85%] min-w-0 mr-4">
+                    <Card className="p-6 bg-white border-0 shadow-lg rounded-2xl mx-2">
+                      <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/escola-superclass.png" 
+                          alt="Treinamento na Escola SuperClass" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-lg font-bold text-center text-gray-900">
+                        Escola SuperClass
+                      </h3>
+                    </Card>
+                  </div>
+
+                  <div className="flex-[0_0_85%] min-w-0 mr-4">
+                    <Card className="p-6 bg-white border-0 shadow-lg rounded-2xl mx-2">
+                      <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/colegio-master-fll.jpg" 
+                          alt="Mentoria com Equipes de FLL do Colégio Master" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-lg font-bold text-center text-gray-900">
+                        Equipes de FLL do Colégio Master
+                      </h3>
+                    </Card>
+                  </div>
+
+                  <div className="flex-[0_0_85%] min-w-0">
+                    <Card className="p-6 bg-white border-0 shadow-lg rounded-2xl mx-2">
+                      <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/escola-dom-luciano.jpeg" 
+                          alt="Palestra na Escola Municipal Dom Luciano" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-lg font-bold text-center text-gray-900">
+                        Escola Municipal Dom Luciano
+                      </h3>
+                    </Card>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Navigation arrows */}
+              <button
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 z-10 transition-all duration-200"
+                onClick={scrollPrev}
+              >
+                <ChevronLeft className="w-5 h-5 text-gray-700" />
+              </button>
+              <button
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 z-10 transition-all duration-200"
+                onClick={scrollNext}
+              >
+                <ChevronRight className="w-5 h-5 text-gray-700" />
+              </button>
+            </div>
+
+            {/* Desktop Grid */}
+            <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               <Card className="p-6 bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl transform hover:-translate-y-2">
                 <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
                   <img 
