@@ -145,6 +145,71 @@ const VitorYuji = () => {
         </div>
       </section>
 
+      {/* Já Capacitei */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
+              JÁ CAPACITEI
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+              <Card className="p-6 bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl transform hover:-translate-y-2">
+                <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/instituto-jcpm.png" 
+                    alt="Palestra no Instituto JCPM" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-center text-gray-900">
+                  Instituto JCPM
+                </h3>
+              </Card>
+
+              <Card className="p-6 bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl transform hover:-translate-y-2">
+                <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/escola-superclass.png" 
+                    alt="Treinamento na Escola SuperClass" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-center text-gray-900">
+                  Escola SuperClass
+                </h3>
+              </Card>
+
+              <Card className="p-6 bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl transform hover:-translate-y-2">
+                <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/colegio-master-fll.jpg" 
+                    alt="Mentoria com Equipes de FLL do Colégio Master" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-center text-gray-900">
+                  Equipes de FLL do Colégio Master
+                </h3>
+              </Card>
+
+              <Card className="p-6 bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl transform hover:-translate-y-2">
+                <div className="aspect-[4/3] mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/escola-dom-luciano.jpeg" 
+                    alt="Palestra na Escola Municipal Dom Luciano" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-center text-gray-900">
+                  Escola Municipal Dom Luciano
+                </h3>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* O Manifesto */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
