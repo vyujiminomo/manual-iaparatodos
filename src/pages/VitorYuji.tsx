@@ -40,11 +40,11 @@ const VitorYuji = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
         <div className="relative z-10 container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-7xl font-bold mb-8 md:mb-12 leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight tracking-tight">
               TREINAMENTO DE IA GRATUITO<br />
               <span className="text-yellow-200 font-extrabold">PARA ESCOLAS DE SERGIPE</span>
             </h1>
-            <p className="text-xl md:text-3xl mb-6 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium px-4">
+            <p className="text-xl md:text-3xl mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium px-4">
               Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
             </p>
             <p className="text-lg md:text-xl mb-0 max-w-3xl mx-auto text-yellow-200 font-medium">
