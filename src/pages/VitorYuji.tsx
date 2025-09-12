@@ -34,7 +34,7 @@ const VitorYuji = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 overflow-hidden">
+      <section className="relative py-16 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center text-white">
@@ -42,7 +42,7 @@ const VitorYuji = () => {
               TREINAMENTO DE IA GRATUITO<br />
               <span className="text-yellow-200 font-extrabold">PARA ESCOLAS DE SERGIPE</span>
             </h1>
-            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/90">
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-white/90">
               Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
             </p>
           </div>
@@ -218,42 +218,61 @@ const VitorYuji = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              5 PALESTRAS COMPLETAMENTE GRATUITAS
-            </h2>
-            
-            <div className="bg-red-500 text-white p-8 rounded-2xl mb-12 shadow-xl border-2 border-red-400">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
-              <p className="text-lg md:text-xl mb-4">
-                <strong>Apenas 5 escolas serão selecionadas em todo o estado de Sergipe.</strong>
-              </p>
-              <p className="text-base md:text-lg">
-                Esta é uma oportunidade única de oferecer aos seus alunos uma vantagem competitiva no mundo dos estudos.
-              </p>
-            </div>
-
-            <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 mb-10 border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">COMO INSCREVER SUA ESCOLA</h3>
-              <div className="space-y-3 text-base">
-                <p><strong>1.</strong> Preencha o formulário abaixo</p>
-                <p><strong>2.</strong> Aguarde nossa análise</p>
-                <p><strong>3.</strong> Se selecionada, sua escola receberá confirmação</p>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white rounded-3xl shadow-2xl p-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
+                5 PALESTRAS COMPLETAMENTE GRATUITAS
+              </h2>
+              
+              <div className="bg-gradient-to-r from-red-500 to-red-600 text-white p-8 rounded-2xl mb-10 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">⚠️ ATENÇÃO: VAGAS LIMITADAS</h3>
+                <p className="text-lg md:text-xl mb-4 leading-relaxed">
+                  <strong>Apenas 5 escolas serão selecionadas em todo o estado de Sergipe.</strong>
+                </p>
+                <p className="text-base md:text-lg opacity-90">
+                  Esta é uma oportunidade única de oferecer aos seus alunos uma vantagem competitiva no mundo dos estudos.
+                </p>
               </div>
-            </div>
 
-            <div className="text-xl font-bold mb-6">
-              ⏰ PRAZO FINAL: <span className="text-yellow-200">15 de setembro</span>
-            </div>
+              <div className="bg-gray-50 rounded-2xl p-8 mb-10">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">COMO INSCREVER SUA ESCOLA</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
+                      <span className="text-blue-600 font-bold text-lg">1</span>
+                    </div>
+                    <p className="text-gray-700 font-medium">Preencha o formulário</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
+                      <span className="text-blue-600 font-bold text-lg">2</span>
+                    </div>
+                    <p className="text-gray-700 font-medium">Aguarde nossa análise</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
+                      <span className="text-blue-600 font-bold text-lg">3</span>
+                    </div>
+                    <p className="text-gray-700 font-medium">Receba a confirmação</p>
+                  </div>
+                </div>
+              </div>
 
-            <Button 
-              onClick={handleInscricao}
-              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-lg px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              🔥 INSCREVER MINHA ESCOLA GRATUITAMENTE
-            </Button>
+              <div className="mb-8">
+                <p className="text-xl font-bold text-gray-900 mb-2">
+                  ⏰ PRAZO FINAL: <span className="text-red-600">15 de setembro</span>
+                </p>
+              </div>
+
+              <Button 
+                onClick={handleInscricao}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-12 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                INSCREVER MINHA ESCOLA GRATUITAMENTE
+              </Button>
+            </div>
           </div>
         </div>
       </section>
