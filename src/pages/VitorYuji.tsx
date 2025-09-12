@@ -4,47 +4,37 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Quote, Users, Clock, CheckCircle, Award, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
-
 const VitorYuji = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
-
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'center'
+  });
   const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi])
-
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
   const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi])
-
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
   useDynamicMeta({
     title: "Treinamento Gratuito de IA para Escolas de Sergipe - Vitor Yuji",
     description: "Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe. Treinamento 100% gratuito para escolas.",
     image: "/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
   });
-
-  const depoimentos = [
-    {
-      texto: "Achava que IA era coisa complicada, mas ele explicou de uma forma simples e leve. Depois do treinamento, comecei a usar a IA nos meus estudos. É um conteúdo que serve pra todo mundo, independente da idade ou do quanto já entende de tecnologia.",
-      nome: "Isadora Helena"
-    },
-    {
-      texto: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.",
-      nome: "Arthur Lucena"
-    },
-    {
-      texto: "O ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.",
-      nome: "Gabriela Coelho"
-    }
-  ];
-
+  const depoimentos = [{
+    texto: "Achava que IA era coisa complicada, mas ele explicou de uma forma simples e leve. Depois do treinamento, comecei a usar a IA nos meus estudos. É um conteúdo que serve pra todo mundo, independente da idade ou do quanto já entende de tecnologia.",
+    nome: "Isadora Helena"
+  }, {
+    texto: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.",
+    nome: "Arthur Lucena"
+  }, {
+    texto: "O ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.",
+    nome: "Gabriela Coelho"
+  }];
   const escolas = ["DOM LUCIANO", "COLÉGIO MASTER", "INSTITUTO JCPM", "SuperClass Itirapina e Brotas"];
-
   const handleInscricao = () => {
     window.open("https://forms.gle/qhCN6PATCzwSYGbV7", "_blank");
   };
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+  return <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative py-16 md:py-28 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
@@ -70,8 +60,7 @@ const VitorYuji = () => {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-              {depoimentos.map((depoimento, index) => (
-                <Card key={index} className="p-8 md:p-10 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
+              {depoimentos.map((depoimento, index) => <Card key={index} className="p-8 md:p-10 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                   <Quote className="w-10 h-10 text-blue-500 mb-6 md:mb-8" />
                   <p className="text-gray-600 mb-6 md:mb-8 text-lg md:text-xl leading-relaxed italic font-light">
                     "{depoimento.texto}"
@@ -79,8 +68,7 @@ const VitorYuji = () => {
                   <div className="font-semibold text-gray-900 text-base md:text-lg">
                     — {depoimento.nome}
                   </div>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -101,18 +89,10 @@ const VitorYuji = () => {
                 {/* Mobile/Tablet: Show images after title, before text */}
                 <div className="space-y-8 lg:hidden">
                   <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <img 
-                      src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                      alt="Vitor Yuji palestrando para jovens" 
-                      className="w-full h-80 object-contain bg-gray-50"
-                    />
+                    <img src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-80 object-contain bg-gray-50" />
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <img 
-                      src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                      alt="Vitor Yuji com sua equipe e alunos" 
-                      className="w-full h-80 object-contain bg-gray-50"
-                    />
+                    <img src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-80 object-contain bg-gray-50" />
                   </div>
                 </div>
                 
@@ -138,18 +118,10 @@ const VitorYuji = () => {
               {/* Desktop: Show images on the right side */}
               <div className="lg:col-span-2 space-y-8 hidden lg:block">
                 <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <img 
-                    src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                    alt="Vitor Yuji palestrando para jovens" 
-                    className="w-full h-72 object-contain bg-gray-50"
-                  />
+                  <img src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-72 object-contain bg-gray-50" />
                 </div>
                 <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <img 
-                    src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                    alt="Vitor Yuji com sua equipe e alunos" 
-                    className="w-full h-72 object-contain bg-gray-50"
-                  />
+                  <img src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-72 object-contain bg-gray-50" />
                 </div>
               </div>
             </div>
@@ -172,11 +144,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                     <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                       <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/instituto-jcpm.png" 
-                          alt="Palestra no Instituto JCPM" 
-                          className="w-full h-full object-cover"
-                        />
+                        <img src="/lovable-uploads/instituto-jcpm.png" alt="Palestra no Instituto JCPM" className="w-full h-full object-cover" />
                       </div>
                       <h3 className="text-xl font-bold text-center text-gray-900">
                         Instituto JCPM
@@ -187,11 +155,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                     <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                       <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/escola-superclass.png" 
-                          alt="Treinamento na Escola SuperClass" 
-                          className="w-full h-full object-cover"
-                        />
+                        <img src="/lovable-uploads/escola-superclass.png" alt="Treinamento na Escola SuperClass" className="w-full h-full object-cover" />
                       </div>
                       <h3 className="text-xl font-bold text-center text-gray-900">
                         Escola SuperClass
@@ -202,11 +166,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                     <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                       <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/colegio-master-fll.jpg" 
-                          alt="Mentoria com Equipes de FLL do Colégio Master" 
-                          className="w-full h-full object-cover"
-                        />
+                        <img src="/lovable-uploads/colegio-master-fll.jpg" alt="Mentoria com Equipes de FLL do Colégio Master" className="w-full h-full object-cover" />
                       </div>
                       <h3 className="text-xl font-bold text-center text-gray-900">
                         Equipes de FLL do Colégio Master
@@ -217,11 +177,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0">
                     <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                       <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/escola-dom-luciano.jpeg" 
-                          alt="Palestra na Escola Municipal Dom Luciano" 
-                          className="w-full h-full object-cover"
-                        />
+                        <img src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Palestra na Escola Municipal Dom Luciano" className="w-full h-full object-cover" />
                       </div>
                       <h3 className="text-xl font-bold text-center text-gray-900">
                         Escola Municipal Dom Luciano
@@ -232,16 +188,10 @@ const VitorYuji = () => {
               </div>
               
               {/* Navigation arrows */}
-              <button
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 z-10 transition-all duration-300 hover:scale-110"
-                onClick={scrollPrev}
-              >
+              <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 z-10 transition-all duration-300 hover:scale-110" onClick={scrollPrev}>
                 <ChevronLeft className="w-6 h-6 text-gray-700" />
               </button>
-              <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 z-10 transition-all duration-300 hover:scale-110"
-                onClick={scrollNext}
-              >
+              <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 z-10 transition-all duration-300 hover:scale-110" onClick={scrollNext}>
                 <ChevronRight className="w-6 h-6 text-gray-700" />
               </button>
             </div>
@@ -250,11 +200,7 @@ const VitorYuji = () => {
             <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
               <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                 <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/instituto-jcpm.png" 
-                    alt="Palestra no Instituto JCPM" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/instituto-jcpm.png" alt="Palestra no Instituto JCPM" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                   Instituto JCPM
@@ -263,11 +209,7 @@ const VitorYuji = () => {
 
               <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                 <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/escola-superclass.png" 
-                    alt="Treinamento na Escola SuperClass" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/escola-superclass.png" alt="Treinamento na Escola SuperClass" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                   Escola SuperClass
@@ -276,11 +218,7 @@ const VitorYuji = () => {
 
               <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                 <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/colegio-master-fll.jpg" 
-                    alt="Mentoria com Equipes de FLL do Colégio Master" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/colegio-master-fll.jpg" alt="Mentoria com Equipes de FLL do Colégio Master" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                   Equipes de FLL do Colégio Master
@@ -289,11 +227,7 @@ const VitorYuji = () => {
 
               <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                 <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/escola-dom-luciano.jpeg" 
-                    alt="Palestra na Escola Municipal Dom Luciano" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Palestra na Escola Municipal Dom Luciano" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                   Escola Municipal Dom Luciano
@@ -441,14 +375,11 @@ const VitorYuji = () => {
 
               <div className="mb-8 md:mb-12">
                 <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  ⏰ PRAZO FINAL: <span className="text-red-600">15 de setembro</span>
+                  ⏰ PRAZO FINAL: <span className="text-red-600">20 de setembro</span>
                 </p>
               </div>
 
-              <Button 
-                onClick={handleInscricao}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg md:text-2xl px-8 md:px-20 py-6 md:py-8 rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-300 w-full max-w-2xl mx-auto"
-              >
+              <Button onClick={handleInscricao} className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg md:text-2xl px-8 md:px-20 py-6 md:py-8 rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-300 w-full max-w-2xl mx-auto">
                 <span className="block md:hidden">INSCREVER ESCOLA</span>
                 <span className="hidden md:block">INSCREVER MINHA ESCOLA GRATUITAMENTE</span>
               </Button>
@@ -456,8 +387,6 @@ const VitorYuji = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default VitorYuji;
