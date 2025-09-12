@@ -109,13 +109,56 @@ const VitorYuji = () => {
                   </p>
                   
                   <div className="mt-8">
+                    <h4 className="font-bold text-xl mb-6 text-gray-800">Principais palestras:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-3">O Mínimo de IA que você Precisa Saber</h5>
+                        <p className="text-gray-600 text-sm mb-2">Local: YouTube</p>
+                        <p className="text-blue-600 font-medium">173 participantes</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-3">IA Aplicada nos Estudos</h5>
+                        <p className="text-gray-600 text-sm mb-2">Local: Instituto JCPM</p>
+                        <p className="text-blue-600 font-medium">120 estudantes</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-3">Webinar IA Para Todos</h5>
+                        <p className="text-gray-600 text-sm mb-2">Local: Online</p>
+                        <p className="text-blue-600 font-medium">20 profissionais capacitados</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-3">SuperClass Itirapina e Brotas</h5>
+                        <p className="text-gray-600 text-sm mb-2">Local: São Paulo</p>
+                        <p className="text-blue-600 font-medium">85 estudantes</p>
+                      </Card>
+                    </div>
+                  </div>
+
+                  <div className="mt-8">
                     <h4 className="font-bold text-xl mb-6 text-gray-800">Já capacitei:</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {escolas.map((escola, index) => (
-                        <div key={index} className="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg border border-gray-200">
-                          <h5 className="font-semibold text-gray-800 text-sm">{escola}</h5>
-                        </div>
-                      ))}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-2">DOM LUCIANO</h5>
+                        <p className="text-gray-600 text-sm">Colégio tradicional de Sergipe</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-2">COLÉGIO MASTER</h5>
+                        <p className="text-gray-600 text-sm">Instituição de ensino reconhecida</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-2">INSTITUTO JCPM</h5>
+                        <p className="text-gray-600 text-sm">Centro educacional de excelência</p>
+                      </Card>
+                      
+                      <Card className="p-6 bg-white border border-gray-200 hover:shadow-lg transition-all rounded-xl">
+                        <h5 className="font-semibold text-lg text-gray-800 mb-2">SuperClass Itirapina e Brotas</h5>
+                        <p className="text-gray-600 text-sm">Escola de empregabilidade - SP</p>
+                      </Card>
                     </div>
                   </div>
                 </div>
