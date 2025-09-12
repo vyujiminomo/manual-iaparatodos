@@ -152,7 +152,7 @@ const VitorYuji = () => {
             <Card className="p-8 bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl">
                 <div className="space-y-4 text-base leading-relaxed text-gray-700">
                 <p>
-                  <strong className="text-blue-600">Sergipe pode exportar mais que forró e caranguejo.</strong>
+                  <strong className="text-blue-600">Sergipe pode ser mais que 'o país do forró'.</strong>
                 </p>
                 <p>
                   Temos talentos incríveis que podem dominar tecnologias que transformam vidas em todo o mundo.
