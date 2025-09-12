@@ -5,35 +5,60 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { usePageTracking } from "@/hooks/useAnalytics";
-import Home from "./pages/Home";
-import Manual from "./pages/Manual";
-import UpsellPnp from "./pages/UpsellPnp";
-import Contact from "./pages/Contact";
-import Obrigado from "./pages/Obrigado";
-import VitorYuji from "./pages/VitorYuji";
-import Consultoria from "./pages/Consultoria";
-import Consultor from "./pages/Consultor";
-import Guia from "./pages/Guia";
-import NotFound from "./pages/NotFound";
+import { usePerformanceMonitor } from "@/hooks/usePerformanceMonitor";
+import { Suspense, lazy } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+
+// Lazy load components for better performance
+const Home = lazy(() => import("./pages/Home"));
+const Manual = lazy(() => import("./pages/Manual"));
+const UpsellPnp = lazy(() => import("./pages/UpsellPnp"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Obrigado = lazy(() => import("./pages/Obrigado"));
+const VitorYuji = lazy(() => import("./pages/VitorYuji"));
+const Consultoria = lazy(() => import("./pages/Consultoria"));
+const Consultor = lazy(() => import("./pages/Consultor"));
+const Guia = lazy(() => import("./pages/Guia"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+
+// Loading fallback component
+const PageLoader = () => (
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="container mx-auto px-6 py-20">
+      <div className="space-y-8">
+        <Skeleton className="h-12 w-3/4 mx-auto" />
+        <Skeleton className="h-6 w-1/2 mx-auto" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Skeleton className="h-64 w-full" />
+          <Skeleton className="h-64 w-full" />
+          <Skeleton className="h-64 w-full" />
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
   usePageTracking();
+  usePerformanceMonitor();
   
   return (
-    <Routes>
-      <Route path="/" element={<VitorYuji />} />
-      <Route path="/consultoria" element={<Consultoria />} />
-      <Route path="/consultor" element={<Consultor />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/manual" element={<Manual />} />
-      <Route path="/upsell-pnp" element={<UpsellPnp />} />
-      <Route path="/contato" element={<Contact />} />
-      <Route path="/obrigado" element={<Obrigado />} />
-      <Route path="/guia" element={<Guia />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <Suspense fallback={<PageLoader />}>
+      <Routes>
+        <Route path="/" element={<VitorYuji />} />
+        <Route path="/consultoria" element={<Consultoria />} />
+        <Route path="/consultor" element={<Consultor />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/manual" element={<Manual />} />
+        <Route path="/upsell-pnp" element={<UpsellPnp />} />
+        <Route path="/contato" element={<Contact />} />
+        <Route path="/obrigado" element={<Obrigado />} />
+        <Route path="/guia" element={<Guia />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
   );
 };
 
