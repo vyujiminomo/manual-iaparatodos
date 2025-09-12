@@ -45,22 +45,6 @@ const VitorYuji = () => {
             <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/90">
               Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
             </p>
-            
-            {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">100%</div>
-                <div className="text-sm md:text-base text-white/90">Gratuito</div>
-              </div>
-              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">1h30</div>
-                <div className="text-sm md:text-base text-white/90">Por Palestra</div>
-              </div>
-              <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-200 mb-1">5</div>
-                <div className="text-sm md:text-base text-white/90">Escolas Selecionadas</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -167,7 +151,7 @@ const VitorYuji = () => {
                   <strong className="text-blue-600">Minha missão é tornar Sergipe, o menor estado do Brasil, na maior potência nordestina em educação com IA.</strong>
                 </p>
                 <p className="text-lg font-bold text-yellow-600">
-                  Estas 7 palestras gratuitas são o primeiro passo para provar que os sergipanos também podem liderar a revolução da educação com IA.
+                  Estas 5 palestras gratuitas são o primeiro passo para provar que os sergipanos também podem liderar a revolução da educação com IA.
                 </p>
               </div>
             </Card>
@@ -238,7 +222,7 @@ const VitorYuji = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              7 PALESTRAS COMPLETAMENTE GRATUITAS
+              5 PALESTRAS COMPLETAMENTE GRATUITAS
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
