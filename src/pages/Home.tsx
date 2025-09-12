@@ -4,9 +4,9 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Home = () => {
   useDynamicMeta({
-    title: "Vitor Yuji - IA Para Todos",
-    description: "Vitor Yuji - IA Para Todos. Aprenda IA de forma simples e prática.",
-    image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
+    title: "Treinamento Gratuito - Vitor Yuji",
+    description: "Treinamento gratuito de Inteligência Artificial. Aprenda IA de forma simples e prática com Vitor Yuji.",
+    image: "/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
   });
 
   const handleManualClick = () => {
