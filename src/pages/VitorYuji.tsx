@@ -47,6 +47,9 @@ const VitorYuji = () => {
             <p className="text-xl md:text-3xl mb-6 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium px-4">
               Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.
             </p>
+            <p className="text-lg md:text-xl mb-0 max-w-3xl mx-auto text-yellow-200 font-medium">
+              Palestra prática de 1 hora para alunos do ensino fundamental e médio.
+            </p>
           </div>
         </div>
       </section>
@@ -326,6 +329,71 @@ const VitorYuji = () => {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">4 técnicas práticas de IA nos estudos</h3>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detalhes do Treinamento */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
+              DETALHES DO TREINAMENTO
+            </h2>
+            
+            <Card className="p-10 md:p-16 bg-gradient-to-br from-blue-50 via-white to-green-50 border-0 shadow-2xl rounded-3xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div className="space-y-8">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-blue-500 rounded-full p-3 flex-shrink-0">
+                      <Clock className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Formato</h3>
+                      <p className="text-lg md:text-xl text-gray-700">Palestra de 1 hora para estudantes</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500 rounded-full p-3 flex-shrink-0">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Público</h3>
+                      <p className="text-lg md:text-xl text-gray-700">Alunos do ensino fundamental e médio</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-8">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-yellow-500 rounded-full p-3 flex-shrink-0">
+                      <CheckCircle className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Local</h3>
+                      <p className="text-lg md:text-xl text-gray-700">Presencial na sua escola</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="bg-purple-500 rounded-full p-3 flex-shrink-0">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Investimento</h3>
+                      <p className="text-lg md:text-xl text-gray-700 font-bold text-green-600">Gratuito</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-12 p-6 md:p-8 bg-gradient-to-r from-yellow-100 to-yellow-50 rounded-2xl border-l-4 border-yellow-500">
+                <p className="text-lg md:text-xl font-semibold text-gray-900 text-center">
+                  ✨ Não é necessário conhecimento prévio em tecnologia!
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
