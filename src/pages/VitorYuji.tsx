@@ -405,7 +405,8 @@ const VitorYuji = () => {
           <div className="max-w-6xl mx-auto text-center">
             <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-20">
               <h2 className="text-4xl md:text-6xl font-bold mb-12 md:mb-16 text-gray-900 tracking-tight">
-                5 PALESTRAS COMPLETAMENTE GRATUITAS
+                <span className="md:hidden">5 PALESTRAS GRATUITAS</span>
+                <span className="hidden md:block">5 PALESTRAS COMPLETAMENTE GRATUITAS</span>
               </h2>
               
               <div className="bg-gradient-to-r from-red-500 to-red-600 text-white p-8 md:p-12 rounded-3xl mb-12 md:mb-16 shadow-2xl">
