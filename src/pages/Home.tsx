@@ -4,8 +4,8 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Home = () => {
   useDynamicMeta({
-    title: "Treinamento Gratuito - Vitor Yuji",
-    description: "Treinamento gratuito de Inteligência Artificial. Aprenda IA de forma simples e prática com Vitor Yuji.",
+    title: "Treinamento de IA gratuito pra escolas sergipanas",
+    description: "Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.",
     image: "/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
   });
 
