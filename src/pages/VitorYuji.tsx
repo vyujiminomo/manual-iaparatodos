@@ -93,18 +93,10 @@ const VitorYuji = () => {
                 {/* Mobile/Tablet: Show images after title, before text */}
                 <div className="space-y-8 lg:hidden">
                   <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <LazyImage 
-                      src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                      alt="Vitor Yuji palestrando para jovens" 
-                      className="w-full h-80 object-contain bg-gray-50" 
-                    />
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-80 object-contain bg-gray-50" />
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <LazyImage 
-                      src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                      alt="Vitor Yuji com sua equipe e alunos" 
-                      className="w-full h-80 object-contain bg-gray-50" 
-                    />
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-80 object-contain bg-gray-50" />
                   </div>
                 </div>
                 
@@ -130,18 +122,10 @@ const VitorYuji = () => {
               {/* Desktop: Show images on the right side */}
               <div className="lg:col-span-2 space-y-8 hidden lg:block">
                 <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <LazyImage 
-                    src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                    alt="Vitor Yuji palestrando para jovens" 
-                    className="w-full h-72 object-contain bg-gray-50" 
-                  />
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-72 object-contain bg-gray-50" />
                 </div>
                 <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <LazyImage 
-                    src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                    alt="Vitor Yuji com sua equipe e alunos" 
-                    className="w-full h-72 object-contain bg-gray-50" 
-                  />
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-72 object-contain bg-gray-50" />
                 </div>
               </div>
             </div>
@@ -164,11 +148,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                      <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                        <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                         <LazyImage 
-                           src="/lovable-uploads/instituto-jcpm.png" 
-                           alt="Palestra no Instituto JCPM" 
-                           className="w-full h-full object-cover" 
-                         />
+                         <LazyImage src="/lovable-uploads/instituto-jcpm.png" alt="Palestra no Instituto JCPM" className="w-full h-full object-cover" />
                        </div>
                        <h3 className="text-xl font-bold text-center text-gray-900">
                          Instituto JCPM
@@ -179,11 +159,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                      <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                        <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                         <LazyImage 
-                           src="/lovable-uploads/escola-superclass.png" 
-                           alt="Treinamento na Escola SuperClass" 
-                           className="w-full h-full object-cover" 
-                         />
+                         <LazyImage src="/lovable-uploads/escola-superclass.png" alt="Treinamento na Escola SuperClass" className="w-full h-full object-cover" />
                        </div>
                        <h3 className="text-xl font-bold text-center text-gray-900">
                          Escola SuperClass
@@ -194,11 +170,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0 mr-4">
                      <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                        <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                         <LazyImage 
-                           src="/lovable-uploads/colegio-master-fll.jpg" 
-                           alt="Mentoria com Equipes de FLL do Colégio Master" 
-                           className="w-full h-full object-cover" 
-                         />
+                         <LazyImage src="/lovable-uploads/colegio-master-fll.jpg" alt="Mentoria com Equipes de FLL do Colégio Master" className="w-full h-full object-cover" />
                        </div>
                        <h3 className="text-xl font-bold text-center text-gray-900">
                          Equipes de FLL do Colégio Master
@@ -209,11 +181,7 @@ const VitorYuji = () => {
                   <div className="flex-[0_0_90%] min-w-0">
                      <Card className="p-8 bg-white border-0 shadow-xl rounded-3xl mx-3">
                        <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                         <LazyImage 
-                           src="/lovable-uploads/escola-dom-luciano.jpeg" 
-                           alt="Palestra na Escola Municipal Dom Luciano" 
-                           className="w-full h-full object-cover" 
-                         />
+                         <LazyImage src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Palestra na Escola Municipal Dom Luciano" className="w-full h-full object-cover" />
                        </div>
                        <h3 className="text-xl font-bold text-center text-gray-900">
                          Escola Municipal Dom Luciano
@@ -236,11 +204,7 @@ const VitorYuji = () => {
             <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
                <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                  <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                   <LazyImage 
-                     src="/lovable-uploads/instituto-jcpm.png" 
-                     alt="Palestra no Instituto JCPM" 
-                     className="w-full h-full object-cover" 
-                   />
+                   <LazyImage src="/lovable-uploads/instituto-jcpm.png" alt="Palestra no Instituto JCPM" className="w-full h-full object-cover" />
                  </div>
                  <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                    Instituto JCPM
@@ -249,11 +213,7 @@ const VitorYuji = () => {
 
                <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                  <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                   <LazyImage 
-                     src="/lovable-uploads/escola-superclass.png" 
-                     alt="Treinamento na Escola SuperClass" 
-                     className="w-full h-full object-cover" 
-                   />
+                   <LazyImage src="/lovable-uploads/escola-superclass.png" alt="Treinamento na Escola SuperClass" className="w-full h-full object-cover" />
                  </div>
                  <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                    Escola SuperClass
@@ -262,11 +222,7 @@ const VitorYuji = () => {
 
                <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                  <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                   <LazyImage 
-                     src="/lovable-uploads/colegio-master-fll.jpg" 
-                     alt="Mentoria com Equipes de FLL do Colégio Master" 
-                     className="w-full h-full object-cover" 
-                   />
+                   <LazyImage src="/lovable-uploads/colegio-master-fll.jpg" alt="Mentoria com Equipes de FLL do Colégio Master" className="w-full h-full object-cover" />
                  </div>
                  <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                    Equipes de FLL do Colégio Master
@@ -275,11 +231,7 @@ const VitorYuji = () => {
 
                <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl transform hover:-translate-y-3">
                  <div className="aspect-[4/3] mb-6 rounded-2xl overflow-hidden">
-                   <LazyImage 
-                     src="/lovable-uploads/escola-dom-luciano.jpeg" 
-                     alt="Palestra na Escola Municipal Dom Luciano" 
-                     className="w-full h-full object-cover" 
-                   />
+                   <LazyImage src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Palestra na Escola Municipal Dom Luciano" className="w-full h-full object-cover" />
                  </div>
                  <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                    Escola Municipal Dom Luciano
@@ -492,7 +444,7 @@ const VitorYuji = () => {
 
               <div className="mb-8 md:mb-12">
                 <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  ⏰ PRAZO FINAL: <span className="text-red-600">20 de setembro</span>
+                  ⏰ PRAZO FINAL: <span className="text-red-600">26 de setembro</span>
                 </p>
               </div>
 
