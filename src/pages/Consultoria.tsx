@@ -20,6 +20,7 @@ import {
   ChevronRight
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { LazyImage } from "@/components/LazyImage";
 
 const Consultoria = () => {
   const [formData, setFormData] = useState({
@@ -420,53 +421,53 @@ const Consultoria = () => {
       <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
-              QUEM É VITOR YUJI?
-            </h2>
+            <div className="text-center mb-20 md:mb-24">
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight">
+                QUEM É VITOR YUJI?
+              </h2>
+            </div>
             
-            <Card className="p-10 md:p-16 bg-white shadow-2xl rounded-3xl border-0">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
-                {/* Foto do Vitor */}
-                <div className="lg:w-2/5 flex-shrink-0">
-                  <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                    <img
-                      src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
-                      alt="Vitor Yuji apresentando palestra"
-                      className="w-full h-full object-cover"
-                    />
+            <div className="grid lg:grid-cols-5 gap-16 items-start">
+              <div className="lg:col-span-3 space-y-10">
+                {/* Mobile/Tablet: Show images after title, before text */}
+                <div className="space-y-8 lg:hidden">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl">
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-80 object-contain bg-gray-50" />
+                  </div>
+                  <div className="rounded-3xl overflow-hidden shadow-2xl">
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-80 object-contain bg-gray-50" />
                   </div>
                 </div>
                 
-                {/* Conteúdo Textual */}
-                <div className="lg:w-3/5 space-y-8 text-lg md:text-xl leading-relaxed text-gray-700 font-light">
+                <div className="space-y-10 text-xl md:text-2xl leading-relaxed text-gray-700 font-light">
                   <p>
-                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
+                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+460 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                   </p>
                   
-                  <div className="space-y-6">
-                    <p>
-                      <strong className="text-blue-600 font-semibold">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
-                    </p>
-                    
-                    <p>
-                      <strong className="text-green-600 font-semibold">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.
-                    </p>
-                    
-                    <p>
-                      <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
-                    </p>
-                    
-                    <p>  
-                      <strong className="text-yellow-600 font-semibold">Músico no Movimento Escalada</strong> - grupo católico de jovens do Nordeste
-                    </p>
-                  </div>
+                  <p>
+                    Membro da <strong className="text-blue-600 font-semibold">Adapta.org</strong> - selecionado pessoalmente pelo CEO <strong className="text-blue-600 font-semibold">Max Peters</strong> para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                  </p>
                   
-                  <p className="text-xl md:text-2xl font-bold text-center mt-12 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                    E com uma missão clara: tornar a IA acessível para todos.
+                  <p>
+                    Co-fundador do <strong className="text-green-600 font-semibold">Mangue Mania</strong> - a primeira metodologia infantil de educação de manguezais de Sergipe, projeto <strong className="text-yellow-600 font-semibold">top30</strong> no prêmio nacional <strong className="text-green-600 font-semibold">Criativos Escola</strong>.
+                  </p>
+                  
+                  <p>
+                    Também foi <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
                   </p>
                 </div>
               </div>
-            </Card>
+
+              {/* Desktop: Show images on the right side */}
+              <div className="lg:col-span-2 space-y-8 hidden lg:block">
+                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-72 object-contain bg-gray-50" />
+                </div>
+                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-72 object-contain bg-gray-50" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
