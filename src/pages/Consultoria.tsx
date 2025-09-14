@@ -206,25 +206,6 @@ const Consultoria = () => {
                 SOLICITAR PALESTRA / AGENDAR CONSULTORIA
               </button>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                  <div className="text-3xl md:text-4xl font-bold text-yellow-200 mb-3">{stat.number}</div>
-                  <div className="text-sm text-white/90 leading-relaxed">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-
-            {/* Achievements */}
-            <div className="space-y-3 text-white/90 text-lg font-light">
-              <p>✨ Palestrante em 5+ instituições</p>
-              <p>🚀 Membro da ADAPTA (maior startup de IA do Brasil)</p>
-              <p>🏆 Co-fundador do Mangue Mania (Top 30 nacional - Criativos Escola)</p>
-              <p>🤖 3x competidor da First Lego League</p>
-              <p>📚 Mentor das principais equipes de robótica de Sergipe</p>
-            </div>
           </div>
         </div>
       </section>
