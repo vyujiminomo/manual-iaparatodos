@@ -178,77 +178,77 @@ const Consultoria = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-system">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-background via-muted/5 to-background">
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/50"></div>
-        
-        <div className="relative z-10 container mx-auto px-8 py-20">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="mb-12">
-              <p className="text-sm font-medium text-muted-foreground mb-6 tracking-widest uppercase">
-                [[Consultor de IA Generativa]]
-              </p>
-              <h1 className="text-5xl md:text-7xl font-sans font-bold mb-8 leading-tight tracking-tight">
-                VITOR YUJI
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-sans font-semibold text-primary mb-12 leading-relaxed">
-                O Primeiro Consultor de IA Generativa de Sergipe
-              </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-16 max-w-4xl mx-auto leading-relaxed">
-                Aos 15 anos, já capacitei <strong className="text-primary">+450 estudantes e profissionais</strong> em Inteligência Artificial na prática.
-              </p>
-            </div>
+      <section className="relative py-16 md:py-28 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
+        <div className="relative z-10 container mx-auto px-6 md:px-8">
+          <div className="max-w-6xl mx-auto text-center text-white">
+            <p className="text-lg md:text-xl font-medium mb-6 tracking-wide uppercase text-yellow-200">
+              Consultor de IA Generativa
+            </p>
+            <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
+              VITOR YUJI
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-12 leading-relaxed text-yellow-200">
+              O Primeiro Consultor de IA Generativa de Sergipe
+            </h2>
+            <p className="text-xl md:text-2xl mb-16 max-w-4xl mx-auto leading-relaxed font-medium">
+              Aos 15 anos, já capacitei <strong className="text-yellow-200">+450 estudantes e profissionais</strong> em Inteligência Artificial na prática.
+            </p>
 
             <div className="mb-16">
-              <Button size="lg" className="text-xl px-12 py-8 mb-12 font-sans font-medium">
+              <button 
+                onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-white text-blue-600 hover:bg-yellow-100 text-xl px-12 py-6 rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
+              >
                 SOLICITAR PALESTRA / AGENDAR CONSULTORIA
-              </Button>
+              </button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-sans font-bold text-primary mb-3">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground leading-relaxed">{stat.label}</div>
+                <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <div className="text-3xl md:text-4xl font-bold text-yellow-200 mb-3">{stat.number}</div>
+                  <div className="text-sm text-white/90 leading-relaxed">{stat.label}</div>
                 </div>
               ))}
             </div>
 
             {/* Achievements */}
-            <div className="space-y-3 text-muted-foreground text-lg">
-              <p>Palestrante em 5+ instituições</p>
-              <p>Membro da ADAPTA (maior startup de IA do Brasil)</p>
-              <p>Co-fundador do Mangue Mania (Top 30 nacional - Criativos Escola)</p>
-              <p>3x competidor da First Lego League</p>
-              <p>Mentor das principais equipes de robótica de Sergipe</p>
+            <div className="space-y-3 text-white/90 text-lg font-light">
+              <p>✨ Palestrante em 5+ instituições</p>
+              <p>🚀 Membro da ADAPTA (maior startup de IA do Brasil)</p>
+              <p>🏆 Co-fundador do Mangue Mania (Top 30 nacional - Criativos Escola)</p>
+              <p>🤖 3x competidor da First Lego League</p>
+              <p>📚 Mentor das principais equipes de robótica de Sergipe</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Consultoria Diferenciada */}
-      <section className="py-24 bg-muted/5">
-        <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-12 leading-tight">
-              Essa não é uma consultoria convencional
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
+              ESSA NÃO É UMA CONSULTORIA CONVENCIONAL
             </h2>
             
-            <Card className="p-12 bg-card border-border">
-              <div className="space-y-8 text-xl leading-relaxed">
+            <Card className="p-10 md:p-16 bg-white shadow-2xl rounded-3xl border-0">
+              <div className="space-y-6 md:space-y-8 text-lg md:text-2xl leading-relaxed text-gray-700 font-light">
                 <p>
                   Uma boa consultoria não deveria ser com um profissional que consegue te dar uma palestra motivacional.
                 </p>
                 <p>
-                  Deveria ser com um <strong className="text-primary">praticante</strong>, que está testando e implementando IA em seus projetos. Na vida real.
+                  Deveria ser com um <strong className="text-blue-600 font-semibold">praticante</strong>, que está testando e implementando IA em seus projetos. Na vida real.
                 </p>
-                <p>
+                <p className="text-2xl md:text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                   Vitor Yuji é exatamente isso.
                 </p>
-                <p className="text-2xl font-sans font-semibold text-primary">
-                  Ele não é motivacional. É acional.
+                <p className="text-center text-xl md:text-2xl">
+                  Ele não é motivacional. É <strong className="text-yellow-600 font-semibold">acional</strong>.
                 </p>
               </div>
             </Card>
@@ -257,13 +257,13 @@ const Consultoria = () => {
       </section>
 
       {/* Treinamentos */}
-      <section className="py-24">
-        <div className="container mx-auto px-8">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-16 text-center">TREINAMENTOS</h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-16 md:mb-24 text-center text-gray-900 tracking-tight">TREINAMENTOS</h2>
             
             <div className="mb-16">
-              <h3 className="text-3xl font-sans font-bold mb-16 text-center">Conheça os temas</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-16 text-center text-gray-900">Conheça os temas</h3>
               
               {/* Carrossel de Treinamentos */}
               <div className="relative px-4">
@@ -271,9 +271,9 @@ const Consultoria = () => {
                   <div className="transition-transform duration-500 ease-in-out"
                        style={{ transform: `translateX(-${currentTreinamento * 50}%)` }}>
                     <div className="flex gap-6">
-                      {treinamentos.map((treinamento, index) => (
-                        <div key={index} className="w-1/2 flex-shrink-0">
-                          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary/80 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl h-[520px] flex flex-col">
+                       {treinamentos.map((treinamento, index) => (
+                         <div key={index} className="w-1/2 flex-shrink-0">
+                           <Card className="relative overflow-hidden bg-gradient-to-br from-blue-500 via-green-500 to-yellow-400 border-0 text-white group hover:scale-[1.02] transition-all duration-300 shadow-2xl rounded-3xl h-[520px] flex flex-col">
                             {/* Imagem de Capa */}
                             <div className="aspect-[16/9] relative overflow-hidden flex-shrink-0">
                               <img
@@ -292,16 +292,16 @@ const Consultoria = () => {
                               </div>
                             </div>
                             
-                            {/* Conteúdo */}
-                            <div className="p-6 flex flex-col flex-grow">
-                              <h4 className="text-xl font-sans font-bold mb-4 leading-tight">
-                                {treinamento.titulo}
-                              </h4>
-                              
-                              <p className="text-sm leading-relaxed opacity-90 flex-grow">
-                                {treinamento.descricao}
-                              </p>
-                            </div>
+                             {/* Conteúdo */}
+                             <div className="p-6 flex flex-col flex-grow">
+                               <h4 className="text-xl font-bold mb-4 leading-tight">
+                                 {treinamento.titulo}
+                               </h4>
+                               
+                               <p className="text-sm leading-relaxed opacity-90 flex-grow font-light">
+                                 {treinamento.descricao}
+                               </p>
+                             </div>
                             
                             {/* Efeito de brilho no hover */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-all duration-700"></div>
@@ -312,43 +312,43 @@ const Consultoria = () => {
                   </div>
                 </div>
                 
-                {/* Setas de Navegação */}
-                <div className="flex justify-center mt-8 gap-4">
-                  <button
-                    onClick={prevTreinamento}
-                    className="bg-primary/10 backdrop-blur-sm hover:bg-primary/20 text-primary rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 border border-primary/20"
-                  >
-                    <ChevronLeft className="w-6 h-6" />
-                  </button>
-                  
-                  <button
-                    onClick={nextTreinamento}
-                    className="bg-primary/10 backdrop-blur-sm hover:bg-primary/20 text-primary rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 border border-primary/20"
-                  >
-                    <ChevronRight className="w-6 h-6" />
-                  </button>
-                </div>
+                 {/* Setas de Navegação */}
+                 <div className="flex justify-center mt-8 gap-4">
+                   <button
+                     onClick={prevTreinamento}
+                     className="bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+                   >
+                     <ChevronLeft className="w-6 h-6 text-gray-700" />
+                   </button>
+                   
+                   <button
+                     onClick={nextTreinamento}
+                     className="bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+                   >
+                     <ChevronRight className="w-6 h-6 text-gray-700" />
+                   </button>
+                 </div>
                 
-                {/* Indicadores */}
-                <div className="flex justify-center mt-6 space-x-2">
-                  {Array.from({ length: Math.ceil(treinamentos.length / 2) }).map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentTreinamento(index * 2)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        Math.floor(currentTreinamento / 2) === index ? 'bg-primary scale-125' : 'bg-muted hover:bg-muted-foreground/50'
-                      }`}
-                    />
-                  ))}
-                </div>
+                 {/* Indicadores */}
+                 <div className="flex justify-center mt-6 space-x-2">
+                   {Array.from({ length: Math.ceil(treinamentos.length / 2) }).map((_, index) => (
+                     <button
+                       key={index}
+                       onClick={() => setCurrentTreinamento(index * 2)}
+                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                         Math.floor(currentTreinamento / 2) === index ? 'bg-blue-600 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                       }`}
+                     />
+                   ))}
+                 </div>
               </div>
             </div>
 
             <div className="mb-12">
-              <h3 className="text-3xl font-sans font-bold mb-8">Já capacitei:</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Já capacitei:</h3>
               
               <div className="relative">
-                <Card className="p-8 bg-card border-border">
+                <Card className="p-8 bg-white shadow-2xl rounded-3xl border-0">
                   <div className="flex flex-col md:flex-row items-center gap-8">
                     {/* Imagem da Palestra */}
                     <div className="w-full md:w-1/2">
@@ -362,31 +362,31 @@ const Consultoria = () => {
                       </div>
                     </div>
                     
-                    {/* Conteúdo */}
-                    <div className="w-full md:w-1/2 text-center md:text-left">
-                      <h4 className="text-2xl font-sans font-bold text-foreground mb-4">
-                        {capacitacoes[currentCapacitacao].title}
-                      </h4>
-                      <p className="text-lg text-muted-foreground">
-                        <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
-                      </p>
-                    </div>
+                     {/* Conteúdo */}
+                     <div className="w-full md:w-1/2 text-center md:text-left">
+                       <h4 className="text-2xl font-bold text-gray-900 mb-4">
+                         {capacitacoes[currentCapacitacao].title}
+                       </h4>
+                       <p className="text-lg text-gray-600">
+                         <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
+                       </p>
+                     </div>
                   </div>
                 </Card>
 
                 {/* Setas de Navegação */}
                 <button
                   onClick={prevCapacitacao}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
                 >
-                  <ChevronLeft className="w-6 h-6" />
+                  <ChevronLeft className="w-6 h-6 text-gray-700" />
                 </button>
                 
                 <button
                   onClick={nextCapacitacao}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
                 >
-                  <ChevronRight className="w-6 h-6" />
+                  <ChevronRight className="w-6 h-6 text-gray-700" />
                 </button>
 
                 {/* Indicadores */}
@@ -396,7 +396,7 @@ const Consultoria = () => {
                       key={index}
                       onClick={() => setCurrentCapacitacao(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentCapacitacao ? 'bg-primary' : 'bg-muted hover:bg-muted-foreground/50'
+                        index === currentCapacitacao ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                     />
                   ))}
@@ -405,25 +405,30 @@ const Consultoria = () => {
             </div>
 
             <div className="text-center">
-              <Button size="lg" className="text-xl px-12 py-6 font-sans font-medium">
+              <button 
+                onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white text-xl px-12 py-6 rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
+              >
                 SOLICITAR PALESTRA
-              </Button>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quem é Vitor Yuji */}
-      <section className="py-24 bg-muted/5">
-        <div className="container mx-auto px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-12 text-center">Quem é Vitor Yuji</h2>
+      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
+              QUEM É VITOR YUJI?
+            </h2>
             
-            <Card className="p-12 bg-card border-border">
+            <Card className="p-10 md:p-16 bg-white shadow-2xl rounded-3xl border-0">
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 {/* Foto do Vitor */}
                 <div className="lg:w-2/5 flex-shrink-0">
-                  <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
+                  <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                     <img
                       src="/lovable-uploads/58ecef62-5140-46da-ae49-51272638998a.png"
                       alt="Vitor Yuji apresentando palestra"
@@ -433,30 +438,30 @@ const Consultoria = () => {
                 </div>
                 
                 {/* Conteúdo Textual */}
-                <div className="lg:w-3/5 space-y-8 text-xl leading-relaxed">
+                <div className="lg:w-3/5 space-y-8 text-lg md:text-xl leading-relaxed text-gray-700 font-light">
                   <p>
-                    Vitor Yuji tem apenas 15 anos e já educou <strong className="text-primary">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
+                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                   </p>
                   
                   <div className="space-y-6">
                     <p>
-                      <strong className="text-primary">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                      <strong className="text-blue-600 font-semibold">Membro da Adapta.org</strong> - selecionado pessoalmente pelo CEO Max Peters para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
                     </p>
                     
                     <p>
-                      <strong className="text-primary">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.
+                      <strong className="text-green-600 font-semibold">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.
                     </p>
                     
                     <p>
-                      <strong className="text-primary">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
+                      <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong> - um dos maiores torneios de robótica do mundo, hoje mentor das principais equipes sergipanas.
                     </p>
                     
-                    <p>
-                      <strong className="text-primary">Músico no Movimento Escalada</strong> - grupo católico de jovens do Nordeste
+                    <p>  
+                      <strong className="text-yellow-600 font-semibold">Músico no Movimento Escalada</strong> - grupo católico de jovens do Nordeste
                     </p>
                   </div>
                   
-                  <p className="text-2xl font-sans font-semibold text-primary text-center mt-12">
+                  <p className="text-xl md:text-2xl font-bold text-center mt-12 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                     E com uma missão clara: tornar a IA acessível para todos.
                   </p>
                 </div>
@@ -467,70 +472,70 @@ const Consultoria = () => {
       </section>
 
       {/* Planos */}
-      <section className="py-24">
-        <div className="container mx-auto px-8">
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-16 text-center">Planos</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">PLANOS</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Introdução Gratuita */}
-              <Card className="p-8 bg-card border-border">
+              <Card className="p-8 bg-white shadow-xl hover:shadow-2xl rounded-3xl border-0 transform hover:-translate-y-3 transition-all duration-500">
                 <div className="text-center space-y-6">
-                  <h3 className="text-xl font-sans font-bold">Introdução Gratuita</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Introdução Gratuita</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed font-light">
                     O Mínimo de IA que você precisa saber (para não ficar pra trás)
                   </p>
-                  <div className="text-3xl font-sans font-bold text-primary">GRATUITO</div>
-                  <Button variant="outline" className="w-full py-3 font-medium">
+                  <div className="text-3xl font-bold text-green-600">GRATUITO</div>
+                  <button className="w-full py-3 px-6 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-full font-bold transition-all duration-300">
                     ACESSAR AGORA
-                  </Button>
+                  </button>
                 </div>
               </Card>
 
               {/* Ebook Completo */}
-              <Card className="p-8 bg-card border-border">
+              <Card className="p-8 bg-white shadow-xl hover:shadow-2xl rounded-3xl border-0 transform hover:-translate-y-3 transition-all duration-500">
                 <div className="text-center space-y-6">
-                  <h3 className="text-xl font-sans font-bold">Ebook Completo</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Ebook Completo</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed font-light">
                     Manual IA Para Todos
                   </p>
-                  <div className="text-xl font-sans font-semibold text-primary">Sob consulta</div>
-                  <Button variant="outline" className="w-full py-3 font-medium">
+                  <div className="text-xl font-semibold text-blue-600">Sob consulta</div>
+                  <button className="w-full py-3 px-6 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-full font-bold transition-all duration-300">
                     CONHEÇA O MANUAL
-                  </Button>
+                  </button>
                 </div>
               </Card>
 
               {/* Consultoria Individual */}
-              <Card className="p-8 bg-card border-border border-primary/50">
+              <Card className="p-8 bg-gradient-to-br from-blue-500 to-green-500 text-white shadow-xl hover:shadow-2xl rounded-3xl border-0 transform hover:-translate-y-3 transition-all duration-500 border-2 border-yellow-400">
                 <div className="text-center space-y-6">
-                  <h3 className="text-xl font-sans font-bold">Consultoria Individual</h3>
-                  <ul className="text-sm text-muted-foreground space-y-2 text-left leading-relaxed">
+                  <h3 className="text-xl font-bold">Consultoria Individual</h3>
+                  <ul className="text-sm space-y-2 text-left leading-relaxed font-light">
                     <li>• Análise personalizada</li>
                     <li>• Implementação prática de IA</li>
                     <li>• Plano de ação específico</li>
                   </ul>
-                  <div className="text-2xl font-sans font-bold text-primary">R$ 150/hora</div>
-                  <p className="text-xs text-muted-foreground">(online)</p>
-                  <Button className="w-full py-3 font-medium">
+                  <div className="text-2xl font-bold text-yellow-200">R$ 150/hora</div>
+                  <p className="text-xs opacity-90">(online)</p>
+                  <button className="w-full py-3 px-6 bg-white text-blue-600 hover:bg-yellow-100 rounded-full font-bold transition-all duration-300">
                     Agendar Conversa
-                  </Button>
+                  </button>
                 </div>
               </Card>
 
               {/* Palestra Institucional */}
-              <Card className="p-8 bg-card border-border">
+              <Card className="p-8 bg-white shadow-xl hover:shadow-2xl rounded-3xl border-0 transform hover:-translate-y-3 transition-all duration-500">
                 <div className="text-center space-y-6">
-                  <h3 className="text-xl font-sans font-bold">Palestra Institucional</h3>
-                  <ul className="text-sm text-muted-foreground space-y-2 text-left leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Palestra Institucional</h3>
+                  <ul className="text-sm text-gray-600 space-y-2 text-left leading-relaxed font-light">
                     <li>• Presencial em Sergipe</li>
                     <li>• Conteúdo adaptado</li>
                     <li>• Material de apoio exclusivo</li>
                   </ul>
-                  <div className="text-xl font-sans font-semibold text-primary">Sob consulta</div>
-                  <Button variant="outline" className="w-full py-3 font-medium">
+                  <div className="text-xl font-semibold text-blue-600">Sob consulta</div>
+                  <button className="w-full py-3 px-6 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-full font-bold transition-all duration-300">
                     Solicitar Orçamento
-                  </Button>
+                  </button>
                 </div>
               </Card>
             </div>
@@ -539,67 +544,67 @@ const Consultoria = () => {
       </section>
 
       {/* Contato */}
-      <section className="py-24 bg-muted/5">
-        <div className="container mx-auto px-8">
+      <section id="contato" className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold mb-12 text-center">Contato</h2>
-            <p className="text-center text-2xl mb-16 text-muted-foreground leading-relaxed">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-gray-900 tracking-tight">CONTATO</h2>
+            <p className="text-center text-xl md:text-2xl mb-16 text-gray-600 leading-relaxed font-light">
               Vamos conversar? Entre em contato e vamos descobrir como posso ajudar você ou sua instituição.
             </p>
             
             <div className="grid md:grid-cols-2 gap-16">
               {/* Informações de contato */}
               <div className="space-y-8">
-                <div className="flex items-center space-x-4">
-                  <MessageCircle className="w-6 h-6 text-primary" />
-                  <span className="text-lg">WhatsApp: (Em breve)</span>
+                <div className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg">
+                  <MessageCircle className="w-6 h-6 text-blue-600" />
+                  <span className="text-lg text-gray-700">WhatsApp: (Em breve)</span>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-primary" />
-                  <span className="text-lg">contato.vitoryujiminomo@gmail.com</span>
+                <div className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg">
+                  <Mail className="w-6 h-6 text-green-600" />
+                  <span className="text-lg text-gray-700">contato.vitoryujiminomo@gmail.com</span>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <Linkedin className="w-6 h-6 text-primary" />
-                  <a href="https://linkedin.com/in/vitor-yuji-minomo" target="_blank" rel="noopener noreferrer" className="text-lg text-primary hover:underline">
+                <div className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg">
+                  <Linkedin className="w-6 h-6 text-blue-600" />
+                  <a href="https://linkedin.com/in/vitor-yuji-minomo" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:underline font-medium">
                     LinkedIn: Vitor Yuji Minomo
                   </a>
                 </div>
               </div>
 
               {/* Formulário */}
-              <Card className="p-8 bg-card border-border">
-                <h3 className="text-2xl font-sans font-bold mb-6 text-center">Preencha o formulário abaixo:</h3>
+              <Card className="p-8 bg-white shadow-2xl rounded-3xl border-0">
+                <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Preencha o formulário abaixo:</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className="block text-base font-medium mb-2">Nome:</label>
+                    <label className="block text-base font-medium mb-2 text-gray-700">Nome:</label>
                     <Input
                       type="text"
                       name="nome"
                       value={formData.nome}
                       onChange={handleInputChange}
                       required
-                      className="py-3"
+                      className="py-3 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-base font-medium mb-2">Instituição/Empresa:</label>
+                    <label className="block text-base font-medium mb-2 text-gray-700">Instituição/Empresa:</label>
                     <Input
                       type="text"
                       name="instituicao"
                       value={formData.instituicao}
                       onChange={handleInputChange}
-                      className="py-3"
+                      className="py-3 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-base font-medium mb-2">Tipo de interesse:</label>
+                    <label className="block text-base font-medium mb-2 text-gray-700">Tipo de interesse:</label>
                     <select
                       name="tipoInteresse"
                       value={formData.tipoInteresse}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-border rounded-md bg-background text-base"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-base focus:border-blue-500 focus:ring-blue-500"
                       required
                     >
                       <option value="">Selecione uma opção</option>
@@ -611,20 +616,23 @@ const Consultoria = () => {
                   </div>
                   
                   <div>
-                    <label className="block text-base font-medium mb-2">Mensagem:</label>
+                    <label className="block text-base font-medium mb-2 text-gray-700">Mensagem:</label>
                     <Textarea
                       name="mensagem"
                       value={formData.mensagem}
                       onChange={handleInputChange}
                       rows={4}
                       required
-                      className="py-3"
+                      className="py-3 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full py-4 text-lg font-medium">
+                  <button 
+                    type="submit" 
+                    className="w-full py-4 text-lg font-bold bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                  >
                     ENVIAR MENSAGEM
-                  </Button>
+                  </button>
                 </form>
               </Card>
             </div>
