@@ -1,7 +1,8 @@
 // Service Worker for caching and performance optimization
-const CACHE_NAME = 'vitor-yuji-v1';
-const STATIC_CACHE = 'static-v1';
-const IMAGE_CACHE = 'images-v1';
+const CACHE_VERSION = '20240915-v2';
+const CACHE_NAME = `vitor-yuji-${CACHE_VERSION}`;
+const STATIC_CACHE = `static-${CACHE_VERSION}`;
+const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 
 // Resources to cache immediately
 const STATIC_ASSETS = [
