@@ -19,10 +19,6 @@ const Consultoria = () => {
     }
   };
 
-  const openWhatsApp = () => {
-    window.open('https://wa.me/5579981255774?text=Olá! Gostaria de agendar uma consultoria de IA.', '_blank');
-  };
-
   const instituicoes = [
     { nome: "Colégio Estadual Dom Luciano", logo: "/lovable-uploads/escola-dom-luciano.jpeg" },
     { nome: "Equipes de FLL do Colégio Master", logo: "/lovable-uploads/colegio-master-fll.jpg" },
@@ -349,14 +345,14 @@ const Consultoria = () => {
                   Palestra sob demanda apenas para empresas. Clique no botão abaixo para mais detalhes.
                 </p>
                 
-                <Button 
-                  onClick={openWhatsApp}
-                  variant="outline"
-                  className="w-full border-accent text-accent hover:bg-accent hover:text-white font-heading font-semibold py-6"
-                  size="lg"
+                <a 
+                  href="https://wa.me/5579981255774"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center border border-accent text-accent hover:bg-accent hover:text-white font-heading font-semibold py-6 rounded-lg transition-colors"
                 >
                   Conhecer mais →
-                </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
