@@ -19,6 +19,31 @@ const Consultoria = () => {
     }
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = '5579981255774';
+    const message = '';
+    
+    // Try multiple WhatsApp options for maximum compatibility
+    const whatsappUrls = [
+      `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`,
+      `https://wa.me/${phoneNumber}`,
+      `https://web.whatsapp.com/send?phone=${phoneNumber}`
+    ];
+    
+    // Try to open WhatsApp app first
+    try {
+      window.open(whatsappUrls[0], '_blank');
+      
+      // Fallback to web version after a short delay if app doesn't open
+      setTimeout(() => {
+        window.open(whatsappUrls[1], '_blank');
+      }, 1000);
+    } catch (error) {
+      // If all else fails, use web WhatsApp
+      window.open(whatsappUrls[2], '_blank');
+    }
+  };
+
   const instituicoes = [
     { nome: "Colégio Estadual Dom Luciano", logo: "/lovable-uploads/escola-dom-luciano.jpeg" },
     { nome: "Equipes de FLL do Colégio Master", logo: "/lovable-uploads/colegio-master-fll.jpg" },
@@ -52,7 +77,7 @@ const Consultoria = () => {
               </p>
               
               <button 
-                onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+                onClick={openWhatsApp}
                 className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="mr-2" />
@@ -120,7 +145,7 @@ const Consultoria = () => {
           </div>
           
           <button 
-            onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+            onClick={openWhatsApp}
             className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
           >
             <MessageCircle className="mr-2" />
@@ -152,15 +177,13 @@ const Consultoria = () => {
           </div>
           
           <div className="text-center">
-            <a 
-              href="https://wa.me/5579981255774"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
+              onClick={openWhatsApp}
               className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -187,7 +210,7 @@ const Consultoria = () => {
               </p>
             
             <button 
-              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              onClick={openWhatsApp}
               className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
@@ -260,7 +283,7 @@ const Consultoria = () => {
           
           <div className="text-center mt-12">
             <button 
-              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              onClick={openWhatsApp}
               className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
@@ -315,7 +338,7 @@ const Consultoria = () => {
                 </div>
                 
                 <button 
-                  onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+                  onClick={openWhatsApp}
                   className="w-full inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold py-6 rounded-lg"
                 >
                   <MessageCircle className="mr-2" />
@@ -336,7 +359,7 @@ const Consultoria = () => {
                 </p>
                 
                 <button 
-                  onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+                  onClick={openWhatsApp}
                   className="w-full inline-flex items-center justify-center border border-accent text-accent hover:bg-accent hover:text-white font-heading font-semibold py-6 rounded-lg transition-colors"
                 >
                   Conhecer mais →
