@@ -8,89 +8,106 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    /* Cores do Sistema de Design - Alta Conversão */
+    --background: 0 0% 100%; /* Branco puro #FFFFFF */
+    --foreground: 222 47% 11%; /* Texto escuro #0F172A */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 0 0% 100%; /* Branco puro */
+    --card-foreground: 222 47% 11%; /* Texto escuro */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 0 0% 100%; /* Branco puro */
+    --popover-foreground: 222 47% 11%; /* Texto escuro */
 
-    --primary: 222 47% 11%;
-    --primary-foreground: 0 0% 100%;
+    /* CTA Principal - Laranja Vibrante */
+    --primary: 19 100% 60%; /* Laranja CTA #FF6B35 */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    --primary-hover: 19 82% 54%; /* Laranja hover #E55A2B */
 
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 222 47% 11%;
+    /* Backgrounds Claros */
+    --secondary: 210 20% 98%; /* Branco gelo #F8FAFC */
+    --secondary-foreground: 222 47% 11%; /* Texto escuro */
 
-    --muted: 210 40% 98%;
-    --muted-foreground: 215 25% 27%;
+    /* Texto Secundário */
+    --muted: 210 20% 98%; /* Branco gelo */
+    --muted-foreground: 213 12% 28%; /* Texto secundário #374151 */
 
-    --accent: 160 84% 39%;
-    --accent-foreground: 0 0% 100%;
+    /* Verde Sucesso/Resultados */
+    --accent: 162 91% 31%; /* Verde esmeralda #059669 */
+    --accent-foreground: 0 0% 100%; /* Branco */
+
+    /* Azul Profissional - Confiança */
+    --trust: 224 76% 40%; /* Azul profissional #1E40AF */
+    --trust-foreground: 0 0% 100%; /* Branco */
+
+    /* Texto Descritivo */
+    --description: 216 13% 47%; /* Texto descrição #6B7280 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 40% 98%;
-    --input: 210 40% 98%;
-    --ring: 160 84% 39%;
+    --border: 210 20% 93%; /* Borda sutil */
+    --input: 210 20% 98%; /* Input background */
+    --ring: 19 100% 60%; /* Ring usando cor CTA */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Botões mais arredondados */
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 215 25% 27%;
-
+    --sidebar-foreground: 213 12% 28%;
     --sidebar-primary: 222 47% 11%;
-
     --sidebar-primary-foreground: 0 0% 100%;
-
-    --sidebar-accent: 210 40% 98%;
-
+    --sidebar-accent: 210 20% 98%;
     --sidebar-accent-foreground: 222 47% 11%;
-
-    --sidebar-border: 210 40% 98%;
-
-    --sidebar-ring: 160 84% 39%;
+    --sidebar-border: 210 20% 93%;
+    --sidebar-ring: 19 100% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Modo escuro mantendo a identidade visual */
+    --background: 222 47% 6%; /* Fundo escuro */
+    --foreground: 210 20% 98%; /* Texto claro */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 8%; /* Card escuro */
+    --card-foreground: 210 20% 98%; /* Texto claro */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 8%; /* Popover escuro */
+    --popover-foreground: 210 20% 98%; /* Texto claro */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* CTA permanece vibrante */
+    --primary: 19 100% 60%; /* Laranja CTA mantido */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    --primary-hover: 19 82% 54%; /* Laranja hover mantido */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 222 47% 12%; /* Fundo secundário escuro */
+    --secondary-foreground: 210 20% 98%; /* Texto claro */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 222 47% 12%; /* Muted escuro */
+    --muted-foreground: 216 13% 65%; /* Texto muted mais claro */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Verde sucesso mantido */
+    --accent: 162 91% 31%; /* Verde esmeralda mantido */
+    --accent-foreground: 0 0% 100%; /* Branco */
 
-    --destructive: 0 62.8% 30.6%;
+    /* Azul confiança mantido */
+    --trust: 224 76% 45%; /* Azul mais claro no escuro */
+    --trust-foreground: 0 0% 100%; /* Branco */
+
+    --description: 216 13% 60%; /* Texto descrição mais claro */
+
+    --destructive: 0 62.8% 50%; /* Vermelho ajustado */
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 222 47% 15%; /* Borda escura */
+    --input: 222 47% 12%; /* Input escuro */
+    --ring: 19 100% 60%; /* Ring usando cor CTA */
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 19 100% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 222 47% 12%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 19 100% 60%;
   }
 }
 
@@ -105,13 +122,47 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .glow-effect {
-    @apply before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-sky-400/20 before:to-cyan-400/20 before:blur-md before:-z-10;
-    position: relative;
+  /* Tipografia Responsiva */
+  .text-h1 {
+    @apply text-[32px] leading-tight font-bold md:text-[48px];
   }
   
-  .glow-effect::before {
+  .text-body {
+    @apply text-[16px] leading-relaxed md:text-[18px];
+  }
+  
+  .text-btn {
+    @apply text-[16px] font-semibold md:text-[18px];
+  }
+
+  /* Microinterações */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+
+  .cta-glow {
+    @apply relative overflow-hidden;
+  }
+  
+  .cta-glow::before {
     content: '';
-    animation: pulse 2s infinite;
+    @apply absolute inset-0 bg-gradient-to-r from-orange-400/20 to-orange-600/20 rounded-lg blur-lg -z-10 opacity-0 transition-opacity duration-300;
+  }
+  
+  .cta-glow:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Gradientes Sutis */
+  .bg-gradient-light {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 98%) 100%);
+  }
+  
+  .bg-gradient-trust {
+    background: linear-gradient(135deg, hsl(224, 76%, 40%) 0%, hsl(224, 76%, 35%) 100%);
   }
 }
