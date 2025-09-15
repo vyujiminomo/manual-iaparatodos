@@ -16,7 +16,6 @@ const UpsellPnp = lazy(() => import("./pages/UpsellPnp"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Obrigado = lazy(() => import("./pages/Obrigado"));
 const VitorYuji = lazy(() => import("./pages/VitorYuji"));
-const Consultoria = lazy(() => import("./pages/Consultoria"));
 const Consultor = lazy(() => import("./pages/Consultor"));
 const Guia = lazy(() => import("./pages/Guia"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -48,7 +47,6 @@ const AppContent = () => {
     <Suspense fallback={<PageLoader />}>
       <Routes>
         <Route path="/" element={<VitorYuji />} />
-        <Route path="/consultoria" element={<Consultoria />} />
         <Route path="/bio" element={<Consultor />} />
         <Route path="/home" element={<Home />} />
         <Route path="/manual" element={<Manual />} />
