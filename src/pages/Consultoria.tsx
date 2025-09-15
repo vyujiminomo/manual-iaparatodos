@@ -149,7 +149,7 @@ const Consultoria = () => {
                   <LazyImage
                     src={inst.logo}
                     alt={inst.nome}
-                    className="w-full h-32 object-contain mb-4"
+                    className="w-full h-40 object-contain mb-4"
                   />
                   <p className="text-text font-medium">{inst.nome}</p>
                 </CardContent>
@@ -250,7 +250,7 @@ const Consultoria = () => {
                 </div>
               </div>
               
-              <p className="text-lg font-heading font-semibold text-primary mt-8">
+              <p className="text-lg font-heading font-semibold text-slate-800 mt-8">
                 E com uma missão clara: tornar a IA acessível para todos.
               </p>
             </div>
