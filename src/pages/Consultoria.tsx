@@ -9,7 +9,7 @@ const Consultoria = () => {
   useDynamicMeta({
     title: "Consultoria IA - Vitor Yuji | 1º Consultor de IA Generativa de Sergipe",
     description: "Aos 15 anos, já capacitei +450 estudantes e profissionais em IA. Consultoria individual personalizada com implementação prática no seu trabalho.",
-    image: "/lovable-uploads/vitor-profile-new.png"
+    image: "/lovable-uploads/vitor-profile-latest.png"
   });
 
   const scrollToConsultoria = () => {
@@ -47,7 +47,7 @@ const Consultoria = () => {
                 VITOR YUJI
               </h1>
               
-              <p className="text-xl lg:text-2xl font-heading font-semibold text-accent mb-6">
+              <p className="text-xl lg:text-2xl font-heading font-semibold text-slate-800 mb-6">
                 O 1º Consultor de IA Generativa de Sergipe
               </p>
               
@@ -69,7 +69,7 @@ const Consultoria = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 scale-110" />
                 <LazyImage
-                  src="/lovable-uploads/vitor-profile-new.png"
+                  src="/lovable-uploads/vitor-profile-latest.png"
                   alt="Vitor Yuji - Consultor de IA"
                   className="relative w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white"
                 />
@@ -149,7 +149,7 @@ const Consultoria = () => {
                   <LazyImage
                     src={inst.logo}
                     alt={inst.nome}
-                    className="w-full h-24 object-contain mb-4"
+                    className="w-full h-32 object-contain mb-4"
                   />
                   <p className="text-text font-medium">{inst.nome}</p>
                 </CardContent>
@@ -187,9 +187,9 @@ const Consultoria = () => {
             <p className="text-xl font-heading font-semibold text-text mb-6">
               Vitor Yuji é exatamente isso.
             </p>
-            <p className="text-lg text-accent font-semibold mb-8">
-              Ele não é motivacional. É acional.
-            </p>
+              <p className="text-lg text-slate-800 font-semibold mb-8">
+                Ele não é motivacional. É acional.
+              </p>
             
             <Button 
               onClick={openWhatsApp}
@@ -226,7 +226,7 @@ const Consultoria = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <Users className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <Users className="w-6 h-6 text-slate-800 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-semibold text-text mb-1">Co-fundador do Mangue Mania</h3>
                     <p className="text-text-secondary">a 1º metodologia infantil de educação de manguezais de Sergipe, top 30 no prêmio nacional Criativos Escola.</p>
@@ -242,7 +242,7 @@ const Consultoria = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <MapPin className="w-6 h-6 text-slate-800 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-semibold text-text mb-1">Músico no Movimento Escalada</h3>
                     <p className="text-text-secondary">grupo católico de jovens do Nordeste</p>
