@@ -9,7 +9,7 @@ const Consultoria = () => {
   useDynamicMeta({
     title: "Consultoria IA - Vitor Yuji | 1º Consultor de IA Generativa de Sergipe",
     description: "Aos 15 anos, já capacitei +450 estudantes e profissionais em IA. Consultoria individual personalizada com implementação prática no seu trabalho.",
-    image: "/lovable-uploads/profile-photo.png"
+    image: "/lovable-uploads/vitor-profile-new.png"
   });
 
   const scrollToConsultoria = () => {
@@ -58,7 +58,7 @@ const Consultoria = () => {
               <Button 
                 onClick={openWhatsApp}
                 size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="mr-2" />
                 AGENDAR CONSULTORIA
@@ -69,7 +69,7 @@ const Consultoria = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 scale-110" />
                 <LazyImage
-                  src="/lovable-uploads/profile-photo.png"
+                  src="/lovable-uploads/vitor-profile-new.png"
                   alt="Vitor Yuji - Consultor de IA"
                   className="relative w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white"
                 />
@@ -87,28 +87,47 @@ const Consultoria = () => {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="bg-white/50 backdrop-blur-sm border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-text-secondary italic mb-4">
-                    "Excelente consultoria, consegui implementar IA no meu trabalho de forma prática e eficiente."
-                  </p>
-                  <p className="text-text font-semibold">Cliente {i}</p>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-white/50 backdrop-blur-sm border-0 shadow-lg">
+              <CardContent className="p-6">
+                <p className="text-text-secondary italic mb-4">
+                  "Descobri no curso que precisava mudar radicalmente minha interação com elas, pois estava cometendo vários erros e demorando muito para obter as respostas que preciso. Gratidão."
+                </p>
+                <div className="text-center">
+                  <p className="text-text font-semibold">Marta Romilda</p>
+                  <p className="text-text-secondary text-sm">Administradora</p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/50 backdrop-blur-sm border-0 shadow-lg">
+              <CardContent className="p-6">
+                <p className="text-text-secondary italic mb-4">
+                  "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar."
+                </p>
+                <div className="text-center">
+                  <p className="text-text font-semibold">Arthur Lucena</p>
+                  <p className="text-text-secondary text-sm">Estudante</p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/50 backdrop-blur-sm border-0 shadow-lg">
+              <CardContent className="p-6">
+                <p className="text-text-secondary italic mb-4">
+                  "A aula foi bem didática e sensação q tive foi q a IA não ficará tão distante de nós depois de sua apresentação."
+                </p>
+                <div className="text-center">
+                  <p className="text-text font-semibold">Ana Isabel</p>
+                  <p className="text-text-secondary text-sm">Servidora Pública</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
           <Button 
             onClick={openWhatsApp}
-            variant="outline" 
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
           >
             <MessageCircle className="mr-2" />
             AGENDAR CONSULTORIA
@@ -142,7 +161,7 @@ const Consultoria = () => {
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-heading font-semibold"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
@@ -175,7 +194,7 @@ const Consultoria = () => {
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-heading font-semibold"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
@@ -249,7 +268,7 @@ const Consultoria = () => {
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-heading font-semibold"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
@@ -304,7 +323,7 @@ const Consultoria = () => {
                 
                 <Button 
                   onClick={openWhatsApp}
-                  className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-heading font-semibold py-6"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold py-6"
                   size="lg"
                 >
                   <MessageCircle className="mr-2" />
