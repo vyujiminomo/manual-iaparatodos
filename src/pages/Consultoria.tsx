@@ -47,7 +47,7 @@ const Consultoria = () => {
                 VITOR YUJI
               </h1>
               
-              <p className="text-xl lg:text-2xl font-heading font-semibold text-slate-800 mb-6">
+              <p className="text-xl lg:text-2xl font-heading font-semibold text-blue-800 mb-6">
                 O 1º Consultor de IA Generativa de Sergipe
               </p>
               
@@ -55,14 +55,15 @@ const Consultoria = () => {
                 Aos 15 anos, já capacitei <span className="font-semibold text-primary">+450 estudantes e profissionais</span> em Inteligência Artificial na prática.
               </p>
               
-              <Button 
-                onClick={openWhatsApp}
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              <a 
+                href="https://wa.me/5579981255774"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="mr-2" />
                 AGENDAR CONSULTORIA
-              </Button>
+              </a>
             </div>
             
             <div className="flex justify-center">
@@ -124,14 +125,15 @@ const Consultoria = () => {
             </Card>
           </div>
           
-          <Button 
-            onClick={openWhatsApp}
-            size="lg"
-            className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
+          <a 
+            href="https://wa.me/5579981255774"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
           >
             <MessageCircle className="mr-2" />
             AGENDAR CONSULTORIA
-          </Button>
+          </a>
         </div>
       </section>
 
@@ -144,12 +146,12 @@ const Consultoria = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {instituicoes.map((inst, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6 text-center">
+              <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300 h-48">
+                <CardContent className="p-8 text-center h-full flex flex-col justify-center">
                   <LazyImage
                     src={inst.logo}
                     alt={inst.nome}
-                    className="w-full h-40 object-contain mb-4"
+                    className="w-full h-28 object-contain mb-4"
                   />
                   <p className="text-text font-medium">{inst.nome}</p>
                 </CardContent>
@@ -158,14 +160,15 @@ const Consultoria = () => {
           </div>
           
           <div className="text-center">
-            <Button 
-              onClick={openWhatsApp}
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
+            <a 
+              href="https://wa.me/5579981255774"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -187,18 +190,19 @@ const Consultoria = () => {
             <p className="text-xl font-heading font-semibold text-text mb-6">
               Vitor Yuji é exatamente isso.
             </p>
-              <p className="text-lg text-slate-800 font-semibold mb-8">
+              <p className="text-lg text-blue-800 font-semibold mb-8">
                 Ele não é motivacional. É acional.
               </p>
             
-            <Button 
-              onClick={openWhatsApp}
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
+            <a 
+              href="https://wa.me/5579981255774"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -250,7 +254,7 @@ const Consultoria = () => {
                 </div>
               </div>
               
-              <p className="text-lg font-heading font-semibold text-slate-800 mt-8">
+              <p className="text-lg font-heading font-semibold text-blue-800 mt-8">
                 E com uma missão clara: tornar a IA acessível para todos.
               </p>
             </div>
@@ -265,14 +269,15 @@ const Consultoria = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button 
-              onClick={openWhatsApp}
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold"
+            <a 
+              href="https://wa.me/5579981255774"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -321,14 +326,15 @@ const Consultoria = () => {
                   <p className="text-3xl font-heading font-bold text-primary">R$ 150</p>
                 </div>
                 
-                <Button 
-                  onClick={openWhatsApp}
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold py-6"
-                  size="lg"
+                <a 
+                  href="https://wa.me/5579981255774"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold py-6 rounded-lg"
                 >
                   <MessageCircle className="mr-2" />
                   Agendar Consultoria
-                </Button>
+                </a>
               </CardContent>
             </Card>
 
