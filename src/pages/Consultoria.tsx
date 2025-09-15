@@ -178,6 +178,7 @@ const Consultoria = () => {
     setCurrentCapacitacao((prev) => (prev - 1 + capacitacoes.length) % capacitacoes.length);
   };
 
+  return (
     <div className="min-h-screen bg-background">
       {/* Hero Section - Design Limpo e Profissional */}
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-background-secondary overflow-hidden">
