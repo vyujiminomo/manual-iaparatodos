@@ -51,15 +51,13 @@ const Consultoria = () => {
                 Aos 15 anos, já capacitei <span className="font-semibold text-primary">+450 estudantes e profissionais</span> em Inteligência Artificial na prática.
               </p>
               
-              <a 
-                href="https://wa.me/5579981255774"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
                 className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="mr-2" />
                 AGENDAR CONSULTORIA
-              </a>
+              </button>
             </div>
             
             <div className="flex justify-center">
@@ -121,15 +119,13 @@ const Consultoria = () => {
             </Card>
           </div>
           
-          <a 
-            href="https://wa.me/5579981255774"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button 
+            onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
             className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
           >
             <MessageCircle className="mr-2" />
             AGENDAR CONSULTORIA
-          </a>
+          </button>
         </div>
       </section>
 
@@ -190,15 +186,13 @@ const Consultoria = () => {
                 Ele não é motivacional. É acional.
               </p>
             
-            <a 
-              href="https://wa.me/5579981255774"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
               className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -265,15 +259,13 @@ const Consultoria = () => {
           </div>
           
           <div className="text-center mt-12">
-            <a 
-              href="https://wa.me/5579981255774"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
               className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold px-6 py-3 rounded-lg"
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -322,15 +314,13 @@ const Consultoria = () => {
                   <p className="text-3xl font-heading font-bold text-primary">R$ 150</p>
                 </div>
                 
-                <a 
-                  href="https://wa.me/5579981255774"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
                   className="w-full inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold py-6 rounded-lg"
                 >
                   <MessageCircle className="mr-2" />
                   Agendar Consultoria
-                </a>
+                </button>
               </CardContent>
             </Card>
 
@@ -345,14 +335,12 @@ const Consultoria = () => {
                   Palestra sob demanda apenas para empresas. Clique no botão abaixo para mais detalhes.
                 </p>
                 
-                <a 
-                  href="https://wa.me/5579981255774"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
                   className="w-full inline-flex items-center justify-center border border-accent text-accent hover:bg-accent hover:text-white font-heading font-semibold py-6 rounded-lg transition-colors"
                 >
                   Conhecer mais →
-                </a>
+                </button>
               </CardContent>
             </Card>
           </div>
