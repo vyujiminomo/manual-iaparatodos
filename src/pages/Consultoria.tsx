@@ -210,6 +210,71 @@ const Consultoria = () => {
         </div>
       </section>
 
+      {/* Credibilidade Imediata */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center text-gray-900 tracking-tight">JÁ CAPACITEI</h2>
+            
+            <div className="relative">
+              <Card className="p-8 bg-white shadow-2xl rounded-3xl border-0">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  {/* Imagem da Palestra */}
+                  <div className="w-full md:w-1/2">
+                    <div className="aspect-video rounded-lg overflow-hidden">
+                      <img
+                        src={capacitacoes[currentCapacitacao].image}
+                        alt={capacitacoes[currentCapacitacao].title}
+                        className="w-full h-full object-cover"
+                        loading="eager"
+                      />
+                    </div>
+                  </div>
+                  
+                   {/* Conteúdo */}
+                   <div className="w-full md:w-1/2 text-center md:text-left">
+                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                       {capacitacoes[currentCapacitacao].title}
+                     </h3>
+                     <p className="text-lg text-gray-600">
+                       <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
+                     </p>
+                   </div>
+                </div>
+              </Card>
+
+              {/* Setas de Navegação */}
+              <button
+                onClick={prevCapacitacao}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-700" />
+              </button>
+              
+              <button
+                onClick={nextCapacitacao}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-700" />
+              </button>
+
+              {/* Indicadores */}
+              <div className="flex justify-center mt-6 space-x-2">
+                {capacitacoes.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentCapacitacao(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentCapacitacao ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Consultoria Diferenciada */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8">
@@ -326,65 +391,6 @@ const Consultoria = () => {
               </div>
             </div>
 
-            <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Já capacitei:</h3>
-              
-              <div className="relative">
-                <Card className="p-8 bg-white shadow-2xl rounded-3xl border-0">
-                  <div className="flex flex-col md:flex-row items-center gap-8">
-                    {/* Imagem da Palestra */}
-                    <div className="w-full md:w-1/2">
-                      <div className="aspect-video rounded-lg overflow-hidden">
-                        <img
-                          src={capacitacoes[currentCapacitacao].image}
-                          alt={capacitacoes[currentCapacitacao].title}
-                          className="w-full h-full object-cover"
-                          loading="eager"
-                        />
-                      </div>
-                    </div>
-                    
-                     {/* Conteúdo */}
-                     <div className="w-full md:w-1/2 text-center md:text-left">
-                       <h4 className="text-2xl font-bold text-gray-900 mb-4">
-                         {capacitacoes[currentCapacitacao].title}
-                       </h4>
-                       <p className="text-lg text-gray-600">
-                         <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
-                       </p>
-                     </div>
-                  </div>
-                </Card>
-
-                {/* Setas de Navegação */}
-                <button
-                  onClick={prevCapacitacao}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
-                >
-                  <ChevronLeft className="w-6 h-6 text-gray-700" />
-                </button>
-                
-                <button
-                  onClick={nextCapacitacao}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl rounded-full p-3 transition-all duration-300 transform hover:scale-110"
-                >
-                  <ChevronRight className="w-6 h-6 text-gray-700" />
-                </button>
-
-                {/* Indicadores */}
-                <div className="flex justify-center mt-6 space-x-2">
-                  {capacitacoes.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentCapacitacao(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentCapacitacao ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
 
             <div className="text-center">
               <button 
