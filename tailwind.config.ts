@@ -24,22 +24,10 @@ export default {
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
-				'background-secondary': 'hsl(var(--background-secondary))',
 				foreground: 'hsl(var(--foreground))',
-				'text-secondary': 'hsl(var(--text-secondary))',
-				'text-muted': 'hsl(var(--text-muted))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
-				},
-				cta: {
-					DEFAULT: 'hsl(var(--cta))',
-					foreground: 'hsl(var(--cta-foreground))',
-					hover: 'hsl(var(--cta-hover))'
-				},
-				success: {
-					DEFAULT: 'hsl(var(--success))',
-					foreground: 'hsl(var(--success-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -74,12 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'ai-blue': '#33C3F0',
+				'ai-black': '#000000'
 			},
 			fontFamily: {
-				'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
-				'poppins': ['Poppins', 'sans-serif']
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'system': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+				'bebas': ['Bebas Neue', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+				'playfair': ['Playfair Display', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
