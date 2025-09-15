@@ -75,6 +75,15 @@ const VitorYuji = () => {
                 </Card>)}
             </div>
           </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -129,6 +138,15 @@ const VitorYuji = () => {
                 </div>
               </div>
             </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
           </div>
         </div>
       </section>
@@ -239,6 +257,15 @@ const VitorYuji = () => {
                </Card>
             </div>
           </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -273,6 +300,15 @@ const VitorYuji = () => {
               </div>
             </Card>
           </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -300,6 +336,15 @@ const VitorYuji = () => {
                 </p>
               </div>
             </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
           </div>
         </div>
       </section>
@@ -395,6 +440,15 @@ const VitorYuji = () => {
                 </p>
               </div>
             </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
           </div>
         </div>
       </section>
