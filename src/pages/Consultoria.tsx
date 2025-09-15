@@ -233,12 +233,9 @@ const Consultoria = () => {
                   
                    {/* Conteúdo */}
                    <div className="w-full md:w-1/2 text-center md:text-left">
-                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                     <h3 className="text-3xl font-bold text-gray-900 mb-4">
                        {capacitacoes[currentCapacitacao].title}
                      </h3>
-                     <p className="text-lg text-gray-600">
-                       <strong>Participantes:</strong> {capacitacoes[currentCapacitacao].participantes}
-                     </p>
                    </div>
                 </div>
               </Card>
@@ -275,23 +272,78 @@ const Consultoria = () => {
         </div>
       </section>
 
+      {/* Quem é Vitor Yuji */}
+      <section className="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20 md:mb-24">
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight">
+                QUEM É VITOR YUJI?
+              </h2>
+            </div>
+            
+            <div className="grid lg:grid-cols-5 gap-16 items-start">
+              <div className="lg:col-span-3 space-y-10">
+                {/* Mobile/Tablet: Show images after title, before text */}
+                <div className="space-y-8 lg:hidden">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl">
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-80 object-contain bg-gray-50" />
+                  </div>
+                  <div className="rounded-3xl overflow-hidden shadow-2xl">
+                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-80 object-contain bg-gray-50" />
+                  </div>
+                </div>
+                
+                <div className="space-y-10 text-xl md:text-2xl leading-relaxed text-gray-700 font-light">
+                  <p>
+                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+460 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
+                  </p>
+                  
+                  <p>
+                    Membro da <strong className="text-blue-600 font-semibold">Adapta.org</strong> - selecionado pessoalmente pelo CEO <strong className="text-blue-600 font-semibold">Max Peters</strong> para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                  </p>
+                  
+                  <p>
+                    Co-fundador do <strong className="text-green-600 font-semibold">Mangue Mania</strong> - a primeira metodologia infantil de educação de manguezais de Sergipe, projeto <strong className="text-yellow-600 font-semibold">top30</strong> no prêmio nacional <strong className="text-green-600 font-semibold">Criativos Escola</strong>.
+                  </p>
+                  
+                  <p>
+                    Também foi <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
+                  </p>
+                </div>
+              </div>
+
+              {/* Desktop: Show images on the right side */}
+              <div className="lg:col-span-2 space-y-8 hidden lg:block">
+                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-72 object-contain bg-gray-50" />
+                </div>
+                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-72 object-contain bg-gray-50" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Consultoria Diferenciada */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-20 md:mb-28 text-gray-900 tracking-tight">
               ESSA NÃO É UMA CONSULTORIA CONVENCIONAL
             </h2>
             
-            <Card className="p-10 md:p-16 bg-white shadow-2xl rounded-3xl border-0">
-              <div className="space-y-6 md:space-y-8 text-lg md:text-2xl leading-relaxed text-gray-700 font-light">
-                <p>
+            <Card className="p-12 md:p-20 bg-white shadow-2xl rounded-3xl border-0 hover:shadow-3xl transition-all duration-500">
+              <div className="space-y-8 md:space-y-12 text-lg md:text-2xl leading-relaxed text-gray-700 font-light">
+                <p className="text-center">
                   Uma boa consultoria não deveria ser com um profissional que consegue te dar uma palestra motivacional.
                 </p>
-                <p>
+                <p className="text-center">
                   Deveria ser com um <strong className="text-blue-600 font-semibold">praticante</strong>, que está testando e implementando IA em seus projetos. Na vida real.
                 </p>
-                <p className="text-2xl md:text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                <p className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent py-4">
                   Vitor Yuji é exatamente isso.
                 </p>
                 <p className="text-center text-xl md:text-2xl">
@@ -304,13 +356,13 @@ const Consultoria = () => {
       </section>
 
       {/* Treinamentos */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold mb-16 md:mb-24 text-center text-gray-900 tracking-tight">TREINAMENTOS</h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-20 md:mb-28 text-center text-gray-900 tracking-tight">TREINAMENTOS</h2>
             
-            <div className="mb-16">
-              <h3 className="text-3xl md:text-4xl font-bold mb-16 text-center text-gray-900">Conheça os temas</h3>
+            <div className="mb-20">
+              <h3 className="text-3xl md:text-4xl font-bold mb-20 text-center text-gray-900">Conheça os temas</h3>
               
               {/* Carrossel de Treinamentos */}
               <div className="relative px-4">
@@ -392,10 +444,10 @@ const Consultoria = () => {
             </div>
 
 
-            <div className="text-center">
+            <div className="text-center mt-20">
               <button 
                 onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white text-xl px-12 py-6 rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
+                className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white text-xl px-14 py-7 rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
               >
                 SOLICITAR PALESTRA
               </button>
@@ -404,68 +456,13 @@ const Consultoria = () => {
         </div>
       </section>
 
-      {/* Quem é Vitor Yuji */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container mx-auto px-6 md:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20 md:mb-24">
-              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight">
-                QUEM É VITOR YUJI?
-              </h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-5 gap-16 items-start">
-              <div className="lg:col-span-3 space-y-10">
-                {/* Mobile/Tablet: Show images after title, before text */}
-                <div className="space-y-8 lg:hidden">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-80 object-contain bg-gray-50" />
-                  </div>
-                  <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-80 object-contain bg-gray-50" />
-                  </div>
-                </div>
-                
-                <div className="space-y-10 text-xl md:text-2xl leading-relaxed text-gray-700 font-light">
-                  <p>
-                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+460 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
-                  </p>
-                  
-                  <p>
-                    Membro da <strong className="text-blue-600 font-semibold">Adapta.org</strong> - selecionado pessoalmente pelo CEO <strong className="text-blue-600 font-semibold">Max Peters</strong> para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
-                  </p>
-                  
-                  <p>
-                    Co-fundador do <strong className="text-green-600 font-semibold">Mangue Mania</strong> - a primeira metodologia infantil de educação de manguezais de Sergipe, projeto <strong className="text-yellow-600 font-semibold">top30</strong> no prêmio nacional <strong className="text-green-600 font-semibold">Criativos Escola</strong>.
-                  </p>
-                  
-                  <p>
-                    Também foi <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
-                  </p>
-                </div>
-              </div>
-
-              {/* Desktop: Show images on the right side */}
-              <div className="lg:col-span-2 space-y-8 hidden lg:block">
-                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-1.png" alt="Vitor Yuji palestrando para jovens" className="w-full h-72 object-contain bg-gray-50" />
-                </div>
-                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <LazyImage src="/lovable-uploads/vitor-yuji-palestra-2.png" alt="Vitor Yuji com sua equipe e alunos" className="w-full h-72 object-contain bg-gray-50" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Planos */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">PLANOS</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-20 md:mb-28 text-gray-900 tracking-tight">PLANOS</h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
               {/* Introdução Gratuita */}
               <Card className="p-8 bg-white shadow-xl hover:shadow-2xl rounded-3xl border-0 transform hover:-translate-y-3 transition-all duration-500">
                 <div className="text-center space-y-6">
@@ -532,15 +529,15 @@ const Consultoria = () => {
       </section>
 
       {/* Contato */}
-      <section id="contato" className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section id="contato" className="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-gray-900 tracking-tight">CONTATO</h2>
-            <p className="text-center text-xl md:text-2xl mb-16 text-gray-600 leading-relaxed font-light">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-20 text-gray-900 tracking-tight">CONTATO</h2>
+            <p className="text-center text-xl md:text-2xl mb-20 text-gray-600 leading-relaxed font-light">
               Vamos conversar? Entre em contato e vamos descobrir como posso ajudar você ou sua instituição.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-20">
               {/* Informações de contato */}
               <div className="space-y-8">
                 <div className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg">
