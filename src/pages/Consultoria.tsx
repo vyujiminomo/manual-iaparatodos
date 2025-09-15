@@ -71,6 +71,16 @@ const Consultoria = () => {
               </div>
             </div>
           </div>
+          
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-heading font-semibold px-6 py-3 rounded-lg"
+            >
+              <MessageCircle className="mr-2" />
+              INSCREVER ESCOLA
+            </button>
+          </div>
         </div>
       </section>
 
@@ -126,6 +136,16 @@ const Consultoria = () => {
             <MessageCircle className="mr-2" />
             AGENDAR CONSULTORIA
           </button>
+          
+          <div className="text-center mt-6">
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-heading font-semibold px-6 py-3 rounded-lg"
+            >
+              <MessageCircle className="mr-2" />
+              INSCREVER ESCOLA
+            </button>
+          </div>
         </div>
       </section>
 
@@ -162,6 +182,16 @@ const Consultoria = () => {
               AGENDAR CONSULTORIA
             </a>
           </div>
+          
+          <div className="text-center mt-6">
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-heading font-semibold px-6 py-3 rounded-lg"
+            >
+              <MessageCircle className="mr-2" />
+              INSCREVER ESCOLA
+            </button>
+          </div>
         </div>
       </section>
 
@@ -192,6 +222,16 @@ const Consultoria = () => {
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
+            </button>
+          </div>
+          
+          <div className="text-center mt-6">
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-heading font-semibold px-6 py-3 rounded-lg"
+            >
+              <MessageCircle className="mr-2" />
+              INSCREVER ESCOLA
             </button>
           </div>
         </div>
@@ -265,6 +305,16 @@ const Consultoria = () => {
             >
               <MessageCircle className="mr-2" />
               AGENDAR CONSULTORIA
+            </button>
+          </div>
+          
+          <div className="text-center mt-6">
+            <button 
+              onClick={() => window.open('https://wa.me/5579981255774', '_blank')}
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-heading font-semibold px-6 py-3 rounded-lg"
+            >
+              <MessageCircle className="mr-2" />
+              INSCREVER ESCOLA
             </button>
           </div>
         </div>
