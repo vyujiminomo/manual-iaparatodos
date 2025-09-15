@@ -159,8 +159,6 @@ All colors MUST be HSL.
       font-size: 1.5rem; /* 24px desktop */
     }
   }
-}
-}
 
 @layer utilities {
   .glow-effect {
