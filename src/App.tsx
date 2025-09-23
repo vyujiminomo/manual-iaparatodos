@@ -19,6 +19,7 @@ const VitorYuji = lazy(() => import("./pages/VitorYuji"));
 const Consultoria = lazy(() => import("./pages/Consultoria"));
 const Consultor = lazy(() => import("./pages/Consultor"));
 const Guia = lazy(() => import("./pages/Guia"));
+const Go = lazy(() => import("./pages/Go"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading fallback component
@@ -56,6 +57,7 @@ const AppContent = () => {
         <Route path="/contato" element={<Contact />} />
         <Route path="/obrigado" element={<Obrigado />} />
         <Route path="/guia" element={<Guia />} />
+        <Route path="/go" element={<Go />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
