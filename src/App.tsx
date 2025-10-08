@@ -49,10 +49,10 @@ const AppContent = () => {
   return (
     <Suspense fallback={<PageLoader />}>
       <Routes>
-        <Route path="/" element={<VitorYuji />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/palestras" element={<VitorYuji />} />
         <Route path="/consultoria" element={<Consultoria />} />
         <Route path="/bio" element={<Consultor />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/manual" element={<Manual />} />
         <Route path="/upsell-pnp" element={<UpsellPnp />} />
         <Route path="/contato" element={<Contact />} />
