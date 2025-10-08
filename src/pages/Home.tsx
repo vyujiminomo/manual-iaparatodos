@@ -32,7 +32,7 @@ const Home = () => {
     {
       image: "/lovable-uploads/card-sobre.png",
       alt: "Sobre Mim",
-      link: "/bio-yuji"
+      link: "/bio"
     }
   ];
 
