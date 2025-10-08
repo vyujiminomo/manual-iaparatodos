@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
+import { Linkedin, BookOpen, User } from "lucide-react";
 
 const Home = () => {
   useDynamicMeta({
@@ -22,66 +23,83 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 flex flex-col">
-      <div className="flex-1 flex items-center justify-center p-4">
-        <div className="max-w-lg w-full">
-          {/* Banner com foto e nome */}
-          <div className="text-center mb-12">
-            <div className="mb-6">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex flex-col">
+      <div className="flex-1 flex items-center justify-center p-6">
+        <div className="max-w-2xl w-full">
+          {/* Profile Section */}
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="mb-8 relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl"></div>
               <img 
                 src="/lovable-uploads/19e8a63d-0fe7-4828-868c-5acf461e91c7.png" 
                 alt="Vitor Yuji"
-                className="w-24 h-24 mx-auto rounded-full shadow-lg border-2 border-gray-600 object-cover"
+                className="relative w-32 h-32 mx-auto rounded-full shadow-2xl border-2 border-white/10 object-cover"
               />
             </div>
             
-            <h1 className="text-3xl font-bold mb-3 text-white tracking-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white tracking-tight">
               Vitor Yuji
             </h1>
             
-            <h2 className="text-xl font-bebas font-bold">
-              <span className="text-ai-blue">IA</span>
-              <span className="text-white"> Para Todos</span>
-            </h2>
+            <p className="text-xl md:text-2xl text-gray-300 mb-2">
+              Especialista em <span className="text-blue-400 font-semibold">Inteligência Artificial</span>
+            </p>
+            <p className="text-gray-400 text-sm md:text-base">
+              Democratizando o acesso à IA através da educação
+            </p>
           </div>
 
-          {/* Botões dos produtos */}
-          <div className="space-y-4">
-            {/* Manual IA Para Todos */}
-            <div 
-              className="cursor-pointer transition-all duration-300 hover:scale-105"
+          {/* Action Buttons */}
+          <div className="space-y-4 mb-8">
+            <Button
               onClick={handleManualClick}
+              size="lg"
+              className="w-full h-auto py-6 px-8 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group"
             >
-              <img 
-                src="/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
-                alt="Manual Inteligência Artificial Para Todos"
-                className="w-full rounded-lg shadow-lg border border-gray-700"
-              />
-            </div>
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-4">
+                  <BookOpen className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                  <div className="text-left">
+                    <p className="font-bold text-lg">Manual de IA Para Todos</p>
+                    <p className="text-sm text-blue-100 font-normal">Aprenda IA de forma prática e acessível</p>
+                  </div>
+                </div>
+              </div>
+            </Button>
 
-            {/* LinkedIn */}
-            <div 
-              className="cursor-pointer transition-all duration-300 hover:scale-105"
+            <Button
               onClick={handleLinkedInClick}
+              size="lg"
+              variant="outline"
+              className="w-full h-auto py-6 px-8 border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 text-white shadow-lg transition-all duration-300 hover:scale-[1.02] group"
             >
-              <img 
-                src="/lovable-uploads/12d9bc2f-23d7-48d3-a6b1-214766d6aa53.png"
-                alt="LinkedIn - Vitor Yuji Minomo"
-                className="w-full rounded-lg shadow-lg border border-gray-700"
-              />
-            </div>
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-4">
+                  <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  <div className="text-left">
+                    <p className="font-bold text-lg">Conecte-se no LinkedIn</p>
+                    <p className="text-sm text-gray-400 font-normal">Vamos conversar sobre IA e educação</p>
+                  </div>
+                </div>
+              </div>
+            </Button>
 
-            {/* Sobre Mim */}
-            <div 
-              className="cursor-pointer transition-all duration-300 hover:scale-105"
+            <Button
               onClick={handleAboutClick}
+              size="lg"
+              variant="outline"
+              className="w-full h-auto py-6 px-8 border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 text-white shadow-lg transition-all duration-300 hover:scale-[1.02] group"
             >
-              <img 
-                src="/lovable-uploads/75fbd01a-85c6-43f4-bdd9-1d7114badae7.png"
-                alt="Sobre Mim - Vitor Yuji"
-                className="w-full rounded-lg shadow-lg border border-gray-700"
-              />
-            </div>
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-4">
+                  <User className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  <div className="text-left">
+                    <p className="font-bold text-lg">Sobre Mim</p>
+                    <p className="text-sm text-gray-400 font-normal">Conheça minha história e missão</p>
+                  </div>
+                </div>
+              </div>
+            </Button>
           </div>
         </div>
       </div>
