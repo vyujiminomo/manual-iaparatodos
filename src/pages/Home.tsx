@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Linkedin, BookOpen, User } from "lucide-react";
 
 const Home = () => {
   useDynamicMeta({
@@ -10,16 +8,40 @@ const Home = () => {
     image: "/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
   });
 
-  const handleManualClick = () => {
-    window.location.href = '/manual';
-  };
+  const cards = [
+    {
+      image: "/lovable-uploads/card-manual.png",
+      alt: "Manual de Inteligência Artificial Para Todos",
+      link: "/manual"
+    },
+    {
+      image: "/lovable-uploads/card-instagram.png",
+      alt: "Instagram",
+      link: "https://www.instagram.com/vitoryujim/"
+    },
+    {
+      image: "/lovable-uploads/card-entrevista.png",
+      alt: "Entrevista",
+      link: "https://www.youtube.com/watch?v=Lrj2LPw80AM&t=523s"
+    },
+    {
+      image: "/lovable-uploads/card-linkedin.png",
+      alt: "LinkedIn",
+      link: "https://www.linkedin.com/in/vitor-yuji-minomo/"
+    },
+    {
+      image: "/lovable-uploads/card-sobre.png",
+      alt: "Sobre Mim",
+      link: "/bio-yuji"
+    }
+  ];
 
-  const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/vitor-yuji-minomo/', '_blank');
-  };
-
-  const handleAboutClick = () => {
-    window.location.href = '/bio-yuji';
+  const handleCardClick = (link: string) => {
+    if (link.startsWith('http')) {
+      window.open(link, '_blank');
+    } else {
+      window.location.href = link;
+    }
   };
 
   return (
@@ -41,50 +63,25 @@ const Home = () => {
             </h1>
             
             <p className="text-gray-600 text-base">
-              @vitoryuji
+              @vitoryujim
             </p>
           </div>
 
           {/* Action Cards */}
           <div className="space-y-3 mb-8">
-            <button
-              onClick={handleManualClick}
-              className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-left"
-            >
-              <div className="flex items-center gap-4">
-                <BookOpen className="w-6 h-6 text-white flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-white text-lg">Manual de IA Para Todos</p>
-                  <p className="text-sm text-blue-50 mt-1">Aprenda IA de forma prática e acessível</p>
-                </div>
-              </div>
-            </button>
-
-            <button
-              onClick={handleLinkedInClick}
-              className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-[#0077B5] p-6 text-left"
-            >
-              <div className="flex items-center gap-4">
-                <Linkedin className="w-6 h-6 text-white flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-white text-lg">Conecte-se no LinkedIn</p>
-                  <p className="text-sm text-blue-50 mt-1">Vamos conversar sobre IA e educação</p>
-                </div>
-              </div>
-            </button>
-
-            <button
-              onClick={handleAboutClick}
-              className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-gray-800 p-6 text-left"
-            >
-              <div className="flex items-center gap-4">
-                <User className="w-6 h-6 text-white flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-white text-lg">Sobre Mim</p>
-                  <p className="text-sm text-gray-200 mt-1">Conheça minha história e missão</p>
-                </div>
-              </div>
-            </button>
+            {cards.map((card, index) => (
+              <button
+                key={index}
+                onClick={() => handleCardClick(card.link)}
+                className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-white"
+              >
+                <img 
+                  src={card.image} 
+                  alt={card.alt}
+                  className="w-full h-auto object-cover"
+                />
+              </button>
+            ))}
           </div>
         </div>
       </div>
