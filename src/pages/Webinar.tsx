@@ -19,12 +19,16 @@ const Webinar = () => {
   return (
     <div className="min-h-screen bg-white font-poppins">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white py-20 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
+      <section className="relative bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white py-24 px-4 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto max-w-5xl text-center relative z-10">
           <img 
             src="/lovable-uploads/webinar-logo-1.png" 
             alt="Webinar IA Para Todos 2" 
-            className="mx-auto mb-8 max-w-2xl w-full"
+            className="mx-auto mb-10 max-w-xl w-full drop-shadow-2xl"
           />
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -35,23 +39,23 @@ const Webinar = () => {
             Você não precisa mais ter medo de ficar para trás na era das IAs - e eu vou te provar isso.
           </p>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-yellow-400/30">
-            <p className="text-lg mb-6 font-semibold text-yellow-300">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 mb-10 border-2 border-yellow-400/50 shadow-[0_0_30px_rgba(250,204,21,0.3)]">
+            <p className="text-xl mb-8 font-semibold text-yellow-300">
               Serão 3 encontros ao vivo, em que você vai:
             </p>
             
-            <ul className="space-y-4 text-left max-w-2xl mx-auto">
-              <li className="flex items-start gap-3">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1" />
-                <span>Dominar os 6 "princípios atemporais" da IA</span>
+            <ul className="space-y-5 text-left max-w-2xl mx-auto">
+              <li className="flex items-start gap-4">
+                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
+                <span className="text-lg">Dominar os 6 "princípios atemporais" da IA</span>
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1" />
-                <span>Usar o "filtro da verdade" para evitar respostas erradas</span>
+              <li className="flex items-start gap-4">
+                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
+                <span className="text-lg">Usar o "filtro da verdade" para evitar respostas erradas</span>
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1" />
-                <span>Aprender a Estrutura 3IAI para criar prompts perfeitos</span>
+              <li className="flex items-start gap-4">
+                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
+                <span className="text-lg">Aprender a Estrutura 3IAI para criar prompts perfeitos</span>
               </li>
             </ul>
             
@@ -62,7 +66,7 @@ const Webinar = () => {
           
           <Button 
             onClick={scrollToOffer}
-            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full"
+            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
           >
             Quero Fazer Parte
           </Button>
@@ -70,7 +74,7 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
             O QUE DIZEM OS ALUNOS DA 1ª TURMA:
@@ -78,7 +82,7 @@ const Webinar = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-6 aspect-video flex items-center justify-center border-2 border-blue-100">
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
                 <p className="text-gray-500 text-center">Vídeo {i}</p>
               </div>
             ))}
@@ -96,7 +100,7 @@ const Webinar = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <span className="text-blue-600 font-bold uppercase tracking-wide">Mecanismo do Problema</span>
@@ -140,10 +144,11 @@ const Webinar = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="relative py-24 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
-            <span className="text-yellow-400 font-bold uppercase tracking-wide">Mecanismo da Solução</span>
+            <span className="text-yellow-400 font-bold uppercase tracking-wide text-lg">Mecanismo da Solução</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
               Como transformar sua "desvantagem" em vantagem competitiva
             </h2>
@@ -176,7 +181,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte
             </Button>
@@ -185,77 +190,77 @@ const Webinar = () => {
       </section>
 
       {/* Curriculum Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-24 px-4 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
             O que você vai aprender?
           </h2>
           
           <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-600">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Dia 1: O que é Inteligência Artificial <span className="text-blue-600">19/11</span>
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                Dia 1: O que é Inteligência Artificial <span className="text-yellow-500">19/11</span>
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>5 princípios básicos para interagir com IA</span>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">5 princípios básicos para interagir com IA</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>Como, quando e porque usar cada IA</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">Como, quando e porque usar cada IA</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-600">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-blue-600">26/11</span>
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                Dia 2: Como criar Prompts Magnéticos <span className="text-yellow-500">26/11</span>
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>A estrutura 3IAI para prompts perfeitos</span>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">A estrutura 3IAI para prompts perfeitos</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>Como criar um bom contexto</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">Como criar um bom contexto</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>O maior erro que iniciantes cometem ao usar IAs</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">O maior erro que iniciantes cometem ao usar IAs</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-600">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-blue-600">3/12</span>
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                Dia 3: As 5 Práticas da IA Generativa <span className="text-yellow-500">3/12</span>
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>Pesquisando artigos/jurisprudência com IA</span>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">Pesquisando artigos/jurisprudência com IA</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>4 técnicas para ter ideias com IA</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">4 técnicas para ter ideias com IA</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>4 técnicas para aprender com IA</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">4 técnicas para aprender com IA</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>2 técnicas para gerir com IA</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">2 técnicas para gerir com IA</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span>6 técnicas para escrever com IA</span>
+                <li className="flex items-start gap-3">
+                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <span className="text-lg">6 técnicas para escrever com IA</span>
                 </li>
               </ul>
             </div>
@@ -264,7 +269,7 @@ const Webinar = () => {
       </section>
 
       {/* Why Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
             Por que fazer um Curso de ChatGPT?
@@ -285,7 +290,7 @@ const Webinar = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
             Por Que Este É o Melhor Webinar de IA do Brasil
@@ -299,29 +304,29 @@ const Webinar = () => {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-yellow-400">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Acesso vitalício às gravações e mapas mentais
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg">
                 Se você não conseguir assistir a uma aula, não se preocupe! Todo o material será gravado em alta qualidade e você poderá acessar quando e quantas vezes quiser.
               </p>
             </div>
             
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-yellow-400">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Grupo de WhatsApp Exclusivo (Suporte 24/7)
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg">
                 Você vai ter minha ajuda 24/7 para tirar dúvidas durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após o webinar. Além disso, o grupo é uma ótima forma de fazer networking com outros profissionais que estão na mesma jornada que você.
               </p>
             </div>
             
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-yellow-400 md:col-span-2">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Manual IA Para Todos completo
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg">
                 Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
               </p>
             </div>
@@ -330,7 +335,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte
             </Button>
@@ -339,7 +344,7 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
             O que dizem do Webinar:
@@ -347,8 +352,8 @@ const Webinar = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-6 border-2 border-blue-100">
-                <p className="text-gray-700 italic mb-4">"Depoimento {i}"</p>
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-2 border-yellow-400/30 hover:border-yellow-400/60 hover:shadow-xl transition-all duration-300">
+                <p className="text-gray-700 italic mb-4 text-lg">"Depoimento {i}"</p>
                 <p className="font-semibold text-gray-900">Nome do Aluno</p>
               </div>
             ))}
@@ -357,10 +362,12 @@ const Webinar = () => {
       </section>
 
       {/* Offer Section */}
-      <section id="oferta" className="py-16 px-4 bg-gradient-to-b from-gray-900 to-blue-900 text-white">
-        <div className="container mx-auto max-w-4xl">
+      <section id="oferta" className="relative py-24 px-4 bg-gradient-to-b from-gray-900 to-blue-900 text-white overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
-            <span className="text-yellow-400 font-bold uppercase tracking-wide text-lg">Oferta</span>
+            <span className="text-yellow-400 font-bold uppercase tracking-wide text-xl drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">Oferta</span>
             <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
               Domine a IA em poucas horas
             </h2>
@@ -369,7 +376,7 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-yellow-400 mb-8">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 border-2 border-yellow-400 mb-10 shadow-[0_0_40px_rgba(250,204,21,0.3)]">
             <h3 className="text-2xl font-bold mb-6 text-center text-yellow-400">
               Webinar IA Para Todos - 2ª turma
             </h3>
@@ -409,7 +416,7 @@ const Webinar = () => {
             <div className="text-center">
               <Button 
                 onClick={scrollToOffer}
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl px-16 py-8 rounded-full"
+                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl px-16 py-8 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:shadow-[0_0_50px_rgba(250,204,21,0.8)] transition-all duration-300 transform hover:scale-105"
               >
                 QUERO ADQUIRIR AGORA
               </Button>
@@ -428,7 +435,7 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
             "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
@@ -459,25 +466,25 @@ const Webinar = () => {
               <strong>Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
             </p>
             
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <Check className="text-blue-600 flex-shrink-0 mt-1" />
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
                 <span>Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Check className="text-blue-600 flex-shrink-0 mt-1" />
+              <li className="flex items-start gap-3">
+                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
                 <span>Foi 4x competidor no torneio de robótica First Lego League.</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Check className="text-blue-600 flex-shrink-0 mt-1" />
+              <li className="flex items-start gap-3">
+                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
                 <span>É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Check className="text-blue-600 flex-shrink-0 mt-1" />
+              <li className="flex items-start gap-3">
+                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
                 <span>Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Check className="text-blue-600 flex-shrink-0 mt-1" />
+              <li className="flex items-start gap-3">
+                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
                 <span>É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.</span>
               </li>
             </ul>
@@ -519,7 +526,7 @@ const Webinar = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-24 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
             (F.A.Q) Restou alguma dúvida?
@@ -548,9 +555,9 @@ const Webinar = () => {
                 a: "Sim. Caso não fique satisfeito, você pode solicitar reembolso integral em até 7 dias após a compra pela plataforma da Hotmart."
               }
             ].map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-md p-6">
-                <h3 className="font-bold text-lg mb-2 text-gray-900">{faq.q}</h3>
-                <p className="text-gray-700">{faq.a}</p>
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-l-2 border-yellow-400 hover:shadow-xl hover:border-l-4 transition-all duration-300">
+                <h3 className="font-bold text-xl mb-3 text-gray-900">{faq.q}</h3>
+                <p className="text-gray-700 text-lg">{faq.a}</p>
               </div>
             ))}
           </div>
