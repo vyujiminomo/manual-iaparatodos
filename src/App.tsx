@@ -20,6 +20,7 @@ const Consultoria = lazy(() => import("./pages/Consultoria"));
 const Consultor = lazy(() => import("./pages/Consultor"));
 const Go = lazy(() => import("./pages/Go"));
 const Curso = lazy(() => import("./pages/Curso"));
+const Webinar = lazy(() => import("./pages/Webinar"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading fallback component
@@ -58,6 +59,7 @@ const AppContent = () => {
         <Route path="/obrigado" element={<Obrigado />} />
         <Route path="/go" element={<Go />} />
         <Route path="/curso" element={<Curso />} />
+        <Route path="/webinar" element={<Webinar />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
