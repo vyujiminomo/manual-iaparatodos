@@ -61,16 +61,19 @@ const Webinar = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Trusted By Section with Scrolling Logos */}
-      <section className="relative bg-black text-white py-16 px-4 overflow-hidden">
-        <div className="container mx-auto max-w-6xl">
-          <p className="text-center text-gray-400 text-sm md:text-base mb-8">
-            Sou o professor de IA escolhido por profissionais de empresas como
-          </p>
+        
+        {/* Trusted By Section integrated */}
+        <div className="container mx-auto max-w-6xl relative z-10 mt-16">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
+            </svg>
+            <p className="text-cyan-400 text-sm md:text-base">
+              Sou o professor de IA escolhido por profissionais de empresas como
+            </p>
+          </div>
           
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center overflow-hidden">
             <div className="flex gap-12 animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused]">
               {/* First set of logos */}
               <div className="flex gap-12 items-center shrink-0">
