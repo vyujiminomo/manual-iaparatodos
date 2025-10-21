@@ -19,57 +19,68 @@ const Webinar = () => {
   return (
     <div className="min-h-screen bg-white font-poppins">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white py-24 px-4 overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl"></div>
+      <section className="relative bg-gray-950 text-white py-20 px-4 overflow-hidden">
+        {/* Subtle decorative glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
         
-        <div className="container mx-auto max-w-5xl text-center relative z-10">
-          <img 
-            src="/lovable-uploads/webinar-logo-1.png" 
-            alt="Webinar IA Para Todos 2" 
-            className="mx-auto mb-10 max-w-xl w-full drop-shadow-2xl"
-          />
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Vá do zero ao avançado em IA em apenas 3 dias
-          </h1>
-          
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Você não precisa mais ter medo de ficar para trás na era das IAs - e eu vou te provar isso.
-          </p>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 mb-10 border-2 border-yellow-400/50 shadow-[0_0_30px_rgba(250,204,21,0.3)]">
-            <p className="text-xl mb-8 font-semibold text-yellow-300">
-              Serão 3 encontros ao vivo, em que você vai:
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-block mb-6">
+              <span className="text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full">
+                Curso de IA
+              </span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Webinar IA Para Todos
+            </h1>
+            
+            <p className="text-xl md:text-2xl mb-10 text-gray-300 leading-relaxed">
+              Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
             </p>
             
-            <ul className="space-y-5 text-left max-w-2xl mx-auto">
-              <li className="flex items-start gap-4">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
-                <span className="text-lg">Dominar os 6 "princípios atemporais" da IA</span>
-              </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
-                <span className="text-lg">Usar o "filtro da verdade" para evitar respostas erradas</span>
-              </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-yellow-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]" size={28} />
-                <span className="text-lg">Aprender a Estrutura 3IAI para criar prompts perfeitos</span>
-              </li>
-            </ul>
-            
-            <p className="mt-6 text-gray-200">
-              Tudo isso comigo ao vivo, em uma linguagem simples e tirando suas dúvidas em tempo real.
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-teal-500 hover:bg-teal-600 text-white font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
+            >
+              QUERO FAZER PARTE
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section with Scrolling Logos */}
+      <section className="relative bg-gray-900 text-white py-16 px-4 overflow-hidden border-t border-gray-800">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-8 h-8 flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#14B8A6" />
+              </svg>
+            </div>
+            <p className="text-gray-400 text-sm md:text-base">
+              Sou o professor de IA escolhido por profissionais de empresas como
             </p>
           </div>
           
-          <Button 
-            onClick={scrollToOffer}
-            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
-          >
-            Quero Fazer Parte
-          </Button>
+          <div className="relative">
+            <div className="flex gap-12 animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused]">
+              {/* First set of logos */}
+              <div className="flex gap-12 items-center shrink-0">
+                <img src="/lovable-uploads/escola-superclass.png" alt="SuperClass" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/colegio-master-fll.jpg" alt="Colégio Master" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/instituto-jcpm.png" alt="Instituto JCPM" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Escola Dom Luciano" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+              </div>
+              {/* Duplicate set for seamless loop */}
+              <div className="flex gap-12 items-center shrink-0">
+                <img src="/lovable-uploads/escola-superclass.png" alt="SuperClass" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/colegio-master-fll.jpg" alt="Colégio Master" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/instituto-jcpm.png" alt="Instituto JCPM" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/escola-dom-luciano.jpeg" alt="Escola Dom Luciano" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
