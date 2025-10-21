@@ -3,7 +3,8 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check } from "lucide-react";
 import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
-import webinarManual from "@/assets/webinar-manual.png";
+import webinarManual from "@/assets/webinar-manual-novo.png";
+import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 
 const Webinar = () => {
   useDynamicMeta({
@@ -364,7 +365,7 @@ const Webinar = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
               <div className="w-full h-64 overflow-hidden">
                 <img 
                   src={webinarManual} 
@@ -378,6 +379,24 @@ const Webinar = () => {
                 </h3>
                 <p className="text-gray-700 text-lg">
                   Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarBiblioteca} 
+                  alt="Biblioteca de prompts" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Biblioteca de prompts
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Acesse uma coleção exclusiva de prompts personalizados para diferentes profissões, otimizando seu trabalho com IA.
                 </p>
               </div>
             </div>
