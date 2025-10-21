@@ -485,10 +485,12 @@ const Webinar = () => {
             
             <div className="text-center">
               <Button 
-                onClick={scrollToOffer}
+                asChild
                 className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-16 py-8 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:shadow-[0_0_50px_rgba(250,204,21,0.8)] transition-all duration-300 transform hover:scale-105"
               >
-                QUERO ADQUIRIR AGORA →
+                <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer">
+                  QUERO ADQUIRIR AGORA →
+                </a>
               </Button>
             </div>
           </div>
