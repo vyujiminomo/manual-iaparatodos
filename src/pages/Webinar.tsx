@@ -43,7 +43,7 @@ const Webinar = () => {
               
               <Button 
                 onClick={scrollToOffer}
-                className="bg-teal-500 hover:bg-teal-600 text-white font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
+                className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
               >
                 QUERO FAZER PARTE →
               </Button>
@@ -51,7 +51,7 @@ const Webinar = () => {
             
             {/* Right side - Logo */}
             <div className="hidden lg:flex justify-center items-center">
-              <div className="bg-white p-8 rounded-2xl shadow-2xl">
+              <div className="bg-white p-4 rounded-xl shadow-[0_8px_32px_rgba(255,255,255,0.15)]">
                 <img 
                   src="/lovable-uploads/webinar-logo-main.png" 
                   alt="Webinar Inteligência Artificial Para Todos" 
