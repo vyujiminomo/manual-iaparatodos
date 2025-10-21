@@ -17,34 +17,46 @@ const Webinar = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-poppins">
+    <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
       <section className="relative bg-gray-950 text-white py-20 px-4 overflow-hidden">
         {/* Subtle decorative glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-block mb-6">
-              <span className="text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full">
-                Curso de IA
-              </span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div>
+              <div className="inline-block mb-6">
+                <span className="text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full">
+                  Curso de IA
+                </span>
+              </div>
+              
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Webinar IA Para Todos
+              </h1>
+              
+              <p className="text-xl md:text-2xl mb-10 text-gray-300 leading-relaxed">
+                Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
+              </p>
+              
+              <Button 
+                onClick={scrollToOffer}
+                className="bg-teal-500 hover:bg-teal-600 text-white font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
+              >
+                QUERO FAZER PARTE
+              </Button>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Webinar IA Para Todos
-            </h1>
-            
-            <p className="text-xl md:text-2xl mb-10 text-gray-300 leading-relaxed">
-              Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
-            </p>
-            
-            <Button 
-              onClick={scrollToOffer}
-              className="bg-teal-500 hover:bg-teal-600 text-white font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
-            >
-              QUERO FAZER PARTE
-            </Button>
+            {/* Right side - Logo */}
+            <div className="hidden lg:flex justify-center items-center">
+              <img 
+                src="/lovable-uploads/webinar-logo-main.png" 
+                alt="Webinar Inteligência Artificial Para Todos" 
+                className="w-full max-w-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
