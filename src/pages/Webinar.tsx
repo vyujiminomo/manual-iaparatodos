@@ -17,9 +17,9 @@ const Webinar = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-black font-sans">
       {/* Hero Section */}
-      <section className="relative bg-gray-950 text-white py-20 px-4 overflow-hidden">
+      <section className="relative bg-black text-white py-20 px-4 overflow-hidden">
         {/* Subtle decorative glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
         
@@ -37,7 +37,7 @@ const Webinar = () => {
                 Webinar IA Para Todos
               </h1>
               
-              <p className="text-xl md:text-2xl mb-10 text-gray-300 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-6">
                 Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
               </p>
               
@@ -45,17 +45,19 @@ const Webinar = () => {
                 onClick={scrollToOffer}
                 className="bg-teal-500 hover:bg-teal-600 text-white font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
               >
-                QUERO FAZER PARTE
+                QUERO FAZER PARTE →
               </Button>
             </div>
             
             {/* Right side - Logo */}
             <div className="hidden lg:flex justify-center items-center">
-              <img 
-                src="/lovable-uploads/webinar-logo-main.png" 
-                alt="Webinar Inteligência Artificial Para Todos" 
-                className="w-full max-w-lg"
-              />
+              <div className="bg-white p-8 rounded-2xl shadow-2xl">
+                <img 
+                  src="/lovable-uploads/webinar-logo-main.png" 
+                  alt="Webinar Inteligência Artificial Para Todos" 
+                  className="w-full max-w-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
