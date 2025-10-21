@@ -474,9 +474,9 @@ const Webinar = () => {
               ))}
             </div>
             
-            <div className="text-center mt-8 mb-6">
+            <div className="text-left mt-8 mb-6">
               <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-1">
-                <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-top">,55</span>
+                <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-bottom">,55</span>
               </p>
               <p className="text-lg text-gray-600">ou R$ 247 à vista</p>
             </div>
