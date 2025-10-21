@@ -99,15 +99,22 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-black">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+      <section className="relative py-20 px-4 bg-white">
+        {/* Curved top border */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
+          </svg>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
             O QUE DIZEM OS ALUNOS DA 1ª TURMA:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-yellow-400/50 hover:border-yellow-400 transition-all duration-300">
+              <div key={i} className="bg-gray-50 rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
                 <p className="text-gray-500 text-center">Vídeo {i}</p>
               </div>
             ))}
@@ -121,6 +128,13 @@ const Webinar = () => {
               Quero Fazer Parte →
             </Button>
           </div>
+        </div>
+        
+        {/* Curved bottom border */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
+          </svg>
         </div>
       </section>
 
@@ -169,48 +183,62 @@ const Webinar = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 px-4 bg-black text-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
-        <div className="container mx-auto max-w-4xl relative z-10">
+      <section className="relative py-24 px-4 bg-white text-black overflow-hidden">
+        {/* Curved top border */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
+          </svg>
+        </div>
+        
+        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="container mx-auto max-w-4xl relative z-10 pt-8">
           <div className="text-center mb-12">
-            <span className="text-yellow-400 font-bold uppercase tracking-wide text-lg">Mecanismo da Solução</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
+            <span className="text-cyan-400 font-bold uppercase tracking-wide text-lg">Mecanismo da Solução</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-black">
               Como transformar sua "desvantagem" em vantagem competitiva
             </h2>
           </div>
           
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-700">
             E se, em vez de correr atrás do prejuízo, você pudesse dar um salto à frente da maioria dos profissionais da sua área?
           </p>
           
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-700">
             Eu fiz diversos cursos de IA. Testei dezenas de métodos de ensino na primeira edição do webinar e em palestras para mais de 1000 pessoas.
           </p>
           
-          <p className="text-lg mb-6 font-bold text-cyan-400">
+          <p className="text-lg mb-6 font-bold text-cyan-500">
             Eliminei toda a teoria desnecessária e destilei apenas o que realmente funciona na prática.
           </p>
           
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-700">
             E filtrei tudo de melhor nesse webinar.
           </p>
           
-          <p className="text-lg mb-8 text-gray-300">
+          <p className="text-lg mb-8 text-gray-700">
             Agora, estou reunindo a segunda turma de pessoas engajadas para mostrar como aplicar tudo isso no SEU trabalho.
           </p>
           
-          <p className="text-xl font-bold text-yellow-400 mb-8">
+          <p className="text-xl font-bold text-cyan-500 mb-8">
             Esta é sua chance de estar entre os primeiros a dominar o que vai definir os próximos anos do mercado.
           </p>
           
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
           </div>
+        </div>
+        
+        {/* Curved bottom border */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
+          </svg>
         </div>
       </section>
 
@@ -294,23 +322,37 @@ const Webinar = () => {
       </section>
 
       {/* Why Section */}
-      <section className="py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+      <section className="relative py-24 px-4 bg-white">
+        {/* Curved top border */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
+          </svg>
+        </div>
+        
+        <div className="container mx-auto max-w-4xl relative z-10 pt-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
             Por que fazer um Curso de ChatGPT?
           </h2>
           
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-700">
             Uma vez que o mercado descobriu a agilidade e eficiência do ChatGPT, ele não vai retroceder.
           </p>
           
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-700">
             Quando você domina a IA, você consegue concluir tarefas rapidamente, tomar decisões melhores e ter ideias inovadoras.
           </p>
           
-          <p className="text-xl font-bold text-cyan-400">
+          <p className="text-xl font-bold text-cyan-500">
             O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
           </p>
+        </div>
+        
+        {/* Curved bottom border */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
+          </svg>
         </div>
       </section>
 
@@ -369,20 +411,34 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="py-20 px-4 bg-black">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+      <section className="relative py-20 px-4 bg-white">
+        {/* Curved top border */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
+          </svg>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
             O que dizem do Webinar:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
+              <div key={i} className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
                 <p className="text-gray-700 italic mb-4 text-lg">"Depoimento {i}"</p>
                 <p className="font-semibold text-black">Nome do Aluno</p>
               </div>
             ))}
           </div>
+        </div>
+        
+        {/* Curved bottom border */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
+          </svg>
         </div>
       </section>
 
@@ -460,12 +516,19 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+      <section className="relative py-24 px-4 bg-white">
+        {/* Curved top border */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
+          </svg>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
             "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
           </h2>
-          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-400">
+          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-500">
             Quem é Vitor Yuji:
           </h3>
           
@@ -486,30 +549,30 @@ const Webinar = () => {
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-300 mb-8">
+          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 mb-8">
             <p>
-              <strong className="text-white">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
+              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
             </p>
             
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
                 <span>Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
                 <span>Foi 4x competidor no torneio de robótica First Lego League.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
                 <span>É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
                 <span>Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
                 <span>É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.</span>
               </li>
             </ul>
@@ -518,7 +581,7 @@ const Webinar = () => {
               Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
             </p>
             
-            <p className="font-bold text-xl text-cyan-400">
+            <p className="font-bold text-xl text-cyan-500">
               Mas sabe o que mais o motiva? Compartilhar tudo o que aprendi de forma acessível.
             </p>
             
@@ -530,11 +593,11 @@ const Webinar = () => {
               Por isso, criei o Webinar IA Para Todos.
             </p>
             
-            <p className="italic text-gray-400">
+            <p className="italic text-gray-600">
               Em breve, estarei entrando oficialmente no time da ADAPTA, e vai ficar mais difícil manter esse contato direto.
             </p>
             
-            <p className="font-semibold text-white">
+            <p className="font-semibold text-black">
               Você não precisa disso, mas essa é a oportunidade que eu adoraria ter tido quando comecei.
             </p>
           </div>
@@ -547,6 +610,13 @@ const Webinar = () => {
               Quero Fazer Parte →
             </Button>
           </div>
+        </div>
+        
+        {/* Curved bottom border */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
+          </svg>
         </div>
       </section>
 
