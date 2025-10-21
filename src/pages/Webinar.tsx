@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Check } from "lucide-react";
+import { Check, Shield, Lock } from "lucide-react";
 import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
@@ -449,13 +449,13 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl p-8 md:p-10 text-gray-900 max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 md:p-10 text-gray-900 max-w-2xl mx-auto shadow-2xl">
             <div className="flex justify-between items-start mb-6">
               <h3 className="text-2xl md:text-3xl font-bold">
-                Webinar Turma 2
+                Webinar IA Para Todos
               </h3>
-              <span className="bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full whitespace-nowrap">
-                Mais Escolhido | 75%OFF*
+              <span className="bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full whitespace-nowrap flex items-center gap-1">
+                🔥 Mais Escolhido | 75%OFF*
               </span>
             </div>
             
@@ -475,28 +475,30 @@ const Webinar = () => {
             </div>
             
             <div className="text-center mb-8 py-6 border-t border-b border-gray-200">
-              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">12x R$ 25,55</p>
+              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+                <span className="text-2xl">12x</span> R$ 25<span className="text-2xl">,55</span>
+              </p>
               <p className="text-xl text-gray-600">ou R$ 247 à vista</p>
             </div>
             
             <div className="text-center mb-6">
               <Button 
                 asChild
-                className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
+                className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
               >
-                <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer">
-                  Quero Adquirir Agora
+                <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  Quero Adquirir Agora →
                 </a>
               </Button>
             </div>
 
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
-                <Check className="text-green-500" size={16} />
+                <Shield className="text-green-500" size={16} />
                 <span>7 Dias de Garantia</span>
               </div>
               <div className="flex items-center gap-2">
-                <Check className="text-green-500" size={16} />
+                <Lock className="text-green-500" size={16} />
                 <span>Compra Segura</span>
               </div>
             </div>
