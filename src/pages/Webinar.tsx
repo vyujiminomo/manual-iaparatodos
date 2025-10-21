@@ -474,22 +474,24 @@ const Webinar = () => {
               ))}
             </div>
             
-            <div className="text-center mb-8 py-6 border-t border-b border-gray-200">
-              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                <span className="text-2xl">12x</span> R$ 25<span className="text-2xl">,55</span>
-              </p>
-              <p className="text-xl text-gray-600">ou R$ 247 à vista</p>
-            </div>
-            
-            <div className="text-center mb-6">
-              <Button 
-                asChild
-                className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
-              >
-                <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                  Quero Adquirir Agora →
-                </a>
-              </Button>
+            <div className="flex items-end justify-between mb-6 mt-8">
+              <div>
+                <p className="text-4xl md:text-5xl font-bold text-gray-900">
+                  <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-top">,55</span>
+                </p>
+                <p className="text-lg text-gray-600">ou R$ 247 à vista</p>
+              </div>
+              
+              <div className="flex-1 ml-6">
+                <Button 
+                  asChild
+                  className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
+                >
+                  <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                    Quero Adquirir Agora →
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
