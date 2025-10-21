@@ -99,15 +99,8 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="relative py-20 px-4 bg-white">
-        {/* Curved top border */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
-          </svg>
-        </div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+      <section className="py-20 px-4 bg-white rounded-t-[80px] -mt-20">
+        <div className="container mx-auto max-w-6xl pt-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
             O QUE DIZEM OS ALUNOS DA 1ª TURMA:
           </h2>
@@ -129,17 +122,10 @@ const Webinar = () => {
             </Button>
           </div>
         </div>
-        
-        {/* Curved bottom border */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
-          </svg>
-        </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-4 bg-black">
+      <section className="py-24 px-4 bg-black rounded-t-[80px] -mt-20">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <span className="text-cyan-400 font-bold uppercase tracking-wide">Mecanismo do Problema</span>
@@ -183,14 +169,7 @@ const Webinar = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 px-4 bg-white text-black overflow-hidden">
-        {/* Curved top border */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
-          </svg>
-        </div>
-        
+      <section className="py-24 px-4 bg-white text-black overflow-hidden rounded-t-[80px] -mt-20">
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10 pt-8">
           <div className="text-center mb-12">
@@ -233,17 +212,10 @@ const Webinar = () => {
             </Button>
           </div>
         </div>
-        
-        {/* Curved bottom border */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
-          </svg>
-        </div>
       </section>
 
       {/* Curriculum Section */}
-      <section className="py-24 px-4 bg-black">
+      <section className="py-24 px-4 bg-black rounded-t-[80px] -mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             O que você vai aprender?
@@ -322,15 +294,8 @@ const Webinar = () => {
       </section>
 
       {/* Why Section */}
-      <section className="relative py-24 px-4 bg-white">
-        {/* Curved top border */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
-          </svg>
-        </div>
-        
-        <div className="container mx-auto max-w-4xl relative z-10 pt-8">
+      <section className="py-24 px-4 bg-white rounded-t-[80px] -mt-20">
+        <div className="container mx-auto max-w-4xl pt-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
             Por que fazer um Curso de ChatGPT?
           </h2>
@@ -347,17 +312,10 @@ const Webinar = () => {
             O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
           </p>
         </div>
-        
-        {/* Curved bottom border */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
-          </svg>
-        </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 bg-black">
+      <section className="py-24 px-4 bg-black rounded-t-[80px] -mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
             Por Que Este É o Melhor Webinar de IA do Brasil
@@ -411,15 +369,8 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="relative py-20 px-4 bg-white">
-        {/* Curved top border */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
-          </svg>
-        </div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+      <section className="py-20 px-4 bg-white rounded-t-[80px] -mt-20">
+        <div className="container mx-auto max-w-6xl pt-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
             O que dizem do Webinar:
           </h2>
@@ -433,20 +384,13 @@ const Webinar = () => {
             ))}
           </div>
         </div>
-        
-        {/* Curved bottom border */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
-          </svg>
-        </div>
       </section>
 
       {/* Offer Section */}
-      <section id="oferta" className="relative py-24 px-4 bg-black text-white overflow-hidden">
+      <section id="oferta" className="py-24 px-4 bg-black text-white overflow-hidden rounded-t-[80px] -mt-20">
         <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
-        <div className="container mx-auto max-w-4xl relative z-10">
+        <div className="container mx-auto max-w-4xl relative z-10 pt-8">
           <div className="text-center mb-12">
             <span className="text-yellow-400 font-bold uppercase tracking-wide text-xl drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">Oferta</span>
             <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
@@ -516,15 +460,8 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="relative py-24 px-4 bg-white">
-        {/* Curved top border */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="#000000"></path>
-          </svg>
-        </div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10 pt-8">
+      <section className="py-24 px-4 bg-white rounded-t-[80px] -mt-20">
+        <div className="container mx-auto max-w-6xl pt-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
             "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
           </h2>
@@ -611,17 +548,10 @@ const Webinar = () => {
             </Button>
           </div>
         </div>
-        
-        {/* Curved bottom border */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-full h-16" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 L0,60 Q600,0 1200,60 L1200,120 Z" fill="#000000"></path>
-          </svg>
-        </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 bg-black">
+      <section className="py-24 px-4 bg-black rounded-t-[80px] -mt-20">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             (F.A.Q) Restou alguma dúvida?
