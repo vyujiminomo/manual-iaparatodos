@@ -417,16 +417,22 @@ const Webinar = () => {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
-            O que dizem do Webinar:
+            O que dizem sobre o Webinar:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-                <p className="text-gray-700 italic mb-4 text-lg">"Depoimento {i}"</p>
-                <p className="font-semibold text-black">Nome do Aluno</p>
-              </div>
-            ))}
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
+              <p className="text-gray-700 italic mb-4 text-lg">"Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk."</p>
+              <p className="font-semibold text-black">Gabriela Coelho</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
+              <p className="text-gray-700 italic mb-4 text-lg">"Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar."</p>
+              <p className="font-semibold text-black">Arthur Lucena</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
+              <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta desse webinar, que, com certeza, será um sucesso. Parabéns!"</p>
+              <p className="font-semibold text-black">Bruno Correia</p>
+            </div>
           </div>
         </div>
       </section>
