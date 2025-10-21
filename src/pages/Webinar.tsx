@@ -469,29 +469,27 @@ const Webinar = () => {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700">{item}</span>
+                  <span className="text-gray-700 font-semibold">{item}</span>
                 </div>
               ))}
             </div>
             
-            <div className="flex items-end justify-between mb-6 mt-8">
-              <div>
-                <p className="text-4xl md:text-5xl font-bold text-gray-900">
-                  <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-top">,55</span>
-                </p>
-                <p className="text-lg text-gray-600">ou R$ 247 à vista</p>
-              </div>
-              
-              <div className="flex-1 ml-6">
-                <Button 
-                  asChild
-                  className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
-                >
-                  <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                    Quero Adquirir Agora →
-                  </a>
-                </Button>
-              </div>
+            <div className="text-center mt-8 mb-6">
+              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-1">
+                <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-top">,55</span>
+              </p>
+              <p className="text-lg text-gray-600">ou R$ 247 à vista</p>
+            </div>
+            
+            <div className="mb-6">
+              <Button 
+                asChild
+                className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
+              >
+                <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  Quero Adquirir Agora →
+                </a>
+              </Button>
             </div>
 
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
