@@ -539,50 +539,25 @@ const Webinar = () => {
             </p>
             
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
-                <span>Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.</span>
+              <li>
+                Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
-                <span>Foi 4x competidor no torneio de robótica First Lego League.</span>
+              <li>
+                Foi 4x competidor no torneio de robótica First Lego League.
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
-                <span>É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.</span>
+              <li>
+                É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
-                <span>Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.</span>
+              <li>
+                Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.
               </li>
-              <li className="flex items-start gap-3">
-                <Check className="text-cyan-500 flex-shrink-0 mt-1" size={24} />
-                <span>É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.</span>
+              <li>
+                É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
               </li>
             </ul>
             
             <p>
               Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
-            </p>
-            
-            <p className="font-bold text-xl text-cyan-500">
-              Mas sabe o que mais o motiva? Compartilhar tudo o que aprendi de forma acessível.
-            </p>
-            
-            <p>
-              Enquanto muitos cursos de IA te cobram mais de R$2000 para te prender em linguagem técnica chata, eu ainda posso te oferecer algo mais próximo e humano.
-            </p>
-            
-            <p>
-              Por isso, criei o Webinar IA Para Todos.
-            </p>
-            
-            <p className="italic text-gray-600">
-              Em breve, estarei entrando oficialmente no time da ADAPTA, e vai ficar mais difícil manter esse contato direto.
-            </p>
-            
-            <p className="font-semibold text-black">
-              Você não precisa disso, mas essa é a oportunidade que eu adoraria ter tido quando comecei.
             </p>
           </div>
           
