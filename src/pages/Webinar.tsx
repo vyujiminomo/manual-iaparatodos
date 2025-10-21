@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check } from "lucide-react";
+import webinarGravacao from "@/assets/webinar-gravacao.png";
+import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
+import webinarManual from "@/assets/webinar-manual.png";
 
 const Webinar = () => {
   useDynamicMeta({
@@ -325,31 +328,58 @@ const Webinar = () => {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-black">
-                Acesso vitalício às gravações e mapas mentais
-              </h3>
-              <p className="text-gray-700 text-lg">
-                Se você não conseguir assistir a uma aula, não se preocupe! Todo o material será gravado em alta qualidade e você poderá acessar quando e quantas vezes quiser.
-              </p>
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarGravacao} 
+                  alt="Gravações e mapas mentais" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Gravações e mapas mentais
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Se você não conseguir assistir a uma aula, não se preocupe! Todo o material será gravado em alta qualidade e você poderá acessar quando e quantas vezes quiser.
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-black">
-                Grupo de WhatsApp Exclusivo (Suporte 24/7)
-              </h3>
-              <p className="text-gray-700 text-lg">
-                Você vai ter minha ajuda 24/7 para tirar dúvidas durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após o webinar. Além disso, o grupo é uma ótima forma de fazer networking com outros profissionais que estão na mesma jornada que você.
-              </p>
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarWhatsapp} 
+                  alt="Grupo de WhatsApp" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Grupo de WhatsApp
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Você vai poder tirar dúvidas e fazer networking durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após o webinar.
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-black">
-                Manual IA Para Todos completo
-              </h3>
-              <p className="text-gray-700 text-lg">
-                Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
-              </p>
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarManual} 
+                  alt="Manual IA Para Todos" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Manual IA Para Todos
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
+                </p>
+              </div>
             </div>
           </div>
           
