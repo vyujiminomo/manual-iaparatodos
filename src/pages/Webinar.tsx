@@ -64,12 +64,12 @@ const Webinar = () => {
       </section>
 
       {/* Trusted By Section with Scrolling Logos */}
-      <section className="relative bg-gray-900 text-white py-16 px-4 overflow-hidden border-t border-gray-800">
+      <section className="relative bg-black text-white py-16 px-4 overflow-hidden border-t border-gray-800">
         <div className="container mx-auto max-w-6xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-8 h-8 flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#14B8A6" />
+                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
               </svg>
             </div>
             <p className="text-gray-400 text-sm md:text-base">
@@ -99,15 +99,15 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             O QUE DIZEM OS ALUNOS DA 1ª TURMA:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-yellow-400/50 hover:border-yellow-400 transition-all duration-300">
                 <p className="text-gray-500 text-center">Vídeo {i}</p>
               </div>
             ))}
@@ -116,29 +116,29 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full"
             >
-              Quero Fazer Parte
+              Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-bold uppercase tracking-wide">Mecanismo do Problema</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-900">
+            <span className="text-cyan-400 font-bold uppercase tracking-wide">Mecanismo do Problema</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-white">
               Por Que a Maioria dos Profissionais Falha ao Tentar Usar IA no Trabalho
             </h2>
           </div>
           
-          <p className="text-lg mb-8 text-gray-700">
+          <p className="text-lg mb-8 text-gray-300">
             Eu já fiz palestras e consultorias de IA para mais de 1000 pessoas.
           </p>
           
-          <p className="text-lg mb-8 text-gray-700">
+          <p className="text-lg mb-8 text-gray-300">
             E a maioria dos alunos que recebi vinham com esses problemas:
           </p>
           
@@ -148,29 +148,29 @@ const Webinar = () => {
               "Eu assinei uma IA premium, mas os resultados ainda não foram como eu esperava",
               "Sou muito leigo com tecnologia, e preciso de alguém que me guie no que fazer"
             ].map((problem, i) => (
-              <div key={i} className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-                <p className="text-gray-800">"{problem}"</p>
+              <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-4 rounded">
+                <p className="text-gray-200">"{problem}"</p>
               </div>
             ))}
           </div>
           
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg mb-6 text-gray-300">
             Você já se perguntou por que, mesmo sendo um profissional experiente, sente aquela ansiedade crescente cada vez que ouve falar de ChatGPT, Gemini ou outras IAs?
           </p>
           
-          <p className="text-xl font-bold text-red-600 mb-4">
+          <p className="text-xl font-bold text-yellow-400 mb-4">
             O problema é que a grande maioria dos materiais sobre IA são teóricos e pouco práticos.
           </p>
           
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-300">
             Mas não precisa ser assim.
           </p>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <section className="relative py-24 px-4 bg-black text-white overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
             <span className="text-yellow-400 font-bold uppercase tracking-wide text-lg">Mecanismo da Solução</span>
@@ -179,112 +179,112 @@ const Webinar = () => {
             </h2>
           </div>
           
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-300">
             E se, em vez de correr atrás do prejuízo, você pudesse dar um salto à frente da maioria dos profissionais da sua área?
           </p>
           
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-300">
             Eu fiz diversos cursos de IA. Testei dezenas de métodos de ensino na primeira edição do webinar e em palestras para mais de 1000 pessoas.
           </p>
           
-          <p className="text-lg mb-6 font-bold text-yellow-300">
+          <p className="text-lg mb-6 font-bold text-cyan-400">
             Eliminei toda a teoria desnecessária e destilei apenas o que realmente funciona na prática.
           </p>
           
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-300">
             E filtrei tudo de melhor nesse webinar.
           </p>
           
-          <p className="text-lg mb-8">
+          <p className="text-lg mb-8 text-gray-300">
             Agora, estou reunindo a segunda turma de pessoas engajadas para mostrar como aplicar tudo isso no SEU trabalho.
           </p>
           
-          <p className="text-xl font-bold text-yellow-300 mb-8">
+          <p className="text-xl font-bold text-yellow-400 mb-8">
             Esta é sua chance de estar entre os primeiros a dominar o que vai definir os próximos anos do mercado.
           </p>
           
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
-              Quero Fazer Parte
+              Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
 
       {/* Curriculum Section */}
-      <section className="py-24 px-4 bg-gray-50">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             O que você vai aprender?
           </h2>
           
           <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-black">
                 Dia 1: O que é Inteligência Artificial <span className="text-yellow-500">19/11</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">5 princípios básicos para interagir com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">Como, quando e porque usar cada IA</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-black">
                 Dia 2: Como criar Prompts Magnéticos <span className="text-yellow-500">26/11</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">A estrutura 3IAI para prompts perfeitos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">Como criar um bom contexto</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">O maior erro que iniciantes cometem ao usar IAs</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-yellow-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-black">
                 Dia 3: As 5 Práticas da IA Generativa <span className="text-yellow-500">3/12</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">Pesquisando artigos/jurisprudência com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">4 técnicas para ter ideias com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">4 técnicas para aprender com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">2 técnicas para gerir com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                   <span className="text-lg">6 técnicas para escrever com IA</span>
                 </li>
               </ul>
@@ -294,43 +294,43 @@ const Webinar = () => {
       </section>
 
       {/* Why Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
             Por que fazer um Curso de ChatGPT?
           </h2>
           
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg mb-6 text-gray-300">
             Uma vez que o mercado descobriu a agilidade e eficiência do ChatGPT, ele não vai retroceder.
           </p>
           
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg mb-6 text-gray-300">
             Quando você domina a IA, você consegue concluir tarefas rapidamente, tomar decisões melhores e ter ideias inovadoras.
           </p>
           
-          <p className="text-xl font-bold text-blue-600">
+          <p className="text-xl font-bold text-cyan-400">
             O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
           </p>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
             Por Que Este É o Melhor Webinar de IA do Brasil
           </h2>
-          <p className="text-center text-lg text-gray-600 mb-12">
+          <p className="text-center text-lg text-gray-400 mb-12">
             Veja o que você vai receber assim que garantir sua vaga:
           </p>
           
-          <p className="text-center text-xl font-semibold mb-12 text-gray-800">
+          <p className="text-center text-xl font-semibold mb-12 text-gray-200">
             Ao escolher o webinar do Vitor Yuji, você se torna parte da segunda turma do melhor programa de webinars de IA do Brasil.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4 text-black">
                 Acesso vitalício às gravações e mapas mentais
               </h3>
               <p className="text-gray-700 text-lg">
@@ -338,8 +338,8 @@ const Webinar = () => {
               </p>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4 text-black">
                 Grupo de WhatsApp Exclusivo (Suporte 24/7)
               </h3>
               <p className="text-gray-700 text-lg">
@@ -347,8 +347,8 @@ const Webinar = () => {
               </p>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-yellow-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+            <div className="bg-white rounded-xl shadow-xl p-10 border-t-4 border-cyan-400 md:col-span-2 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4 text-black">
                 Manual IA Para Todos completo
               </h3>
               <p className="text-gray-700 text-lg">
@@ -360,26 +360,26 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
-              Quero Fazer Parte
+              Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
 
       {/* More Testimonials */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             O que dizem do Webinar:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-2 border-yellow-400/30 hover:border-yellow-400/60 hover:shadow-xl transition-all duration-300">
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
                 <p className="text-gray-700 italic mb-4 text-lg">"Depoimento {i}"</p>
-                <p className="font-semibold text-gray-900">Nome do Aluno</p>
+                <p className="font-semibold text-black">Nome do Aluno</p>
               </div>
             ))}
           </div>
@@ -387,9 +387,9 @@ const Webinar = () => {
       </section>
 
       {/* Offer Section */}
-      <section id="oferta" className="relative py-24 px-4 bg-gradient-to-b from-gray-900 to-blue-900 text-white overflow-hidden">
+      <section id="oferta" className="relative py-24 px-4 bg-black text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
             <span className="text-yellow-400 font-bold uppercase tracking-wide text-xl drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">Oferta</span>
@@ -401,8 +401,8 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 border-2 border-yellow-400 mb-10 shadow-[0_0_40px_rgba(250,204,21,0.3)]">
-            <h3 className="text-2xl font-bold mb-6 text-center text-yellow-400">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 border-2 border-cyan-400 mb-10 shadow-[0_0_40px_rgba(34,211,238,0.3)]">
+            <h3 className="text-2xl font-bold mb-6 text-center text-cyan-400">
               Webinar IA Para Todos - 2ª turma
             </h3>
             <p className="text-center text-lg mb-8">
@@ -425,7 +425,7 @@ const Webinar = () => {
               ))}
             </div>
             
-            <div className="border-t-2 border-yellow-400 pt-4 mb-8">
+            <div className="border-t-2 border-cyan-400 pt-4 mb-8">
               <p className="text-2xl font-bold text-center">VALOR TOTAL: R$ 900</p>
             </div>
             
@@ -441,14 +441,14 @@ const Webinar = () => {
             <div className="text-center">
               <Button 
                 onClick={scrollToOffer}
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl px-16 py-8 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:shadow-[0_0_50px_rgba(250,204,21,0.8)] transition-all duration-300 transform hover:scale-105"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-16 py-8 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:shadow-[0_0_50px_rgba(250,204,21,0.8)] transition-all duration-300 transform hover:scale-105"
               >
-                QUERO ADQUIRIR AGORA
+                QUERO ADQUIRIR AGORA →
               </Button>
             </div>
           </div>
           
-          <div className="bg-yellow-50 rounded-xl p-8 text-gray-900">
+          <div className="bg-white rounded-xl p-8 text-black">
             <h3 className="text-2xl font-bold mb-4 text-center">
               Garantia incondicional de satisfação
             </h3>
@@ -460,12 +460,12 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
             "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
           </h2>
-          <h3 className="text-2xl font-bold text-center mb-12 text-blue-600">
+          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-400">
             Quem é Vitor Yuji:
           </h3>
           
@@ -486,30 +486,30 @@ const Webinar = () => {
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 mb-8">
+          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-300 mb-8">
             <p>
-              <strong>Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
+              <strong className="text-white">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
             </p>
             
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                 <span>Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                 <span>Foi 4x competidor no torneio de robótica First Lego League.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                 <span>É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                 <span>Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.</span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="text-yellow-500 flex-shrink-0 mt-1" size={24} />
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
                 <span>É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.</span>
               </li>
             </ul>
@@ -518,7 +518,7 @@ const Webinar = () => {
               Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
             </p>
             
-            <p className="font-bold text-xl text-blue-600">
+            <p className="font-bold text-xl text-cyan-400">
               Mas sabe o que mais o motiva? Compartilhar tudo o que aprendi de forma acessível.
             </p>
             
@@ -530,11 +530,11 @@ const Webinar = () => {
               Por isso, criei o Webinar IA Para Todos.
             </p>
             
-            <p className="italic">
+            <p className="italic text-gray-400">
               Em breve, estarei entrando oficialmente no time da ADAPTA, e vai ficar mais difícil manter esse contato direto.
             </p>
             
-            <p className="font-semibold">
+            <p className="font-semibold text-white">
               Você não precisa disso, mas essa é a oportunidade que eu adoraria ter tido quando comecei.
             </p>
           </div>
@@ -542,18 +542,18 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full"
             >
-              Quero Fazer Parte
+              Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 bg-gray-50">
+      <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             (F.A.Q) Restou alguma dúvida?
           </h2>
           
@@ -580,8 +580,8 @@ const Webinar = () => {
                 a: "Sim. Caso não fique satisfeito, você pode solicitar reembolso integral em até 7 dias após a compra pela plataforma da Hotmart."
               }
             ].map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-l-2 border-yellow-400 hover:shadow-xl hover:border-l-4 transition-all duration-300">
-                <h3 className="font-bold text-xl mb-3 text-gray-900">{faq.q}</h3>
+              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-l-2 border-cyan-400 hover:shadow-xl hover:border-l-4 transition-all duration-300">
+                <h3 className="font-bold text-xl mb-3 text-black">{faq.q}</h3>
                 <p className="text-gray-700 text-lg">{faq.a}</p>
               </div>
             ))}
@@ -590,7 +590,7 @@ const Webinar = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
+      <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-6">
             IA Para Todos. Ferramentas para trabalhar com mais inteligência.
@@ -602,7 +602,7 @@ const Webinar = () => {
               <strong>E-mail:</strong>{" "}
               <a 
                 href="mailto:contato.vitoryujiminomo@gmail.com" 
-                className="text-blue-400 hover:text-blue-300 underline"
+                className="text-cyan-400 hover:text-cyan-300 underline"
               >
                 contato.vitoryujiminomo@gmail.com
               </a>
@@ -613,7 +613,7 @@ const Webinar = () => {
                 href="https://www.linkedin.com/in/vitor-yuji-minomo/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 underline"
+                className="text-cyan-400 hover:text-cyan-300 underline"
               >
                 Vitor Yuji Minomo
               </a>
