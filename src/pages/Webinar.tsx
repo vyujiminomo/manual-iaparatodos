@@ -64,21 +64,10 @@ const Webinar = () => {
       </section>
 
       {/* Trusted By Section with Scrolling Logos */}
-      <section className="relative bg-black text-white py-16 px-4 overflow-hidden border-t border-gray-800">
+      <section className="relative bg-black text-white py-16 px-4 overflow-hidden">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
-              </svg>
-            </div>
-            <p className="text-gray-400 text-sm md:text-base">
-              Sou o professor de IA escolhido por profissionais de empresas como
-            </p>
-          </div>
-          
           <div className="relative">
-            <div className="flex gap-12 animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused]">
+            <div className="flex gap-12 animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused] mb-8">
               {/* First set of logos */}
               <div className="flex gap-12 items-center shrink-0">
                 <img src="/lovable-uploads/escola-superclass.png" alt="SuperClass" className="h-12 opacity-60 hover:opacity-100 transition-opacity" />
@@ -95,6 +84,10 @@ const Webinar = () => {
               </div>
             </div>
           </div>
+          
+          <p className="text-center text-gray-400 text-sm md:text-base">
+            Sou o professor de IA escolhido por profissionais de empresas como
+          </p>
         </div>
       </section>
 
