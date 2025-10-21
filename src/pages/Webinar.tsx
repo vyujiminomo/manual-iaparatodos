@@ -438,76 +438,68 @@ const Webinar = () => {
       </section>
 
       {/* Offer Section */}
-      <section id="oferta" className="relative py-24 px-4 bg-black text-white overflow-hidden">
-        <div className="absolute top-20 left-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
-        <div className="container mx-auto max-w-4xl relative z-10">
+      <section id="oferta" className="py-24 px-4 bg-gray-900 text-white">
+        <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <span className="text-yellow-400 font-bold uppercase tracking-wide text-xl drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">Oferta</span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Domine a IA em poucas horas
             </h2>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-gray-300">
               Em 6 horas, você pode integrar IA e ChatGPT para aumentar a sua produtividade e melhorar a qualidade do seu trabalho.
             </p>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 border-2 border-cyan-400 mb-10 shadow-[0_0_40px_rgba(34,211,238,0.3)]">
-            <h3 className="text-2xl font-bold mb-6 text-center text-cyan-400">
-              Webinar IA Para Todos - 2ª turma
-            </h3>
-            <p className="text-center text-lg mb-8">
-              Dias 19/11, 26/11 e 3/12, às 19h
-            </p>
+          <div className="bg-white rounded-2xl p-8 md:p-10 text-gray-900 max-w-2xl mx-auto">
+            <div className="flex justify-between items-start mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold">
+                Webinar Turma 2
+              </h3>
+              <span className="bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                Mais Escolhido | 75%OFF*
+              </span>
+            </div>
             
             <div className="space-y-3 mb-8">
-              <p className="text-lg">Valor de cada um dos produtos incluídos nesta oferta:</p>
               {[
-                { item: "3 dias ao vivo", value: "R$ 450" },
-                { item: "Comunidade no WhatsApp exclusiva", value: "R$ 100" },
-                { item: "Biblioteca de prompts para cada profissão", value: "R$ 80" },
-                { item: "Acesso vitalício às gravações e mapas mentais", value: "R$ 170" },
-                { item: "Manual IA Para Todos completo (assim que for lançado)", value: "R$ 100" }
+                "Acesso completo aos 3 Dias ao Vivo",
+                "Acesso à Comunidade no WhatsApp Exclusiva",
+                "Acesso às Gravações e Mapas Mentais",
+                "Manual IA Para Todos",
+                "Biblioteca de Prompts por Profissão"
               ].map((item, i) => (
-                <div key={i} className="flex justify-between items-center">
-                  <span>{item.item}</span>
-                  <span className="font-semibold">({item.value})</span>
+                <div key={i} className="flex items-start gap-3">
+                  <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">{item}</span>
                 </div>
               ))}
             </div>
             
-            <div className="border-t-2 border-cyan-400 pt-4 mb-8">
-              <p className="text-2xl font-bold text-center">VALOR TOTAL: R$ 900</p>
+            <div className="text-center mb-8 py-6 border-t border-b border-gray-200">
+              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">12x R$ 25,55</p>
+              <p className="text-xl text-gray-600">ou R$ 247 à vista</p>
             </div>
             
-            <p className="text-xl text-center mb-6 text-gray-200">
-              Mas adquirindo hoje o Webinar IA Para Todos, você não vai pagar nem perto disso…
-            </p>
-            
-            <div className="text-center mb-8">
-              <p className="text-5xl font-bold text-yellow-400 mb-2">12x R$ 25,55</p>
-              <p className="text-2xl text-gray-200">ou R$ 247 à vista</p>
-            </div>
-            
-            <div className="text-center">
+            <div className="text-center mb-6">
               <Button 
                 asChild
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-16 py-8 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:shadow-[0_0_50px_rgba(250,204,21,0.8)] transition-all duration-300 transform hover:scale-105"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
               >
                 <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer">
-                  QUERO ADQUIRIR AGORA →
+                  Quero Adquirir Agora
                 </a>
               </Button>
             </div>
-          </div>
-          
-          <div className="bg-white rounded-xl p-8 text-black">
-            <h3 className="text-2xl font-bold mb-4 text-center">
-              Garantia incondicional de satisfação
-            </h3>
-            <p className="text-center">
-              Pra você se sentir ainda mais seguro(a), a lei te oferece uma garantia total de 7 dias. Se durante esse período você sentir que o manual não é pra você, é só seguir o passo a passo através da plataforma da Hotmart e a plataforma devolve cada centavo do seu investimento, sem burocracia ou letras miúdas.
-            </p>
+
+            <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2">
+                <Check className="text-green-500" size={16} />
+                <span>7 Dias de Garantia</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="text-green-500" size={16} />
+                <span>Compra Segura</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
