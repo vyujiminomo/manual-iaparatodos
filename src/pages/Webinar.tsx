@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check, Shield, Lock } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
@@ -579,35 +585,62 @@ const Webinar = () => {
             (F.A.Q) Restou alguma dúvida?
           </h2>
           
-          <div className="space-y-6">
-            {[
-              {
-                q: "Vai ter gravação?",
-                a: "Sim! Todas as aulas serão gravadas e ficarão disponíveis com os mapas mentais na área de membros da Hotmart."
-              },
-              {
-                q: "Preciso saber de tecnologia?",
-                a: "Não. A linguagem é simples, sem jargões. Qualquer profissional consegue acompanhar."
-              },
-              {
-                q: "Preciso instalar algo para participar dos encontros ao vivo?",
-                a: "Sim, os encontros acontecem via Zoom, então é importante ter ele instalado antes do primeiro dia."
-              },
-              {
-                q: "Por que confiar em um jovem de 14 anos?",
-                a: "Vitor já palestrou para diversos públicos, criou projetos premiados e será membro da ADAPTA, uma das maiores empresas de IA da América Latina. Seu diferencial é ensinar IA de forma acessível para todos."
-              },
-              {
-                q: "Existe garantia de satisfação?",
-                a: "Sim. Caso não fique satisfeito, você pode solicitar reembolso integral em até 7 dias após a compra pela plataforma da Hotmart."
-              }
-            ].map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg p-8 border-l-2 border-cyan-400 hover:shadow-xl hover:border-l-4 transition-all duration-300">
-                <h3 className="font-bold text-xl mb-3 text-black">{faq.q}</h3>
-                <p className="text-gray-700 text-lg">{faq.a}</p>
-              </div>
-            ))}
-          </div>
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="bg-white rounded-xl border-none">
+              <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
+                <span className="font-bold text-xl text-black">Vai ter gravação?</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-8 pb-6">
+                <p className="text-gray-700 text-lg">
+                  Sim! Todas as aulas serão gravadas e ficarão disponíveis com os mapas mentais na área de membros da Hotmart.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="bg-white rounded-xl border-none">
+              <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
+                <span className="font-bold text-xl text-black">Preciso saber de tecnologia?</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-8 pb-6">
+                <p className="text-gray-700 text-lg">
+                  Não. A linguagem é simples, sem jargões. Qualquer profissional consegue acompanhar.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="bg-white rounded-xl border-none">
+              <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
+                <span className="font-bold text-xl text-black">Preciso instalar algo para participar dos encontros ao vivo?</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-8 pb-6">
+                <p className="text-gray-700 text-lg">
+                  Sim, os encontros acontecem via Zoom, então é importante ter ele instalado antes do primeiro dia.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="bg-white rounded-xl border-none">
+              <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
+                <span className="font-bold text-xl text-black">Por que confiar em um jovem de 14 anos?</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-8 pb-6">
+                <p className="text-gray-700 text-lg">
+                  Vitor já palestrou para diversos públicos, criou projetos premiados e será membro da ADAPTA, uma das maiores empresas de IA da América Latina. Seu diferencial é ensinar IA de forma acessível para todos.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-white rounded-xl border-none">
+              <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
+                <span className="font-bold text-xl text-black">Existe garantia de satisfação?</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-8 pb-6">
+                <p className="text-gray-700 text-lg">
+                  Sim. Caso não fique satisfeito, você pode solicitar reembolso integral em até 7 dias após a compra pela plataforma da Hotmart.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
