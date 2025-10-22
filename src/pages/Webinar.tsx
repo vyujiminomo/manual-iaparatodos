@@ -145,10 +145,13 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              JÁ PALESTREI PARA MAIS DE 1000 PROFISSIONAIS.
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
+              Porque a Maioria dos Profissionais Falham ao usar IA no Trabalho
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 font-semibold">
+            <p className="text-2xl md:text-3xl text-white font-bold mb-6">
+              JÁ PALESTREI PARA MAIS DE 1000 PROFISSIONAIS.
+            </p>
+            <p className="text-xl md:text-2xl text-gray-300">
               E antes de me procurarem, todos enfrentavam frustrações parecidas:
             </p>
           </div>
@@ -160,7 +163,7 @@ const Webinar = () => {
               "Tenho muita dificuldade com tecnologia e queria alguém que me guie"
             ].map((problem, i) => (
               <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-6 rounded">
-                <p className="text-gray-200 text-lg italic">"{problem}"</p>
+                <p className="text-gray-200 text-lg" style={{ fontStyle: 'italic', fontFamily: 'inherit' }}>"{problem}"</p>
               </div>
             ))}
           </div>
@@ -173,13 +176,9 @@ const Webinar = () => {
             O problema é que a maioria dos cursos do mercado são teóricos, pouco práticos e sem alguém para tirar suas dúvidas, pegar na sua mão e te mostrar exatamente como fazer.
           </p>
           
-          <div className="text-center mb-8">
-            <div className="inline-block bg-white/10 border-2 border-gray-600 rounded-full px-8 py-4">
-              <p className="text-xl md:text-2xl text-white font-semibold">
-                Mas existe um jeito diferente.
-              </p>
-            </div>
-          </div>
+          <p className="text-xl md:text-2xl text-white font-semibold text-center mb-8">
+            Mas existe um jeito diferente.
+          </p>
           
           <div className="text-center mt-8">
             <Button 
