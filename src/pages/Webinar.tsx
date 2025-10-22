@@ -207,7 +207,7 @@ const Webinar = () => {
             Depois de palestrar para mais de 1000 pessoas e testar dezenas de métodos de ensino, descobri exatamente o que funciona:
           </p>
           
-          <div className="space-y-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-gray-50 rounded-xl p-8 border-l-4 border-cyan-400">
               <h3 className="text-2xl font-bold mb-3 text-black">Mentoria em Grupo</h3>
               <p className="text-gray-700 text-lg">
