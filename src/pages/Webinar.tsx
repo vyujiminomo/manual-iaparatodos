@@ -84,36 +84,24 @@ const Webinar = () => {
           </div>
           
           <div className="relative flex justify-center overflow-hidden">
-            <div className="flex gap-24 animate-[scroll_12s_linear_infinite]">
+            <div className="flex gap-24 animate-[scroll_8s_linear_infinite] hover:[animation-play-state:paused]">
               {/* First set of logos */}
               <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
               {/* Duplicate set for seamless loop */}
               <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-              </div>
-              {/* Third set for extra smooth loop */}
-              <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
@@ -583,7 +571,7 @@ const Webinar = () => {
             <div className="mb-6">
               <Button 
                 asChild
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
               >
                 <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                   Quero Adquirir Agora →
@@ -606,72 +594,61 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-              "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
-            </h2>
-            <h3 className="text-2xl md:text-3xl font-bold text-cyan-500">
-              Quem é Vitor Yuji:
-            </h3>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
+            "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
+          </h2>
+          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-500">
+            Quem é Vitor Yuji:
+          </h3>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-xl blur-lg opacity-25 group-hover:opacity-40 transition-opacity"></div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                 alt="Vitor Yuji apresentando" 
-                className="relative rounded-xl shadow-xl w-full transform group-hover:scale-[1.02] transition-transform duration-300"
+                className="rounded-xl shadow-lg w-full"
               />
             </div>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-xl blur-lg opacity-25 group-hover:opacity-40 transition-opacity"></div>
+            <div>
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-1.png" 
                 alt="Vitor Yuji com alunos" 
-                className="relative rounded-xl shadow-xl w-full transform group-hover:scale-[1.02] transition-transform duration-300"
+                className="rounded-xl shadow-lg w-full"
               />
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100">
-            <div className="space-y-6 text-lg text-gray-700">
-              <p className="text-xl leading-relaxed">
-                Vitor Yuji tem apenas 15 anos e já é <strong className="text-cyan-600">referência em IA Generativa no Nordeste</strong>.
-              </p>
-              
-              <ul className="space-y-5 pl-2">
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></div>
-                  <span>Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></div>
-                  <span>Foi 4x competidor no torneio de robótica First Lego League.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></div>
-                  <span>É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></div>
-                  <span>Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></div>
-                  <span>É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.</span>
-                </li>
-              </ul>
-              
-              <p className="text-xl leading-relaxed pt-4 border-t border-gray-200">
-                Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
-              </p>
-            </div>
+          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 mb-8">
+            <p>
+              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
+            </p>
+            
+            <ul className="space-y-4">
+              <li>
+                Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.
+              </li>
+              <li>
+                Foi 4x competidor no torneio de robótica First Lego League.
+              </li>
+              <li>
+                É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
+              </li>
+              <li>
+                Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.
+              </li>
+              <li>
+                É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
+              </li>
+            </ul>
+            
+            <p>
+              Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+            </p>
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center">
             <Button 
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
