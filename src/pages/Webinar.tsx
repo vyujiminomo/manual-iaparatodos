@@ -84,24 +84,36 @@ const Webinar = () => {
           </div>
           
           <div className="relative flex justify-center overflow-hidden">
-            <div className="flex gap-24 animate-[scroll_8s_linear_infinite] hover:[animation-play-state:paused]">
+            <div className="flex gap-24 animate-[scroll_12s_linear_infinite]">
               {/* First set of logos */}
               <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
               {/* Duplicate set for seamless loop */}
               <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+              </div>
+              {/* Third set for extra smooth loop */}
+              <div className="flex gap-24 items-center shrink-0">
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Babylandia" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="UFS" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
