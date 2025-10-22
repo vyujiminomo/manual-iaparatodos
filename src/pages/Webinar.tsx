@@ -145,43 +145,41 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <span className="text-cyan-400 font-bold uppercase tracking-wide">Mecanismo do Problema</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-white">
-              Por Que a Maioria dos Profissionais Falha ao Tentar Usar IA no Trabalho
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+              JÁ PALESTREI PARA MAIS DE 1000 PROFISSIONAIS.
             </h2>
+            <p className="text-xl md:text-2xl text-gray-300 font-semibold">
+              E antes de me procurarem, todos enfrentavam frustrações parecidas:
+            </p>
           </div>
           
-          <p className="text-lg mb-8 text-gray-300">
-            Eu já fiz palestras e consultorias de IA para mais de 1000 pessoas.
-          </p>
-          
-          <p className="text-lg mb-8 text-gray-300">
-            E a maioria dos alunos que recebi vinham com esses problemas:
-          </p>
-          
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-12">
             {[
-              "Já fiz um curso de IA, mas achei teórico demais e saí sem saber o que fazer",
-              "Eu assinei uma IA premium, mas os resultados ainda não foram como eu esperava",
-              "Sou muito leigo com tecnologia, e preciso de alguém que me guie no que fazer"
+              "Fiz um curso de IA muito teórico e saí sem saber como aplicar no meu trabalho",
+              "Pago uma IA premium, mas ainda não sei usar direito",
+              "Tenho muita dificuldade com tecnologia e queria alguém que me guie"
             ].map((problem, i) => (
-              <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-4 rounded">
-                <p className="text-gray-200">"{problem}"</p>
+              <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-6 rounded">
+                <p className="text-gray-200 text-lg italic">"{problem}"</p>
               </div>
             ))}
           </div>
           
-          <p className="text-lg mb-6 text-gray-300">
-            Você já se perguntou por que, mesmo sendo um profissional experiente, sente aquela ansiedade crescente cada vez que ouve falar de ChatGPT, Gemini ou outras IAs?
+          <p className="text-xl md:text-2xl mb-8 text-gray-300 font-semibold text-center">
+            Você já sentiu uma ansiedade crescente cada vez que ouve falar sobre ChatGPT e outras IAs?
           </p>
           
-          <p className="text-xl font-bold text-yellow-400 mb-4">
-            O problema é que a grande maioria dos materiais sobre IA são teóricos e pouco práticos.
+          <p className="text-lg mb-8 text-gray-300 text-center">
+            O problema é que a maioria dos cursos do mercado são teóricos, pouco práticos e sem alguém para tirar suas dúvidas, pegar na sua mão e te mostrar exatamente como fazer.
           </p>
           
-          <p className="text-lg text-gray-300">
-            Mas não precisa ser assim.
-          </p>
+          <div className="text-center mb-8">
+            <div className="inline-block bg-white/10 border-2 border-gray-600 rounded-full px-8 py-4">
+              <p className="text-xl md:text-2xl text-white font-semibold">
+                Mas existe um jeito diferente.
+              </p>
+            </div>
+          </div>
           
           <div className="text-center mt-8">
             <Button 
