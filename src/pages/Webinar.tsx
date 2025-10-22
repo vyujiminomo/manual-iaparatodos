@@ -53,7 +53,7 @@ const Webinar = () => {
               
               <Button 
                 onClick={scrollToOffer}
-                className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
               >
                 QUERO FAZER PARTE →
               </Button>
@@ -122,7 +122,7 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -212,7 +212,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -570,7 +570,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
