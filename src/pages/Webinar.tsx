@@ -163,7 +163,7 @@ const Webinar = () => {
               "Tenho muita dificuldade com tecnologia e queria alguém que me guie"
             ].map((problem, i) => (
               <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-6 rounded">
-                <p className="text-gray-200 text-lg" style={{ fontStyle: 'italic', fontFamily: 'inherit' }}>"{problem}"</p>
+                <p className="text-gray-200 text-lg" style={{ fontStyle: 'oblique 8deg' }}>"{problem}"</p>
               </div>
             ))}
           </div>
