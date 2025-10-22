@@ -84,7 +84,7 @@ const Webinar = () => {
           </div>
           
           <div className="relative flex justify-center overflow-hidden">
-            <div className="flex gap-24 animate-[scroll_15s_linear_infinite] hover:[animation-play-state:paused]">
+            <div className="flex gap-24 animate-[scroll_8s_linear_infinite] hover:[animation-play-state:paused]">
               {/* First set of logos */}
               <div className="flex gap-24 items-center shrink-0">
                 <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
