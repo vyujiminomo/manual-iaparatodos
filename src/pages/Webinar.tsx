@@ -74,34 +74,34 @@ const Webinar = () => {
         
         {/* Trusted By Section integrated */}
         <div className="container mx-auto max-w-6xl relative z-10 mt-16">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex items-center justify-center gap-3 mb-10">
+            <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
             </svg>
-            <p className="text-cyan-400 text-sm md:text-base">
+            <p className="text-cyan-400 text-base md:text-xl font-medium">
               Sou o professor de IA escolhido por profissionais de empresas como
             </p>
           </div>
           
           <div className="relative flex justify-center overflow-hidden">
-            <div className="flex gap-20 animate-[scroll_20s_linear_infinite] hover:[animation-play-state:paused]">
+            <div className="flex gap-24 animate-[scroll_15s_linear_infinite] hover:[animation-play-state:paused]">
               {/* First set of logos */}
-              <div className="flex gap-20 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
+              <div className="flex gap-24 items-center shrink-0">
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
               {/* Duplicate set for seamless loop */}
-              <div className="flex gap-20 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-28 opacity-70 hover:opacity-100 transition-opacity" />
+              <div className="flex gap-24 items-center shrink-0">
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
