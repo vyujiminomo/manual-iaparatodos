@@ -195,35 +195,47 @@ const Webinar = () => {
       <section className="relative py-24 px-4 bg-white text-black overflow-hidden">
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center mb-12">
-            <span className="text-cyan-400 font-bold uppercase tracking-wide text-lg">Mecanismo da Solução</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-black">
-              Como transformar sua "desvantagem" em vantagem competitiva
-            </h2>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
+            Como transformar sua "desvantagem" em vantagem competitiva
+          </h2>
           
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
             E se, em vez de correr atrás do prejuízo, você pudesse dar um salto à frente da maioria dos profissionais da sua área?
           </p>
           
-          <p className="text-lg mb-6 text-gray-700">
-            Eu fiz diversos cursos de IA. Testei dezenas de métodos de ensino na primeira edição do webinar e em palestras para mais de 1000 pessoas.
+          <p className="text-lg mb-12 text-gray-700 text-center">
+            Depois de palestrar para mais de 1000 pessoas e testar dezenas de métodos de ensino, descobri exatamente o que funciona:
           </p>
           
-          <p className="text-lg mb-6 font-bold text-cyan-500">
-            Eliminei toda a teoria desnecessária e destilei apenas o que realmente funciona na prática.
+          <div className="space-y-8 mb-12">
+            <div className="bg-gray-50 rounded-xl p-8 border-l-4 border-cyan-400">
+              <h3 className="text-2xl font-bold mb-3 text-black">Mentoria em Grupo</h3>
+              <p className="text-gray-700 text-lg">
+                Aulas ao vivo onde você tira dúvidas na hora, com acompanhamento personalizado e junto de outros profissionais na mesma jornada que você.
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-8 border-l-4 border-cyan-400">
+              <h3 className="text-2xl font-bold mb-3 text-black">Linguagem Simples</h3>
+              <p className="text-gray-700 text-lg">
+                Esqueça termos complicados. Zero jargões técnicos. A linguagem é humana e clara que qualquer profissional entende.
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-8 border-l-4 border-cyan-400">
+              <h3 className="text-2xl font-bold mb-3 text-black">Prática Imediata</h3>
+              <p className="text-gray-700 text-lg">
+                Durante todo o webinar, abrimos e testamos juntos no ChatGPT. Saia de cada aula com um exercício rápido para aplicar no seu trabalho.
+              </p>
+            </div>
+          </div>
+          
+          <p className="text-lg mb-8 text-gray-700 text-center">
+            Agora estou reunindo a segunda turma de profissionais engajados para mostrar como aplicar tudo isso no SEU trabalho específico.
           </p>
           
-          <p className="text-lg mb-6 text-gray-700">
-            E filtrei tudo de melhor nesse webinar.
-          </p>
-          
-          <p className="text-lg mb-8 text-gray-700">
-            Agora, estou reunindo a segunda turma de pessoas engajadas para mostrar como aplicar tudo isso no SEU trabalho.
-          </p>
-          
-          <p className="text-xl font-bold text-cyan-500 mb-8">
-            Esta é sua chance de estar entre os primeiros a dominar o que vai definir os próximos anos do mercado.
+          <p className="text-xl font-bold text-cyan-500 mb-8 text-center">
+            Esta é sua chance de estar entre os que vão dominar o que vai definir os próximos anos do mercado.
           </p>
           
           <div className="text-center">
