@@ -171,6 +171,15 @@ const Webinar = () => {
           <p className="text-lg text-gray-300">
             Mas não precisa ser assim.
           </p>
+          
+          <div className="text-center mt-8">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -296,6 +305,15 @@ const Webinar = () => {
               </ul>
             </div>
           </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -317,6 +335,15 @@ const Webinar = () => {
           <p className="text-xl font-bold text-cyan-500">
             O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
           </p>
+          
+          <div className="text-center mt-8">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -439,6 +466,15 @@ const Webinar = () => {
               <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta desse webinar, que, com certeza, será um sucesso. Parabéns!"</p>
               <p className="font-semibold text-black">Bruno Correia</p>
             </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
           </div>
         </div>
       </section>
@@ -641,6 +677,15 @@ const Webinar = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
         </div>
       </section>
 
