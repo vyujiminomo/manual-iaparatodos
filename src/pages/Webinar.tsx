@@ -53,7 +53,7 @@ const Webinar = () => {
               
               <Button 
                 onClick={scrollToOffer}
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
               >
                 QUERO FAZER PARTE →
               </Button>
@@ -139,7 +139,7 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -189,7 +189,7 @@ const Webinar = () => {
           <div className="text-center mt-8">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -268,7 +268,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -356,7 +356,7 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -386,7 +386,7 @@ const Webinar = () => {
           <div className="text-center mt-8">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -485,7 +485,7 @@ const Webinar = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -518,7 +518,7 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -573,7 +573,7 @@ const Webinar = () => {
             <div className="mb-6">
               <Button 
                 asChild
-                className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-12 py-6 rounded-lg w-full"
+                className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
               >
                 <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                   Quero Adquirir Agora →
@@ -596,64 +596,62 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
-            "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
+      <section className="py-24 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 text-black">
+            Quem é Vitor Yuji
           </h2>
-          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-500">
-            Quem é Vitor Yuji:
-          </h3>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                 alt="Vitor Yuji apresentando" 
-                className="rounded-xl shadow-lg w-full"
+                className="rounded-2xl shadow-2xl w-full"
               />
             </div>
-            <div>
-              <img 
-                src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                alt="Vitor Yuji com alunos" 
-                className="rounded-xl shadow-lg w-full"
-              />
+            <div className="space-y-6">
+              <p className="text-xl text-gray-800 leading-relaxed">
+                <strong className="text-black text-2xl">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
+              </p>
+              
+              <div className="space-y-4 text-lg text-gray-700">
+                <div className="flex gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                  <p>Jovem aprendiz na <strong>ADAPTA</strong>, a maior startup de IA do Brasil</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                  <p>4x competidor no torneio de robótica <strong>First Lego League</strong></p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                  <p>Co-fundador do <strong>Mangue Mania</strong>, com mais de 400 alunos impactados</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                  <p>Palestrante em instituições como <strong>Instituto JCPM, Colégio Master e Babylândia</strong></p>
+                </div>
+              </div>
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 mb-8">
-            <p>
-              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
-            </p>
-            
-            <ul className="space-y-4">
-              <li>
-                Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.
-              </li>
-              <li>
-                Foi 4x competidor no torneio de robótica First Lego League.
-              </li>
-              <li>
-                É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
-              </li>
-              <li>
-                Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.
-              </li>
-              <li>
-                É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
-              </li>
-            </ul>
-            
-            <p>
-              Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
-            </p>
+          <div className="mb-12">
+            <img 
+              src="/lovable-uploads/vitor-yuji-palestra-1.png" 
+              alt="Vitor Yuji com alunos" 
+              className="rounded-2xl shadow-2xl w-full max-w-3xl mx-auto"
+            />
           </div>
+          
+          <p className="text-center text-xl text-gray-700 max-w-3xl mx-auto mb-12">
+            Transmitindo conhecimento para <strong className="text-black">milhares de pessoas</strong>, com a missão de tornar a IA acessível para todos.
+          </p>
           
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -728,7 +726,7 @@ const Webinar = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
