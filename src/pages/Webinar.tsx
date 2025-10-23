@@ -90,7 +90,6 @@ const Webinar = () => {
                 <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
@@ -100,7 +99,6 @@ const Webinar = () => {
                 <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-4.png" alt="São Lucas" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
                 <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
