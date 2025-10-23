@@ -596,61 +596,78 @@ const Webinar = () => {
       </section>
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
-            "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
-          </h2>
-          <h3 className="text-2xl font-bold text-center mb-12 text-cyan-500">
-            Quem é Vitor Yuji:
-          </h3>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
+              "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
+            </h2>
+            <h3 className="text-2xl font-bold text-cyan-500">
+              Quem é Vitor Yuji:
+            </h3>
+          </div>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
+          <div className="grid md:grid-cols-2 gap-6 mb-16 max-w-5xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300">
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                 alt="Vitor Yuji apresentando" 
-                className="rounded-xl shadow-lg w-full"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div>
+            <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300">
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-1.png" 
                 alt="Vitor Yuji com alunos" 
-                className="rounded-xl shadow-lg w-full"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 mb-8">
-            <p>
-              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é referência em IA Generativa no Nordeste.
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 border-t-4 border-cyan-400">
+            <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
+              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é <strong className="text-cyan-500">referência em IA Generativa no Nordeste.</strong>
             </p>
             
-            <ul className="space-y-4">
-              <li>
-                Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da ADAPTA, a maior startup de IA do Brasil.
+            <ul className="space-y-5 mb-8">
+              <li className="flex items-start gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <span className="text-lg text-gray-700">
+                  Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da <strong className="text-black">ADAPTA, a maior startup de IA do Brasil.</strong>
+                </span>
               </li>
-              <li>
-                Foi 4x competidor no torneio de robótica First Lego League.
+              <li className="flex items-start gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <span className="text-lg text-gray-700">
+                  Foi <strong className="text-black">4x competidor</strong> no torneio de robótica First Lego League.
+                </span>
               </li>
-              <li>
-                É co-fundador do Mangue Mania, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
+              <li className="flex items-start gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <span className="text-lg text-gray-700">
+                  É co-fundador do <strong className="text-black">Mangue Mania</strong>, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com <strong className="text-black">mais de 400 alunos impactados.</strong>
+                </span>
               </li>
-              <li>
-                Já palestrou sobre IA para instituições como Instituto JCPM, Colégio Master e Babylândia.
+              <li className="flex items-start gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <span className="text-lg text-gray-700">
+                  Já palestrou sobre IA para instituições como <strong className="text-black">Instituto JCPM, Colégio Master e Babylândia.</strong>
+                </span>
               </li>
-              <li>
-                É também músico no Movimento Escalada, um dos principais grupos de jovens cristãos do Nordeste.
+              <li className="flex items-start gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
+                <span className="text-lg text-gray-700">
+                  É também músico no <strong className="text-black">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
+                </span>
               </li>
             </ul>
             
-            <p>
+            <p className="text-lg text-gray-700 leading-relaxed italic border-l-4 border-cyan-400 pl-6 py-2">
               Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
             </p>
           </div>
           
-          <div className="text-center">
+          <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
