@@ -626,7 +626,7 @@ const Webinar = () => {
           
           <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 border-t-4 border-cyan-400">
             <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
-              <strong className="text-black">Vitor Yuji tem apenas 15 anos</strong> e já é <strong className="text-cyan-500">referência em IA Generativa no Nordeste.</strong>
+              Vitor Yuji tem apenas 15 anos e já é <strong className="text-black">referência em IA Generativa no Nordeste.</strong>
             </p>
             
             <ul className="space-y-5 mb-8">
