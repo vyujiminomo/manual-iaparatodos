@@ -127,11 +127,20 @@ const Webinar = () => {
               </video>
             </div>
             
-            {[2, 3].map((i) => (
-              <div key={i} className="bg-gray-50 rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
-                <p className="text-gray-500 text-center">Vídeo {i}</p>
-              </div>
-            ))}
+            <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
+              <video 
+                controls 
+                className="w-full h-full object-cover"
+                style={{ aspectRatio: '9/16' }}
+              >
+                <source src="/lovable-uploads/video-max-2.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 aspect-video flex items-center justify-center border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
+              <p className="text-gray-500 text-center">Vídeo 3</p>
+            </div>
           </div>
           
           <div className="text-center mt-12">
