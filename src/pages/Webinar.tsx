@@ -226,39 +226,39 @@ const Webinar = () => {
             Depois de palestrar para mais de 1000 pessoas e testar dezenas de métodos de ensino, descobri exatamente o que funciona:
           </p>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-16 h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
+            <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
+              <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-4 md:mb-6">
+                <svg className="w-12 h-12 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Mentoria em Grupo</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Mentoria em Grupo</h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Aulas ao vivo com dúvidas respondidas na hora, acompanhamento personalizado e networking com outros profissionais.
               </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-16 h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
+              <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-4 md:mb-6">
+                <svg className="w-12 h-12 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Linguagem Simples</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Linguagem Simples</h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Zero jargões técnicos. Comunicação clara e humana que qualquer um entende.
               </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-16 h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all duration-300 aspect-square flex flex-col items-center justify-center text-center">
+              <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-4 md:mb-6">
+                <svg className="w-12 h-12 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Prática Imediata</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Prática Imediata</h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Testamos juntos no ChatGPT durante as aulas. Cada encontro termina com um exercício prático para aplicar no trabalho.
               </p>
             </div>
@@ -338,7 +338,7 @@ const Webinar = () => {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">Pesquisando artigos/jurisprudência com IA</span>
+                  <span className="text-base md:text-lg">Pesquisando artigos e jurisprudência com IA</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
@@ -439,7 +439,7 @@ const Webinar = () => {
                 <img 
                   src={webinarWhatsapp} 
                   alt="Grupo de WhatsApp" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-left"
                 />
               </div>
               <div className="p-10">
@@ -545,12 +545,12 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl p-8 md:p-10 text-gray-900 max-w-2xl mx-auto shadow-2xl">
-            <div className="flex justify-between items-start mb-6">
-              <h3 className="text-2xl md:text-3xl font-bold">
+          <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 text-gray-900 max-w-2xl mx-auto shadow-2xl">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">
                 Webinar IA Para Todos
               </h3>
-              <span className="bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full whitespace-nowrap flex items-center gap-1">
+              <span className="bg-red-500 text-white text-xs md:text-sm font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full whitespace-nowrap flex items-center gap-1 md:gap-2">
                 🔥 Mais Escolhido | 75%OFF*
               </span>
             </div>
@@ -565,22 +565,22 @@ const Webinar = () => {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700 font-semibold">{item}</span>
+                  <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
                 </div>
               ))}
             </div>
             
             <div className="text-left mt-8 mb-6">
-              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-1">
-                <span className="text-3xl mr-0.5">12x</span>R$ 25<span className="text-base align-bottom">,55</span>
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-1">
+                <span className="text-2xl md:text-3xl mr-0.5">12x</span>R$ 25<span className="text-sm md:text-base align-bottom">,55</span>
               </p>
-              <p className="text-lg text-gray-600">ou R$ 247 à vista</p>
+              <p className="text-base md:text-lg text-gray-600">ou R$ 247 à vista</p>
             </div>
             
             <div className="mb-6">
               <Button 
                 asChild
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
               >
                 <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                   Quero Adquirir Agora →
