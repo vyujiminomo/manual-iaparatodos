@@ -492,6 +492,20 @@ const Webinar = () => {
             O que dizem sobre o Webinar:
           </h2>
           
+          {/* Video Testimonial */}
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="bg-gray-50 rounded-2xl shadow-xl overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-2xl transition-all duration-300">
+              <video 
+                controls 
+                className="w-full aspect-video"
+                poster="/lovable-uploads/vitor-yuji-palestra-1.png"
+              >
+                <source src="/lovable-uploads/video-depoimento-max.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-700 italic mb-4 text-lg">"Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk."</p>
