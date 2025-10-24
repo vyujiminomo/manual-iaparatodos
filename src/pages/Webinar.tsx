@@ -421,7 +421,7 @@ const Webinar = () => {
                 <img 
                   src={webinarGravacao} 
                   alt="Gravações e mapas mentais" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-right"
                 />
               </div>
               <div className="p-10">
@@ -607,7 +607,7 @@ const Webinar = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
-              "Mas porque ouvir um moleque de 14 anos falando sobre IA?"
+              "Mas porque ouvir um moleque de 15 anos falando sobre IA?"
             </h2>
             <h3 className="text-2xl font-bold text-cyan-500">
               Quem é Vitor Yuji:
@@ -728,7 +728,7 @@ const Webinar = () => {
 
             <AccordionItem value="item-4" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Por que confiar em um jovem de 14 anos?</span>
+                <span className="font-bold text-xl text-black">Por que confiar em um jovem de 15 anos?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
