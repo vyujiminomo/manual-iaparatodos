@@ -29,49 +29,49 @@ const Webinar = () => {
   return (
     <div className="min-h-screen bg-black font-sans">
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-20 px-4 overflow-hidden">
+      <section className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
         {/* Subtle decorative glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left side - Text content */}
-            <div>
-              <div className="flex flex-col gap-3 mb-6">
-                <span className="inline-flex items-center gap-2 text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full w-fit">
+            <div className="text-center lg:text-left w-full">
+              <div className="flex flex-col gap-3 mb-6 items-center lg:items-start">
+                <span className="inline-flex items-center gap-2 text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full">
                   Curso de IA
                 </span>
-                <span className="inline-flex items-center gap-2 bg-gray-900/50 border border-yellow-400/50 text-yellow-400 font-bold text-sm px-4 py-2 rounded-lg w-fit shadow-lg">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <span className="inline-flex items-center gap-2 bg-gray-900/50 border-2 border-yellow-400/60 text-yellow-400 font-bold text-sm md:text-base px-5 py-2.5 rounded-lg shadow-lg animate-pulse">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
                   Em Janeiro 2026
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
                 Webinar IA Para Todos
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
                 Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
               </p>
               
               <Button 
                 onClick={scrollToOffer}
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-lg px-10 py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
               >
                 QUERO FAZER PARTE →
               </Button>
             </div>
             
-            {/* Right side - Logo */}
-            <div className="hidden lg:flex justify-center items-center">
-              <div className="bg-white p-4 rounded-xl shadow-[0_8px_32px_rgba(255,255,255,0.15)]">
+            {/* Logo - Mobile (appears below text) and Desktop (appears on right) */}
+            <div className="flex justify-center items-center w-full lg:order-none order-first lg:mt-0 -mt-4">
+              <div className="bg-white p-3 md:p-4 rounded-xl shadow-[0_8px_32px_rgba(255,255,255,0.15)] max-w-[280px] md:max-w-md lg:max-w-lg w-full">
                 <img 
                   src="/lovable-uploads/webinar-logo-main.png" 
                   alt="Webinar Inteligência Artificial Para Todos" 
-                  className="w-full max-w-lg"
+                  className="w-full"
                 />
               </div>
             </div>
@@ -79,35 +79,35 @@ const Webinar = () => {
         </div>
         
         {/* Trusted By Section integrated */}
-        <div className="container mx-auto max-w-6xl relative z-10 mt-16">
-          <div className="flex items-center justify-center gap-3 mb-10">
-            <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
+            <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
             </svg>
-            <p className="text-cyan-400 text-base md:text-xl font-medium">
+            <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
               Sou o professor de IA escolhido por profissionais de empresas como
             </p>
           </div>
           
           <div className="relative flex justify-center overflow-hidden">
-            <div className="flex gap-24 animate-scroll hover:animate-scroll-slow">
+            <div className="flex gap-12 md:gap-20 lg:gap-24 animate-scroll hover:animate-scroll-slow">
               {/* First set of logos */}
-              <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+              <div className="flex gap-12 md:gap-20 lg:gap-24 items-center shrink-0">
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
               {/* Duplicate set for seamless loop */}
-              <div className="flex gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-40 opacity-70 hover:opacity-100 transition-opacity" />
+              <div className="flex gap-12 md:gap-20 lg:gap-24 items-center shrink-0">
+                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-24 md:h-32 lg:h-40 opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
@@ -115,9 +115,9 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-black">
             O QUE DIZEM OS ALUNOS DA 1ª TURMA:
           </h2>
           
@@ -149,10 +149,10 @@ const Webinar = () => {
             </div>
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 md:mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
             >
               Quero Fazer Parte →
             </Button>
