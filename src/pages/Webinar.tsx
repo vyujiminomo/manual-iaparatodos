@@ -37,9 +37,15 @@ const Webinar = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text content */}
             <div>
-              <div className="inline-block mb-6">
-                <span className="text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full">
+              <div className="flex flex-col gap-3 mb-6">
+                <span className="inline-flex items-center gap-2 text-teal-400 font-semibold text-sm uppercase tracking-wider border border-teal-400/30 px-4 py-2 rounded-full w-fit">
                   Curso de IA
+                </span>
+                <span className="inline-flex items-center gap-2 bg-gray-900/50 border border-yellow-400/50 text-yellow-400 font-bold text-sm px-4 py-2 rounded-lg w-fit shadow-lg">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                  </svg>
+                  Em Janeiro
                 </span>
               </div>
               
@@ -287,7 +293,7 @@ const Webinar = () => {
           <div className="space-y-8">
             <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 1: O que é Inteligência Artificial <span className="text-yellow-500">19/11</span>
+                Dia 1: O que é Inteligência Artificial <span className="text-gray-500 text-lg">(Data a definir - Janeiro)</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
@@ -307,7 +313,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-yellow-500">26/11</span>
+                Dia 2: Como criar Prompts Magnéticos <span className="text-gray-500 text-lg">(Data a definir - Janeiro)</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
@@ -327,7 +333,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-yellow-500">3/12</span>
+                Dia 3: As 5 Práticas da IA Generativa <span className="text-gray-500 text-lg">(Data a definir - Janeiro)</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
