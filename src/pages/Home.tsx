@@ -38,6 +38,11 @@ const Home = () => {
       image: "/lovable-uploads/card-sobre.png",
       alt: "Sobre Mim",
       link: "/bio"
+    },
+    {
+      image: "/lovable-uploads/card-whatsapp.png",
+      alt: "Contato - WhatsApp",
+      link: "https://wa.me/5579981255774"
     }
   ];
 
