@@ -297,71 +297,71 @@ const Webinar = () => {
             O que você vai aprender?
           </h2>
           
-          <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 1: O que é Inteligência Artificial <span className="text-gray-500 text-lg">(Data a definir - Janeiro 2026)</span>
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
+                Dia 1: O que é Inteligência Artificial <span className="text-gray-500 text-sm md:text-lg block md:inline mt-1 md:mt-0">(Data a definir - Janeiro 2026)</span>
               </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">5 princípios básicos para interagir com IA</span>
+              <ul className="space-y-2 md:space-y-3 text-gray-700">
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">5 princípios básicos para interagir com IA</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">Como, quando e porque usar cada IA</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Como, quando e porque usar cada IA</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-gray-500 text-lg">(Data a definir - Janeiro 2026)</span>
+            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
+                Dia 2: Como criar Prompts Magnéticos <span className="text-gray-500 text-sm md:text-lg block md:inline mt-1 md:mt-0">(Data a definir - Janeiro 2026)</span>
               </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">A estrutura 3IAI para prompts perfeitos</span>
+              <ul className="space-y-2 md:space-y-3 text-gray-700">
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">A estrutura 3IAI para prompts perfeitos</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">Como criar um bom contexto</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Como criar um bom contexto</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">O maior erro que iniciantes cometem ao usar IAs</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">O maior erro que iniciantes cometem ao usar IAs</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-10 border-l-4 border-cyan-400 hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-black">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-gray-500 text-lg">(Data a definir - Janeiro 2026)</span>
+            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
+                Dia 3: As 5 Práticas da IA Generativa <span className="text-gray-500 text-sm md:text-lg block md:inline mt-1 md:mt-0">(Data a definir - Janeiro 2026)</span>
               </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-base md:text-lg">Pesquisando artigos e jurisprudência com IA</span>
+              <ul className="space-y-2 md:space-y-3 text-gray-700">
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Pesquisando artigos e jurisprudência com IA</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">4 técnicas para ter ideias com IA</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">4 técnicas para ter ideias com IA</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">4 técnicas para aprender com IA</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">4 técnicas para aprender com IA</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">2 técnicas para gerir com IA</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">2 técnicas para gerir com IA</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                  <span className="text-lg">6 técnicas para escrever com IA</span>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">6 técnicas para escrever com IA</span>
                 </li>
               </ul>
             </div>
