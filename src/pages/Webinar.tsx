@@ -621,15 +621,15 @@ const Webinar = () => {
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-16 max-w-5xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-16 max-w-5xl mx-auto">
+            <div className="rounded-lg md:rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-2.png" 
                 alt="Vitor Yuji apresentando" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300">
+            <div className="rounded-lg md:rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
               <img 
                 src="/lovable-uploads/vitor-yuji-palestra-1.png" 
                 alt="Vitor Yuji com alunos" 
@@ -638,45 +638,45 @@ const Webinar = () => {
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 border-t-4 border-cyan-400">
-            <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg md:rounded-2xl shadow-md p-4 md:p-12">
+            <p className="text-base md:text-2xl text-gray-800 mb-4 md:mb-8 leading-relaxed">
               Vitor Yuji tem apenas 15 anos e já é <strong className="text-black">referência em IA Generativa no Nordeste.</strong>
             </p>
             
-            <ul className="space-y-5 mb-8">
-              <li className="flex items-start gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                <span className="text-lg text-gray-700">
+            <ul className="space-y-3 md:space-y-5 mb-4 md:mb-8">
+              <li className="flex items-start gap-2 md:gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                <span className="text-sm md:text-lg text-gray-700">
                   Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da <strong className="text-black">ADAPTA, a maior startup de IA do Brasil.</strong>
                 </span>
               </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                <span className="text-lg text-gray-700">
+              <li className="flex items-start gap-2 md:gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                <span className="text-sm md:text-lg text-gray-700">
                   Foi <strong className="text-black">4x competidor</strong> no torneio de robótica First Lego League.
                 </span>
               </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                <span className="text-lg text-gray-700">
+              <li className="flex items-start gap-2 md:gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                <span className="text-sm md:text-lg text-gray-700">
                   É co-fundador do <strong className="text-black">Mangue Mania</strong>, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com <strong className="text-black">mais de 400 alunos impactados.</strong>
                 </span>
               </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                <span className="text-lg text-gray-700">
+              <li className="flex items-start gap-2 md:gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                <span className="text-sm md:text-lg text-gray-700">
                   Já palestrou sobre IA para instituições como <strong className="text-black">Instituto JCPM, Colégio Master e Babylândia.</strong>
                 </span>
               </li>
-              <li className="flex items-start gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-1" size={24} />
-                <span className="text-lg text-gray-700">
+              <li className="flex items-start gap-2 md:gap-4">
+                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                <span className="text-sm md:text-lg text-gray-700">
                   É também músico no <strong className="text-black">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
                 </span>
               </li>
             </ul>
             
-            <p className="text-lg text-gray-700 leading-relaxed italic border-l-4 border-cyan-400 pl-6 py-2">
+            <p className="text-sm md:text-lg text-gray-700 leading-relaxed italic bg-cyan-50 rounded-lg p-3 md:p-4">
               Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
             </p>
           </div>
