@@ -14,8 +14,8 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 
 const Webinar = () => {
   useDynamicMeta({
-    title: "Webinar IA Para Todos 2 - Vitor Yuji",
-    description: "Vá do zero ao avançado em IA em apenas 3 dias. Webinar ao vivo com Vitor Yuji.",
+    title: "Imersão IA Para Todos 2 - Vitor Yuji",
+    description: "Vá do zero ao avançado em IA em apenas 3 dias. Imersão ao vivo com Vitor Yuji.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
@@ -50,7 +50,7 @@ const Webinar = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-                Webinar IA Para Todos
+                Imersão IA Para Todos
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
@@ -70,7 +70,7 @@ const Webinar = () => {
               <div className="bg-white p-3 md:p-4 rounded-xl shadow-[0_8px_32px_rgba(255,255,255,0.15)] max-w-[280px] md:max-w-md lg:max-w-lg w-full">
                 <img 
                   src="/lovable-uploads/webinar-logo-main.png" 
-                  alt="Webinar Inteligência Artificial Para Todos" 
+                  alt="Imersão Inteligência Artificial Para Todos" 
                   className="w-full"
                 />
               </div>
@@ -412,14 +412,14 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Por Que Este É o Melhor Webinar de IA do Brasil
+            Por Que Esta É a Melhor Imersão de IA do Brasil
           </h2>
           <p className="text-center text-lg text-gray-400 mb-12">
             Veja o que você vai receber assim que garantir sua vaga:
           </p>
           
           <p className="text-center text-xl font-semibold mb-12 text-gray-200">
-            Ao escolher o webinar do Vitor Yuji, você se torna parte da segunda turma do melhor programa de webinars de IA do Brasil.
+            Ao escolher a imersão do Vitor Yuji, você se torna parte da segunda turma do melhor programa de imersão de IA do Brasil.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -454,7 +454,7 @@ const Webinar = () => {
                   Grupo de WhatsApp
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Você vai poder tirar dúvidas e fazer networking durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após o webinar.
+                  Você vai poder tirar dúvidas e fazer networking durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após a imersão.
                 </p>
               </div>
             </div>
@@ -511,7 +511,7 @@ const Webinar = () => {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
-            O que dizem sobre o Webinar:
+            O que dizem sobre a Imersão:
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -524,7 +524,7 @@ const Webinar = () => {
               <p className="font-semibold text-black">Arthur Lucena</p>
             </div>
             <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta desse webinar, que, com certeza, será um sucesso. Parabéns!"</p>
+              <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!"</p>
               <p className="font-semibold text-black">Bruno Correia</p>
             </div>
           </div>
@@ -555,7 +555,7 @@ const Webinar = () => {
           <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 text-gray-900 max-w-2xl mx-auto shadow-2xl">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-6">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">
-                Webinar IA Para Todos
+                Imersão IA Para Todos
               </h3>
               <span className="bg-red-500 text-white text-xs md:text-sm font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full whitespace-nowrap flex items-center gap-1 md:gap-2">
                 🔥 Mais Escolhido | 75%OFF*
@@ -702,11 +702,11 @@ const Webinar = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-0" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Quais são as datas do webinar?</span>
+                <span className="font-bold text-xl text-black">Quais são as datas da imersão?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  O webinar acontecerá em 3 quartas-feiras, às 19h:<br/>
+                  A imersão acontecerá em 3 quartas-feiras, às 19h:<br/>
                   <strong>• 11 de Fevereiro de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
                   <strong>• 18 de Fevereiro de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
                   <strong>• 25 de Fevereiro de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa
