@@ -59,7 +59,7 @@ const AppContent = () => {
         <Route path="/obrigado" element={<Obrigado />} />
         <Route path="/go" element={<Go />} />
         <Route path="/curso" element={<Curso />} />
-        <Route path="/webinar" element={<Webinar />} />
+        <Route path="/imersao" element={<Webinar />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
