@@ -67,10 +67,10 @@ const Webinar = () => {
             
             {/* Logo - Mobile (appears below text) and Desktop (appears on right) */}
             <div className="flex justify-center items-center w-full lg:order-none order-first lg:mt-0 -mt-4">
-              <div className="bg-white p-3 md:p-4 rounded-xl shadow-[0_8px_32px_rgba(255,255,255,0.15)] max-w-[280px] md:max-w-md lg:max-w-lg w-full">
+              <div className="max-w-[320px] md:max-w-md lg:max-w-lg w-full">
                 <img 
-                  src="/lovable-uploads/webinar-logo-main.png" 
-                  alt="Imersão Inteligência Artificial Para Todos" 
+                  src="/lovable-uploads/imersao-logo.png" 
+                  alt="Imersão Inteligência Artificial Para Todos 2" 
                   className="w-full"
                 />
               </div>
