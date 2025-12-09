@@ -16,7 +16,7 @@ const Webinar = () => {
   useDynamicMeta({
     title: "Webinar IA Para Todos 2 - Vitor Yuji",
     description: "Vá do zero ao avançado em IA em apenas 3 dias. Webinar ao vivo com Vitor Yuji.",
-    image: "/lovable-uploads/webinar-logo-1.png"
+    image: "/lovable-uploads/webinar-og-image.png"
   });
 
   const scrollToOffer = () => {
