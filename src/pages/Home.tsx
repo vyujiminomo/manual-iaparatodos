@@ -10,9 +10,9 @@ const Home = () => {
 
   const cards = [
     {
-      image: "/lovable-uploads/webinar-logo-main.png",
-      alt: "Webinar IA Para Todos",
-      link: "/webinar"
+      image: "/lovable-uploads/imersao-logo.png",
+      alt: "Imersão IA Para Todos",
+      link: "/imersao"
     },
     {
       image: "/lovable-uploads/card-manual.png",
