@@ -125,6 +125,7 @@ const Webinar = () => {
             <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
               <video 
                 controls 
+                preload="metadata"
                 className="w-full h-full object-cover"
                 style={{ aspectRatio: '9/16' }}
               >
@@ -136,6 +137,7 @@ const Webinar = () => {
             <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
               <video 
                 controls 
+                preload="metadata"
                 className="w-full h-full object-cover"
                 style={{ aspectRatio: '9/16' }}
               >
@@ -147,6 +149,7 @@ const Webinar = () => {
             <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
               <video 
                 controls 
+                preload="metadata"
                 className="w-full h-full object-cover"
                 style={{ aspectRatio: '9/16' }}
               >
@@ -300,7 +303,7 @@ const Webinar = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 1: O que é Inteligência Artificial <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(11/02/2026 - Quarta, 19h)</span>
+                Dia 1: O que é Inteligência Artificial <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(01/04/2026 - Terça, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -320,7 +323,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(18/02/2026 - Quarta, 19h)</span>
+                Dia 2: Como criar Prompts Magnéticos <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(08/04/2026 - Terça, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -340,7 +343,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(25/02/2026 - Quarta, 19h)</span>
+                Dia 3: As 5 Práticas da IA Generativa <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(15/04/2026 - Terça, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
