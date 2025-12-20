@@ -45,7 +45,7 @@ const Webinar = () => {
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
-                  11, 18 e 25 de Fevereiro 2026
+                  1, 8 e 15 de Abril 2026
                 </span>
               </div>
               
@@ -706,10 +706,10 @@ const Webinar = () => {
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  A imersão acontecerá em 3 quartas-feiras, às 19h:<br/>
-                  <strong>• 11 de Fevereiro de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
-                  <strong>• 18 de Fevereiro de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
-                  <strong>• 25 de Fevereiro de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa
+                  A imersão acontecerá em 3 terças-feiras, às 19h:<br/>
+                  <strong>• 1 de Abril de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
+                  <strong>• 8 de Abril de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
+                  <strong>• 15 de Abril de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa
                 </p>
               </AccordionContent>
             </AccordionItem>
