@@ -118,21 +118,33 @@ const VitorYuji = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-10 text-xl md:text-2xl leading-relaxed text-gray-700 font-light">
+                <div className="space-y-8 text-xl md:text-2xl leading-relaxed text-gray-700 font-light">
                   <p>
-                    Vitor Yuji tem apenas 15 anos e já formou <strong className="text-green-600 font-semibold">+460 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
+                    Vitor Yuji tem apenas 15 anos e já é <strong className="text-blue-600 font-semibold">referência em IA Generativa no Nordeste</strong>.
                   </p>
                   
                   <p>
-                    Membro da <strong className="text-blue-600 font-semibold">Adapta.org</strong> - selecionado pessoalmente pelo CEO <strong className="text-blue-600 font-semibold">Max Peters</strong> para ser jovem aprendiz da maior startup de IA Generativa da América Latina.
+                    Foi selecionado pelo CEO <strong className="text-blue-600 font-semibold">Max Peters</strong> para ser jovem aprendiz da <strong className="text-green-600 font-semibold">ADAPTA</strong>, a maior startup de IA do Brasil.
                   </p>
                   
                   <p>
-                    Co-fundador do <strong className="text-green-600 font-semibold">Mangue Mania</strong> - a primeira metodologia infantil de educação de manguezais de Sergipe, projeto <strong className="text-yellow-600 font-semibold">top30</strong> no prêmio nacional <strong className="text-green-600 font-semibold">Criativos Escola</strong>.
+                    Foi <strong className="text-blue-600 font-semibold">4x competidor no torneio de robótica First Lego League</strong>.
                   </p>
                   
                   <p>
-                    Também foi <strong className="text-blue-600 font-semibold">3x competidor da First Lego League</strong>, um dos maiores torneios de robótica do mundo. Hoje é mentor das principais equipes sergipanas.
+                    É co-fundador do <strong className="text-green-600 font-semibold">Mangue Mania</strong>, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de <strong className="text-yellow-600 font-semibold">400 alunos impactados</strong>.
+                  </p>
+                  
+                  <p>
+                    Já palestrou sobre IA para <strong className="text-blue-600 font-semibold">+1000 jovens</strong> de organizações como Instituto JCPM, Colégio Master e Babylândia.
+                  </p>
+                  
+                  <p>
+                    É também músico no <strong className="text-purple-600 font-semibold">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
+                  </p>
+                  
+                  <p>
+                    Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de <strong className="text-green-600 font-semibold">tornar a IA acessível para todos</strong>.
                   </p>
                 </div>
               </div>
@@ -326,7 +338,7 @@ const VitorYuji = () => {
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
-              ESSE NÃO É UM TREINAMENTO CONVENCIONAL
+              ESSA NÃO É UMA PALESTRA CONVENCIONAL
             </h2>
             
             <Card className="p-10 md:p-16 bg-white shadow-2xl rounded-3xl border-0">
@@ -345,6 +357,52 @@ const VitorYuji = () => {
                 </p>
               </div>
             </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleInscricao} 
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER ESCOLA
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* 5 Motivos */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 md:mb-24 text-gray-900 tracking-tight">
+              5 MOTIVOS PARA ESCOLHER VITOR YUJI
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+              <Card className="p-8 md:p-10 bg-gradient-to-br from-yellow-50 to-yellow-100 border-0 rounded-3xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+                <Star className="w-12 h-12 text-yellow-600 mb-6" />
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">O Fator X</h3>
+                <p className="text-lg text-gray-700">Carisma, energia e dinâmicas únicas</p>
+              </Card>
+              
+              <Card className="p-8 md:p-10 bg-gradient-to-br from-blue-50 to-blue-100 border-0 rounded-3xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+                <Users className="w-12 h-12 text-blue-600 mb-6" />
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Linguagem Simples</h3>
+                <p className="text-lg text-gray-700">Linguagem humana, zero jargões técnicos. Explicado como se eu estivesse explicando para sua avó</p>
+              </Card>
+              
+              <Card className="p-8 md:p-10 bg-gradient-to-br from-green-50 to-green-100 border-0 rounded-3xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+                <CheckCircle className="w-12 h-12 text-green-600 mb-6" />
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Ferramentas Práticas</h3>
+                <p className="text-lg text-gray-700">Testamos juntos no ChatGPT</p>
+              </Card>
+              
+              <Card className="p-8 md:p-10 bg-gradient-to-br from-purple-50 to-purple-100 border-0 rounded-3xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 lg:col-span-3 lg:max-w-2xl lg:mx-auto">
+                <Award className="w-12 h-12 text-purple-600 mb-6" />
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Personalizado</h3>
+                <p className="text-lg text-gray-700">Cada apresentação é personalizada para atender às necessidades específicas do seu público. Yuji dedica tempo para compreender os desafios da sua organização e adapta o conteúdo para transmitir exatamente o que o seu grupo precisa ouvir.</p>
+              </Card>
+            </div>
           </div>
           
           <div className="text-center mt-12">
