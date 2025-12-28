@@ -19,7 +19,7 @@ const VitorYuji = () => {
   ];
 
   const escolas = [
-    { name: "Colégio Master", students: "+50 alunos", image: "/lovable-uploads/colegio-master-fll.jpg" },
+    { name: "Colégio Master", students: "+30 alunos", image: "/lovable-uploads/colegio-master-new.jpg" },
     { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/palestra-babylandia-new.png" },
     { name: "Imersão IA Para Todos", students: "21 alunos", image: "/lovable-uploads/imersao-logo.png" },
     { name: "Colégio Estadual Dom Luciano", students: "+200 alunos", image: "/lovable-uploads/palestra-dom-luciano.png" },
@@ -370,9 +370,11 @@ const VitorYuji = () => {
                 </h3>
               </div>
               <div className="pl-14 space-y-3 text-gray-600">
-                <p>Tenho 15 anos. Sei como é estar na sala de aula agora, não à 10 anos atrás.</p>
+                <p>Tenho 15 anos. Sei como é estar na sala de aula agora, não há 10 anos atrás.</p>
+                <p>Sei o que prende atenção. Sei o que faz dormir.</p>
                 <p>Já palestrei para <span className="font-semibold text-black">+280 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
-                <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!"</p>
+                <p className="font-semibold text-black">E eles não ficaram no celular.</p>
+                <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!" - Eduardo, aluno da Imersão IA Para Todos 1</p>
               </div>
             </div>
 
@@ -427,7 +429,7 @@ const VitorYuji = () => {
                 </h3>
               </div>
               <div className="pl-14 space-y-3 text-gray-600">
-                <p>Antes da palestra, eu converso com você e entendo as necessidades específicas do seu público.</p>
+                <p>Antes da palestra, eu converso com você e entendo as necessidades específicas do seu público, porque me importo em entregar exatamente o que seu público precisa ouvir.</p>
                 <p className="font-semibold text-black">Sua empresa/escola é única. Minha palestra também será.</p>
               </div>
             </div>
@@ -442,7 +444,8 @@ const VitorYuji = () => {
               </div>
               <div className="pl-14 space-y-3 text-gray-600">
                 <p className="text-2xl font-bold text-black">Tenho 15 anos.</p>
-                <p>Se um garoto de 15 anos, de Aracaju, Sergipe, sem estrutura corporativa, consegue criar projetos que impactam centenas de pessoas com IA...</p>
+                <p>E isso incomoda. No melhor sentido possível.</p>
+                <p>Se um garoto de 15 anos - sem estrutura corporativa, sem orçamento milionário - consegue criar projetos que impactam centenas de pessoas com IA...</p>
                 <p className="font-bold text-yellow-600 text-lg">Então qualquer um pode.</p>
               </div>
             </div>
