@@ -15,16 +15,16 @@ const VitorYuji = () => {
   const [eventosIndex, setEventosIndex] = useState(0);
 
   const empresas = [
-    { name: "SHIELD", students: "+30 alunos", image: "/lovable-uploads/logo-empresa-1.png" }
+    { name: "SHIELD", students: "+30 alunos", image: "/lovable-uploads/palestra-shield.jpg" }
   ];
 
   const escolas = [
     { name: "Colégio Master", students: "+50 alunos", image: "/lovable-uploads/colegio-master-fll.jpg" },
-    { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/logo-empresa-2.png" },
+    { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/palestra-babylandia.png" },
     { name: "Imersão IA Para Todos", students: "21 alunos", image: "/lovable-uploads/imersao-logo.png" },
-    { name: "Colégio Estadual Dom Luciano", students: "+200 alunos", image: "/lovable-uploads/escola-dom-luciano.jpeg" },
+    { name: "Colégio Estadual Dom Luciano", students: "+200 alunos", image: "/lovable-uploads/palestra-dom-luciano.png" },
     { name: "SuperClass Itirapina e Brotas", students: "+20 alunos", image: "/lovable-uploads/escola-superclass.png" },
-    { name: "Colégio Estadual Ivo do Prado", students: "+100 alunos", image: "/lovable-uploads/logo-empresa-3.png" }
+    { name: "Colégio Estadual Ivo do Prado", students: "+100 alunos", image: "/lovable-uploads/palestra-ivo-prado.png" }
   ];
 
   const eventos = [
@@ -97,8 +97,8 @@ const VitorYuji = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Empresas */}
             <div className="text-center">
-              <h3 className="text-xl font-bold mb-6 text-teal-600 uppercase tracking-wider">Empresas</h3>
-              <div className="relative bg-gray-50 rounded-xl p-6 border-2 border-gray-200 min-h-[280px] flex flex-col items-center justify-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-black">Empresas</h3>
+              <div className="relative bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 min-h-[320px] flex flex-col">
                 {empresas.length > 1 && (
                   <button 
                     onClick={() => prevSlide(empresasIndex, empresas.length, setEmpresasIndex)}
@@ -108,13 +108,17 @@ const VitorYuji = () => {
                   </button>
                 )}
                 
-                <img 
-                  src={empresas[empresasIndex].image} 
-                  alt={empresas[empresasIndex].name} 
-                  className="h-24 w-auto object-contain mb-4"
-                />
-                <h4 className="font-bold text-lg text-gray-900">{empresas[empresasIndex].name}</h4>
-                <p className="text-teal-600 font-semibold">{empresas[empresasIndex].students}</p>
+                <div className="flex-1 w-full">
+                  <img 
+                    src={empresas[empresasIndex].image} 
+                    alt={empresas[empresasIndex].name} 
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-white">
+                  <h4 className="font-bold text-lg text-gray-900">{empresas[empresasIndex].name}</h4>
+                  <p className="text-teal-600 font-semibold">{empresas[empresasIndex].students}</p>
+                </div>
                 
                 {empresas.length > 1 && (
                   <button 
@@ -126,7 +130,7 @@ const VitorYuji = () => {
                 )}
                 
                 {empresas.length > 1 && (
-                  <div className="flex gap-2 mt-4">
+                  <div className="flex gap-2 justify-center pb-4">
                     {empresas.map((_, i) => (
                       <div key={i} className={`w-2 h-2 rounded-full ${i === empresasIndex ? 'bg-teal-500' : 'bg-gray-300'}`} />
                     ))}
@@ -137,8 +141,8 @@ const VitorYuji = () => {
 
             {/* Escolas */}
             <div className="text-center">
-              <h3 className="text-xl font-bold mb-6 text-teal-600 uppercase tracking-wider">Escolas</h3>
-              <div className="relative bg-gray-50 rounded-xl p-6 border-2 border-gray-200 min-h-[280px] flex flex-col items-center justify-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-black">Escolas</h3>
+              <div className="relative bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 min-h-[320px] flex flex-col">
                 <button 
                   onClick={() => prevSlide(escolasIndex, escolas.length, setEscolasIndex)}
                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 z-10"
@@ -146,13 +150,17 @@ const VitorYuji = () => {
                   <ChevronLeft size={20} />
                 </button>
                 
-                <img 
-                  src={escolas[escolasIndex].image} 
-                  alt={escolas[escolasIndex].name} 
-                  className="h-24 w-auto object-contain mb-4"
-                />
-                <h4 className="font-bold text-lg text-gray-900">{escolas[escolasIndex].name}</h4>
-                <p className="text-teal-600 font-semibold">{escolas[escolasIndex].students}</p>
+                <div className="flex-1 w-full">
+                  <img 
+                    src={escolas[escolasIndex].image} 
+                    alt={escolas[escolasIndex].name} 
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-white">
+                  <h4 className="font-bold text-lg text-gray-900">{escolas[escolasIndex].name}</h4>
+                  <p className="text-teal-600 font-semibold">{escolas[escolasIndex].students}</p>
+                </div>
                 
                 <button 
                   onClick={() => nextSlide(escolasIndex, escolas.length, setEscolasIndex)}
@@ -161,7 +169,7 @@ const VitorYuji = () => {
                   <ChevronRight size={20} />
                 </button>
                 
-                <div className="flex gap-2 mt-4">
+                <div className="flex gap-2 justify-center pb-4">
                   {escolas.map((_, i) => (
                     <div key={i} className={`w-2 h-2 rounded-full ${i === escolasIndex ? 'bg-teal-500' : 'bg-gray-300'}`} />
                   ))}
@@ -171,8 +179,8 @@ const VitorYuji = () => {
 
             {/* Eventos */}
             <div className="text-center">
-              <h3 className="text-xl font-bold mb-6 text-teal-600 uppercase tracking-wider">Eventos</h3>
-              <div className="relative bg-gray-50 rounded-xl p-6 border-2 border-gray-200 min-h-[280px] flex flex-col items-center justify-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-black">Eventos</h3>
+              <div className="relative bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 min-h-[320px] flex flex-col">
                 {eventos.length > 1 && (
                   <button 
                     onClick={() => prevSlide(eventosIndex, eventos.length, setEventosIndex)}
@@ -182,13 +190,17 @@ const VitorYuji = () => {
                   </button>
                 )}
                 
-                <img 
-                  src={eventos[eventosIndex].image} 
-                  alt={eventos[eventosIndex].name} 
-                  className="h-24 w-auto object-contain mb-4"
-                />
-                <h4 className="font-bold text-lg text-gray-900">{eventos[eventosIndex].name}</h4>
-                <p className="text-teal-600 font-semibold">{eventos[eventosIndex].students}</p>
+                <div className="flex-1 w-full">
+                  <img 
+                    src={eventos[eventosIndex].image} 
+                    alt={eventos[eventosIndex].name} 
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-white">
+                  <h4 className="font-bold text-lg text-gray-900">{eventos[eventosIndex].name}</h4>
+                  <p className="text-teal-600 font-semibold">{eventos[eventosIndex].students}</p>
+                </div>
                 
                 {eventos.length > 1 && (
                   <button 
@@ -200,7 +212,7 @@ const VitorYuji = () => {
                 )}
                 
                 {eventos.length > 1 && (
-                  <div className="flex gap-2 mt-4">
+                  <div className="flex gap-2 justify-center pb-4">
                     {eventos.map((_, i) => (
                       <div key={i} className={`w-2 h-2 rounded-full ${i === eventosIndex ? 'bg-teal-500' : 'bg-gray-300'}`} />
                     ))}
