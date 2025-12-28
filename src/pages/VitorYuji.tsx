@@ -20,7 +20,7 @@ const VitorYuji = () => {
 
   const escolas = [
     { name: "Colégio Master", students: "+50 alunos", image: "/lovable-uploads/colegio-master-fll.jpg" },
-    { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/palestra-babylandia.png" },
+    { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/palestra-babylandia-new.png" },
     { name: "Imersão IA Para Todos", students: "21 alunos", image: "/lovable-uploads/imersao-logo.png" },
     { name: "Colégio Estadual Dom Luciano", students: "+200 alunos", image: "/lovable-uploads/palestra-dom-luciano.png" },
     { name: "SuperClass Itirapina e Brotas", students: "+20 alunos", image: "/lovable-uploads/escola-superclass.png" },
@@ -234,7 +234,7 @@ const VitorYuji = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-2/5">
               <img 
-                src="/lovable-uploads/vitor-yuji-new-photo.png" 
+                src="/lovable-uploads/vitor-yuji-summit.jpg" 
                 alt="Vitor Yuji" 
                 className="rounded-xl border-2 border-teal-400/30 w-full h-[500px] object-cover object-top"
               />
@@ -354,128 +354,96 @@ const VitorYuji = () => {
       </section>
 
       {/* 5 Motivos */}
-      <section className="py-16 md:py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-7xl">
+      <section className="py-16 md:py-24 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
             5 MOTIVOS PRA ESCOLHER VITOR YUJI
           </h2>
           
-          <div className="space-y-0">
+          <div className="space-y-8">
             {/* Motivo 1 */}
-            <div className="bg-gradient-to-r from-teal-50 to-white py-12 px-6 md:px-16 border-b border-gray-200">
-              <div className="max-w-5xl mx-auto">
-                <div className="flex items-start gap-6">
-                  <span className="text-5xl md:text-6xl font-bold text-teal-500 leading-none">1</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                      Eu falo a língua do público jovem
-                    </h3>
-                    <div className="space-y-4 text-gray-700 text-lg">
-                      <p>Tenho 15 anos. Sei como é estar na sala de aula agora, não à 10 anos atrás.</p>
-                      <p>Sei o que prende atenção. Sei o que faz dormir.</p>
-                      <p>Já palestrei para <span className="font-bold text-black">+280 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
-                      <p className="font-bold text-black text-xl">E eles não ficaram no celular.</p>
-                      <p className="italic text-teal-600 text-xl border-l-4 border-teal-400 pl-4 mt-4">"Se ele fosse meu professor, eu gostaria muito mais das aulas!"</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-10 h-10 rounded-full bg-teal-500 text-white font-bold flex items-center justify-center text-lg">1</span>
+                <h3 className="text-xl md:text-2xl font-bold text-black">
+                  Eu falo a língua do público jovem
+                </h3>
+              </div>
+              <div className="pl-14 space-y-3 text-gray-600">
+                <p>Tenho 15 anos. Sei como é estar na sala de aula agora, não à 10 anos atrás.</p>
+                <p>Já palestrei para <span className="font-semibold text-black">+280 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
+                <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!"</p>
               </div>
             </div>
 
             {/* Motivo 2 */}
-            <div className="bg-white py-12 px-6 md:px-16 border-b border-gray-200">
-              <div className="max-w-5xl mx-auto">
-                <div className="flex items-start gap-6">
-                  <span className="text-5xl md:text-6xl font-bold text-teal-500 leading-none">2</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                      Não sou teórico, sou executor
-                    </h3>
-                    <div className="grid md:grid-cols-2 gap-8 text-gray-700 text-lg">
-                      <div className="bg-gray-50 p-6 rounded-xl">
-                        <p className="font-bold text-black mb-4 text-xl">Aprendi IA com:</p>
-                        <ul className="space-y-2 list-disc list-inside">
-                          <li>Mentoria exclusiva com o CEO da Adapta.org</li>
-                          <li>+10 cursos da Adapta.org</li>
-                          <li>2 congressos de IA</li>
-                          <li>+5 livros de IA</li>
-                        </ul>
-                      </div>
-                      <div className="bg-teal-50 p-6 rounded-xl">
-                        <p className="font-bold text-black mb-4 text-xl">E apliquei em:</p>
-                        <ul className="space-y-2 list-disc list-inside">
-                          <li>Cofundador do Mangue Mania, a maior metodologia ativa sobre manguezais do Nordeste</li>
-                          <li>Cofundador do ArcheoLab, a primeira oficina prática de arqueologia de Sergipe</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-10 h-10 rounded-full bg-teal-500 text-white font-bold flex items-center justify-center text-lg">2</span>
+                <h3 className="text-xl md:text-2xl font-bold text-black">
+                  Não sou teórico, sou executor
+                </h3>
+              </div>
+              <div className="pl-14 grid md:grid-cols-2 gap-6 text-gray-600">
+                <div>
+                  <p className="font-semibold text-black mb-2">Aprendi IA com:</p>
+                  <ul className="space-y-1 text-sm">
+                    <li>• Mentoria com o CEO da Adapta.org</li>
+                    <li>• +10 cursos da Adapta.org</li>
+                    <li>• 2 congressos de IA</li>
+                    <li>• +5 livros de IA</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-black mb-2">E apliquei em:</p>
+                  <ul className="space-y-1 text-sm">
+                    <li>• Cofundador do Mangue Mania</li>
+                    <li>• Cofundador do ArcheoLab</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
             {/* Motivo 3 */}
-            <div className="bg-gradient-to-r from-teal-50 to-white py-12 px-6 md:px-16 border-b border-gray-200">
-              <div className="max-w-5xl mx-auto">
-                <div className="flex items-start gap-6">
-                  <span className="text-5xl md:text-6xl font-bold text-teal-500 leading-none">3</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                      Ferramentas práticas
-                    </h3>
-                    <div className="space-y-4 text-gray-700 text-lg">
-                      <p>Sua equipe não precisa de mais um palestrante lendo slides sobre "o futuro da IA".</p>
-                      <p className="font-bold text-black text-xl">Precisa ver IA funcionando ao vivo.</p>
-                      <p>Na minha palestra, a gente não fala sobre ChatGPT.</p>
-                      <p className="text-2xl font-bold text-teal-600">A gente USA ChatGPT.</p>
-                      <p>Ao vivo. Na hora. Com casos reais da sua empresa.</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-10 h-10 rounded-full bg-teal-500 text-white font-bold flex items-center justify-center text-lg">3</span>
+                <h3 className="text-xl md:text-2xl font-bold text-black">
+                  Ferramentas práticas
+                </h3>
+              </div>
+              <div className="pl-14 space-y-3 text-gray-600">
+                <p>Sua equipe não precisa de mais um palestrante lendo slides sobre "o futuro da IA".</p>
+                <p className="font-semibold text-black">Na minha palestra, a gente USA ChatGPT. Ao vivo. Na hora.</p>
               </div>
             </div>
 
             {/* Motivo 4 */}
-            <div className="bg-white py-12 px-6 md:px-16 border-b border-gray-200">
-              <div className="max-w-5xl mx-auto">
-                <div className="flex items-start gap-6">
-                  <span className="text-5xl md:text-6xl font-bold text-teal-500 leading-none">4</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                      Personalizado
-                    </h3>
-                    <div className="space-y-4 text-gray-700 text-lg">
-                      <p>Antes da palestra, eu converso com você e entendo as necessidades específicas do seu público.</p>
-                      <p>Porque eu me importo em entregar exatamente o que seu público precisa ouvir.</p>
-                      <p className="font-bold text-black text-xl">Sua empresa/escola é única.</p>
-                      <p className="text-2xl font-bold text-teal-600">Minha palestra também será.</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-10 h-10 rounded-full bg-teal-500 text-white font-bold flex items-center justify-center text-lg">4</span>
+                <h3 className="text-xl md:text-2xl font-bold text-black">
+                  Personalizado
+                </h3>
+              </div>
+              <div className="pl-14 space-y-3 text-gray-600">
+                <p>Antes da palestra, eu converso com você e entendo as necessidades específicas do seu público.</p>
+                <p className="font-semibold text-black">Sua empresa/escola é única. Minha palestra também será.</p>
               </div>
             </div>
 
             {/* Motivo 5 */}
-            <div className="bg-gradient-to-r from-yellow-50 to-white py-12 px-6 md:px-16">
-              <div className="max-w-5xl mx-auto">
-                <div className="flex items-start gap-6">
-                  <span className="text-5xl md:text-6xl font-bold text-yellow-500 leading-none">5</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                      Choque seu público com minha idade
-                    </h3>
-                    <div className="space-y-4 text-gray-700 text-lg">
-                      <p className="text-3xl font-bold text-black">Tenho 15 anos.</p>
-                      <p>E isso incomoda. No melhor sentido possível.</p>
-                      <p>Se um garoto de 15 anos, de Aracaju, Sergipe...</p>
-                      <p>Sem estrutura corporativa, sem orçamento milionário...</p>
-                      <p>Consegue criar projetos que impactam centenas de pessoas com IA...</p>
-                      <p className="text-2xl font-bold text-yellow-600">Então qualquer um pode.</p>
-                      <p className="pt-4">Sua equipe não precisa de mais um palestrante experiente dizendo "vocês conseguem".</p>
-                      <p className="font-bold text-black text-xl">Precisa de alguém que prove na prática que idade, experiência e recursos não são desculpa.</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-yellow-400">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-10 h-10 rounded-full bg-yellow-400 text-black font-bold flex items-center justify-center text-lg">5</span>
+                <h3 className="text-xl md:text-2xl font-bold text-black">
+                  Choque seu público com minha idade
+                </h3>
+              </div>
+              <div className="pl-14 space-y-3 text-gray-600">
+                <p className="text-2xl font-bold text-black">Tenho 15 anos.</p>
+                <p>Se um garoto de 15 anos, de Aracaju, Sergipe, sem estrutura corporativa, consegue criar projetos que impactam centenas de pessoas com IA...</p>
+                <p className="font-bold text-yellow-600 text-lg">Então qualquer um pode.</p>
               </div>
             </div>
           </div>
