@@ -15,6 +15,11 @@ const Home = () => {
       link: "/imersao"
     },
     {
+      image: "/lovable-uploads/card-palestras.png",
+      alt: "Palestras",
+      link: "/palestras"
+    },
+    {
       image: "/lovable-uploads/card-manual.png",
       alt: "Manual de Inteligência Artificial Para Todos",
       link: "/manual"
@@ -22,7 +27,7 @@ const Home = () => {
     {
       image: "/lovable-uploads/card-instagram.png",
       alt: "Instagram",
-      link: "https://www.instagram.com/vitoryujim/"
+      link: "https://www.instagram.com/vitor.yuji_/"
     },
     {
       image: "/lovable-uploads/card-entrevista.png",
@@ -30,17 +35,12 @@ const Home = () => {
       link: "https://www.youtube.com/watch?v=Lrj2LPw80AM&t=523s"
     },
     {
-      image: "/lovable-uploads/card-linkedin.png",
-      alt: "LinkedIn",
-      link: "https://www.linkedin.com/in/vitor-yuji-minomo/"
-    },
-    {
       image: "/lovable-uploads/card-sobre.png",
       alt: "Sobre Mim",
       link: "/bio"
     },
     {
-      image: "/lovable-uploads/card-whatsapp.png",
+      image: "/lovable-uploads/card-contato.png",
       alt: "Contato - WhatsApp",
       link: "https://wa.me/5579981255774"
     }
@@ -71,10 +71,6 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-2 text-gray-900">
               Vitor Yuji
             </h1>
-            
-            <p className="text-gray-600 text-base">
-              @vitoryujim
-            </p>
           </div>
 
           {/* Action Cards */}
