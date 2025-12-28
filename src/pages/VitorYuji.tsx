@@ -308,19 +308,47 @@ const VitorYuji = () => {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {["Carlos", "Max", "Matheus"].map((name) => (
-              <div key={name} className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16] flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <p className="font-medium">{name}</p>
-                  <p className="text-sm">Vídeo em breve</p>
-                </div>
+            {/* Carlos Menezes */}
+            <div className="flex flex-col">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+                <video 
+                  src="/lovable-uploads/video-carlos-menezes.mp4" 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster="/lovable-uploads/vitor-yuji-palestra-1.png"
+                />
               </div>
-            ))}
+              <p className="text-white font-semibold text-center mt-3">Carlos Menezes</p>
+              <p className="text-gray-400 text-sm text-center">Empresário</p>
+            </div>
+
+            {/* Matheus Barreto */}
+            <div className="flex flex-col">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+                <video 
+                  src="/lovable-uploads/video-matheus-barreto.mp4" 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster="/lovable-uploads/vitor-yuji-palestra-1.png"
+                />
+              </div>
+              <p className="text-white font-semibold text-center mt-3">Matheus Barreto</p>
+              <p className="text-gray-400 text-sm text-center">Aluno do 5º ano</p>
+            </div>
+
+            {/* Karina Oliveira */}
+            <div className="flex flex-col">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+                <video 
+                  src="/lovable-uploads/video-karina-oliveira.mp4" 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster="/lovable-uploads/vitor-yuji-palestra-1.png"
+                />
+              </div>
+              <p className="text-white font-semibold text-center mt-3">Karina Oliveira</p>
+              <p className="text-gray-400 text-sm text-center">Médica Oncologista</p>
+            </div>
           </div>
         </div>
       </section>
