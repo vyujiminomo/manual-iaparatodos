@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, MessageCircle, Users, BookOpen, Sparkles, Target, Zap } from "lucide-react";
 
 const VitorYuji = () => {
   useDynamicMeta({
@@ -13,6 +13,15 @@ const VitorYuji = () => {
   const [empresasIndex, setEmpresasIndex] = useState(0);
   const [escolasIndex, setEscolasIndex] = useState(0);
   const [eventosIndex, setEventosIndex] = useState(0);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const empresas = [
     { name: "SHIELD", students: "+30 alunos", image: "/lovable-uploads/palestra-shield.jpg" }
@@ -38,6 +47,13 @@ const VitorYuji = () => {
     }
   };
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const nextSlide = (current: number, total: number, setter: (n: number) => void) => {
     setter((current + 1) % total);
   };
@@ -48,8 +64,37 @@ const VitorYuji = () => {
 
   return (
     <div className="min-h-screen bg-black font-sans">
+      {/* Fixed Header */}
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="flex items-center justify-between h-16">
+            <span className="text-white font-bold text-lg">VITOR YUJI</span>
+            <nav className="hidden md:flex items-center gap-6">
+              <button onClick={() => scrollToSection('experiencia')} className="text-gray-300 hover:text-white transition-colors text-sm">
+                Experiência
+              </button>
+              <button onClick={() => scrollToSection('sobre')} className="text-gray-300 hover:text-white transition-colors text-sm">
+                Sobre
+              </button>
+              <button onClick={() => scrollToSection('depoimentos')} className="text-gray-300 hover:text-white transition-colors text-sm">
+                Depoimentos
+              </button>
+              <button onClick={() => scrollToSection('motivos')} className="text-gray-300 hover:text-white transition-colors text-sm">
+                Por que eu?
+              </button>
+            </nav>
+            <Button 
+              onClick={scrollToContact}
+              size="sm"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-sm px-5 py-2 rounded-full"
+            >
+              Contato
+            </Button>
+          </div>
+        </div>
+      </header>
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
+      <section className="relative bg-black text-white pt-24 pb-12 md:pt-28 md:pb-20 px-4 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -88,7 +133,7 @@ const VitorYuji = () => {
       </section>
 
       {/* Já Palestrei Para Section */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      <section id="experiencia" className="py-16 md:py-24 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
             JÁ PALESTREI PARA:
@@ -225,42 +270,75 @@ const VitorYuji = () => {
       </section>
 
       {/* Sobre o Expert */}
-      <section className="py-16 md:py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-4xl">
+      <section id="sobre" className="py-16 md:py-24 px-4 bg-black">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             OLÁ, SOU VITOR YUJI
           </h2>
           
-          <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-start">
             <div className="w-full md:w-2/5">
               <img 
                 src="/lovable-uploads/vitor-yuji-summit.jpg" 
                 alt="Vitor Yuji" 
-                className="rounded-xl border-2 border-teal-400/30 w-full h-[500px] object-cover object-top"
+                className="rounded-xl border-2 border-teal-400/30 w-full h-[450px] object-cover object-top"
               />
             </div>
             
-            <div className="w-full md:w-3/5 space-y-4 text-gray-300">
-              <p className="text-lg">
-                <span className="text-white font-bold">Vitor Yuji tem apenas 15 anos</span> e já é referência em IA Generativa no Nordeste.
+            <div className="w-full md:w-3/5 space-y-5">
+              <p className="text-lg text-gray-200">
+                <span className="text-white font-bold text-xl">15 anos</span> e já sou referência em IA Generativa no Nordeste.
               </p>
-              <p>
-                Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da <span className="text-teal-400 font-semibold">ADAPTA</span>, a maior startup de IA do Brasil.
-              </p>
-              <p>
-                Foi <span className="text-teal-400 font-semibold">4x competidor</span> no torneio de robótica First Lego League.
-              </p>
-              <p>
-                É co-fundador do <span className="text-teal-400 font-semibold">Mangue Mania</span>, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com mais de 400 alunos impactados.
-              </p>
-              <p>
-                Já palestrou sobre IA para <span className="text-white font-bold">+1000 jovens</span> de organizações como Instituto JCPM, Colégio Master e Babylândia.
-              </p>
-              <p>
-                É também músico no <span className="text-teal-400 font-semibold">Movimento Escalada</span>, um dos principais grupos de jovens cristãos do Nordeste.
-              </p>
-              <p className="text-white font-medium pt-4">
-                Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Sparkles className="w-4 h-4 text-teal-400" />
+                  </div>
+                  <p className="text-gray-300">
+                    Jovem aprendiz da <span className="text-teal-400 font-semibold">ADAPTA</span>, a maior startup de IA do Brasil
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Target className="w-4 h-4 text-teal-400" />
+                  </div>
+                  <p className="text-gray-300">
+                    <span className="text-teal-400 font-semibold">4x competidor</span> no torneio de robótica First Lego League
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <BookOpen className="w-4 h-4 text-teal-400" />
+                  </div>
+                  <p className="text-gray-300">
+                    Co-fundador do <span className="text-teal-400 font-semibold">Mangue Mania</span> com +400 alunos impactados
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Users className="w-4 h-4 text-teal-400" />
+                  </div>
+                  <p className="text-gray-300">
+                    Palestrei para <span className="text-white font-bold">+1000 jovens</span> em diversas organizações
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Zap className="w-4 h-4 text-teal-400" />
+                  </div>
+                  <p className="text-gray-300">
+                    Músico no <span className="text-teal-400 font-semibold">Movimento Escalada</span>
+                  </p>
+                </div>
+              </div>
+              
+              <p className="text-white font-medium pt-2 border-t border-gray-800 mt-6">
+                Minha missão: tornar a IA acessível para todos.
               </p>
             </div>
           </div>
@@ -301,16 +379,16 @@ const VitorYuji = () => {
       </section>
 
       {/* Video Testimonials */}
-      <section className="py-16 md:py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-6xl">
+      <section id="depoimentos" className="py-16 md:py-24 px-4 bg-gray-950">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             DEPOIMENTOS
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* Carlos Menezes */}
             <div className="flex flex-col">
-              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 aspect-[9/14]">
                 <video 
                   src="/lovable-uploads/video-carlos-menezes.mp4" 
                   controls 
@@ -319,12 +397,12 @@ const VitorYuji = () => {
                 />
               </div>
               <p className="text-white font-semibold text-center mt-3">Carlos Menezes</p>
-              <p className="text-gray-400 text-sm text-center">Empresário</p>
+              <p className="text-gray-500 text-sm text-center">Empresário</p>
             </div>
 
             {/* Matheus Barreto */}
             <div className="flex flex-col">
-              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 aspect-[9/14]">
                 <video 
                   src="/lovable-uploads/video-matheus-barreto.mp4" 
                   controls 
@@ -333,12 +411,12 @@ const VitorYuji = () => {
                 />
               </div>
               <p className="text-white font-semibold text-center mt-3">Matheus Barreto</p>
-              <p className="text-gray-400 text-sm text-center">Aluno do 5º ano</p>
+              <p className="text-gray-500 text-sm text-center">Aluno do 5º ano</p>
             </div>
 
             {/* Karina Oliveira */}
             <div className="flex flex-col">
-              <div className="bg-gray-900 rounded-xl overflow-hidden border-2 border-teal-400/30 aspect-[9/16]">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 aspect-[9/14]">
                 <video 
                   src="/lovable-uploads/video-karina-oliveira.mp4" 
                   controls 
@@ -347,14 +425,14 @@ const VitorYuji = () => {
                 />
               </div>
               <p className="text-white font-semibold text-center mt-3">Karina Oliveira</p>
-              <p className="text-gray-400 text-sm text-center">Médica Oncologista</p>
+              <p className="text-gray-500 text-sm text-center">Médica Oncologista</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* 5 Motivos */}
-      <section className="py-16 md:py-24 px-4 bg-gray-50">
+      <section id="motivos" className="py-16 md:py-24 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
             5 MOTIVOS PRA ESCOLHER VITOR YUJI
@@ -454,7 +532,7 @@ const VitorYuji = () => {
       </section>
 
       {/* Written Testimonials */}
-      <section className="py-16 md:py-24 px-4 bg-black">
+      <section className="py-16 md:py-24 px-4 bg-gray-950">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             O QUE DIZEM SOBRE A PALESTRA
