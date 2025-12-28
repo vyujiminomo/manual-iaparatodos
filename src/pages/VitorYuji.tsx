@@ -286,8 +286,8 @@ const VitorYuji = () => {
             </div>
             
             <div className="w-full md:w-3/5 space-y-5">
-              <p className="text-lg text-gray-200">
-                <span className="text-white font-bold text-xl">15 anos</span> e já sou referência em IA Generativa no Nordeste.
+              <p className="text-xl text-white font-bold">
+                15 anos e já sou referência em IA Generativa no Nordeste.
               </p>
               
               <div className="space-y-4">
@@ -305,7 +305,7 @@ const VitorYuji = () => {
                     <Target className="w-4 h-4 text-teal-400" />
                   </div>
                   <p className="text-gray-300">
-                    <span className="text-teal-400 font-semibold">4x competidor</span> no torneio de robótica First Lego League
+                    4x competidor no torneio de robótica First Lego League
                   </p>
                 </div>
                 
@@ -337,7 +337,7 @@ const VitorYuji = () => {
                 </div>
               </div>
               
-              <p className="text-white font-medium pt-2 border-t border-gray-800 mt-6">
+              <p className="text-white font-medium pt-4 border-t border-gray-800 mt-6">
                 Minha missão: tornar a IA acessível para todos.
               </p>
             </div>

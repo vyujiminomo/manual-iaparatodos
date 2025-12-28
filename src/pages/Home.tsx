@@ -3,7 +3,7 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 
 const Home = () => {
   useDynamicMeta({
-    title: "Treinamento de IA gratuito pra escolas sergipanas",
+    title: "O palestrante de IA de 15 anos",
     description: "Um jovem de 15 anos da maior startup de IA do Brasil quer revolucionar a educação em Sergipe.",
     image: "/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
   });
