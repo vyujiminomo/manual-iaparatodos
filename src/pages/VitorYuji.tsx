@@ -450,7 +450,7 @@ const VitorYuji = () => {
               <div className="pl-14 space-y-3 text-gray-600">
                 <p>Tenho 15 anos. Sei como é estar na sala de aula agora, não há 10 anos atrás.</p>
                 <p>Sei o que prende atenção. Sei o que faz dormir.</p>
-                <p>Já palestrei para <span className="font-semibold text-black">+280 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
+                <p>Já palestrei para <span className="font-semibold text-black">+1200 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
                 <p className="font-semibold text-black">E eles não ficaram no celular.</p>
                 <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!" - Eduardo, aluno da Imersão IA Para Todos 1</p>
               </div>
@@ -494,7 +494,7 @@ const VitorYuji = () => {
               </div>
               <div className="pl-14 space-y-3 text-gray-600">
                 <p>Sua equipe não precisa de mais um palestrante lendo slides sobre "o futuro da IA".</p>
-                <p className="font-semibold text-black">Na minha palestra, a gente USA ChatGPT. Ao vivo. Na hora.</p>
+                <p className="font-semibold text-black">Na minha palestra, a gente usa ChatGPT. Ao vivo. Na hora.</p>
               </div>
             </div>
 
