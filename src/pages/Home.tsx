@@ -8,11 +8,12 @@ const Home = () => {
     image: "/lovable-uploads/e20266cf-968b-4e4b-aa62-c8c09f3ab0bc.png"
   });
 
-  const cards = [
+  const cards: { image: string; alt: string; link: string; description?: string }[] = [
     {
       image: "/lovable-uploads/imersao-logo.png",
       alt: "Imersão IA Para Todos",
-      link: "/imersao"
+      link: "/imersao",
+      description: "Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte e ferramentas práticas."
     },
     {
       image: "/lovable-uploads/card-palestras.png",
@@ -76,17 +77,23 @@ const Home = () => {
           {/* Action Cards */}
           <div className="space-y-3 mb-8">
             {cards.map((card, index) => (
-              <button
-                key={index}
-                onClick={() => handleCardClick(card.link)}
-                className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-white"
-              >
-                <img 
-                  src={card.image} 
-                  alt={card.alt}
-                  className="w-full h-auto object-cover"
-                />
-              </button>
+              <div key={index}>
+                <button
+                  onClick={() => handleCardClick(card.link)}
+                  className="w-full rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] bg-white"
+                >
+                  <img 
+                    src={card.image} 
+                    alt={card.alt}
+                    className="w-full h-auto object-cover"
+                  />
+                </button>
+                {card.description && (
+                  <p className="text-center text-gray-600 text-sm mt-2 px-2">
+                    {card.description}
+                  </p>
+                )}
+              </div>
             ))}
           </div>
         </div>
