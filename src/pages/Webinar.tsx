@@ -54,7 +54,7 @@ const Webinar = () => {
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
-                Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte 24/7 e networking.
+                Vá do zero ao avançado em IA, com a mentoria ao vivo avaliada em média 5/5 pelos alunos - 3 encontros, suporte e ferramentas práticas.
               </p>
               
               <Button 
