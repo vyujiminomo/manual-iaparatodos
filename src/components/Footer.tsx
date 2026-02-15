@@ -28,12 +28,12 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Instagram className="text-ai-blue w-4 h-4" />
                 <a 
-                  href="https://www.instagram.com/vitoryujim" 
+                  href="https://www.instagram.com/vitor.yuji_/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-poppins text-gray-300 text-sm hover:text-ai-blue transition-colors"
                 >
-                  @vitoryujim
+                  @vitor.yuji_
                 </a>
               </div>
               <div className="flex items-center space-x-2">
