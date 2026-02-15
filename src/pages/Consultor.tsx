@@ -320,12 +320,12 @@ const Consultor = () => {
                 <div className="flex items-center justify-end space-x-2">
                   <Instagram className="w-4 h-4 text-ai-blue" />
                   <a 
-                    href="https://www.instagram.com/vitoryujim" 
+                    href="https://www.instagram.com/vitor.yuji_/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-sm text-gray-300 hover:text-ai-blue transition-colors"
                   >
-                    @vitoryujim
+                    @vitor.yuji_
                   </a>
                 </div>
                 <div className="flex items-center justify-end space-x-2">
