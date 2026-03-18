@@ -98,7 +98,7 @@ const UpgradePresencial = () => {
               <div className="flex items-center gap-3 justify-center text-primary-foreground/80 pt-2">
                 <MapPin className="w-5 h-5 text-accent" />
                 <p className="text-base md:text-lg font-semibold">
-                  Casa Gambiarra, bairro Garcia — Aracaju, SE
+                  Casa Gambiarra, bairro Jardins — Aracaju, SE
                 </p>
               </div>
 
