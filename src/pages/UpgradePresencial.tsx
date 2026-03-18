@@ -3,7 +3,7 @@ import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, AlertTriangle, Users, Coffee, MessageCircle } from "lucide-react";
 
-const HOTMART_LINK = "https://pay.hotmart.com/N100239403C";
+const HOTMART_LINK = "https://pay.hotmart.com/H104969759G";
 
 const UpgradePresencial = () => {
   useDynamicMeta({
