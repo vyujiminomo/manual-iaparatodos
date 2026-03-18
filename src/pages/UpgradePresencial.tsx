@@ -116,8 +116,8 @@ const UpgradePresencial = () => {
                 O upgrade para a versão presencial foi criado exclusivamente para quem acabou de adquirir a Imersão e só está disponível <strong className="text-accent">AQUI, nesta página</strong>.
               </p>
 
-              <div className="flex items-start gap-3 bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-5">
-                <AlertTriangle className="w-6 h-6 text-yellow-400 mt-0.5 shrink-0" />
+              <div className="flex items-start gap-3 bg-accent/10 border border-accent/20 rounded-xl p-5">
+                <AlertTriangle className="w-6 h-6 text-accent mt-0.5 shrink-0" />
                 <p className="font-semibold">
                   Quando você fechar esta página, ele não estará mais disponível para compra.
                 </p>
