@@ -102,9 +102,9 @@ const UpgradePresencial = () => {
                 </p>
               </div>
 
-              <div className="flex items-center gap-3 justify-center bg-destructive/20 text-destructive-foreground rounded-xl p-4">
-                <AlertTriangle className="w-6 h-6 text-yellow-400 shrink-0" />
-                <p className="text-base md:text-lg font-bold">
+              <div className="flex items-center gap-3 justify-center bg-destructive/20 rounded-xl p-4">
+                <AlertTriangle className="w-6 h-6 text-accent shrink-0" />
+                <p className="text-base md:text-lg font-bold text-primary-foreground">
                   Apenas 50 vagas presenciais.
                 </p>
               </div>
