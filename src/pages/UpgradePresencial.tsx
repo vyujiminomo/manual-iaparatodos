@@ -134,7 +134,7 @@ const UpgradePresencial = () => {
             {/* Final CTA */}
             <a href={HOTMART_LINK} target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg md:text-xl font-bold py-7 rounded-xl shadow-lg shadow-accent/20 transition-all hover:scale-[1.02]">
-                Quero Fazer Parte <ArrowRight className="ml-2 w-6 h-6" />
+                Quero Fazer Upgrade <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </a>
 
