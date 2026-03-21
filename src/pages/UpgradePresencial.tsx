@@ -18,15 +18,14 @@ const UpgradePresencial = () => {
         <div className="max-w-3xl mx-auto">
 
           {/* Video Placeholder */}
-          <div className="aspect-video bg-primary/80 rounded-2xl flex items-center justify-center mb-8 border border-primary-foreground/10 overflow-hidden">
-            <div className="text-center space-y-3">
-              <div className="w-20 h-20 rounded-full bg-primary-foreground/10 flex items-center justify-center mx-auto">
-                <svg className="w-10 h-10 text-primary-foreground/70" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-primary-foreground/50 text-sm">Vídeo em breve</p>
-            </div>
+          <div className="aspect-[9/16] max-w-sm mx-auto rounded-2xl mb-8 border border-primary-foreground/10 overflow-hidden">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/hZrZcatqUsE"
+              title="VSL Upgrade Presencial"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
 
           {/* CTA Button */}
