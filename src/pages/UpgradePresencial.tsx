@@ -1,31 +1,54 @@
 
+import { useState, useRef } from "react";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin, AlertTriangle, Users, Coffee, MessageCircle } from "lucide-react";
+import { ArrowRight, MapPin, AlertTriangle, Users, Coffee, MessageCircle, Volume2, VolumeX } from "lucide-react";
 
 const HOTMART_LINK = "https://pay.hotmart.com/H104969759G";
 
 const UpgradePresencial = () => {
+  const [isMuted, setIsMuted] = useState(true);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
   useDynamicMeta({
     title: "Upgrade Presencial - Imersão IA Para Todos",
     description: "Faça o upgrade para a versão presencial da Imersão IA Para Todos. Apenas 50 vagas.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
+  const toggleMute = () => {
+    const newMuted = !isMuted;
+    setIsMuted(newMuted);
+    if (iframeRef.current?.contentWindow) {
+      iframeRef.current.contentWindow.postMessage(
+        JSON.stringify({ event: "command", func: newMuted ? "mute" : "unMute" }),
+        "*"
+      );
+    }
+  };
+
   return (
     <div className="min-h-screen bg-foreground font-poppins text-primary-foreground">
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-3xl mx-auto">
 
-          {/* Video Placeholder */}
-          <div className="aspect-[9/16] max-w-sm mx-auto rounded-2xl mb-8 border border-primary-foreground/10 overflow-hidden">
+          {/* Video */}
+          <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl mb-8 border border-primary-foreground/10 overflow-hidden">
             <iframe
+              ref={iframeRef}
               className="w-full h-full"
-              src="https://www.youtube.com/embed/hZrZcatqUsE?autoplay=1&mute=1&controls=0&loop=1&playlist=hZrZcatqUsE&playsinline=1"
+              src="https://www.youtube.com/embed/hZrZcatqUsE?autoplay=1&mute=1&controls=0&loop=1&playlist=hZrZcatqUsE&playsinline=1&enablejsapi=1"
               title="VSL Upgrade Presencial"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <button
+              onClick={toggleMute}
+              className="absolute bottom-4 right-4 bg-foreground/80 backdrop-blur-sm text-primary-foreground p-3 rounded-full hover:bg-foreground transition-colors shadow-lg"
+              aria-label={isMuted ? "Ativar som" : "Desativar som"}
+            >
+              {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+            </button>
           </div>
 
           {/* CTA Button */}
