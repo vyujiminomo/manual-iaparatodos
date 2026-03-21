@@ -51,7 +51,15 @@ const UpgradePresencial = () => {
             </button>
           </div>
 
-          {/* CTA Button */}
+          {/* Price + CTA Button */}
+          <div className="text-center mb-2">
+            <p className="text-2xl md:text-3xl font-bold text-accent">
+              6x de R$ 8,82
+            </p>
+            <p className="text-primary-foreground/60 text-sm mt-1">
+              ou R$ 47,00 à vista
+            </p>
+          </div>
           <a href={HOTMART_LINK} target="_blank" rel="noopener noreferrer" className="block mb-12">
             <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg md:text-xl font-bold py-7 rounded-xl shadow-lg shadow-accent/20 transition-all hover:scale-[1.02]">
               Quero Fazer Upgrade <ArrowRight className="ml-2 w-6 h-6" />
