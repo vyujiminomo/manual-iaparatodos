@@ -21,7 +21,7 @@ const UpgradePresencial = () => {
           <div className="aspect-[9/16] max-w-sm mx-auto rounded-2xl mb-8 border border-primary-foreground/10 overflow-hidden">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/hZrZcatqUsE"
+              src="https://www.youtube.com/embed/hZrZcatqUsE?autoplay=1&mute=1&controls=0&loop=1&playlist=hZrZcatqUsE&playsinline=1"
               title="VSL Upgrade Presencial"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
