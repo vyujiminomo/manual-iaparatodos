@@ -303,7 +303,7 @@ const Webinar = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 1: O que é Inteligência Artificial <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(15/04/2026 - Terça, 19h)</span>
+                Dia 1: O que é Inteligência Artificial <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(15/04/2026 - Quarta, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -323,7 +323,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(22/04/2026 - Terça, 19h)</span>
+                Dia 2: Como criar Prompts Magnéticos <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(22/04/2026 - Quarta, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -343,7 +343,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(29/04/2026 - Terça, 19h)</span>
+                Dia 3: As 5 Práticas da IA Generativa <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(29/04/2026 - Quarta, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -371,7 +371,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 4: Tira Dúvidas e Práticas no Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Terça, 19h)</span>
+                Dia 4: Tira Dúvidas e Práticas no Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Quarta, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
@@ -729,10 +729,11 @@ const Webinar = () => {
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  A imersão acontecerá em 3 terças-feiras, às 19h:<br/>
-                  <strong>• 1 de Abril de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
-                  <strong>• 8 de Abril de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
-                  <strong>• 15 de Abril de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa
+                  A imersão acontecerá em 4 quartas-feiras, às 19h:<br/>
+                  <strong>• 15 de Abril de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
+                  <strong>• 22 de Abril de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
+                  <strong>• 29 de Abril de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa<br/>
+                  <strong>• 6 de Maio de 2026</strong> - Dia 4: Tira Dúvidas e Práticas no Seu Trabalho
                 </p>
               </AccordionContent>
             </AccordionItem>
