@@ -78,7 +78,7 @@ const UpgradePresencial = () => {
             </p>
 
             <p className="text-base md:text-lg leading-relaxed">
-              Em até 24h você será adicionado no grupo e a primeira aula acontecerá dia <strong className="text-primary-foreground">8 de abril às 19h</strong>.
+              Em até 24h você será adicionado no grupo e a primeira aula acontecerá dia <strong className="text-primary-foreground">15 de abril às 19h</strong>.
             </p>
 
             <p className="text-base md:text-lg leading-relaxed font-semibold text-primary-foreground">
