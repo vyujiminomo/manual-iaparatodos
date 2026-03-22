@@ -565,7 +565,7 @@ const Webinar = () => {
 
       {/* Offer Section */}
       <section id="oferta" className="py-24 px-4 bg-gray-900 text-white">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Domine a IA em poucas horas
@@ -575,57 +575,119 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 text-gray-900 max-w-2xl mx-auto shadow-2xl">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-6">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">
-                Imersão IA Para Todos
-              </h3>
-              <span className="bg-red-500 text-white text-xs md:text-sm font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full whitespace-nowrap flex items-center gap-1 md:gap-2">
-                🔥 Mais Escolhido | 75%OFF*
-              </span>
-            </div>
-            
-            <div className="space-y-3 mb-8">
-              {[
-                "Acesso completo aos 4 Dias ao Vivo",
-                "Acesso à Comunidade no WhatsApp Exclusiva",
-                "Acesso às Gravações e Mapas Mentais",
-                "Manual IA Para Todos",
-                "Biblioteca de Prompts por Profissão"
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-left mt-8 mb-6">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-1">
-                <span className="text-2xl md:text-3xl mr-0.5">12x</span>R$ 25<span className="text-sm md:text-base align-bottom">,55</span>
-              </p>
-              <p className="text-base md:text-lg text-gray-600">ou R$ 247 à vista</p>
-            </div>
-            
-            <div className="mb-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Online Option */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
+              <div className="flex flex-col gap-3 mb-6">
+                <h3 className="text-xl md:text-2xl font-bold">
+                  Imersão Online
+                </h3>
+                <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
+                  Ao Vivo via Zoom
+                </span>
+              </div>
+              
+              <div className="space-y-3 mb-8 flex-1">
+                {[
+                  "Acesso completo aos 4 Dias ao Vivo",
+                  "Acesso à Comunidade no WhatsApp Exclusiva",
+                  "Acesso às Gravações e Mapas Mentais",
+                  "Manual IA Para Todos",
+                  "Biblioteca de Prompts por Profissão"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="text-left mb-6">
+                <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
+                  <span className="text-2xl mr-0.5">12x</span>R$ 25<span className="text-sm align-bottom">,55</span>
+                </p>
+                <p className="text-base text-gray-600">ou R$ 247 à vista</p>
+              </div>
+              
               <Button 
                 asChild
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
               >
                 <a href="https://pay.hotmart.com/N100239403C?off=b9iztv2i" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                   Quero Adquirir Agora →
                 </a>
               </Button>
+
+              <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <Shield className="text-green-500" size={16} />
+                  <span>7 Dias de Garantia</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Lock className="text-green-500" size={16} />
+                  <span>Compra Segura</span>
+                </div>
+              </div>
             </div>
 
-            <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <Shield className="text-green-500" size={16} />
-                <span>7 Dias de Garantia</span>
+            {/* Presencial Option */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl border-2 border-yellow-400 relative flex flex-col">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span className="bg-red-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full whitespace-nowrap flex items-center gap-2">
+                  🔥 Mais Escolhido | Apenas 50 vagas
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Lock className="text-green-500" size={16} />
-                <span>Compra Segura</span>
+
+              <div className="flex flex-col gap-3 mb-6 mt-2">
+                <h3 className="text-xl md:text-2xl font-bold">
+                  Imersão Presencial
+                </h3>
+                <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1.5 rounded-full w-fit">
+                  📍 Casa Gambiarra, Jardins — Aracaju
+                </span>
+              </div>
+              
+              <div className="space-y-3 mb-8 flex-1">
+                {[
+                  "Tudo da versão Online incluído",
+                  "Aulas presenciais com outros profissionais",
+                  "Momento prático exclusivo pós-aula",
+                  "Coffee Break incluso",
+                  "Networking presencial",
+                  "Grupo de WhatsApp exclusivo presencial"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="text-left mb-6">
+                <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
+                  <span className="text-2xl mr-0.5">12x</span>R$ 29<span className="text-sm align-bottom">,63</span>
+                </p>
+                <p className="text-base text-gray-600">ou R$ 287 à vista</p>
+              </div>
+              
+              <Button 
+                asChild
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
+              >
+                <a href="https://pay.hotmart.com/H104969759G" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  Quero Presencial →
+                </a>
+              </Button>
+
+              <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <Shield className="text-green-500" size={16} />
+                  <span>7 Dias de Garantia</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Lock className="text-green-500" size={16} />
+                  <span>Compra Segura</span>
+                </div>
               </div>
             </div>
           </div>
