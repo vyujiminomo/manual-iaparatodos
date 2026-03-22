@@ -587,7 +587,7 @@ const Webinar = () => {
             
             <div className="space-y-3 mb-8">
               {[
-                "Acesso completo aos 3 Dias ao Vivo",
+                "Acesso completo aos 4 Dias ao Vivo",
                 "Acesso à Comunidade no WhatsApp Exclusiva",
                 "Acesso às Gravações e Mapas Mentais",
                 "Manual IA Para Todos",
