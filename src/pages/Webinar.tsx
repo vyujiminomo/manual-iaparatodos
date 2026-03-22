@@ -175,39 +175,35 @@ const Webinar = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
-              Porque a Maioria dos Profissionais Falham ao usar IA no Trabalho
+              Por que você fracassa em aprender IA (e não é culpa sua)
             </h2>
-            <p className="text-2xl md:text-3xl text-white font-bold mb-6">
-              JÁ PALESTREI PARA MAIS DE 1000 PROFISSIONAIS.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-300">
-              E antes de me procurarem, todos enfrentavam frustrações parecidas:
+            <p className="text-lg md:text-xl text-gray-300">
+              Você provavelmente já fez isso:
             </p>
           </div>
           
-          <div className="space-y-4 mb-12">
-            {[
-              "Fiz um curso de IA muito teórico e saí sem saber como aplicar no meu trabalho",
-              "Pago uma IA premium, mas ainda não sei usar direito",
-              "Tenho muita dificuldade com tecnologia e queria alguém que me guie"
-            ].map((problem, i) => (
-              <div key={i} className="bg-white/5 border-l-4 border-yellow-400 p-6 rounded">
-                <p className="text-gray-200 text-lg" style={{ fontStyle: 'oblique 8deg' }}>"{problem}"</p>
-              </div>
-            ))}
+          <div className="space-y-8 mb-12">
+            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 1: O Curso Gravado</h3>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                Você compra um curso online. Assiste a primeira aula. Entende. Depois, começa a ficar confuso. Então, você tem uma dificuldade. Procura nos comentários. Ninguém responde. <span className="text-white font-semibold">Desiste.</span>
+              </p>
+            </div>
+
+            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 2: O YouTube</h3>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                Você digita "como usar ChatGPT". Encontra 50 vídeos. Assiste um. Depois outro. Cada um ensina de um jeito. <span className="text-white font-semibold">Você fica mais confuso do que antes.</span>
+              </p>
+            </div>
+
+            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 3: Pedir Ajuda</h3>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                Você liga pro seu filho. Ou pro estagiário. Ele te mostra. Você entende naquele momento. Semana depois, esqueceu. Precisa pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
+              </p>
+            </div>
           </div>
-          
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 font-semibold text-center">
-            Você já sentiu uma ansiedade crescente cada vez que ouve falar sobre ChatGPT e outras IAs?
-          </p>
-          
-          <p className="text-lg mb-8 text-gray-300 text-center">
-            O problema é que a maioria dos cursos do mercado são teóricos, pouco práticos e sem alguém para tirar suas dúvidas, pegar na sua mão e te mostrar exatamente como fazer.
-          </p>
-          
-          <p className="text-xl md:text-2xl text-white font-semibold text-center mb-8">
-            Mas existe um jeito diferente.
-          </p>
           
           <div className="text-center mt-8">
             <Button 
