@@ -293,6 +293,74 @@ const Webinar = () => {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <section className="py-20 px-4 bg-gray-950">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+            Porque a Imersão é diferente de qualquer outro curso?
+          </h2>
+
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
+            {/* Header */}
+            <div className="bg-gray-800 rounded-xl p-4 md:p-6 text-center">
+              <h3 className="text-lg md:text-xl font-bold text-gray-400">CURSO ONLINE</h3>
+            </div>
+            <div className="bg-gradient-to-br from-teal-600 to-cyan-600 rounded-xl p-4 md:p-6 text-center">
+              <h3 className="text-lg md:text-xl font-bold text-white">IMERSÃO IA PARA TODOS</h3>
+            </div>
+
+            {/* Row 1 */}
+            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-gray-400 text-sm md:text-base">Vídeo gravado</p>
+            </div>
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Ao vivo (presencial ou online) + gravações</p>
+            </div>
+
+            {/* Row 2 */}
+            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-gray-400 text-sm md:text-base">Você erra sozinho</p>
+            </div>
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Professor te ajuda</p>
+            </div>
+
+            {/* Row 3 */}
+            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-gray-400 text-sm md:text-base">Teorias técnicas</p>
+            </div>
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática do seu trabalho</p>
+            </div>
+
+            {/* Row 4 */}
+            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-gray-400 text-sm md:text-base">Sem grupo</p>
+            </div>
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Profissionais como você</p>
+            </div>
+
+            {/* Row 5 */}
+            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-gray-400 text-sm md:text-base">Sem suporte</p>
+            </div>
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Tira dúvidas</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Curriculum Section */}
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
