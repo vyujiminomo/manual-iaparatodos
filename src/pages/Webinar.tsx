@@ -368,6 +368,26 @@ const Webinar = () => {
                 </li>
               </ul>
             </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
+                Dia 4: IA na Prática do Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Terça, 19h)</span>
+              </h3>
+              <ul className="space-y-2 md:space-y-3 text-gray-700">
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Aplicação prática no seu trabalho específico</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Sessão de dúvidas e mentoria ao vivo</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3">
+                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
+                  <span className="text-sm md:text-lg">Plano de ação personalizado com IA</span>
+                </li>
+              </ul>
+            </div>
           </div>
           
           <div className="text-center mt-12">
