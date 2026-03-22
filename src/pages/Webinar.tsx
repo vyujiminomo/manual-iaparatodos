@@ -371,7 +371,7 @@ const Webinar = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 4: Tira Dúvidas e Práticas no Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Terça, 19h)</span>
+                Dia 4: Tira Dúvidas e Práticas no Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Quarta, 19h)</span>
               </h3>
               <ul className="space-y-2 md:space-y-3 text-gray-700">
                 <li className="flex items-start gap-2 md:gap-3">
