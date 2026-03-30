@@ -502,7 +502,7 @@ const Webinar = () => {
           </h2>
           
           <p className="text-lg mb-6 text-gray-700">
-            Uma vez que o mercado descobriu a agilidade e eficiência do ChatGPT, ele não vai retroceder.
+            O mercado descobriu o poder do ChatGPT. Ele não volta atrás
           </p>
           
           <p className="text-lg mb-6 text-gray-700">
