@@ -843,22 +843,32 @@ const Webinar = () => {
       )}
 
       {/* Guarantee Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-3xl">
-          <div className="flex flex-col items-center text-center gap-6">
+      <section className="py-20 px-4 bg-gray-900">
+        <div className="container mx-auto max-w-4xl">
+          <div className="mb-8">
+            <span className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-sm font-bold px-4 py-1.5 rounded-full border border-emerald-500/20">
+              ▶ GARANTIA ESPECIAL
+            </span>
+          </div>
+          <h3 className="font-bebas text-4xl md:text-5xl text-white uppercase leading-tight mb-10">
+            Primeira Aula "De Graça",<br />Sem Compromisso
+          </h3>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <img 
               src={garantiaSelo} 
               alt="Garantia da Primeira Aula 100%" 
-              className="w-36 h-36 md:w-44 md:h-44 object-contain"
+              className="w-44 h-44 md:w-56 md:h-56 object-contain flex-shrink-0"
             />
-            <h3 className="font-bebas text-3xl md:text-4xl text-foreground uppercase leading-tight">
-              Primeira aula "de graça"
-            </h3>
-            <p className="font-poppins text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl">
-              Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
-              <span className="font-bold text-foreground">1 dia pedindo reembolso</span>, e devolvemos{" "}
-              <span className="font-bold text-foreground">100%</span>.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
+                Teste. Aprenda. Aproveite.
+              </p>
+              <p className="font-poppins text-gray-400 text-base md:text-lg leading-relaxed">
+                Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
+                <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
+                <span className="font-semibold text-white">100%</span>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
