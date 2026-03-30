@@ -253,7 +253,7 @@ const Webinar = () => {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
-            Depois de estudar IA por 3 anos, criei um 'Método Único para Aprender IA'
+            Depois de 3 anos estudando IA, criei um 'Método Único' para aprender IA
           </h2>
           
           <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
