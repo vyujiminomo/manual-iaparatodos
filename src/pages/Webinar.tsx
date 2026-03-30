@@ -322,7 +322,7 @@ const Webinar = () => {
       <section className="py-20 px-4 bg-gray-950">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Porque a Imersão é diferente de qualquer outro curso?
+            Porque a Imersão é MELHOR que qualquer outro curso?
           </h2>
 
           <div className="grid grid-cols-2 gap-4 md:gap-6">
