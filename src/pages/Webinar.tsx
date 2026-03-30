@@ -273,7 +273,7 @@ const Webinar = () => {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Mentoria em Grupo</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Aulas ao vivo com dúvidas respondidas na hora, acompanhamento personalizado e networking com outros profissionais.
+                Aulas ao vivo. Dúvidas respondidas na hora. Networking. Grupo no WhatsApp.
               </p>
             </div>
             
