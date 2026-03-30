@@ -329,14 +329,14 @@ const Webinar = () => {
           </div>
 
           {/* Table */}
-          <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+          <div className="rounded-2xl overflow-hidden border border-white/10">
             {/* Header */}
-            <div className="grid grid-cols-2 border-b border-white/10">
-              <div className="p-5 md:p-6 text-center bg-white/5">
-                <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase text-white/60">Curso Online</p>
+            <div className="grid grid-cols-2">
+              <div className="p-5 md:p-6 text-center bg-red-500/10 border-b-2 border-red-500">
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">Curso Online</p>
               </div>
-              <div className="p-5 md:p-6 text-center bg-white">
-                <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase text-black">Imersão IA Para Todos</p>
+              <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">Imersão IA Para Todos</p>
               </div>
             </div>
 
@@ -348,12 +348,12 @@ const Webinar = () => {
               { left: "Excesso de teoria", right: "Prática no seu trabalho" },
               { left: "Sozinho", right: "Grupo de profissionais" },
             ].map((row, i) => (
-              <div key={i} className="grid grid-cols-2 border-t border-white/10 first:border-t-0">
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-white/5">
-                  <p className="text-white/70 text-sm md:text-base">{row.left}</p>
+              <div key={i} className="grid grid-cols-2 border-t border-white/5">
+                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-red-500/5">
+                  <p className="text-white/50 text-sm md:text-base">{row.left}</p>
                 </div>
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-white">
-                  <p className="text-black font-medium text-sm md:text-base">{row.right}</p>
+                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-blue-500/5">
+                  <p className="text-white font-medium text-sm md:text-base">{row.right}</p>
                 </div>
               </div>
             ))}
