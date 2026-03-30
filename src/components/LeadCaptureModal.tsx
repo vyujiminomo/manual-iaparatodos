@@ -8,23 +8,46 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Shield } from "lucide-react";
+import { Shield, Loader2 } from "lucide-react";
+
+const SHEET_NORMAL = "https://script.google.com/macros/s/AKfycbzTOYpeJXrNIs6kfBoxFIbk_yHEevD5Div59JG9QQmmfj3nZWKXBny0Z88jIobd0SAC/exec";
+const SHEET_BONUS = "https://script.google.com/macros/s/AKfycbyMud39JG-qm1kANUcDgw2moe1PIsXcxF-dpRc1JTQZScIxcSHy143DffC49OlkOW-Diw/exec";
 
 interface LeadCaptureModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   checkoutUrl: string;
   onClosedWithoutSubmit: () => void;
+  leadType?: "online" | "presencial";
+  isBonus?: boolean;
 }
 
-const LeadCaptureModal = ({ open, onOpenChange, checkoutUrl, onClosedWithoutSubmit }: LeadCaptureModalProps) => {
+const LeadCaptureModal = ({ open, onOpenChange, checkoutUrl, onClosedWithoutSubmit, leadType = "online", isBonus = false }: LeadCaptureModalProps) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSending(true);
+
+    const sheetUrl = isBonus ? SHEET_BONUS : SHEET_NORMAL;
+    const payload = { nome: name, email, whatsapp, tipo: leadType };
+
+    try {
+      await fetch(sheetUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch {
+      // silently continue — no-cors won't give response
+    }
+
+    setSending(false);
     setSubmitted(true);
     window.open(checkoutUrl, "_blank", "noopener,noreferrer");
     onOpenChange(false);
@@ -47,7 +70,6 @@ const LeadCaptureModal = ({ open, onOpenChange, checkoutUrl, onClosedWithoutSubm
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="sm:max-w-md bg-white border-0 shadow-2xl rounded-2xl p-0 overflow-hidden">
-        {/* Top accent bar */}
         <div className="h-1.5 bg-gradient-to-r from-teal-400 to-cyan-500 w-full" />
 
         <div className="p-6 md:p-8">
@@ -112,8 +134,10 @@ const LeadCaptureModal = ({ open, onOpenChange, checkoutUrl, onClosedWithoutSubm
 
             <Button
               type="submit"
-              className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg py-6 rounded-lg shadow-[0_0_25px_rgba(250,204,21,0.4)] hover:shadow-[0_0_35px_rgba(250,204,21,0.6)] transition-all"
+              disabled={sending}
+              className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg py-6 rounded-lg shadow-[0_0_25px_rgba(250,204,21,0.4)] hover:shadow-[0_0_35px_rgba(250,204,21,0.6)] transition-all disabled:opacity-70"
             >
+              {sending ? <Loader2 className="animate-spin mr-2" size={20} /> : null}
               AVANÇAR →
             </Button>
           </form>
