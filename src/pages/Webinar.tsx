@@ -257,7 +257,7 @@ const Webinar = () => {
           </h2>
           
           <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
-            E se existisse um método tão fácil para aprender IA que até pessoas com dificuldade em tecnologia conseguiriam usar IA como um parceiro?
+            E se existisse um jeito tão fácil pra aprender IA que até quem tem dificuldade com tecnologia conseguisse usar como um parceiro de verdade?
           </p>
           
           <p className="text-lg mb-12 text-gray-700 text-center">
