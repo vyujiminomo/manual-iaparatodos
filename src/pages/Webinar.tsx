@@ -203,44 +203,59 @@ const Webinar = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-white font-sans md:text-2xl">
-              Você não é 'velho demais' pra tecnologia (só estava aprendendo do jeito errado)
+      <section className="py-24 px-4 bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
+        {/* Subtle background glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-400/5 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-6 bg-yellow-400/10 px-5 py-2 rounded-full border border-yellow-400/20">
+              O problema real
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white font-sans leading-tight">
+              Você não é "velho demais" pra tecnologia
             </h2>
-            <p className="text-lg md:text-xl text-gray-300">
-              Talvez você já tenha tentado uma dessas coisas:
+            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+              Só estava aprendendo do jeito errado. Talvez você já tenha tentado:
             </p>
           </div>
           
-          <div className="space-y-8 mb-12">
-            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Aprender sozinho?</h3>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, não teve nenhuma 'grande mudança' na produtividade e trabalho.
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="group bg-white/[0.03] backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-yellow-400/30 transition-all duration-300 hover:bg-white/[0.06]">
+              <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-6">
+                <span className="text-2xl">🔍</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Aprender sozinho</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, nenhuma <span className="text-white font-medium">grande mudança</span> na produtividade.
               </p>
             </div>
 
-            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Curso Gravado?</h3>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Comprou um curso online. Confuso, técnico demais, e quando travou... não tinha ninguém pra ajudar.
+            <div className="group bg-white/[0.03] backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-yellow-400/30 transition-all duration-300 hover:bg-white/[0.06]">
+              <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-6">
+                <span className="text-2xl">📹</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Curso gravado</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Comprou um curso online. Confuso, técnico demais, e quando travou… <span className="text-white font-medium">não tinha ninguém pra ajudar.</span>
               </p>
             </div>
 
-            <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Pedir ajuda?</h3>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Ligou pro filho, pro estagiário. Mas na próxima dificuldade, sente vergonha de pedir ajuda de novo. E aquele sentimento também: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
+            <div className="group bg-white/[0.03] backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-yellow-400/30 transition-all duration-300 hover:bg-white/[0.06]">
+              <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-6">
+                <span className="text-2xl">🙋</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Pedir ajuda</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Ligou pro filho, pro estagiário. Mas na próxima dificuldade, sente vergonha de pedir de novo. <span className="text-white font-medium italic">"Sou velho demais pra isso."</span>
               </p>
             </div>
           </div>
           
-          <div className="text-center mt-8">
+          <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:shadow-[0_0_50px_rgba(250,204,21,0.6)] transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
