@@ -537,7 +537,7 @@ const Webinar = () => {
           </p>
           
           <p className="text-center text-xl font-semibold mb-12 text-gray-200">
-            Ao escolher a imersão do Vitor Yuji, você se torna parte da segunda turma do melhor programa de imersão de IA do Brasil.
+            Ao escolher a imersão do Vitor Yuji, você se torna parte do melhor programa de imersão de IA do Brasil.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
