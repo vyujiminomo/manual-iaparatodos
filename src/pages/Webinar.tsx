@@ -176,33 +176,33 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
-              Por que você fracassa em aprender IA (e não é culpa sua)
+            <h2 className="text-3xl font-bold mb-8 text-white md:text-xl">
+              Você não é 'velho demais' pra tecnologia (só estava aprendendo do jeito errado)
             </h2>
             <p className="text-lg md:text-xl text-gray-300">
-              Você provavelmente já fez isso:
+              Talvez você já tenha tentado uma dessas coisas:
             </p>
           </div>
           
           <div className="space-y-8 mb-12">
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 1: O Curso Gravado</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Aprender sozinho?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você compra um curso online. Assiste a primeira aula. Entende. Depois, começa a ficar confuso. Então, você tem uma dificuldade. Procura nos comentários. Ninguém responde. <span className="text-white font-semibold">Desiste.</span>
+                Talvez você tenha 'futucado' em algumas ferramentas do ChatGPT e conversou, e achou que já tava bom demais. Mas se você ainda não sente que teve uma grande mudança na forma como trabalha, talvez você deva aprender
               </p>
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 2: O YouTube</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Curso Gravado?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você digita "como usar ChatGPT". Encontra 50 vídeos. Assiste um. Depois outro. Cada um ensina de um jeito. <span className="text-white font-semibold">Você fica mais confuso do que antes.</span>
+                Talvez você tenha comprado um curso online, mas era confuso, linguagem técnica, e quando você teve uma dificuldade... não tinha ninguém pra te ajudar
               </p>
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 3: Pedir Ajuda</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Pedir ajuda?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você liga pro seu filho. Ou pro estagiário. Ele te mostra. Você entende naquele momento. Semana depois, esqueceu. Precisa pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
+                Você liga pro seu filho, estagiário, qualquer pessoa mais jovem. Mas depois, quando teve dificuldade de novo, teve vergonha de pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
               </p>
             </div>
           </div>
@@ -223,15 +223,15 @@ const Webinar = () => {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
-            Como transformar sua "desvantagem" em vantagem competitiva
+            Depois de estudar IA por 3 anos, criei um 'Método Único para Aprender IA'
           </h2>
           
           <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
-            E se, em vez de correr atrás do prejuízo, você pudesse dar um salto à frente da maioria dos profissionais da sua área?
+            E se existisse um método tão fácil para aprender IA que até pessoas com dificuldade em tecnologia conseguiriam usar IA como um parceiro?
           </p>
           
           <p className="text-lg mb-12 text-gray-700 text-center">
-            Depois de palestrar para mais de 1000 pessoas e testar dezenas de métodos de ensino, descobri exatamente o que funciona:
+            Depois de estudar IA por 3 anos, mentoria com CEO da Adapta, fazer palestras pra +500 pessoas, criei um método 'perfeito':
           </p>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
@@ -272,9 +272,6 @@ const Webinar = () => {
             </div>
           </div>
           
-          <p className="text-lg mb-8 text-gray-700 text-center">
-            Agora estou reunindo a segunda turma de profissionais engajados para mostrar como aplicar tudo isso no SEU trabalho específico.
-          </p>
           
           <p className="text-xl font-bold text-cyan-500 mb-8 text-center">
             Esta é sua chance de estar entre os que vão dominar o que vai definir os próximos anos do mercado.
