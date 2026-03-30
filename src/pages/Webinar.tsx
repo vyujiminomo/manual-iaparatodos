@@ -261,7 +261,7 @@ const Webinar = () => {
           </p>
           
           <p className="text-lg mb-12 text-gray-700 text-center">
-            Depois de estudar IA por 3 anos, mentoria com CEO da Adapta, fazer palestras pra +500 pessoas, criei um método 'perfeito':
+            Depois de 3 anos estudando, mentoria com CEO da Adapta, palestras pra +500 pessoas... criei um método perfeito:
           </p>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
