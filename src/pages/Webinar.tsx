@@ -506,7 +506,9 @@ const Webinar = () => {
           </p>
           
           <p className="text-lg mb-6 text-gray-700">
-            Quando você domina a IA, você consegue concluir tarefas rapidamente, tomar decisões melhores e ter ideias inovadoras.
+            Mas a maioria tá usando errado.<br/><br/>
+            Quero te ensinar a aproveitar todo o potencial da IA: ter ideias melhores, aprender mais rápido, pesquisar com inteligência, escrever com clareza, pensar, tomar decisões<br/><br/>
+            Resultado? Fazer muito mais, com mais qualidade, menos esforço.
           </p>
           
           <p className="text-xl font-bold text-cyan-500">
