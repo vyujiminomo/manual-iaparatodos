@@ -590,7 +590,7 @@ const Webinar = () => {
                   Manual IA Para Todos
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
+                  Tenha acesso gratuito ao seu 'guia de bolso' de IA
                 </p>
               </div>
             </div>
