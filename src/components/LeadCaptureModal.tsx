@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Shield, Loader2 } from "lucide-react";
 
-const SHEET_NORMAL = "https://script.google.com/macros/s/AKfycbzTOYpeJXrNIs6kfBoxFIbk_yHEevD5Div59JG9QQmmfj3nZWKXBny0Z88jIobd0SAC/exec";
+const SHEET_NORMAL = "https://script.google.com/macros/s/AKfycbzI6MCou-fH9LobVfF0Uu_HZfTiXYPThgghjaT3ynlR2nPyUxKwKN8U8I7pMTNeRV4kqQ/exec";
 const SHEET_BONUS = "https://script.google.com/macros/s/AKfycbyMud39JG-qm1kANUcDgw2moe1PIsXcxF-dpRc1JTQZScIxcSHy143DffC49OlkOW-Diw/exec";
 
 interface LeadCaptureModalProps {
