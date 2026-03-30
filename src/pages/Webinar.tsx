@@ -319,63 +319,49 @@ const Webinar = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-20 px-4 bg-gray-950">
+      <section className="py-24 px-4 bg-gray-950">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Porque a Imersão é MELHOR que qualquer outro curso?
-          </h2>
-
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
-            {/* Header */}
-            <div className="bg-gray-800 rounded-xl p-4 md:p-6 text-center">
-              <h3 className="text-lg md:text-xl font-bold text-gray-400">CURSO ONLINE</h3>
-            </div>
-            <div className="bg-gradient-to-br from-teal-600 to-cyan-600 rounded-xl p-4 md:p-6 text-center">
-              <h3 className="text-lg md:text-xl font-bold text-white">IMERSÃO IA PARA TODOS</h3>
-            </div>
-
-            {/* Row 1 */}
-            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Vídeo gravado</p>
-            </div>
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Ao vivo (presencial ou online) + gravações</p>
-            </div>
-
-            {/* Row 2 */}
-            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Você fica com dúvidas</p>
-            </div>
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Professor 'pega na mão' e te ajuda</p>
-            </div>
-
-            {/* Row 3 */}
-            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Técnico e foco em programação</p>
-            </div>
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Linguagem simples e aulas dinâmicas</p>
-            </div>
-
-            {/* Row 4 */}
-            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Excesso de teoria</p>
-            </div>
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática no seu trabalho</p>
-            </div>
-
-            {/* Row 5 */}
-            <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Sozinho</p>
-            </div>
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Grupo de profissionais</p>
-            </div>
+          <div className="text-center mb-14">
+            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Comparativo</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Porque a Imersão é MELHOR que qualquer outro curso?
+            </h2>
           </div>
 
-          <div className="text-center mt-12">
+          {/* Table */}
+          <div className="rounded-2xl overflow-hidden border border-gray-800">
+            {/* Header */}
+            <div className="grid grid-cols-[1fr_1px_1fr]">
+              <div className="bg-gray-800/80 p-5 md:p-6 text-center">
+                <p className="text-sm font-semibold tracking-widest uppercase text-gray-400">Curso Online</p>
+              </div>
+              <div className="bg-gray-700/50"></div>
+              <div className="bg-cyan-600/20 p-5 md:p-6 text-center border-t-2 border-cyan-500">
+                <p className="text-sm font-semibold tracking-widest uppercase text-cyan-400">Imersão IA Para Todos</p>
+              </div>
+            </div>
+
+            {/* Rows */}
+            {[
+              { left: "Vídeo gravado", right: "Ao vivo + gravações" },
+              { left: "Você fica com dúvidas", right: "Professor 'pega na mão' e te ajuda" },
+              { left: "Técnico e foco em programação", right: "Linguagem simples e aulas dinâmicas" },
+              { left: "Excesso de teoria", right: "Prática no seu trabalho" },
+              { left: "Sozinho", right: "Grupo de profissionais" },
+            ].map((row, i) => (
+              <div key={i} className="grid grid-cols-[1fr_1px_1fr] border-t border-gray-800/60">
+                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-gray-900/40">
+                  <p className="text-gray-500 text-sm md:text-base">{row.left}</p>
+                </div>
+                <div className="bg-gray-800/40"></div>
+                <div className="p-4 md:p-5 flex items-center justify-center text-center">
+                  <p className="text-cyan-300 font-medium text-sm md:text-base">{row.right}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-14">
             <Button 
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
