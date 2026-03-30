@@ -572,7 +572,7 @@ const Webinar = () => {
                   Grupo de WhatsApp
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Você vai poder tirar dúvidas e fazer networking durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após a imersão.
+                  Se sinta acolhido, tire dúvidas e faça networking
                 </p>
               </div>
             </div>
