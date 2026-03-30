@@ -851,7 +851,7 @@ const Webinar = () => {
             </span>
           </div>
           <h3 className="font-poppins text-3xl md:text-5xl text-white font-extrabold leading-tight mb-8 tracking-tight">
-            Primeira Aula <span className="text-yellow-400">"De Graça"</span>,<br />Sem Compromisso
+            Primeira Aula <span className="text-yellow-400">"De Graça"</span>
           </h3>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <img 
