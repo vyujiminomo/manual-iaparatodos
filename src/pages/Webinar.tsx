@@ -663,10 +663,10 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Ative o Modo Deus do ChatGPT
+              Domine IA em 4 Dias
             </h2>
             <p className="text-xl text-gray-300">
-              Em 6 horas, você pode aprender o 'Método Único de Aprender IA'
+              4 dias de aulas ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
           
