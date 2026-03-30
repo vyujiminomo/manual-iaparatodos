@@ -176,11 +176,11 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
-              Por que você fracassa em aprender IA (e não é culpa sua)
+            <h2 className="text-3xl font-bold mb-8 text-white md:text-xl">
+              Você não é 'velho demais' pra tecnologia (só estava aprendendo do jeito errado)
             </h2>
             <p className="text-lg md:text-xl text-gray-300">
-              Você provavelmente já fez isso:
+              Talvez você já tenha tentado uma dessas coisas:
             </p>
           </div>
           
