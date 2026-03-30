@@ -223,15 +223,15 @@ const Webinar = () => {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
-            Como transformar sua "desvantagem" em vantagem competitiva
+            Depois de estudar IA por 3 anos, criei um 'Método Único para Aprender IA'
           </h2>
           
           <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
-            E se, em vez de correr atrás do prejuízo, você pudesse dar um salto à frente da maioria dos profissionais da sua área?
+            E se existisse um método tão fácil para aprender IA que até pessoas com dificuldade em tecnologia conseguiriam usar IA como um parceiro?
           </p>
           
           <p className="text-lg mb-12 text-gray-700 text-center">
-            Depois de palestrar para mais de 1000 pessoas e testar dezenas de métodos de ensino, descobri exatamente o que funciona:
+            Depois de estudar IA por 3 anos, mentoria com CEO da Adapta, fazer palestras pra +500 pessoas, criei um método 'perfeito':
           </p>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
