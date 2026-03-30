@@ -554,7 +554,7 @@ const Webinar = () => {
                   Gravações e mapas mentais
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Se você não conseguir assistir a uma aula, não se preocupe! Todo o material será gravado em alta qualidade e você poderá acessar quando e quantas vezes quiser.
+                  Se você não conseguir assistir a uma aula ao vivo, não se preocupe! Todo o material será gravado.
                 </p>
               </div>
             </div>
