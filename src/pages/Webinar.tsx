@@ -329,15 +329,14 @@ const Webinar = () => {
           </div>
 
           {/* Table */}
-          <div className="rounded-2xl overflow-hidden border border-gray-800">
+          <div className="rounded-2xl overflow-hidden">
             {/* Header */}
-            <div className="grid grid-cols-[1fr_1px_1fr]">
-              <div className="bg-gray-800/80 p-5 md:p-6 text-center">
-                <p className="text-sm font-semibold tracking-widest uppercase text-gray-400">Curso Online</p>
+            <div className="grid grid-cols-2">
+              <div className="bg-red-950/80 p-5 md:p-6 text-center">
+                <p className="text-base md:text-lg font-bold text-red-400">❌ Curso Online</p>
               </div>
-              <div className="bg-gray-700/50"></div>
-              <div className="bg-cyan-600/20 p-5 md:p-6 text-center border-t-2 border-cyan-500">
-                <p className="text-sm font-semibold tracking-widest uppercase text-cyan-400">Imersão IA Para Todos</p>
+              <div className="bg-cyan-500 p-5 md:p-6 text-center">
+                <p className="text-base md:text-lg font-bold text-white">✅ Imersão IA Para Todos</p>
               </div>
             </div>
 
@@ -349,13 +348,12 @@ const Webinar = () => {
               { left: "Excesso de teoria", right: "Prática no seu trabalho" },
               { left: "Sozinho", right: "Grupo de profissionais" },
             ].map((row, i) => (
-              <div key={i} className="grid grid-cols-[1fr_1px_1fr] border-t border-gray-800/60">
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-gray-900/40">
-                  <p className="text-gray-500 text-sm md:text-base">{row.left}</p>
+              <div key={i} className="grid grid-cols-2">
+                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-red-950/30 border-t border-red-900/30">
+                  <p className="text-red-300/80 text-sm md:text-base">{row.left}</p>
                 </div>
-                <div className="bg-gray-800/40"></div>
-                <div className="p-4 md:p-5 flex items-center justify-center text-center">
-                  <p className="text-cyan-300 font-medium text-sm md:text-base">{row.right}</p>
+                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-cyan-950/40 border-t border-cyan-800/30">
+                  <p className="text-white font-medium text-sm md:text-base">{row.right}</p>
                 </div>
               </div>
             ))}
