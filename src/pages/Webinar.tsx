@@ -649,10 +649,10 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Domine IA em 4 Dias
+              Domine IA em poucas horas
             </h2>
             <p className="text-xl text-gray-300">
-              4 dias de aulas ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
+              4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
           
