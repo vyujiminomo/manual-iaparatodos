@@ -489,7 +489,7 @@ const Webinar = () => {
 
           <div className="space-y-6 text-center">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong> Mas a maioria tá usando errado.
+              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong>
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -558,7 +558,7 @@ const Webinar = () => {
                   Grupo de WhatsApp
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Se sinta acolhido, tire dúvidas e faça networking
+                  Se sinta acolhido, tire dúvidas e faça networking com outros profissionais.
                 </p>
               </div>
             </div>
@@ -649,10 +649,10 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Domine IA em 4 Dias
+              Domine IA em poucas horas
             </h2>
             <p className="text-xl text-gray-300">
-              4 dias de aulas ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
+              4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
           
