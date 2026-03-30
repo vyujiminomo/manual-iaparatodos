@@ -530,7 +530,7 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Por Que Esta É a Melhor Imersão de IA do Brasil
+            Além disso, tenha acesso aos Bônus Especiais:
           </h2>
           <p className="text-center text-lg text-gray-400 mb-12">
             Veja o que você vai receber assim que garantir sua vaga:
