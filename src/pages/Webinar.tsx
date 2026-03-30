@@ -283,9 +283,9 @@ const Webinar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Linguagem Simples</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Aulas Dinâmicas</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Zero jargões técnicos. Comunicação clara e humana que qualquer um entende.
+                Linguagem simples. Aulas divertidas. Eu tenho 15 anos... você acha mesmo que eu gosto de jargão técnico?
               </p>
             </div>
             
