@@ -352,10 +352,10 @@ const Webinar = () => {
 
             {/* Row 3 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Teorias técnicas</p>
+              <p className="text-gray-400 text-sm md:text-base">Técnico e foco em programação</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática do seu trabalho</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Linguagem simples e aulas dinâmicas</p>
             </div>
 
             {/* Row 4 */}
