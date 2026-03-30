@@ -605,10 +605,10 @@ const Webinar = () => {
               </div>
               <div className="p-10">
                 <h3 className="text-xl font-bold mb-4 text-black">
-                  Biblioteca de prompts
+                  Biblioteca de Prompts
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Acesse uma coleção exclusiva de prompts personalizados para diferentes profissões, otimizando seu trabalho com IA.
+                  Acesse uma coleção exclusiva de prompts para cada profissão
                 </p>
               </div>
             </div>
