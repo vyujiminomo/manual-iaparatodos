@@ -663,10 +663,10 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Domine a IA em poucas horas
+              Ative o Modo Deus do ChatGPT
             </h2>
             <p className="text-xl text-gray-300">
-              Em 6 horas, você pode integrar IA e ChatGPT para aumentar a sua produtividade e melhorar a qualidade do seu trabalho.
+              Em 6 horas, você pode aprender o 'Método Único de Aprender IA'
             </p>
           </div>
           
