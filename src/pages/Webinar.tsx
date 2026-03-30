@@ -206,7 +206,7 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-white md:text-xl">
+            <h2 className="text-3xl font-bold mb-8 text-white font-sans md:text-2xl">
               Você não é 'velho demais' pra tecnologia (só estava aprendendo do jeito errado)
             </h2>
             <p className="text-lg md:text-xl text-gray-300">
