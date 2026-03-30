@@ -193,9 +193,9 @@ const Webinar = () => {
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 2: O YouTube</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Curso Gravado?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você digita "como usar ChatGPT". Encontra 50 vídeos. Assiste um. Depois outro. Cada um ensina de um jeito. <span className="text-white font-semibold">Você fica mais confuso do que antes.</span>
+                Talvez você tenha comprado um curso online, mas era confuso, linguagem técnica, e quando você teve uma dificuldade... não tinha ninguém pra te ajudar
               </p>
             </div>
 
