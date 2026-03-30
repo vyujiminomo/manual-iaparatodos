@@ -186,9 +186,9 @@ const Webinar = () => {
           
           <div className="space-y-8 mb-12">
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 1: O Curso Gravado</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Aprender sozinho?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você compra um curso online. Assiste a primeira aula. Entende. Depois, começa a ficar confuso. Então, você tem uma dificuldade. Procura nos comentários. Ninguém responde. <span className="text-white font-semibold">Desiste.</span>
+                Talvez você tenha 'futucado' em algumas ferramentas do ChatGPT e conversou, e achou que já tava bom demais. Mas se você ainda não sente que teve uma grande mudança na forma como trabalha, talvez você deva aprender
               </p>
             </div>
 
