@@ -758,12 +758,10 @@ const Webinar = () => {
               </div>
               
               <Button 
-                asChild
+                onClick={() => handleCtaClick("https://pay.hotmart.com/H104969759G?off=xs1ta97u")}
                 className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
               >
-                <a href="https://pay.hotmart.com/H104969759G?off=xs1ta97u" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                  Quero Fazer Parte →
-                </a>
+                Quero Fazer Parte →
               </Button>
 
               <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
