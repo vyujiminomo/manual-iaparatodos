@@ -496,26 +496,41 @@ const Webinar = () => {
 
       {/* Why Section */}
       <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
-            Por que fazer um Curso de ChatGPT?
-          </h2>
-          
-          <p className="text-lg mb-6 text-gray-700">
-            O mercado descobriu o poder do ChatGPT. Ele não volta atrás
-          </p>
-          
-          <p className="text-lg mb-6 text-gray-700">
-            Mas a maioria tá usando errado.<br/><br/>
-            Quero te ensinar a aproveitar todo o potencial da IA: ter ideias melhores, aprender mais rápido, pesquisar com inteligência, escrever com clareza, pensar, tomar decisões<br/><br/>
-            Resultado? Fazer muito mais, com mais qualidade, menos esforço.
-          </p>
-          
-          <p className="text-xl font-bold text-cyan-500">
-            Mudou minha forma de estudar, trabalhar, criar projetos. Pode mudar a sua também.
-          </p>
-          
-          <div className="text-center mt-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">A verdade sobre IA</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Por que fazer um Curso de ChatGPT?
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-center">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong>
+            </p>
+
+            <div className="w-12 h-px bg-border mx-auto"></div>
+
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Mas a maioria tá usando errado.
+            </p>
+
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Quero te ensinar a aproveitar todo o potencial da IA: ter ideias melhores, aprender mais rápido, pesquisar com inteligência, escrever com clareza, pensar e tomar decisões.
+            </p>
+
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <strong className="text-foreground">Resultado?</strong> Fazer muito mais, com mais qualidade e menos esforço.
+            </p>
+
+            <div className="w-12 h-px bg-border mx-auto"></div>
+
+            <p className="text-xl md:text-2xl font-semibold text-cyan-500 italic">
+              "Mudou minha forma de estudar, trabalhar, criar projetos. Pode mudar a sua também."
+            </p>
+          </div>
+
+          <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
