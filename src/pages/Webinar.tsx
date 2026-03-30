@@ -200,9 +200,9 @@ const Webinar = () => {
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Cenário 3: Pedir Ajuda</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Pedir ajuda?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você liga pro seu filho. Ou pro estagiário. Ele te mostra. Você entende naquele momento. Semana depois, esqueceu. Precisa pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
+                Você liga pro seu filho, estagiário, qualquer pessoa mais jovem. Mas depois, quando teve dificuldade de novo, teve vergonha de pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
               </p>
             </div>
           </div>
