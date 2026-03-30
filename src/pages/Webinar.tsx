@@ -20,6 +20,8 @@ const Webinar = () => {
   const [giftPopupOpen, setGiftPopupOpen] = useState(false);
   const [showConsultoria, setShowConsultoria] = useState(false);
   const [selectedCheckoutUrl, setSelectedCheckoutUrl] = useState("");
+  const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
+  const [isBonus, setIsBonus] = useState(false);
 
   useDynamicMeta({
     title: "Imersão IA Para Todos 2 - Vitor Yuji",
