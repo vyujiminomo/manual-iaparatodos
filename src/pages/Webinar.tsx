@@ -297,7 +297,7 @@ const Webinar = () => {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Prática Imediata</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                A gente testa junto no ChatGPT durante a aula.
+                Testamos juntos o ChatGPT durantes as aulas
               </p>
             </div>
           </div>
