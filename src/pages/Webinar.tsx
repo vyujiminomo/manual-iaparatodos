@@ -264,68 +264,77 @@ const Webinar = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 px-4 bg-white text-black overflow-hidden">
-        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
-        <div className="container mx-auto max-w-4xl relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
-            Depois de 3 anos estudando IA, criei um 'Método Único' para aprender IA
-          </h2>
-          
-          <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
-            E se existisse um jeito tão fácil pra aprender IA que até quem tem dificuldade com tecnologia conseguisse usar como um parceiro de verdade?
+      <section className="relative py-24 px-4 bg-gradient-to-b from-white to-gray-50 text-black overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-0 w-72 h-72 bg-yellow-400/5 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto max-w-5xl relative z-10">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-cyan-600 mb-6 bg-cyan-50 px-5 py-2 rounded-full border border-cyan-100">
+              A solução
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+              Depois de 3 anos estudando IA, criei um<br className="hidden md:block" /> <span className="text-cyan-500">"Método Único"</span> para aprender IA
+            </h2>
+            <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
+              E se existisse um jeito tão fácil pra aprender IA que até quem tem dificuldade com tecnologia conseguisse usar como um parceiro de verdade?
+            </p>
+          </div>
+
+          {/* Credential line */}
+          <p className="text-center text-gray-500 mb-12 text-base md:text-lg">
+            Depois de 3 anos estudando, mentoria com CEO da Adapta, palestras pra +500 pessoas… criei um método perfeito:
           </p>
           
-          <p className="text-lg mb-12 text-gray-700 text-center">
-            Depois de 3 anos estudando, mentoria com CEO da Adapta, palestras pra +500 pessoas... criei um método perfeito:
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-4 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
-            <div className="bg-white rounded-lg md:rounded-2xl p-4 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center">
-              <div className="w-10 h-10 md:w-16 md:h-16 flex items-center justify-center mb-3 md:mb-6">
-                <svg className="w-10 h-10 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+          {/* Method pillars */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
+            <div className="relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-t-2xl"></div>
+              <div className="w-14 h-14 rounded-2xl bg-cyan-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">👥</span>
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Mentoria em Grupo</h3>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Mentoria em Grupo</h3>
+              <p className="text-gray-500 leading-relaxed">
                 Aulas ao vivo. Dúvidas respondidas na hora. Networking. Grupo no WhatsApp.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg md:rounded-2xl p-4 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center">
-              <div className="w-10 h-10 md:w-16 md:h-16 flex items-center justify-center mb-3 md:mb-6">
-                <svg className="w-10 h-10 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                </svg>
+            <div className="relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-t-2xl"></div>
+              <div className="w-14 h-14 rounded-2xl bg-yellow-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">🎯</span>
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Aulas Dinâmicas</h3>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Linguagem simples. Aulas divertidas. Eu tenho 15 anos... você acha mesmo que eu gosto de jargão técnico?
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Aulas Dinâmicas</h3>
+              <p className="text-gray-500 leading-relaxed">
+                Linguagem simples. Aulas divertidas. Eu tenho 15 anos… você acha mesmo que eu gosto de jargão técnico?
               </p>
             </div>
             
-            <div className="bg-white rounded-lg md:rounded-2xl p-4 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center">
-              <div className="w-10 h-10 md:w-16 md:h-16 flex items-center justify-center mb-3 md:mb-6">
-                <svg className="w-10 h-10 md:w-16 md:h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <div className="relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-green-500 rounded-t-2xl"></div>
+              <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">⚡</span>
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Prática Imediata</h3>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Prática Imediata</h3>
+              <p className="text-gray-500 leading-relaxed">
                 Testamos juntos o ChatGPT durantes as aulas
               </p>
             </div>
           </div>
           
-          
-          <p className="text-xl font-bold text-cyan-500 mb-8 text-center">
-            Esta é sua chance de estar entre os que vão dominar o que vai definir os próximos anos do mercado.
-          </p>
+          {/* Closing statement */}
+          <div className="text-center bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-100 rounded-2xl p-8 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl font-bold text-gray-800">
+              Esta é sua chance de estar entre os que vão <span className="text-cyan-600">dominar o que vai definir os próximos anos</span> do mercado.
+            </p>
+          </div>
           
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:shadow-[0_0_50px_rgba(250,204,21,0.6)] transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
