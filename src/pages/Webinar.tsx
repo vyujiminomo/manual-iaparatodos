@@ -815,13 +815,13 @@ const Webinar = () => {
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online", true)}
                   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
                 >
-                  Quero Fazer Parte — Online →
+                  Quero Fazer Parte: Online →
                 </Button>
                 <Button 
                   onClick={() => handleCtaClick("https://pay.hotmart.com/H104969759G?off=xs1ta97u", "presencial", true)}
                   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
                 >
-                  Quero Fazer Parte — Presencial →
+                  Quero Fazer Parte: Presencial →
                 </Button>
               </div>
             </div>
