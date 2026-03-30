@@ -297,7 +297,7 @@ const Webinar = () => {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Prática Imediata</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                A gente testa junto no ChatGPT durante a aula.
+                Testamos juntos o ChatGPT durantes as aulas
               </p>
             </div>
           </div>
@@ -649,7 +649,7 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Domine IA em poucas horas
+              Acesse o Método Único de Aprender IA
             </h2>
             <p className="text-xl text-gray-300">
               4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
