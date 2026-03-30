@@ -218,7 +218,7 @@ const Webinar = () => {
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Aprender sozinho?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Talvez você tenha 'futucado' em algumas ferramentas do ChatGPT e conversou, e achou que já tava bom demais. Mas se você ainda não sente que teve uma grande mudança na forma como trabalha, talvez você deva aprender
+                Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, não teve nenhuma 'grande mudança' na produtividade e trabalho.
               </p>
             </div>
 
