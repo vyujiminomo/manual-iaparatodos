@@ -272,9 +272,6 @@ const Webinar = () => {
             </div>
           </div>
           
-          <p className="text-lg mb-8 text-gray-700 text-center">
-            Agora estou reunindo a segunda turma de profissionais engajados para mostrar como aplicar tudo isso no SEU trabalho específico.
-          </p>
           
           <p className="text-xl font-bold text-cyan-500 mb-8 text-center">
             Esta é sua chance de estar entre os que vão dominar o que vai definir os próximos anos do mercado.
