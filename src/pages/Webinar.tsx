@@ -512,7 +512,7 @@ const Webinar = () => {
           </p>
           
           <p className="text-xl font-bold text-cyan-500">
-            O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
+            Mudou minha forma de estudar, trabalhar, criar projetos. Pode mudar a sua também.
           </p>
           
           <div className="text-center mt-8">
