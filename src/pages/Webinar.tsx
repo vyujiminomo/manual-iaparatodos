@@ -842,36 +842,22 @@ const Webinar = () => {
       )}
 
       {/* Guarantee Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-3xl">
-          <div className="bg-white rounded-2xl shadow-xl border-2 border-emerald-200 p-8 md:p-12 relative overflow-hidden">
-            {/* Decorative background */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-50 rounded-full -translate-y-1/2 translate-x-1/2 opacity-60"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-emerald-50 rounded-full translate-y-1/2 -translate-x-1/2 opacity-60"></div>
-            
-            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
-              {/* Shield icon */}
-              <div className="flex-shrink-0">
-                <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-200">
-                  <span className="text-5xl md:text-6xl">🛡️</span>
-                </div>
-              </div>
-              
-              {/* Text */}
-              <div className="flex-1 text-center md:text-left">
-                <span className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 text-sm font-bold px-4 py-1.5 rounded-full border border-emerald-200 mb-4">
-                  ✅ Garantia Total
-                </span>
-                <h3 className="font-bebas text-3xl md:text-4xl text-foreground mb-4 uppercase leading-tight">
-                  Primeira aula "de graça"
-                </h3>
-                <p className="font-poppins text-muted-foreground text-base md:text-lg leading-relaxed">
-                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
-                  <span className="font-bold text-foreground">1 dia pedindo reembolso</span>, e devolvemos{" "}
-                  <span className="font-bold text-emerald-600">100%</span>.
-                </p>
-              </div>
-            </div>
+          <div className="flex flex-col items-center text-center gap-6">
+            <img 
+              src={garantiaSelo} 
+              alt="Garantia da Primeira Aula 100%" 
+              className="w-36 h-36 md:w-44 md:h-44 object-contain"
+            />
+            <h3 className="font-bebas text-3xl md:text-4xl text-foreground uppercase leading-tight">
+              Primeira aula "de graça"
+            </h3>
+            <p className="font-poppins text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl">
+              Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
+              <span className="font-bold text-foreground">1 dia pedindo reembolso</span>, e devolvemos{" "}
+              <span className="font-bold text-foreground">100%</span>.
+            </p>
           </div>
         </div>
       </section>
