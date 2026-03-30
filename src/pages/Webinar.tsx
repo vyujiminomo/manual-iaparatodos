@@ -360,10 +360,10 @@ const Webinar = () => {
 
             {/* Row 4 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Sem grupo</p>
+              <p className="text-gray-400 text-sm md:text-base">Excesso de teoria</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Profissionais como você</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática no seu trabalho</p>
             </div>
 
             {/* Row 5 */}
