@@ -86,7 +86,7 @@ const Webinar = () => {
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
-                O melhor método para aprender IA: mentoria em grupo, suporte, linguagem simples.
+                O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
               </p>
               
               <Button 
@@ -206,7 +206,7 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-white md:text-xl">
+            <h2 className="text-3xl font-bold mb-8 text-white font-sans md:text-2xl">
               Você não é 'velho demais' pra tecnologia (só estava aprendendo do jeito errado)
             </h2>
             <p className="text-lg md:text-xl text-gray-300">
@@ -218,21 +218,21 @@ const Webinar = () => {
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Aprender sozinho?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Talvez você tenha 'futucado' em algumas ferramentas do ChatGPT e conversou, e achou que já tava bom demais. Mas se você ainda não sente que teve uma grande mudança na forma como trabalha, talvez você deva aprender
+                Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, não teve nenhuma 'grande mudança' na produtividade e trabalho.
               </p>
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Curso Gravado?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Talvez você tenha comprado um curso online, mas era confuso, linguagem técnica, e quando você teve uma dificuldade... não tinha ninguém pra te ajudar
+                Comprou um curso online. Confuso, técnico demais, e quando travou... não tinha ninguém pra ajudar.
               </p>
             </div>
 
             <div className="bg-white/5 border-l-4 border-yellow-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Pedir ajuda?</h3>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Você liga pro seu filho, estagiário, qualquer pessoa mais jovem. Mas depois, quando teve dificuldade de novo, teve vergonha de pedir ajuda de novo. E aquele sentimento volta: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
+                Ligou pro filho, pro estagiário. Mas na próxima dificuldade, sente vergonha de pedir ajuda de novo. E aquele sentimento também: <span className="text-white font-semibold italic">"Sou velho demais pra isso".</span>
               </p>
             </div>
           </div>
@@ -253,15 +253,15 @@ const Webinar = () => {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-black">
-            Depois de estudar IA por 3 anos, criei um 'Método Único para Aprender IA'
+            Depois de 3 anos estudando IA, criei um 'Método Único' para aprender IA
           </h2>
           
           <p className="text-lg md:text-xl mb-10 text-gray-700 text-center">
-            E se existisse um método tão fácil para aprender IA que até pessoas com dificuldade em tecnologia conseguiriam usar IA como um parceiro?
+            E se existisse um jeito tão fácil pra aprender IA que até quem tem dificuldade com tecnologia conseguisse usar como um parceiro de verdade?
           </p>
           
           <p className="text-lg mb-12 text-gray-700 text-center">
-            Depois de estudar IA por 3 anos, mentoria com CEO da Adapta, fazer palestras pra +500 pessoas, criei um método 'perfeito':
+            Depois de 3 anos estudando, mentoria com CEO da Adapta, palestras pra +500 pessoas... criei um método perfeito:
           </p>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 mb-12 max-w-6xl mx-auto px-4 md:px-0">
@@ -273,7 +273,7 @@ const Webinar = () => {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Mentoria em Grupo</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Aulas ao vivo com dúvidas respondidas na hora, acompanhamento personalizado e networking com outros profissionais.
+                Aulas ao vivo. Dúvidas respondidas na hora. Networking. Grupo no WhatsApp.
               </p>
             </div>
             
@@ -283,9 +283,9 @@ const Webinar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Linguagem Simples</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Aulas Dinâmicas</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Zero jargões técnicos. Comunicação clara e humana que qualquer um entende.
+                Linguagem simples. Aulas divertidas. Eu tenho 15 anos... você acha mesmo que eu gosto de jargão técnico?
               </p>
             </div>
             
@@ -297,7 +297,7 @@ const Webinar = () => {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-gray-900">Prática Imediata</h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Testamos juntos no ChatGPT durante as aulas. Cada encontro termina com um exercício prático para aplicar no trabalho.
+                A gente testa junto no ChatGPT durante a aula.
               </p>
             </div>
           </div>
@@ -322,7 +322,7 @@ const Webinar = () => {
       <section className="py-20 px-4 bg-gray-950">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Porque a Imersão é diferente de qualquer outro curso?
+            Porque a Imersão é MELHOR que qualquer outro curso?
           </h2>
 
           <div className="grid grid-cols-2 gap-4 md:gap-6">
@@ -344,34 +344,34 @@ const Webinar = () => {
 
             {/* Row 2 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Você erra sozinho</p>
+              <p className="text-gray-400 text-sm md:text-base">Você fica com dúvidas</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Professor te ajuda</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Professor 'pega na mão' e te ajuda</p>
             </div>
 
             {/* Row 3 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Teorias técnicas</p>
+              <p className="text-gray-400 text-sm md:text-base">Técnico e foco em programação</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática do seu trabalho</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Linguagem simples e aulas dinâmicas</p>
             </div>
 
             {/* Row 4 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Sem grupo</p>
+              <p className="text-gray-400 text-sm md:text-base">Excesso de teoria</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Profissionais como você</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Prática no seu trabalho</p>
             </div>
 
             {/* Row 5 */}
             <div className="bg-gray-800/60 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-gray-400 text-sm md:text-base">Sem suporte</p>
+              <p className="text-gray-400 text-sm md:text-base">Sozinho</p>
             </div>
             <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 md:p-5 flex items-center justify-center text-center">
-              <p className="text-teal-300 font-semibold text-sm md:text-base">Tira dúvidas</p>
+              <p className="text-teal-300 font-semibold text-sm md:text-base">Grupo de profissionais</p>
             </div>
           </div>
 
@@ -390,7 +390,7 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            O que você vai aprender?
+            Cronograma das aulas
           </h2>
           
           <div className="space-y-6">
@@ -502,15 +502,17 @@ const Webinar = () => {
           </h2>
           
           <p className="text-lg mb-6 text-gray-700">
-            Uma vez que o mercado descobriu a agilidade e eficiência do ChatGPT, ele não vai retroceder.
+            O mercado descobriu o poder do ChatGPT. Ele não volta atrás
           </p>
           
           <p className="text-lg mb-6 text-gray-700">
-            Quando você domina a IA, você consegue concluir tarefas rapidamente, tomar decisões melhores e ter ideias inovadoras.
+            Mas a maioria tá usando errado.<br/><br/>
+            Quero te ensinar a aproveitar todo o potencial da IA: ter ideias melhores, aprender mais rápido, pesquisar com inteligência, escrever com clareza, pensar, tomar decisões<br/><br/>
+            Resultado? Fazer muito mais, com mais qualidade, menos esforço.
           </p>
           
           <p className="text-xl font-bold text-cyan-500">
-            O resultado: Você se destaca porque redefine completamente sua forma de trabalhar, gerenciar e planejar.
+            Mudou minha forma de estudar, trabalhar, criar projetos. Pode mudar a sua também.
           </p>
           
           <div className="text-center mt-8">
@@ -528,14 +530,14 @@ const Webinar = () => {
       <section className="py-24 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Por Que Esta É a Melhor Imersão de IA do Brasil
+            Além disso, tenha acesso aos Bônus Especiais:
           </h2>
           <p className="text-center text-lg text-gray-400 mb-12">
             Veja o que você vai receber assim que garantir sua vaga:
           </p>
           
           <p className="text-center text-xl font-semibold mb-12 text-gray-200">
-            Ao escolher a imersão do Vitor Yuji, você se torna parte da segunda turma do melhor programa de imersão de IA do Brasil.
+            Ao escolher a imersão do Vitor Yuji, você se torna parte do melhor programa de imersão de IA do Brasil.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -552,7 +554,7 @@ const Webinar = () => {
                   Gravações e mapas mentais
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Se você não conseguir assistir a uma aula, não se preocupe! Todo o material será gravado em alta qualidade e você poderá acessar quando e quantas vezes quiser.
+                  Se você não conseguir assistir a uma aula ao vivo, não se preocupe! Todo o material será gravado.
                 </p>
               </div>
             </div>
@@ -570,7 +572,7 @@ const Webinar = () => {
                   Grupo de WhatsApp
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Você vai poder tirar dúvidas e fazer networking durante as aulas ao vivo, no grupo exclusivo da turma e mesmo após a imersão.
+                  Se sinta acolhido, tire dúvidas e faça networking
                 </p>
               </div>
             </div>
@@ -588,7 +590,7 @@ const Webinar = () => {
                   Manual IA Para Todos
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Tenha acesso gratuito ao seu guia de bolso de IA com glossário, frameworks e biblioteca de prompts para cada profissão.
+                  Tenha acesso gratuito ao seu 'guia de bolso' de IA
                 </p>
               </div>
             </div>
@@ -603,10 +605,10 @@ const Webinar = () => {
               </div>
               <div className="p-10">
                 <h3 className="text-xl font-bold mb-4 text-black">
-                  Biblioteca de prompts
+                  Biblioteca de Prompts
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Acesse uma coleção exclusiva de prompts personalizados para diferentes profissões, otimizando seu trabalho com IA.
+                  Acesse uma coleção exclusiva de prompts para cada profissão
                 </p>
               </div>
             </div>
@@ -661,10 +663,10 @@ const Webinar = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Domine a IA em poucas horas
+              Ative o Modo Deus do ChatGPT
             </h2>
             <p className="text-xl text-gray-300">
-              Em 6 horas, você pode integrar IA e ChatGPT para aumentar a sua produtividade e melhorar a qualidade do seu trabalho.
+              Em 6 horas, você pode aprender o 'Método Único de Aprender IA'
             </p>
           </div>
           
