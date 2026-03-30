@@ -489,7 +489,7 @@ const Webinar = () => {
 
           <div className="space-y-6 text-center">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong> Mas a maioria tá usando errado.
+              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong>
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
