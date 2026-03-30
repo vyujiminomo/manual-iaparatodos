@@ -843,15 +843,15 @@ const Webinar = () => {
       )}
 
       {/* Guarantee Section */}
-      <section className="py-20 px-4 bg-gray-900">
+      <section className="py-14 px-4 bg-gray-900">
         <div className="container mx-auto max-w-4xl">
-          <div className="mb-8">
+          <div className="mb-6">
             <span className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-sm font-bold px-4 py-1.5 rounded-full border border-emerald-500/20">
               ▶ GARANTIA ESPECIAL
             </span>
           </div>
-          <h3 className="font-bebas text-4xl md:text-5xl text-white uppercase leading-tight mb-10">
-            Primeira Aula "De Graça",<br />Sem Compromisso
+          <h3 className="font-poppins text-3xl md:text-5xl text-white font-extrabold leading-tight mb-8 tracking-tight">
+            Primeira Aula <span className="text-yellow-400">"De Graça"</span>,<br />Sem Compromisso
           </h3>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <img 
