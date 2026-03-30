@@ -847,78 +847,80 @@ const Webinar = () => {
       />
 
       {/* Author Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-white via-gray-50 to-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
+      <section className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Seu mentor</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               "Mas porque ouvir um moleque de 15 anos falando sobre IA?"
             </h2>
-            <h3 className="text-2xl font-bold text-cyan-500">
-              Quem é Vitor Yuji:
-            </h3>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-16 max-w-5xl mx-auto">
-            <div className="rounded-lg md:rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-              <img 
-                src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                alt="Vitor Yuji apresentando" 
-                className="w-full h-full object-cover"
-              />
+
+          <div className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-12 items-start">
+            {/* Photos */}
+            <div className="space-y-4">
+              <div className="rounded-2xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/vitor-yuji-palestra-2.png" 
+                  alt="Vitor Yuji apresentando" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/vitor-yuji-palestra-1.png" 
+                  alt="Vitor Yuji com alunos" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
-            <div className="rounded-lg md:rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-              <img 
-                src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                alt="Vitor Yuji com alunos" 
-                className="w-full h-full object-cover"
-              />
+
+            {/* Bio */}
+            <div>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+                Vitor Yuji tem apenas 15 anos e já é <strong className="text-foreground">referência em IA Generativa no Nordeste.</strong>
+              </p>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-muted-foreground">
+                    Selecionado pelo CEO Max Peters para ser jovem aprendiz da <strong className="text-foreground">ADAPTA, a maior startup de IA do Brasil.</strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-muted-foreground">
+                    <strong className="text-foreground">4x competidor</strong> no torneio de robótica First Lego League.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-muted-foreground">
+                    Co-fundador do <strong className="text-foreground">Mangue Mania</strong> — primeira metodologia ativa infantil sobre manguezais de Sergipe, com <strong className="text-foreground">+400 alunos impactados.</strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-muted-foreground">
+                    Palestrou sobre IA para <strong className="text-foreground">Instituto JCPM, Colégio Master e Babylândia.</strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-muted-foreground">
+                    Músico no <strong className="text-foreground">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
+                  </span>
+                </li>
+              </ul>
+
+              <p className="text-muted-foreground leading-relaxed border-l-4 border-cyan-500 pl-4 italic">
+                Vem transmitindo todo seu conhecimento para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+              </p>
             </div>
           </div>
-          
-          <div className="max-w-4xl mx-auto bg-white rounded-lg md:rounded-2xl shadow-md p-4 md:p-12">
-            <p className="text-base md:text-2xl text-gray-800 mb-4 md:mb-8 leading-relaxed">
-              Vitor Yuji tem apenas 15 anos e já é <strong className="text-black">referência em IA Generativa no Nordeste.</strong>
-            </p>
-            
-            <ul className="space-y-3 md:space-y-5 mb-4 md:mb-8">
-              <li className="flex items-start gap-2 md:gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                <span className="text-sm md:text-lg text-gray-700">
-                  Foi selecionado pelo CEO Max Peters para ser jovem aprendiz da <strong className="text-black">ADAPTA, a maior startup de IA do Brasil.</strong>
-                </span>
-              </li>
-              <li className="flex items-start gap-2 md:gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                <span className="text-sm md:text-lg text-gray-700">
-                  Foi <strong className="text-black">4x competidor</strong> no torneio de robótica First Lego League.
-                </span>
-              </li>
-              <li className="flex items-start gap-2 md:gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                <span className="text-sm md:text-lg text-gray-700">
-                  É co-fundador do <strong className="text-black">Mangue Mania</strong>, a primeira metodologia ativa infantil sobre manguezais de Sergipe, com <strong className="text-black">mais de 400 alunos impactados.</strong>
-                </span>
-              </li>
-              <li className="flex items-start gap-2 md:gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                <span className="text-sm md:text-lg text-gray-700">
-                  Já palestrou sobre IA para instituições como <strong className="text-black">Instituto JCPM, Colégio Master e Babylândia.</strong>
-                </span>
-              </li>
-              <li className="flex items-start gap-2 md:gap-4">
-                <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                <span className="text-sm md:text-lg text-gray-700">
-                  É também músico no <strong className="text-black">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
-                </span>
-              </li>
-            </ul>
-            
-            <p className="text-sm md:text-lg text-gray-700 leading-relaxed italic bg-cyan-50 rounded-lg p-3 md:p-4">
-              Desde então, vem transmitindo todo seu conhecimento que adquiriu nos últimos anos para milhares de pessoas, com a missão de tornar a IA acessível para todos.
-            </p>
-          </div>
-          
-          <div className="text-center mt-12">
+
+          <div className="text-center mt-14">
             <Button 
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
