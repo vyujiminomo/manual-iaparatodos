@@ -558,7 +558,7 @@ const Webinar = () => {
                   Grupo de WhatsApp
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  Se sinta acolhido, tire dúvidas e faça networking
+                  Se sinta acolhido, tire dúvidas e faça networking com outros profissionais.
                 </p>
               </div>
             </div>
