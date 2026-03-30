@@ -86,7 +86,7 @@ const Webinar = () => {
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
-                O melhor método para aprender IA: mentoria em grupo, suporte, linguagem simples.
+                O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
               </p>
               
               <Button 
