@@ -685,15 +685,18 @@ const Webinar = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Left - Card */}
             <div className="w-full lg:w-1/2">
-              <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col">
-                <div className="flex flex-col gap-3 mb-6">
+              <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
+                <div className="flex items-center gap-3 mb-6 flex-wrap">
                   <h3 className="text-2xl md:text-3xl font-bold">
                     Imersão Online
                   </h3>
-                  <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
-                    Ao Vivo via Zoom
+                  <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    🔥 Mais Escolhido | 75% OFF*
                   </span>
                 </div>
+                <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
+                  Ao Vivo via Zoom
+                </span>
                 
                 <div className="space-y-4 mb-8 flex-1">
                   {[
@@ -721,7 +724,7 @@ const Webinar = () => {
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
                   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-xl px-8 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
                 >
-                  Quero Fazer Parte →
+                  Quero Adquirir Agora →
                 </Button>
 
                 <div className="flex items-center justify-center gap-6 text-sm md:text-base text-gray-600">
