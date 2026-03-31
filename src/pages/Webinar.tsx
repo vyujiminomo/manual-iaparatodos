@@ -1,5 +1,6 @@
 import { useState } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
+import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check, Shield, Lock } from "lucide-react";
