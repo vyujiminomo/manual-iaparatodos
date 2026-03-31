@@ -682,9 +682,16 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
-            {/* Left - Card */}
-            <div className="w-full lg:w-3/5">
+          {/* Product mockup */}
+          <div className="flex justify-center mb-12">
+            <img 
+              src={ofertaImagem} 
+              alt="Conteúdo da Imersão IA Para Todos" 
+              className="w-full max-w-2xl h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
+            />
+          </div>
+
+          <div className="max-w-lg mx-auto">
               {/* Online Option */}
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col">
                 <div className="flex flex-col gap-3 mb-6">
@@ -740,16 +747,6 @@ const Webinar = () => {
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
                 Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
               </p>
-            </div>
-
-            {/* Right - Image */}
-            <div className="hidden lg:flex lg:w-2/5 justify-center">
-              <img 
-                src={ofertaImagem} 
-                alt="Conteúdo da Imersão IA Para Todos" 
-                className="w-full max-w-lg h-auto drop-shadow-2xl"
-              />
-            </div>
           </div>
         </div>
       </section>
