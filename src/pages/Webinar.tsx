@@ -681,7 +681,7 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="max-w-lg mx-auto">
             {/* Online Option */}
             <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
               <div className="flex flex-col gap-3 mb-6">
@@ -734,64 +734,9 @@ const Webinar = () => {
               </div>
             </div>
 
-            {/* Presencial Option */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl border-2 border-yellow-400 relative flex flex-col">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="bg-red-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full whitespace-nowrap flex items-center gap-2">
-                  🔥 Mais Escolhido | Apenas 50 vagas
-                </span>
-              </div>
-
-              <div className="flex flex-col gap-3 mb-6 mt-2">
-                <h3 className="text-xl md:text-2xl font-bold">
-                  Imersão Presencial
-                </h3>
-                <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1.5 rounded-full w-fit">
-                  📍 Casa Gambiarra, Jardins — Aracaju
-                </span>
-              </div>
-              
-              <div className="space-y-3 mb-8 flex-1">
-                {[
-                  "Tudo da versão Online incluído",
-                  "Aulas presenciais com outros profissionais",
-                  "Momento prático exclusivo pós-aula",
-                  "Coffee Break incluso",
-                  "Networking presencial",
-                  "Grupo de WhatsApp exclusivo presencial"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="text-left mb-6">
-                <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                  <span className="text-2xl mr-0.5">12x</span>R$ 29<span className="text-sm align-bottom">,68</span>
-                </p>
-                <p className="text-base text-gray-600">ou R$ 287 à vista</p>
-              </div>
-              
-              <Button 
-                onClick={() => handleCtaClick("https://pay.hotmart.com/H104969759G?off=xs1ta97u", "presencial")}
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
-              >
-                Quero Fazer Parte →
-              </Button>
-
-              <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <Shield className="text-green-500" size={16} />
-                  <span>7 Dias de Garantia</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Lock className="text-green-500" size={16} />
-                  <span>Compra Segura</span>
-                </div>
-              </div>
-            </div>
+            <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
+              Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
+            </p>
           </div>
         </div>
       </section>
@@ -823,18 +768,12 @@ const Webinar = () => {
               </div>
 
               {/* CTA Buttons for bonus purchases */}
-              <div className="flex flex-col sm:grid sm:grid-cols-2 gap-3 mt-8">
+              <div className="mt-8">
                 <Button 
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online", true)}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm sm:text-base md:text-lg px-4 sm:px-8 py-5 sm:py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
                 >
-                  Quero Fazer Parte: Online →
-                </Button>
-                <Button 
-                  onClick={() => handleCtaClick("https://pay.hotmart.com/H104969759G?off=xs1ta97u", "presencial", true)}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm sm:text-base md:text-lg px-4 sm:px-8 py-5 sm:py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
-                >
-                  Quero Fazer Parte: Presencial →
+                  Quero Fazer Parte →
                 </Button>
               </div>
             </div>
