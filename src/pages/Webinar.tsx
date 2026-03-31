@@ -1,6 +1,5 @@
 import { useState } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
-import ofertaImagem from "@/assets/oferta_imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check, Shield, Lock } from "lucide-react";
@@ -680,10 +679,6 @@ const Webinar = () => {
             <p className="text-xl text-gray-300">
               4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
-          </div>
-
-          <div className="flex justify-center mb-10">
-            <img src={ofertaImagem} alt="Conteúdo da Imersão IA Para Todos" className="max-w-full md:max-w-2xl w-auto" />
           </div>
           
           <div className="max-w-lg mx-auto">
