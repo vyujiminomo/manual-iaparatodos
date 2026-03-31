@@ -686,13 +686,15 @@ const Webinar = () => {
             {/* Left - Card */}
             <div className="w-full lg:w-1/2">
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
-                <div className="flex items-center gap-3 mb-6 flex-wrap">
-                  <h3 className="text-2xl md:text-3xl font-bold">
-                    Imersão Online
-                  </h3>
-                  <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    🔥 Mais Escolhido | 75% OFF*
-                  </span>
+                <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-2xl md:text-3xl font-bold">
+                      Imersão Online
+                    </h3>
+                    <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full">
+                      🔥 Mais Escolhido | 75% OFF*
+                    </span>
+                  </div>
                 </div>
                 <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
                   Ao Vivo via Zoom
