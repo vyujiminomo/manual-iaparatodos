@@ -743,11 +743,11 @@ const Webinar = () => {
             </div>
 
             {/* Right - Image */}
-            <div className="hidden lg:flex lg:w-2/5 justify-center">
+            <div className="hidden lg:flex lg:w-1/2 justify-center items-center">
               <img 
                 src={ofertaImagem} 
                 alt="Conteúdo da Imersão IA Para Todos" 
-                className="w-full max-w-lg h-auto drop-shadow-2xl"
+                className="w-full max-w-2xl h-auto drop-shadow-2xl scale-110"
               />
             </div>
           </div>
