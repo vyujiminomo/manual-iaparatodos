@@ -681,8 +681,11 @@ const Webinar = () => {
               4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
+
+          <div className="flex justify-center mb-10">
+            <img src={ofertaImagem} alt="Conteúdo da Imersão IA Para Todos" className="max-w-full md:max-w-2xl w-auto" />
+          </div>
           
-          <div className="max-w-lg mx-auto">
             {/* Online Option */}
             <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
               <div className="flex flex-col gap-3 mb-6">
