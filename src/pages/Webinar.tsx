@@ -682,9 +682,9 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-7xl mx-auto">
             {/* Left - Card */}
-            <div className="w-full lg:w-3/5">
+            <div className="w-full lg:w-1/2">
               {/* Online Option */}
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col">
                 <div className="flex flex-col gap-3 mb-6">
