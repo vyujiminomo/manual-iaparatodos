@@ -1,5 +1,6 @@
 import { useState } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
+import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check, Shield, Lock } from "lucide-react";
@@ -681,62 +682,74 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="max-w-lg mx-auto">
-            {/* Online Option */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
-              <div className="flex flex-col gap-3 mb-6">
-                <h3 className="text-xl md:text-2xl font-bold">
-                  Imersão Online
-                </h3>
-                <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
-                  Ao Vivo via Zoom
-                </span>
-              </div>
-              
-              <div className="space-y-3 mb-8 flex-1">
-                {[
-                  "Acesso completo aos 4 Dias ao Vivo",
-                  "Acesso à Comunidade no WhatsApp Exclusiva",
-                  "Acesso às Gravações e Mapas Mentais",
-                  "Manual IA Para Todos",
-                  "Biblioteca de Prompts por Profissão"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="text-left mb-6">
-                <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                  <span className="text-2xl mr-0.5">12x</span>R$ 25<span className="text-sm align-bottom">,55</span>
-                </p>
-                <p className="text-base text-gray-600">ou R$ 247 à vista</p>
-              </div>
-              
-              <Button 
-                onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
-              >
-                Quero Fazer Parte →
-              </Button>
-
-              <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <Shield className="text-green-500" size={16} />
-                  <span>7 Dias de Garantia</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Lock className="text-green-500" size={16} />
-                  <span>Compra Segura</span>
-                </div>
-              </div>
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
+            {/* Left - Image */}
+            <div className="hidden lg:flex lg:w-1/2 justify-center">
+              <img 
+                src={ofertaImagem} 
+                alt="Conteúdo da Imersão IA Para Todos" 
+                className="w-full max-w-md h-auto drop-shadow-2xl"
+              />
             </div>
 
-            <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
-              Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
-            </p>
+            {/* Right - Card */}
+            <div className="w-full lg:w-1/2 max-w-lg">
+              {/* Online Option */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
+                <div className="flex flex-col gap-3 mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold">
+                    Imersão Online
+                  </h3>
+                  <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
+                    Ao Vivo via Zoom
+                  </span>
+                </div>
+                
+                <div className="space-y-3 mb-8 flex-1">
+                  {[
+                    "Acesso completo aos 4 Dias ao Vivo",
+                    "Acesso à Comunidade no WhatsApp Exclusiva",
+                    "Acesso às Gravações e Mapas Mentais",
+                    "Manual IA Para Todos",
+                    "Biblioteca de Prompts por Profissão"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                      <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="text-left mb-6">
+                  <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
+                    <span className="text-2xl mr-0.5">12x</span>R$ 25<span className="text-sm align-bottom">,55</span>
+                  </p>
+                  <p className="text-base text-gray-600">ou R$ 247 à vista</p>
+                </div>
+                
+                <Button 
+                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
+                >
+                  Quero Fazer Parte →
+                </Button>
+
+                <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <Shield className="text-green-500" size={16} />
+                    <span>7 Dias de Garantia</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Lock className="text-green-500" size={16} />
+                    <span>Compra Segura</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
+                Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
+              </p>
+            </div>
           </div>
         </div>
       </section>
