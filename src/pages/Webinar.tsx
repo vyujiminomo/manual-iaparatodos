@@ -682,19 +682,15 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-6xl mx-auto">
-            {/* Left - Card */}
-            <div className="w-full lg:w-1/2">
+          <div className="max-w-lg mx-auto">
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
-                <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-2xl md:text-3xl font-bold">
-                      Imersão Online
-                    </h3>
-                    <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full">
-                      🔥 Mais Escolhido | 75% OFF*
-                    </span>
-                  </div>
+                <div className="flex items-center gap-4 mb-2">
+                  <h3 className="text-2xl md:text-3xl font-bold">
+                    Imersão Online
+                  </h3>
+                  <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
+                    🔥 Mais Escolhido | 75% OFF*
+                  </span>
                 </div>
                 <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
                   Ao Vivo via Zoom
@@ -744,16 +740,6 @@ const Webinar = () => {
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
                 Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
               </p>
-            </div>
-
-            {/* Right - Image */}
-            <div className="hidden lg:flex lg:w-1/2 items-center justify-center">
-              <img 
-                src={ofertaImagem} 
-                alt="Conteúdo da Imersão IA Para Todos" 
-                className="w-full max-w-xl h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
-              />
-            </div>
           </div>
         </div>
       </section>
