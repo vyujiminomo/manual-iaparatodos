@@ -682,27 +682,21 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="flex flex-col lg:flex-row items-center gap-10 max-w-6xl mx-auto">
-            {/* Left - Offer Card */}
-            <div className="w-full lg:w-1/2">
-              <div className="relative bg-white rounded-2xl p-8 md:p-10 text-gray-900 shadow-2xl border-2 border-red-500 flex flex-col">
-                {/* Badge */}
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-red-600 text-white text-xs md:text-sm font-bold px-5 py-2 rounded-full shadow-lg whitespace-nowrap">
-                    🔥 Mais Escolhido | 75% OFF
-                  </span>
-                </div>
-
-                <div className="flex flex-col gap-3 mb-6 mt-4 text-center">
-                  <h3 className="text-3xl md:text-4xl font-bold">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
+            {/* Left - Card */}
+            <div className="w-full lg:w-3/5">
+              {/* Online Option */}
+              <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col">
+                <div className="flex flex-col gap-3 mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold">
                     Imersão Online
                   </h3>
-                  <span className="bg-cyan-500 text-white text-xs font-bold px-4 py-1.5 rounded-full w-fit mx-auto">
+                  <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
                     Ao Vivo via Zoom
                   </span>
                 </div>
                 
-                <div className="space-y-3 mb-6 flex-1">
+                <div className="space-y-4 mb-8 flex-1">
                   {[
                     "Acesso completo aos 4 Dias ao Vivo",
                     "Acesso à Comunidade no WhatsApp Exclusiva",
@@ -717,43 +711,43 @@ const Webinar = () => {
                   ))}
                 </div>
                 
-                <div className="text-center mb-6">
-                  <p className="text-4xl md:text-6xl font-bold text-gray-900 mb-1">
-                    <span className="text-2xl md:text-3xl mr-1">12x</span>R$ 25<span className="text-base md:text-lg align-bottom">,55</span>
+                <div className="text-left mb-6">
+                  <p className="text-3xl md:text-5xl font-bold text-gray-900 mb-1">
+                    <span className="text-2xl md:text-3xl mr-0.5">12x</span>R$ 25<span className="text-sm md:text-base align-bottom">,55</span>
                   </p>
-                  <p className="text-base md:text-lg text-gray-500">ou R$ 247 à vista</p>
+                  <p className="text-base md:text-lg text-gray-600">ou R$ 247 à vista</p>
                 </div>
                 
                 <Button 
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg md:text-xl px-8 py-7 md:py-8 rounded-xl w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-xl px-8 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
                 >
                   Quero Fazer Parte →
                 </Button>
 
-                <div className="flex items-center justify-center gap-6 text-sm md:text-base text-gray-500">
+                <div className="flex items-center justify-center gap-6 text-sm md:text-base text-gray-600">
                   <div className="flex items-center gap-2">
-                    <Shield className="text-green-500" size={18} />
+                    <Shield className="text-green-500" size={16} />
                     <span>7 Dias de Garantia</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Lock className="text-green-500" size={18} />
+                    <Lock className="text-green-500" size={16} />
                     <span>Compra Segura</span>
                   </div>
                 </div>
               </div>
 
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
-                Quer participar <span className="font-semibold text-gray-300">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial.
+                Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
               </p>
             </div>
 
             {/* Right - Image */}
-            <div className="hidden lg:flex lg:w-1/2 justify-center items-center">
+            <div className="hidden lg:flex lg:w-2/5 justify-center">
               <img 
                 src={ofertaImagem} 
                 alt="Conteúdo da Imersão IA Para Todos" 
-                className="w-full max-w-xl h-auto drop-shadow-2xl"
+                className="w-full max-w-lg h-auto drop-shadow-2xl"
               />
             </div>
           </div>
