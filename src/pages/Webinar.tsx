@@ -718,7 +718,6 @@ const Webinar = () => {
                 </div>
                 
                 <div className="text-center mb-6">
-                  <p className="text-lg text-gray-400 line-through mb-1">De R$ 997</p>
                   <p className="text-4xl md:text-6xl font-bold text-gray-900 mb-1">
                     <span className="text-2xl md:text-3xl mr-1">12x</span>R$ 25<span className="text-base md:text-lg align-bottom">,55</span>
                   </p>
