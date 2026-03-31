@@ -682,22 +682,13 @@ const Webinar = () => {
             </p>
           </div>
           
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
-            {/* Left - Image */}
-            <div className="hidden lg:flex lg:w-1/2 justify-center">
-              <img 
-                src={ofertaImagem} 
-                alt="Conteúdo da Imersão IA Para Todos" 
-                className="w-full max-w-md h-auto drop-shadow-2xl"
-              />
-            </div>
-
-            {/* Right - Card */}
-            <div className="w-full lg:w-1/2 max-w-lg">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
+            {/* Left - Card */}
+            <div className="w-full lg:w-3/5">
               {/* Online Option */}
-              <div className="bg-white rounded-2xl p-6 md:p-8 text-gray-900 shadow-2xl flex flex-col">
+              <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col">
                 <div className="flex flex-col gap-3 mb-6">
-                  <h3 className="text-xl md:text-2xl font-bold">
+                  <h3 className="text-2xl md:text-3xl font-bold">
                     Imersão Online
                   </h3>
                   <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit">
@@ -705,7 +696,7 @@ const Webinar = () => {
                   </span>
                 </div>
                 
-                <div className="space-y-3 mb-8 flex-1">
+                <div className="space-y-4 mb-8 flex-1">
                   {[
                     "Acesso completo aos 4 Dias ao Vivo",
                     "Acesso à Comunidade no WhatsApp Exclusiva",
@@ -714,27 +705,27 @@ const Webinar = () => {
                     "Biblioteca de Prompts por Profissão"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <Check className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                      <span className="text-sm md:text-base text-gray-700 font-semibold">{item}</span>
+                      <Check className="text-green-500 flex-shrink-0 mt-1" size={22} />
+                      <span className="text-base md:text-lg text-gray-700 font-semibold">{item}</span>
                     </div>
                   ))}
                 </div>
                 
                 <div className="text-left mb-6">
-                  <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                    <span className="text-2xl mr-0.5">12x</span>R$ 25<span className="text-sm align-bottom">,55</span>
+                  <p className="text-3xl md:text-5xl font-bold text-gray-900 mb-1">
+                    <span className="text-2xl md:text-3xl mr-0.5">12x</span>R$ 25<span className="text-sm md:text-base align-bottom">,55</span>
                   </p>
-                  <p className="text-base text-gray-600">ou R$ 247 à vista</p>
+                  <p className="text-base md:text-lg text-gray-600">ou R$ 247 à vista</p>
                 </div>
                 
                 <Button 
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-xl px-8 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
                 >
                   Quero Fazer Parte →
                 </Button>
 
-                <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                <div className="flex items-center justify-center gap-6 text-sm md:text-base text-gray-600">
                   <div className="flex items-center gap-2">
                     <Shield className="text-green-500" size={16} />
                     <span>7 Dias de Garantia</span>
@@ -749,6 +740,15 @@ const Webinar = () => {
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
                 Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
               </p>
+            </div>
+
+            {/* Right - Image */}
+            <div className="hidden lg:flex lg:w-2/5 justify-center">
+              <img 
+                src={ofertaImagem} 
+                alt="Conteúdo da Imersão IA Para Todos" 
+                className="w-full max-w-lg h-auto drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
