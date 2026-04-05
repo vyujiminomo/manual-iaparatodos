@@ -519,7 +519,9 @@ const Vsl = () => {
           </div>
         </div>
       </section>
+      </>)}
 
+      {showContent && (<>
       {/* Offer Section */}
       <section id="oferta" className="pt-24 pb-10 px-4 bg-gray-900 text-white">
         <div className="container mx-auto max-w-5xl">
