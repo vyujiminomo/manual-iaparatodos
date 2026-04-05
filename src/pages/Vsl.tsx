@@ -94,36 +94,44 @@ const Vsl = () => {
   return (
     <div className="min-h-screen bg-black font-sans">
       {/* VSL Hero Section */}
-      <section className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+      <section className={`relative bg-black text-white px-4 overflow-hidden flex flex-col items-center justify-center ${showContent ? 'py-12 md:py-20' : 'min-h-screen py-8'}`}>
+        {!showContent && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+        )}
+        {showContent && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+        )}
         
         <div className="container mx-auto max-w-4xl relative z-10">
-          {/* Top credibility bar */}
-          <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
-            O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
-          </p>
-
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center">
-            Imersão IA Para Todos
-          </h1>
-
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
-            O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
-          </p>
+          {showContent && (
+            <>
+              <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
+                O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
+              </p>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center">
+                Imersão IA Para Todos
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
+                O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
+              </p>
+            </>
+          )}
 
           {/* VSL Video Player - VTurb Vertical */}
           <div className="relative max-w-[400px] mx-auto mb-10">
             <VturbPlayer />
           </div>
 
-          <div className="text-center">
-            <Button 
-              onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
-            >
-              QUERO FAZER PARTE →
-            </Button>
-          </div>
+          {showContent && (
+            <div className="text-center">
+              <Button 
+                onClick={scrollToOffer}
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
+              >
+                QUERO FAZER PARTE →
+              </Button>
+            </div>
+          )}
         </div>
 
         {/* Trusted By Section */}
