@@ -17,27 +17,76 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import LeadCaptureModal from "@/components/LeadCaptureModal";
 import GiftPopup from "@/components/GiftPopup";
 
-const VturbPlayer = () => {
+// A/B Test Player - VTurb handles the 50/50 split
+const VturbABPlayer = ({ onVariantDetected }: { onVariantDetected: (variant: 'full-page' | 'buttons-only') => void }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
     
-    // Create the smartplayer element
+    // Create the A/B test smartplayer element
     const player = document.createElement('div');
-    player.innerHTML = '<vturb-smartplayer id="vid-69d2965fc996282c9169338a" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
+    player.innerHTML = '<vturb-smartplayer id="ab-69d2ac3632c35a227a015d46" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
     containerRef.current.appendChild(player.firstChild!);
 
-    // Load the script
+    // Load the A/B test script
     const script = document.createElement('script');
-    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/players/69d2965fc996282c9169338a/v4/player.js';
+    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/ab-test/69d2ac3632c35a227a015d46/player.js';
     script.async = true;
     document.head.appendChild(script);
+
+    // Detect which variant was served by checking which player ID appears in the DOM
+    let detectAttempts = 0;
+    const detectVariant = () => {
+      detectAttempts++;
+      // Look for any vturb-smartplayer element that is NOT the ab- element (the actual video player)
+      const allPlayers = containerRef.current?.querySelectorAll('vturb-smartplayer');
+      const injectedPlayer = Array.from(allPlayers || []).find(el => {
+        const id = el.getAttribute('id') || '';
+        return id.startsWith('vid-');
+      });
+
+      if (injectedPlayer) {
+        const playerId = injectedPlayer.getAttribute('id') || '';
+        // The original video (with landing page) has this ID
+        if (playerId === 'vid-69d2965fc996282c9169338a') {
+          onVariantDetected('full-page');
+        } else {
+          onVariantDetected('buttons-only');
+        }
+        return;
+      }
+
+      // Also check smartplayer instances as fallback
+      if (typeof (window as any).smartplayer !== 'undefined' && 
+          (window as any).smartplayer.instances?.length) {
+        const instance = (window as any).smartplayer.instances[0];
+        const videoEl = instance?.video;
+        const src = videoEl?.src || videoEl?.currentSrc || '';
+        // If we can detect by instance, check the container for player ID
+        const playerEl = containerRef.current?.querySelector('vturb-smartplayer[id^="vid-"]');
+        if (playerEl) {
+          const pid = playerEl.getAttribute('id') || '';
+          if (pid === 'vid-69d2965fc996282c9169338a') {
+            onVariantDetected('full-page');
+          } else {
+            onVariantDetected('buttons-only');
+          }
+          return;
+        }
+      }
+
+      if (detectAttempts < 60) {
+        setTimeout(detectVariant, 500);
+      }
+    };
+
+    setTimeout(detectVariant, 1000);
 
     return () => {
       script.remove();
     };
-  }, []);
+  }, [onVariantDetected]);
 
   return <div ref={containerRef} />;
 };
