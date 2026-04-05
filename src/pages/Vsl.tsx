@@ -216,7 +216,7 @@ const Vsl = () => {
           )}
         </div>
 
-        {showContent && (
+        {showContent && abVariant === 'full-page' && (
           <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
               <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
