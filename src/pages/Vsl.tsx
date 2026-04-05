@@ -60,7 +60,7 @@ const Vsl = () => {
   }, []);
 
   useDynamicMeta({
-    title: "Imersão IA Para Todos 2 - Vitor Yuji | VSL",
+    title: "Vídeo Liberado",
     description: "Vá do zero ao avançado em IA em apenas 4 dias. Imersão ao vivo com Vitor Yuji.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
