@@ -49,6 +49,15 @@ const Vsl = () => {
   const [selectedCheckoutUrl, setSelectedCheckoutUrl] = useState("");
   const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
   const [isBonus, setIsBonus] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
+  // Reveal page content after 6 minutes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 6 * 60 * 1000); // 6 minutes
+    return () => clearTimeout(timer);
+  }, []);
 
   useDynamicMeta({
     title: "Imersão IA Para Todos 2 - Vitor Yuji | VSL",
