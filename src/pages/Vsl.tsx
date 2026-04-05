@@ -49,6 +49,15 @@ const Vsl = () => {
   const [selectedCheckoutUrl, setSelectedCheckoutUrl] = useState("");
   const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
   const [isBonus, setIsBonus] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
+  // Reveal page content after 6 minutes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 6 * 60 * 1000); // 6 minutes
+    return () => clearTimeout(timer);
+  }, []);
 
   useDynamicMeta({
     title: "Imersão IA Para Todos 2 - Vitor Yuji | VSL",
@@ -85,72 +94,81 @@ const Vsl = () => {
   return (
     <div className="min-h-screen bg-black font-sans">
       {/* VSL Hero Section */}
-      <section className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+      <section className={`relative bg-black text-white px-4 overflow-hidden flex flex-col items-center justify-center ${showContent ? 'py-12 md:py-20' : 'min-h-screen py-8'}`}>
+        {!showContent && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+        )}
+        {showContent && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
+        )}
         
         <div className="container mx-auto max-w-4xl relative z-10">
-          {/* Top credibility bar */}
-          <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
-            O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
-          </p>
-
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center">
-            Imersão IA Para Todos
-          </h1>
-
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
-            O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
-          </p>
+          {showContent && (
+            <>
+              <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
+                O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
+              </p>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center">
+                Imersão IA Para Todos
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
+                O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
+              </p>
+            </>
+          )}
 
           {/* VSL Video Player - VTurb Vertical */}
           <div className="relative max-w-[400px] mx-auto mb-10">
             <VturbPlayer />
           </div>
 
-          <div className="text-center">
-            <Button 
-              onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
-            >
-              QUERO FAZER PARTE →
-            </Button>
-          </div>
+          {showContent && (
+            <div className="text-center">
+              <Button 
+                onClick={scrollToOffer}
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
+              >
+                QUERO FAZER PARTE →
+              </Button>
+            </div>
+          )}
         </div>
 
-        {/* Trusted By Section */}
-        <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
-            <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
-            </svg>
-            <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
-              Sou o professor de IA escolhido por profissionais de empresas como
-            </p>
-          </div>
-          
-          <div className="relative w-full overflow-hidden">
-            <div className="flex gap-6 md:gap-20 lg:gap-24 animate-scroll hover:animate-scroll-slow w-max">
-              <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-              </div>
-              <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+        {showContent && (
+          <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
+              <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
+              </svg>
+              <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
+                Sou o professor de IA escolhido por profissionais de empresas como
+              </p>
+            </div>
+            <div className="relative w-full overflow-hidden">
+              <div className="flex gap-6 md:gap-20 lg:gap-24 animate-scroll hover:animate-scroll-slow w-max">
+                <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
+                  <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
+                <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
+                  <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </section>
 
+      {showContent && (<>
       {/* Testimonials Section */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -591,6 +609,7 @@ const Vsl = () => {
           </div>
         </div>
       </footer>
+      </>)}
     </div>
   );
 };
