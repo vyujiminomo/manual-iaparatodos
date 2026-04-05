@@ -22,6 +22,7 @@ const Go = lazy(() => import("./pages/Go"));
 const Curso = lazy(() => import("./pages/Curso"));
 const Webinar = lazy(() => import("./pages/Webinar"));
 const UpgradePresencial = lazy(() => import("./pages/UpgradePresencial"));
+const Vsl = lazy(() => import("./pages/Vsl"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading fallback component
