@@ -51,13 +51,30 @@ const Vsl = () => {
   const [isBonus, setIsBonus] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
-  // Reveal page content after 6 minutes
+  // Reveal page content at 6:03 of the video (363 seconds)
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 6 * 60 * 1000); // 6 minutes
-    return () => clearTimeout(timer);
-  }, []);
+    const SECONDS_TO_DISPLAY = 363; // 6 minutes and 3 seconds
+    let attempts = 0;
+
+    const startWatchVideoProgress = () => {
+      if (typeof (window as any).smartplayer === 'undefined' || 
+          !((window as any).smartplayer.instances && (window as any).smartplayer.instances.length)) {
+        if (attempts >= 30) return;
+        attempts += 1;
+        return setTimeout(startWatchVideoProgress, 1000);
+      }
+
+      (window as any).smartplayer.instances[0].on('timeupdate', () => {
+        if (showContent) return;
+        const currentTime = (window as any).smartplayer.instances[0].video.currentTime;
+        if (currentTime >= SECONDS_TO_DISPLAY) {
+          setShowContent(true);
+        }
+      });
+    };
+
+    startWatchVideoProgress();
+  }, [showContent]);
 
   useDynamicMeta({
     title: "Vídeo Liberado",
