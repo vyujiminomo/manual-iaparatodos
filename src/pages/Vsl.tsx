@@ -204,7 +204,7 @@ const Vsl = () => {
             <VturbABPlayer onVariantDetected={handleVariantDetected} />
           </div>
 
-          {showContent && (
+          {showContent && abVariant === 'full-page' && (
             <div className="text-center">
               <Button 
                 onClick={scrollToOffer}
@@ -521,7 +521,7 @@ const Vsl = () => {
       </section>
       </>)}
 
-      {showContent && (<>
+      {showContent && abVariant === 'full-page' && (<>
       {/* Offer Section */}
       <section id="oferta" className="pt-24 pb-10 px-4 bg-gray-900 text-white">
         <div className="container mx-auto max-w-5xl">
