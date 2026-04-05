@@ -619,6 +619,7 @@ const Vsl = () => {
       <LeadCaptureModal open={modalOpen} onOpenChange={setModalOpen} checkoutUrl={selectedCheckoutUrl} onClosedWithoutSubmit={handleClosedWithoutSubmit} leadType={selectedLeadType} isBonus={isBonus} />
       <GiftPopup open={giftPopupOpen} onOpenChange={setGiftPopupOpen} onClaim={handleClaimGift} />
 
+      {abVariant === 'full-page' && (<>
       {/* Author Section */}
       <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-5xl">
@@ -681,6 +682,7 @@ const Vsl = () => {
           </div>
         </div>
       </section>
+      </>)}
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
