@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
@@ -17,27 +17,76 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import LeadCaptureModal from "@/components/LeadCaptureModal";
 import GiftPopup from "@/components/GiftPopup";
 
-const VturbPlayer = () => {
+// A/B Test Player - VTurb handles the 50/50 split
+const VturbABPlayer = ({ onVariantDetected }: { onVariantDetected: (variant: 'full-page' | 'buttons-only') => void }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
     
-    // Create the smartplayer element
+    // Create the A/B test smartplayer element
     const player = document.createElement('div');
-    player.innerHTML = '<vturb-smartplayer id="vid-69d2965fc996282c9169338a" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
+    player.innerHTML = '<vturb-smartplayer id="ab-69d2ac3632c35a227a015d46" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
     containerRef.current.appendChild(player.firstChild!);
 
-    // Load the script
+    // Load the A/B test script
     const script = document.createElement('script');
-    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/players/69d2965fc996282c9169338a/v4/player.js';
+    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/ab-test/69d2ac3632c35a227a015d46/player.js';
     script.async = true;
     document.head.appendChild(script);
+
+    // Detect which variant was served by checking which player ID appears in the DOM
+    let detectAttempts = 0;
+    const detectVariant = () => {
+      detectAttempts++;
+      // Look for any vturb-smartplayer element that is NOT the ab- element (the actual video player)
+      const allPlayers = containerRef.current?.querySelectorAll('vturb-smartplayer');
+      const injectedPlayer = Array.from(allPlayers || []).find(el => {
+        const id = el.getAttribute('id') || '';
+        return id.startsWith('vid-');
+      });
+
+      if (injectedPlayer) {
+        const playerId = injectedPlayer.getAttribute('id') || '';
+        // The original video (with landing page) has this ID
+        if (playerId === 'vid-69d2965fc996282c9169338a') {
+          onVariantDetected('full-page');
+        } else {
+          onVariantDetected('buttons-only');
+        }
+        return;
+      }
+
+      // Also check smartplayer instances as fallback
+      if (typeof (window as any).smartplayer !== 'undefined' && 
+          (window as any).smartplayer.instances?.length) {
+        const instance = (window as any).smartplayer.instances[0];
+        const videoEl = instance?.video;
+        const src = videoEl?.src || videoEl?.currentSrc || '';
+        // If we can detect by instance, check the container for player ID
+        const playerEl = containerRef.current?.querySelector('vturb-smartplayer[id^="vid-"]');
+        if (playerEl) {
+          const pid = playerEl.getAttribute('id') || '';
+          if (pid === 'vid-69d2965fc996282c9169338a') {
+            onVariantDetected('full-page');
+          } else {
+            onVariantDetected('buttons-only');
+          }
+          return;
+        }
+      }
+
+      if (detectAttempts < 60) {
+        setTimeout(detectVariant, 500);
+      }
+    };
+
+    setTimeout(detectVariant, 1000);
 
     return () => {
       script.remove();
     };
-  }, []);
+  }, [onVariantDetected]);
 
   return <div ref={containerRef} />;
 };
@@ -50,11 +99,19 @@ const Vsl = () => {
   const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
   const [isBonus, setIsBonus] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const [abVariant, setAbVariant] = useState<'full-page' | 'buttons-only' | 'unknown'>('unknown');
   const showContentRef = useRef(false);
+  const variantRef = useRef<'full-page' | 'buttons-only' | 'unknown'>('unknown');
+
+  const handleVariantDetected = useCallback((variant: 'full-page' | 'buttons-only') => {
+    setAbVariant(variant);
+    variantRef.current = variant;
+    console.log('A/B Variant detected:', variant);
+  }, []);
 
   // Reveal page content at 6:03 of the video (363 seconds)
   useEffect(() => {
-    const SECONDS_TO_DISPLAY = 363; // 6 minutes and 3 seconds
+    const SECONDS_TO_DISPLAY = 363;
     let attempts = 0;
     let timeoutId: ReturnType<typeof setTimeout>;
 
@@ -128,7 +185,7 @@ const Vsl = () => {
         )}
         
         <div className="container mx-auto max-w-4xl relative z-10">
-          {showContent && (
+          {showContent && abVariant === 'full-page' && (
             <>
               <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
                 O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
@@ -142,9 +199,9 @@ const Vsl = () => {
             </>
           )}
 
-          {/* VSL Video Player - VTurb Vertical */}
+          {/* VSL Video Player - VTurb A/B Test */}
           <div className="relative max-w-[400px] mx-auto mb-10">
-            <VturbPlayer />
+            <VturbABPlayer onVariantDetected={handleVariantDetected} />
           </div>
 
           {showContent && (
@@ -159,7 +216,7 @@ const Vsl = () => {
           )}
         </div>
 
-        {showContent && (
+        {showContent && abVariant === 'full-page' && (
           <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
               <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +250,7 @@ const Vsl = () => {
         )}
       </section>
 
-      {showContent && (<>
+      {showContent && abVariant === 'full-page' && (<>
       {/* Testimonials Section */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -462,7 +519,9 @@ const Vsl = () => {
           </div>
         </div>
       </section>
+      </>)}
 
+      {showContent && (<>
       {/* Offer Section */}
       <section id="oferta" className="pt-24 pb-10 px-4 bg-gray-900 text-white">
         <div className="container mx-auto max-w-5xl">
@@ -560,6 +619,7 @@ const Vsl = () => {
       <LeadCaptureModal open={modalOpen} onOpenChange={setModalOpen} checkoutUrl={selectedCheckoutUrl} onClosedWithoutSubmit={handleClosedWithoutSubmit} leadType={selectedLeadType} isBonus={isBonus} />
       <GiftPopup open={giftPopupOpen} onOpenChange={setGiftPopupOpen} onClaim={handleClaimGift} />
 
+      {abVariant === 'full-page' && (<>
       {/* Author Section */}
       <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-5xl">
@@ -622,6 +682,7 @@ const Vsl = () => {
           </div>
         </div>
       </section>
+      </>)}
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
