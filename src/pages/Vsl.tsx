@@ -50,31 +50,39 @@ const Vsl = () => {
   const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
   const [isBonus, setIsBonus] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const showContentRef = useRef(false);
 
   // Reveal page content at 6:03 of the video (363 seconds)
   useEffect(() => {
     const SECONDS_TO_DISPLAY = 363; // 6 minutes and 3 seconds
     let attempts = 0;
+    let timeoutId: ReturnType<typeof setTimeout>;
 
     const startWatchVideoProgress = () => {
       if (typeof (window as any).smartplayer === 'undefined' || 
           !((window as any).smartplayer.instances && (window as any).smartplayer.instances.length)) {
         if (attempts >= 30) return;
         attempts += 1;
-        return setTimeout(startWatchVideoProgress, 1000);
+        timeoutId = setTimeout(startWatchVideoProgress, 1000);
+        return;
       }
 
       (window as any).smartplayer.instances[0].on('timeupdate', () => {
-        if (showContent) return;
+        if (showContentRef.current) return;
         const currentTime = (window as any).smartplayer.instances[0].video.currentTime;
         if (currentTime >= SECONDS_TO_DISPLAY) {
+          showContentRef.current = true;
           setShowContent(true);
         }
       });
     };
 
     startWatchVideoProgress();
-  }, [showContent]);
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, []);
 
   useDynamicMeta({
     title: "Vídeo Liberado",
