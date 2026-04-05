@@ -17,6 +17,31 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import LeadCaptureModal from "@/components/LeadCaptureModal";
 import GiftPopup from "@/components/GiftPopup";
 
+const VturbPlayer = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    
+    // Create the smartplayer element
+    const player = document.createElement('div');
+    player.innerHTML = '<vturb-smartplayer id="vid-69d2965fc996282c9169338a" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
+    containerRef.current.appendChild(player.firstChild!);
+
+    // Load the script
+    const script = document.createElement('script');
+    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/players/69d2965fc996282c9169338a/v4/player.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
+  return <div ref={containerRef} />;
+};
+
 const Vsl = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [giftPopupOpen, setGiftPopupOpen] = useState(false);
