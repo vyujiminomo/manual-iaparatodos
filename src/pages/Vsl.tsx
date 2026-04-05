@@ -185,7 +185,7 @@ const Vsl = () => {
         )}
         
         <div className="container mx-auto max-w-4xl relative z-10">
-          {showContent && (
+          {showContent && abVariant === 'full-page' && (
             <>
               <p className="text-center text-sm md:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
                 O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
