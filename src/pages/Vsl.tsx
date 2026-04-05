@@ -199,9 +199,9 @@ const Vsl = () => {
             </>
           )}
 
-          {/* VSL Video Player - VTurb Vertical */}
+          {/* VSL Video Player - VTurb A/B Test */}
           <div className="relative max-w-[400px] mx-auto mb-10">
-            <VturbPlayer />
+            <VturbABPlayer onVariantDetected={handleVariantDetected} />
           </div>
 
           {showContent && (
