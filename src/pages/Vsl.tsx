@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
