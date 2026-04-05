@@ -22,6 +22,7 @@ const Go = lazy(() => import("./pages/Go"));
 const Curso = lazy(() => import("./pages/Curso"));
 const Webinar = lazy(() => import("./pages/Webinar"));
 const UpgradePresencial = lazy(() => import("./pages/UpgradePresencial"));
+const Vsl = lazy(() => import("./pages/Vsl"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading fallback component
@@ -63,6 +64,7 @@ const AppContent = () => {
         <Route path="/curso" element={<Curso />} />
         <Route path="/imersao" element={<Webinar />} />
         <Route path="/upgrade-presencial" element={<UpgradePresencial />} />
+        <Route path="/vsl" element={<Vsl />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
