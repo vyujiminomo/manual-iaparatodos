@@ -99,15 +99,15 @@ const Vsl = () => {
   const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
   const [isBonus, setIsBonus] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const [abVariant, setAbVariant] = useState<'full-page' | 'buttons-only' | 'unknown'>('unknown');
   const showContentRef = useRef(false);
+  const variantRef = useRef<'full-page' | 'buttons-only' | 'unknown'>('unknown');
 
-  // Reveal page content at 6:03 of the video (363 seconds)
-  useEffect(() => {
-    const SECONDS_TO_DISPLAY = 363; // 6 minutes and 3 seconds
-    let attempts = 0;
-    let timeoutId: ReturnType<typeof setTimeout>;
-
-    const startWatchVideoProgress = () => {
+  const handleVariantDetected = useCallback((variant: 'full-page' | 'buttons-only') => {
+    setAbVariant(variant);
+    variantRef.current = variant;
+    console.log('A/B Variant detected:', variant);
+  }, []);
       if (typeof (window as any).smartplayer === 'undefined' || 
           !((window as any).smartplayer.instances && (window as any).smartplayer.instances.length)) {
         if (attempts >= 30) return;
