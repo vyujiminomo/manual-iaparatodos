@@ -108,6 +108,14 @@ const Vsl = () => {
     variantRef.current = variant;
     console.log('A/B Variant detected:', variant);
   }, []);
+
+  // Reveal page content at 6:03 of the video (363 seconds)
+  useEffect(() => {
+    const SECONDS_TO_DISPLAY = 363;
+    let attempts = 0;
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const startWatchVideoProgress = () => {
       if (typeof (window as any).smartplayer === 'undefined' || 
           !((window as any).smartplayer.instances && (window as any).smartplayer.instances.length)) {
         if (attempts >= 30) return;
