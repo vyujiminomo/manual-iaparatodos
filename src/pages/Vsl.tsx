@@ -134,6 +134,7 @@ const Vsl = () => {
           )}
         </div>
 
+        {showContent && (
         {/* Trusted By Section */}
         <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
