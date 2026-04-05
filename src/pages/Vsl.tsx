@@ -250,7 +250,7 @@ const Vsl = () => {
         )}
       </section>
 
-      {showContent && (<>
+      {showContent && abVariant === 'full-page' && (<>
       {/* Testimonials Section */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
