@@ -168,6 +168,7 @@ const Vsl = () => {
         )}
       </section>
 
+      {showContent && (<>
       {/* Testimonials Section */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -608,6 +609,7 @@ const Vsl = () => {
           </div>
         </div>
       </footer>
+      </>)}
     </div>
   );
 };
