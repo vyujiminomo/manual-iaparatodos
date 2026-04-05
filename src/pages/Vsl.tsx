@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import garantiaSelo from "@/assets/garantia-selo.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
@@ -16,6 +16,31 @@ import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import LeadCaptureModal from "@/components/LeadCaptureModal";
 import GiftPopup from "@/components/GiftPopup";
+
+const VturbPlayer = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    
+    // Create the smartplayer element
+    const player = document.createElement('div');
+    player.innerHTML = '<vturb-smartplayer id="vid-69d2965fc996282c9169338a" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>';
+    containerRef.current.appendChild(player.firstChild!);
+
+    // Load the script
+    const script = document.createElement('script');
+    script.src = 'https://scripts.converteai.net/b4b4df23-030a-4317-96fa-2adfbe0ae893/players/69d2965fc996282c9169338a/v4/player.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
+  return <div ref={containerRef} />;
+};
 
 const Vsl = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -77,19 +102,9 @@ const Vsl = () => {
             O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
           </p>
 
-          {/* VSL Video Player */}
-          <div className="relative max-w-3xl mx-auto mb-10">
-            <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-              {/* Placeholder - substitua o src pelo link do seu VSL */}
-              <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&controls=1"
-                title="VSL Imersão IA Para Todos"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
+          {/* VSL Video Player - VTurb Vertical */}
+          <div className="relative max-w-[400px] mx-auto mb-10">
+            <VturbPlayer />
           </div>
 
           <div className="text-center">
