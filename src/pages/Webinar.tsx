@@ -38,11 +38,8 @@ const Webinar = () => {
     }
   };
 
-  const handleCtaClick = (checkoutUrl: string, type: "online" | "presencial", bonus = false) => {
-    setSelectedCheckoutUrl(checkoutUrl);
-    setSelectedLeadType(type);
-    setIsBonus(bonus);
-    setModalOpen(true);
+  const handleCtaClick = (checkoutUrl: string) => {
+    window.location.href = checkoutUrl;
   };
 
   const handleClosedWithoutSubmit = () => {
