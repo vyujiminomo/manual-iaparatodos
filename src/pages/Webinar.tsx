@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import garantiaSelo from "@/assets/garantia-selo.png";
 import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
@@ -14,16 +14,9 @@ import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
-import LeadCaptureModal from "@/components/LeadCaptureModal";
-import GiftPopup from "@/components/GiftPopup";
 
 const Webinar = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [giftPopupOpen, setGiftPopupOpen] = useState(false);
-  const [showConsultoria, setShowConsultoria] = useState(false);
-  const [selectedCheckoutUrl, setSelectedCheckoutUrl] = useState("");
-  const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
-  const [isBonus, setIsBonus] = useState(false);
+  
 
   useDynamicMeta({
     title: "Imersão IA Para Todos 2 - Vitor Yuji",
@@ -38,25 +31,10 @@ const Webinar = () => {
     }
   };
 
-  const handleCtaClick = (checkoutUrl: string, type: "online" | "presencial", bonus = false) => {
-    setSelectedCheckoutUrl(checkoutUrl);
-    setSelectedLeadType(type);
-    setIsBonus(bonus);
-    setModalOpen(true);
+  const handleCtaClick = (checkoutUrl: string) => {
+    window.location.href = checkoutUrl;
   };
 
-  const handleClosedWithoutSubmit = () => {
-    setGiftPopupOpen(true);
-  };
-
-  const handleClaimGift = () => {
-    setShowConsultoria(true);
-    // Scroll to consultoria after a short delay
-    setTimeout(() => {
-      const el = document.getElementById('consultoria-vitor');
-      el?.scrollIntoView({ behavior: 'smooth' });
-    }, 300);
-  };
 
   return (
     <div className="min-h-screen bg-black font-sans">
@@ -719,7 +697,7 @@ const Webinar = () => {
                 </div>
                 
                 <Button 
-                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online")}
+                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i")}
                   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-xl px-8 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
                 >
                   Quero Adquirir Agora →
@@ -744,45 +722,6 @@ const Webinar = () => {
         </div>
       </section>
 
-      {/* Consultoria Section - only visible after gift claim */}
-      {showConsultoria && (
-        <section id="consultoria-vitor" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
-          <div className="container mx-auto max-w-3xl">
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-12">
-              <div className="text-center mb-8">
-                <span className="inline-flex items-center gap-2 bg-teal-50 text-teal-600 text-sm font-bold px-4 py-2 rounded-full border border-teal-100 mb-4">
-                  🎁 Bônus Exclusivo
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                  Consultoria com <span className="text-teal-500">Vitor Yuji</span>
-                </h2>
-              </div>
-              
-              <div className="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
-                <p>
-                  Por mais que as aulas sejam fáceis, não adianta te entregá-las sem antes <span className="font-semibold text-gray-900">te conhecer</span> e te mostrar como extrair o máximo da IA no seu trabalho.
-                </p>
-                <p>
-                  Por isso, você terá uma <span className="font-semibold text-teal-600">consultoria com Vitor Yuji</span>. Vou fazer um "aquecimento" da Imersão e te mostrar como usar IA para que você possa fazer muito mais no seu trabalho com <span className="font-semibold text-gray-900">mais qualidade e menos esforço</span>.
-                </p>
-                <p>
-                  Você também poderá <span className="font-semibold text-gray-900">tirar suas dúvidas ao vivo</span>.
-                </p>
-              </div>
-
-              {/* CTA Buttons for bonus purchases */}
-              <div className="mt-8">
-                <Button 
-                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i", "online", true)}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 py-6 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
-                >
-                  Quero Fazer Parte →
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Guarantee Section */}
       <section className="py-14 px-4 bg-gray-900">
@@ -815,20 +754,6 @@ const Webinar = () => {
         </div>
       </section>
 
-      {/* Modals */}
-      <LeadCaptureModal
-        open={modalOpen}
-        onOpenChange={setModalOpen}
-        checkoutUrl={selectedCheckoutUrl}
-        onClosedWithoutSubmit={handleClosedWithoutSubmit}
-        leadType={selectedLeadType}
-        isBonus={isBonus}
-      />
-      <GiftPopup
-        open={giftPopupOpen}
-        onOpenChange={setGiftPopupOpen}
-        onClaim={handleClaimGift}
-      />
 
       {/* Author Section */}
       <section className="py-24 px-4 bg-white">
