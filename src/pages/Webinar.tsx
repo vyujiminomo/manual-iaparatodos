@@ -14,16 +14,9 @@ import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
-import LeadCaptureModal from "@/components/LeadCaptureModal";
-import GiftPopup from "@/components/GiftPopup";
 
 const Webinar = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [giftPopupOpen, setGiftPopupOpen] = useState(false);
   const [showConsultoria, setShowConsultoria] = useState(false);
-  const [selectedCheckoutUrl, setSelectedCheckoutUrl] = useState("");
-  const [selectedLeadType, setSelectedLeadType] = useState<"online" | "presencial">("online");
-  const [isBonus, setIsBonus] = useState(false);
 
   useDynamicMeta({
     title: "Imersão IA Para Todos 2 - Vitor Yuji",
