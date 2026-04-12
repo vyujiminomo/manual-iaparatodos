@@ -35,18 +35,6 @@ const Webinar = () => {
     window.location.href = checkoutUrl;
   };
 
-  const handleClosedWithoutSubmit = () => {
-    setGiftPopupOpen(true);
-  };
-
-  const handleClaimGift = () => {
-    setShowConsultoria(true);
-    // Scroll to consultoria after a short delay
-    setTimeout(() => {
-      const el = document.getElementById('consultoria-vitor');
-      el?.scrollIntoView({ behavior: 'smooth' });
-    }, 300);
-  };
 
   return (
     <div className="min-h-screen bg-black font-sans">
