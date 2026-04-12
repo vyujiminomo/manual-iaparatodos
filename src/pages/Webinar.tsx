@@ -793,20 +793,6 @@ const Webinar = () => {
         </div>
       </section>
 
-      {/* Modals */}
-      <LeadCaptureModal
-        open={modalOpen}
-        onOpenChange={setModalOpen}
-        checkoutUrl={selectedCheckoutUrl}
-        onClosedWithoutSubmit={handleClosedWithoutSubmit}
-        leadType={selectedLeadType}
-        isBonus={isBonus}
-      />
-      <GiftPopup
-        open={giftPopupOpen}
-        onOpenChange={setGiftPopupOpen}
-        onClaim={handleClaimGift}
-      />
 
       {/* Author Section */}
       <section className="py-24 px-4 bg-white">
