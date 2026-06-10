@@ -929,7 +929,7 @@ const Webinar = () => {
 
             {/* RIGHT — Ticket card + gifts */}
             <div className="flex flex-col items-center justify-center gap-2 md:gap-3 md:py-4">
-              <div className="relative flex-1 flex items-center justify-center w-full">
+              <div className="relative flex items-center justify-center w-full">
                 <img
                   src={imersaoTicketCard}
                   alt="Passaporte Imersão IA Para Todos"
