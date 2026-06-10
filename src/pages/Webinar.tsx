@@ -825,7 +825,7 @@ const Webinar = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* LEFT — Card */}
             <div className="relative">
               <span className="absolute -top-3 left-6 z-10 bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
