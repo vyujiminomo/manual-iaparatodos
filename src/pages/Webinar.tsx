@@ -21,6 +21,10 @@ import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 import imersaoProfissional from "@/assets/imersao-profissional.jpg";
 import imersaoEmpresario from "@/assets/imersao-empresario.jpg";
 import imersaoGestor from "@/assets/imersao-gestor.jpg";
+import local1 from "@/assets/local-1.jpg";
+import local2 from "@/assets/local-2.jpg";
+import local3 from "@/assets/local-3.jpg";
+import local4 from "@/assets/local-4.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -1221,6 +1225,71 @@ const Webinar = () => {
         </div>
       </section>
 
+
+      {/* Localização Section */}
+      <section className="py-24 px-4 bg-neutral-50 relative overflow-hidden">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            {/* Left: Info */}
+            <div>
+              <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-neutral-900 mb-8 leading-[1.05]">
+                Conheça a localização<br />da Imersão
+              </h2>
+
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-neutral-200 shadow-sm">
+                  <div className="w-10 h-10 rounded-lg bg-yellow-400/15 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </div>
+                  <p className="text-neutral-800 font-medium">
+                    <span className="font-bold">Sala Gambiarra,</span> <span className="text-neutral-500">Sergipe, Brasil</span>
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-neutral-200 shadow-sm">
+                  <div className="w-10 h-10 rounded-lg bg-yellow-400/15 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  </div>
+                  <p className="text-neutral-800 font-medium">
+                    5, 12, 19, 26 de Agosto e 2 de Setembro
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-neutral-600 leading-relaxed mb-8">
+                A <span className="font-semibold text-neutral-900">Sala Gambiarra</span> é um espaço criativo aconchegante em Aracaju, com ambiente ao ar livre cercado de natureza, perfeito para uma imersão prática, leve e produtiva.
+              </p>
+
+              <Button
+                onClick={scrollToOffer}
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:shadow-[0_0_40px_rgba(250,204,21,0.6)] w-full sm:w-auto"
+              >
+                Quero Fazer Parte →
+              </Button>
+            </div>
+
+            {/* Right: Photos grid + map */}
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                {[local1, local2, local3, local4].map((img, i) => (
+                  <div key={i} className="aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm">
+                    <img src={img} alt={`Sala Gambiarra ${i+1}`} loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
+                  </div>
+                ))}
+              </div>
+              <div className="aspect-[16/7] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm">
+                <iframe
+                  title="Mapa Sala Gambiarra"
+                  src="https://www.google.com/maps?q=Sala+Gambiarra+Aracaju+Sergipe&output=embed"
+                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-24 px-4 bg-black">
