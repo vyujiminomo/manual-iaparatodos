@@ -674,19 +674,20 @@ const Webinar = () => {
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
                 <div className="flex items-center gap-4 mb-2">
                   <h3 className="text-2xl md:text-3xl font-bold">
-                    Imersão Online
+                    Imersão IA Para Todos 3
                   </h3>
                   <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
                     🔥 Mais Escolhido | 75% OFF*
                   </span>
                 </div>
                 <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
-                  Ao Vivo via Zoom
+                  Presencial ou Online (você escolhe)
                 </span>
                 
                 <div className="space-y-4 mb-8 flex-1">
                   {[
-                    "Acesso completo aos 4 Dias ao Vivo",
+                    "Acesso completo aos 5 Encontros ao Vivo",
+                    "Participe Presencialmente ou Online (Zoom)",
                     "Acesso à Comunidade no WhatsApp Exclusiva",
                     "Acesso às Gravações e Mapas Mentais",
                     "Manual IA Para Todos",
