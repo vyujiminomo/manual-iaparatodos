@@ -126,6 +126,76 @@ const Webinar = () => {
         </div>
       </section>
 
+      {/* Gallery Section - Sinta a experiência da Imersão 2 */}
+      <section className="py-16 md:py-24 px-4 bg-black relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-yellow-400/5 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-4 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+              Veja como foi
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Sinta a experiência da Imersão 2
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {[
+              {
+                label: "Aulas ao vivo",
+                accent: "from-cyan-400 to-cyan-500",
+                placeholder: "imersao-foto-1.jpg",
+              },
+              {
+                label: "Mentoria em grupo",
+                accent: "from-yellow-400 to-amber-400",
+                placeholder: "imersao-foto-2.jpg",
+              },
+              {
+                label: "Networking",
+                accent: "from-emerald-400 to-green-500",
+                placeholder: "imersao-foto-3.jpg",
+              },
+              {
+                label: "Prática guiada",
+                accent: "from-fuchsia-400 to-pink-500",
+                placeholder: "imersao-foto-4.jpg",
+              },
+              {
+                label: "Resultados reais",
+                accent: "from-orange-400 to-red-500",
+                placeholder: "imersao-foto-5.jpg",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 group"
+              >
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.accent} rounded-t-2xl z-10`}></div>
+                <div className="aspect-[4/5] relative overflow-hidden">
+                  <img
+                    src={`/lovable-uploads/${item.placeholder}`}
+                    alt={item.label}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.innerHTML = `<div class="w-full h-full flex items-center justify-center bg-white/[0.03] text-gray-500 text-sm font-medium">${item.label}</div>`;
+                      }
+                    }}
+                  />
+                </div>
+                <div className="p-4 text-center">
+                  <p className="text-sm font-semibold text-white">{item.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
