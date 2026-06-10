@@ -383,9 +383,9 @@ const Webinar = () => {
 
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16">
             {[
-              { n: "01", icon: "🔍", title: "Aprender sozinho", body: <>Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, <span className="text-white font-medium">nenhuma grande mudança</span> na produtividade.</> },
-              { n: "02", icon: "📹", title: "Curso gravado", body: <>Comprou um curso online. Confuso, técnico demais, e quando travou… <span className="text-white font-medium">não tinha ninguém pra ajudar.</span></> },
-              { n: "03", icon: "🙋", title: "Pedir ajuda", body: <>Ligou pro filho, pro estagiário. Mas na próxima dificuldade, sente vergonha de pedir de novo. <span className="text-white font-medium italic">"Sou velho demais pra isso."</span></> },
+              { n: "01", icon: "🔍", title: "Aprendeu sozinho", body: <>Mexeu no ChatGPT, mas até agora não viu a grande transformação no trabalho que prometem.</> },
+              { n: "02", icon: "📹", title: "Assistiu um curso", body: <>Assistiu um curso, mas era teórico ou técnico demais. E quando teve dificuldade, <span className="text-white font-medium">não tinha ninguém pra ajudar.</span></> },
+              { n: "03", icon: "🙋", title: "Pediu ajuda pra alguém mais novo", body: <>Ligou para o filho, sobrinho ou estagiário, mas não quer mais depender dos outros para tecnologia. </> },
             ].map((c) => (
               <div
                 key={c.n}
