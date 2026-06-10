@@ -499,6 +499,109 @@ const Webinar = () => {
 
       </section>
 
+      {/* 3 Formas de Participar */}
+      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+        {/* Background atmosphere */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Header */}
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+              Flexibilidade total
+            </span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              As <span className="text-yellow-400">3 formas</span> de participar das aulas
+            </h2>
+            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              A inscrição na Imersão te dá acesso a participar das aulas de 3 formas
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                icon: "🏫",
+                title: "Presencial na sala de aula",
+                body: "Participe ao vivo na sala de aula, interaja com o professor e outros alunos presencialmente.",
+                image: "/lovable-uploads/presencial-sala.jpg",
+                accent: "yellow",
+                grad: "from-yellow-400 to-amber-400",
+                tint: "bg-yellow-400/10 border-yellow-400/20",
+              },
+              {
+                icon: "💻",
+                title: "Online pelo Meet",
+                body: "Acompanhe todas as aulas em tempo real pelo Google Meet, do conforto da sua casa ou escritório.",
+                image: "/lovable-uploads/online-meet.jpg",
+                accent: "cyan",
+                grad: "from-cyan-400 to-blue-500",
+                tint: "bg-cyan-400/10 border-cyan-400/20",
+              },
+              {
+                icon: "📹",
+                title: "Gravações",
+                body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir quando quiser.",
+                image: "/lovable-uploads/gravacoes.jpg",
+                accent: "emerald",
+                grad: "from-emerald-400 to-green-500",
+                tint: "bg-emerald-400/10 border-emerald-400/20",
+              },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
+              >
+                {/* Accent top bar */}
+                <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${c.grad}`}></div>
+
+                {/* Image area */}
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={c.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.innerHTML = `<div class="w-full h-full flex flex-col items-center justify-center bg-white/[0.03] text-gray-500 text-sm font-medium gap-2"><span class="text-4xl">${c.icon}</span><span>${c.title}</span></div>`;
+                      }
+                    }}
+                  />
+                  {/* Subtle gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  {/* Icon badge */}
+                  <div className={`absolute bottom-4 left-4 w-10 h-10 rounded-xl ${c.tint} border flex items-center justify-center`}>
+                    <span className="text-xl">{c.icon}</span>
+                  </div>
+                </div>
+
+                {/* Text content */}
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-white mb-2 font-poppins">{c.title}</h3>
+                  <p className="text-gray-400 leading-relaxed text-sm">{c.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center mt-14">
+            <Button
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+            >
+              QUERO FAZER PARTE →
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Comparison Section */}
       <section className="py-24 px-4 bg-gray-950">
         <div className="container mx-auto max-w-4xl">
