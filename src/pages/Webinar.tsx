@@ -727,7 +727,7 @@ const Webinar = () => {
               </div>
 
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
-                Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
+                Você escolhe se quer participar <span className="font-semibold text-gray-500">presencialmente ou online</span>. Após a compra, enviaremos todas as informações por WhatsApp.
               </p>
           </div>
         </div>
