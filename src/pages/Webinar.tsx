@@ -52,16 +52,17 @@ const Webinar = () => {
             width={1920}
             height={1080}
           />
-          {/* Gradient overlays for legibility on top-left content */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-black/20"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black"></div>
+          {/* Gradient overlays - strong left blur fade like Adapta Summit */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black"></div>
         </div>
 
-        {/* Decorative glow */}
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        {/* Decorative left blur masses */}
+        <div className="absolute top-1/2 -translate-y-1/2 -left-60 w-[900px] h-[900px] bg-black/70 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/3 left-32 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="relative z-10 flex-1 flex items-start justify-start px-5 md:px-10 lg:px-16 pt-10 md:pt-16 lg:pt-20 pb-16">
-          <div className="w-full max-w-xl lg:max-w-2xl lg:mr-auto">
+        <div className="relative z-10 flex-1 flex items-center justify-start px-5 md:px-10 lg:px-20 xl:pl-[12%] pt-10 md:pt-16 pb-16">
+          <div className="w-full max-w-xl lg:max-w-[580px]">
             {/* Date badge */}
             <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-sans font-medium tracking-wide text-xs md:text-sm px-4 py-2 rounded-md mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
