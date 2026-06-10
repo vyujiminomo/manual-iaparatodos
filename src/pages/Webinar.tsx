@@ -19,8 +19,8 @@ const Webinar = () => {
   
 
   useDynamicMeta({
-    title: "Imersão IA Para Todos 2 - Vitor Yuji",
-    description: "Vá do zero ao avançado em IA em apenas 4 dias. Imersão ao vivo com Vitor Yuji.",
+    title: "Imersão IA Para Todos 3 - Vitor Yuji",
+    description: "Vá do zero ao avançado em IA em 5 encontros. Imersão presencial ou online com Vitor Yuji.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
@@ -57,7 +57,7 @@ const Webinar = () => {
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
-                  15, 22, 29 de Abril e 6 de Maio 2026
+                  5, 12, 19, 26 de Agosto e 2 de Setembro 2026 • Presencial ou Online
                 </span>
               </div>
               
@@ -375,104 +375,113 @@ const Webinar = () => {
       </section>
 
       {/* Curriculum Section */}
-      <section className="py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Cronograma das aulas
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 1: O que é Inteligência Artificial <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(15/04/2026 - Quarta, 19h)</span>
-              </h3>
-              <ul className="space-y-2 md:space-y-3 text-gray-700">
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">5 princípios básicos para interagir com IA</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Como usar o "Filtro da Verdade" para evitar respostas falsas</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Como, quando e porque usar cada IA</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 2: Como criar Prompts Magnéticos <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(22/04/2026 - Quarta, 19h)</span>
-              </h3>
-              <ul className="space-y-2 md:space-y-3 text-gray-700">
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">A estrutura 3IAI para prompts perfeitos</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Como criar um bom contexto</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">O maior erro que iniciantes cometem ao usar IAs</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 3: As 5 Práticas da IA Generativa <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(29/04/2026 - Quarta, 19h)</span>
-              </h3>
-              <ul className="space-y-2 md:space-y-3 text-gray-700">
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Pesquisando artigos e jurisprudência com IA</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">4 técnicas para ter ideias com IA</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">4 técnicas para aprender com IA</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">2 técnicas para gerir com IA</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">6 técnicas para escrever com IA</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-4 md:p-8 hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 text-black">
-                Dia 4: Tira Dúvidas e Práticas no Seu Trabalho <span className="text-amber-600 font-semibold text-sm md:text-lg block md:inline mt-1 md:mt-0">(06/05/2026 - Quarta, 19h)</span>
-              </h3>
-              <ul className="space-y-2 md:space-y-3 text-gray-700">
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Exemplos reais dos alunos</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Sessão de dúvidas ao vivo</span>
-                </li>
-                <li className="flex items-start gap-2 md:gap-3">
-                  <Check className="text-cyan-400 flex-shrink-0 mt-0.5 md:mt-1" size={18} />
-                  <span className="text-sm md:text-lg">Resumão de toda a imersão</span>
-                </li>
-              </ul>
-            </div>
+      <section className="py-24 px-4 bg-black relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/5 rounded-full blur-3xl"></div>
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-4 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+              5 Encontros • Presencial ou Online
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Cronograma das aulas
+            </h2>
           </div>
-          
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            {[
+              {
+                day: 1,
+                date: "05/08",
+                title: "Pegando na sua mão para mexer no ChatGPT",
+                items: [
+                  "Botões e funções das IAs",
+                  "Como criar sua conta e começar do zero",
+                  "Primeiros comandos práticos",
+                ],
+                accent: "from-cyan-400 to-cyan-500",
+                bg: "bg-cyan-400/10",
+              },
+              {
+                day: 2,
+                date: "12/08",
+                title: "O que é Inteligência Artificial",
+                items: [
+                  "5 princípios básicos para interagir com IA",
+                  'Como usar o "Filtro da Verdade" para evitar respostas falsas',
+                  "Como, quando e porque usar cada IA",
+                ],
+                accent: "from-yellow-400 to-amber-400",
+                bg: "bg-yellow-400/10",
+              },
+              {
+                day: 3,
+                date: "19/08",
+                title: "Como criar Prompts Magnéticos",
+                items: [
+                  "A estrutura 3IAI para prompts perfeitos",
+                  "Como criar um bom contexto",
+                  "O maior erro que iniciantes cometem ao usar IAs",
+                ],
+                accent: "from-emerald-400 to-green-500",
+                bg: "bg-emerald-400/10",
+              },
+              {
+                day: 4,
+                date: "26/08",
+                title: "As 5 Práticas da IA Generativa",
+                items: [
+                  "Pesquisando artigos e jurisprudência com IA",
+                  "4 técnicas para ter ideias com IA",
+                  "4 técnicas para aprender com IA",
+                  "2 técnicas para gerir com IA",
+                  "6 técnicas para escrever com IA",
+                ],
+                accent: "from-fuchsia-400 to-pink-500",
+                bg: "bg-fuchsia-400/10",
+              },
+              {
+                day: 5,
+                date: "02/09",
+                title: "Tira Dúvidas e Práticas no Seu Trabalho",
+                items: [
+                  "Exemplos reais dos alunos",
+                  "Sessão de dúvidas ao vivo",
+                  "Resumão de toda a imersão",
+                ],
+                accent: "from-orange-400 to-red-500",
+                bg: "bg-orange-400/10",
+              },
+            ].map((d) => (
+              <div
+                key={d.day}
+                className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col"
+              >
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${d.accent} rounded-t-2xl`}></div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className={`w-12 h-12 rounded-xl ${d.bg} flex items-center justify-center`}>
+                    <span className="text-white font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
+                  </div>
+                  <span className="text-xs font-semibold tracking-wider text-gray-400 uppercase">
+                    {d.date} • 19h
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem]">
+                  {d.title}
+                </h3>
+                <ul className="space-y-2 text-gray-300 flex-1">
+                  {d.items.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <Check className="text-cyan-400 flex-shrink-0 mt-1" size={14} />
+                      <span className="text-sm leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
           <div className="text-center mt-12">
-            <Button 
+            <Button
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
@@ -481,6 +490,7 @@ const Webinar = () => {
           </div>
         </div>
       </section>
+
 
       {/* Why Section */}
       <section className="py-24 px-4 bg-white">
@@ -656,7 +666,7 @@ const Webinar = () => {
               Acesse o Método Único de Aprender IA
             </h2>
             <p className="text-xl text-gray-300">
-              4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
+              5 encontros (presencial ou online) + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
           
@@ -664,19 +674,20 @@ const Webinar = () => {
               <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
                 <div className="flex items-center gap-4 mb-2">
                   <h3 className="text-2xl md:text-3xl font-bold">
-                    Imersão Online
+                    Imersão IA Para Todos 3
                   </h3>
                   <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
                     🔥 Mais Escolhido | 75% OFF*
                   </span>
                 </div>
                 <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
-                  Ao Vivo via Zoom
+                  Presencial ou Online (você escolhe)
                 </span>
                 
                 <div className="space-y-4 mb-8 flex-1">
                   {[
-                    "Acesso completo aos 4 Dias ao Vivo",
+                    "Acesso completo aos 5 Encontros ao Vivo",
+                    "Participe Presencialmente ou Online (Zoom)",
                     "Acesso à Comunidade no WhatsApp Exclusiva",
                     "Acesso às Gravações e Mapas Mentais",
                     "Manual IA Para Todos",
@@ -716,7 +727,7 @@ const Webinar = () => {
               </div>
 
               <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
-                Quer participar <span className="font-semibold text-gray-500">presencialmente</span>? Após a compra, você será redirecionado para conhecer a versão presencial. Também enviaremos informações por WhatsApp.
+                Você escolhe se quer participar <span className="font-semibold text-gray-500">presencialmente ou online</span>. Após a compra, enviaremos todas as informações por WhatsApp.
               </p>
           </div>
         </div>
@@ -855,11 +866,12 @@ const Webinar = () => {
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  A imersão acontecerá em 4 quartas-feiras, às 19h:<br/>
-                  <strong>• 15 de Abril de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
-                  <strong>• 22 de Abril de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
-                  <strong>• 29 de Abril de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa<br/>
-                  <strong>• 6 de Maio de 2026</strong> - Dia 4: Tira Dúvidas e Práticas no Seu Trabalho
+                  A imersão acontecerá em 5 quartas-feiras, às 19h (presencial ou online — você escolhe):<br/>
+                  <strong>• 5 de Agosto de 2026</strong> - Dia 1: Pegando na sua mão para mexer no ChatGPT<br/>
+                  <strong>• 12 de Agosto de 2026</strong> - Dia 2: O que é Inteligência Artificial<br/>
+                  <strong>• 19 de Agosto de 2026</strong> - Dia 3: Como criar Prompts Magnéticos<br/>
+                  <strong>• 26 de Agosto de 2026</strong> - Dia 4: As 5 Práticas da IA Generativa<br/>
+                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Tira Dúvidas e Práticas no Seu Trabalho
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -888,11 +900,11 @@ const Webinar = () => {
 
             <AccordionItem value="item-3" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Preciso instalar algo para participar dos encontros ao vivo?</span>
+                <span className="font-bold text-xl text-black">Como funciona a opção presencial ou online?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  Sim, os encontros acontecem via Zoom, então é importante ter ele instalado antes do primeiro dia.
+                  Você escolhe! Pode participar presencialmente ou online via Zoom — basta ter o Zoom instalado caso opte pelo online. Após a compra, enviaremos todas as instruções pelo WhatsApp.
                 </p>
               </AccordionContent>
             </AccordionItem>
