@@ -52,18 +52,18 @@ const Webinar = () => {
             width={1920}
             height={1080}
           />
-          {/* Gradient overlays for legibility on top-right content */}
-          <div className="absolute inset-0 bg-gradient-to-l from-black/95 via-black/60 to-black/20"></div>
+          {/* Gradient overlays for legibility on top-left content */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-black/20"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black"></div>
         </div>
 
         {/* Decorative glow */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="relative z-10 flex-1 flex items-start justify-end px-5 md:px-10 lg:px-16 pt-10 md:pt-16 lg:pt-20 pb-16">
-          <div className="w-full max-w-xl lg:max-w-2xl lg:ml-auto">
+        <div className="relative z-10 flex-1 flex items-start justify-start px-5 md:px-10 lg:px-16 pt-10 md:pt-16 lg:pt-20 pb-16">
+          <div className="w-full max-w-xl lg:max-w-2xl lg:mr-auto">
             {/* Date badge */}
-            <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-bebas tracking-[0.18em] text-xs md:text-sm px-4 py-2 rounded-md mb-5">
+            <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-sans font-medium tracking-wide text-xs md:text-sm px-4 py-2 rounded-md mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
               5, 12, 19, 26 DE AGOSTO • 2 DE SETEMBRO
             </div>
