@@ -199,60 +199,138 @@ const Webinar = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-black">
-            O QUE DIZEM OS ALUNOS DA 1ª TURMA:
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
-              <video 
-                controls 
-                preload="metadata"
-                className="w-full h-full object-cover"
-                style={{ aspectRatio: '9/16' }}
-              >
-                <source src="/lovable-uploads/video-osvaldo-araki.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
-            </div>
-            
-            <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
-              <video 
-                controls 
-                preload="metadata"
-                className="w-full h-full object-cover"
-                style={{ aspectRatio: '9/16' }}
-              >
-                <source src="/lovable-uploads/video-max-2.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
-            </div>
-            
-            <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300">
-              <video 
-                controls 
-                preload="metadata"
-                className="w-full h-full object-cover"
-                style={{ aspectRatio: '9/16' }}
-              >
-                <source src="/lovable-uploads/video-karina.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
-            </div>
+      <section className="relative py-20 md:py-28 px-4 bg-black overflow-hidden">
+        {/* Background glows */}
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-10 md:mb-14">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
+              Provas reais
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Confira os depoimentos <br className="hidden md:block" />
+              <span className="text-yellow-400">dos alunos</span>
+            </h2>
           </div>
-          
-          <div className="text-center mt-8 md:mt-12">
-            <Button 
+
+          {/* Turma switcher */}
+          <div className="flex items-center justify-center gap-3 md:gap-4 mb-10">
+            <button
+              onClick={() => setTurmaAtiva(turmaAtiva === 1 ? 2 : 1)}
+              aria-label="Turma anterior"
+              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            <div className="flex bg-white/5 border border-white/10 rounded-full p-1 backdrop-blur-sm">
+              <button
+                onClick={() => setTurmaAtiva(1)}
+                className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
+                  turmaAtiva === 1
+                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                Turma 1
+              </button>
+              <button
+                onClick={() => setTurmaAtiva(2)}
+                className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
+                  turmaAtiva === 2
+                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                Turma 2
+              </button>
+            </div>
+
+            <button
+              onClick={() => setTurmaAtiva(turmaAtiva === 2 ? 1 : 2)}
+              aria-label="Próxima turma"
+              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Turma 1 */}
+          {turmaAtiva === 1 && (
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
+              {[
+                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-cyan-400 to-cyan-500", nome: "Osvaldo Araki" },
+                { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max" },
+                { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina" },
+              ].map((d, i) => (
+                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
+                  <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
+                  <div className="p-2">
+                    <video
+                      controls
+                      preload="metadata"
+                      className="w-full rounded-xl object-cover"
+                      style={{ aspectRatio: '9/16' }}
+                    >
+                      <source src={d.src} type="video/mp4" />
+                      Seu navegador não suporta vídeos.
+                    </video>
+                  </div>
+                  <div className="px-5 pb-5 pt-2 flex items-center gap-2">
+                    <Quote className="w-4 h-4 text-yellow-400" />
+                    <span className="text-white font-semibold text-sm">{d.nome}</span>
+                    <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 1</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Turma 2 - Template */}
+          {turmaAtiva === 2 && (
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
+              {[
+                { border: "from-fuchsia-400 to-pink-500", label: "Depoimento 1" },
+                { border: "from-orange-400 to-red-500", label: "Depoimento 2" },
+                { border: "from-cyan-400 to-blue-500", label: "Depoimento 3" },
+              ].map((d, i) => (
+                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-dashed border-white/15 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300">
+                  <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
+                  <div className="p-2">
+                    <div
+                      className="w-full rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] flex flex-col items-center justify-center text-center px-4"
+                      style={{ aspectRatio: '9/16' }}
+                    >
+                      <div className="w-14 h-14 rounded-full bg-yellow-400/10 border border-yellow-400/30 flex items-center justify-center mb-4">
+                        <Quote className="w-6 h-6 text-yellow-400" />
+                      </div>
+                      <p className="text-white font-bold text-base mb-1">Em breve</p>
+                      <p className="text-gray-400 text-xs">Depoimento da Turma 2</p>
+                    </div>
+                  </div>
+                  <div className="px-5 pb-5 pt-2 flex items-center gap-2">
+                    <Quote className="w-4 h-4 text-yellow-400" />
+                    <span className="text-white font-semibold text-sm">{d.label}</span>
+                    <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 2</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="text-center mt-10 md:mt-14">
+            <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
+
 
       {/* Problem Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
