@@ -900,11 +900,11 @@ const Webinar = () => {
 
             <AccordionItem value="item-3" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Preciso instalar algo para participar dos encontros ao vivo?</span>
+                <span className="font-bold text-xl text-black">Como funciona a opção presencial ou online?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  Sim, os encontros acontecem via Zoom, então é importante ter ele instalado antes do primeiro dia.
+                  Você escolhe! Pode participar presencialmente ou online via Zoom — basta ter o Zoom instalado caso opte pelo online. Após a compra, enviaremos todas as instruções pelo WhatsApp.
                 </p>
               </AccordionContent>
             </AccordionItem>
