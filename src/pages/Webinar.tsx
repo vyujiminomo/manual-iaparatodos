@@ -17,6 +17,7 @@ import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 
 const Webinar = () => {
+  const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
   
 
   useDynamicMeta({
