@@ -825,7 +825,7 @@ const Webinar = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* LEFT — Card */}
             <div className="relative">
               <span className="absolute -top-3 left-6 z-10 bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
@@ -908,10 +908,11 @@ const Webinar = () => {
 
                 <Button
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i")}
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg transition-colors"
                 >
                   Garantir Ingresso
                 </Button>
+
 
                 <div className="flex items-center justify-center gap-6 text-xs md:text-sm text-gray-600 mt-4">
                   <div className="flex items-center gap-1.5">
@@ -927,15 +928,15 @@ const Webinar = () => {
             </div>
 
             {/* RIGHT — Ticket card + gifts */}
-            <div className="flex flex-col items-center gap-6">
-              <div className="relative">
+            <div className="flex flex-col items-center justify-between gap-10 md:gap-8 md:py-4">
+              <div className="relative flex-1 flex items-center justify-center w-full">
                 <img
                   src={imersaoTicketCard}
                   alt="Passaporte Imersão IA Para Todos"
                   loading="lazy"
-                  className="w-full max-w-sm h-auto drop-shadow-[0_30px_60px_rgba(250,204,21,0.25)]"
+                  className="w-full max-w-[340px] h-auto drop-shadow-[0_30px_60px_rgba(250,204,21,0.25)]"
                 />
-                <div className="absolute -right-2 md:right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2">
+                <div className="absolute right-0 md:-right-4 bottom-10 flex flex-col gap-2">
                   <span className="bg-white text-gray-900 text-xs md:text-sm font-bold px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap">
                     ● 5 aulas ao vivo
                   </span>
@@ -948,9 +949,10 @@ const Webinar = () => {
                 src={imersaoGiftsTrio}
                 alt="Bônus exclusivos da Imersão"
                 loading="lazy"
-                className="w-full max-w-sm h-auto"
+                className="w-full max-w-[360px] h-auto"
               />
             </div>
+
           </div>
         </div>
       </section>
