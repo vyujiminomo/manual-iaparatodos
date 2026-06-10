@@ -949,8 +949,9 @@ const Webinar = () => {
                 src={imersaoGiftsTrio}
                 alt="Bônus exclusivos da Imersão"
                 loading="lazy"
-                className="w-full max-w-[360px] h-auto"
+                className="w-full max-w-[340px] h-auto -mt-10 md:-mt-12"
               />
+
             </div>
 
           </div>
