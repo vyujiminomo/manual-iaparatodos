@@ -928,7 +928,7 @@ const Webinar = () => {
             </div>
 
             {/* RIGHT — Ticket card + gifts */}
-            <div className="flex flex-col items-center justify-center gap-2 md:gap-3 md:py-4">
+            <div className="flex flex-col items-center justify-start gap-1 md:gap-2 md:pt-8">
               <div className="relative flex items-center justify-center w-full">
                 <img
                   src={imersaoTicketCard}
@@ -949,8 +949,9 @@ const Webinar = () => {
                 src={imersaoGiftsTrio}
                 alt="Bônus exclusivos da Imersão"
                 loading="lazy"
-                className="w-full max-w-[360px] h-auto"
+                className="w-full max-w-[340px] h-auto -mt-10 md:-mt-12"
               />
+
             </div>
 
           </div>
