@@ -730,9 +730,9 @@ const Webinar = () => {
                 {bonuses.map((b, i) => {
                   const reverse = i % 2 === 1;
                   return (
-                    <div key={i} className={`grid md:grid-cols-2 gap-5 md:gap-7 items-stretch ${reverse ? 'md:[&>*:first-child]:order-2' : ''}`}>
+                    <div key={i} className={`grid md:grid-cols-5 gap-5 md:gap-7 items-stretch ${reverse ? 'md:[&>*:first-child]:order-2' : ''}`}>
                       {/* Text card */}
-                      <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:p-9 flex flex-col justify-center backdrop-blur-sm">
+                      <div className="md:col-span-2 rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:p-8 flex flex-col justify-center backdrop-blur-sm">
                         <div className="flex items-center gap-3 mb-4">
                           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/40">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
@@ -747,7 +747,7 @@ const Webinar = () => {
                         </p>
                       </div>
                       {/* Image card */}
-                      <div className="relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[280px] group">
+                      <div className="md:col-span-3 relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[300px] group">
                         <img src={b.img} alt={b.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                         {/* Orange corner ribbon */}
