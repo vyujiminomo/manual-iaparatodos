@@ -96,7 +96,7 @@ const Webinar = () => {
             {/* Checklist */}
             <ul className="space-y-2.5 mb-8">
               {[
-                "Turma 3 disponível (condição especial)",
+                "Lote 2 disponível (condição especial)",
                 "Acesso às gravações da imersão",
                 "5 aulas presenciais ou online",
                 "Professor e grupo para networking",
@@ -289,9 +289,9 @@ const Webinar = () => {
           {turmaAtiva === 1 && (
             <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
               {[
-                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-cyan-400 to-cyan-500", nome: "Osvaldo Araki" },
-                { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max" },
-                { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina" },
+                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-cyan-400 to-cyan-500", nome: "Osvaldo Araki, Médico" },
+                { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max Mauro, Engenheiro" },
+                { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina, Médica" },
               ].map((d, i) => (
                 <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
