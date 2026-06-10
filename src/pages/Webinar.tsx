@@ -456,9 +456,9 @@ const Webinar = () => {
           {/* Method pillars */}
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16 max-w-5xl mx-auto">
             {[
-              { n: "01", icon: "👥", title: "Mentoria em Grupo", body: "Aulas ao vivo. Dúvidas respondidas na hora. Networking. Grupo no WhatsApp.", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { n: "02", icon: "🎯", title: "Aulas Dinâmicas", body: "Linguagem simples. Aulas divertidas. Eu tenho 15 anos… você acha mesmo que eu gosto de jargão técnico?", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
-              { n: "03", icon: "⚡", title: "Prática Imediata", body: "Testamos juntos o ChatGPT e as melhores IAs durante as aulas, ao vivo.", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { n: "01", icon: "👥", title: "Mentoria Presencial em Grupo", body: "Aprenda como você sempre aprendeu: na sala de aula e com outros alunos", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { n: "02", icon: "🎯", title: "Aulas Dinâmicas", body: "Aulas divertidas e com linguagem simples. Eu tenho 15 anos, você acha mesmo que eu gosto de jargão técnico?", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { n: "03", icon: "⚡", title: "Prática Imediata", body: "Testamos ao vivo técnicas de ChatGPT e outras IAs. ", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((c) => (
               <div
                 key={c.n}
