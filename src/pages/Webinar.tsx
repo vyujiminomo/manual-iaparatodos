@@ -866,11 +866,12 @@ const Webinar = () => {
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  A imersão acontecerá em 4 quartas-feiras, às 19h:<br/>
-                  <strong>• 15 de Abril de 2026</strong> - Dia 1: O que é Inteligência Artificial<br/>
-                  <strong>• 22 de Abril de 2026</strong> - Dia 2: Como criar Prompts Magnéticos<br/>
-                  <strong>• 29 de Abril de 2026</strong> - Dia 3: As 5 Práticas da IA Generativa<br/>
-                  <strong>• 6 de Maio de 2026</strong> - Dia 4: Tira Dúvidas e Práticas no Seu Trabalho
+                  A imersão acontecerá em 5 quartas-feiras, às 19h (presencial ou online — você escolhe):<br/>
+                  <strong>• 5 de Agosto de 2026</strong> - Dia 1: Pegando na sua mão para mexer no ChatGPT<br/>
+                  <strong>• 12 de Agosto de 2026</strong> - Dia 2: O que é Inteligência Artificial<br/>
+                  <strong>• 19 de Agosto de 2026</strong> - Dia 3: Como criar Prompts Magnéticos<br/>
+                  <strong>• 26 de Agosto de 2026</strong> - Dia 4: As 5 Práticas da IA Generativa<br/>
+                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Tira Dúvidas e Práticas no Seu Trabalho
                 </p>
               </AccordionContent>
             </AccordionItem>
