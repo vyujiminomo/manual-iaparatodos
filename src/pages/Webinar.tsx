@@ -383,9 +383,9 @@ const Webinar = () => {
 
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16">
             {[
-              { n: "01", icon: "🔍", title: "Aprender sozinho", body: <>Mexeu no ChatGPT, conversou um pouco, achou que tava bom. Mas até agora, <span className="text-white font-medium">nenhuma grande mudança</span> na produtividade.</> },
-              { n: "02", icon: "📹", title: "Curso gravado", body: <>Comprou um curso online. Confuso, técnico demais, e quando travou… <span className="text-white font-medium">não tinha ninguém pra ajudar.</span></> },
-              { n: "03", icon: "🙋", title: "Pedir ajuda", body: <>Ligou pro filho, pro estagiário. Mas na próxima dificuldade, sente vergonha de pedir de novo. <span className="text-white font-medium italic">"Sou velho demais pra isso."</span></> },
+              { n: "01", icon: "🔍", title: "Aprendeu sozinho", body: <>Mexeu no ChatGPT, mas até agora não viu a grande transformação no trabalho que prometem.</> },
+              { n: "02", icon: "📹", title: "Assistiu um curso", body: <>Assistiu um curso, mas era teórico ou técnico demais. E quando teve dificuldade, <span className="text-white font-medium">não tinha ninguém pra ajudar.</span></> },
+              { n: "03", icon: "🙋", title: "Pediu ajuda pra alguém mais novo", body: <>Ligou para o filho, sobrinho ou estagiário, mas não quer mais depender dos outros para tecnologia. </> },
             ].map((c) => (
               <div
                 key={c.n}
@@ -456,9 +456,9 @@ const Webinar = () => {
           {/* Method pillars */}
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16 max-w-5xl mx-auto">
             {[
-              { n: "01", icon: "👥", title: "Mentoria em Grupo", body: "Aulas ao vivo. Dúvidas respondidas na hora. Networking. Grupo no WhatsApp.", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { n: "02", icon: "🎯", title: "Aulas Dinâmicas", body: "Linguagem simples. Aulas divertidas. Eu tenho 15 anos… você acha mesmo que eu gosto de jargão técnico?", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
-              { n: "03", icon: "⚡", title: "Prática Imediata", body: "Testamos juntos o ChatGPT e as melhores IAs durante as aulas, ao vivo.", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { n: "01", icon: "👥", title: "Mentoria Presencial em Grupo", body: "Aprenda como você sempre aprendeu: na sala de aula e com outros alunos", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { n: "02", icon: "🎯", title: "Aulas Dinâmicas", body: "Aulas divertidas e com linguagem simples. Eu tenho 15 anos, você acha mesmo que eu gosto de jargão técnico?", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { n: "03", icon: "⚡", title: "Prática Imediata", body: "Testamos ao vivo técnicas de ChatGPT e outras IAs. ", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((c) => (
               <div
                 key={c.n}
@@ -514,19 +514,19 @@ const Webinar = () => {
             {/* Header */}
             <div className="grid grid-cols-2">
               <div className="p-5 md:p-6 text-center bg-red-500/10 border-b-2 border-red-500">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">Curso Online</p>
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">OUTROS CURSOS</p>
               </div>
               <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">Imersão IA Para Todos</p>
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">MENTORIA IA NA PRÁTICA</p>
               </div>
             </div>
 
             {/* Rows */}
             {[
-              { left: "Vídeo gravado", right: "Ao vivo + gravações" },
+              { left: "Vídeo gravado", right: "Ao vivo (presencial ou online) + gravações" },
               { left: "Você fica com dúvidas", right: "Professor 'pega na mão' e te ajuda" },
-              { left: "Técnico e foco em programação", right: "Linguagem simples e aulas dinâmicas" },
-              { left: "Excesso de teoria", right: "Prática no seu trabalho" },
+              { left: "Técnico demais", right: "Foco no que você realmente vai usar" },
+              { left: "Excesso de teoria", right: "Aulas dinâmicas e práticas" },
               { left: "Sozinho", right: "Grupo de profissionais" },
             ].map((row, i) => (
               <div key={i} className="grid grid-cols-2 border-t border-white/5">
