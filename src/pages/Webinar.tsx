@@ -21,6 +21,10 @@ import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 import imersaoProfissional from "@/assets/imersao-profissional.jpg";
 import imersaoEmpresario from "@/assets/imersao-empresario.jpg";
 import imersaoGestor from "@/assets/imersao-gestor.jpg";
+import local1 from "@/assets/local-1.jpg";
+import local2 from "@/assets/local-2.jpg";
+import local3 from "@/assets/local-3.jpg";
+import local4 from "@/assets/local-4.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
