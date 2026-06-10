@@ -703,88 +703,66 @@ const Webinar = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 bg-black">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Bônus ao adquirir sua Vaga
-          </h2>
-          <p className="text-center text-lg text-gray-400 mb-12">
-            Veja o que você vai receber assim que garantir sua vaga:
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <div className="w-full h-64 overflow-hidden">
-                <img 
-                  src={webinarGravacao} 
-                  alt="Acesso as gravações completas da Imersão" 
-                  className="w-full h-full object-cover object-right"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-xl font-bold mb-4 text-black">
-                  Acesso as gravações completas da Imersão
-                </h3>
-                <p className="text-gray-700 text-lg">
-                  Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas.
-                </p>
-              </div>
+      <section className="py-24 px-4 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
+        <div className="container mx-auto max-w-6xl relative">
+          <div className="text-center mb-14">
+            <div className="inline-block px-4 py-1.5 mb-5 border border-yellow-400/40 rounded-full">
+              <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Presentes Exclusivos</span>
             </div>
-            
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <div className="w-full h-64 overflow-hidden">
-                <img 
-                  src={webinarBiblioteca} 
-                  alt="Mapas Mentais" 
-                  className="w-full h-full object-cover object-left"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-xl font-bold mb-4 text-black">
-                  Mapas Mentais
-                </h3>
-                <p className="text-gray-700 text-lg">
-                  5 mapas mentais dos principais aprendizados da Imersão para você estudar.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <div className="w-full h-64 overflow-hidden">
-                <img 
-                  src={webinarWhatsapp} 
-                  alt="Grupo no WhatsApp" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-xl font-bold mb-4 text-black">
-                  Grupo no WhatsApp
-                </h3>
-                <p className="text-gray-700 text-lg">
-                  Um grupo com o professor e os alunos para tirar dúvidas e fazer networking.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
-              <div className="w-full h-64 overflow-hidden">
-                <img 
-                  src={webinarManual} 
-                  alt="Workbook Exclusivo" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-xl font-bold mb-4 text-black">
-                  Workbook Exclusivo
-                </h3>
-                <p className="text-gray-700 text-lg">
-                  Um "guia de bolso de IA" que te acompanhará durante e depois da Imersão, para garantir que você extraia máximo valor e resultado de tudo o que faremos durante as aulas.
-                </p>
-              </div>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-4">
+              Bônus ao adquirir sua <span className="text-yellow-400">Vaga</span>
+            </h2>
+            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
+              Garantindo sua vaga hoje, você leva também estes <span className="text-white font-semibold">bônus exclusivos</span> para acelerar ainda mais seus resultados:
+            </p>
           </div>
+
+          {(() => {
+            const bonuses = [
+              { img: webinarGravacao, title: "Acesso às gravações completas da Imersão", desc: "Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas." },
+              { img: webinarBiblioteca, title: "Mapas Mentais", desc: "5 mapas mentais dos principais aprendizados da Imersão para você estudar e revisar de forma visual e prática." },
+              { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Um grupo com o professor e os alunos para tirar dúvidas, trocar experiências e fazer networking de alto nível." },
+              { img: webinarManual, title: "Workbook Exclusivo", desc: "Um \"guia de bolso de IA\" que te acompanhará durante e depois da Imersão, para garantir que você extraia o máximo valor e resultado de tudo o que faremos durante as aulas." },
+            ];
+            return (
+              <div className="space-y-6 md:space-y-8 mb-12">
+                {bonuses.map((b, i) => {
+                  const reverse = i % 2 === 1;
+                  return (
+                    <div key={i} className={`grid md:grid-cols-2 gap-5 md:gap-7 items-stretch ${reverse ? 'md:[&>*:first-child]:order-2' : ''}`}>
+                      {/* Text card */}
+                      <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:p-9 flex flex-col justify-center backdrop-blur-sm">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/40">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                            <span className="text-emerald-300 text-xs font-bold tracking-wider uppercase">Bônus {i + 1}</span>
+                          </span>
+                        </div>
+                        <h3 className="text-2xl md:text-[26px] font-extrabold text-white leading-tight mb-3">
+                          {b.title}
+                        </h3>
+                        <p className="text-gray-400 text-[15px] md:text-base leading-relaxed">
+                          {b.desc}
+                        </p>
+                      </div>
+                      {/* Image card */}
+                      <div className="relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[280px] group">
+                        <img src={b.img} alt={b.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                        {/* Orange corner ribbon */}
+                        <div className="absolute top-0 left-0 w-32 h-32 overflow-hidden pointer-events-none">
+                          <div className="absolute top-[26px] -left-[34px] w-[160px] rotate-[-45deg] bg-gradient-to-r from-orange-600 to-orange-500 text-white text-center font-extrabold text-sm py-1.5 tracking-widest shadow-lg">
+                            BÔNUS
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })()}
           
           <div className="text-center">
             <Button 
