@@ -18,6 +18,9 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
+import imersaoProfissional from "@/assets/imersao-profissional.jpg";
+import imersaoEmpresario from "@/assets/imersao-empresario.jpg";
+import imersaoGestor from "@/assets/imersao-gestor.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -756,6 +759,79 @@ const Webinar = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Para Quem é a Imersão Section */}
+      <section className="py-24 px-4 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="text-center mb-14 max-w-3xl mx-auto">
+            <div className="inline-block px-4 py-1.5 mb-5 bg-yellow-400/10 border border-yellow-400/40 rounded-full">
+              <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Para quem é</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
+              Como sei que a <span className="text-yellow-400">Imersão</span> é para mim?
+            </h2>
+            <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+              Criamos a Imersão para <span className="text-white font-semibold">profissionais especializados, empresários e fundadores, chefes, diretores e gestores.</span>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              {
+                img: imersaoProfissional,
+                title: "Profissionais especializados",
+                desc: "Não importa o setor — médico, advogado, industrial, consultor. O que importa é que você já decidiu que IA vai fazer parte.",
+              },
+              {
+                img: imersaoEmpresario,
+                title: "Empresários e Fundadores",
+                desc: "Você já sabe que empresas que não usarem IA nos seus processos vão ficar para trás. E quer mudar isso urgentemente.",
+              },
+              {
+                img: imersaoGestor,
+                title: "Chefes, Diretores e Gestores",
+                desc: "Você já está além do ChatGPT, mas ainda não sabe como colocar IA no seu trabalho. A Imersão muda isso.",
+              },
+            ].map((p, i) => (
+              <div
+                key={i}
+                className="relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-yellow-400/40 transition-all duration-500 group shadow-2xl"
+              >
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    loading="lazy"
+                    width={800}
+                    height={1024}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 md:p-7">
+                    <h3 className="text-2xl md:text-[26px] font-extrabold text-white leading-tight mb-3">
+                      {p.title}
+                    </h3>
+                    <div className="h-[2px] w-16 bg-yellow-400 mb-4" />
+                    <p className="text-sm md:text-[15px] text-gray-200 leading-relaxed">
+                      {p.desc}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
