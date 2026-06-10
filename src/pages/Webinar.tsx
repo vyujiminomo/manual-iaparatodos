@@ -771,41 +771,6 @@ const Webinar = () => {
         </div>
       </section>
 
-
-      {/* Why Section */}
-      <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-3xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Por que fazer um Curso de ChatGPT?
-            </h2>
-          </div>
-
-          <div className="space-y-6 text-center">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              O mercado descobriu o poder do ChatGPT. <strong className="text-foreground">Ele não volta atrás.</strong>
-            </p>
-
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Quero te ensinar a aproveitar todo o potencial da IA: ter ideias melhores, aprender mais rápido, pesquisar com inteligência, escrever com clareza, pensar e tomar decisões.
-            </p>
-
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Resultado?</strong> Fazer muito mais, com mais qualidade e menos esforço.
-            </p>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button 
-              onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
-            >
-              Quero Fazer Parte →
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Benefits Section */}
       <section className="py-24 px-4 bg-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
