@@ -19,8 +19,8 @@ const Webinar = () => {
   
 
   useDynamicMeta({
-    title: "Imersão IA Para Todos 2 - Vitor Yuji",
-    description: "Vá do zero ao avançado em IA em apenas 4 dias. Imersão ao vivo com Vitor Yuji.",
+    title: "Imersão IA Para Todos 3 - Vitor Yuji",
+    description: "Vá do zero ao avançado em IA em 5 encontros. Imersão presencial ou online com Vitor Yuji.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
