@@ -514,19 +514,19 @@ const Webinar = () => {
             {/* Header */}
             <div className="grid grid-cols-2">
               <div className="p-5 md:p-6 text-center bg-red-500/10 border-b-2 border-red-500">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">Curso Online</p>
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">OUTROS CURSOS</p>
               </div>
               <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">Imersão IA Para Todos</p>
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">MENTORIA IA NA PRÁTICA</p>
               </div>
             </div>
 
             {/* Rows */}
             {[
-              { left: "Vídeo gravado", right: "Ao vivo + gravações" },
+              { left: "Vídeo gravado", right: "Ao vivo (presencial ou online) + gravações" },
               { left: "Você fica com dúvidas", right: "Professor 'pega na mão' e te ajuda" },
-              { left: "Técnico e foco em programação", right: "Linguagem simples e aulas dinâmicas" },
-              { left: "Excesso de teoria", right: "Prática no seu trabalho" },
+              { left: "Técnico demais", right: "Foco no que você realmente vai usar" },
+              { left: "Excesso de teoria", right: "Aulas dinâmicas e práticas" },
               { left: "Sozinho", right: "Grupo de profissionais" },
             ].map((row, i) => (
               <div key={i} className="grid grid-cols-2 border-t border-white/5">
