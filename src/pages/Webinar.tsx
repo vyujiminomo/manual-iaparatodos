@@ -703,75 +703,93 @@ const Webinar = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 bg-black relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-yellow-400/5 rounded-full blur-3xl"></div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-14">
-            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-4 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              Exclusivos
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Bônus ao adquirir seu Ingresso
-            </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Veja o que você vai receber assim que garantir sua vaga:
-            </p>
-          </div>
+      <section className="py-24 px-4 bg-black">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+            Bônus ao adquirir sua Vaga
+          </h2>
+          <p className="text-center text-lg text-gray-400 mb-12">
+            Veja o que você vai receber assim que garantir sua vaga:
+          </p>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              {
-                title: "Acesso as gravações completas da Imersão",
-                description: "Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas.",
-                accent: "from-cyan-400 to-cyan-500",
-                bg: "bg-cyan-400/10",
-                icon: "📹",
-              },
-              {
-                title: "Mapas Mentais",
-                description: "5 mapas mentais dos principais aprendizados da Imersão para você estudar.",
-                accent: "from-yellow-400 to-amber-400",
-                bg: "bg-yellow-400/10",
-                icon: "🧠",
-              },
-              {
-                title: "Grupo no WhatsApp",
-                description: "Um grupo com o professor e os alunos para tirar dúvidas e fazer networking.",
-                accent: "from-emerald-400 to-green-500",
-                bg: "bg-emerald-400/10",
-                icon: "💬",
-              },
-              {
-                title: "Workbook Exclusivo",
-                description: 'Um "guia de bolso de IA" que te acompanhará durante e depois da Imersão, para garantir que você extraia máximo valor e resultado de tudo o que faremos durante as aulas.',
-                accent: "from-fuchsia-400 to-pink-500",
-                bg: "bg-fuchsia-400/10",
-                icon: "📘",
-              },
-            ].map((bonus, i) => (
-              <div
-                key={i}
-                className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col"
-              >
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${bonus.accent} rounded-t-2xl`}></div>
-                <div className={`w-12 h-12 rounded-xl ${bonus.bg} flex items-center justify-center mb-5`}>
-                  <span className="text-2xl">{bonus.icon}</span>
-                </div>
-                <h3 className="text-lg font-bold text-white mb-3 leading-snug">
-                  {bonus.title}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarGravacao} 
+                  alt="Acesso as gravações completas da Imersão" 
+                  className="w-full h-full object-cover object-right"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Acesso as gravações completas da Imersão
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed flex-1">
-                  {bonus.description}
+                <p className="text-gray-700 text-lg">
+                  Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas.
                 </p>
               </div>
-            ))}
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarBiblioteca} 
+                  alt="Mapas Mentais" 
+                  className="w-full h-full object-cover object-left"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Mapas Mentais
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  5 mapas mentais dos principais aprendizados da Imersão para você estudar.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarWhatsapp} 
+                  alt="Grupo no WhatsApp" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Grupo no WhatsApp
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Um grupo com o professor e os alunos para tirar dúvidas e fazer networking.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={webinarManual} 
+                  alt="Workbook Exclusivo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10">
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  Workbook Exclusivo
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Um "guia de bolso de IA" que te acompanhará durante e depois da Imersão, para garantir que você extraia máximo valor e resultado de tudo o que faremos durante as aulas.
+                </p>
+              </div>
+            </div>
           </div>
           
-          <div className="text-center mt-14">
+          <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-105"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
