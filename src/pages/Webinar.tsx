@@ -16,6 +16,8 @@ import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
+import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
+import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -809,79 +811,151 @@ const Webinar = () => {
       </section>
 
       {/* Offer Section */}
-      <section id="oferta" className="pt-24 pb-10 px-4 bg-gray-900 text-white">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Acesse o Método Único de Aprender IA
+      <section id="oferta" className="pt-24 pb-16 px-4 bg-gradient-to-b from-gray-900 via-gray-900 to-black text-white relative overflow-hidden">
+        {/* subtle yellow glow */}
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-yellow-500/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-red-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full mb-6">
+              🔥 LOTE 2 DISPONÍVEL 🔥
+            </span>
+            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto">
+              Garanta sua vaga na melhor mentoria de IA para profissionais
             </h2>
-            <p className="text-xl text-gray-300">
-              5 encontros (presencial ou online) + grupo + mentor respondendo suas dúvidas = não ficar para trás
-            </p>
           </div>
-          
-          <div className="max-w-lg mx-auto">
-              <div className="bg-white rounded-2xl p-6 md:p-10 text-gray-900 shadow-2xl flex flex-col relative">
-                <div className="flex items-center gap-4 mb-2">
-                  <h3 className="text-2xl md:text-3xl font-bold">
-                    Imersão IA Para Todos 3
-                  </h3>
-                  <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
-                    🔥 Mais Escolhido | 75% OFF*
-                  </span>
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* LEFT — Card */}
+            <div className="relative">
+              <span className="absolute -top-3 left-6 z-10 bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
+                MELHOR CONDIÇÃO
+              </span>
+              <div className="bg-white text-gray-900 rounded-2xl p-6 md:p-8 shadow-2xl">
+                {/* Item 1 */}
+                <div className="mb-5">
+                  <div className="flex items-center justify-between gap-3 mb-3">
+                    <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso Imersão IA Para Todos 3</h3>
+                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$1700</span>
+                  </div>
+                  <ul className="space-y-2">
+                    {[
+                      "Acesso total às 5 aulas presenciais ou online",
+                      "Acesso aos Materiais Pós-imersão",
+                      "Brindes Exclusivos",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm md:text-base text-gray-700">
+                        <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">
-                  Presencial ou Online (você escolhe)
-                </span>
-                
-                <div className="space-y-4 mb-8 flex-1">
-                  {[
-                    "Acesso completo aos 5 Encontros ao Vivo",
-                    "Participe Presencialmente ou Online (Zoom)",
-                    "Acesso à Comunidade no WhatsApp Exclusiva",
-                    "Acesso às Gravações e Mapas Mentais",
-                    "Manual IA Para Todos",
-                    "Biblioteca de Prompts por Profissão"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <Check className="text-green-500 flex-shrink-0 mt-1" size={22} />
-                      <span className="text-base md:text-lg text-gray-700 font-semibold">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="text-left mb-6">
-                  <p className="text-3xl md:text-5xl font-bold text-gray-900 mb-1">
-                    <span className="text-2xl md:text-3xl mr-0.5">12x</span>R$ 25<span className="text-sm md:text-base align-bottom">,55</span>
+
+                <div className="border-t border-dashed border-gray-200 my-4" />
+
+                {/* Bonus 1 */}
+                <div className="mb-5">
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Transmissão AO VIVO + Gravações</h4>
+                    <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
+                  </div>
+                  <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
+                    <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
+                    <span>Acesso a todas as gravações do evento</span>
                   </p>
-                  <p className="text-base md:text-lg text-gray-600">ou R$ 247 à vista</p>
                 </div>
-                
-                <Button 
+
+                <div className="border-t border-dashed border-gray-200 my-4" />
+
+                {/* Bonus 2 */}
+                <div className="mb-5">
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Grupo no WhatsApp</h4>
+                    <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
+                  </div>
+                  <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
+                    <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
+                    <span>Grupo exclusivo com o professor e alunos</span>
+                  </p>
+                </div>
+
+                <div className="border-t border-dashed border-gray-200 my-4" />
+
+                {/* Bonus 3 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Workbook Exclusivo</h4>
+                    <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
+                  </div>
+                  <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
+                    <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
+                    <span>Um "caderno de IA" que te ajuda a extrair o máximo valor e resultado de tudo que faremos durantes as 5 aulas.</span>
+                  </p>
+                </div>
+
+                {/* Price */}
+                <div className="border-t border-gray-200 pt-4 mb-5">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <span className="text-gray-600 font-semibold">Total:</span>
+                    <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">85% OFF</span>
+                    <span className="text-gray-400 line-through font-semibold">R$1700</span>
+                  </div>
+                  <p className="text-sm md:text-base text-gray-600">
+                    <span className="font-semibold">R$247 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$26</span>
+                  </p>
+                </div>
+
+                <Button
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i")}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-xl px-8 py-6 md:py-7 rounded-lg w-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] mb-4"
+                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg"
                 >
-                  Quero Adquirir Agora →
+                  Garantir Ingresso
                 </Button>
 
-                <div className="flex items-center justify-center gap-6 text-sm md:text-base text-gray-600">
-                  <div className="flex items-center gap-2">
-                    <Shield className="text-green-500" size={16} />
-                    <span>7 Dias de Garantia</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Lock className="text-green-500" size={16} />
+                <div className="flex items-center justify-center gap-6 text-xs md:text-sm text-gray-600 mt-4">
+                  <div className="flex items-center gap-1.5">
+                    <Lock className="text-gray-500" size={14} />
                     <span>Compra Segura</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Shield className="text-gray-500" size={14} />
+                    <span>7 Dias de Garantia</span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <p className="text-center text-sm text-gray-400 mt-6 leading-relaxed">
-                Você escolhe se quer participar <span className="font-semibold text-gray-500">presencialmente ou online</span>. Após a compra, enviaremos todas as informações por WhatsApp.
-              </p>
+            {/* RIGHT — Ticket card + gifts */}
+            <div className="flex flex-col items-center gap-6">
+              <div className="relative">
+                <img
+                  src={imersaoTicketCard}
+                  alt="Passaporte Imersão IA Para Todos"
+                  loading="lazy"
+                  className="w-full max-w-sm h-auto drop-shadow-[0_30px_60px_rgba(250,204,21,0.25)]"
+                />
+                <div className="absolute -right-2 md:right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2">
+                  <span className="bg-white text-gray-900 text-xs md:text-sm font-bold px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                    ● 5 aulas ao vivo
+                  </span>
+                  <span className="bg-white text-gray-900 text-xs md:text-sm font-bold px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                    ● Brindes exclusivos
+                  </span>
+                </div>
+              </div>
+              <img
+                src={imersaoGiftsTrio}
+                alt="Bônus exclusivos da Imersão"
+                loading="lazy"
+                className="w-full max-w-sm h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
+
+
 
 
       {/* Guarantee Section */}
