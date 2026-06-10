@@ -666,7 +666,7 @@ const Webinar = () => {
               Acesse o Método Único de Aprender IA
             </h2>
             <p className="text-xl text-gray-300">
-              4 encontros ao vivo + grupo + mentor respondendo suas dúvidas = não ficar para trás
+              5 encontros (presencial ou online) + grupo + mentor respondendo suas dúvidas = não ficar para trás
             </p>
           </div>
           
