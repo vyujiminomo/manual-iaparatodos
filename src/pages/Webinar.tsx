@@ -16,6 +16,8 @@ import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
+import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
+import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
