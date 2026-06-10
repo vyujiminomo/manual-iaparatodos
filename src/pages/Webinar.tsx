@@ -18,6 +18,9 @@ import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
+import imersaoProfissional from "@/assets/imersao-profissional.jpg";
+import imersaoEmpresario from "@/assets/imersao-empresario.jpg";
+import imersaoGestor from "@/assets/imersao-gestor.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
