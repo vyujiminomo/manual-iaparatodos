@@ -908,10 +908,11 @@ const Webinar = () => {
 
                 <Button
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i")}
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg transition-colors"
                 >
                   Garantir Ingresso
                 </Button>
+
 
                 <div className="flex items-center justify-center gap-6 text-xs md:text-sm text-gray-600 mt-4">
                   <div className="flex items-center gap-1.5">
