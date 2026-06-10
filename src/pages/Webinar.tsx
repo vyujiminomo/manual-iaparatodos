@@ -15,6 +15,7 @@ import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
+import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -40,88 +41,112 @@ const Webinar = () => {
 
   return (
     <div className="min-h-screen bg-black font-sans">
-      {/* Hero Section */}
-      <section className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
-        {/* Subtle decorative glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl"></div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10">
-          {/* Top credibility bar */}
-          <p className="text-center text-sm md:text-base text-gray-300 mb-8 md:mb-12 leading-relaxed max-w-3xl mx-auto">
-            O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
-          </p>
+      {/* Hero Section - Editorial cinematic */}
+      <section className="relative bg-black text-white overflow-hidden min-h-[92vh] flex flex-col">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src={imersaoHeroBg}
+            alt="Imersão IA Para Todos"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          {/* Gradient overlays for legibility on top-right content */}
+          <div className="absolute inset-0 bg-gradient-to-l from-black/95 via-black/60 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black"></div>
+        </div>
 
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left side - Text content */}
-            <div className="text-center lg:text-left w-full">
-              <div className="flex flex-col gap-3 mb-6 items-center lg:items-start">
-                <span className="inline-flex items-center gap-2 bg-gray-900/50 border-2 border-yellow-400/60 text-yellow-400 font-bold text-sm md:text-base px-5 py-2.5 rounded-lg shadow-lg animate-pulse">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                  </svg>
-                  5, 12, 19, 26 de Agosto e 2 de Setembro 2026 • Presencial ou Online
-                </span>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-                Imersão IA Para Todos
-              </h1>
-              
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
-                O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
-              </p>
-              
-              <Button 
-                onClick={scrollToOffer}
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-base md:text-lg px-8 md:px-10 py-7 md:py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto"
-              >
-                QUERO FAZER PARTE →
-              </Button>
+        {/* Decorative glow */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="relative z-10 flex-1 flex items-start justify-end px-5 md:px-10 lg:px-16 pt-10 md:pt-16 lg:pt-20 pb-16">
+          <div className="w-full max-w-xl lg:max-w-2xl lg:ml-auto">
+            {/* Date badge */}
+            <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-bebas tracking-[0.18em] text-xs md:text-sm px-4 py-2 rounded-md mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+              5, 12, 19, 26 DE AGOSTO • 2 DE SETEMBRO
             </div>
-            
-            {/* Logo - Mobile (appears below text) and Desktop (appears on right) */}
-            <div className="flex justify-center items-center w-full lg:order-none order-first lg:mt-0 -mt-4">
-              <div className="max-w-[320px] md:max-w-md lg:max-w-lg w-full border-2 border-white/30 rounded-xl overflow-hidden">
-                <img 
-                  src="/lovable-uploads/imersao-logo.png" 
-                  alt="Imersão Inteligência Artificial Para Todos 2" 
-                  className="w-full"
-                />
-              </div>
+
+            {/* Small logo */}
+            <div className="mb-6 max-w-[220px] md:max-w-[260px]">
+              <img
+                src="/lovable-uploads/imersao-logo.png"
+                alt="Imersão IA Para Todos 3"
+                className="w-full h-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
+              />
             </div>
+
+            {/* Headline */}
+            <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
+              Transforme seu trabalho com a{" "}
+              <span className="text-yellow-400">melhor mentoria de IA</span>{" "}
+              para profissionais
+            </h1>
+
+            {/* Description */}
+            <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
+              <span className="font-semibold text-white">50 profissionais</span> dividindo cases de IA aplicada,{" "}
+              <span className="font-semibold text-white">mexendo nas melhores IAs ao vivo</span> e saindo com tudo o que há de novo e importante em IA para negócios.
+            </p>
+
+            {/* Checklist */}
+            <ul className="space-y-2.5 mb-8">
+              {[
+                "Turma 3 disponível (condição especial)",
+                "Acesso às gravações da imersão",
+                "5 aulas presenciais ou online",
+                "Professor e grupo para networking",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
+                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-yellow-400" strokeWidth={3} />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA */}
+            <Button
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:shadow-[0_0_55px_rgba(250,204,21,0.75)] w-full sm:w-auto"
+            >
+              QUERO FAZER PARTE →
+            </Button>
           </div>
         </div>
-        
+
         {/* Trusted By Section integrated */}
-        <div className="container mx-auto max-w-6xl relative z-10 mt-12 md:mt-16">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 px-4">
-            <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
-            </svg>
-            <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
-              Sou o professor de IA escolhido por profissionais de empresas como
-            </p>
-          </div>
-          
-          <div className="relative w-full overflow-hidden">
-            <div className="flex gap-6 md:gap-20 lg:gap-24 animate-scroll hover:animate-scroll-slow w-max">
-              {/* First set of logos */}
-              <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-              </div>
-              {/* Duplicate set for seamless loop */}
-              <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
-                <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-16 md:h-32 lg:h-40 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+        <div className="relative z-10 pb-10 md:pb-14">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-6 md:mb-8">
+              <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#22D3EE" />
+              </svg>
+              <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
+                Sou o professor de IA escolhido por profissionais de empresas como
+              </p>
+            </div>
+
+            <div className="relative w-full overflow-hidden">
+              <div className="flex gap-6 md:gap-20 lg:gap-24 animate-scroll hover:animate-scroll-slow w-max">
+                <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
+                  <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
+                <div className="flex gap-6 md:gap-20 lg:gap-24 items-center shrink-0">
+                  <img src="/lovable-uploads/logo-empresa-1.png" alt="Empresa 1" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-2.png" alt="Master" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-3.png" alt="Empresa 3" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-5.png" alt="Empresa 5" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-empresa-6.png" alt="ProSolar" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src="/lovable-uploads/logo-suzuki.png" alt="Suzuki" className="h-14 md:h-24 lg:h-28 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
               </div>
             </div>
           </div>
