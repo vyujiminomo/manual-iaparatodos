@@ -555,7 +555,7 @@ const Webinar = () => {
                 icon: "📹",
                 title: "Gravações",
                 body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir quando quiser.",
-                image: "/lovable-uploads/gravacoes.jpg",
+                image: gravacoesImg.url,
                 accent: "emerald",
                 grad: "from-emerald-400 to-green-500",
                 tint: "bg-emerald-400/10 border-emerald-400/20",
