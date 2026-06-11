@@ -1303,14 +1303,14 @@ const Webinar = () => {
               {/* Stat cards */}
               <div className="grid grid-cols-3 gap-3 mb-8">
                 {[
-                  { value: "+50", label: "Alunos" },
-                  { value: "9", label: "Palestras" },
-                  { value: "4x", label: "FLL Nacional" },
+                  { value: "+150", label: "Alunos" },
+                  { value: "10", label: "Palestras" },
+                  { value: "4x", label: "TORNEIO DE ROBÓTICA" },
                 ].map((s) => (
                   <div key={s.label} className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
-                    <div className="font-poppins font-extrabold text-3xl text-yellow-400 leading-none">{s.value}</div>
-                    <div className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-400 mt-2">{s.label}</div>
+                    <div className="font-poppins font-extrabold text-2xl sm:text-3xl text-yellow-400 leading-none">{s.value}</div>
+                    <div className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-gray-400 mt-2">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -1318,9 +1318,9 @@ const Webinar = () => {
               {/* Achievements */}
               <ul className="space-y-4 mb-8">
                 {[
-                  <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> — a maior empresa de IA da América Latina.</>,
-                  <>Palestrou sobre IA para <strong className="text-white">6 escolas e 3 empresas</strong>.</>,
-                  <><strong className="text-white">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.</>,
+                  <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
+                  <>Palestrou sobre IA para <strong className="text-white">7 escolas e 3 empresas</strong>.</>,
+                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Mentoria IA Para Todos.</>,
                   <><strong className="text-white">4x competidor</strong> da First Lego League — levando Sergipe à etapa nacional.</>,
                 ].map((content, i) => (
                   <li key={i} className="flex gap-4 items-start group">
@@ -1340,7 +1340,7 @@ const Webinar = () => {
                   Missão
                 </span>
                 <p className="text-white/85 leading-relaxed text-sm md:text-base">
-                  Tornar a IA acessível para todos — com conteúdo prático, didático e transformador.
+                  Tornar as pessoas muito mais inteligentes e produtivas com IA
                 </p>
               </div>
             </div>
