@@ -615,48 +615,82 @@ const Webinar = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-24 px-4 bg-gray-950">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-14">
-            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Comparativo</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Porque a Imersão é MELHOR que qualquer outro curso?
+      <section className="relative py-28 px-4 bg-gray-950 overflow-hidden">
+        {/* ambient glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-cyan-500/[0.06] rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
+          backgroundSize: '60px 60px'
+        }} />
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-5">
+              <div className="h-px w-10 bg-cyan-400/60" />
+              <span className="font-['Bebas_Neue'] tracking-[0.3em] text-cyan-400 text-sm">/ COMPARATIVO</span>
+              <div className="h-px w-10 bg-cyan-400/60" />
+            </div>
+            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
+              Porque a Imersão é <span className="text-yellow-400">MELHOR</span><br className="hidden md:block" /> que qualquer outro curso?
             </h2>
           </div>
 
-          {/* Table */}
-          <div className="rounded-2xl overflow-hidden border border-white/10">
-            {/* Header */}
-            <div className="grid grid-cols-2">
-              <div className="p-5 md:p-6 text-center bg-red-500/10 border-b-2 border-red-500">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">OUTROS CURSOS</p>
+          {/* Comparison Cards */}
+          <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+            {/* OUTROS CURSOS */}
+            <div className="relative rounded-3xl border border-red-500/20 bg-gradient-to-b from-red-500/[0.08] to-transparent p-7 md:p-8">
+              <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/5">
+                <div className="w-11 h-11 rounded-xl bg-red-500/15 flex items-center justify-center">
+                  <X className="text-red-400" size={22} strokeWidth={3} />
+                </div>
+                <p className="font-['Bebas_Neue'] tracking-[0.2em] text-red-400 text-lg md:text-xl">OUTROS CURSOS</p>
               </div>
-              <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">MENTORIA IA NA PRÁTICA</p>
-              </div>
+              <ul className="space-y-4">
+                {[
+                  "Vídeo gravado",
+                  "Você fica com dúvidas",
+                  "Técnico demais",
+                  "Excesso de teoria",
+                  "Sozinho",
+                ].map((t, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/55 text-base md:text-lg line-through decoration-red-400/40">
+                    <X className="text-red-400/70 flex-shrink-0 mt-1" size={18} strokeWidth={2.5} />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Rows */}
-            {[
-              { left: "Vídeo gravado", right: "Ao vivo (presencial ou online) + gravações" },
-              { left: "Você fica com dúvidas", right: "Professor 'pega na mão' e te ajuda" },
-              { left: "Técnico demais", right: "Foco no que você realmente vai usar" },
-              { left: "Excesso de teoria", right: "Aulas dinâmicas e práticas" },
-              { left: "Sozinho", right: "Grupo de profissionais" },
-            ].map((row, i) => (
-              <div key={i} className="grid grid-cols-2 border-t border-white/5">
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-red-500/5">
-                  <p className="text-white/50 text-sm md:text-base">{row.left}</p>
-                </div>
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-blue-500/5">
-                  <p className="text-white font-medium text-sm md:text-base">{row.right}</p>
-                </div>
+            {/* MENTORIA */}
+            <div className="relative rounded-3xl border border-yellow-400/30 bg-gradient-to-b from-yellow-400/[0.08] via-cyan-400/[0.04] to-transparent p-7 md:p-8 shadow-[0_0_60px_-15px_rgba(250,204,21,0.25)]">
+              <div className="absolute -top-3 right-6 bg-yellow-400 text-black text-[10px] md:text-xs font-['Bebas_Neue'] tracking-[0.2em] px-3 py-1 rounded-full flex items-center gap-1">
+                <Sparkles size={12} /> RECOMENDADO
               </div>
-            ))}
+              <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/10">
+                <div className="w-11 h-11 rounded-xl bg-yellow-400/20 flex items-center justify-center">
+                  <Check className="text-yellow-400" size={22} strokeWidth={3} />
+                </div>
+                <p className="font-['Bebas_Neue'] tracking-[0.2em] text-yellow-400 text-lg md:text-xl">IMERSÃO IA NA PRÁTICA</p>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  "Ao vivo (presencial ou online) + gravações",
+                  "Professor 'pega na mão' e te ajuda",
+                  "Foco no que você realmente vai usar",
+                  "Aulas dinâmicas e práticas",
+                  "Grupo de profissionais",
+                ].map((t, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white font-medium text-base md:text-lg">
+                    <Check className="text-yellow-400 flex-shrink-0 mt-1" size={18} strokeWidth={3} />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="text-center mt-14">
-            <Button 
+            <Button
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
@@ -665,6 +699,7 @@ const Webinar = () => {
           </div>
         </div>
       </section>
+
 
       {/* Curriculum Section */}
       <section className="py-24 px-4 bg-black relative overflow-hidden">
