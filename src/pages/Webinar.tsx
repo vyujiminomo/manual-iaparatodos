@@ -1199,7 +1199,7 @@ const Webinar = () => {
               Garantia Especial
             </span>
             <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Assista a Primeira Aula <span className="text-yellow-400">"De Graça"</span>, Sem Compromisso
+              Garantia: Assista a Primeira Aula <span className="text-yellow-400">"De Graça"</span>
             </h2>
           </div>
 
@@ -1221,13 +1221,14 @@ const Webinar = () => {
                   Teste. Aprenda. Aproveite.
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-6">
-                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
+                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você{" "}
+                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem em até{" "}
                   <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
-                  <span className="font-semibold text-white">100%</span>.
+                  <span className="font-semibold text-white">100% do seu dinheiro</span>.
                 </p>
 
                 <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                  {["100% reembolsável", "Sem perguntas", "Sem burocracia"].map((t) => (
+                  {["100% reembolsável", "Sem burocracia"].map((t) => (
                     <span key={t} className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
                       <Check size={12} className="text-emerald-400" /> {t}
                     </span>
