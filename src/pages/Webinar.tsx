@@ -26,6 +26,7 @@ import local2 from "@/assets/local-2.jpg";
 import local3 from "@/assets/local-3.jpg";
 import local4 from "@/assets/local-4.jpg";
 import onlineMeetImg from "@/assets/online-meet.jpg";
+import gravacoesImg from "@/assets/gravacoes.jpg.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -554,7 +555,7 @@ const Webinar = () => {
                 icon: "📹",
                 title: "Gravações",
                 body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir quando quiser.",
-                image: "/lovable-uploads/gravacoes.jpg",
+                image: gravacoesImg.url,
                 accent: "emerald",
                 grad: "from-emerald-400 to-green-500",
                 tint: "bg-emerald-400/10 border-emerald-400/20",
