@@ -3,7 +3,7 @@ import garantiaSelo from "@/assets/garantia-selo.png";
 import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Check, Shield, Lock, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Check, Shield, Lock, ChevronLeft, ChevronRight, Quote, X, Star, Sparkles } from "lucide-react";
 import { useState } from "react";
 import {
   Accordion,
@@ -615,48 +615,82 @@ const Webinar = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-24 px-4 bg-gray-950">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-14">
-            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Comparativo</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Porque a Imersão é MELHOR que qualquer outro curso?
+      <section className="relative py-28 px-4 bg-gray-950 overflow-hidden">
+        {/* ambient glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-cyan-500/[0.06] rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
+          backgroundSize: '60px 60px'
+        }} />
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-5">
+              <div className="h-px w-10 bg-cyan-400/60" />
+              <span className="font-['Bebas_Neue'] tracking-[0.3em] text-cyan-400 text-sm">/ COMPARATIVO</span>
+              <div className="h-px w-10 bg-cyan-400/60" />
+            </div>
+            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
+              Porque a Imersão é <span className="text-yellow-400">MELHOR</span><br className="hidden md:block" /> que qualquer outro curso?
             </h2>
           </div>
 
-          {/* Table */}
-          <div className="rounded-2xl overflow-hidden border border-white/10">
-            {/* Header */}
-            <div className="grid grid-cols-2">
-              <div className="p-5 md:p-6 text-center bg-red-500/10 border-b-2 border-red-500">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">OUTROS CURSOS</p>
+          {/* Comparison Cards */}
+          <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+            {/* OUTROS CURSOS */}
+            <div className="relative rounded-3xl border border-red-500/20 bg-gradient-to-b from-red-500/[0.08] to-transparent p-7 md:p-8">
+              <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/5">
+                <div className="w-11 h-11 rounded-xl bg-red-500/15 flex items-center justify-center">
+                  <X className="text-red-400" size={22} strokeWidth={3} />
+                </div>
+                <p className="font-['Bebas_Neue'] tracking-[0.2em] text-red-400 text-lg md:text-xl">OUTROS CURSOS</p>
               </div>
-              <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">MENTORIA IA NA PRÁTICA</p>
-              </div>
+              <ul className="space-y-4">
+                {[
+                  "Vídeo gravado",
+                  "Você fica com dúvidas",
+                  "Técnico demais",
+                  "Excesso de teoria",
+                  "Sozinho",
+                ].map((t, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/55 text-base md:text-lg line-through decoration-red-400/40">
+                    <X className="text-red-400/70 flex-shrink-0 mt-1" size={18} strokeWidth={2.5} />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Rows */}
-            {[
-              { left: "Vídeo gravado", right: "Ao vivo (presencial ou online) + gravações" },
-              { left: "Você fica com dúvidas", right: "Professor 'pega na mão' e te ajuda" },
-              { left: "Técnico demais", right: "Foco no que você realmente vai usar" },
-              { left: "Excesso de teoria", right: "Aulas dinâmicas e práticas" },
-              { left: "Sozinho", right: "Grupo de profissionais" },
-            ].map((row, i) => (
-              <div key={i} className="grid grid-cols-2 border-t border-white/5">
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-red-500/5">
-                  <p className="text-white/50 text-sm md:text-base">{row.left}</p>
-                </div>
-                <div className="p-4 md:p-5 flex items-center justify-center text-center bg-blue-500/5">
-                  <p className="text-white font-medium text-sm md:text-base">{row.right}</p>
-                </div>
+            {/* MENTORIA */}
+            <div className="relative rounded-3xl border border-yellow-400/30 bg-gradient-to-b from-yellow-400/[0.08] via-cyan-400/[0.04] to-transparent p-7 md:p-8 shadow-[0_0_60px_-15px_rgba(250,204,21,0.25)]">
+              <div className="absolute -top-3 right-6 bg-yellow-400 text-black text-[10px] md:text-xs font-['Bebas_Neue'] tracking-[0.2em] px-3 py-1 rounded-full flex items-center gap-1">
+                <Sparkles size={12} /> RECOMENDADO
               </div>
-            ))}
+              <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/10">
+                <div className="w-11 h-11 rounded-xl bg-yellow-400/20 flex items-center justify-center">
+                  <Check className="text-yellow-400" size={22} strokeWidth={3} />
+                </div>
+                <p className="font-['Bebas_Neue'] tracking-[0.2em] text-yellow-400 text-lg md:text-xl">IMERSÃO IA NA PRÁTICA</p>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  "Ao vivo (presencial ou online) + gravações",
+                  "Professor 'pega na mão' e te ajuda",
+                  "Foco no que você realmente vai usar",
+                  "Aulas dinâmicas e práticas",
+                  "Grupo de profissionais",
+                ].map((t, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white font-medium text-base md:text-lg">
+                    <Check className="text-yellow-400 flex-shrink-0 mt-1" size={18} strokeWidth={3} />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="text-center mt-14">
-            <Button 
+            <Button
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
@@ -665,6 +699,7 @@ const Webinar = () => {
           </div>
         </div>
       </section>
+
 
       {/* Curriculum Section */}
       <section className="py-24 px-4 bg-black relative overflow-hidden">
@@ -930,37 +965,74 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
-            O que dizem sobre a Imersão:
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk."</p>
-              <p className="font-semibold text-black">Gabriela Coelho</p>
+      <section className="relative py-28 px-4 bg-[#f5f3ee] overflow-hidden">
+        {/* paper texture grid */}
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px)',
+          backgroundSize: '80px 80px'
+        }} />
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-5">
+              <div className="h-px w-10 bg-black/30" />
+              <span className="font-['Bebas_Neue'] tracking-[0.3em] text-black/60 text-sm">/ DEPOIMENTOS</span>
+              <div className="h-px w-10 bg-black/30" />
             </div>
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar."</p>
-              <p className="font-semibold text-black">Arthur Lucena</p>
-            </div>
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!"</p>
-              <p className="font-semibold text-black">Bruno Correia</p>
-            </div>
+            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold text-black leading-tight tracking-tight">
+              O que dizem sobre <span className="relative inline-block">
+                <span className="relative z-10">a Imersão</span>
+                <span className="absolute left-0 right-0 bottom-1 h-3 bg-yellow-400/70 -z-0"></span>
+              </span>
+            </h2>
           </div>
-          
-          <div className="text-center mt-12">
-            <Button 
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", color: "bg-cyan-400" },
+              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", color: "bg-yellow-400" },
+              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", color: "bg-emerald-400" },
+            ].map((t, i) => (
+              <div
+                key={i}
+                className="group relative bg-white rounded-2xl p-8 border border-black/5 shadow-[0_4px_30px_-10px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300"
+              >
+                <Quote className="absolute top-6 right-6 text-yellow-400/30 group-hover:text-yellow-400/60 transition-colors" size={44} strokeWidth={1.5} />
+
+                <div className="flex items-center gap-1 mb-5">
+                  {[0,1,2,3,4].map((s) => (
+                    <Star key={s} size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+
+                <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-7 font-medium">
+                  "{t.quote}"
+                </p>
+
+                <div className="flex items-center gap-3 pt-5 border-t border-black/5">
+                  <div className={`w-11 h-11 rounded-full ${t.color} flex items-center justify-center font-bold text-black text-sm`}>
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p className="font-bold text-black">{t.name}</p>
+                    <p className="text-xs text-gray-500 font-medium">Aluno da Imersão</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-14">
+            <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_10px_30px_-5px_rgba(250,204,21,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(250,204,21,0.8)] transition-all duration-300 hover:scale-[1.02]"
             >
               Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
+
 
       {/* Offer Section */}
       <section id="oferta" className="pt-24 pb-16 px-4 bg-gradient-to-b from-gray-900 via-gray-900 to-black text-white relative overflow-hidden">
@@ -1114,35 +1186,72 @@ const Webinar = () => {
 
 
       {/* Guarantee Section */}
-      <section className="py-14 px-4 bg-gray-900">
-        <div className="container mx-auto max-w-4xl">
-          <div className="mb-6">
-            <span className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-sm font-bold px-4 py-1.5 rounded-full border border-emerald-500/20">
-              ▶ GARANTIA ESPECIAL
+      <section className="relative py-24 px-4 bg-gray-900 overflow-hidden">
+        {/* ambient glows */}
+        <div className="absolute -top-32 -left-20 w-[500px] h-[500px] bg-emerald-500/[0.08] rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-32 -right-20 w-[500px] h-[500px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
+          backgroundSize: '60px 60px'
+        }} />
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-10">
+            <span className="inline-flex items-center gap-2 bg-emerald-500/15 text-emerald-400 text-xs md:text-sm font-['Bebas_Neue'] tracking-[0.3em] px-4 py-2 rounded-full border border-emerald-500/30">
+              <Shield size={14} /> GARANTIA ESPECIAL
             </span>
+            <h3 className="font-poppins text-3xl md:text-5xl text-white font-extrabold leading-tight mt-6 tracking-tight">
+              Assista a Primeira Aula <span className="relative inline-block">
+                <span className="relative z-10 text-yellow-400">"De Graça"</span>
+              </span>,<br className="hidden md:block" /> Sem Compromisso
+            </h3>
           </div>
-          <h3 className="font-poppins text-3xl md:text-5xl text-white font-extrabold leading-tight mb-8 tracking-tight">
-            Assista a Primeira Aula <span className="text-yellow-400">"De Graça"</span>, Sem Compromisso
-          </h3>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <img 
-              src={garantiaSelo} 
-              alt="Garantia da Primeira Aula 100%" 
-              className="w-44 h-44 md:w-56 md:h-56 object-contain flex-shrink-0"
-            />
-            <div className="text-center md:text-left">
-              <p className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
-                Teste. Aprenda. Aproveite.
-              </p>
-              <p className="font-poppins text-gray-400 text-base md:text-lg leading-relaxed">
-                Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
-                <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
-                <span className="font-semibold text-white">100%</span>.
-              </p>
+
+          {/* Card with gradient border */}
+          <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-emerald-400/40 via-white/10 to-yellow-400/30">
+            <div className="relative rounded-3xl bg-gray-950/80 backdrop-blur-sm p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-14 overflow-hidden">
+              {/* corner accent */}
+              <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-400/10 rounded-full blur-2xl pointer-events-none" />
+
+              <div className="relative flex-shrink-0">
+                <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-2xl scale-90" />
+                <img
+                  src={garantiaSelo}
+                  alt="Garantia da Primeira Aula 100%"
+                  className="relative w-48 h-48 md:w-60 md:h-60 object-contain drop-shadow-[0_10px_30px_rgba(250,204,21,0.3)]"
+                />
+              </div>
+
+              <div className="text-center md:text-left relative">
+                <p className="font-['Bebas_Neue'] tracking-[0.25em] text-emerald-400 text-sm mb-3">
+                  / TESTE. APRENDA. APROVEITE.
+                </p>
+                <p className="font-poppins text-white font-extrabold text-2xl md:text-3xl mb-5 leading-tight">
+                  Risco zero pra você.
+                </p>
+                <p className="font-poppins text-gray-300 text-base md:text-lg leading-relaxed">
+                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
+                  <span className="font-bold text-yellow-400">1 dia pedindo reembolso</span>, e devolvemos{" "}
+                  <span className="font-bold text-yellow-400">100% do seu dinheiro</span>.
+                </p>
+
+                <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    <Check size={12} className="text-emerald-400" /> 100% reembolsável
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    <Check size={12} className="text-emerald-400" /> Sem perguntas
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    <Check size={12} className="text-emerald-400" /> Sem burocracia
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
 
 
       {/* Author Section — Editorial */}
