@@ -577,7 +577,6 @@ const Webinar = () => {
                     alt={c.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ objectPosition: (c as any).objectPosition || "center center" }}
-                  />
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
                       const parent = e.currentTarget.parentElement;
