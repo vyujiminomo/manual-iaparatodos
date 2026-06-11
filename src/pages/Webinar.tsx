@@ -966,57 +966,55 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="relative py-28 px-4 bg-[#f5f3ee] overflow-hidden">
-        {/* paper texture grid */}
-        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
-          backgroundImage: 'linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px)',
-          backgroundSize: '80px 80px'
-        }} />
+      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+        {/* Background atmosphere */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-5">
-              <div className="h-px w-10 bg-black/30" />
-              <span className="font-['Bebas_Neue'] tracking-[0.3em] text-black/60 text-sm">/ DEPOIMENTOS</span>
-              <div className="h-px w-10 bg-black/30" />
-            </div>
-            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold text-black leading-tight tracking-tight">
-              O que dizem sobre <span className="relative inline-block">
-                <span className="relative z-10">a Imersão</span>
-                <span className="absolute left-0 right-0 bottom-1 h-3 bg-yellow-400/70 -z-0"></span>
-              </span>
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+              Depoimentos
+            </span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              O que dizem sobre <span className="text-yellow-400">a Imersão</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
-              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", color: "bg-cyan-400" },
-              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", color: "bg-yellow-400" },
-              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", color: "bg-emerald-400" },
+              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-cyan-400 to-blue-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((t, i) => (
               <div
                 key={i}
-                className="group relative bg-white rounded-2xl p-8 border border-black/5 shadow-[0_4px_30px_-10px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300"
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
               >
-                <Quote className="absolute top-6 right-6 text-yellow-400/30 group-hover:text-yellow-400/60 transition-colors" size={44} strokeWidth={1.5} />
+                <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${t.grad}`}></div>
+                <div className="p-7 md:p-8">
+                  <Quote className="text-yellow-400/40 mb-4" size={32} strokeWidth={1.5} />
 
-                <div className="flex items-center gap-1 mb-5">
-                  {[0,1,2,3,4].map((s) => (
-                    <Star key={s} size={16} className="fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-
-                <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-7 font-medium">
-                  "{t.quote}"
-                </p>
-
-                <div className="flex items-center gap-3 pt-5 border-t border-black/5">
-                  <div className={`w-11 h-11 rounded-full ${t.color} flex items-center justify-center font-bold text-black text-sm`}>
-                    {t.initials}
+                  <div className="flex items-center gap-1 mb-5">
+                    {[0,1,2,3,4].map((s) => (
+                      <Star key={s} size={14} className="fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <div>
-                    <p className="font-bold text-black">{t.name}</p>
-                    <p className="text-xs text-gray-500 font-medium">Aluno da Imersão</p>
+
+                  <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                    "{t.quote}"
+                  </p>
+
+                  <div className="flex items-center gap-3 pt-5 border-t border-white/5">
+                    <div className={`w-10 h-10 rounded-xl ${t.tint} border flex items-center justify-center font-bold text-white text-xs`}>
+                      {t.initials}
+                    </div>
+                    <div>
+                      <p className="font-bold text-white text-sm">{t.name}</p>
+                      <p className="text-xs text-gray-500">Aluno da Imersão</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1026,13 +1024,14 @@ const Webinar = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_10px_30px_-5px_rgba(250,204,21,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(250,204,21,0.8)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
-              Quero Fazer Parte →
+              QUERO FAZER PARTE →
             </Button>
           </div>
         </div>
       </section>
+
 
 
       {/* Offer Section */}
