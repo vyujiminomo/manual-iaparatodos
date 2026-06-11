@@ -1146,7 +1146,7 @@ const Webinar = () => {
           <div className="text-center mb-12">
             <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Seu mentor</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              "Mas porque ouvir um moleque de 15 anos falando sobre IA?"
+              Conheça Vitor Yuji
             </h2>
           </div>
 
@@ -1172,44 +1172,42 @@ const Webinar = () => {
             {/* Bio */}
             <div>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                Vitor Yuji tem apenas 15 anos e já é <strong className="text-foreground">referência em IA Generativa no Nordeste.</strong>
+                Vitor Yuji tem apenas 15 anos.
+              </p>
+
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+                Ele não é o mais famoso, mas é, com certeza, o mais surpreendente palestrante de IA do Nordeste.
               </p>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
                   <span className="text-muted-foreground">
-                    Selecionado pelo CEO Max Peters para ser jovem aprendiz da <strong className="text-foreground">ADAPTA, a maior startup de IA do Brasil.</strong>
+                    Em 2024, foi selecionado pelo CEO Max Peters para ser <strong className="text-foreground">jovem aprendiz da Adapta.org</strong>, a maior empresa de IA da América Latina.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
                   <span className="text-muted-foreground">
-                    <strong className="text-foreground">4x competidor</strong> no torneio de robótica First Lego League.
+                    <strong className="text-foreground">Palestrou sobre IA para 6 escolas e 3 empresas.</strong>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
                   <span className="text-muted-foreground">
-                    Co-fundador do <strong className="text-foreground">Mangue Mania</strong> — primeira metodologia ativa infantil sobre manguezais de Sergipe, com <strong className="text-foreground">+400 alunos impactados.</strong>
+                    Tem <strong className="text-foreground">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
                   <span className="text-muted-foreground">
-                    Palestrou sobre IA para <strong className="text-foreground">Instituto JCPM, Colégio Master e Babylândia.</strong>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-muted-foreground">
-                    Músico no <strong className="text-foreground">Movimento Escalada</strong>, um dos principais grupos de jovens cristãos do Nordeste.
+                    <strong className="text-foreground">4x competidor</strong> do torneio de robótica da First Lego League, levando Sergipe para a etapa nacional.
                   </span>
                 </li>
               </ul>
 
               <p className="text-muted-foreground leading-relaxed border-l-4 border-cyan-500 pl-4 italic">
-                Vem transmitindo todo seu conhecimento para milhares de pessoas, com a missão de tornar a IA acessível para todos.
+                A missão de Vitor Yuji é tornar a IA acessível para todos — com conteúdo prático, didático e transformador.
               </p>
             </div>
           </div>
