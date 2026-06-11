@@ -1060,7 +1060,7 @@ const Webinar = () => {
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-3">
                     <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso Imersão IA Para Todos 3</h3>
-                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$1700</span>
+                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$750</span>
                   </div>
                   <ul className="space-y-2">
                     {[
@@ -1122,11 +1122,11 @@ const Webinar = () => {
                 <div className="border-t border-gray-200 pt-4 mb-5">
                   <div className="flex items-baseline gap-3 mb-1">
                     <span className="text-gray-600 font-semibold">Total:</span>
-                    <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">85% OFF</span>
-                    <span className="text-gray-400 line-through font-semibold">R$1700</span>
+                    <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">35% OFF</span>
+                    <span className="text-gray-400 line-through font-semibold">R$750</span>
                   </div>
                   <p className="text-sm md:text-base text-gray-600">
-                    <span className="font-semibold">R$247 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$26</span>
+                    <span className="font-semibold">R$247 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$25</span>
                   </p>
                 </div>
 
@@ -1145,7 +1145,7 @@ const Webinar = () => {
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Shield className="text-gray-500" size={14} />
-                    <span>7 Dias de Garantia</span>
+                    <span>Garantia da 1º Aula</span>
                   </div>
                 </div>
               </div>
