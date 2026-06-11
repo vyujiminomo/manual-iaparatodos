@@ -965,37 +965,74 @@ const Webinar = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
-            O que dizem sobre a Imersão:
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk."</p>
-              <p className="font-semibold text-black">Gabriela Coelho</p>
+      <section className="relative py-28 px-4 bg-[#f5f3ee] overflow-hidden">
+        {/* paper texture grid */}
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px)',
+          backgroundSize: '80px 80px'
+        }} />
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-5">
+              <div className="h-px w-10 bg-black/30" />
+              <span className="font-['Bebas_Neue'] tracking-[0.3em] text-black/60 text-sm">/ DEPOIMENTOS</span>
+              <div className="h-px w-10 bg-black/30" />
             </div>
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar."</p>
-              <p className="font-semibold text-black">Arthur Lucena</p>
-            </div>
-            <div className="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-cyan-400/50 hover:border-cyan-400 hover:shadow-xl transition-all duration-300">
-              <p className="text-gray-700 italic mb-4 text-lg">"Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!"</p>
-              <p className="font-semibold text-black">Bruno Correia</p>
-            </div>
+            <h2 className="font-poppins text-3xl md:text-5xl font-extrabold text-black leading-tight tracking-tight">
+              O que dizem sobre <span className="relative inline-block">
+                <span className="relative z-10">a Imersão</span>
+                <span className="absolute left-0 right-0 bottom-1 h-3 bg-yellow-400/70 -z-0"></span>
+              </span>
+            </h2>
           </div>
-          
-          <div className="text-center mt-12">
-            <Button 
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", color: "bg-cyan-400" },
+              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", color: "bg-yellow-400" },
+              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", color: "bg-emerald-400" },
+            ].map((t, i) => (
+              <div
+                key={i}
+                className="group relative bg-white rounded-2xl p-8 border border-black/5 shadow-[0_4px_30px_-10px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300"
+              >
+                <Quote className="absolute top-6 right-6 text-yellow-400/30 group-hover:text-yellow-400/60 transition-colors" size={44} strokeWidth={1.5} />
+
+                <div className="flex items-center gap-1 mb-5">
+                  {[0,1,2,3,4].map((s) => (
+                    <Star key={s} size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+
+                <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-7 font-medium">
+                  "{t.quote}"
+                </p>
+
+                <div className="flex items-center gap-3 pt-5 border-t border-black/5">
+                  <div className={`w-11 h-11 rounded-full ${t.color} flex items-center justify-center font-bold text-black text-sm`}>
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p className="font-bold text-black">{t.name}</p>
+                    <p className="text-xs text-gray-500 font-medium">Aluno da Imersão</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-14">
+            <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_10px_30px_-5px_rgba(250,204,21,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(250,204,21,0.8)] transition-all duration-300 hover:scale-[1.02]"
             >
               Quero Fazer Parte →
             </Button>
           </div>
         </div>
       </section>
+
 
       {/* Offer Section */}
       <section id="oferta" className="pt-24 pb-16 px-4 bg-gradient-to-b from-gray-900 via-gray-900 to-black text-white relative overflow-hidden">
