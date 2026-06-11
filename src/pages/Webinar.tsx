@@ -25,6 +25,7 @@ import local1 from "@/assets/local-1.jpg";
 import local2 from "@/assets/local-2.jpg";
 import local3 from "@/assets/local-3.jpg";
 import local4 from "@/assets/local-4.jpg";
+import onlineMeetImg from "@/assets/online-meet.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -544,7 +545,7 @@ const Webinar = () => {
                 icon: "💻",
                 title: "Online pelo Meet",
                 body: "Acompanhe todas as aulas em tempo real pelo Google Meet, do conforto da sua casa ou escritório.",
-                image: "/lovable-uploads/online-meet.jpg",
+                image: onlineMeetImg,
                 accent: "cyan",
                 grad: "from-cyan-400 to-blue-500",
                 tint: "bg-cyan-400/10 border-cyan-400/20",
