@@ -1140,80 +1140,125 @@ const Webinar = () => {
       </section>
 
 
-      {/* Author Section */}
-      <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold tracking-widest uppercase text-cyan-500 mb-3">Seu mentor</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Conheça Vitor Yuji
-            </h2>
+      {/* Author Section — Editorial */}
+      <section className="relative py-28 px-4 bg-[#0a0a0a] text-white overflow-hidden">
+        {/* Decorative grid */}
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
+          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
+          backgroundSize: '60px 60px'
+        }} />
+        {/* Yellow blob */}
+        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto max-w-6xl relative">
+          {/* Header */}
+          <div className="flex items-center gap-4 mb-16">
+            <div className="h-px flex-1 bg-white/15" />
+            <span className="font-['Bebas_Neue'] tracking-[0.3em] text-yellow-400 text-sm">/ SEU MENTOR</span>
+            <div className="h-px flex-1 bg-white/15" />
           </div>
 
-          <div className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-12 items-start">
-            {/* Photos */}
-            <div className="space-y-4">
-              <div className="rounded-2xl overflow-hidden">
-                <img 
-                  src="/lovable-uploads/vitor-yuji-palestra-2.png" 
-                  alt="Vitor Yuji apresentando" 
-                  className="w-full h-auto object-cover"
-                />
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-start">
+            {/* Photos column */}
+            <div className="md:col-span-5 space-y-5">
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-yellow-400/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="relative rounded-2xl overflow-hidden border border-white/10">
+                  <img
+                    src="/lovable-uploads/vitor-yuji-palestra-2.png"
+                    alt="Vitor Yuji apresentando"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-3 py-1.5 font-['Bebas_Neue'] tracking-wider text-sm">
+                  PALESTRANTE
+                </div>
               </div>
-              <div className="rounded-2xl overflow-hidden">
-                <img 
-                  src="/lovable-uploads/vitor-yuji-palestra-1.png" 
-                  alt="Vitor Yuji com alunos" 
-                  className="w-full h-auto object-cover"
-                />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-2xl overflow-hidden border border-white/10 col-span-2">
+                  <img
+                    src="/lovable-uploads/vitor-yuji-palestra-1.png"
+                    alt="Vitor Yuji com alunos"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Bio */}
-            <div>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                Vitor Yuji tem apenas 15 anos.
+            {/* Bio column */}
+            <div className="md:col-span-7">
+              {/* Name block */}
+              <h2 className="font-['Poppins'] font-extrabold text-5xl md:text-7xl leading-[0.95] tracking-tight mb-2">
+                Vitor <span className="text-yellow-400">Yuji</span>
+              </h2>
+              <p className="font-['Bebas_Neue'] tracking-[0.2em] text-white/50 text-base mb-8">
+                15 ANOS · SERGIPE · NORDESTE
               </p>
 
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                Ele não é o mais famoso, mas é, com certeza, o mais surpreendente palestrante de IA do Nordeste.
+              {/* Pull quote */}
+              <p className="text-2xl md:text-3xl font-['Poppins'] font-light leading-snug mb-10 text-white/90">
+                Não é o mais famoso, mas é, com certeza, o mais
+                <span className="text-yellow-400 font-semibold"> surpreendente palestrante de IA do Nordeste</span>.
               </p>
 
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-muted-foreground">
-                    Em 2024, foi selecionado pelo CEO Max Peters para ser <strong className="text-foreground">jovem aprendiz da Adapta.org</strong>, a maior empresa de IA da América Latina.
-                  </span>
+              {/* Stat cards */}
+              <div className="grid grid-cols-3 gap-3 mb-10">
+                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
+                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">+50</div>
+                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">ALUNOS</div>
+                </div>
+                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
+                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">9</div>
+                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">PALESTRAS</div>
+                </div>
+                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
+                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">4x</div>
+                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">FLL NACIONAL</div>
+                </div>
+              </div>
+
+              {/* Achievements */}
+              <ul className="space-y-5 mb-10">
+                <li className="flex gap-4 group">
+                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">01</span>
+                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                    Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> — a maior empresa de IA da América Latina.
+                  </p>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Palestrou sobre IA para 6 escolas e 3 empresas.</strong>
-                  </span>
+                <li className="flex gap-4 group">
+                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">02</span>
+                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                    Palestrou sobre IA para <strong className="text-white">6 escolas e 3 empresas</strong>.
+                  </p>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-muted-foreground">
-                    Tem <strong className="text-foreground">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.
-                  </span>
+                <li className="flex gap-4 group">
+                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">03</span>
+                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                    <strong className="text-white">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.
+                  </p>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-cyan-500 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">4x competidor</strong> do torneio de robótica da First Lego League, levando Sergipe para a etapa nacional.
-                  </span>
+                <li className="flex gap-4 group">
+                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">04</span>
+                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                    <strong className="text-white">4x competidor</strong> da First Lego League — levando Sergipe à etapa nacional.
+                  </p>
                 </li>
               </ul>
 
-              <p className="text-muted-foreground leading-relaxed border-l-4 border-cyan-500 pl-4 italic">
-                A missão de Vitor Yuji é tornar a IA acessível para todos — com conteúdo prático, didático e transformador.
-              </p>
+              {/* Mission */}
+              <div className="relative bg-yellow-400/5 border border-yellow-400/20 rounded-2xl p-6">
+                <span className="absolute -top-3 left-6 bg-[#0a0a0a] px-3 font-['Bebas_Neue'] tracking-wider text-yellow-400 text-xs">
+                  MISSÃO
+                </span>
+                <p className="text-white/85 leading-relaxed italic">
+                  Tornar a IA acessível para todos — com conteúdo prático, didático e transformador.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-14">
-            <Button 
+          <div className="text-center mt-16">
+            <Button
               onClick={scrollToOffer}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
