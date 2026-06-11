@@ -26,6 +26,7 @@ import local2 from "@/assets/local-2.jpg";
 import local3 from "@/assets/local-3.jpg";
 import local4 from "@/assets/local-4.jpg";
 import onlineMeetImg from "@/assets/online-meet.jpg";
+import gravacoesImg from "@/assets/gravacoes.jpg.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
