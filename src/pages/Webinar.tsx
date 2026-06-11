@@ -1242,117 +1242,104 @@ const Webinar = () => {
 
 
 
-      {/* Author Section — Editorial */}
-      <section className="relative py-28 px-4 bg-[#0a0a0a] text-white overflow-hidden">
-        {/* Decorative grid */}
-        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
-          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
-          backgroundSize: '60px 60px'
-        }} />
-        {/* Yellow blob */}
-        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Author Section */}
+      <section className="relative py-24 md:py-32 px-4 bg-black text-white overflow-hidden">
+        {/* Background atmosphere — matches "3 formas" / Cronograma */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
-        <div className="container mx-auto max-w-6xl relative">
+        <div className="container mx-auto max-w-6xl relative z-10">
           {/* Header */}
-          <div className="flex items-center gap-4 mb-16">
-            <div className="h-px flex-1 bg-white/15" />
-            <span className="font-['Bebas_Neue'] tracking-[0.3em] text-yellow-400 text-sm">/ SEU MENTOR</span>
-            <div className="h-px flex-1 bg-white/15" />
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+              Seu Mentor
+            </span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Vitor <span className="text-yellow-400">Yuji</span>
+            </h2>
+            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              15 anos · Sergipe · Nordeste
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-start">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
             {/* Photos column */}
             <div className="md:col-span-5 space-y-5">
-              <div className="relative group">
-                <div className="absolute -inset-2 bg-yellow-400/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="relative rounded-2xl overflow-hidden border border-white/10">
+              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400 z-10"></div>
+                <div className="relative overflow-hidden">
                   <img
                     src="/lovable-uploads/vitor-yuji-palestra-2.png"
                     alt="Vitor Yuji apresentando"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                </div>
-                <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-3 py-1.5 font-['Bebas_Neue'] tracking-wider text-sm">
-                  PALESTRANTE
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 bg-yellow-400/10 border border-yellow-400/20 px-3 py-1.5 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
+                    <span className="text-xs font-semibold uppercase tracking-[0.15em] text-yellow-400">Palestrante</span>
+                  </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-2xl overflow-hidden border border-white/10 col-span-2">
-                  <img
-                    src="/lovable-uploads/vitor-yuji-palestra-1.png"
-                    alt="Vitor Yuji com alunos"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
+              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyan-400 to-blue-500 z-10"></div>
+                <img
+                  src="/lovable-uploads/vitor-yuji-palestra-1.png"
+                  alt="Vitor Yuji com alunos"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
 
             {/* Bio column */}
             <div className="md:col-span-7">
-              {/* Name block */}
-              <h2 className="font-['Poppins'] font-extrabold text-5xl md:text-7xl leading-[0.95] tracking-tight mb-2">
-                Vitor <span className="text-yellow-400">Yuji</span>
-              </h2>
-              <p className="font-['Bebas_Neue'] tracking-[0.2em] text-white/50 text-base mb-8">
-                15 ANOS · SERGIPE · NORDESTE
-              </p>
-
               {/* Pull quote */}
-              <p className="text-2xl md:text-3xl font-['Poppins'] font-light leading-snug mb-10 text-white/90">
+              <p className="font-poppins text-xl md:text-2xl font-light leading-snug mb-8 text-white/90">
                 Não é o mais famoso, mas é, com certeza, o mais
                 <span className="text-yellow-400 font-semibold"> surpreendente palestrante de IA do Nordeste</span>.
               </p>
 
               {/* Stat cards */}
-              <div className="grid grid-cols-3 gap-3 mb-10">
-                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
-                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">+50</div>
-                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">ALUNOS</div>
-                </div>
-                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
-                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">9</div>
-                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">PALESTRAS</div>
-                </div>
-                <div className="border border-white/10 bg-white/[0.03] backdrop-blur rounded-xl p-4 text-center">
-                  <div className="font-['Poppins'] font-extrabold text-3xl text-yellow-400 leading-none">4x</div>
-                  <div className="font-['Bebas_Neue'] tracking-wider text-xs text-white/60 mt-2">FLL NACIONAL</div>
-                </div>
+              <div className="grid grid-cols-3 gap-3 mb-8">
+                {[
+                  { value: "+50", label: "Alunos" },
+                  { value: "9", label: "Palestras" },
+                  { value: "4x", label: "FLL Nacional" },
+                ].map((s) => (
+                  <div key={s.label} className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
+                    <div className="font-poppins font-extrabold text-3xl text-yellow-400 leading-none">{s.value}</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-400 mt-2">{s.label}</div>
+                  </div>
+                ))}
               </div>
 
               {/* Achievements */}
-              <ul className="space-y-5 mb-10">
-                <li className="flex gap-4 group">
-                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">01</span>
-                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
-                    Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> — a maior empresa de IA da América Latina.
-                  </p>
-                </li>
-                <li className="flex gap-4 group">
-                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">02</span>
-                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
-                    Palestrou sobre IA para <strong className="text-white">6 escolas e 3 empresas</strong>.
-                  </p>
-                </li>
-                <li className="flex gap-4 group">
-                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">03</span>
-                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
-                    <strong className="text-white">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.
-                  </p>
-                </li>
-                <li className="flex gap-4 group">
-                  <span className="font-['Bebas_Neue'] text-yellow-400 text-2xl leading-none w-8 shrink-0">04</span>
-                  <p className="text-white/75 leading-relaxed border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
-                    <strong className="text-white">4x competidor</strong> da First Lego League — levando Sergipe à etapa nacional.
-                  </p>
-                </li>
+              <ul className="space-y-4 mb-8">
+                {[
+                  <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> — a maior empresa de IA da América Latina.</>,
+                  <>Palestrou sobre IA para <strong className="text-white">6 escolas e 3 empresas</strong>.</>,
+                  <><strong className="text-white">+50 alunos em duas turmas</strong> na Mentoria IA Para Todos.</>,
+                  <><strong className="text-white">4x competidor</strong> da First Lego League — levando Sergipe à etapa nacional.</>,
+                ].map((content, i) => (
+                  <li key={i} className="flex gap-4 items-start group">
+                    <span className="font-poppins font-extrabold text-yellow-400 text-xl leading-none w-8 shrink-0 pt-1">{String(i + 1).padStart(2, "0")}</span>
+                    <p className="text-gray-300 leading-relaxed text-sm md:text-base border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                      {content}
+                    </p>
+                  </li>
+                ))}
               </ul>
 
               {/* Mission */}
-              <div className="relative bg-yellow-400/5 border border-yellow-400/20 rounded-2xl p-6">
-                <span className="absolute -top-3 left-6 bg-[#0a0a0a] px-3 font-['Bebas_Neue'] tracking-wider text-yellow-400 text-xs">
-                  MISSÃO
+              <div className="relative bg-gradient-to-b from-yellow-400/[0.06] to-white/[0.01] border border-yellow-400/20 rounded-2xl p-6 overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-3">
+                  <span className="w-1 h-1 rounded-full bg-yellow-400"></span>
+                  Missão
                 </span>
-                <p className="text-white/85 leading-relaxed italic">
+                <p className="text-white/85 leading-relaxed text-sm md:text-base">
                   Tornar a IA acessível para todos — com conteúdo prático, didático e transformador.
                 </p>
               </div>
@@ -1362,13 +1349,14 @@ const Webinar = () => {
           <div className="text-center mt-16">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
-              Quero Fazer Parte →
+              QUERO FAZER PARTE →
             </Button>
           </div>
         </div>
       </section>
+
 
 
       {/* Localização Section */}
