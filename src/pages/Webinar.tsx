@@ -1186,71 +1186,59 @@ const Webinar = () => {
 
 
       {/* Guarantee Section */}
-      <section className="relative py-24 px-4 bg-gray-900 overflow-hidden">
-        {/* ambient glows */}
-        <div className="absolute -top-32 -left-20 w-[500px] h-[500px] bg-emerald-500/[0.08] rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-32 -right-20 w-[500px] h-[500px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
-          backgroundImage: 'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
-          backgroundSize: '60px 60px'
-        }} />
+      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+        {/* Background atmosphere — matches "3 formas" / Cronograma */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-emerald-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="text-center mb-10">
-            <span className="inline-flex items-center gap-2 bg-emerald-500/15 text-emerald-400 text-xs md:text-sm font-['Bebas_Neue'] tracking-[0.3em] px-4 py-2 rounded-full border border-emerald-500/30">
-              <Shield size={14} /> GARANTIA ESPECIAL
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400 mb-6 bg-emerald-400/10 px-4 py-2 rounded-full border border-emerald-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Garantia Especial
             </span>
-            <h3 className="font-poppins text-3xl md:text-5xl text-white font-extrabold leading-tight mt-6 tracking-tight">
-              Assista a Primeira Aula <span className="relative inline-block">
-                <span className="relative z-10 text-yellow-400">"De Graça"</span>
-              </span>,<br className="hidden md:block" /> Sem Compromisso
-            </h3>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Assista a Primeira Aula <span className="text-yellow-400">"De Graça"</span>, Sem Compromisso
+            </h2>
           </div>
 
-          {/* Card with gradient border */}
-          <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-emerald-400/40 via-white/10 to-yellow-400/30">
-            <div className="relative rounded-3xl bg-gray-950/80 backdrop-blur-sm p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-14 overflow-hidden">
-              {/* corner accent */}
-              <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-400/10 rounded-full blur-2xl pointer-events-none" />
-
+          {/* Card */}
+          <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-emerald-400 to-green-500"></div>
+            <div className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="relative flex-shrink-0">
-                <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-2xl scale-90" />
+                <div className="absolute inset-0 bg-yellow-400/15 rounded-full blur-2xl scale-90" />
                 <img
                   src={garantiaSelo}
                   alt="Garantia da Primeira Aula 100%"
-                  className="relative w-48 h-48 md:w-60 md:h-60 object-contain drop-shadow-[0_10px_30px_rgba(250,204,21,0.3)]"
+                  className="relative w-44 h-44 md:w-56 md:h-56 object-contain"
                 />
               </div>
 
-              <div className="text-center md:text-left relative">
-                <p className="font-['Bebas_Neue'] tracking-[0.25em] text-emerald-400 text-sm mb-3">
-                  / TESTE. APRENDA. APROVEITE.
-                </p>
-                <p className="font-poppins text-white font-extrabold text-2xl md:text-3xl mb-5 leading-tight">
-                  Risco zero pra você.
-                </p>
-                <p className="font-poppins text-gray-300 text-base md:text-lg leading-relaxed">
+              <div className="text-center md:text-left">
+                <h3 className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
+                  Teste. Aprenda. Aproveite.
+                </h3>
+                <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-6">
                   Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você achar que não faz sentido pra você, envie uma mensagem em até{" "}
-                  <span className="font-bold text-yellow-400">1 dia pedindo reembolso</span>, e devolvemos{" "}
-                  <span className="font-bold text-yellow-400">100% do seu dinheiro</span>.
+                  <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
+                  <span className="font-semibold text-white">100%</span>.
                 </p>
 
-                <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-                    <Check size={12} className="text-emerald-400" /> 100% reembolsável
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-                    <Check size={12} className="text-emerald-400" /> Sem perguntas
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-                    <Check size={12} className="text-emerald-400" /> Sem burocracia
-                  </span>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                  {["100% reembolsável", "Sem perguntas", "Sem burocracia"].map((t) => (
+                    <span key={t} className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                      <Check size={12} className="text-emerald-400" /> {t}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
 
 
