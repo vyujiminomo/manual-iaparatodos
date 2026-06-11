@@ -91,7 +91,7 @@ const Webinar = () => {
             <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
               Transforme seu trabalho com a{" "}
               <span className="text-yellow-400">melhor mentoria de IA</span>{" "}
-              para profissionais
+              para profissionais de Sergipe
             </h1>
 
             {/* Description */}
