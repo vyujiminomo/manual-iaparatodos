@@ -547,6 +547,7 @@ const Webinar = () => {
                 title: "Online pelo Meet",
                 body: "Acompanhe todas as aulas em tempo real pelo Google Meet, do conforto da sua casa ou escritório.",
                 image: onlineMeetImg,
+                objectPosition: "15% center",
                 accent: "cyan",
                 grad: "from-cyan-400 to-blue-500",
                 tint: "bg-cyan-400/10 border-cyan-400/20",
@@ -556,6 +557,7 @@ const Webinar = () => {
                 title: "Gravações",
                 body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir quando quiser.",
                 image: gravacoesImg.url,
+                objectPosition: "85% center",
                 accent: "emerald",
                 grad: "from-emerald-400 to-green-500",
                 tint: "bg-emerald-400/10 border-emerald-400/20",
@@ -574,6 +576,8 @@ const Webinar = () => {
                     src={c.image}
                     alt={c.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style={{ objectPosition: (c as any).objectPosition || "center center" }}
+                  />
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
                       const parent = e.currentTarget.parentElement;
