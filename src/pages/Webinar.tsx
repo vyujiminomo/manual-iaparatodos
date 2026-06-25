@@ -794,7 +794,7 @@ const Webinar = () => {
                     {d.date} • 19h
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem]">
+                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
                   {d.title}
                 </h3>
                 <ul className="space-y-2 text-gray-300 flex-1">
