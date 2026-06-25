@@ -1445,7 +1445,7 @@ const Webinar = () => {
                   <strong>• 12 de Agosto de 2026</strong> - Dia 2: O que é Inteligência Artificial<br/>
                   <strong>• 19 de Agosto de 2026</strong> - Dia 3: Como criar Prompts Magnéticos<br/>
                   <strong>• 26 de Agosto de 2026</strong> - Dia 4: As 5 Práticas da IA Generativa<br/>
-                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Tira Dúvidas e Práticas no Seu Trabalho
+                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Mais ferramentas, IA para marketing e gestão
                 </p>
               </AccordionContent>
             </AccordionItem>
