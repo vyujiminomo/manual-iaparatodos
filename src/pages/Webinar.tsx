@@ -914,7 +914,7 @@ const Webinar = () => {
           {(() => {
             const bonuses = [
               { img: webinarGravacao, title: "Acesso às gravações completas da Imersão", desc: "Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas." },
-              { img: webinarBiblioteca, title: "Mapas Mentais", desc: "5 mapas mentais dos principais aprendizados da Imersão para você estudar e revisar de forma visual e prática." },
+              { img: mapasMentaisComposto.url, title: "7 mapas mentais", desc: "7 mapas mentais dos principais aprendizados da Imersão para você estudar e revisar de forma visual e prática." },
               { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Um grupo com o professor e os alunos para tirar dúvidas, trocar experiências e fazer networking de alto nível." },
               { img: webinarManual, title: "Workbook Exclusivo", desc: "Um \"guia de bolso de IA\" que te acompanhará durante e depois da Imersão, para garantir que você extraia o máximo valor e resultado de tudo o que faremos durante as aulas." },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts", desc: "Uma coleção completa de prompts prontos e testados para você aplicar no ChatGPT e outras IAs, acelerando seus resultados no trabalho e nos estudos." },
