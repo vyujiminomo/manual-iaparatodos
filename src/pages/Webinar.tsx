@@ -947,8 +947,16 @@ const Webinar = () => {
                       </div>
                       {/* Image card */}
                       <div className={`md:col-span-3 relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[300px] group ${(b as any).fit === 'contain' ? 'bg-[#0f1117]' : ''}`}>
-                        <img src={b.img} alt={b.title} className={`absolute inset-0 w-full h-full ${(b as any).fit === 'contain' ? 'object-contain p-4' : 'object-cover'} transition-transform duration-700 group-hover:scale-105`} />
-                        {(b as any).fit !== 'contain' && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />}
+                        {(b as any).images ? (
+                          <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-3">
+                            {(b as any).images.map((src: string, idx: number) => (
+                              <img key={idx} src={src} alt={`${b.title} ${idx + 1}`} className="w-full h-full object-contain rounded-lg bg-[#0f1117]" />
+                            ))}
+                          </div>
+                        ) : (
+                          <img src={b.img} alt={b.title} className={`absolute inset-0 w-full h-full ${(b as any).fit === 'contain' ? 'object-contain p-4' : 'object-cover'} transition-transform duration-700 group-hover:scale-105`} />
+                        )}
+                        {(b as any).fit !== 'contain' && !(b as any).images && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />}
                         {/* Orange corner ribbon */}
                         <div className="absolute top-0 left-0 w-32 h-32 overflow-hidden pointer-events-none">
                           <div className="absolute top-[26px] -left-[34px] w-[160px] rotate-[-45deg] bg-gradient-to-r from-orange-600 to-orange-500 text-white text-center font-extrabold text-sm py-1.5 tracking-widest shadow-lg">
