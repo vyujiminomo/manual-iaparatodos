@@ -649,9 +649,9 @@ const Webinar = () => {
                 <ul className="space-y-4">
                   {[
                     "Vídeo gravado",
-                    "Você fica com dúvidas",
-                    "Técnico demais",
-                    "Excesso de teoria",
+                    "Sem mentor, você fica com dúvidas",
+                    "Técnico demais (programação, etc)",
+                    "Teórico demais",
                     "Sozinho",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
@@ -671,15 +671,15 @@ const Webinar = () => {
                   <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
                     <Check className="text-yellow-400" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA na Prática</h3>
+                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Para Todos</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
                     "Ao vivo (presencial ou online) + gravações",
-                    "Professor 'pega na mão' e te ajuda",
-                    "Foco no que você realmente vai usar",
+                    "Mentor 'pega na mão' e te ajuda",
+                    "Foco no que é realmente útil",
                     "Aulas dinâmicas e práticas",
-                    "Grupo de profissionais",
+                    "Você + mentor + grupo",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3 text-white text-sm md:text-base">
                       <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
@@ -917,7 +917,7 @@ const Webinar = () => {
               { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Um grupo com o professor e os alunos para tirar dúvidas, trocar experiências e fazer networking de alto nível." },
               { img: webinarManual, title: "Workbook Exclusivo", desc: "Um \"guia de bolso de IA\" que te acompanhará durante e depois da Imersão, para garantir que você extraia o máximo valor e resultado de tudo o que faremos durante as aulas." },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts", desc: "Uma coleção completa de prompts prontos e testados para você aplicar no ChatGPT e outras IAs, acelerando seus resultados no trabalho e nos estudos." },
-              { img: bonusSessaoIndividual, title: "Sessão individual de 1h (EXCLUSIVO ATÉ 30/06)", desc: "Uma sessão privada de 1 hora com o mentor Vitor Yuji para tirar dúvidas específicas e criar um plano de ação personalizado de IA para você." },
+              { img: bonusSessaoIndividual, title: "Sessão individual de 1h (EXCLUSIVO ATÉ 30/06)", desc: "Uma sessão privada de 1 hora com o mentor Vitor Yuji para ter ideias de como usar IA espeficiamente no SEU trabalho" },
             ];
             return (
               <div className="space-y-6 md:space-y-8 mb-12">
