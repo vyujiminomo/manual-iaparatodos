@@ -771,7 +771,7 @@ const Webinar = () => {
               {
                 day: 5,
                 date: "02/09",
-                title: "Mais ferramentas\nIA para marketing e gestão\u00a0",
+                title: "Mais ferramentas\nIA para marketing e gestão\u00a0\n",
                 items: [
                   "IA para slides, pesquisa, estudos, etc",
                   "Técnicas de IA para marketing e gestão",
