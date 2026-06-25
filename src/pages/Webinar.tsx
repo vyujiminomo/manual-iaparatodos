@@ -948,9 +948,9 @@ const Webinar = () => {
                       {/* Image card */}
                       <div className={`md:col-span-3 relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[300px] group ${(b as any).fit === 'contain' ? 'bg-[#0f1117]' : ''}`}>
                         {(b as any).images ? (
-                          <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-3">
+                          <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
                             {(b as any).images.map((src: string, idx: number) => (
-                              <img key={idx} src={src} alt={`${b.title} ${idx + 1}`} className="w-full h-full object-contain rounded-lg bg-[#0f1117]" />
+                              <img key={idx} src={src} alt={`${b.title} ${idx + 1}`} className="w-full h-full object-cover" />
                             ))}
                           </div>
                         ) : (
