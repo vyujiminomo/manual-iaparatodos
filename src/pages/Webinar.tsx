@@ -20,7 +20,7 @@ import mapaMental1 from "@/assets/mapa-mental-1.png";
 import mapaMental2 from "@/assets/mapa-mental-2.png";
 import mapaMental3 from "@/assets/mapa-mental-3.png";
 import mapaMental4 from "@/assets/mapa-mental-4.png";
-import bonusSessaoIndividual from "@/assets/bonus-sessao-individual.png";
+import bonusSessaoIndividual from "@/assets/sessao-individual-vitor.png.asset.json";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
@@ -922,7 +922,7 @@ const Webinar = () => {
               { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Um grupo com o professor e os alunos para tirar dúvidas, trocar experiências e fazer networking de alto nível." },
               { img: webinarManual, title: "Workbook Exclusivo", desc: "Um \"guia de bolso de IA\" que te acompanhará durante e depois da Imersão, para garantir que você extraia o máximo valor e resultado de tudo o que faremos durante as aulas." },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts", desc: "Uma coleção completa de prompts prontos e testados para você aplicar no ChatGPT e outras IAs, acelerando seus resultados no trabalho e nos estudos." },
-              { img: bonusSessaoIndividual, title: "Sessão individual de 1h (EXCLUSIVO ATÉ 30/06)", desc: "Uma sessão privada de 1 hora com o mentor Vitor Yuji para ter ideias de como usar IA espeficiamente no SEU trabalho" },
+              { img: bonusSessaoIndividual.url, title: "Sessão individual de 1h (EXCLUSIVO ATÉ 30/06)", desc: "Uma sessão privada de 1 hora com o mentor Vitor Yuji para ter ideias de como usar IA espeficiamente no SEU trabalho" },
             ];
             return (
               <div className="space-y-6 md:space-y-8 mb-12">
