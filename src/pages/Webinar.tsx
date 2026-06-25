@@ -27,6 +27,7 @@ import local3 from "@/assets/local-3.jpg";
 import local4 from "@/assets/local-4.jpg";
 import onlineMeetImg from "@/assets/online-meet.jpg";
 import gravacoesImg from "@/assets/gravacoes.jpg.asset.json";
+import presencialSalaAulaImg from "@/assets/presencial-sala-aula.png.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -537,7 +538,7 @@ const Webinar = () => {
                 icon: "🏫",
                 title: "Presencial na sala de aula",
                 body: "Participe ao vivo na sala de aula, interaja com o professor e outros alunos presencialmente.",
-                image: "/lovable-uploads/presencial-sala.jpg",
+                image: presencialSalaAulaImg.url,
                 accent: "yellow",
                 grad: "from-yellow-400 to-amber-400",
                 tint: "bg-yellow-400/10 border-yellow-400/20",
