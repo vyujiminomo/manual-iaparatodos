@@ -15,6 +15,7 @@ import webinarGravacao from "@/assets/webinar-gravacao.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
+import bonusSessaoIndividual from "@/assets/bonus-sessao-individual.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
