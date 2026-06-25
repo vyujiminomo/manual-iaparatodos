@@ -771,10 +771,10 @@ const Webinar = () => {
               {
                 day: 5,
                 date: "02/09",
-                title: "Tira Dúvidas e Práticas no Seu Trabalho",
+                title: "Mais ferramentas\nIA para marketing e gestão\u00a0\n",
                 items: [
-                  "Exemplos reais dos alunos",
-                  "Sessão de dúvidas ao vivo",
+                  "IA para slides, pesquisa, estudos, etc",
+                  "Técnicas de IA para marketing e gestão",
                   "Resumão de toda a imersão",
                 ],
                 accent: "from-orange-400 to-red-500",
@@ -794,7 +794,7 @@ const Webinar = () => {
                     {d.date} • 19h
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem]">
+                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
                   {d.title}
                 </h3>
                 <ul className="space-y-2 text-gray-300 flex-1">
@@ -1445,7 +1445,7 @@ const Webinar = () => {
                   <strong>• 12 de Agosto de 2026</strong> - Dia 2: O que é Inteligência Artificial<br/>
                   <strong>• 19 de Agosto de 2026</strong> - Dia 3: Como criar Prompts Magnéticos<br/>
                   <strong>• 26 de Agosto de 2026</strong> - Dia 4: As 5 Práticas da IA Generativa<br/>
-                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Tira Dúvidas e Práticas no Seu Trabalho
+                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Mais ferramentas, IA para marketing e gestão
                 </p>
               </AccordionContent>
             </AccordionItem>
