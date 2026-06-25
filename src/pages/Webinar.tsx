@@ -771,10 +771,10 @@ const Webinar = () => {
               {
                 day: 5,
                 date: "02/09",
-                title: "Tira Dúvidas e Práticas no Seu Trabalho",
+                title: "Mais ferramentas\nIA para marketing e gestão\u00a0",
                 items: [
-                  "Exemplos reais dos alunos",
-                  "Sessão de dúvidas ao vivo",
+                  "IA para slides, pesquisa, estudos, etc",
+                  "Técnicas de IA para marketing e gestão",
                   "Resumão de toda a imersão",
                 ],
                 accent: "from-orange-400 to-red-500",
