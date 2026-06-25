@@ -649,9 +649,9 @@ const Webinar = () => {
                 <ul className="space-y-4">
                   {[
                     "Vídeo gravado",
-                    "Você fica com dúvidas",
-                    "Técnico demais",
-                    "Excesso de teoria",
+                    "Sem mentor, você fica com dúvidas",
+                    "Técnico demais (programação, etc)",
+                    "Teórico demais",
                     "Sozinho",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
