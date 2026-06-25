@@ -16,6 +16,10 @@ import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json";
+import mapaMental1 from "@/assets/mapa-mental-1.png";
+import mapaMental2 from "@/assets/mapa-mental-2.png";
+import mapaMental3 from "@/assets/mapa-mental-3.png";
+import mapaMental4 from "@/assets/mapa-mental-4.png";
 import bonusSessaoIndividual from "@/assets/bonus-sessao-individual.png";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
@@ -914,7 +918,7 @@ const Webinar = () => {
           {(() => {
             const bonuses = [
               { img: webinarGravacao, title: "Acesso às gravações completas da Imersão", desc: "Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir quantas vezes quiser. Você poderá rever todos os conteúdos e aplicações práticas das aulas." },
-              { img: mapasMentaisComposto.url, title: "7 mapas mentais", desc: "7 mapas mentais dos principais aprendizados da Imersão para você estudar e revisar de forma visual e prática.", fit: "contain" as const },
+              { img: mapasMentaisComposto.url, images: [mapaMental2, mapaMental1, mapaMental3, mapaMental4], title: "7 mapas mentais", desc: "7 mapas mentais dos principais aprendizados da Imersão para você estudar e revisar de forma visual e prática.", fit: "contain" as const },
               { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Um grupo com o professor e os alunos para tirar dúvidas, trocar experiências e fazer networking de alto nível." },
               { img: webinarManual, title: "Workbook Exclusivo", desc: "Um \"guia de bolso de IA\" que te acompanhará durante e depois da Imersão, para garantir que você extraia o máximo valor e resultado de tudo o que faremos durante as aulas." },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts", desc: "Uma coleção completa de prompts prontos e testados para você aplicar no ChatGPT e outras IAs, acelerando seus resultados no trabalho e nos estudos." },
@@ -943,8 +947,16 @@ const Webinar = () => {
                       </div>
                       {/* Image card */}
                       <div className={`md:col-span-3 relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[300px] group ${(b as any).fit === 'contain' ? 'bg-[#0f1117]' : ''}`}>
-                        <img src={b.img} alt={b.title} className={`absolute inset-0 w-full h-full ${(b as any).fit === 'contain' ? 'object-contain p-4' : 'object-cover'} transition-transform duration-700 group-hover:scale-105`} />
-                        {(b as any).fit !== 'contain' && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />}
+                        {(b as any).images ? (
+                          <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-3">
+                            {(b as any).images.map((src: string, idx: number) => (
+                              <img key={idx} src={src} alt={`${b.title} ${idx + 1}`} className="w-full h-full object-contain rounded-lg bg-[#0f1117]" />
+                            ))}
+                          </div>
+                        ) : (
+                          <img src={b.img} alt={b.title} className={`absolute inset-0 w-full h-full ${(b as any).fit === 'contain' ? 'object-contain p-4' : 'object-cover'} transition-transform duration-700 group-hover:scale-105`} />
+                        )}
+                        {(b as any).fit !== 'contain' && !(b as any).images && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />}
                         {/* Orange corner ribbon */}
                         <div className="absolute top-0 left-0 w-32 h-32 overflow-hidden pointer-events-none">
                           <div className="absolute top-[26px] -left-[34px] w-[160px] rotate-[-45deg] bg-gradient-to-r from-orange-600 to-orange-500 text-white text-center font-extrabold text-sm py-1.5 tracking-widest shadow-lg">
