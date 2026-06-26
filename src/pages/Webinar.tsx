@@ -1235,12 +1235,12 @@ const Webinar = () => {
 
               <div className="text-center md:text-left">
                 <h3 className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
-                  Teste. Aprenda. Aproveite.
+                  Garantia das duas aulas
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-6">
-                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você{" "}
-                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem em até{" "}
-                  <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
+                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a segunda aula, você{" "}
+                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem até{" "}
+                  <span className="font-semibold text-white">13/08 pedindo reembolso</span>, e devolvemos{" "}
                   <span className="font-semibold text-white">100% do seu dinheiro</span>.
                 </p>
 
