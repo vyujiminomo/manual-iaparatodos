@@ -727,11 +727,11 @@ const Webinar = () => {
               {
                 day: 1,
                 date: "05/08",
-                title: "Pegando na sua mão para mexer no ChatGPT",
+                title: "'Pegando na Sua Mão'",
                 items: [
-                  "Botões e funções das IAs",
-                  "Como criar sua conta e começar do zero",
-                  "Primeiros comandos práticos",
+                  "Botões e funções do ChatGPT",
+                  "A Regra do Computador 'Entrar, Sair, Voltar'",
+                  "Criando seus primeiros prompts",
                 ],
                 accent: "from-cyan-400 to-cyan-500",
                 bg: "bg-cyan-400/10",
@@ -751,11 +751,11 @@ const Webinar = () => {
               {
                 day: 3,
                 date: "19/08",
-                title: "Como criar Prompts Magnéticos",
+                title: "CIII+ - Como criar bons prompts",
                 items: [
-                  "A estrutura 3IAI para prompts perfeitos",
+                  "A estrutura CIII+ para prompts perfeitos",
                   "Como criar um bom contexto",
-                  "O maior erro que iniciantes cometem ao usar IAs",
+                  "4 técnicas: Persona, Emotion Prompt, 'Pense Passo a Passo' e Dar referências",
                 ],
                 accent: "from-emerald-400 to-green-500",
                 bg: "bg-emerald-400/10",
@@ -763,13 +763,13 @@ const Webinar = () => {
               {
                 day: 4,
                 date: "26/08",
-                title: "As 5 Práticas da IA Generativa",
+                title: "PAPEI - As 5 atividades da IA generativa",
                 items: [
                   "Pesquisando artigos e jurisprudência com IA",
-                  "4 técnicas para ter ideias com IA",
                   "4 técnicas para aprender com IA",
-                  "2 técnicas para gerir com IA",
+                  "4 técnicas para pensar com IA",
                   "6 técnicas para escrever com IA",
+                  "4 técnicas para ter ideias com IA",
                 ],
                 accent: "from-fuchsia-400 to-pink-500",
                 bg: "bg-fuchsia-400/10",
@@ -1216,7 +1216,7 @@ const Webinar = () => {
               Garantia Especial
             </span>
             <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Garantia: Assista a Primeira Aula <span className="text-yellow-400">"De Graça"</span>
+              Garantia: Duas primeiras aulas <span className="text-yellow-400">"De Graça"</span>
             </h2>
           </div>
 
@@ -1235,12 +1235,12 @@ const Webinar = () => {
 
               <div className="text-center md:text-left">
                 <h3 className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
-                  Teste. Aprenda. Aproveite.
+                  Garantia das duas aulas
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-6">
-                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a primeira aula você{" "}
-                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem em até{" "}
-                  <span className="font-semibold text-white">1 dia pedindo reembolso</span>, e devolvemos{" "}
+                  Eu tenho tanta certeza que você vai adorar a Imersão que, se após a segunda aula, você{" "}
+                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem até{" "}
+                  <span className="font-semibold text-white">13/08 pedindo reembolso</span>, e devolvemos{" "}
                   <span className="font-semibold text-white">100% do seu dinheiro</span>.
                 </p>
 
@@ -1338,8 +1338,8 @@ const Webinar = () => {
                 {[
                   <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
                   <>Palestrou sobre IA para <strong className="text-white">7 escolas e 3 empresas</strong>.</>,
-                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Mentoria IA Para Todos.</>,
-                  <><strong className="text-white">4x competidor</strong> da First Lego League — levando Sergipe à etapa nacional.</>,
+                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Para Todos.</>,
+                  <><strong className="text-white">4x competidor</strong> da First Lego League, levando Sergipe à etapa nacional.</>,
                 ].map((content, i) => (
                   <li key={i} className="flex gap-4 items-start group">
                     <span className="font-poppins font-extrabold text-yellow-400 text-xl leading-none w-8 shrink-0 pt-1">{String(i + 1).padStart(2, "0")}</span>
