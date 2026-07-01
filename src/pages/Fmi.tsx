@@ -136,7 +136,7 @@ const Fmi = () => {
             {/* CTA */}
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(249,115,22,0.45)] hover:shadow-[0_0_55px_rgba(249,115,22,0.75)] w-full sm:w-auto"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(249,115,22,0.45)] hover:shadow-[0_0_55px_rgba(249,115,22,0.75)] w-full sm:w-auto"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -150,7 +150,7 @@ const Fmi = () => {
               <svg width="20" height="20" className="md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 2L12.5 7.5L18 8L14 12.5L15 18L10 15L5 18L6 12.5L2 8L7.5 7.5L10 2Z" fill="#F97316" />
               </svg>
-              <p className="text-cyan-400 text-sm md:text-base lg:text-xl font-medium text-center">
+              <p className="text-blue-400 text-sm md:text-base lg:text-xl font-medium text-center">
                 Sou o professor de IA escolhido por profissionais de empresas como
               </p>
             </div>
@@ -197,7 +197,7 @@ const Fmi = () => {
             {[
               {
                 label: "Aulas ao vivo",
-                accent: "from-cyan-400 to-cyan-500",
+                accent: "from-blue-400 to-blue-500",
                 placeholder: "imersao-foto-1.jpg",
               },
               {
@@ -207,12 +207,12 @@ const Fmi = () => {
               },
               {
                 label: "Networking",
-                accent: "from-emerald-400 to-green-500",
+                accent: "from-yellow-400 to-amber-500",
                 placeholder: "imersao-foto-3.jpg",
               },
               {
                 label: "Prática guiada",
-                accent: "from-fuchsia-400 to-pink-500",
+                accent: "from-orange-400 to-orange-500",
                 placeholder: "imersao-foto-4.jpg",
               },
               {
@@ -252,12 +252,12 @@ const Fmi = () => {
       {/* Testimonials Section */}
       <section className="relative py-20 md:py-28 px-4 bg-[#0a0a0a] overflow-hidden">
         {/* Background glows */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#F97316]/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-10 md:mb-14">
-            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-blue-400 mb-5 bg-blue-400/10 px-5 py-2 rounded-full border border-blue-400/20">
               Provas reais
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
@@ -312,9 +312,9 @@ const Fmi = () => {
           {turmaAtiva === 1 && (
             <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
               {[
-                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-cyan-400 to-cyan-500", nome: "Osvaldo Araki, Médico" },
+                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-blue-400 to-blue-500", nome: "Osvaldo Araki, Médico" },
                 { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max Mauro, Engenheiro" },
-                { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina, Médica" },
+                { src: "/lovable-uploads/video-karina.mp4", border: "from-yellow-400 to-amber-500", nome: "Karina, Médica" },
               ].map((d, i) => (
                 <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
@@ -343,9 +343,9 @@ const Fmi = () => {
           {turmaAtiva === 2 && (
             <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
               {[
-                { border: "from-fuchsia-400 to-pink-500", label: "Depoimento 1" },
+                { border: "from-orange-400 to-orange-500", label: "Depoimento 1" },
                 { border: "from-orange-400 to-red-500", label: "Depoimento 2" },
-                { border: "from-cyan-400 to-blue-500", label: "Depoimento 3" },
+                { border: "from-blue-400 to-blue-600", label: "Depoimento 3" },
               ].map((d, i) => (
                 <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-dashed border-white/[0.08] rounded-2xl overflow-hidden hover:border-[#F97316]/40 transition-all duration-300">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
@@ -374,7 +374,7 @@ const Fmi = () => {
           <div className="text-center mt-10 md:mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
@@ -409,10 +409,10 @@ const Fmi = () => {
               <span className="text-sm font-bold uppercase tracking-[0.2em] text-red-400">Hoje você...</span>
             </div>
             <div className="flex items-center gap-3 px-6">
-              <div className="w-8 h-8 rounded-lg bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center">
-                <Check className="text-emerald-400" size={16} strokeWidth={3} />
+              <div className="w-8 h-8 rounded-lg bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
+                <Check className="text-yellow-400" size={16} strokeWidth={3} />
               </div>
-              <span className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">Mas quer...</span>
+              <span className="text-sm font-bold uppercase tracking-[0.2em] text-yellow-400">Mas quer...</span>
             </div>
           </div>
 
@@ -433,9 +433,9 @@ const Fmi = () => {
                   </div>
                   <p className="text-white/75 leading-relaxed text-sm md:text-base">{row.hoje}</p>
                 </div>
-                <div className="group relative bg-gradient-to-b from-emerald-400/[0.06] to-white/[0.01] border border-emerald-400/20 rounded-xl p-5 md:p-6 flex items-start gap-4 hover:border-emerald-400/50 transition-all">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center">
-                    <Check className="text-emerald-400" size={16} strokeWidth={3} />
+                <div className="group relative bg-gradient-to-b from-emerald-400/[0.06] to-white/[0.01] border border-yellow-400/20 rounded-xl p-5 md:p-6 flex items-start gap-4 hover:border-yellow-400/50 transition-all">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-yellow-400/10 border border-yellow-400/30 flex items-center justify-center">
+                    <Check className="text-yellow-400" size={16} strokeWidth={3} />
                   </div>
                   <p className="text-white leading-relaxed text-sm md:text-base font-medium">{row.quer}</p>
                 </div>
@@ -446,7 +446,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -457,14 +457,14 @@ const Fmi = () => {
       {/* Solution Section */}
       <section className="relative py-24 md:py-32 px-4 bg-[#0a0a0a] text-white overflow-hidden">
         {/* Background accents */}
-        <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-cyan-400/[0.08] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-blue-400/[0.08] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-[#FDE047]/[0.05] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
         <div className="container mx-auto max-w-6xl relative z-10">
           {/* Header */}
           <div className="text-center mb-12 md:mb-14">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400 mb-6 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400 mb-6 bg-blue-400/10 px-4 py-2 rounded-full border border-blue-400/20">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
               A solução
             </span>
@@ -488,9 +488,9 @@ const Fmi = () => {
           {/* Method pillars - FMI+ */}
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16 max-w-5xl mx-auto">
             {[
-              { n: "F", icon: "🎯", title: "Foco", body: "Técnicas para manter o foco de ouro nos estudos, mesmo com celular por perto. Descanse 3h em 20 minutos com a Yoga Nidra.", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { n: "F", icon: "🎯", title: "Foco", body: "Técnicas para manter o foco de ouro nos estudos, mesmo com celular por perto. Descanse 3h em 20 minutos com a Yoga Nidra.", accent: "cyan", grad: "from-blue-400 to-blue-500", tint: "bg-blue-400/10 border-blue-400/20" },
               { n: "M", icon: "📚", title: "Método de Estudos", body: "O método que uso para memorizar tudo estudando 60min por dia. Faça do 3º ano só revisão.", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-[#F97316]/10 border-[#F97316]/20" },
-              { n: "I", icon: "🤖", title: "IA nos Estudos", body: "Flashcards no Gizmo, mapas mentais automáticos e as melhores técnicas de IA para aprender mais rápido.", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { n: "I", icon: "🤖", title: "IA nos Estudos", body: "Flashcards no Gizmo, mapas mentais automáticos e as melhores técnicas de IA para aprender mais rápido.", accent: "emerald", grad: "from-yellow-400 to-amber-500", tint: "bg-yellow-400/10 border-yellow-400/20" },
             ].map((c) => (
               <div
                 key={c.n}
@@ -536,7 +536,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -577,8 +577,8 @@ const Fmi = () => {
                 image: onlineMeetImg,
                 objectPosition: "15% center",
                 accent: "cyan",
-                grad: "from-cyan-400 to-blue-500",
-                tint: "bg-cyan-400/10 border-cyan-400/20",
+                grad: "from-blue-400 to-blue-600",
+                tint: "bg-blue-400/10 border-blue-400/20",
               },
               {
                 icon: "📹",
@@ -587,8 +587,8 @@ const Fmi = () => {
                 image: gravacoesImg.url,
                 objectPosition: "85% center",
                 accent: "emerald",
-                grad: "from-emerald-400 to-green-500",
-                tint: "bg-emerald-400/10 border-emerald-400/20",
+                grad: "from-yellow-400 to-amber-500",
+                tint: "bg-yellow-400/10 border-yellow-400/20",
               },
               {
                 icon: "📚",
@@ -643,7 +643,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -654,13 +654,13 @@ const Fmi = () => {
       {/* Comparison Section */}
       <section className="relative py-24 md:py-32 px-4 bg-[#0a0a0a] overflow-hidden">
         {/* Background atmosphere — matches "3 formas" / Cronograma */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-cyan-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-blue-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400 mb-6 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400 mb-6 bg-blue-400/10 px-4 py-2 rounded-full border border-blue-400/20">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
               Comparativo
             </span>
@@ -729,7 +729,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -744,7 +744,7 @@ const Fmi = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/5 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12">
-            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-4 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-blue-400 mb-4 bg-blue-400/10 px-4 py-2 rounded-full border border-blue-400/20">
               Encontros • Ao vivo online + gravações
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
@@ -766,8 +766,8 @@ const Fmi = () => {
                   "Yoga Nidra: descansar 3h em 20 min",
                   "Rotina de estudos de campeão",
                 ],
-                accent: "from-cyan-400 to-cyan-500",
-                bg: "bg-cyan-400/10",
+                accent: "from-blue-400 to-blue-500",
+                bg: "bg-blue-400/10",
               },
               {
                 day: 2,
@@ -790,8 +790,8 @@ const Fmi = () => {
                   "Biblioteca de mapas mentais",
                   "Prompts que aprendem por você",
                 ],
-                accent: "from-emerald-400 to-green-500",
-                bg: "bg-emerald-400/10",
+                accent: "from-yellow-400 to-amber-500",
+                bg: "bg-yellow-400/10",
               },
               {
                 day: 4,
@@ -802,7 +802,7 @@ const Fmi = () => {
                   "IA para redação, resumos e simulados",
                   "IA para revisão do 3º ano",
                 ],
-                accent: "from-fuchsia-400 to-pink-500",
+                accent: "from-orange-400 to-orange-500",
                 bg: "bg-fuchsia-400/10",
               },
               {
@@ -837,7 +837,7 @@ const Fmi = () => {
                 <ul className="space-y-2 text-white/75 flex-1">
                   {d.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <Check className="text-cyan-400 flex-shrink-0 mt-1" size={14} />
+                      <Check className="text-blue-400 flex-shrink-0 mt-1" size={14} />
                       <span className="text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -849,7 +849,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -922,7 +922,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -1002,7 +1002,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] transition-all duration-300"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -1030,9 +1030,9 @@ const Fmi = () => {
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
-              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-cyan-400 to-blue-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-blue-400 to-blue-600", tint: "bg-blue-400/10 border-blue-400/20" },
               { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-[#F97316]/10 border-[#F97316]/20" },
-              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-yellow-400 to-amber-500", tint: "bg-yellow-400/10 border-yellow-400/20" },
             ].map((t, i) => (
               <div
                 key={i}
@@ -1069,7 +1069,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1239,7 +1239,7 @@ const Fmi = () => {
 
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400 mb-6 bg-emerald-400/10 px-4 py-2 rounded-full border border-emerald-400/20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
               Garantia Especial
             </span>
@@ -1250,7 +1250,7 @@ const Fmi = () => {
 
           {/* Card */}
           <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300">
-            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-emerald-400 to-green-500"></div>
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-500"></div>
             <div className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-[#FDE047]/15 rounded-full blur-2xl scale-90" />
@@ -1275,7 +1275,7 @@ const Fmi = () => {
                 <div className="flex flex-wrap justify-center md:justify-start gap-2">
                   {["100% reembolsável", "Sem burocracia"].map((t) => (
                     <span key={t} className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/75 bg-white/60 border border-white/10 px-3 py-1.5 rounded-full">
-                      <Check size={12} className="text-emerald-400" /> {t}
+                      <Check size={12} className="text-yellow-400" /> {t}
                     </span>
                   ))}
                 </div>
@@ -1329,7 +1329,7 @@ const Fmi = () => {
                 </div>
               </div>
               <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
-                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyan-400 to-blue-500 z-10"></div>
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-400 to-blue-600 z-10"></div>
                 <img
                   src="/lovable-uploads/vitor-yuji-palestra-1.png"
                   alt="Vitor Yuji com alunos"
@@ -1395,7 +1395,7 @@ const Fmi = () => {
           <div className="text-center mt-16">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_55px_rgba(249,115,22,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1485,7 +1485,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-white font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#0a0a0a] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -1506,7 +1506,7 @@ const Fmi = () => {
               <strong>E-mail:</strong>{" "}
               <a 
                 href="mailto:contato.vitoryujiminomo@gmail.com" 
-                className="text-cyan-400 hover:text-cyan-300 underline"
+                className="text-blue-400 hover:text-cyan-300 underline"
               >
                 contato.vitoryujiminomo@gmail.com
               </a>
@@ -1517,7 +1517,7 @@ const Fmi = () => {
                 href="https://www.linkedin.com/in/vitor-yuji-minomo/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-cyan-400 hover:text-cyan-300 underline"
+                className="text-blue-400 hover:text-cyan-300 underline"
               >
                 Vitor Yuji Minomo
               </a>
