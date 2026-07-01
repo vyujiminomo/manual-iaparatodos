@@ -653,7 +653,7 @@ const Fmi = () => {
               Comparativo
             </span>
             <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Porque a Imersão é <span className="text-yellow-400">MELHOR</span> que qualquer outro curso?
+              Estudar sozinho <span className="text-gray-500">vs.</span> estudar com <span className="text-yellow-400">FMI+</span>
             </h2>
           </div>
 
