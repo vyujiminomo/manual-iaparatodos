@@ -745,77 +745,71 @@ const Fmi = () => {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12">
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-blue-400 mb-4 bg-blue-400/10 px-4 py-2 rounded-full border border-blue-400/20">
-              Encontros • Ao vivo online + gravações
+              4 Encontros — Ao vivo online + gravações
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Encontros — datas e conteúdo
+              O que você vai aprender em cada encontro
             </h2>
             <p className="text-white/60 mt-4 max-w-2xl mx-auto text-sm md:text-base">
-              Cronograma em construção. Em breve as datas oficiais dos encontros do FMI+.
+              Cada aula foi desenhada para te dar resultado imediato. Do foco à carreira, em 4 encontros intensos.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
                 day: 1,
-                date: "A definir",
                 title: "Foco",
                 items: [
-                  "Como manter o foco de ouro",
-                  "Yoga Nidra: descansar 3h em 20 min",
-                  "Rotina de estudos de campeão",
+                  "Entre em um estado de foco profundo sempre que for estudar",
+                  "Use a Yoga Nidra para descansar 3h em 20min",
+                  "Como descansar (do jeito certo)",
+                  "Tenha as melhores noites de sono da sua vida",
                 ],
-                accent: "from-blue-400 to-blue-500",
-                bg: "bg-blue-400/10",
+                accent: "from-cyan-400 to-blue-500",
+                bg: "bg-cyan-400/10",
+                border: "border-cyan-400/20",
+                iconColor: "text-cyan-400",
               },
               {
                 day: 2,
-                date: "A definir",
                 title: "Método de Estudos",
                 items: [
-                  "Como estudar 60min por dia e tirar +9",
-                  "Fazer do 3º ano só revisão",
-                  "Memorizar tudo por muito tempo",
+                  "A técnica da 'aula perfeita'",
+                  "Flashcards do Gizmo",
+                  "Os 2 tipos de conhecimento",
+                  "A estratégia do 'Ciclo de Estudos' para saber o que vai estudar em cada dia",
                 ],
-                accent: "from-yellow-400 to-amber-400",
-                bg: "bg-[#F97316]/10",
+                accent: "from-amber-300 to-yellow-400",
+                bg: "bg-yellow-400/10",
+                border: "border-yellow-400/20",
+                iconColor: "text-yellow-400",
               },
               {
                 day: 3,
-                date: "A definir",
-                title: "IA nos Estudos I",
+                title: "IA",
                 items: [
-                  "Flashcards inteligentes com Gizmo",
-                  "Biblioteca de mapas mentais",
-                  "Prompts que aprendem por você",
+                  "Tudo que você precisa saber de IA para não ficar para trás",
+                  "Como usar o Notebook LM",
+                  "Os 10 jeitos de usar o ChatGPT para estudar",
                 ],
-                accent: "from-yellow-400 to-amber-500",
-                bg: "bg-yellow-400/10",
+                accent: "from-orange-400 to-amber-500",
+                bg: "bg-orange-400/10",
+                border: "border-orange-400/20",
+                iconColor: "text-orange-400",
               },
               {
                 day: 4,
-                date: "A definir",
-                title: "IA nos Estudos II",
+                title: "Extracurricular",
                 items: [
-                  "Técnicas de IA para pensar melhor",
-                  "IA para redação, resumos e simulados",
-                  "IA para revisão do 3º ano",
+                  "Como montar um currículo incrível na adolescência",
+                  "Como decidir a sua profissão",
+                  "Como eu consegui, aos 15 anos, ser chamado para trabalhar em 3 empresas enormes (Adapta, BeConfident, João Bradley)",
                 ],
-                accent: "from-orange-400 to-orange-500",
+                accent: "from-fuchsia-400 to-purple-500",
                 bg: "bg-fuchsia-400/10",
-              },
-              {
-                day: 5,
-                date: "A definir",
-                title: "Projetos & Vida",
-                items: [
-                  "Criando projetos incríveis na adolescência",
-                  "Currículo de destaque para o futuro",
-                  "Resumão do FMI+",
-                ],
-                accent: "from-orange-400 to-red-500",
-                bg: "bg-orange-400/10",
+                border: "border-fuchsia-400/20",
+                iconColor: "text-fuchsia-400",
               },
             ].map((d) => (
               <div
@@ -824,20 +818,20 @@ const Fmi = () => {
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${d.accent} rounded-t-2xl`}></div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`w-12 h-12 rounded-xl ${d.bg} flex items-center justify-center`}>
+                  <div className={`w-12 h-12 rounded-xl ${d.bg} border ${d.border} flex items-center justify-center`}>
                     <span className="text-white font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
                   </div>
                   <span className="text-xs font-semibold tracking-wider text-white/60 uppercase">
-                    {d.date}
+                    Encontro {d.day}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
+                <h3 className="text-lg font-bold text-white mb-4 leading-snug">
                   {d.title}
                 </h3>
                 <ul className="space-y-2 text-white/75 flex-1">
                   {d.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <Check className="text-blue-400 flex-shrink-0 mt-1" size={14} />
+                      <Check className={`${d.iconColor} flex-shrink-0 mt-1`} size={14} />
                       <span className="text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
