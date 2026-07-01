@@ -1075,10 +1075,10 @@ const Fmi = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-10">
             <span className="inline-block bg-red-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full mb-6">
-              🔥 LOTE 2 DISPONÍVEL 🔥
+              🔥 VAGAS ABERTAS 🔥
             </span>
             <h2 className="font-poppins text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto">
-              Garanta sua vaga na melhor mentoria de IA para profissionais
+              Garanta sua vaga no FMI+ e estude menos horas
             </h2>
           </div>
 
