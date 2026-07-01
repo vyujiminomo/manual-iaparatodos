@@ -1569,4 +1569,4 @@ const Fmi = () => {
   );
 };
 
-export default Webinar;
+export default Fmi;
