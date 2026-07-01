@@ -84,38 +84,33 @@ const Fmi = () => {
             {/* Date badge */}
             <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-sans font-medium tracking-wide text-xs md:text-sm px-4 py-2 rounded-md mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
-              5, 12, 19, 26 DE AGOSTO • 2 DE SETEMBRO
+              CURSO ONLINE • FMI+ PARA ESTUDANTES
             </div>
 
-            {/* Small logo */}
-            <div className="mb-6 max-w-[220px] md:max-w-[260px]">
-              <img
-                src="/lovable-uploads/imersao-logo.png"
-                alt="Imersão IA Para Todos 3"
-                className="w-full h-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
-              />
+            {/* Small badge FMI+ */}
+            <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/30">
+              <Sparkles className="w-4 h-4 text-yellow-400" />
+              <span className="text-yellow-400 font-bold tracking-widest text-sm">FMI+</span>
             </div>
 
             {/* Headline */}
             <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
-              Transforme seu trabalho com a{" "}
-              <span className="text-yellow-400">melhor mentoria de IA</span>{" "}
-              para profissionais de Sergipe
+              Estude menos horas e{" "}
+              <span className="text-yellow-400">tire médias +9</span>
             </h1>
 
             {/* Description */}
             <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
-              <span className="font-semibold text-white">50 profissionais</span> dividindo cases de IA aplicada,{" "}
-              <span className="font-semibold text-white">mexendo nas melhores IAs ao vivo</span> e saindo com tudo o que há de novo e importante em IA para negócios.
+              O método que uso para tirar <span className="font-semibold text-white">notas altas estudando 60 minutos por dia</span> — e ainda ter tempo para criar projetos e viver a adolescência.
             </p>
 
             {/* Checklist */}
             <ul className="space-y-2.5 mb-8">
               {[
-                "Lote 2 disponível (condição especial)",
-                "Acesso às gravações da imersão",
-                "5 aulas presenciais ou online",
-                "Professor e grupo para networking",
+                "Foco de ouro sem esforço",
+                "Método de estudos comprovado",
+                "IA aplicada aos estudos (Gizmo, mapas mentais, flashcards)",
+                "Mais tempo livre e menos cansaço",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
                   <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
