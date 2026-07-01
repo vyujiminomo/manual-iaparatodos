@@ -24,9 +24,9 @@ import bonusSessaoIndividual from "@/assets/sessao-individual-vitor.png.asset.js
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
-import fmiPublicoEnsinoMedio from "@/assets/fmi-publico-ensino-medio.jpg";
-import fmiPublicoVestibulando from "@/assets/fmi-publico-vestibulando.jpg";
-import fmiPublicoAmbicioso from "@/assets/fmi-publico-ambicioso.jpg";
+import fmiPublicoEnsinoMedio from "@/assets/fmi-publico-ensino-medio-new.jpg";
+import fmiPublicoVestibulando from "@/assets/fmi-publico-vestibulando-new.jpg";
+import fmiPublicoAmbicioso from "@/assets/fmi-publico-ambicioso-new.jpg";
 import local1 from "@/assets/local-1.jpg";
 import local2 from "@/assets/local-2.jpg";
 import local3 from "@/assets/local-3.jpg";
