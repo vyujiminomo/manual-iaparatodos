@@ -667,15 +667,15 @@ const Fmi = () => {
                   <div className="w-10 h-10 rounded-xl bg-red-400/10 border border-red-400/20 flex items-center justify-center">
                     <X className="text-red-400" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Outros cursos</h3>
+                  <h3 className="text-lg font-bold text-white font-poppins">Estudando sozinho</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
-                    "Vídeo gravado",
-                    "Sem mentor, você fica com dúvidas",
-                    "Técnico demais (programação, etc)",
-                    "Teórico demais",
-                    "Sozinho",
+                    "Muitas horas travado no caderno",
+                    "Estuda muito e esquece rápido",
+                    "Sem foco (celular vencendo)",
+                    "Cansaço constante",
+                    "Sem projetos, sem tempo livre",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
                       <X className="text-red-400/70 flex-shrink-0 mt-0.5" size={16} strokeWidth={2.5} />
