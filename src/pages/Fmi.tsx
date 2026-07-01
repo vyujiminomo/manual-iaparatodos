@@ -100,7 +100,7 @@ const Fmi = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-[#1F1B2E]/80/90 leading-relaxed mb-6 max-w-xl">
+            <p className="text-base md:text-lg text-[#1F1B2E]/80 leading-relaxed mb-6 max-w-xl">
               O método que uso para tirar <span className="font-semibold text-[#1F1B2E]">notas altas estudando 60 minutos por dia</span> — e ainda ter tempo para criar projetos e viver a adolescência.
             </p>
 
@@ -112,7 +112,7 @@ const Fmi = () => {
                 "IA aplicada aos estudos (Gizmo, mapas mentais, flashcards)",
                 "Mais tempo livre e menos cansaço",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
+                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-[#1F1B2E]/80">
                   <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#FDE047]/15 border border-[#7C3AED]/60 flex items-center justify-center">
                     <Check className="w-3 h-3 text-[#7C3AED]" strokeWidth={3} />
                   </span>
@@ -124,7 +124,7 @@ const Fmi = () => {
             {/* CTA */}
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:shadow-[0_0_55px_rgba(250,204,21,0.75)] w-full sm:w-auto"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:shadow-[0_0_55px_rgba(250,204,21,0.75)] w-full sm:w-auto"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -362,7 +362,7 @@ const Fmi = () => {
           <div className="text-center mt-10 md:mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
@@ -434,7 +434,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -443,7 +443,7 @@ const Fmi = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-gradient-to-b from-[#FBF7EC] via-[#0a0a0f] to-[#FBF7EC] text-[#1F1B2E] overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] text-[#1F1B2E] overflow-hidden">
         {/* Background accents */}
         <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-cyan-400/[0.08] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-[#FDE047]/[0.05] rounded-full blur-3xl pointer-events-none"></div>
@@ -524,7 +524,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -631,7 +631,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -717,7 +717,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -837,7 +837,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -910,7 +910,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -990,7 +990,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -1057,7 +1057,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1068,13 +1068,13 @@ const Fmi = () => {
 
 
       {/* Offer Section */}
-      <section id="oferta" className="pt-24 pb-16 px-4 bg-gradient-to-b from-gray-900 via-gray-900 to-[#FBF7EC] text-[#1F1B2E] relative overflow-hidden">
+      <section id="oferta" className="pt-24 pb-16 px-4 bg-[#FBF7EC] text-[#1F1B2E] relative overflow-hidden">
         {/* subtle yellow glow */}
         <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-yellow-500/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-10">
-            <span className="inline-block bg-red-500 text-[#1F1B2E] text-xs md:text-sm font-bold px-4 py-2 rounded-full mb-6">
+            <span className="inline-block bg-red-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full mb-6">
               🔥 VAGAS ABERTAS 🔥
             </span>
             <h2 className="font-poppins text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto">
@@ -1085,7 +1085,7 @@ const Fmi = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* LEFT — Card */}
             <div className="relative">
-              <span className="absolute -top-3 left-6 z-10 bg-emerald-500 text-[#1F1B2E] text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
+              <span className="absolute -top-3 left-6 z-10 bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
                 MELHOR CONDIÇÃO
               </span>
               <div className="bg-white text-gray-900 rounded-2xl p-6 md:p-8 shadow-2xl">
@@ -1165,7 +1165,7 @@ const Fmi = () => {
 
                 <Button
                   onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=b9iztv2i")}
-                  className="w-full bg-red-600 hover:bg-red-700 text-[#1F1B2E] font-bold text-base md:text-lg py-6 rounded-full shadow-lg transition-colors"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg transition-colors"
                 >
                   Garantir Ingresso
                 </Button>
@@ -1383,7 +1383,7 @@ const Fmi = () => {
           <div className="text-center mt-16">
             <Button
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1473,7 +1473,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-[#FDE047] hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
