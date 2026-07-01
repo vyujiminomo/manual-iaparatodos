@@ -106,7 +106,7 @@ const Fmi = () => {
               Estude menos horas e{" "}
               <span className="relative inline-block">
                 <span className="absolute inset-x-0 bottom-1 h-[0.55em] bg-[#FDE047] -z-0 -rotate-1 rounded-sm"></span>
-                <span className="relative z-10 text-white">tire médias +9</span>
+                <span className="relative z-10 text-[#0a0a0a]">tire médias +9</span>
               </span>
             </h1>
 
@@ -672,10 +672,10 @@ const Fmi = () => {
           {/* Comparison Cards */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
             {/* OUTROS CURSOS */}
-            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-[#1F1B2E]/15 transition-all duration-300">
+            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300">
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-400 to-red-500"></div>
               <div className="p-7 md:p-8">
-                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-[#1F1B2E]/8">
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/[0.08]">
                   <div className="w-10 h-10 rounded-xl bg-red-400/10 border border-red-400/20 flex items-center justify-center">
                     <X className="text-red-400" size={20} strokeWidth={3} />
                   </div>
@@ -893,7 +893,7 @@ const Fmi = () => {
             ].map((p, i) => (
               <div
                 key={i}
-                className="relative rounded-3xl overflow-hidden bg-[#1F1B2E] border border-white/10 hover:border-[#F97316]/40 transition-all duration-500 group shadow-2xl"
+                className="relative rounded-3xl overflow-hidden bg-[#0f172a] border border-white/10 hover:border-[#F97316]/40 transition-all duration-500 group shadow-2xl"
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img
@@ -1052,7 +1052,7 @@ const Fmi = () => {
                     "{t.quote}"
                   </p>
 
-                  <div className="flex items-center gap-3 pt-5 border-t border-[#1F1B2E]/8">
+                  <div className="flex items-center gap-3 pt-5 border-t border-white/[0.08]">
                     <div className={`w-10 h-10 rounded-xl ${t.tint} border flex items-center justify-center font-bold text-white text-xs`}>
                       {t.initials}
                     </div>
@@ -1249,7 +1249,7 @@ const Fmi = () => {
           </div>
 
           {/* Card */}
-          <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-[#1F1B2E]/15 transition-all duration-300">
+          <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-emerald-400 to-green-500"></div>
             <div className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="relative flex-shrink-0">
