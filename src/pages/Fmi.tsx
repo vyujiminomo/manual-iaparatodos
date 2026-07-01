@@ -822,7 +822,7 @@ const Fmi = () => {
                     <span className="text-white font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
                   </div>
                   <span className="text-xs font-semibold tracking-wider text-white/60 uppercase">
-                    Encontro {d.day}
+                    Encontro {d.day} — {d.day === 1 ? "06/07" : d.day === 2 ? "08/07" : d.day === 3 ? "13/07" : "15/07"}
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-4 leading-snug">
