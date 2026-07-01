@@ -58,9 +58,17 @@ const Fmi = () => {
 
 
   return (
-    <div className="min-h-screen bg-black font-sans">
+    <div
+      className="min-h-screen bg-[#FBF7EC] font-sans text-[#1F1B2E]"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(31,27,46,0.05) 1px, transparent 1px)",
+        backgroundSize: "100% 36px",
+      }}
+    >
+
       {/* Hero Section - Editorial cinematic */}
-      <section className="relative bg-black text-white overflow-hidden min-h-[92vh] flex flex-col">
+      <section className="relative bg-[#FBF7EC] text-[#1F1B2E] overflow-hidden min-h-[92vh] flex flex-col">
         {/* Background image */}
         <div className="absolute inset-0">
           <img
@@ -71,37 +79,41 @@ const Fmi = () => {
             height={1080}
           />
           {/* Gradient overlays - strong left blur fade like Adapta Summit */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FBF7EC] via-[#FBF7EC]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#FBF7EC]/30 via-transparent to-[#FBF7EC]"></div>
         </div>
 
         {/* Decorative left blur masses */}
-        <div className="absolute top-1/2 -translate-y-1/2 -left-60 w-[900px] h-[900px] bg-black/70 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute top-1/3 left-32 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 -translate-y-1/2 -left-60 w-[900px] h-[900px] bg-[#FBF7EC]/70 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/3 left-32 w-[500px] h-[500px] bg-[#7C3AED]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative z-10 flex-1 flex items-center justify-start px-5 md:px-10 lg:px-20 xl:pl-[12%] pt-10 md:pt-16 pb-16">
           <div className="w-full max-w-xl lg:max-w-[580px]">
             {/* Date badge */}
-            <div className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm border border-white/15 text-white/90 font-sans font-medium tracking-wide text-xs md:text-sm px-4 py-2 rounded-md mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 bg-[#FBF7EC]/70 backdrop-blur-sm border border-[#1F1B2E]/12 text-[#1F1B2E]/90 font-sans font-medium tracking-wide text-xs md:text-sm px-4 py-2 rounded-md mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047] animate-pulse"></span>
               CURSO ONLINE • FMI+ PARA ESTUDANTES
             </div>
 
             {/* Small badge FMI+ */}
-            <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/30">
-              <Sparkles className="w-4 h-4 text-yellow-400" />
-              <span className="text-yellow-400 font-bold tracking-widest text-sm">FMI+</span>
+            <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#7C3AED]/10 border border-[#7C3AED]/30">
+              <Sparkles className="w-4 h-4 text-[#7C3AED]" />
+              <span className="text-[#7C3AED] font-bold tracking-widest text-sm">FMI+</span>
             </div>
 
             {/* Headline */}
-            <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
+            <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight mb-5">
               Estude menos horas e{" "}
-              <span className="text-yellow-400">tire médias +9</span>
+              <span className="relative inline-block">
+                <span className="absolute inset-x-0 bottom-1 h-[0.55em] bg-[#FDE047] -z-0 -rotate-1 rounded-sm"></span>
+                <span className="relative z-10 text-[#1F1B2E]">tire médias +9</span>
+              </span>
             </h1>
 
+
             {/* Description */}
-            <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
-              O método que uso para tirar <span className="font-semibold text-white">notas altas estudando 60 minutos por dia</span> — e ainda ter tempo para criar projetos e viver a adolescência.
+            <p className="text-base md:text-lg text-[#1F1B2E]/80 leading-relaxed mb-6 max-w-xl">
+              O método que uso para tirar <span className="font-semibold text-[#1F1B2E]">notas altas estudando 60 minutos por dia</span> — e ainda ter tempo para criar projetos e viver a adolescência.
             </p>
 
             {/* Checklist */}
@@ -112,9 +124,9 @@ const Fmi = () => {
                 "IA aplicada aos estudos (Gizmo, mapas mentais, flashcards)",
                 "Mais tempo livre e menos cansaço",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
-                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
-                    <Check className="w-3 h-3 text-yellow-400" strokeWidth={3} />
+                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-[#1F1B2E]/80">
+                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#FDE047]/15 border border-[#7C3AED]/60 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-[#7C3AED]" strokeWidth={3} />
                   </span>
                   <span>{item}</span>
                 </li>
@@ -124,7 +136,7 @@ const Fmi = () => {
             {/* CTA */}
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:shadow-[0_0_55px_rgba(250,204,21,0.75)] w-full sm:w-auto"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold tracking-wide text-base md:text-lg px-10 py-7 rounded-full transition-all duration-300 shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:shadow-[0_0_55px_rgba(250,204,21,0.75)] w-full sm:w-auto"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -168,15 +180,15 @@ const Fmi = () => {
       </section>
 
       {/* Gallery Section - Sinta a experiência da Imersão 2 */}
-      <section className="py-16 md:py-24 px-4 bg-black relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-yellow-400/5 rounded-full blur-3xl"></div>
+      <section className="py-16 md:py-24 px-4 bg-[#FBF7EC] relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#FDE047]/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12 md:mb-16">
-            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-4 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-[#7C3AED] mb-4 bg-[#7C3AED]/10 px-4 py-2 rounded-full border border-[#7C3AED]/20">
               Como será o FMI+
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1B2E]">
               Sinta a experiência das aulas
             </h2>
           </div>
@@ -211,7 +223,7 @@ const Fmi = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 group"
+                className="relative bg-white/[0.04] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 group"
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.accent} rounded-t-2xl z-10`}></div>
                 <div className="aspect-[4/5] relative overflow-hidden">
@@ -229,7 +241,7 @@ const Fmi = () => {
                   />
                 </div>
                 <div className="p-4 text-center">
-                  <p className="text-sm font-semibold text-white">{item.label}</p>
+                  <p className="text-sm font-semibold text-[#1F1B2E]">{item.label}</p>
                 </div>
               </div>
             ))}
@@ -238,19 +250,19 @@ const Fmi = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="relative py-20 md:py-28 px-4 bg-black overflow-hidden">
+      <section className="relative py-20 md:py-28 px-4 bg-[#FBF7EC] overflow-hidden">
         {/* Background glows */}
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#7C3AED]/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-10 md:mb-14">
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
               Provas reais
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#1F1B2E] leading-tight">
               Confira os depoimentos <br className="hidden md:block" />
-              <span className="text-yellow-400">dos alunos</span>
+              <span className="text-[#7C3AED]">dos alunos</span>
             </h2>
           </div>
 
@@ -259,18 +271,18 @@ const Fmi = () => {
             <button
               onClick={() => setTurmaAtiva(turmaAtiva === 1 ? 2 : 1)}
               aria-label="Turma anterior"
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
+              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/60 border border-[#1F1B2E]/10 hover:border-[#7C3AED]/60 hover:bg-[#7C3AED]/10 text-[#1F1B2E] flex items-center justify-center transition-all"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            <div className="flex bg-white/5 border border-white/10 rounded-full p-1 backdrop-blur-sm">
+            <div className="flex bg-white/60 border border-[#1F1B2E]/10 rounded-full p-1 backdrop-blur-sm">
               <button
                 onClick={() => setTurmaAtiva(1)}
                 className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
                   turmaAtiva === 1
-                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
-                    : "text-gray-300 hover:text-white"
+                    ? "bg-[#FDE047] text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+                    : "text-[#1F1B2E]/75 hover:text-[#1F1B2E]"
                 }`}
               >
                 Turma 1
@@ -279,8 +291,8 @@ const Fmi = () => {
                 onClick={() => setTurmaAtiva(2)}
                 className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
                   turmaAtiva === 2
-                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
-                    : "text-gray-300 hover:text-white"
+                    ? "bg-[#FDE047] text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+                    : "text-[#1F1B2E]/75 hover:text-[#1F1B2E]"
                 }`}
               >
                 Turma 2
@@ -290,7 +302,7 @@ const Fmi = () => {
             <button
               onClick={() => setTurmaAtiva(turmaAtiva === 2 ? 1 : 2)}
               aria-label="Próxima turma"
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
+              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/60 border border-[#1F1B2E]/10 hover:border-[#7C3AED]/60 hover:bg-[#7C3AED]/10 text-[#1F1B2E] flex items-center justify-center transition-all"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -304,7 +316,7 @@ const Fmi = () => {
                 { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max Mauro, Engenheiro" },
                 { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina, Médica" },
               ].map((d, i) => (
-                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
+                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
                   <div className="p-2">
                     <video
@@ -318,9 +330,9 @@ const Fmi = () => {
                     </video>
                   </div>
                   <div className="px-5 pb-5 pt-2 flex items-center gap-2">
-                    <Quote className="w-4 h-4 text-yellow-400" />
-                    <span className="text-white font-semibold text-sm">{d.nome}</span>
-                    <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 1</span>
+                    <Quote className="w-4 h-4 text-[#7C3AED]" />
+                    <span className="text-[#1F1B2E] font-semibold text-sm">{d.nome}</span>
+                    <span className="ml-auto text-xs text-[#1F1B2E]/60 uppercase tracking-wider">Turma 1</span>
                   </div>
                 </div>
               ))}
@@ -335,24 +347,24 @@ const Fmi = () => {
                 { border: "from-orange-400 to-red-500", label: "Depoimento 2" },
                 { border: "from-cyan-400 to-blue-500", label: "Depoimento 3" },
               ].map((d, i) => (
-                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-dashed border-white/15 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300">
+                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-dashed border-[#1F1B2E]/12 rounded-2xl overflow-hidden hover:border-[#7C3AED]/40 transition-all duration-300">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
                   <div className="p-2">
                     <div
                       className="w-full rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] flex flex-col items-center justify-center text-center px-4"
                       style={{ aspectRatio: '9/16' }}
                     >
-                      <div className="w-14 h-14 rounded-full bg-yellow-400/10 border border-yellow-400/30 flex items-center justify-center mb-4">
-                        <Quote className="w-6 h-6 text-yellow-400" />
+                      <div className="w-14 h-14 rounded-full bg-[#7C3AED]/10 border border-[#7C3AED]/30 flex items-center justify-center mb-4">
+                        <Quote className="w-6 h-6 text-[#7C3AED]" />
                       </div>
-                      <p className="text-white font-bold text-base mb-1">Em breve</p>
-                      <p className="text-gray-400 text-xs">Depoimento da Turma 2</p>
+                      <p className="text-[#1F1B2E] font-bold text-base mb-1">Em breve</p>
+                      <p className="text-[#1F1B2E]/60 text-xs">Depoimento da Turma 2</p>
                     </div>
                   </div>
                   <div className="px-5 pb-5 pt-2 flex items-center gap-2">
-                    <Quote className="w-4 h-4 text-yellow-400" />
-                    <span className="text-white font-semibold text-sm">{d.label}</span>
-                    <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 2</span>
+                    <Quote className="w-4 h-4 text-[#7C3AED]" />
+                    <span className="text-[#1F1B2E] font-semibold text-sm">{d.label}</span>
+                    <span className="ml-auto text-xs text-[#1F1B2E]/60 uppercase tracking-wider">Turma 2</span>
                   </div>
                 </div>
               ))}
@@ -362,7 +374,7 @@ const Fmi = () => {
           <div className="text-center mt-10 md:mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
             >
               Quero Fazer Parte →
             </Button>
@@ -372,19 +384,19 @@ const Fmi = () => {
 
 
       {/* Problem Section - Você / Mas quer */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-[#FDE047]/[0.04] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-14 md:mb-16">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-6 bg-[#7C3AED]/10 px-4 py-2 rounded-full border border-[#7C3AED]/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047] animate-pulse"></span>
               Onde você está × onde quer chegar
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-3xl mx-auto">
-              Você <span className="text-gray-500">hoje</span> vs. o que você <span className="text-yellow-400">quer</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-3xl mx-auto">
+              Você <span className="text-gray-500">hoje</span> vs. o que você <span className="text-[#7C3AED]">quer</span>
             </h2>
           </div>
 
@@ -415,17 +427,17 @@ const Fmi = () => {
               { hoje: "Não consegue lembrar do assunto por muito tempo", quer: "Memorizar tudo com facilidade" },
             ].map((row, i) => (
               <div key={i} className="grid md:grid-cols-2 gap-3 md:gap-6">
-                <div className="group relative bg-gradient-to-b from-white/[0.03] to-white/[0.01] border border-white/10 rounded-xl p-5 md:p-6 flex items-start gap-4 hover:border-red-400/30 transition-all">
+                <div className="group relative bg-gradient-to-b from-white/[0.03] to-white/[0.01] border border-[#1F1B2E]/10 rounded-xl p-5 md:p-6 flex items-start gap-4 hover:border-red-400/30 transition-all">
                   <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-red-400/10 border border-red-400/20 flex items-center justify-center">
                     <X className="text-red-400" size={16} strokeWidth={3} />
                   </div>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">{row.hoje}</p>
+                  <p className="text-[#1F1B2E]/75 leading-relaxed text-sm md:text-base">{row.hoje}</p>
                 </div>
                 <div className="group relative bg-gradient-to-b from-emerald-400/[0.06] to-white/[0.01] border border-emerald-400/20 rounded-xl p-5 md:p-6 flex items-start gap-4 hover:border-emerald-400/50 transition-all">
                   <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center">
                     <Check className="text-emerald-400" size={16} strokeWidth={3} />
                   </div>
-                  <p className="text-white leading-relaxed text-sm md:text-base font-medium">{row.quer}</p>
+                  <p className="text-[#1F1B2E] leading-relaxed text-sm md:text-base font-medium">{row.quer}</p>
                 </div>
               </div>
             ))}
@@ -434,7 +446,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -443,10 +455,10 @@ const Fmi = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-gradient-to-b from-black via-[#0a0a0f] to-black text-white overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] text-[#1F1B2E] overflow-hidden">
         {/* Background accents */}
         <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-cyan-400/[0.08] rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-yellow-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-[#FDE047]/[0.05] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -456,10 +468,10 @@ const Fmi = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
               A solução
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              <span className="text-yellow-400">FMI+</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              <span className="text-[#7C3AED]">FMI+</span>
             </h2>
-            <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-[#1F1B2E]/75 max-w-2xl mx-auto leading-relaxed">
               Os 3 pilares que uso para estudar 60min por dia e ainda tirar médias +9:
             </p>
           </div>
@@ -477,29 +489,29 @@ const Fmi = () => {
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16 max-w-5xl mx-auto">
             {[
               { n: "F", icon: "🎯", title: "Foco", body: "Técnicas para manter o foco de ouro nos estudos, mesmo com celular por perto. Descanse 3h em 20 minutos com a Yoga Nidra.", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { n: "M", icon: "📚", title: "Método de Estudos", body: "O método que uso para memorizar tudo estudando 60min por dia. Faça do 3º ano só revisão.", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { n: "M", icon: "📚", title: "Método de Estudos", body: "O método que uso para memorizar tudo estudando 60min por dia. Faça do 3º ano só revisão.", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-[#7C3AED]/10 border-[#7C3AED]/20" },
               { n: "I", icon: "🤖", title: "IA nos Estudos", body: "Flashcards no Gizmo, mapas mentais automáticos e as melhores técnicas de IA para aprender mais rápido.", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((c) => (
               <div
                 key={c.n}
-                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-white/25 hover:from-white/[0.06] transition-all duration-300 overflow-hidden"
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl p-8 hover:border-white/25 hover:from-white/[0.06] transition-all duration-300 overflow-hidden"
               >
                 <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${c.grad}`}></div>
-                <span className="absolute top-6 right-6 font-poppins font-extrabold text-5xl text-white/[0.08] group-hover:text-white/20 transition-colors tracking-tight">
+                <span className="absolute top-6 right-6 font-poppins font-extrabold text-5xl text-[#1F1B2E]/[0.08] group-hover:text-[#1F1B2E]/20 transition-colors tracking-tight">
                   {c.n}
                 </span>
                 <div className={`relative w-14 h-14 rounded-2xl ${c.tint} border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
                   <span className="text-3xl">{c.icon}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white font-poppins">{c.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-[15px]">{c.body}</p>
+                <h3 className="text-xl font-bold mb-3 text-[#1F1B2E] font-poppins">{c.title}</h3>
+                <p className="text-[#1F1B2E]/60 leading-relaxed text-[15px]">{c.body}</p>
               </div>
             ))}
           </div>
 
           {/* After the immersion */}
           <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-center font-poppins font-bold text-2xl md:text-3xl text-white mb-8">
+            <h3 className="text-center font-poppins font-bold text-2xl md:text-3xl text-[#1F1B2E] mb-8">
               Após o curso, você vai conseguir:
             </h3>
             <div className="grid md:grid-cols-2 gap-3">
@@ -511,11 +523,11 @@ const Fmi = () => {
                 "Descansar 3h em 20 minutos com a 'Yoga Nidra'",
                 "Criar projetos interessantes na adolescência",
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3 bg-white/[0.03] border border-white/10 rounded-xl p-4">
-                  <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
-                    <Check className="w-3.5 h-3.5 text-yellow-400" strokeWidth={3} />
+                <div key={item} className="flex items-start gap-3 bg-white/[0.03] border border-[#1F1B2E]/10 rounded-xl p-4">
+                  <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-[#FDE047]/15 border border-[#7C3AED]/60 flex items-center justify-center">
+                    <Check className="w-3.5 h-3.5 text-[#7C3AED]" strokeWidth={3} />
                   </span>
-                  <p className="text-gray-200 text-sm md:text-base leading-relaxed">{item}</p>
+                  <p className="text-[#1F1B2E]/80 text-sm md:text-base leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -524,7 +536,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -534,23 +546,23 @@ const Fmi = () => {
       </section>
 
       {/* 3 Formas de Participar */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] overflow-hidden">
         {/* Background atmosphere */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[#FDE047]/[0.04] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           {/* Header */}
           <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-6 bg-[#7C3AED]/10 px-4 py-2 rounded-full border border-[#7C3AED]/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047] animate-pulse"></span>
               Flexibilidade total
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              As <span className="text-yellow-400">3 formas</span> de participar das aulas
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              As <span className="text-[#7C3AED]">3 formas</span> de participar das aulas
             </h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-[#1F1B2E]/60 max-w-2xl mx-auto leading-relaxed">
               A inscrição no FMI+ te dá acesso às aulas em 3 formatos diferentes
             </p>
           </div>
@@ -585,12 +597,12 @@ const Fmi = () => {
                 image: presencialSalaAulaImg.url,
                 accent: "yellow",
                 grad: "from-yellow-400 to-amber-400",
-                tint: "bg-yellow-400/10 border-yellow-400/20",
+                tint: "bg-[#7C3AED]/10 border-[#7C3AED]/20",
               },
             ].map((c) => (
               <div
                 key={c.title}
-                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
               >
                 {/* Accent top bar */}
                 <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${c.grad}`}></div>
@@ -611,7 +623,7 @@ const Fmi = () => {
                     }}
                   />
                   {/* Subtle gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#FBF7EC]/60 via-transparent to-transparent"></div>
                   {/* Icon badge */}
                   <div className={`absolute bottom-4 left-4 w-10 h-10 rounded-xl ${c.tint} border flex items-center justify-center`}>
                     <span className="text-xl">{c.icon}</span>
@@ -620,8 +632,8 @@ const Fmi = () => {
 
                 {/* Text content */}
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-white mb-2 font-poppins">{c.title}</h3>
-                  <p className="text-gray-400 leading-relaxed text-sm">{c.body}</p>
+                  <h3 className="text-lg font-bold text-[#1F1B2E] mb-2 font-poppins">{c.title}</h3>
+                  <p className="text-[#1F1B2E]/60 leading-relaxed text-sm">{c.body}</p>
                 </div>
               </div>
             ))}
@@ -631,7 +643,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -640,7 +652,7 @@ const Fmi = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] overflow-hidden">
         {/* Background atmosphere — matches "3 formas" / Cronograma */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-cyan-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
@@ -652,22 +664,22 @@ const Fmi = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
               Comparativo
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Estudar sozinho <span className="text-gray-500">vs.</span> estudar com <span className="text-yellow-400">FMI+</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Estudar sozinho <span className="text-gray-500">vs.</span> estudar com <span className="text-[#7C3AED]">FMI+</span>
             </h2>
           </div>
 
           {/* Comparison Cards */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
             {/* OUTROS CURSOS */}
-            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-[#1F1B2E]/15 transition-all duration-300">
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-400 to-red-500"></div>
               <div className="p-7 md:p-8">
-                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/5">
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-[#1F1B2E]/8">
                   <div className="w-10 h-10 rounded-xl bg-red-400/10 border border-red-400/20 flex items-center justify-center">
                     <X className="text-red-400" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Estudando sozinho</h3>
+                  <h3 className="text-lg font-bold text-[#1F1B2E] font-poppins">Estudando sozinho</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
@@ -677,7 +689,7 @@ const Fmi = () => {
                     "Cansaço constante",
                     "Sem projetos, sem tempo livre",
                   ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
+                    <li key={i} className="flex items-start gap-3 text-[#1F1B2E]/60 text-sm md:text-base">
                       <X className="text-red-400/70 flex-shrink-0 mt-0.5" size={16} strokeWidth={2.5} />
                       <span>{t}</span>
                     </li>
@@ -687,14 +699,14 @@ const Fmi = () => {
             </div>
 
             {/* MENTORIA */}
-            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
               <div className="p-7 md:p-8">
-                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/10">
-                  <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
-                    <Check className="text-yellow-400" size={20} strokeWidth={3} />
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-[#1F1B2E]/10">
+                  <div className="w-10 h-10 rounded-xl bg-[#7C3AED]/10 border border-[#7C3AED]/20 flex items-center justify-center">
+                    <Check className="text-[#7C3AED]" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Com o FMI+</h3>
+                  <h3 className="text-lg font-bold text-[#1F1B2E] font-poppins">Com o FMI+</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
@@ -704,8 +716,8 @@ const Fmi = () => {
                     "Descansa 3h em 20 min e recupera energia",
                     "Sobra tempo para projetos e viver a adolescência",
                   ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white text-sm md:text-base">
-                      <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
+                    <li key={i} className="flex items-start gap-3 text-[#1F1B2E] text-sm md:text-base">
+                      <Check className="text-[#7C3AED] flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
                       <span>{t}</span>
                     </li>
                   ))}
@@ -717,7 +729,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -728,17 +740,17 @@ const Fmi = () => {
 
 
       {/* Curriculum Section */}
-      <section className="py-24 px-4 bg-black relative overflow-hidden">
+      <section className="py-24 px-4 bg-[#FBF7EC] relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/5 rounded-full blur-3xl"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12">
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-4 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
               Encontros • Ao vivo online + gravações
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1B2E]">
               Encontros — datas e conteúdo
             </h2>
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+            <p className="text-[#1F1B2E]/60 mt-4 max-w-2xl mx-auto text-sm md:text-base">
               Cronograma em construção. Em breve as datas oficiais dos encontros do FMI+.
             </p>
           </div>
@@ -767,7 +779,7 @@ const Fmi = () => {
                   "Memorizar tudo por muito tempo",
                 ],
                 accent: "from-yellow-400 to-amber-400",
-                bg: "bg-yellow-400/10",
+                bg: "bg-[#7C3AED]/10",
               },
               {
                 day: 3,
@@ -808,21 +820,21 @@ const Fmi = () => {
             ].map((d) => (
               <div
                 key={d.day}
-                className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col"
+                className="relative bg-white/[0.04] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl p-6 hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col"
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${d.accent} rounded-t-2xl`}></div>
                 <div className="flex items-center justify-between mb-4">
                   <div className={`w-12 h-12 rounded-xl ${d.bg} flex items-center justify-center`}>
-                    <span className="text-white font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
+                    <span className="text-[#1F1B2E] font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
                   </div>
-                  <span className="text-xs font-semibold tracking-wider text-gray-400 uppercase">
+                  <span className="text-xs font-semibold tracking-wider text-[#1F1B2E]/60 uppercase">
                     {d.date}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
+                <h3 className="text-lg font-bold text-[#1F1B2E] mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
                   {d.title}
                 </h3>
-                <ul className="space-y-2 text-gray-300 flex-1">
+                <ul className="space-y-2 text-[#1F1B2E]/75 flex-1">
                   {d.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Check className="text-cyan-400 flex-shrink-0 mt-1" size={14} />
@@ -837,7 +849,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -846,18 +858,18 @@ const Fmi = () => {
       </section>
 
       {/* Para Quem é a Imersão Section */}
-      <section className="py-24 px-4 bg-black relative overflow-hidden">
+      <section className="py-24 px-4 bg-[#FBF7EC] relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-14 max-w-3xl mx-auto">
-            <div className="inline-block px-4 py-1.5 mb-5 bg-yellow-400/10 border border-yellow-400/40 rounded-full">
-              <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Para quem é</span>
+            <div className="inline-block px-4 py-1.5 mb-5 bg-[#7C3AED]/10 border border-[#7C3AED]/40 rounded-full">
+              <span className="text-[#7C3AED] text-xs font-bold tracking-[0.2em] uppercase">Para quem é</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
-              Como sei que o <span className="text-yellow-400">FMI+</span> é para mim?
+            <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-[#1F1B2E] mb-5 leading-tight">
+              Como sei que o <span className="text-[#7C3AED]">FMI+</span> é para mim?
             </h2>
-            <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-              O FMI+ é para <span className="text-white font-semibold">estudantes do ensino médio, cursinho e vestibular</span> que querem estudar melhor — não mais horas.
+            <p className="text-base md:text-lg text-[#1F1B2E]/60 leading-relaxed">
+              O FMI+ é para <span className="text-[#1F1B2E] font-semibold">estudantes do ensino médio, cursinho e vestibular</span> que querem estudar melhor — não mais horas.
             </p>
           </div>
 
@@ -881,7 +893,7 @@ const Fmi = () => {
             ].map((p, i) => (
               <div
                 key={i}
-                className="relative rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 hover:border-yellow-400/40 transition-all duration-500 group shadow-2xl"
+                className="relative rounded-3xl overflow-hidden bg-[#1F1B2E] border border-[#1F1B2E]/10 hover:border-[#7C3AED]/40 transition-all duration-500 group shadow-2xl"
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img
@@ -892,13 +904,13 @@ const Fmi = () => {
                     height={1024}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#FBF7EC] via-[#FBF7EC]/70 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-7">
-                    <h3 className="text-2xl md:text-[26px] font-extrabold text-white leading-tight mb-3">
+                    <h3 className="text-2xl md:text-[26px] font-extrabold text-[#1F1B2E] leading-tight mb-3">
                       {p.title}
                     </h3>
-                    <div className="h-[2px] w-16 bg-yellow-400 mb-4" />
-                    <p className="text-sm md:text-[15px] text-gray-200 leading-relaxed">
+                    <div className="h-[2px] w-16 bg-[#FDE047] mb-4" />
+                    <p className="text-sm md:text-[15px] text-[#1F1B2E]/80 leading-relaxed">
                       {p.desc}
                     </p>
                   </div>
@@ -910,7 +922,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -919,18 +931,18 @@ const Fmi = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 bg-black relative overflow-hidden">
+      <section className="py-24 px-4 bg-[#FBF7EC] relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
         <div className="container mx-auto max-w-6xl relative">
           <div className="text-center mb-14">
-            <div className="inline-block px-4 py-1.5 mb-5 border border-yellow-400/40 rounded-full">
-              <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Presentes Exclusivos</span>
+            <div className="inline-block px-4 py-1.5 mb-5 border border-[#7C3AED]/40 rounded-full">
+              <span className="text-[#7C3AED] text-xs font-bold tracking-[0.2em] uppercase">Presentes Exclusivos</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-4">
-              Bônus ao adquirir sua <span className="text-yellow-400">Vaga</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-[#1F1B2E] mb-4">
+              Bônus ao adquirir sua <span className="text-[#7C3AED]">Vaga</span>
             </h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
-              Garantindo sua vaga hoje, você leva também estes <span className="text-white font-semibold">bônus exclusivos</span> para acelerar ainda mais seus resultados:
+            <p className="text-base md:text-lg text-[#1F1B2E]/60 max-w-2xl mx-auto">
+              Garantindo sua vaga hoje, você leva também estes <span className="text-[#1F1B2E] font-semibold">bônus exclusivos</span> para acelerar ainda mais seus resultados:
             </p>
           </div>
 
@@ -947,22 +959,22 @@ const Fmi = () => {
                   return (
                     <div key={i} className={`grid md:grid-cols-5 gap-5 md:gap-7 items-stretch ${reverse ? 'md:[&>*:first-child]:order-2' : ''}`}>
                       {/* Text card */}
-                      <div className="md:col-span-2 rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:p-8 flex flex-col justify-center backdrop-blur-sm">
+                      <div className="md:col-span-2 rounded-2xl border border-[#1F1B2E]/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:p-8 flex flex-col justify-center backdrop-blur-sm">
                         <div className="flex items-center gap-3 mb-4">
                           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/40">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                             <span className="text-emerald-300 text-xs font-bold tracking-wider uppercase">Bônus {i + 1}</span>
                           </span>
                         </div>
-                        <h3 className="text-2xl md:text-[26px] font-extrabold text-white leading-tight mb-3">
+                        <h3 className="text-2xl md:text-[26px] font-extrabold text-[#1F1B2E] leading-tight mb-3">
                           {b.title}
                         </h3>
-                        <p className="text-gray-400 text-[15px] md:text-base leading-relaxed">
+                        <p className="text-[#1F1B2E]/60 text-[15px] md:text-base leading-relaxed">
                           {b.desc}
                         </p>
                       </div>
                       {/* Image card */}
-                      <div className={`md:col-span-3 relative rounded-2xl overflow-hidden border border-white/10 min-h-[260px] md:min-h-[300px] group ${(b as any).fit === 'contain' ? 'bg-[#0f1117]' : ''}`}>
+                      <div className={`md:col-span-3 relative rounded-2xl overflow-hidden border border-[#1F1B2E]/10 min-h-[260px] md:min-h-[300px] group ${(b as any).fit === 'contain' ? 'bg-[#0f1117]' : ''}`}>
                         {(b as any).images ? (
                           <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
                             {(b as any).images.map((src: string, idx: number) => (
@@ -972,10 +984,10 @@ const Fmi = () => {
                         ) : (
                           <img src={b.img} alt={b.title} className={`absolute inset-0 w-full h-full ${(b as any).fit === 'contain' ? 'object-contain p-4' : 'object-cover'} transition-transform duration-700 group-hover:scale-105`} />
                         )}
-                        {(b as any).fit !== 'contain' && !(b as any).images && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />}
+                        {(b as any).fit !== 'contain' && !(b as any).images && <div className="absolute inset-0 bg-gradient-to-t from-[#FBF7EC]/70 via-[#FBF7EC]/10 to-transparent" />}
                         {/* Orange corner ribbon */}
                         <div className="absolute top-0 left-0 w-32 h-32 overflow-hidden pointer-events-none">
-                          <div className="absolute top-[26px] -left-[34px] w-[160px] rotate-[-45deg] bg-gradient-to-r from-orange-600 to-orange-500 text-white text-center font-extrabold text-sm py-1.5 tracking-widest shadow-lg">
+                          <div className="absolute top-[26px] -left-[34px] w-[160px] rotate-[-45deg] bg-gradient-to-r from-orange-600 to-orange-500 text-[#1F1B2E] text-center font-extrabold text-sm py-1.5 tracking-widest shadow-lg">
                             BÔNUS
                           </div>
                         </div>
@@ -990,7 +1002,7 @@ const Fmi = () => {
           <div className="text-center">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] transition-all duration-300"
             >
               Quero Fazer Parte →
             </Button>
@@ -999,53 +1011,53 @@ const Fmi = () => {
       </section>
 
       {/* More Testimonials */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] overflow-hidden">
         {/* Background atmosphere */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[#FDE047]/[0.04] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-6 bg-[#7C3AED]/10 px-4 py-2 rounded-full border border-[#7C3AED]/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047] animate-pulse"></span>
               Depoimentos
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              O que dizem sobre <span className="text-yellow-400">a Imersão</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              O que dizem sobre <span className="text-[#7C3AED]">a Imersão</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
               { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-cyan-400 to-blue-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-[#7C3AED]/10 border-[#7C3AED]/20" },
               { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((t, i) => (
               <div
                 key={i}
-                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/25 hover:from-white/[0.06] transition-all duration-300"
               >
                 <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${t.grad}`}></div>
                 <div className="p-7 md:p-8">
-                  <Quote className="text-yellow-400/40 mb-4" size={32} strokeWidth={1.5} />
+                  <Quote className="text-[#7C3AED]/40 mb-4" size={32} strokeWidth={1.5} />
 
                   <div className="flex items-center gap-1 mb-5">
                     {[0,1,2,3,4].map((s) => (
-                      <Star key={s} size={14} className="fill-yellow-400 text-yellow-400" />
+                      <Star key={s} size={14} className="fill-yellow-400 text-[#7C3AED]" />
                     ))}
                   </div>
 
-                  <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                  <p className="text-[#1F1B2E]/75 text-sm md:text-base leading-relaxed mb-6">
                     "{t.quote}"
                   </p>
 
-                  <div className="flex items-center gap-3 pt-5 border-t border-white/5">
-                    <div className={`w-10 h-10 rounded-xl ${t.tint} border flex items-center justify-center font-bold text-white text-xs`}>
+                  <div className="flex items-center gap-3 pt-5 border-t border-[#1F1B2E]/8">
+                    <div className={`w-10 h-10 rounded-xl ${t.tint} border flex items-center justify-center font-bold text-[#1F1B2E] text-xs`}>
                       {t.initials}
                     </div>
                     <div>
-                      <p className="font-bold text-white text-sm">{t.name}</p>
+                      <p className="font-bold text-[#1F1B2E] text-sm">{t.name}</p>
                       <p className="text-xs text-gray-500">Aluno da Imersão</p>
                     </div>
                   </div>
@@ -1057,7 +1069,7 @@ const Fmi = () => {
           <div className="text-center mt-14">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1068,7 +1080,7 @@ const Fmi = () => {
 
 
       {/* Offer Section */}
-      <section id="oferta" className="pt-24 pb-16 px-4 bg-gradient-to-b from-gray-900 via-gray-900 to-black text-white relative overflow-hidden">
+      <section id="oferta" className="pt-24 pb-16 px-4 bg-[#FBF7EC] text-[#1F1B2E] relative overflow-hidden">
         {/* subtle yellow glow */}
         <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-yellow-500/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -1093,7 +1105,7 @@ const Fmi = () => {
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-3">
                     <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso FMI+</h3>
-                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$297</span>
+                    <span className="text-[#1F1B2E]/60 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$297</span>
                   </div>
                   <ul className="space-y-2">
                     {[
@@ -1156,7 +1168,7 @@ const Fmi = () => {
                   <div className="flex items-baseline gap-3 mb-1">
                     <span className="text-gray-600 font-semibold">Total:</span>
                     <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">67% OFF</span>
-                    <span className="text-gray-400 line-through font-semibold">R$297</span>
+                    <span className="text-[#1F1B2E]/60 line-through font-semibold">R$297</span>
                   </div>
                   <p className="text-sm md:text-base text-gray-600">
                     <span className="font-semibold">R$97 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$10</span>
@@ -1219,7 +1231,7 @@ const Fmi = () => {
 
 
       {/* Guarantee Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] overflow-hidden">
         {/* Background atmosphere — matches "3 formas" / Cronograma */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-emerald-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
@@ -1231,17 +1243,17 @@ const Fmi = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
               Garantia Especial
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Garantia: Duas primeiras aulas <span className="text-yellow-400">"De Graça"</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Garantia: Duas primeiras aulas <span className="text-[#7C3AED]">"De Graça"</span>
             </h2>
           </div>
 
           {/* Card */}
-          <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+          <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-[#1F1B2E]/15 transition-all duration-300">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-emerald-400 to-green-500"></div>
             <div className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="relative flex-shrink-0">
-                <div className="absolute inset-0 bg-yellow-400/15 rounded-full blur-2xl scale-90" />
+                <div className="absolute inset-0 bg-[#FDE047]/15 rounded-full blur-2xl scale-90" />
                 <img
                   src={garantiaSelo}
                   alt="Garantia da Primeira Aula 100%"
@@ -1250,19 +1262,19 @@ const Fmi = () => {
               </div>
 
               <div className="text-center md:text-left">
-                <h3 className="font-poppins text-white font-bold text-xl md:text-2xl mb-4">
+                <h3 className="font-poppins text-[#1F1B2E] font-bold text-xl md:text-2xl mb-4">
                   Garantia das duas aulas
                 </h3>
-                <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-6">
+                <p className="text-[#1F1B2E]/60 leading-relaxed text-sm md:text-base mb-6">
                   Eu tenho tanta certeza que você vai adorar a Imersão que, se após a segunda aula, você{" "}
-                  <span className="font-semibold text-white">não gostar da Imersão</span>, envie uma mensagem até{" "}
-                  <span className="font-semibold text-white">13/08 pedindo reembolso</span>, e devolvemos{" "}
-                  <span className="font-semibold text-white">100% do seu dinheiro</span>.
+                  <span className="font-semibold text-[#1F1B2E]">não gostar da Imersão</span>, envie uma mensagem até{" "}
+                  <span className="font-semibold text-[#1F1B2E]">13/08 pedindo reembolso</span>, e devolvemos{" "}
+                  <span className="font-semibold text-[#1F1B2E]">100% do seu dinheiro</span>.
                 </p>
 
                 <div className="flex flex-wrap justify-center md:justify-start gap-2">
                   {["100% reembolsável", "Sem burocracia"].map((t) => (
-                    <span key={t} className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    <span key={t} className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1F1B2E]/75 bg-white/60 border border-[#1F1B2E]/10 px-3 py-1.5 rounded-full">
                       <Check size={12} className="text-emerald-400" /> {t}
                     </span>
                   ))}
@@ -1277,23 +1289,23 @@ const Fmi = () => {
 
 
       {/* Author Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-black text-white overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 bg-[#FBF7EC] text-[#1F1B2E] overflow-hidden">
         {/* Background atmosphere — matches "3 formas" / Cronograma */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[#FDE047]/[0.04] rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
           {/* Header */}
           <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-6 bg-[#7C3AED]/10 px-4 py-2 rounded-full border border-[#7C3AED]/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047] animate-pulse"></span>
               Seu Mentor
             </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Vitor <span className="text-yellow-400">Yuji</span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-[#1F1B2E] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Vitor <span className="text-[#7C3AED]">Yuji</span>
             </h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-[#1F1B2E]/60 max-w-2xl mx-auto leading-relaxed">
               15 anos · Sergipe · Nordeste
             </p>
           </div>
@@ -1301,7 +1313,7 @@ const Fmi = () => {
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
             {/* Photos column */}
             <div className="md:col-span-5 space-y-5">
-              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400 z-10"></div>
                 <div className="relative overflow-hidden">
                   <img
@@ -1309,14 +1321,14 @@ const Fmi = () => {
                     alt="Vitor Yuji apresentando"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 bg-yellow-400/10 border border-yellow-400/20 px-3 py-1.5 rounded-full">
-                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
-                    <span className="text-xs font-semibold uppercase tracking-[0.15em] text-yellow-400">Palestrante</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#FBF7EC]/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 bg-[#7C3AED]/10 border border-[#7C3AED]/20 px-3 py-1.5 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FDE047]"></span>
+                    <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#7C3AED]">Palestrante</span>
                   </div>
                 </div>
               </div>
-              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+              <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyan-400 to-blue-500 z-10"></div>
                 <img
                   src="/lovable-uploads/vitor-yuji-palestra-1.png"
@@ -1329,9 +1341,9 @@ const Fmi = () => {
             {/* Bio column */}
             <div className="md:col-span-7">
               {/* Pull quote */}
-              <p className="font-poppins text-xl md:text-2xl font-light leading-snug mb-8 text-white/90">
+              <p className="font-poppins text-xl md:text-2xl font-light leading-snug mb-8 text-[#1F1B2E]/90">
                 Não é o mais famoso, mas é, com certeza, o mais
-                <span className="text-yellow-400 font-semibold"> surpreendente palestrante de IA do Nordeste</span>.
+                <span className="text-[#7C3AED] font-semibold"> surpreendente palestrante de IA do Nordeste</span>.
               </p>
 
               {/* Stat cards */}
@@ -1341,10 +1353,10 @@ const Fmi = () => {
                   { value: "10", label: "Palestras" },
                   { value: "4x", label: "TORNEIO DE ROBÓTICA" },
                 ].map((s) => (
-                  <div key={s.label} className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center overflow-hidden">
+                  <div key={s.label} className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-[#1F1B2E]/10 rounded-2xl p-4 text-center overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
-                    <div className="font-poppins font-extrabold text-2xl sm:text-3xl text-yellow-400 leading-none">{s.value}</div>
-                    <div className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-gray-400 mt-2">{s.label}</div>
+                    <div className="font-poppins font-extrabold text-2xl sm:text-3xl text-[#7C3AED] leading-none">{s.value}</div>
+                    <div className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[#1F1B2E]/60 mt-2">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -1352,14 +1364,14 @@ const Fmi = () => {
               {/* Achievements */}
               <ul className="space-y-4 mb-8">
                 {[
-                  <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
-                  <>Palestrou sobre IA para <strong className="text-white">7 escolas e 3 empresas</strong>.</>,
-                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Para Todos.</>,
-                  <><strong className="text-white">4x competidor</strong> da First Lego League, levando Sergipe à etapa nacional.</>,
+                  <>Em 2024, selecionado pelo CEO <strong className="text-[#1F1B2E]">Max Peters</strong> para ser jovem aprendiz da <strong className="text-[#1F1B2E]">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
+                  <>Palestrou sobre IA para <strong className="text-[#1F1B2E]">7 escolas e 3 empresas</strong>.</>,
+                  <><strong className="text-[#1F1B2E]">+50 alunos em 2 turmas</strong> na Imersão IA Para Todos.</>,
+                  <><strong className="text-[#1F1B2E]">4x competidor</strong> da First Lego League, levando Sergipe à etapa nacional.</>,
                 ].map((content, i) => (
                   <li key={i} className="flex gap-4 items-start group">
-                    <span className="font-poppins font-extrabold text-yellow-400 text-xl leading-none w-8 shrink-0 pt-1">{String(i + 1).padStart(2, "0")}</span>
-                    <p className="text-gray-300 leading-relaxed text-sm md:text-base border-l border-white/10 pl-4 group-hover:border-yellow-400/50 transition-colors">
+                    <span className="font-poppins font-extrabold text-[#7C3AED] text-xl leading-none w-8 shrink-0 pt-1">{String(i + 1).padStart(2, "0")}</span>
+                    <p className="text-[#1F1B2E]/75 leading-relaxed text-sm md:text-base border-l border-[#1F1B2E]/10 pl-4 group-hover:border-[#7C3AED]/50 transition-colors">
                       {content}
                     </p>
                   </li>
@@ -1367,13 +1379,13 @@ const Fmi = () => {
               </ul>
 
               {/* Mission */}
-              <div className="relative bg-gradient-to-b from-yellow-400/[0.06] to-white/[0.01] border border-yellow-400/20 rounded-2xl p-6 overflow-hidden">
+              <div className="relative bg-gradient-to-b from-yellow-400/[0.06] to-white/[0.01] border border-[#7C3AED]/20 rounded-2xl p-6 overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
-                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-3">
-                  <span className="w-1 h-1 rounded-full bg-yellow-400"></span>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">
+                  <span className="w-1 h-1 rounded-full bg-[#FDE047]"></span>
                   Missão
                 </span>
-                <p className="text-white/85 leading-relaxed text-sm md:text-base">
+                <p className="text-[#1F1B2E]/85 leading-relaxed text-sm md:text-base">
                   Tornar as pessoas muito mais inteligentes e produtivas com IA
                 </p>
               </div>
@@ -1383,7 +1395,7 @@ const Fmi = () => {
           <div className="text-center mt-16">
             <Button
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
             >
               QUERO FAZER PARTE →
             </Button>
@@ -1396,9 +1408,9 @@ const Fmi = () => {
 
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 bg-black">
+      <section className="py-24 px-4 bg-[#FBF7EC]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#1F1B2E]">
             (F.A.Q) Restou alguma dúvida?
           </h2>
           
@@ -1473,7 +1485,7 @@ const Fmi = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
+              className="bg-[#FDE047] hover:bg-[#fde047]/90 text-[#1F1B2E] font-bold text-lg px-12 py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)]"
             >
               Quero Fazer Parte →
             </Button>
@@ -1482,7 +1494,7 @@ const Fmi = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
+      <footer className="bg-[#FBF7EC] text-[#1F1B2E] py-12 px-4 border-t border-gray-800">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-6">
             IA Para Todos. Ferramentas para trabalhar com mais inteligência.
