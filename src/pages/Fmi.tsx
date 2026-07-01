@@ -733,73 +733,74 @@ const Fmi = () => {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12">
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-4 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
-              5 Encontros • Presencial ou Online
+              Encontros • Ao vivo online + gravações
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Cronograma das aulas
+              Encontros — datas e conteúdo
             </h2>
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+              Cronograma em construção. Em breve as datas oficiais dos encontros do FMI+.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {[
               {
                 day: 1,
-                date: "05/08",
-                title: "'Pegando na Sua Mão'",
+                date: "A definir",
+                title: "Foco",
                 items: [
-                  "Botões e funções do ChatGPT",
-                  "A Regra do Computador 'Entrar, Sair, Voltar'",
-                  "Criando seus primeiros prompts",
+                  "Como manter o foco de ouro",
+                  "Yoga Nidra: descansar 3h em 20 min",
+                  "Rotina de estudos de campeão",
                 ],
                 accent: "from-cyan-400 to-cyan-500",
                 bg: "bg-cyan-400/10",
               },
               {
                 day: 2,
-                date: "12/08",
-                title: "O que é Inteligência Artificial",
+                date: "A definir",
+                title: "Método de Estudos",
                 items: [
-                  "5 princípios básicos para interagir com IA",
-                  'Como usar o "Filtro da Verdade" para evitar respostas falsas',
-                  "Como, quando e porque usar cada IA",
+                  "Como estudar 60min por dia e tirar +9",
+                  "Fazer do 3º ano só revisão",
+                  "Memorizar tudo por muito tempo",
                 ],
                 accent: "from-yellow-400 to-amber-400",
                 bg: "bg-yellow-400/10",
               },
               {
                 day: 3,
-                date: "19/08",
-                title: "CIII+ - Como criar bons prompts",
+                date: "A definir",
+                title: "IA nos Estudos I",
                 items: [
-                  "A estrutura CIII+ para prompts perfeitos",
-                  "Como criar um bom contexto",
-                  "4 técnicas: Persona, Emotion Prompt, 'Pense Passo a Passo' e Dar referências",
+                  "Flashcards inteligentes com Gizmo",
+                  "Biblioteca de mapas mentais",
+                  "Prompts que aprendem por você",
                 ],
                 accent: "from-emerald-400 to-green-500",
                 bg: "bg-emerald-400/10",
               },
               {
                 day: 4,
-                date: "26/08",
-                title: "PAPEI - As 5 atividades da IA generativa",
+                date: "A definir",
+                title: "IA nos Estudos II",
                 items: [
-                  "Pesquisando artigos e jurisprudência com IA",
-                  "4 técnicas para aprender com IA",
-                  "4 técnicas para pensar com IA",
-                  "6 técnicas para escrever com IA",
-                  "4 técnicas para ter ideias com IA",
+                  "Técnicas de IA para pensar melhor",
+                  "IA para redação, resumos e simulados",
+                  "IA para revisão do 3º ano",
                 ],
                 accent: "from-fuchsia-400 to-pink-500",
                 bg: "bg-fuchsia-400/10",
               },
               {
                 day: 5,
-                date: "02/09",
-                title: "Mais ferramentas\nIA para marketing e gestão\u00a0\n",
+                date: "A definir",
+                title: "Projetos & Vida",
                 items: [
-                  "IA para slides, pesquisa, estudos, etc",
-                  "Técnicas de IA para marketing e gestão",
-                  "Resumão de toda a imersão",
+                  "Criando projetos incríveis na adolescência",
+                  "Currículo de destaque para o futuro",
+                  "Resumão do FMI+",
                 ],
                 accent: "from-orange-400 to-red-500",
                 bg: "bg-orange-400/10",
@@ -815,7 +816,7 @@ const Fmi = () => {
                     <span className="text-white font-bold text-lg">{String(d.day).padStart(2, "0")}</span>
                   </div>
                   <span className="text-xs font-semibold tracking-wider text-gray-400 uppercase">
-                    {d.date} • 19h
+                    {d.date}
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-4 leading-snug min-h-[3.5rem] whitespace-pre-line">
