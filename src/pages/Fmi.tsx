@@ -854,10 +854,10 @@ const Fmi = () => {
               <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Para quem é</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
-              Como sei que a <span className="text-yellow-400">Imersão</span> é para mim?
+              Como sei que o <span className="text-yellow-400">FMI+</span> é para mim?
             </h2>
             <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-              Criamos a Imersão para <span className="text-white font-semibold">profissionais especializados, empresários e fundadores, chefes, diretores e gestores.</span>
+              O FMI+ é para <span className="text-white font-semibold">estudantes do ensino médio, cursinho e vestibular</span> que querem estudar melhor — não mais horas.
             </p>
           </div>
 
@@ -865,18 +865,18 @@ const Fmi = () => {
             {[
               {
                 img: imersaoProfissional,
-                title: "Profissionais especializados",
-                desc: "Não importa o setor — médico, advogado, industrial, consultor. O que importa é que você já decidiu que IA vai fazer parte.",
+                title: "Estudantes do Ensino Médio",
+                desc: "Você quer chegar no 3º ano só revisando, com o conteúdo já dominado e sem desespero na reta final.",
               },
               {
                 img: imersaoEmpresario,
-                title: "Empresários e Fundadores",
-                desc: "Você já sabe que empresas que não usarem IA nos seus processos vão ficar para trás. E quer mudar isso urgentemente.",
+                title: "Vestibulandos & Pré-ENEM",
+                desc: "Você estuda muitas horas mas sente que rende pouco. Quer um método para memorizar tudo e ainda ter tempo livre.",
               },
               {
                 img: imersaoGestor,
-                title: "Chefes, Diretores e Gestores",
-                desc: "Você já está além do ChatGPT, mas ainda não sabe como colocar IA no seu trabalho. A Imersão muda isso.",
+                title: "Adolescentes ambiciosos",
+                desc: "Você quer notas altas, mas também construir projetos, viver a adolescência e criar um currículo incrível desde cedo.",
               },
             ].map((p, i) => (
               <div
