@@ -102,10 +102,14 @@ const Fmi = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
+            <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight mb-5">
               Estude menos horas e{" "}
-              <span className="text-[#7C3AED]">tire médias +9</span>
+              <span className="relative inline-block">
+                <span className="absolute inset-x-0 bottom-1 h-[0.55em] bg-[#FDE047] -z-0 -rotate-1 rounded-sm"></span>
+                <span className="relative z-10 text-[#1F1B2E]">tire médias +9</span>
+              </span>
             </h1>
+
 
             {/* Description */}
             <p className="text-base md:text-lg text-[#1F1B2E]/80 leading-relaxed mb-6 max-w-xl">
