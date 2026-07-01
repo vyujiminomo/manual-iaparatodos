@@ -174,10 +174,10 @@ const Fmi = () => {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-4 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              Veja como foi
+              Como será o FMI+
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Sinta a experiência da Imersão 2
+              Sinta a experiência das aulas
             </h2>
           </div>
 
