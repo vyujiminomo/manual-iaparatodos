@@ -694,15 +694,15 @@ const Fmi = () => {
                   <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
                     <Check className="text-yellow-400" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Para Todos</h3>
+                  <h3 className="text-lg font-bold text-white font-poppins">Com o FMI+</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
-                    "Ao vivo (presencial ou online) + gravações",
-                    "Mentor 'pega na mão' e te ajuda",
-                    "Foco no que é realmente útil",
-                    "Aulas dinâmicas e práticas",
-                    "Você + mentor + grupo",
+                    "60 minutos por dia rendem mais",
+                    "Memoriza tudo com flashcards e mapas mentais",
+                    "Foco de ouro (Yoga Nidra + método)",
+                    "Descansa 3h em 20 min e recupera energia",
+                    "Sobra tempo para projetos e viver a adolescência",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3 text-white text-sm md:text-base">
                       <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
