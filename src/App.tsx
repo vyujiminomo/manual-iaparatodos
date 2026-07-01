@@ -63,6 +63,7 @@ const AppContent = () => {
         <Route path="/go" element={<Go />} />
         <Route path="/curso" element={<Curso />} />
         <Route path="/imersao" element={<Webinar />} />
+        <Route path="/fmi" element={<Webinar />} />
         <Route path="/upgrade-presencial" element={<UpgradePresencial />} />
         <Route path="/vsl" element={<Vsl />} />
         <Route path="*" element={<NotFound />} />
