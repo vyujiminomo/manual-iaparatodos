@@ -1092,14 +1092,14 @@ const Fmi = () => {
                 {/* Item 1 */}
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-3">
-                    <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso Imersão IA Para Todos 3</h3>
-                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$750</span>
+                    <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso FMI+</h3>
+                    <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$297</span>
                   </div>
                   <ul className="space-y-2">
                     {[
-                      "Acesso total às 5 aulas presenciais ou online",
-                      "Acesso aos Materiais Pós-imersão",
-                      "Brindes Exclusivos",
+                      "Acesso total aos encontros ao vivo (online)",
+                      "Método Foco + Método de Estudos + IA",
+                      "Materiais completos pós-imersão",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm md:text-base text-gray-700">
                         <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
@@ -1114,12 +1114,12 @@ const Fmi = () => {
                 {/* Bonus 1 */}
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <h4 className="font-poppins text-base md:text-lg font-bold">Transmissão AO VIVO + Gravações</h4>
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Gravações das aulas</h4>
                     <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
                   </div>
                   <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
                     <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
-                    <span>Acesso a todas as gravações do evento</span>
+                    <span>Acesso a todas as gravações para rever quando quiser</span>
                   </p>
                 </div>
 
@@ -1128,12 +1128,12 @@ const Fmi = () => {
                 {/* Bonus 2 */}
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <h4 className="font-poppins text-base md:text-lg font-bold">Grupo no WhatsApp</h4>
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Mapas mentais</h4>
                     <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
                   </div>
                   <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
                     <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
-                    <span>Grupo exclusivo com o professor e alunos</span>
+                    <span>Mapas mentais visuais de todos os aprendizados do FMI+</span>
                   </p>
                 </div>
 
@@ -1142,12 +1142,12 @@ const Fmi = () => {
                 {/* Bonus 3 */}
                 <div className="mb-6">
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <h4 className="font-poppins text-base md:text-lg font-bold">Workbook Exclusivo</h4>
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Workbook Guia Prático IA Para Todos</h4>
                     <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
                   </div>
                   <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
                     <Check className="text-emerald-500 flex-shrink-0 mt-0.5" size={16} />
-                    <span>Um "caderno de IA" que te ajuda a extrair o máximo valor e resultado de tudo que faremos durantes as 5 aulas.</span>
+                    <span>Guia prático com todas as ferramentas e prompts para aplicar nos estudos.</span>
                   </p>
                 </div>
 
@@ -1155,11 +1155,11 @@ const Fmi = () => {
                 <div className="border-t border-gray-200 pt-4 mb-5">
                   <div className="flex items-baseline gap-3 mb-1">
                     <span className="text-gray-600 font-semibold">Total:</span>
-                    <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">35% OFF</span>
-                    <span className="text-gray-400 line-through font-semibold">R$750</span>
+                    <span className="bg-yellow-300 text-gray-900 text-xs font-bold px-2 py-0.5 rounded">67% OFF</span>
+                    <span className="text-gray-400 line-through font-semibold">R$297</span>
                   </div>
                   <p className="text-sm md:text-base text-gray-600">
-                    <span className="font-semibold">R$247 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$25</span>
+                    <span className="font-semibold">R$97 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$10</span>
                   </p>
                 </div>
 
