@@ -870,17 +870,17 @@ const Fmi = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
-                img: imersaoProfissional,
+                img: fmiPublicoEnsinoMedio,
                 title: "Estudantes do Ensino Médio",
                 desc: "Você quer chegar no 3º ano só revisando, com o conteúdo já dominado e sem desespero na reta final.",
               },
               {
-                img: imersaoEmpresario,
+                img: fmiPublicoVestibulando,
                 title: "Vestibulandos & Pré-ENEM",
                 desc: "Você estuda muitas horas mas sente que rende pouco. Quer um método para memorizar tudo e ainda ter tempo livre.",
               },
               {
-                img: imersaoGestor,
+                img: fmiPublicoAmbicioso,
                 title: "Adolescentes ambiciosos",
                 desc: "Você quer notas altas, mas também construir projetos, viver a adolescência e criar um currículo incrível desde cedo.",
               },
