@@ -551,7 +551,7 @@ const Fmi = () => {
               As <span className="text-yellow-400">3 formas</span> de participar das aulas
             </h2>
             <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              A inscrição na Imersão te dá acesso a participar das aulas de 3 formas
+              A inscrição no FMI+ te dá acesso às aulas em 3 formatos diferentes
             </p>
           </div>
 
@@ -559,18 +559,9 @@ const Fmi = () => {
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
               {
-                icon: "🏫",
-                title: "Presencial na sala de aula",
-                body: "Participe ao vivo na sala de aula, interaja com o professor e outros alunos presencialmente.",
-                image: presencialSalaAulaImg.url,
-                accent: "yellow",
-                grad: "from-yellow-400 to-amber-400",
-                tint: "bg-yellow-400/10 border-yellow-400/20",
-              },
-              {
                 icon: "💻",
-                title: "Online pelo Meet",
-                body: "Acompanhe todas as aulas em tempo real pelo Google Meet, do conforto da sua casa ou escritório.",
+                title: "Ao vivo pelo Meet",
+                body: "Acompanhe todas as aulas em tempo real pelo Google Meet, do conforto de casa e podendo tirar dúvidas ao vivo.",
                 image: onlineMeetImg,
                 objectPosition: "15% center",
                 accent: "cyan",
@@ -579,13 +570,22 @@ const Fmi = () => {
               },
               {
                 icon: "📹",
-                title: "Gravações",
-                body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir quando quiser.",
+                title: "Gravações completas",
+                body: "Não pode assistir ao vivo? Todas as aulas ficam gravadas para você assistir e revisar quando quiser.",
                 image: gravacoesImg.url,
                 objectPosition: "85% center",
                 accent: "emerald",
                 grad: "from-emerald-400 to-green-500",
                 tint: "bg-emerald-400/10 border-emerald-400/20",
+              },
+              {
+                icon: "📚",
+                title: "Materiais + Workbook",
+                body: "Todos os materiais, mapas mentais e workbook ficam disponíveis para você estudar no seu tempo.",
+                image: presencialSalaAulaImg.url,
+                accent: "yellow",
+                grad: "from-yellow-400 to-amber-400",
+                tint: "bg-yellow-400/10 border-yellow-400/20",
               },
             ].map((c) => (
               <div
