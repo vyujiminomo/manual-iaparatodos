@@ -1405,16 +1405,11 @@ const Fmi = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-0" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Quais são as datas da imersão?</span>
+                <span className="font-bold text-xl text-black">Quando serão as aulas do FMI+?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  A imersão acontecerá em 5 quartas-feiras, às 19h (presencial ou online — você escolhe):<br/>
-                  <strong>• 5 de Agosto de 2026</strong> - Dia 1: Pegando na sua mão para mexer no ChatGPT<br/>
-                  <strong>• 12 de Agosto de 2026</strong> - Dia 2: O que é Inteligência Artificial<br/>
-                  <strong>• 19 de Agosto de 2026</strong> - Dia 3: Como criar Prompts Magnéticos<br/>
-                  <strong>• 26 de Agosto de 2026</strong> - Dia 4: As 5 Práticas da IA Generativa<br/>
-                  <strong>• 2 de Setembro de 2026</strong> - Dia 5: Mais ferramentas, IA para marketing e gestão
+                  As datas oficiais dos encontros serão divulgadas em breve. Todos os alunos serão avisados por e-mail e WhatsApp assim que o cronograma for confirmado.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -1425,29 +1420,29 @@ const Fmi = () => {
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  Sim! Todas as aulas serão gravadas e ficarão disponíveis com os mapas mentais na área de membros da Hotmart.
+                  Sim! Todas as aulas serão gravadas e ficarão disponíveis junto com os mapas mentais e o workbook na área de membros.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Preciso saber de tecnologia?</span>
+                <span className="font-bold text-xl text-black">Preciso já saber usar IA?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  Não. A linguagem é simples, sem jargões. Qualquer profissional consegue acompanhar.
+                  Não. O FMI+ começa do zero: você aprende Foco, Método de Estudos e como usar IA (ChatGPT, Gizmo, mapas mentais) do jeito certo para estudar.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-white rounded-xl border-none">
               <AccordionTrigger className="px-8 py-6 hover:no-underline text-left">
-                <span className="font-bold text-xl text-black">Como funciona a opção presencial ou online?</span>
+                <span className="font-bold text-xl text-black">É para qual idade / série?</span>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
                 <p className="text-gray-700 text-lg">
-                  Você escolhe! Pode participar presencialmente ou online via Zoom — basta ter o Zoom instalado caso opte pelo online. Após a compra, enviaremos todas as instruções pelo WhatsApp.
+                  Para estudantes do Ensino Médio, cursinho e vestibulandos. Se você tem entre 13 e 19 anos e quer estudar melhor (com mais foco e menos tempo), o FMI+ é para você.
                 </p>
               </AccordionContent>
             </AccordionItem>
