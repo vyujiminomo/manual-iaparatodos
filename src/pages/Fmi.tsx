@@ -58,7 +58,15 @@ const Fmi = () => {
 
 
   return (
-    <div className="min-h-screen bg-[#FBF7EC] font-sans">
+    <div
+      className="min-h-screen bg-[#FBF7EC] font-sans text-[#1F1B2E]"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(31,27,46,0.05) 1px, transparent 1px)",
+        backgroundSize: "100% 36px",
+      }}
+    >
+
       {/* Hero Section - Editorial cinematic */}
       <section className="relative bg-[#FBF7EC] text-[#1F1B2E] overflow-hidden min-h-[92vh] flex flex-col">
         {/* Background image */}
