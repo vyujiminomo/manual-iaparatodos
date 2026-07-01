@@ -35,13 +35,13 @@ import onlineMeetImg from "@/assets/online-meet.jpg";
 import gravacoesImg from "@/assets/gravacoes.jpg.asset.json";
 import presencialSalaAulaImg from "@/assets/presencial-sala-aula.png.asset.json";
 
-const Webinar = () => {
+const Fmi = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
   
 
   useDynamicMeta({
-    title: "Imersão IA Para Todos 3 - Vitor Yuji",
-    description: "Vá do zero ao avançado em IA em 5 encontros. Imersão presencial ou online com Vitor Yuji.",
+    title: "FMI+ | Estude menos e tire médias +9 - Vitor Yuji",
+    description: "Curso de IA para estudantes: Foco, Método de Estudos e IA. Estude menos horas, tire notas altas e tenha tempo para viver a adolescência.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
