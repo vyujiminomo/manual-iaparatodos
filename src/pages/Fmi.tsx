@@ -457,10 +457,10 @@ const Fmi = () => {
               A solução
             </span>
             <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Criei um <span className="text-cyan-400">"Método Único"</span><br className="hidden md:block" /> para aprender IA do zero
+              <span className="text-yellow-400">FMI+</span>
             </h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              E se existisse um jeito tão fácil pra aprender IA que até quem tem dificuldade com tecnologia conseguisse usar como um parceiro de verdade?
+            <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Os 3 pilares que uso para estudar 60min por dia e ainda tirar médias +9:
             </p>
           </div>
 
@@ -468,24 +468,24 @@ const Fmi = () => {
           <div className="flex items-center gap-4 max-w-3xl mx-auto mb-14">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent to-white/15"></div>
             <p className="text-xs md:text-sm text-gray-500 uppercase tracking-[0.18em] font-medium text-center whitespace-nowrap">
-              3 anos de estudo · Mentoria CEO Adapta · +500 alunos
+              Método testado por um estudante · Para estudantes
             </p>
             <div className="flex-1 h-px bg-gradient-to-l from-transparent to-white/15"></div>
           </div>
 
-          {/* Method pillars */}
+          {/* Method pillars - FMI+ */}
           <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16 max-w-5xl mx-auto">
             {[
-              { n: "01", icon: "👥", title: "Mentoria Presencial em Grupo", body: "Aprenda como você sempre aprendeu: na sala de aula e com outros alunos", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { n: "02", icon: "🎯", title: "Aulas Dinâmicas", body: "Aulas divertidas e com linguagem simples. Eu tenho 15 anos, você acha mesmo que eu gosto de jargão técnico?", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
-              { n: "03", icon: "⚡", title: "Prática Imediata", body: "Testamos ao vivo técnicas de ChatGPT e outras IAs. ", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { n: "F", icon: "🎯", title: "Foco", body: "Técnicas para manter o foco de ouro nos estudos, mesmo com celular por perto. Descanse 3h em 20 minutos com a Yoga Nidra.", accent: "cyan", grad: "from-cyan-400 to-cyan-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { n: "M", icon: "📚", title: "Método de Estudos", body: "O método que uso para memorizar tudo estudando 60min por dia. Faça do 3º ano só revisão.", accent: "yellow", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { n: "I", icon: "🤖", title: "IA nos Estudos", body: "Flashcards no Gizmo, mapas mentais automáticos e as melhores técnicas de IA para aprender mais rápido.", accent: "emerald", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((c) => (
               <div
                 key={c.n}
                 className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-white/25 hover:from-white/[0.06] transition-all duration-300 overflow-hidden"
               >
                 <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${c.grad}`}></div>
-                <span className="absolute top-6 right-6 font-poppins font-extrabold text-5xl text-white/[0.06] group-hover:text-white/15 transition-colors tracking-tight">
+                <span className="absolute top-6 right-6 font-poppins font-extrabold text-5xl text-white/[0.08] group-hover:text-white/20 transition-colors tracking-tight">
                   {c.n}
                 </span>
                 <div className={`relative w-14 h-14 rounded-2xl ${c.tint} border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
@@ -497,13 +497,27 @@ const Fmi = () => {
             ))}
           </div>
 
-          {/* Closing statement */}
-          <div className="relative max-w-3xl mx-auto mb-12">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 via-yellow-400/5 to-cyan-400/10 blur-2xl rounded-2xl"></div>
-            <div className="relative text-center bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
-              <p className="text-lg md:text-2xl font-bold text-white leading-snug">
-                Esta é sua chance de estar entre os que vão <span className="text-cyan-400">dominar o que vai definir os próximos anos</span> do mercado.
-              </p>
+          {/* After the immersion */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <h3 className="text-center font-poppins font-bold text-2xl md:text-3xl text-white mb-8">
+              Após o curso, você vai conseguir:
+            </h3>
+            <div className="grid md:grid-cols-2 gap-3">
+              {[
+                "Criar flashcards inteligentes com o Gizmo",
+                "Montar uma 'biblioteca de mapas mentais' de estudo",
+                "Usar diversas técnicas de IA nos estudos",
+                "Ter um foco de ouro na hora de estudar",
+                "Descansar 3h em 20 minutos com a 'Yoga Nidra'",
+                "Criar projetos interessantes na adolescência",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 bg-white/[0.03] border border-white/10 rounded-xl p-4">
+                  <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
+                    <Check className="w-3.5 h-3.5 text-yellow-400" strokeWidth={3} />
+                  </span>
+                  <p className="text-gray-200 text-sm md:text-base leading-relaxed">{item}</p>
+                </div>
+              ))}
             </div>
           </div>
 
