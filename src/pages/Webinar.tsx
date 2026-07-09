@@ -823,7 +823,7 @@ const Webinar = () => {
                     src={item.image}
                     alt={item.text}
                     loading="lazy"
-                    className={`w-full h-full ${item.fit === "contain" ? "object-contain p-6" : "object-cover"} group-hover:scale-105 transition-transform duration-500`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
                     <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
