@@ -546,10 +546,10 @@ const Webinar = () => {
               Flexibilidade total
             </span>
             <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              As <span className="text-yellow-400">3 formas</span> de participar das aulas
+              Como funciona a <span className="text-yellow-400">Imersão?</span>
             </h2>
             <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              A inscrição na Imersão te dá acesso a participar das aulas de 3 formas
+              A inscrição na Imersão te dá acesso a participar das aulas de 3 formas:
             </p>
           </div>
 
