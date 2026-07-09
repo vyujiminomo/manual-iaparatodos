@@ -376,68 +376,6 @@ const Webinar = () => {
       </section>
 
 
-      {/* Problem Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
-        {/* Background atmosphere */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-yellow-400/[0.04] rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400 mb-6 bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
-              O problema real
-            </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-3xl mx-auto">
-              Você não é <span className="italic font-medium text-gray-500 line-through decoration-yellow-400/70">"velho demais"</span><br className="hidden md:block" /> pra tecnologia
-            </h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-xl mx-auto leading-relaxed">
-              Só estava aprendendo do jeito errado. Talvez você já tenha tentado:
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-16">
-            {[
-              { n: "01", icon: "🔍", title: "Aprendeu sozinho", body: <>Mexeu no ChatGPT, mas até agora não viu a grande transformação no trabalho que prometem.</> },
-              { n: "02", icon: "📹", title: "Assistiu um curso", body: <>Assistiu um curso, mas era teórico ou técnico demais. E quando teve dificuldade, <span className="text-white font-medium">não tinha ninguém pra ajudar.</span></> },
-              { n: "03", icon: "🙋", title: "Pediu ajuda pra alguém mais novo", body: <>Ligou para o filho, sobrinho ou estagiário, mas não quer mais depender dos outros para tecnologia. </> },
-            ].map((c) => (
-              <div
-                key={c.n}
-                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-yellow-400/40 hover:from-white/[0.06] transition-all duration-300 overflow-hidden"
-              >
-                <span className="absolute top-6 right-6 font-poppins font-extrabold text-5xl text-white/[0.06] group-hover:text-yellow-400/20 transition-colors tracking-tight">
-                  {c.n}
-                </span>
-                <div className="relative w-12 h-12 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
-                  <span className="text-2xl">{c.icon}</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 font-poppins">{c.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-[15px]">{c.body}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Pull quote */}
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <p className="text-lg md:text-xl text-white/80 font-light italic leading-relaxed">
-              "Tentei tudo. Mas continuo travando nas mesmas coisas."
-            </p>
-            <div className="mt-4 w-12 h-px bg-yellow-400/60 mx-auto"></div>
-          </div>
-
-          <div className="text-center">
-            <Button
-              onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
-            >
-              QUERO FAZER PARTE →
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Solution Section */}
       <section className="relative py-24 md:py-32 px-4 bg-gradient-to-b from-black via-[#0a0a0f] to-black text-white overflow-hidden">
         {/* Background accents */}
