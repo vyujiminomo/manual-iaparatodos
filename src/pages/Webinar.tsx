@@ -71,8 +71,8 @@ const Webinar = () => {
             height={1080}
           />
           {/* Gradient overlays - strong left blur fade like Adapta Summit */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70"></div>
         </div>
 
         {/* Decorative left blur masses */}
