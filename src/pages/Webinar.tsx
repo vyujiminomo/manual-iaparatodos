@@ -453,84 +453,6 @@ const Webinar = () => {
         </div>
       </section>
 
-      {/* Após a Imersão Section */}
-      <section className="relative py-20 md:py-28 px-4 bg-gradient-to-b from-black via-[#08080c] to-black text-white overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none"></div>
-
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-12 md:mb-16">
-            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
-              O resultado
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              Após a Imersão, <span className="text-yellow-400">você vai:</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {[
-              {
-                text: "Pesquisar, aprender, pensar, escrever e idear melhor e mais rápido",
-                placeholder: "apos-imersao-1.png",
-                icon: "⚡",
-              },
-              {
-                text: "Ter um arsenal de ferramentas de IA no trabalho (não só ChatGPT)",
-                placeholder: "apos-imersao-2.png",
-                icon: "🧰",
-              },
-              {
-                text: "Abrir o computador/celular e se sentir confiante (não mais 'dinossauro')",
-                placeholder: "apos-imersao-3.png",
-                icon: "💪",
-              },
-              {
-                text: "Pesquisar artigos, jurisprudência e dados em segundos",
-                placeholder: "apos-imersao-4.png",
-                icon: "🔍",
-              },
-              {
-                text: "Usar a estrutura CIII+ para criar prompts perfeitos",
-                placeholder: "apos-imersao-5.png",
-                icon: "📝",
-              },
-              {
-                text: "Acordar sabendo que está atualizado com tecnologia",
-                placeholder: "apos-imersao-7.png",
-                icon: "🚀",
-              },
-            ].map((item, index) => (
-              <div
-                key={item.text}
-                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300"
-              >
-                <div className="aspect-[4/3] relative overflow-hidden bg-white/[0.03]">
-                  <img
-                    src={`/lovable-uploads/${item.placeholder}`}
-                    alt={item.text}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
-                    }}
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
-                      {item.icon}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-5 md:p-6">
-                  <p className="text-gray-200 leading-relaxed text-sm md:text-base">
-                    {item.text}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
       {/* 3 Formas de Participar */}
       <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
         {/* Background atmosphere */}
@@ -632,94 +554,6 @@ const Webinar = () => {
           </div>
         </div>
       </section>
-
-      {/* Comparison Section */}
-      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
-        {/* Background atmosphere — matches "3 formas" / Cronograma */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-cyan-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-
-        <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="text-center mb-16 md:mb-20">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400 mb-6 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-              Comparativo
-            </span>
-            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
-              Porque a Imersão é <span className="text-yellow-400">MELHOR</span> que qualquer outro curso?
-            </h2>
-          </div>
-
-          {/* Comparison Cards */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {/* OUTROS CURSOS */}
-            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-400 to-red-500"></div>
-              <div className="p-7 md:p-8">
-                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/5">
-                  <div className="w-10 h-10 rounded-xl bg-red-400/10 border border-red-400/20 flex items-center justify-center">
-                    <X className="text-red-400" size={20} strokeWidth={3} />
-                  </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Outros cursos</h3>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "Vídeo gravado",
-                    "Sem mentor, você fica com dúvidas",
-                    "Técnico demais (programação, etc)",
-                    "Teórico demais",
-                    "Sozinho",
-                  ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
-                      <X className="text-red-400/70 flex-shrink-0 mt-0.5" size={16} strokeWidth={2.5} />
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* MENTORIA */}
-            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
-              <div className="p-7 md:p-8">
-                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/10">
-                  <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
-                    <Check className="text-yellow-400" size={20} strokeWidth={3} />
-                  </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Para Todos</h3>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "Ao vivo (presencial ou online) + gravações",
-                    "Mentor 'pega na mão' e te ajuda",
-                    "Foco no que é realmente útil",
-                    "Aulas dinâmicas e práticas",
-                    "Você + mentor + grupo",
-                  ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white text-sm md:text-base">
-                      <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-14">
-            <Button
-              onClick={scrollToOffer}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
-            >
-              QUERO FAZER PARTE →
-            </Button>
-          </div>
-        </div>
-      </section>
-
-
 
       {/* Curriculum Section */}
       <section className="py-24 px-4 bg-black relative overflow-hidden">
@@ -837,6 +671,172 @@ const Webinar = () => {
           </div>
         </div>
       </section>
+
+      {/* Comparison Section */}
+      <section className="relative py-24 md:py-32 px-4 bg-black overflow-hidden">
+        {/* Background atmosphere — matches "3 formas" / Cronograma */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-cyan-400/[0.05] rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400 mb-6 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+              Comparativo
+            </span>
+            <h2 className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.05] tracking-tight max-w-4xl mx-auto">
+              Porque a Imersão é <span className="text-yellow-400">MELHOR</span> que qualquer outro curso?
+            </h2>
+          </div>
+
+          {/* Comparison Cards */}
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+            {/* OUTROS CURSOS */}
+            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-400 to-red-500"></div>
+              <div className="p-7 md:p-8">
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/5">
+                  <div className="w-10 h-10 rounded-xl bg-red-400/10 border border-red-400/20 flex items-center justify-center">
+                    <X className="text-red-400" size={20} strokeWidth={3} />
+                  </div>
+                  <h3 className="text-lg font-bold text-white font-poppins">Outros cursos</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    "Vídeo gravado",
+                    "Sem mentor, você fica com dúvidas",
+                    "Técnico demais (programação, etc)",
+                    "Teórico demais",
+                    "Sozinho",
+                  ].map((t, i) => (
+                    <li key={i} className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
+                      <X className="text-red-400/70 flex-shrink-0 mt-0.5" size={16} strokeWidth={2.5} />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* MENTORIA */}
+            <div className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-300">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 to-amber-400"></div>
+              <div className="p-7 md:p-8">
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-white/10">
+                  <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
+                    <Check className="text-yellow-400" size={20} strokeWidth={3} />
+                  </div>
+                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Para Todos</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    "Ao vivo (presencial ou online) + gravações",
+                    "Mentor 'pega na mão' e te ajuda",
+                    "Foco no que é realmente útil",
+                    "Aulas dinâmicas e práticas",
+                    "Você + mentor + grupo",
+                  ].map((t, i) => (
+                    <li key={i} className="flex items-start gap-3 text-white text-sm md:text-base">
+                      <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} strokeWidth={3} />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-14">
+            <Button
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:shadow-[0_0_55px_rgba(250,204,21,0.7)] transition-all duration-300 hover:scale-[1.02]"
+            >
+              QUERO FAZER PARTE →
+            </Button>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Após a Imersão Section */}
+      <section className="relative py-20 md:py-28 px-4 bg-gradient-to-b from-black via-[#08080c] to-black text-white overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
+              O resultado
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Após a Imersão, <span className="text-yellow-400">você vai:</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[
+              {
+                text: "Pesquisar, aprender, pensar, escrever e idear melhor e mais rápido",
+                placeholder: "apos-imersao-1.png",
+                icon: "⚡",
+              },
+              {
+                text: "Ter um arsenal de ferramentas de IA no trabalho (não só ChatGPT)",
+                placeholder: "apos-imersao-2.png",
+                icon: "🧰",
+              },
+              {
+                text: "Abrir o computador/celular e se sentir confiante (não mais 'dinossauro')",
+                placeholder: "apos-imersao-3.png",
+                icon: "💪",
+              },
+              {
+                text: "Pesquisar artigos, jurisprudência e dados em segundos",
+                placeholder: "apos-imersao-4.png",
+                icon: "🔍",
+              },
+              {
+                text: "Usar a estrutura CIII+ para criar prompts perfeitos",
+                placeholder: "apos-imersao-5.png",
+                icon: "📝",
+              },
+              {
+                text: "Acordar sabendo que está atualizado com tecnologia",
+                placeholder: "apos-imersao-7.png",
+                icon: "🚀",
+              },
+            ].map((item, index) => (
+              <div
+                key={item.text}
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300"
+              >
+                <div className="aspect-[4/3] relative overflow-hidden bg-white/[0.03]">
+                  <img
+                    src={`/lovable-uploads/${item.placeholder}`}
+                    alt={item.text}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
+                      {item.icon}
+                    </span>
+                  </div>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-gray-200 leading-relaxed text-sm md:text-base">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Para Quem é a Imersão Section */}
       <section className="py-24 px-4 bg-black relative overflow-hidden">
