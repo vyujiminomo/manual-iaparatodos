@@ -22,6 +22,7 @@ import mapaMental3 from "@/assets/mapa-mental-3.png";
 import mapaMental4 from "@/assets/mapa-mental-4.png";
 import bonusSessaoIndividual from "@/assets/sessao-individual-vitor.png.asset.json";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
+import imersaoLogo2 from "@/assets/imersao-logo-2.png.asset.json";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 import imersaoProfissional from "@/assets/imersao-profissional.jpg";
@@ -88,9 +89,9 @@ const Webinar = () => {
             </div>
 
             {/* Small logo */}
-            <div className="mb-6 max-w-[220px] md:max-w-[260px]">
+            <div className="mb-6 max-w-[280px] md:max-w-[340px]">
               <img
-                src="/lovable-uploads/imersao-logo.png"
+                src={imersaoLogo2.url}
                 alt="Imersão IA Na Prática 3"
                 className="w-full h-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
               />
