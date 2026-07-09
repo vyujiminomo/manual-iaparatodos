@@ -807,6 +807,7 @@ const Webinar = () => {
                 text: "Usar a estrutura CIII+ para criar prompts perfeitos",
                 image: (apos5Prompt as { url: string }).url,
                 icon: "📝",
+                fit: "contain" as const,
               },
               {
                 text: "Acordar sabendo que está atualizado com tecnologia",
@@ -818,12 +819,12 @@ const Webinar = () => {
                 key={item.text}
                 className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300"
               >
-                <div className="aspect-[4/3] relative overflow-hidden bg-white/[0.03]">
+                <div className="aspect-[4/3] relative overflow-hidden bg-[#1a1a1a]">
                   <img
                     src={item.image}
                     alt={item.text}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full ${item.fit === "contain" ? "object-contain p-6" : "object-cover"} group-hover:scale-105 transition-transform duration-500`}
                   />
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
                     <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
