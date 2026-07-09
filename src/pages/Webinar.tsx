@@ -225,11 +225,7 @@ const Webinar = () => {
                     alt={item.label}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.innerHTML = `<div class="w-full h-full flex items-center justify-center bg-white/[0.03] text-gray-500 text-sm font-medium">${item.label}</div>`;
-                      }
+                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
                     }}
                   />
                 </div>
@@ -604,11 +600,7 @@ const Webinar = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ objectPosition: (c as any).objectPosition || "center center" }}
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.innerHTML = `<div class="w-full h-full flex flex-col items-center justify-center bg-white/[0.03] text-gray-500 text-sm font-medium gap-2"><span class="text-4xl">${c.icon}</span><span>${c.title}</span></div>`;
-                      }
+                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
                     }}
                   />
                   {/* Subtle gradient overlay */}
