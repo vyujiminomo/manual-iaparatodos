@@ -388,7 +388,7 @@ const Webinar = () => {
               O que muda
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              A Imersão fecha essa <span className="text-yellow-400">brecha</span> de uma vez
+              Hoje você x <span className="text-yellow-400">Mas quer</span>
             </h2>
           </div>
 
