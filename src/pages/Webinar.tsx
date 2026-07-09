@@ -376,6 +376,87 @@ const Webinar = () => {
       </section>
 
 
+      {/* Hoje Você / Mas Quer Section */}
+      <section className="relative py-20 md:py-28 px-4 bg-black text-white overflow-hidden">
+        {/* Background glows */}
+        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-yellow-400 mb-5 bg-yellow-400/10 px-5 py-2 rounded-full border border-yellow-400/20">
+              O que muda
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              A Imersão fecha essa <span className="text-yellow-400">brecha</span> de uma vez
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {/* Hoje Você */}
+            <div className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-7 md:p-9 hover:border-red-400/30 transition-all duration-300">
+              <div className="h-1 w-16 bg-gradient-to-r from-red-400 to-orange-400 rounded-full mb-6"></div>
+              <h3 className="font-poppins font-extrabold text-2xl md:text-3xl text-white mb-6">
+                HOJE VOCÊ:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "Depende dos filhos para tecnologia",
+                  "Está aprendendo IA sozinho (ou não está aprendendo)",
+                  "Vê colegas usando IA e ganhando tempo",
+                  "Se acha um 'dinossauro' com tecnologia",
+                  "Tem vergonha de fazer perguntas óbvias",
+                  "Sente que está ficando para trás",
+                  "Cada dia que passa, a distância aumenta",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3.5">
+                    <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-400/10 border border-red-400/30 flex items-center justify-center">
+                      <X className="w-3.5 h-3.5 text-red-400" strokeWidth={3} />
+                    </span>
+                    <span className="text-gray-300 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Mas Quer */}
+            <div className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl p-7 md:p-9 hover:border-emerald-400/30 transition-all duration-300">
+              <div className="h-1 w-16 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full mb-6"></div>
+              <h3 className="font-poppins font-extrabold text-2xl md:text-3xl text-white mb-6">
+                MAS QUER:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "Não depender mais dos filhos para nada",
+                  "Aprender IA com mentor e grupo",
+                  "Usar IA todos os dias com confiança",
+                  "Se sentir atualizado com tecnologia",
+                  "Ter um grupo como você, perguntando, errando e testando",
+                  "Se sentir que está no mesmo nível (ou à frente)",
+                  "Cada dia que passa, você fica mais confiante",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3.5">
+                    <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center">
+                      <Check className="w-3.5 h-3.5 text-emerald-400" strokeWidth={3} />
+                    </span>
+                    <span className="text-gray-300 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-12 md:mt-16">
+            <Button
+              onClick={scrollToOffer}
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base md:text-lg px-8 md:px-12 py-7 md:py-6 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:shadow-[0_0_40px_rgba(250,204,21,0.7)] w-full md:w-auto transition-all duration-300 hover:scale-105"
+            >
+              Quero Fazer Parte →
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Solution Section */}
       <section className="relative py-24 md:py-32 px-4 bg-gradient-to-b from-black via-[#0a0a0f] to-black text-white overflow-hidden">
         {/* Background accents */}
