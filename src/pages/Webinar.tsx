@@ -453,6 +453,89 @@ const Webinar = () => {
         </div>
       </section>
 
+      {/* Após a Imersão Section */}
+      <section className="relative py-20 md:py-28 px-4 bg-gradient-to-b from-black via-[#08080c] to-black text-white overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
+              O resultado
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Após a Imersão, <span className="text-yellow-400">você vai:</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[
+              {
+                text: "Pesquisar, aprender, pensar, escrever e idear melhor e mais rápido",
+                placeholder: "apos-imersao-1.png",
+                icon: "⚡",
+              },
+              {
+                text: "Ter um arsenal de ferramentas de IA no trabalho (não só ChatGPT)",
+                placeholder: "apos-imersao-2.png",
+                icon: "🧰",
+              },
+              {
+                text: "Abrir o computador/celular e se sentir confiante (não mais 'dinossauro')",
+                placeholder: "apos-imersao-3.png",
+                icon: "💪",
+              },
+              {
+                text: "Pesquisar artigos, jurisprudência e dados em segundos",
+                placeholder: "apos-imersao-4.png",
+                icon: "🔍",
+              },
+              {
+                text: "Usar a estrutura CIII+ para criar prompts perfeitos",
+                placeholder: "apos-imersao-5.png",
+                icon: "📝",
+              },
+              {
+                text: "Usar o 'Filtro da Verdade' para evitar respostas falas",
+                placeholder: "apos-imersao-6.png",
+                icon: "✅",
+              },
+              {
+                text: "Acordar sabendo que está atualizado com tecnologia",
+                placeholder: "apos-imersao-7.png",
+                icon: "🚀",
+              },
+            ].map((item, index) => (
+              <div
+                key={item.text}
+                className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300"
+              >
+                <div className="aspect-square relative overflow-hidden bg-white/[0.03]">
+                  <img
+                    src={`/lovable-uploads/${item.placeholder}`}
+                    alt={item.text}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span className="text-5xl md:text-6xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
+                      {item.icon}
+                    </span>
+                  </div>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-gray-200 leading-relaxed text-sm md:text-base">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Solution Section */}
       <section className="relative py-24 md:py-32 px-4 bg-gradient-to-b from-black via-[#0a0a0f] to-black text-white overflow-hidden">
         {/* Background accents */}
