@@ -35,6 +35,12 @@ import local4 from "@/assets/local-4.jpg";
 import onlineMeetImg from "@/assets/online-meet.jpg";
 import gravacoesImg from "@/assets/gravacoes.jpg.asset.json";
 import presencialSalaAulaImg from "@/assets/presencial-sala-aula.png.asset.json";
+import apos1Claude from "@/assets/apos-1-claude.png.asset.json";
+import apos2Ias from "@/assets/apos-2-ias.png.asset.json";
+import apos3Confiante from "@/assets/apos-3-confiante.jpg";
+import apos4Paper from "@/assets/apos-4-paper.png.asset.json";
+import apos5Prompt from "@/assets/apos-5-prompt.png.asset.json";
+import apos6Noticia from "@/assets/apos-6-noticia.jpg";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -779,32 +785,32 @@ const Webinar = () => {
             {[
               {
                 text: "Pesquisar, aprender, pensar, escrever e idear melhor e mais rápido",
-                placeholder: "apos-imersao-1.png",
+                image: (apos1Claude as { url: string }).url,
                 icon: "⚡",
               },
               {
                 text: "Ter um arsenal de ferramentas de IA no trabalho (não só ChatGPT)",
-                placeholder: "apos-imersao-2.png",
+                image: (apos2Ias as { url: string }).url,
                 icon: "🧰",
               },
               {
                 text: "Abrir o computador/celular e se sentir confiante (não mais 'dinossauro')",
-                placeholder: "apos-imersao-3.png",
+                image: apos3Confiante,
                 icon: "💪",
               },
               {
                 text: "Pesquisar artigos, jurisprudência e dados em segundos",
-                placeholder: "apos-imersao-4.png",
+                image: (apos4Paper as { url: string }).url,
                 icon: "🔍",
               },
               {
                 text: "Usar a estrutura CIII+ para criar prompts perfeitos",
-                placeholder: "apos-imersao-5.png",
+                image: (apos5Prompt as { url: string }).url,
                 icon: "📝",
               },
               {
                 text: "Acordar sabendo que está atualizado com tecnologia",
-                placeholder: "apos-imersao-7.png",
+                image: apos6Noticia,
                 icon: "🚀",
               },
             ].map((item, index) => (
@@ -814,14 +820,12 @@ const Webinar = () => {
               >
                 <div className="aspect-[4/3] relative overflow-hidden bg-white/[0.03]">
                   <img
-                    src={`/lovable-uploads/${item.placeholder}`}
+                    src={item.image}
                     alt={item.text}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
-                    }}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
                     <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
                       {item.icon}
                     </span>
