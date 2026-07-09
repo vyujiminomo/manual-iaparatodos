@@ -111,7 +111,7 @@ const Webinar = () => {
             {/* Headline */}
             <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
               O primeiro curso de{" "}
-              <span className="text-yellow-400">IA para profissionais +45</span>{" "}
+              <span className="text-yellow-400">IA para profissionais +40</span>{" "}
               com dificuldade com tecnologia
             </h1>
 
