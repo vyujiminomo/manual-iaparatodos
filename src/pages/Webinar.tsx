@@ -203,27 +203,27 @@ const Webinar = () => {
               {
                 label: "Aulas ao vivo",
                 accent: "from-cyan-400 to-cyan-500",
-                placeholder: "imersao-foto-1.jpg",
+                image: sinta55.url,
               },
               {
                 label: "Mentoria em grupo",
                 accent: "from-yellow-400 to-amber-400",
-                placeholder: "imersao-foto-2.jpg",
+                image: sinta54.url,
               },
               {
                 label: "Networking",
                 accent: "from-emerald-400 to-green-500",
-                placeholder: "imersao-foto-3.jpg",
+                image: sinta58.url,
               },
               {
                 label: "Prática guiada",
                 accent: "from-fuchsia-400 to-pink-500",
-                placeholder: "imersao-foto-4.jpg",
+                image: sinta57.url,
               },
               {
                 label: "Resultados reais",
                 accent: "from-orange-400 to-red-500",
-                placeholder: "imersao-foto-5.jpg",
+                image: sinta56.url,
               },
             ].map((item, i) => (
               <div
@@ -231,14 +231,12 @@ const Webinar = () => {
                 className="relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 hover:bg-white/[0.07] transition-all duration-300 group"
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.accent} rounded-t-2xl z-10`}></div>
-                <div className="aspect-[4/5] relative overflow-hidden">
+                <div className="aspect-[4/5] relative overflow-hidden bg-black">
                   <img
-                    src={`/lovable-uploads/${item.placeholder}`}
+                    src={item.image}
                     alt={item.label}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
-                    }}
                   />
                 </div>
                 <div className="p-4 text-center">
