@@ -201,12 +201,12 @@ const Webinar = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
             {[
               {
-                label: "Aulas ao vivo",
+                label: "Aulas presenciais",
                 accent: "from-cyan-400 to-cyan-500",
                 image: sinta55.url,
               },
               {
-                label: "Mentoria em grupo",
+                label: "Grupo de alunos",
                 accent: "from-yellow-400 to-amber-400",
                 image: sinta54.url,
               },
@@ -216,12 +216,12 @@ const Webinar = () => {
                 image: sinta58.url,
               },
               {
-                label: "Prática guiada",
+                label: "Aulas on-line",
                 accent: "from-fuchsia-400 to-pink-500",
                 image: sinta57.url,
               },
               {
-                label: "Resultados reais",
+                label: "Grupo no Whatssap",
                 accent: "from-orange-400 to-red-500",
                 image: sinta56.url,
               },
