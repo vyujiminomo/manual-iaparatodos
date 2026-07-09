@@ -41,6 +41,11 @@ import apos3Confiante from "@/assets/apos-3-confiante.jpg";
 import apos4Paper from "@/assets/apos-4-paper.png.asset.json";
 import apos5Prompt from "@/assets/apos-5-prompt.png.asset.json";
 import apos6Noticia from "@/assets/apos-6-noticia.jpg";
+import sinta54 from "@/assets/sinta-54.png.asset.json";
+import sinta55 from "@/assets/sinta-55.png.asset.json";
+import sinta56 from "@/assets/sinta-56.png.asset.json";
+import sinta57 from "@/assets/sinta-57.png.asset.json";
+import sinta58 from "@/assets/sinta-58.png.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
