@@ -21,7 +21,7 @@ import mapaMental2 from "@/assets/mapa-mental-2.png";
 import mapaMental3 from "@/assets/mapa-mental-3.png";
 import mapaMental4 from "@/assets/mapa-mental-4.png";
 import bonusSessaoIndividual from "@/assets/sessao-individual-vitor.png.asset.json";
-import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
+import adaptaCapa from "@/assets/adapta-capa.png.asset.json";
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
 import imersaoProfissional from "@/assets/imersao-profissional.jpg";
@@ -64,15 +64,15 @@ const Webinar = () => {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src={imersaoHeroBg}
+            src={adaptaCapa.url}
             alt="Imersão IA Na Prática"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
           />
           {/* Gradient overlays - strong left blur fade like Adapta Summit */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70"></div>
         </div>
 
         {/* Decorative left blur masses */}
