@@ -96,6 +96,11 @@ const Webinar = () => {
               />
             </div>
 
+            {/* Pre-headline */}
+            <p className="text-sm md:text-base text-yellow-400 font-semibold tracking-wide uppercase mb-3">
+              O jovem aprendiz da Adapta.org (maior empresa de IA do Brasil) apresenta:
+            </p>
+
             {/* Headline */}
             <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
               O primeiro curso de{" "}
@@ -105,17 +110,19 @@ const Webinar = () => {
 
             {/* Description */}
             <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
-              <span className="font-semibold text-white">50 profissionais</span> dividindo cases de IA aplicada,{" "}
-              <span className="font-semibold text-white">mexendo nas melhores IAs ao vivo</span> e saindo com tudo o que há de novo e importante em IA para negócios.
+              Finalmente um curso que entende a sua dificuldade.{" "}
+              <span className="font-semibold text-white">50 alunos aprendendo várias formas de usar IA</span>.{" "}
+              Sem depender dos filhos, sem ficar para trás.
             </p>
 
             {/* Checklist */}
             <ul className="space-y-2.5 mb-8">
               {[
                 "Lote 2 disponível (condição especial)",
-                "Acesso às gravações da imersão",
                 "5 aulas presenciais ou online",
-                "Professor e grupo para networking",
+                "Acesso às gravações do curso",
+                "Professor pegando na sua mão",
+                "Grupo de estudos",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-100">
                   <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-yellow-400/15 border border-yellow-400/60 flex items-center justify-center">
