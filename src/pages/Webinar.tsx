@@ -22,6 +22,7 @@ import mapaMental3 from "@/assets/mapa-mental-3.png";
 import mapaMental4 from "@/assets/mapa-mental-4.png";
 import bonusSessaoIndividual from "@/assets/sessao-individual-vitor.png.asset.json";
 import imersaoHeroBg from "@/assets/imersao-hero-bg.jpg";
+import imersaoLogo from "@/assets/imersao-logo.png.asset.json";
 
 import imersaoTicketCard from "@/assets/imersao-ticket-card.png";
 import imersaoGiftsTrio from "@/assets/imersao-gifts-trio.png";
