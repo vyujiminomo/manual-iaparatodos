@@ -105,7 +105,7 @@ const Webinar = () => {
 
             {/* Description */}
             <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
-              Em 5 aulas, você vai usar IA como ferramenta natural do seu dia a dia.
+              Em 5 aulas, você vai usar IA como ferramenta natural do seu dia. Não fique para trás
             </p>
 
             {/* Checklist */}
