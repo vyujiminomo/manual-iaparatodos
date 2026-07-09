@@ -11,7 +11,7 @@ const Home = () => {
   const cards = [
     {
       image: "/lovable-uploads/imersao-logo.png",
-      alt: "Imersão IA Para Todos",
+      alt: "Imersão IA Na Prática",
       link: "/imersao"
     },
     {

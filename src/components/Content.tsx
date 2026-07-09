@@ -91,7 +91,7 @@ const Content = () => {
                   <div className="relative">
                     <img 
                       src={module.image}
-                      alt={`${module.title} - Módulo do Manual IA Para Todos`}
+                      alt={`${module.title} - Módulo do Manual IA Na Prática`}
                       className="w-full max-w-md h-auto object-contain rounded-2xl shadow-2xl"
                     />
                   </div>

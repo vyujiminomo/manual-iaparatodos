@@ -191,7 +191,7 @@ const Vsl = () => {
                 O Garoto de 15 anos selecionado como Jovem Aprendiz da <span className="text-teal-400 font-semibold">Maior Empresa de IA da América Latina</span> Apresenta:
               </p>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center">
-                Imersão IA Para Todos
+                Imersão IA Na Prática
               </h1>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
                 O melhor método para aprender IA: mentoria em grupo, suporte e linguagem simples.
@@ -381,7 +381,7 @@ const Vsl = () => {
                 <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400">Curso Online</p>
               </div>
               <div className="p-5 md:p-6 text-center bg-blue-500/10 border-b-2 border-blue-400">
-                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">Imersão IA Para Todos</p>
+                <p className="text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-blue-400">Imersão IA Na Prática</p>
               </div>
             </div>
             {[
@@ -472,7 +472,7 @@ const Vsl = () => {
             {[
               { img: webinarGravacao, alt: "Gravações e mapas mentais", title: "Gravações e mapas mentais", desc: "Se você não conseguir assistir a uma aula ao vivo, não se preocupe! Todo o material será gravado.", imgClass: "object-right" },
               { img: webinarWhatsapp, alt: "Grupo de WhatsApp", title: "Grupo de WhatsApp", desc: "Se sinta acolhido, tire dúvidas e faça networking com outros profissionais.", imgClass: "object-left" },
-              { img: webinarManual, alt: "Manual IA Para Todos", title: "Manual IA Para Todos", desc: "Tenha acesso gratuito ao seu 'guia de bolso' de IA", imgClass: "object-cover" },
+              { img: webinarManual, alt: "Manual IA Na Prática", title: "Manual IA Na Prática", desc: "Tenha acesso gratuito ao seu 'guia de bolso' de IA", imgClass: "object-cover" },
               { img: webinarBiblioteca, alt: "Biblioteca de prompts", title: "Biblioteca de Prompts", desc: "Acesse uma coleção exclusiva de prompts para cada profissão", imgClass: "object-cover" },
             ].map((bonus, i) => (
               <div key={i} className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-cyan-400 hover:shadow-2xl hover:border-t-[6px] transition-all duration-300">
@@ -537,7 +537,7 @@ const Vsl = () => {
               </div>
               <span className="bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-6">Ao Vivo via Zoom</span>
               <div className="space-y-4 mb-8 flex-1">
-                {["Acesso completo aos 4 Dias ao Vivo", "Acesso à Comunidade no WhatsApp Exclusiva", "Acesso às Gravações e Mapas Mentais", "Manual IA Para Todos", "Biblioteca de Prompts por Profissão"].map((item, i) => (
+                {["Acesso completo aos 4 Dias ao Vivo", "Acesso à Comunidade no WhatsApp Exclusiva", "Acesso às Gravações e Mapas Mentais", "Manual IA Na Prática", "Biblioteca de Prompts por Profissão"].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <Check className="text-green-500 flex-shrink-0 mt-1" size={22} />
                     <span className="text-base md:text-lg text-gray-700 font-semibold">{item}</span>
@@ -687,7 +687,7 @@ const Vsl = () => {
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
         <div className="container mx-auto max-w-4xl text-center">
-          <h3 className="text-2xl font-bold mb-6">IA Para Todos. Ferramentas para trabalhar com mais inteligência.</h3>
+          <h3 className="text-2xl font-bold mb-6">IA Na Prática. Ferramentas para trabalhar com mais inteligência.</h3>
           <div className="space-y-4">
             <p className="text-lg font-semibold">Contato:</p>
             <p><strong>E-mail:</strong>{" "}<a href="mailto:contato.vitoryujiminomo@gmail.com" className="text-cyan-400 hover:text-cyan-300 underline">contato.vitoryujiminomo@gmail.com</a></p>

@@ -11,8 +11,8 @@ const UpgradePresencial = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useDynamicMeta({
-    title: "Upgrade Presencial - Imersão IA Para Todos",
-    description: "Faça o upgrade para a versão presencial da Imersão IA Para Todos. Apenas 50 vagas.",
+    title: "Upgrade Presencial - Imersão IA Na Prática",
+    description: "Faça o upgrade para a versão presencial da Imersão IA Na Prática. Apenas 50 vagas.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
 
@@ -70,7 +70,7 @@ const UpgradePresencial = () => {
           <div className="space-y-8 text-primary-foreground/90">
 
             <h1 className="font-bebas text-3xl md:text-5xl text-center text-primary-foreground leading-tight">
-              PARABÉNS PELA DECISÃO DE ENTRAR NA IMERSÃO IA PARA TODOS!
+              PARABÉNS PELA DECISÃO DE ENTRAR NA IMERSÃO IA NA PRÁTICA!
             </h1>
 
             <p className="text-lg md:text-xl text-center font-semibold text-accent">
@@ -104,7 +104,7 @@ const UpgradePresencial = () => {
             {/* Presencial Section */}
             <div className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-2xl p-8 md:p-10 space-y-6">
               <h2 className="font-bebas text-2xl md:text-4xl text-center text-accent">
-                APRESENTO: Imersão IA Para Todos — Versão Presencial
+                APRESENTO: Imersão IA Na Prática — Versão Presencial
               </h2>
 
               <p className="text-center text-primary-foreground/70">

@@ -30,7 +30,7 @@ const VitorYuji = () => {
   const escolas = [
     { name: "Colégio Master", students: "+30 alunos", image: "/lovable-uploads/colegio-master-new.jpg" },
     { name: "Colégio Babylândia", students: "+100 alunos", image: "/lovable-uploads/palestra-babylandia-new.png" },
-    { name: "Imersão IA Para Todos", students: "21 alunos", image: "/lovable-uploads/imersao-logo.png" },
+    { name: "Imersão IA Na Prática", students: "21 alunos", image: "/lovable-uploads/imersao-logo.png" },
     { name: "Colégio Estadual Dom Luciano", students: "+200 alunos", image: "/lovable-uploads/palestra-dom-luciano.png" },
     { name: "SuperClass Itirapina e Brotas", students: "+20 alunos", image: "/lovable-uploads/escola-superclass.png" },
     { name: "Colégio Estadual Ivo do Prado", students: "+100 alunos", image: "/lovable-uploads/palestra-ivo-prado.png" }
@@ -452,7 +452,7 @@ const VitorYuji = () => {
                 <p>Sei o que prende atenção. Sei o que faz dormir.</p>
                 <p>Já palestrei para <span className="font-semibold text-black">+1200 alunos</span> em escolas municipais, institutos de empregabilidade e projetos sociais.</p>
                 <p className="font-semibold text-black">E eles não ficaram no celular.</p>
-                <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!" - Eduardo, aluno da Imersão IA Para Todos 1</p>
+                <p className="text-teal-600 italic">"Se ele fosse meu professor, eu gostaria muito mais das aulas!" - Eduardo, aluno da Imersão IA Na Prática 1</p>
               </div>
             </div>
 

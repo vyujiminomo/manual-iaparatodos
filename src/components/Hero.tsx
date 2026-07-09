@@ -117,7 +117,7 @@ const Hero = () => {
           <div className="animate-fade-in">
             <div className="mb-4">
               <span className="font-poppins text-sm text-ai-blue font-semibold uppercase tracking-wider">
-                MANUAL IA PARA TODOS
+                MANUAL IA NA PRÁTICA
               </span>
             </div>
             <h1 className="font-bebas text-5xl md:text-7xl leading-tight text-ai-black mb-2">

@@ -6,7 +6,7 @@ import { trackPurchaseIntent } from "@/hooks/useAnalytics";
 
 const Offer = () => {
   const benefits = [
-    "Acesso Completo ao Manual IA Para Todos",
+    "Acesso Completo ao Manual IA Na Prática",
     "Glossário de IA",
     "Guia Visual do ChatGPT", 
     "Biblioteca de Prompts",
@@ -52,7 +52,7 @@ const Offer = () => {
               {/* Title Section */}
               <div className="mb-6 text-center">
                 <h3 className="font-bebas text-2xl sm:text-3xl text-ai-black mb-2 leading-tight">
-                  MANUAL IA PARA TODOS COMPLETO
+                  MANUAL IA NA PRÁTICA COMPLETO
                 </h3>
                 <p className="font-poppins text-lg text-gray-600 font-medium">
                   Acesso Definitivo
@@ -128,7 +128,7 @@ const Offer = () => {
                 {/* Title Section */}
                 <div className="mb-8">
                   <h3 className="font-bebas text-4xl lg:text-5xl text-ai-black mb-2 leading-tight">
-                    MANUAL IA PARA TODOS COMPLETO
+                    MANUAL IA NA PRÁTICA COMPLETO
                   </h3>
                   <p className="font-poppins text-xl text-gray-600 font-medium">
                     Acesso Definitivo

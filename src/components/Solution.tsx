@@ -111,7 +111,7 @@ const Solution = () => {
                 
                 <div className="mt-4 pt-4 border-t border-blue-200">
                   <p className="font-poppins text-lg md:text-xl text-ai-black font-bold">
-                    <strong>E agora reuni tudo de melhor no Manual IA Para Todos:</strong>
+                    <strong>E agora reuni tudo de melhor no Manual IA Na Prática:</strong>
                   </p>
                 </div>
               </div>
@@ -195,7 +195,7 @@ const Solution = () => {
                 Enquanto outros recursos te afundam em teoria...
               </p>
               <p className="font-poppins text-lg md:text-xl text-gray-700 leading-relaxed">
-                O Manual IA Para Todos te coloca para <span className="text-blue-600 font-semibold">agir em minutos</span>.
+                O Manual IA Na Prática te coloca para <span className="text-blue-600 font-semibold">agir em minutos</span>.
               </p>
             </div>
           </div>
