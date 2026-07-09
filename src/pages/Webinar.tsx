@@ -96,11 +96,6 @@ const Webinar = () => {
               />
             </div>
 
-            {/* Pre-headline */}
-            <p className="text-sm md:text-base text-yellow-400 font-semibold tracking-wide uppercase mb-3">
-              O jovem aprendiz da Adapta.org (maior empresa de IA do Brasil) apresenta:
-            </p>
-
             {/* Headline */}
             <h1 className="font-poppins font-extrabold text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-5">
               O primeiro curso de{" "}
@@ -110,9 +105,7 @@ const Webinar = () => {
 
             {/* Description */}
             <p className="text-base md:text-lg text-gray-200/90 leading-relaxed mb-6 max-w-xl">
-              Finalmente um curso que entende a sua dificuldade.{" "}
-              <span className="font-semibold text-white">50 alunos aprendendo várias formas de usar IA</span>.{" "}
-              Sem depender dos filhos, sem ficar para trás.
+              Em 5 aulas, você vai usar IA como ferramenta natural do seu dia a dia.
             </p>
 
             {/* Checklist */}
