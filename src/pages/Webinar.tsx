@@ -65,7 +65,7 @@ const Webinar = () => {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src={imersaoHeroBg}
+            src={adaptaCapa.url}
             alt="Imersão IA Na Prática"
             className="w-full h-full object-cover"
             width={1920}
