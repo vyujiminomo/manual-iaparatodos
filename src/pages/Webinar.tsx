@@ -807,7 +807,6 @@ const Webinar = () => {
                 text: "Usar a estrutura CIII+ para criar prompts perfeitos",
                 image: (apos5Prompt as { url: string }).url,
                 icon: "📝",
-                fit: "contain" as const,
               },
               {
                 text: "Acordar sabendo que está atualizado com tecnologia",
