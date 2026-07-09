@@ -451,6 +451,8 @@ const Webinar = () => {
             </Button>
           </div>
         </div>
+      </section>
+
       {/* Após a Imersão Section */}
       <section className="relative py-20 md:py-28 px-4 bg-gradient-to-b from-black via-[#08080c] to-black text-white overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-yellow-400/[0.06] rounded-full blur-3xl pointer-events-none"></div>
