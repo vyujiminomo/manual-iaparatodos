@@ -89,9 +89,9 @@ const Webinar = () => {
             </div>
 
             {/* Small logo */}
-            <div className="mb-6 max-w-[220px] md:max-w-[260px]">
+            <div className="mb-6 max-w-[280px] md:max-w-[340px]">
               <img
-                src="/lovable-uploads/imersao-logo.png"
+                src={imersaoLogo2.url}
                 alt="Imersão IA Na Prática 3"
                 className="w-full h-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
               />
