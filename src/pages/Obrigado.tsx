@@ -6,7 +6,7 @@ import { CheckCircle } from "lucide-react";
 const Obrigado = () => {
   useDynamicMeta({
     title: "Obrigado pela compra!",
-    description: "Compra realizada com sucesso! Obrigado pela confiança no IA Para Todos.",
+    description: "Compra realizada com sucesso! Obrigado pela confiança no IA Na Prática.",
     image: "/lovable-uploads/c30266d4-9825-4445-9432-869ea5446629.png"
   });
 
@@ -28,7 +28,7 @@ const Obrigado = () => {
           </h1>
           
           <h2 className="font-poppins text-2xl md:text-3xl font-semibold text-ai-blue mb-16">
-            Obrigado pela confiança no IA Para Todos!
+            Obrigado pela confiança no IA Na Prática!
           </h2>
 
           <Card className="p-8 md:p-12 bg-white shadow-2xl border-0 rounded-2xl mb-16">

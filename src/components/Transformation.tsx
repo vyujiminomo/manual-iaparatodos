@@ -54,7 +54,7 @@ const Transformation = () => {
             </span>
           </div>
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
-            O MANUAL IA PARA TODOS É PARA VOCÊ QUE:
+            O MANUAL IA NA PRÁTICA É PARA VOCÊ QUE:
           </h2>
         </div>
 

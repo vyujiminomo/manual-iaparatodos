@@ -56,7 +56,7 @@ const Webinar = () => {
 
           {/* Title */}
           <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight text-center px-4">
-            O Webinar IA Para Todos
+            O Webinar IA Na Prática
           </h2>
 
           {/* Text */}
@@ -69,7 +69,7 @@ const Webinar = () => {
             <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100">
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
-                title="Webinar IA Para Todos"
+                title="Webinar IA Na Prática"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -135,7 +135,7 @@ const Webinar = () => {
               </span>
             </div>
             <h2 className="font-bebas text-4xl md:text-6xl text-ai-black mb-8 leading-tight">
-              O Webinar IA Para Todos
+              O Webinar IA Na Prática
             </h2>
             <p className="font-poppins text-xl text-gray-600 leading-relaxed max-w-4xl">
               Para testar o conteúdo do manual, reuni <span className="font-semibold text-ai-black">20 leigos em IA em 3 encontros ao vivo</span>, e todos saíram com resultados reais:
@@ -181,7 +181,7 @@ const Webinar = () => {
               <div className="aspect-[16/9] bg-black rounded-lg overflow-hidden shadow-xl border-2 border-gray-100">
                 <iframe
                   src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&controls=1`}
-                  title="Webinar IA Para Todos"
+                  title="Webinar IA Na Prática"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

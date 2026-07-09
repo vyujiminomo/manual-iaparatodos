@@ -40,7 +40,7 @@ const Webinar = () => {
   
 
   useDynamicMeta({
-    title: "Imersão IA Para Todos 3 - Vitor Yuji",
+    title: "Imersão IA Na Prática 3 - Vitor Yuji",
     description: "Vá do zero ao avançado em IA em 5 encontros. Imersão presencial ou online com Vitor Yuji.",
     image: "/lovable-uploads/webinar-og-image.png"
   });
@@ -65,7 +65,7 @@ const Webinar = () => {
         <div className="absolute inset-0">
           <img
             src={imersaoHeroBg}
-            alt="Imersão IA Para Todos"
+            alt="Imersão IA Na Prática"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -91,7 +91,7 @@ const Webinar = () => {
             <div className="mb-6 max-w-[220px] md:max-w-[260px]">
               <img
                 src="/lovable-uploads/imersao-logo.png"
-                alt="Imersão IA Para Todos 3"
+                alt="Imersão IA Na Prática 3"
                 className="w-full h-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
               />
             </div>
@@ -727,7 +727,7 @@ const Webinar = () => {
                   <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
                     <Check className="text-yellow-400" size={20} strokeWidth={3} />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Para Todos</h3>
+                  <h3 className="text-lg font-bold text-white font-poppins">Imersão IA Na Prática</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
@@ -1088,7 +1088,7 @@ const Webinar = () => {
                 {/* Item 1 */}
                 <div className="mb-5">
                   <div className="flex items-center justify-between gap-3 mb-3">
-                    <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso Imersão IA Para Todos 3</h3>
+                    <h3 className="font-poppins text-lg md:text-xl font-bold">Ingresso Imersão IA Na Prática 3</h3>
                     <span className="text-gray-400 line-through text-sm md:text-base font-semibold whitespace-nowrap">R$750</span>
                   </div>
                   <ul className="space-y-2">
@@ -1185,7 +1185,7 @@ const Webinar = () => {
               <div className="relative flex items-center justify-center w-full">
                 <img
                   src={imersaoTicketCard}
-                  alt="Passaporte Imersão IA Para Todos"
+                  alt="Passaporte Imersão IA Na Prática"
                   loading="lazy"
                   className="w-full max-w-[340px] h-auto drop-shadow-[0_30px_60px_rgba(250,204,21,0.25)]"
                 />
@@ -1350,7 +1350,7 @@ const Webinar = () => {
                 {[
                   <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
                   <>Palestrou sobre IA para <strong className="text-white">7 escolas e 3 empresas</strong>.</>,
-                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Para Todos.</>,
+                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Na Prática.</>,
                   <><strong className="text-white">4x competidor</strong> da First Lego League, levando Sergipe à etapa nacional.</>,
                 ].map((content, i) => (
                   <li key={i} className="flex gap-4 items-start group">
@@ -1549,7 +1549,7 @@ const Webinar = () => {
       <footer className="bg-black text-white py-12 px-4 border-t border-gray-800">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-6">
-            IA Para Todos. Ferramentas para trabalhar com mais inteligência.
+            IA Na Prática. Ferramentas para trabalhar com mais inteligência.
           </h3>
           
           <div className="space-y-4">

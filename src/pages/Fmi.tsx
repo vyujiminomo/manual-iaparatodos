@@ -73,7 +73,7 @@ const Fmi = () => {
         <div className="absolute inset-0">
           <img
             src={imersaoHeroBg}
-            alt="Imersão IA Para Todos"
+            alt="Imersão IA Na Prática"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -944,7 +944,7 @@ const Fmi = () => {
             const bonuses = [
               { img: webinarGravacao, title: "Gravações das aulas", desc: "Acesso completo às gravações das aulas, em alta qualidade e editadas para você assistir e revisar quantas vezes quiser." },
               { img: mapasMentaisComposto.url, images: [mapaMental2, mapaMental1, mapaMental3, mapaMental4], title: "Mapas mentais", desc: "Mapas mentais dos principais aprendizados do FMI+ para você estudar e revisar de forma visual e prática.", fit: "contain" as const },
-              { img: webinarManual, title: "Workbook Guia Prático IA Para Todos", desc: "Um guia de bolso que te acompanha durante e depois das aulas, com todas as ferramentas, prompts e técnicas para aplicar imediatamente nos seus estudos." },
+              { img: webinarManual, title: "Workbook Guia Prático IA Na Prática", desc: "Um guia de bolso que te acompanha durante e depois das aulas, com todas as ferramentas, prompts e técnicas para aplicar imediatamente nos seus estudos." },
             ];
             return (
               <div className="space-y-6 md:space-y-8 mb-12">
@@ -1148,7 +1148,7 @@ const Fmi = () => {
                 {/* Bonus 3 */}
                 <div className="mb-6">
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <h4 className="font-poppins text-base md:text-lg font-bold">Workbook Guia Prático IA Para Todos</h4>
+                    <h4 className="font-poppins text-base md:text-lg font-bold">Workbook Guia Prático IA Na Prática</h4>
                     <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded whitespace-nowrap">🎁 BÔNUS</span>
                   </div>
                   <p className="flex items-start gap-2 text-sm md:text-base text-gray-700">
@@ -1195,7 +1195,7 @@ const Fmi = () => {
               <div className="relative flex items-center justify-center w-full">
                 <img
                   src={imersaoTicketCard}
-                  alt="Passaporte Imersão IA Para Todos"
+                  alt="Passaporte Imersão IA Na Prática"
                   loading="lazy"
                   className="w-full max-w-[340px] h-auto drop-shadow-[0_30px_60px_rgba(250,204,21,0.25)]"
                 />
@@ -1360,7 +1360,7 @@ const Fmi = () => {
                 {[
                   <>Em 2024, selecionado pelo CEO <strong className="text-white">Max Peters</strong> para ser jovem aprendiz da <strong className="text-white">Adapta.org</strong> - a maior empresa de IA da América Latina.</>,
                   <>Palestrou sobre IA para <strong className="text-white">7 escolas e 3 empresas</strong>.</>,
-                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Para Todos.</>,
+                  <><strong className="text-white">+50 alunos em 2 turmas</strong> na Imersão IA Na Prática.</>,
                   <><strong className="text-white">4x competidor</strong> da First Lego League, levando Sergipe à etapa nacional.</>,
                 ].map((content, i) => (
                   <li key={i} className="flex gap-4 items-start group">
@@ -1491,7 +1491,7 @@ const Fmi = () => {
       <footer className="bg-[#0a0a0a] text-white py-12 px-4 border-t border-gray-800">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-6">
-            IA Para Todos. Ferramentas para trabalhar com mais inteligência.
+            IA Na Prática. Ferramentas para trabalhar com mais inteligência.
           </h3>
           
           <div className="space-y-4">

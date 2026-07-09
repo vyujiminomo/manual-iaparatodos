@@ -10,7 +10,7 @@ const Contact = () => {
               Home
             </a>
             <a href="/manual" className="text-black font-medium hover:text-gray-600">
-              Manual IA Para Todos
+              Manual IA Na Prática
             </a>
             <a 
               href="https://linkedin.com/in/vitor-yuji-minomo" 

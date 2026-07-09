@@ -9,7 +9,7 @@ const Consultor = () => {
   
   useDynamicMeta({
     title: "Vitor Yuji - Consultor",
-    description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Para Todos, o guia nº1 de IA Generativa no Brasil.",
+    description: "Conheça Vitor Yuji, 14 anos e criador do Manual IA Na Prática, o guia nº1 de IA Generativa no Brasil.",
     image: "/lovable-uploads/c7c5dc38-0495-44e2-b75e-07842c0c52e3.png"
   });
 
@@ -33,7 +33,7 @@ const Consultor = () => {
       image: "/lovable-uploads/4debd9a6-f178-447b-86f1-034a9c47ebc9.png"
     },
     {
-      title: "Webinar BETA IA Para Todos",
+      title: "Webinar BETA IA Na Prática",
       local: "Zoom",
       participantes: "20",
       youtubeId: "RoT5Rt6qaFI",
@@ -93,7 +93,7 @@ const Consultor = () => {
                   Vitor Yuji tem apenas 15 anos e já educou <strong className="text-ai-blue">+660 alunos</strong> através de projetos de IA, neurociência e sustentabilidade.
                 </p>
                 <p>
-                  <strong className="text-ai-blue">Criador do Manual IA Para Todos</strong> - o guia mais prático de IA Generativa do Brasil, onde ensina você a dominar IA em apenas 5 minutos por dia.
+                  <strong className="text-ai-blue">Criador do Manual IA Na Prática</strong> - o guia mais prático de IA Generativa do Brasil, onde ensina você a dominar IA em apenas 5 minutos por dia.
                 </p>
                 <p>
                   <strong className="text-ai-blue">Co-fundador do Mangue Mania</strong> - a 1º metodologia infantil de educação de manguezais de Sergipe, finalista entre 1.500 projetos no prêmio nacional Criativos Escola.
@@ -223,7 +223,7 @@ const Consultor = () => {
                   <strong className="text-ai-blue">No mesmo ano,</strong> palestrou sobre IA em diversos eventos - incluindo no Instituto JCPM e na escola de empregabilidade SuperClass
                 </p>
                 <p>
-                  <strong className="text-ai-blue">Em 2025,</strong> criou o Webinar IA Para Todos, ajudando 20 iniciantes a usarem IA em seus trabalhos. Também lançou o Manual IA Para Todos, o guia mais prático de IA Generativa para profissionais ocupados no Brasil.
+                  <strong className="text-ai-blue">Em 2025,</strong> criou o Webinar IA Na Prática, ajudando 20 iniciantes a usarem IA em seus trabalhos. Também lançou o Manual IA Na Prática, o guia mais prático de IA Generativa para profissionais ocupados no Brasil.
                 </p>
               </div>
             </div>
@@ -264,11 +264,11 @@ const Consultor = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">Acompanhe o Vitor Yuji</h2>
 
             <div className="space-y-8">
-              {/* Manual IA Para Todos */}
+              {/* Manual IA Na Prática */}
               <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-4">Conheça o Manual IA Para Todos</h3>
+                <h3 className="text-2xl font-bold mb-4">Conheça o Manual IA Na Prática</h3>
                 <p className="text-lg mb-6 leading-relaxed">
-                  Toque no botão abaixo para conhecer mais sobre o Manual IA Para Todos, o guia mais prático de IA Generativa do Brasil:
+                  Toque no botão abaixo para conhecer mais sobre o Manual IA Na Prática, o guia mais prático de IA Generativa do Brasil:
                 </p>
                 <Button 
                   onClick={() => window.open("https://vitoryuji.com/manual", "_blank")}
@@ -296,7 +296,7 @@ const Consultor = () => {
         </div>
       </section>
 
-      {/* Footer - IA PARA TODOS */}
+      {/* Footer - IA NA PRÁTICA */}
       <footer className="bg-black border-t border-gray-800 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">

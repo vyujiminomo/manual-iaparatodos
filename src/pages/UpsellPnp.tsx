@@ -41,7 +41,7 @@ const UpsellPnp = () => {
       <div className="container mx-auto px-4 py-24 max-w-4xl">
         <div className="text-center mb-16">
           <h1 className="font-bebas text-4xl md:text-6xl font-bold text-ai-black mb-8 leading-tight">
-            PARABÉNS PELA DECISÃO DE ENTRAR NO MANUAL IA PARA TODOS!
+            PARABÉNS PELA DECISÃO DE ENTRAR NO MANUAL IA NA PRÁTICA!
           </h1>
           
           <Card className="p-8 md:p-12 bg-white shadow-2xl border-0 rounded-2xl mb-12">
@@ -69,7 +69,7 @@ const UpsellPnp = () => {
               </div>
               
               <p className="font-poppins text-lg text-gray-700 leading-relaxed">
-                O Manual IA Para Todos já te entrega tudo que você precisa para usar IA de forma inteligente.
+                O Manual IA Na Prática já te entrega tudo que você precisa para usar IA de forma inteligente.
               </p>
               
               <p className="font-poppins text-lg text-gray-700 leading-relaxed">
