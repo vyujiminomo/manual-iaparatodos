@@ -495,11 +495,6 @@ const Webinar = () => {
                 icon: "📝",
               },
               {
-                text: "Usar o 'Filtro da Verdade' para evitar respostas falas",
-                placeholder: "apos-imersao-6.png",
-                icon: "✅",
-              },
-              {
                 text: "Acordar sabendo que está atualizado com tecnologia",
                 placeholder: "apos-imersao-7.png",
                 icon: "🚀",
@@ -509,7 +504,7 @@ const Webinar = () => {
                 key={item.text}
                 className="group relative bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300"
               >
-                <div className="aspect-square relative overflow-hidden bg-white/[0.03]">
+                <div className="aspect-[4/3] relative overflow-hidden bg-white/[0.03]">
                   <img
                     src={`/lovable-uploads/${item.placeholder}`}
                     alt={item.text}
@@ -519,7 +514,7 @@ const Webinar = () => {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <span className="text-5xl md:text-6xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
+                    <span className="text-4xl md:text-5xl opacity-20 group-hover:opacity-30 transition-opacity duration-300">
                       {item.icon}
                     </span>
                   </div>
