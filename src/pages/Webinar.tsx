@@ -345,6 +345,7 @@ const Webinar = () => {
                       src={d.image}
                       alt={d.nome}
                       loading="lazy"
+                      style={{ objectPosition: d.objectPosition }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute -bottom-3 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg">
