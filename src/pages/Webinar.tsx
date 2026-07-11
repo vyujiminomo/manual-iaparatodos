@@ -1078,7 +1078,7 @@ const Webinar = () => {
                     </div>
                     <div>
                       <p className="font-bold text-white text-sm">{t.name}</p>
-                      <p className="text-xs text-gray-500">Aluno da Imersão</p>
+                      <p className="text-xs text-gray-500">{t.role}</p>
                     </div>
                   </div>
                 </div>
