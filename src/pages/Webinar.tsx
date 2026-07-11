@@ -277,18 +277,19 @@ const Webinar = () => {
           {(() => {
             const depoimentos = [
               {
-                image: depoimentoOsvaldo.url,
-                border: "from-cyan-400 to-cyan-500",
-                nome: "Osvaldo Araki",
-                cargo: "Médico",
-                texto: "Eu tinha muita dificuldade na utilização da inteligência artificial. Fiz o curso do Vitor, e ele me surpreendeu bastante. Uma pessoa com um linguajar muito fácil, límpido. E me ajudou a destrinchar a IA. Um curso muito bom pra se fazer. Vale a pena e eu recomendo.",
-              },
-              {
                 image: depoimentoMax.url,
                 border: "from-yellow-400 to-amber-400",
                 nome: "Max Mauro",
                 cargo: "Engenheiro e CEO da Maxtron Energia",
                 texto: "Esse foi meu primeiro contato didático com IA. E o Vitor lançou o desafio que a gente usasse IA todos os dias, e de fato hoje eu utilizo IA pra pesquisa e soluções profissionais e até pessoais. O professor Yuji tem uma didática realmente diferente!",
+              },
+              {
+                image: depoimentoCarlos.url,
+                border: "from-fuchsia-400 to-pink-500",
+                nome: "Carlos Henrique de Carvalho",
+                cargo: "Professor aposentado de engenharia civil na UFS/IFS",
+                objectPosition: "center 25%",
+                texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
               },
               {
                 image: depoimentoKarina.url,
@@ -299,12 +300,11 @@ const Webinar = () => {
                 texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: \"A IA vai substituir o médico?\" Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
               },
               {
-                image: depoimentoCarlos.url,
-                border: "from-fuchsia-400 to-pink-500",
-                nome: "Carlos Henrique de Carvalho",
-                cargo: "Professor aposentado de engenharia civil na UFS/IFS",
-                objectPosition: "center 25%",
-                texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
+                image: depoimentoOsvaldo.url,
+                border: "from-cyan-400 to-cyan-500",
+                nome: "Osvaldo Araki",
+                cargo: "Médico",
+                texto: "Eu tinha muita dificuldade na utilização da inteligência artificial. Fiz o curso do Vitor, e ele me surpreendeu bastante. Uma pessoa com um linguajar muito fácil, límpido. E me ajudou a destrinchar a IA e desbloquear minha dificuldade com tecnologia. Um curso muito bom pra se fazer.",
               },
             ];
             const maxIndex = Math.max(0, depoimentos.length - 3);
