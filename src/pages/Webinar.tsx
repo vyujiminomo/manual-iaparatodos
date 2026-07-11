@@ -3,8 +3,8 @@ import garantiaSelo from "@/assets/garantia-selo.png";
 import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Check, Shield, Lock, ChevronLeft, ChevronRight, Quote, X, Star, Sparkles } from "lucide-react";
-import { useState } from "react";
+import { Check, Shield, Lock, Quote, X, Star, Sparkles } from "lucide-react";
+
 import {
   Accordion,
   AccordionContent,
@@ -53,7 +53,7 @@ import depoimentoKarina from "@/assets/depoimento-karina.png.asset.json";
 import depoimentoCarlos from "@/assets/depoimento-carlos.png.asset.json";
 
 const Webinar = () => {
-  const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
+  
   
 
   useDynamicMeta({
@@ -270,169 +270,66 @@ const Webinar = () => {
             </h2>
           </div>
 
-          {/* Turma switcher */}
-          <div className="flex items-center justify-center gap-3 md:gap-4 mb-10">
-            <button
-              onClick={() => setTurmaAtiva(turmaAtiva === 1 ? 2 : 1)}
-              aria-label="Turma anterior"
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-
-            <div className="flex bg-white/5 border border-white/10 rounded-full p-1 backdrop-blur-sm">
-              <button
-                onClick={() => setTurmaAtiva(1)}
-                className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
-                  turmaAtiva === 1
-                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
-                    : "text-gray-300 hover:text-white"
-                }`}
-              >
-                Turma 1
-              </button>
-              <button
-                onClick={() => setTurmaAtiva(2)}
-                className={`px-5 md:px-7 py-2.5 rounded-full text-sm md:text-base font-bold transition-all ${
-                  turmaAtiva === 2
-                    ? "bg-yellow-400 text-black shadow-[0_0_20px_rgba(250,204,21,0.4)]"
-                    : "text-gray-300 hover:text-white"
-                }`}
-              >
-                Turma 2
-              </button>
-            </div>
-
-            <button
-              onClick={() => setTurmaAtiva(turmaAtiva === 2 ? 1 : 2)}
-              aria-label="Próxima turma"
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
+          {/* Depoimentos */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 animate-in fade-in duration-500">
+            {[
+              {
+                image: depoimentoOsvaldo.url,
+                border: "from-cyan-400 to-cyan-500",
+                nome: "Osvaldo Araki",
+                cargo: "Médico",
+                texto: "Eu tinha muita dificuldade na utilização da inteligência artificial. Fiz o curso do Vitor, e ele me surpreendeu bastante. Uma pessoa com um linguajar muito fácil, límpido. E me ajudou a destrinchar a IA. Um curso muito bom pra se fazer. Vale a pena e eu recomendo.",
+              },
+              {
+                image: depoimentoMax.url,
+                border: "from-yellow-400 to-amber-400",
+                nome: "Max Mauro",
+                cargo: "Engenheiro e CEO da Maxtron Energia",
+                texto: "Esse foi meu primeiro contato didático com IA. E o Vitor lançou o desafio que a gente usasse IA todos os dias, e de fato hoje eu utilizo IA pra pesquisa e soluções profissionais e até pessoais. O professor Yuji tem uma didática realmente diferente!",
+              },
+              {
+                image: depoimentoKarina.url,
+                border: "from-emerald-400 to-green-500",
+                nome: "Karina Ferreira",
+                cargo: "Médica e oncologista da Vitta",
+                objectPosition: "center 15%",
+                texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: \"A IA vai substituir o médico?\" Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
+              },
+              {
+                image: depoimentoCarlos.url,
+                border: "from-fuchsia-400 to-pink-500",
+                nome: "Carlos Henrique de Carvalho",
+                cargo: "Professor aposentado de engenharia civil na UFS/IFS",
+                objectPosition: "center 70%",
+                texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
+              },
+            ].map((d, i) => (
+              <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
+                <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
+                <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                  <img
+                    src={d.image}
+                    alt={d.nome}
+                    loading="lazy"
+                    style={{ objectPosition: d.objectPosition }}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6 pt-8 flex-1 flex flex-col relative">
+                  <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
+                    <Quote className="w-5 h-5 text-black" fill="currentColor" />
+                  </div>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
+                    {d.texto}
+                  </p>
+                  <div className="border-t border-white/10 pt-4">
+                    <p className="text-white font-bold text-base">{d.nome}</p>
+                    <p className="text-gray-400 text-sm">{d.cargo}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* Turma 1 */}
-          {turmaAtiva === 1 && (
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
-              {[
-                {
-                  image: depoimentoOsvaldo.url,
-                  border: "from-cyan-400 to-cyan-500",
-                  nome: "Osvaldo Araki",
-                  cargo: "Médico",
-                  texto: "Eu tinha muita dificuldade na utilização da inteligência artificial. Fiz o curso do Vitor, e ele me surpreendeu bastante. Uma pessoa com um linguajar muito fácil, límpido. E me ajudou a destrinchar a IA. Um curso muito bom pra se fazer. Vale a pena e eu recomendo.",
-                },
-                {
-                  image: depoimentoMax.url,
-                  border: "from-yellow-400 to-amber-400",
-                  nome: "Max Mauro",
-                  cargo: "Engenheiro e CEO da Maxtron Energia",
-                  texto: "Esse foi meu primeiro contato didático com IA. E o Vitor lançou o desafio que a gente usasse IA todos os dias, e de fato hoje eu utilizo IA pra pesquisa e soluções profissionais e até pessoais. O professor Yuji tem uma didática realmente diferente!",
-                },
-                {
-                  image: depoimentoKarina.url,
-                  border: "from-emerald-400 to-green-500",
-                  nome: "Karina Ferreira",
-                  cargo: "Médica e oncologista da Vitta",
-                  objectPosition: "center 15%",
-                  texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: \"A IA vai substituir o médico?\" Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
-                },
-              ].map((d, i) => (
-                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
-                  <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
-                  <div className="relative aspect-[4/3] overflow-hidden bg-black">
-                    <img
-                      src={d.image}
-                      alt={d.nome}
-                      loading="lazy"
-                      style={{ objectPosition: d.objectPosition }}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 pt-8 flex-1 flex flex-col relative">
-                    <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
-                      <Quote className="w-5 h-5 text-black" fill="currentColor" />
-                    </div>
-                    <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
-                      {d.texto}
-                    </p>
-                    <div className="border-t border-white/10 pt-4">
-                      <p className="text-white font-bold text-base">{d.nome}</p>
-                      <p className="text-gray-400 text-sm">{d.cargo}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Turma 2 */}
-          {turmaAtiva === 2 && (
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
-              {[
-                {
-                  image: depoimentoCarlos.url,
-                  border: "from-fuchsia-400 to-pink-500",
-                  nome: "Carlos Henrique de Carvalho",
-                  cargo: "Professor aposentado de engenharia civil na UFS/IFS",
-                  texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
-                  objectPosition: "center 70%",
-                },
-                { border: "from-orange-400 to-red-500", label: "Depoimento 2" },
-                { border: "from-cyan-400 to-blue-500", label: "Depoimento 3" },
-              ].map((d, i) => (
-                <div key={i} className={`group relative bg-white/[0.04] backdrop-blur-sm border rounded-2xl overflow-hidden transition-all duration-300 ${d.texto ? 'border-white/10 hover:border-white/30' : 'border-dashed border-white/15 hover:border-yellow-400/40'}`}>
-                  <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
-                  {d.texto ? (
-                    <>
-                      <div className="relative aspect-[4/3] overflow-hidden bg-black">
-                        <img
-                          src={d.image}
-                          alt={d.nome}
-                          loading="lazy"
-                          style={{ objectPosition: d.objectPosition }}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                      <div className="p-6 pt-8 flex-1 flex flex-col relative">
-                        <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
-                          <Quote className="w-5 h-5 text-black" fill="currentColor" />
-                        </div>
-                        <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
-                          {d.texto}
-                        </p>
-                        <div className="border-t border-white/10 pt-4">
-                          <p className="text-white font-bold text-base">{d.nome}</p>
-                          <p className="text-gray-400 text-sm">{d.cargo}</p>
-                        </div>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="p-2">
-                        <div
-                          className="w-full rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] flex flex-col items-center justify-center text-center px-4"
-                          style={{ aspectRatio: '9/16' }}
-                        >
-                          <div className="w-14 h-14 rounded-full bg-yellow-400/10 border border-yellow-400/30 flex items-center justify-center mb-4">
-                            <Quote className="w-6 h-6 text-yellow-400" />
-                          </div>
-                          <p className="text-white font-bold text-base mb-1">Em breve</p>
-                          <p className="text-gray-400 text-xs">Depoimento da Turma 2</p>
-                        </div>
-                      </div>
-                      <div className="px-5 pb-5 pt-2 flex items-center gap-2">
-                        <Quote className="w-4 h-4 text-yellow-400" />
-                        <span className="text-white font-semibold text-sm">{d.label}</span>
-                        <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 2</span>
-                      </div>
-                    </>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
 
           <div className="text-center mt-10 md:mt-14">
             <Button
