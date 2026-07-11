@@ -47,6 +47,9 @@ import sinta55 from "@/assets/sinta-55.png.asset.json";
 import sinta56 from "@/assets/sinta-56.png.asset.json";
 import sinta57 from "@/assets/sinta-57.png.asset.json";
 import sinta58 from "@/assets/sinta-58.png.asset.json";
+import depoimentoOsvaldo from "@/assets/depoimento-osvaldo.png.asset.json";
+import depoimentoMax from "@/assets/depoimento-max.png.asset.json";
+import depoimentoKarina from "@/assets/depoimento-karina.png.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
@@ -312,27 +315,49 @@ const Webinar = () => {
           {turmaAtiva === 1 && (
             <div className="grid md:grid-cols-3 gap-6 md:gap-8 animate-in fade-in duration-500">
               {[
-                { src: "/lovable-uploads/video-osvaldo-araki.mp4", border: "from-cyan-400 to-cyan-500", nome: "Osvaldo Araki, Médico" },
-                { src: "/lovable-uploads/video-max-2.mp4", border: "from-yellow-400 to-amber-400", nome: "Max Mauro, Engenheiro" },
-                { src: "/lovable-uploads/video-karina.mp4", border: "from-emerald-400 to-green-500", nome: "Karina, Médica" },
+                {
+                  image: depoimentoOsvaldo.url,
+                  border: "from-cyan-400 to-cyan-500",
+                  nome: "Osvaldo Araki",
+                  cargo: "Médico",
+                  texto: "Eu tinha muita dificuldade na utilização da inteligência artificial. Fiz o curso do Vitor, e ele me surpreendeu bastante. Uma pessoa com um linguajar muito fácil, límpido. E me ajudou a destrinchar a IA. Um curso muito bom pra se fazer. Vale a pena e eu recomendo.",
+                },
+                {
+                  image: depoimentoMax.url,
+                  border: "from-yellow-400 to-amber-400",
+                  nome: "Max Mauro",
+                  cargo: "Engenheiro e CEO da Maxtron Energia",
+                  texto: "Esse foi meu primeiro contato didático com IA. E o Vitor lançou o desafio que a gente usasse IA todos os dias, e de fato hoje eu utilizo IA pra pesquisa e soluções profissionais e até pessoais. O professor Yuji tem uma didática realmente diferente!",
+                },
+                {
+                  image: depoimentoKarina.url,
+                  border: "from-emerald-400 to-green-500",
+                  nome: "Karina",
+                  cargo: "Médica",
+                  texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: A IA vai substituir o médico? Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
+                },
               ].map((d, i) => (
-                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300">
+                <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
                   <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
-                  <div className="p-2">
-                    <video
-                      controls
-                      preload="metadata"
-                      className="w-full rounded-xl object-cover"
-                      style={{ aspectRatio: '9/16' }}
-                    >
-                      <source src={d.src} type="video/mp4" />
-                      Seu navegador não suporta vídeos.
-                    </video>
+                  <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                    <img
+                      src={d.image}
+                      alt={d.nome}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute -bottom-3 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg">
+                      <Quote className="w-5 h-5 text-black" fill="currentColor" />
+                    </div>
                   </div>
-                  <div className="px-5 pb-5 pt-2 flex items-center gap-2">
-                    <Quote className="w-4 h-4 text-yellow-400" />
-                    <span className="text-white font-semibold text-sm">{d.nome}</span>
-                    <span className="ml-auto text-xs text-gray-400 uppercase tracking-wider">Turma 1</span>
+                  <div className="p-6 pt-8 flex-1 flex flex-col">
+                    <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
+                      {d.texto}
+                    </p>
+                    <div className="border-t border-white/10 pt-4">
+                      <p className="text-white font-bold text-base">{d.nome}</p>
+                      <p className="text-gray-400 text-sm">{d.cargo}</p>
+                    </div>
                   </div>
                 </div>
               ))}
