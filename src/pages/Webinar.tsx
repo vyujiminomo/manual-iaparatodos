@@ -377,6 +377,7 @@ const Webinar = () => {
                   nome: "Carlos Henrique de Carvalho",
                   cargo: "Professor aposentado de engenharia civil na UFS/IFS",
                   texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
+                  objectPosition: "center 70%",
                 },
                 { border: "from-orange-400 to-red-500", label: "Depoimento 2" },
                 { border: "from-cyan-400 to-blue-500", label: "Depoimento 3" },
