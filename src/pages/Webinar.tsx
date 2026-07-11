@@ -3,7 +3,8 @@ import garantiaSelo from "@/assets/garantia-selo.png";
 import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
-import { Check, Shield, Lock, Quote, X, Star, Sparkles } from "lucide-react";
+import { Check, Shield, Lock, ChevronLeft, ChevronRight, Quote, X, Star, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 import {
   Accordion,
@@ -53,6 +54,8 @@ import depoimentoKarina from "@/assets/depoimento-karina.png.asset.json";
 import depoimentoCarlos from "@/assets/depoimento-carlos.png.asset.json";
 
 const Webinar = () => {
+  const [depoimentoAtual, setDepoimentoAtual] = useState(0);
+  
   
   
 
@@ -270,9 +273,9 @@ const Webinar = () => {
             </h2>
           </div>
 
-          {/* Depoimentos */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 animate-in fade-in duration-500">
-            {[
+          {/* Depoimentos carousel */}
+          {(() => {
+            const depoimentos = [
               {
                 image: depoimentoOsvaldo.url,
                 border: "from-cyan-400 to-cyan-500",
@@ -303,33 +306,70 @@ const Webinar = () => {
                 objectPosition: "center 70%",
                 texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
               },
-            ].map((d, i) => (
-              <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
-                <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
-                <div className="relative aspect-[4/3] overflow-hidden bg-black">
-                  <img
-                    src={d.image}
-                    alt={d.nome}
-                    loading="lazy"
-                    style={{ objectPosition: d.objectPosition }}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+            ];
+            const maxIndex = Math.max(0, depoimentos.length - 3);
+            const next = () => setDepoimentoAtual((prev) => Math.min(prev + 1, maxIndex));
+            const prev = () => setDepoimentoAtual((prev) => Math.max(prev - 1, 0));
+
+            return (
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <div
+                    className="flex transition-transform duration-500 ease-out"
+                    style={{ transform: `translateX(-${depoimentoAtual * (100 / 3)}%)` }}
+                  >
+                    {depoimentos.map((d, i) => (
+                      <div key={i} className="w-full md:w-1/3 flex-shrink-0 px-3">
+                        <div className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col h-full">
+                          <div className={`h-1 w-full bg-gradient-to-r ${d.border}`}></div>
+                          <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                            <img
+                              src={d.image}
+                              alt={d.nome}
+                              loading="lazy"
+                              style={{ objectPosition: d.objectPosition }}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                          <div className="p-6 pt-8 flex-1 flex flex-col relative">
+                            <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
+                              <Quote className="w-5 h-5 text-black" fill="currentColor" />
+                            </div>
+                            <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
+                              {d.texto}
+                            </p>
+                            <div className="border-t border-white/10 pt-4">
+                              <p className="text-white font-bold text-base">{d.nome}</p>
+                              <p className="text-gray-400 text-sm">{d.cargo}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="p-6 pt-8 flex-1 flex flex-col relative">
-                  <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
-                    <Quote className="w-5 h-5 text-black" fill="currentColor" />
-                  </div>
-                  <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
-                    {d.texto}
-                  </p>
-                  <div className="border-t border-white/10 pt-4">
-                    <p className="text-white font-bold text-base">{d.nome}</p>
-                    <p className="text-gray-400 text-sm">{d.cargo}</p>
-                  </div>
+
+                <div className="flex items-center justify-center gap-3 mt-8">
+                  <button
+                    onClick={prev}
+                    disabled={depoimentoAtual === 0}
+                    aria-label="Depoimentos anteriores"
+                    className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={next}
+                    disabled={depoimentoAtual >= maxIndex}
+                    aria-label="Próximos depoimentos"
+                    className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/60 hover:bg-yellow-400/10 text-white flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })()}
 
           <div className="text-center mt-10 md:mt-14">
             <Button
