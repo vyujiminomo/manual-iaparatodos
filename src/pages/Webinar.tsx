@@ -284,20 +284,20 @@ const Webinar = () => {
                 texto: "Esse foi meu primeiro contato didático com IA. E o Vitor lançou o desafio que a gente usasse IA todos os dias, e de fato hoje eu utilizo IA pra pesquisa e soluções profissionais e até pessoais. O professor Yuji tem uma didática realmente diferente!",
               },
               {
-                image: depoimentoCarlos.url,
-                border: "from-fuchsia-400 to-pink-500",
-                nome: "Carlos Henrique de Carvalho",
-                cargo: "Professor aposentado de engenharia civil na UFS/IFS",
-                objectPosition: "center 25%",
-                texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
-              },
-              {
                 image: depoimentoKarina.url,
                 border: "from-emerald-400 to-green-500",
                 nome: "Karina Ferreira",
                 cargo: "Médica e oncologista da Vitta",
                 objectPosition: "center 15%",
                 texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: \"A IA vai substituir o médico?\" Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
+              },
+              {
+                image: depoimentoCarlos.url,
+                border: "from-fuchsia-400 to-pink-500",
+                nome: "Carlos Henrique de Carvalho",
+                cargo: "Professor aposentado de engenharia civil na UFS/IFS",
+                objectPosition: "center 25%",
+                texto: "As aulas me abriram um leque de opções com alta produtividade, na pesquisa, na concepção de laudos, aulas, provas etc... Incorporei a IA como uma ferramenta ágil e abrangente, no auxílio das minhas atividades. As aulas foram muito úteis nesse contexto.",
               },
               {
                 image: depoimentoOsvaldo.url,
