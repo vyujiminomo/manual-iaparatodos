@@ -54,6 +54,8 @@ import depoimentoKarina from "@/assets/depoimento-karina.png.asset.json";
 import depoimentoCarlos from "@/assets/depoimento-carlos.png.asset.json";
 
 const Webinar = () => {
+  const [depoimentoAtual, setDepoimentoAtual] = useState(0);
+  
   
   
 
