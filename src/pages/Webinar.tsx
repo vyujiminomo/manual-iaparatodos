@@ -268,8 +268,7 @@ const Webinar = () => {
               Provas reais
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              Confira os depoimentos <br className="hidden md:block" />
-              <span className="text-yellow-400">dos alunos</span>
+              Indicado por <span className="text-yellow-400">Profissionais</span>
             </h2>
           </div>
 
