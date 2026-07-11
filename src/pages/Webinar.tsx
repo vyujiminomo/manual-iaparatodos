@@ -267,8 +267,8 @@ const Webinar = () => {
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-400 mb-5 bg-cyan-400/10 px-5 py-2 rounded-full border border-cyan-400/20">
               Provas reais
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              Indicado por <span className="text-yellow-400">Profissionais</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight uppercase">
+              Indicado por <span className="text-yellow-400">profissionais:</span>
             </h2>
           </div>
 
