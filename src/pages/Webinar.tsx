@@ -348,11 +348,11 @@ const Webinar = () => {
                       style={{ objectPosition: d.objectPosition }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute -bottom-3 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg">
+                  </div>
+                  <div className="p-6 pt-8 flex-1 flex flex-col relative">
+                    <div className="absolute -top-5 left-5 w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg z-10">
                       <Quote className="w-5 h-5 text-black" fill="currentColor" />
                     </div>
-                  </div>
-                  <div className="p-6 pt-8 flex-1 flex flex-col">
                     <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
                       {d.texto}
                     </p>
