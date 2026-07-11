@@ -47,6 +47,9 @@ import sinta55 from "@/assets/sinta-55.png.asset.json";
 import sinta56 from "@/assets/sinta-56.png.asset.json";
 import sinta57 from "@/assets/sinta-57.png.asset.json";
 import sinta58 from "@/assets/sinta-58.png.asset.json";
+import depoimentoOsvaldo from "@/assets/depoimento-osvaldo.png.asset.json";
+import depoimentoMax from "@/assets/depoimento-max.png.asset.json";
+import depoimentoKarina from "@/assets/depoimento-karina.png.asset.json";
 
 const Webinar = () => {
   const [turmaAtiva, setTurmaAtiva] = useState<1 | 2>(1);
