@@ -1050,9 +1050,9 @@ const Webinar = () => {
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
-              { name: "Gabriela Coelho", initials: "GC", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-cyan-400 to-blue-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
-              { name: "Arthur Lucena", initials: "AL", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
-              { name: "Bruno Correia", initials: "BC", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
+              { name: "Gabriela Coelho", initials: "GC", role: "Gestora de equipe de robótica", quote: "Depois da palestra, o ChatGPT começou a me entregar exatamente o que eu queria. Minhas amigas até dizem que meu ChatGPT é mais obediente que o delas kkkk.", grad: "from-cyan-400 to-blue-500", tint: "bg-cyan-400/10 border-cyan-400/20" },
+              { name: "Arthur Lucena", initials: "AL", role: "Estudante", quote: "Agora é uma ferramenta essencial pra mim. Mudou totalmente meu jeito de pesquisar e estudar.", grad: "from-yellow-400 to-amber-400", tint: "bg-yellow-400/10 border-yellow-400/20" },
+              { name: "Bruno Correia", initials: "BC", role: "Militar", quote: "Estou muito satisfeito em ter feito parte do Beta dessa imersão, que, com certeza, será um sucesso. Parabéns!", grad: "from-emerald-400 to-green-500", tint: "bg-emerald-400/10 border-emerald-400/20" },
             ].map((t, i) => (
               <div
                 key={i}
@@ -1078,7 +1078,7 @@ const Webinar = () => {
                     </div>
                     <div>
                       <p className="font-bold text-white text-sm">{t.name}</p>
-                      <p className="text-xs text-gray-500">Aluno da Imersão</p>
+                      <p className="text-xs text-gray-500">{t.role}</p>
                     </div>
                   </div>
                 </div>
