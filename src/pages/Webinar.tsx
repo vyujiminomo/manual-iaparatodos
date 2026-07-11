@@ -4,7 +4,7 @@ import ofertaImagem from "@/assets/oferta-imagem.png";
 import { Button } from "@/components/ui/button";
 import { useDynamicMeta } from "@/hooks/useDynamicMeta";
 import { Check, Shield, Lock, Quote, X, Star, Sparkles } from "lucide-react";
-import { useState } from "react";
+
 import {
   Accordion,
   AccordionContent,
