@@ -335,7 +335,7 @@ const Webinar = () => {
                   nome: "Karina Ferreira",
                   cargo: "Médica e oncologista da Vitta",
                   objectPosition: "center 15%",
-                  texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: A IA vai substituir o médico? Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
+                  texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: \"A IA vai substituir o médico?\" Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
                 },
               ].map((d, i) => (
                 <div key={i} className="group relative bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
