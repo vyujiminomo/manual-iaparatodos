@@ -334,7 +334,7 @@ const Webinar = () => {
                   border: "from-emerald-400 to-green-500",
                   nome: "Karina Ferreira",
                   cargo: "Médica e oncologista da Vitta",
-                  objectPosition: "center 60%",
+                  objectPosition: "center 75%",
                   texto: "Sempre tive muita resistência com tecnologia. Mas a experiência foi fantástica! O Vitor é extremamente prático, extremamente acessível e dinâmico. Muita aplicabilidade na clínica. Eu, como médica, não tinha como fugir disso. E eu sempre lembro daquela frase: A IA vai substituir o médico? Vai sim. A IA vai substituir aquele médico que não aderir a IA. Então, participem do curso. Vale muito a pena!",
                 },
               ].map((d, i) => (
