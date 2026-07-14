@@ -1082,7 +1082,7 @@ const Webinar = () => {
               🔥 LOTE 2 DISPONÍVEL 🔥
             </span>
             <h2 className="font-poppins text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto">
-              Garanta sua vaga na melhor mentoria de IA para profissionais
+              Garanta sua vaga na melhor mentoria de IA para profissionais +40
             </h2>
           </div>
 
