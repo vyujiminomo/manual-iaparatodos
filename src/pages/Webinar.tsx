@@ -1163,7 +1163,7 @@ const Webinar = () => {
                     <span className="text-gray-400 line-through font-semibold">R$750</span>
                   </div>
                   <p className="text-sm md:text-base text-gray-600">
-                    <span className="font-semibold">R$247 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$25</span>
+                    <span className="font-semibold">R$267 à vista</span> ou <span className="font-extrabold text-gray-900 text-lg md:text-xl">12x R$27</span>
                   </p>
                 </div>
 
