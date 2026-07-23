@@ -220,7 +220,7 @@ const Cursinho = () => {
           </ul>
           <Button
             size="lg"
-            onClick={() => window.open("https://pay.hotmart.com/N100239403C?off=os94w3c0", "_blank")}
+            onClick={() => window.open("https://pay.hotmart.com/N100239403C?off=k0ngcj2n", "_blank")}
             className="w-full bg-orange-500 hover:bg-orange-600 text-black font-poppins font-bold text-base md:text-lg py-6 rounded-full"
           >
             Quero minha vaga

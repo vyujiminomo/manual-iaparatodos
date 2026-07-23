@@ -1168,7 +1168,7 @@ const Webinar = () => {
                 </div>
 
                 <Button
-                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=os94w3c0")}
+                  onClick={() => handleCtaClick("https://pay.hotmart.com/N100239403C?off=k0ngcj2n")}
                   className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg py-6 rounded-full shadow-lg transition-colors"
                 >
                   Garantir Ingresso

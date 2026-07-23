@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const Curso = () => {
   useEffect(() => {
     // Redireciona automaticamente para o link do Hotmart
-    window.location.href = 'https://pay.hotmart.com/N100239403C?off=os94w3c0';
+    window.location.href = 'https://pay.hotmart.com/N100239403C?off=k0ngcj2n';
   }, []);
 
   return (
