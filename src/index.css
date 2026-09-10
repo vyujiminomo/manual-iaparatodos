@@ -115,3 +115,48 @@ All colors MUST be HSL.
     animation: pulse 2s infinite;
   }
 }
+/* ===== Academy (plataforma de cursos) — tema escuro escopado ===== */
+@layer base {
+  .academy {
+    --background: 240 8% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 7% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 7% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 48 96% 53%;
+    --primary-foreground: 240 10% 6%;
+
+    --secondary: 240 6% 14%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 6% 14%;
+    --muted-foreground: 240 5% 68%;
+
+    --accent: 48 96% 53%;
+    --accent-foreground: 240 10% 6%;
+
+    --border: 240 6% 18%;
+    --input: 240 6% 18%;
+    --ring: 48 96% 53%;
+
+    --academy-surface: 240 7% 11%;
+    --academy-elevated: 240 6% 15%;
+    --gradient-academy: linear-gradient(135deg, hsl(48 96% 53%), hsl(38 95% 55%));
+    --gradient-academy-dark: radial-gradient(120% 120% at 50% 0%, hsl(240 8% 12%) 0%, hsl(240 8% 5%) 60%);
+    --shadow-academy: 0 20px 60px -25px hsl(48 96% 53% / 0.45);
+    --shadow-academy-card: 0 18px 45px -28px hsl(0 0% 0% / 0.9);
+  }
+}
+
+@layer utilities {
+  .academy-surface { background-color: hsl(var(--academy-surface)); }
+  .academy-elevated { background-color: hsl(var(--academy-elevated)); }
+  .bg-gradient-academy { background-image: var(--gradient-academy); }
+  .bg-academy-radial { background-image: var(--gradient-academy-dark); }
+  .shadow-academy { box-shadow: var(--shadow-academy); }
+  .shadow-academy-card { box-shadow: var(--shadow-academy-card); }
+}
