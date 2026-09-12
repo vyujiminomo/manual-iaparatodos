@@ -160,3 +160,27 @@ All colors MUST be HSL.
   .shadow-academy { box-shadow: var(--shadow-academy); }
   .shadow-academy-card { box-shadow: var(--shadow-academy-card); }
 }
+
+/* ===== IA Experts — clube privado de acompanhamento ===== */
+@layer base {
+  .iaexperts {
+    --background: 220 12% 4%;
+    --foreground: 0 0% 97%;
+    --card: 220 10% 7%;
+    --card-foreground: 0 0% 97%;
+    --popover: 220 10% 7%;
+    --popover-foreground: 0 0% 97%;
+    --primary: 47 96% 53%;
+    --primary-foreground: 220 12% 4%;
+    --secondary: 190 85% 45%;
+    --secondary-foreground: 220 12% 4%;
+    --muted: 220 8% 13%;
+    --muted-foreground: 220 6% 67%;
+    --accent: 190 85% 45%;
+    --accent-foreground: 220 12% 4%;
+    --border: 220 8% 18%;
+    --input: 220 8% 18%;
+    --ring: 47 96% 53%;
+    --radius: 0.25rem;
+  }
+}
