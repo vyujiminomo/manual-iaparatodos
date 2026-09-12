@@ -21,6 +21,7 @@ const Consultor = lazy(() => import("./pages/Consultor"));
 const Go = lazy(() => import("./pages/Go"));
 const Curso = lazy(() => import("./pages/Curso"));
 const Webinar = lazy(() => import("./pages/Webinar"));
+const IAExperts = lazy(() => import("./pages/IAExperts"));
 const Fmi = lazy(() => import("./pages/Fmi"));
 const Cursinho = lazy(() => import("./pages/Cursinho"));
 const UpgradePresencial = lazy(() => import("./pages/UpgradePresencial"));
@@ -65,6 +66,7 @@ const AppContent = () => {
         <Route path="/go" element={<Go />} />
         <Route path="/curso" element={<Curso />} />
         <Route path="/imersao" element={<Webinar />} />
+        <Route path="/iaexperts" element={<IAExperts />} />
         <Route path="/fmi" element={<Fmi />} />
         <Route path="/cursinho" element={<Cursinho />} />
         <Route path="/upgrade-presencial" element={<UpgradePresencial />} />
