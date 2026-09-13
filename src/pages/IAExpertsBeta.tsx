@@ -364,7 +364,7 @@ const IAExpertsBeta = () => {
           </div>
 
           {/* Card branco */}
-          <div className="relative overflow-hidden rounded-2xl bg-white p-6 shadow-2xl md:p-8">
+          <div className="relative rounded-2xl bg-white p-6 pt-8 shadow-2xl md:p-8 md:pt-10">
             <span className="absolute left-4 top-0 -translate-y-1/2 rounded-full bg-emerald-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white md:text-xs">Melhor condição</span>
 
             <div className="mt-2">
