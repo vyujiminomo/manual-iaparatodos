@@ -161,7 +161,7 @@ All colors MUST be HSL.
   .shadow-academy-card { box-shadow: var(--shadow-academy-card); }
 }
 
-/* ===== IA Experts — clube privado de acompanhamento ===== */
+/* ===== IA Experts — concierge premium de IA ===== */
 @layer base {
   .iaexperts {
     --background: 60 6% 3%;
@@ -181,16 +181,16 @@ All colors MUST be HSL.
     --border: 43 12% 18%;
     --input: 43 12% 18%;
     --ring: 45 79% 54%;
-    --radius: 0.4rem;
+    --radius: 0.75rem;
   }
 }
 
 @layer utilities {
   .ia-stage {
     position: relative;
-    min-height: 310px;
+    min-height: 330px;
     overflow: hidden;
-    padding-top: 34px;
+    padding: 38px 0 22px;
   }
 
   .ia-stage::before {
@@ -200,33 +200,35 @@ All colors MUST be HSL.
     content: "";
     border-radius: 0 0 50% 50%;
     background: hsl(var(--secondary));
+    border-bottom: 1px solid hsl(var(--primary) / 0.22);
   }
 
   .ia-stage-track {
     position: relative;
-    display: flex;
-    width: max-content;
-    align-items: flex-end;
-    gap: 14px;
-    transform: translateX(calc(50vw - 710px));
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    width: min(1380px, calc(100% - 32px));
+    margin: 0 auto;
+    align-items: center;
+    gap: 12px;
   }
 
   .ia-stage-card {
-    width: 220px;
-    height: 250px;
-    flex: none;
+    aspect-ratio: 0.82;
     overflow: hidden;
     border: 1px solid hsl(var(--border));
-    border-radius: 32px 32px 8px 8px;
+    border-radius: 1rem;
     background: hsl(var(--card));
+    transition: transform 350ms ease, border-color 350ms ease;
   }
 
-  .ia-stage-card-1,
-  .ia-stage-card-6 { height: 215px; transform: rotate(4deg); }
-  .ia-stage-card-2,
-  .ia-stage-card-5 { height: 245px; transform: rotate(-2deg); }
-  .ia-stage-card-3 { height: 220px; }
-  .ia-stage-card-4 { height: 260px; transform: rotate(2deg); }
+  .ia-stage-card:hover { border-color: hsl(var(--primary) / 0.5); }
+  .ia-stage-card-1 { transform: translateY(16px) rotate(2deg); }
+  .ia-stage-card-2 { transform: translateY(36px); }
+  .ia-stage-card-3 { transform: translateY(-4px); }
+  .ia-stage-card-4 { transform: translateY(26px); }
+  .ia-stage-card-5 { transform: translateY(-10px); }
+  .ia-stage-card-6 { transform: translateY(20px) rotate(-2deg); }
 
   .ia-marquee { animation: ia-marquee 28s linear infinite; }
 
@@ -236,18 +238,13 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 767px) {
-    .ia-stage { min-height: 235px; }
-    .ia-stage-track { gap: 8px; transform: translateX(-190px); }
-    .ia-stage-card { width: 150px; height: 185px; border-radius: 22px 22px 6px 6px; }
-    .ia-stage-card-1,
-    .ia-stage-card-6 { height: 155px; }
-    .ia-stage-card-2,
-    .ia-stage-card-5 { height: 175px; }
-    .ia-stage-card-3 { height: 165px; }
-    .ia-stage-card-4 { height: 195px; }
+    .ia-stage { min-height: 260px; padding-top: 28px; }
+    .ia-stage-track { width: 760px; margin-left: -210px; gap: 8px; }
+    .ia-stage-card { border-radius: 0.75rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .ia-marquee { animation: none; }
+    .ia-stage-card { transition: none; }
   }
 }
