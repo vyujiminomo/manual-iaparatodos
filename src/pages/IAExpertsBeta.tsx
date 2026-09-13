@@ -202,7 +202,7 @@ const IAExpertsBeta = () => {
 
       <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mx-auto max-w-3xl text-center font-editorial text-5xl font-normal leading-[0.98] md:text-8xl">
+          <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
             Que <em className="text-primary">problema</em> queremos resolver?
           </h2>
           <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
