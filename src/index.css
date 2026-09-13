@@ -175,10 +175,10 @@ All colors MUST be HSL.
     align-items: center;
     min-height: 20px;
     padding: 2px 7px;
-    border: 1px solid hsl(var(--primary) / 0.18);
+    border: 1px solid hsl(var(--primary) / 0.45);
     border-radius: 999px;
     color: hsl(var(--primary));
-    background: hsl(var(--secondary));
+    background: hsl(var(--primary) / 0.12);
     font-size: 9px;
     font-weight: 800;
     line-height: 1;
@@ -207,12 +207,12 @@ All colors MUST be HSL.
   }
 
   .iaexperts-beta .ia-hero-cta {
-    color: hsl(var(--primary));
-    background: hsl(var(--card));
+    color: hsl(222 47% 8%);
+    background: hsl(0 0% 100%);
     box-shadow: var(--ia-beta-shadow);
   }
 
-  .iaexperts-beta .ia-hero-cta:hover { background: hsl(var(--secondary)); }
+  .iaexperts-beta .ia-hero-cta:hover { background: hsl(210 40% 92%); }
 
   .iaexperts-beta .ia-hero-cta > span {
     color: hsl(var(--primary-foreground));
@@ -517,10 +517,10 @@ All colors MUST be HSL.
 
   .iaexperts-beta .ia-title-mark span { transform: none; }
   .iaexperts-beta .ia-hero { background: hsl(var(--background)); }
-  .iaexperts-beta .ia-hero-cta { color: hsl(var(--primary)); background: hsl(var(--card)); box-shadow: var(--ia-beta-shadow); }
-  .iaexperts-beta .ia-hero-cta:hover { background: hsl(var(--secondary)); }
+  .iaexperts-beta .ia-hero-cta { color: hsl(222 47% 8%); background: hsl(0 0% 100%); box-shadow: var(--ia-beta-shadow); }
+  .iaexperts-beta .ia-hero-cta:hover { background: hsl(210 40% 92%); }
   .iaexperts-beta .ia-hero-cta > span { color: hsl(var(--primary-foreground)); background: hsl(var(--primary)); }
   .iaexperts-beta .ia-stage::before { border-bottom-color: hsl(var(--primary) / 0.2); box-shadow: none; }
   .iaexperts-beta .ia-stage-card { border-radius: 8px; }
-  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%); opacity: 0.38; }
+  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%) invert(1); opacity: 0.45; }
 }
