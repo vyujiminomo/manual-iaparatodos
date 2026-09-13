@@ -400,14 +400,14 @@ const IAExpertsBeta = () => {
             <div className="flex items-end justify-between">
               <div>
                 <p className="text-[11px] font-medium uppercase tracking-wider text-gray-400">De R$ 1.442 por apenas</p>
-                <p className="text-sm font-bold text-gray-900">
-                  <span className="text-lg">R$727</span> <span className="text-xs font-normal text-gray-500">à vista · ou 3x de R$ 242</span>
+                <p className="text-xs font-medium text-gray-600">
+                  <span className="text-sm font-bold text-gray-900">R$727</span> à vista · ou <span className="font-bold text-gray-900">3x de R$ 242</span>
                 </p>
               </div>
               <span className="rounded bg-yellow-300 px-2 py-1 text-xs font-bold text-gray-900">Turma piloto</span>
             </div>
 
-            <Button disabled className="mt-6 h-12 w-full rounded-full bg-red-600 text-base font-bold text-white hover:bg-red-700 disabled:opacity-70">Quero entrar na turma piloto</Button>
+            <button disabled className="mt-6 h-12 w-full rounded-full bg-[#e12d2e] text-sm font-bold text-white disabled:opacity-70">Quero entrar na turma piloto</button>
             <p className="mt-3 text-center text-xs text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
 
             <div className="mt-5 flex items-start gap-3 border-t border-gray-200 pt-5">
