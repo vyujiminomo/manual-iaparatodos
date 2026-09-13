@@ -387,7 +387,7 @@ const IAExpertsBeta = () => {
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 text-center md:mb-10">
             <span className="inline-block rounded-full bg-red-600 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Lote piloto disponível</span>
-            <h2 className="mt-5 text-3xl font-bold leading-tight text-white md:text-4xl">Participe do BETA da IA Experts</h2>
+            <h2 className="mt-5 text-3xl font-bold leading-tight text-white md:text-4xl">Tenha um Especialista de IA Particular</h2>
             <p className="mt-3 text-base text-gray-400">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
           </div>
 
@@ -409,7 +409,7 @@ const IAExpertsBeta = () => {
             <ul className="space-y-3 text-base text-gray-700 md:text-lg">
               {[
                 ["Especialista de IA Particular (3 meses)", "R$ 400"],
-                ["Mentorias Coletivas quinzenais", "R$ 300"],
+                ["Mentorias Coletivas quinzenais", "R$ 600"],
                 ["Acesso a Todos os Cursos", "R$ 250"],
                 ["Certificações inclusas", "R$ 97"],
                 ["Mapas Mentais e Resumos", "R$ 97"],
@@ -420,7 +420,7 @@ const IAExpertsBeta = () => {
                 <li key={item} className="flex items-center gap-2">
                   <Check className="h-5 w-5 shrink-0 text-emerald-600" />
                   <span className="flex-1">{item}</span>
-                  <span className="font-semibold text-gray-400 line-through">{price}</span>
+                  <span className="font-semibold text-red-600 line-through">{price}</span>
                 </li>
               ))}
             </ul>
@@ -430,16 +430,16 @@ const IAExpertsBeta = () => {
             <div className="flex items-end justify-between gap-4">
               <div>
                 <p className="text-sm font-medium uppercase tracking-wider text-gray-400">Valor total:</p>
-                <p className="text-2xl font-bold text-red-600 line-through md:text-3xl">R$ 1.442</p>
+                <p className="text-2xl font-bold text-red-600 line-through md:text-3xl">R$ 1.742</p>
               </div>
               <div className="text-right">
                 <p className="text-sm font-medium uppercase tracking-wider text-gray-400">Hoje por apenas:</p>
-                <p className="text-2xl font-extrabold text-gray-900 md:text-4xl">12x de R$60,30</p>
+                <p className="font-extrabold text-gray-900"><span className="text-base font-bold md:text-lg">12x de</span> <span className="text-2xl md:text-4xl">R$60,30</span></p>
                 <p className="text-sm font-semibold text-gray-700">ou R$747 à vista</p>
               </div>
             </div>
 
-            <button disabled className="mt-6 h-14 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-base font-bold text-white md:text-lg">Quero Fazer Parte</button>
+            <button disabled className="mt-6 h-14 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-base font-bold text-white md:text-lg">Quero Fazer Parte →</button>
             <p className="mt-3 text-center text-sm text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
 
             <div className="mt-5 flex items-start gap-3 border-t border-gray-200 pt-5">
