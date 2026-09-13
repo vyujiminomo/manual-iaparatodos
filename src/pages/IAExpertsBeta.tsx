@@ -224,17 +224,17 @@ const IAExpertsBeta = () => {
           </div>
 
           <div className="mt-16 grid gap-6 md:grid-cols-3 md:gap-8">
-            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+            <article className="rounded-2xl border border-white/15 bg-white/[0.06] p-9 md:p-10">
               <p className="text-sm font-bold uppercase text-[#e12d2e]">01 · Demandas individuais</p>
-              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
+              <p className="mt-5 text-xl leading-relaxed text-white md:text-2xl">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
             </article>
-            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+            <article className="rounded-2xl border border-white/15 bg-white/[0.06] p-9 md:p-10">
               <p className="text-sm font-bold uppercase text-[#e12d2e]">02 · Cursos solitários</p>
-              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
+              <p className="mt-5 text-xl leading-relaxed text-white md:text-2xl">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
             </article>
-            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+            <article className="rounded-2xl border border-white/15 bg-white/[0.06] p-9 md:p-10">
               <p className="text-sm font-bold uppercase text-[#e12d2e]">03 · Cursos genéricos</p>
-              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
+              <p className="mt-5 text-xl leading-relaxed text-white md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
             </article>
           </div>
         </div>
