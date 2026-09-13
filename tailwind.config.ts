@@ -68,6 +68,8 @@ export default {
 			},
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'work': ['Work Sans', 'system-ui', 'sans-serif'],
+				'editorial': ['Instrument Serif', 'Georgia', 'serif'],
 				'system': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 				'bebas': ['Bebas Neue', 'sans-serif'],
 				'poppins': ['Poppins', 'sans-serif'],
