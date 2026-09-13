@@ -7,3 +7,5 @@
 - [x] Validar a página em computador e celular
 - [x] Reproduzir a primeira seção no padrão exato Adapta Labs com destaque amarelo
 - [x] Validar o novo início em computador e celular
+- [x] Ampliar a faixa de marcas e atualizar sua prova social
+- [x] Refazer a seção do problema no padrão editorial da referência

@@ -155,31 +155,33 @@ const IAExperts = () => {
         </div>
       </section>
 
-      <section className="border-b border-border py-8">
-        <div className="mx-auto grid max-w-7xl gap-7 px-5 md:grid-cols-[240px_1fr] md:items-center md:px-8">
-          <p className="text-sm leading-snug text-muted-foreground"><strong className="text-foreground">Profissionais e empresas</strong><br />já aprenderam com a gente</p>
+      <section className="border-b border-border py-9">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[280px_1fr] md:items-center md:px-8">
+          <p className="text-base leading-snug text-foreground">Mais de 5.000 empresas<br />confiam na <em className="font-editorial text-lg">IA Experts</em></p>
           <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-            <div className="ia-marquee flex w-max items-center gap-14">
-              {[...brands, ...brands].map((logo, index) => <img key={`${logo}-${index}`} src={logo} alt="Empresa parceira ou atendida" loading="lazy" className="h-9 w-28 object-contain grayscale opacity-45" />)}
+            <div className="ia-marquee flex w-max items-center gap-12">
+              {[...brands, ...brands].map((logo, index) => <img key={`${logo}-${index}`} src={logo} alt="Empresa que confia na IA Experts" loading="lazy" className="h-16 w-40 object-contain grayscale opacity-55" />)}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-5 py-20 md:px-8 md:py-28">
+      <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-            <div><span className="text-xs font-semibold uppercase text-primary">O problema dos cursos</span><h2 className="mt-5 font-editorial text-5xl leading-none md:text-7xl">A IA muda.<br />Sua ajuda também precisa <em className="text-primary">mudar.</em></h2></div>
-            <div className="border-t border-border">
-              {[
-                ["Novas IAs surgem", "A ferramenta que você aprendeu ontem pode não ser a melhor escolha amanhã."],
-                ["Novas técnicas aparecem", "Agentes, automações e novas formas de trabalhar não cabem em um curso parado."],
-                ["As dúvidas são pessoais", "A melhor aplicação depende da sua profissão, da sua rotina e do resultado que você procura."],
-              ].map(([title, copy], index) => <article key={title} className="grid grid-cols-[44px_1fr] gap-4 border-b border-border py-7"><span className="font-editorial text-2xl text-primary">0{index + 1}</span><div><h3 className="text-lg font-semibold">{title}</h3><p className="mt-2 leading-relaxed text-muted-foreground">{copy}</p></div></article>)}
+          <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-24">
+            <h2 className="max-w-2xl font-editorial text-5xl font-normal leading-[0.98] md:text-7xl">
+              Que <em className="text-primary">problema</em><br />queremos resolver?
+            </h2>
+            <div className="max-w-xl text-lg leading-[1.35] text-foreground md:text-[1.35rem]">
+              <p>Os produtos de IA do mercado te entregam ferramentas e cursos gravados.</p>
+              <p className="mt-7">Mas todo dia surgem novas ferramentas, técnicas e demandas do seu trabalho.</p>
+              <p className="mt-7 font-semibold">Quem vai te ajudar com suas demandas particulares? Quem vai te atualizar constantemente?</p>
+              <div className="mt-9 border-y border-border py-6">
+                <p className="text-xs font-bold uppercase text-primary">Estudo Bloom</p>
+                <p className="mt-3 font-editorial text-3xl leading-tight">Aprender com um tutor particular é <em className="text-primary">10x mais eficaz.</em></p>
+              </div>
+              <p className="mt-8 font-semibold">Por isso, queremos te entregar uma equipe de especialistas de IA.</p>
             </div>
-          </div>
-          <div className="mt-16 grid border-y border-border py-10 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-12">
-            <p className="font-editorial text-4xl leading-none md:text-5xl">Um curso te mostra como nadar.</p><ArrowRight className="my-6 h-8 w-8 text-primary md:my-0" /><p className="font-editorial text-4xl leading-none text-primary md:text-5xl">Um mentor entra na água com você.</p>
           </div>
         </div>
       </section>
