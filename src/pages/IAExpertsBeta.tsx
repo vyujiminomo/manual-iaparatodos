@@ -341,7 +341,7 @@ const IAExpertsBeta = () => {
                     <h3 className="mb-3 text-2xl font-bold leading-tight md:text-[26px]">{b.title}</h3>
                     <p className="text-[15px] leading-relaxed text-muted-foreground md:text-base">{b.desc}</p>
                   </div>
-                  <div className={`relative min-h-[260px] overflow-hidden rounded-md border border-border md:col-span-3 md:min-h-[300px] ${b.fit === "contain" ? "bg-[#0f1117]" : ""}`}>
+                  <div className={`relative min-h-[260px] overflow-hidden rounded-md border border-border md:col-span-3 md:min-h-[300px] ${b.fit === "contain" ? "bg-muted" : ""}`}>
                     <img src={b.img} alt={b.title} loading="lazy" className={`absolute inset-0 h-full w-full ${b.fit === "contain" ? "object-contain p-6" : "object-cover"}`} />
                   </div>
                 </div>
