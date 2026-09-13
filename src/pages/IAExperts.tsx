@@ -353,8 +353,26 @@ const IAExperts = () => {
 
       <section id="oferta" className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div><span className="text-xs font-bold uppercase text-primary">Turma fundadora · 10–12 ex-alunos</span><h2 className="mt-5 font-editorial text-5xl leading-none md:text-7xl">Tenha uma equipe de IA ao seu lado por <em className="text-primary">3 meses.</em></h2><p className="mt-6 max-w-xl text-lg text-muted-foreground">Mentor particular, duas aulas coletivas por mês e todos os cursos da biblioteca.</p><div className="mt-8 flex items-start gap-3 border-t border-border pt-6"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Experimente antes de decidir:</strong> você pode participar da próxima aula coletiva gratuitamente.</p></div></div>
-          <div className="rounded-md border border-primary/35 bg-background p-7 md:p-9"><p className="font-editorial text-6xl text-primary">R$800</p><p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p><ul className="mt-7 space-y-3 text-sm text-muted-foreground">{["1 aula particular por mês", "Contato para tirar dúvidas", "2 aulas coletivas por mês", "Grupo exclusivo no WhatsApp", "Todos os cursos e gravações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}</ul><Button disabled className="mt-8 h-14 w-full rounded-full font-bold disabled:opacity-70">Inscrições em breve</Button><p className="mt-3 text-center text-xs text-muted-foreground">O novo link de inscrição ainda será liberado.</p></div>
+          <div>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">OFERTA</span>
+            <h2 className="mt-5 font-editorial text-5xl leading-none md:text-7xl">Garanta seu <em className="text-primary">Especialista de IA Particular</em></h2>
+            <p className="mt-6 max-w-xl text-lg text-muted-foreground">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
+            <div className="mt-7 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">IA Experts Mais Escolhido</span>
+              <span className="text-xs font-bold text-primary">|</span>
+              <span className="text-xs font-bold text-primary">75%OFF*</span>
+            </div>
+            <div className="mt-8 flex items-start gap-3 border-t border-border pt-6"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Experimente antes de decidir:</strong> você pode participar da próxima aula coletiva gratuitamente.</p></div>
+          </div>
+          <div className="rounded-md border border-primary/35 bg-background p-7 md:p-9">
+            <p className="font-editorial text-6xl text-primary">R$800</p>
+            <p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p>
+            <ul className="mt-7 space-y-3 text-sm text-muted-foreground">
+              {["Acesso Completo a Todos os Cursos", "Especialista de IA Particular", "Mentorias Coletivas", "Cursos e Certificações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}
+            </ul>
+            <Button disabled className="mt-8 h-14 w-full rounded-full font-bold disabled:opacity-70">Inscrições em breve</Button>
+            <p className="mt-3 text-center text-xs text-muted-foreground">O novo link de inscrição ainda será liberado.</p>
+          </div>
         </div>
       </section>
 
