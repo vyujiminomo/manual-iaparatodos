@@ -209,9 +209,6 @@ const IAExpertsBeta = () => {
            </h2>
 
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-center">
-            <p className="font-editorial text-3xl font-normal leading-tight md:text-5xl">
-              Aprender IA sozinho <span className="text-[#e12d2e]">não funciona.</span>
-            </p>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl">
               Curso gravado e ferramenta gera um aprendizado passivo.
             </p>
