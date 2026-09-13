@@ -439,7 +439,7 @@ const IAExpertsBeta = () => {
               </div>
             </div>
 
-            <button disabled className="mt-6 h-14 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-base font-bold text-white md:text-lg">Quero Fazer Parte →</button>
+            <a href="https://pay.hotmart.com/S107595385B" target="_blank" rel="noopener noreferrer" className="mt-6 flex h-14 w-full items-center justify-center rounded-full bg-[#e12d2e] text-base font-bold text-white transition-opacity hover:opacity-90 md:text-lg">Quero Fazer Parte →</a>
             <p className="mt-3 text-center text-sm text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
 
             <div className="mt-5 flex items-start gap-3 border-t border-gray-200 pt-5">
