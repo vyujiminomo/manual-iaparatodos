@@ -200,23 +200,41 @@ const IAExpertsBeta = () => {
         </div>
       </section>
 
-      <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
-            Que <em className="text-primary">problema</em> queremos resolver?
+      <section className="relative overflow-hidden bg-[#0b0b0d] px-5 py-20 text-white md:px-8 md:py-28">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.07] [background-image:radial-gradient(circle_at_30%_20%,#e12d2e_0,transparent_45%),radial-gradient(circle_at_75%_80%,#e12d2e_0,transparent_40%)]" />
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <p className="text-center text-sm font-bold uppercase tracking-widest text-[#e12d2e]">O problema</p>
+          <h2 className="mx-auto mt-4 max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
+            Que <em className="text-[#e12d2e]">problema</em> queremos resolver?
           </h2>
-          <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
-            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
-              <p className="text-sm font-bold uppercase text-primary">01 · Demandas individuais</p>
-              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
+
+          <div className="mx-auto mt-12 max-w-4xl space-y-6 text-center">
+            <p className="font-editorial text-3xl font-normal leading-tight md:text-5xl">
+              Aprender IA sozinho <span className="text-[#e12d2e]">não funciona.</span>
+            </p>
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl">
+              Curso gravado e ferramenta gera um aprendizado passivo.
+            </p>
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl">
+              Quando você tiver uma dúvida/demanda particular, <span className="font-semibold text-white">quem vai te ajudar?</span>
+            </p>
+            <p className="mx-auto max-w-3xl text-2xl font-semibold leading-snug md:text-3xl">
+              Ninguém aprende IA sozinho. <span className="text-[#e12d2e]">Precisa de uma equipe do lado.</span>
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-3 md:gap-8">
+            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-[#e12d2e]">01 · Demandas individuais</p>
+              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
             </article>
-            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
-              <p className="text-sm font-bold uppercase text-primary">02 · Cursos solitários</p>
-              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
+            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-[#e12d2e]">02 · Cursos solitários</p>
+              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
             </article>
-            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
-              <p className="text-sm font-bold uppercase text-primary">03 · Cursos genéricos</p>
-              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
+            <article className="rounded-2xl border border-white/10 bg-white/[0.04] p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-[#e12d2e]">03 · Cursos genéricos</p>
+              <p className="mt-5 text-xl leading-relaxed text-white/80 md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
             </article>
           </div>
         </div>
