@@ -9,3 +9,4 @@
 - [x] Validar o novo início em computador e celular
 - [x] Ampliar a faixa de marcas e atualizar sua prova social
 - [x] Refazer a seção do problema no padrão editorial da referência
+- [x] Criar a solução de especialista particular com aula e equipe

@@ -187,26 +187,49 @@ const IAExperts = () => {
       </section>
 
       <div id="solucoes">
-        <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
+        <section className="border-b border-border bg-card px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="01 · Mentor particular" description="Um expert entende sua rotina, acompanha suas dúvidas e ajuda você a transformar IA em resultado.">Um especialista para chamar de <em className="text-primary">seu.</em></SectionTitle>
-            <div className="grid gap-5 lg:grid-cols-[0.75fr_1.25fr]">
-              <div className="border-y border-border">
-                {[{ icon: UserRound, title: "Aula particular", copy: "Um encontro individual por mês, direcionado para o seu trabalho e suas prioridades." }, { icon: MessageCircle, title: "Contato para tirar dúvidas", copy: "Converse no WhatsApp quando surgir uma dúvida, um erro ou uma ferramenta nova." }].map((item) => (
-                  <article key={item.title} className="grid grid-cols-[44px_1fr] gap-4 border-b border-border py-8 last:border-b-0"><item.icon className="h-7 w-7 text-primary" /><div><h3 className="font-editorial text-3xl">{item.title}</h3><p className="mt-3 leading-relaxed text-muted-foreground">{item.copy}</p></div></article>
+            <p className="text-xs font-bold uppercase text-primary">01 · Especialista particular</p>
+            <h2 className="mt-5 max-w-5xl font-editorial text-5xl font-normal uppercase leading-[0.98] md:text-7xl">
+              Tenha um especialista<br />de IA <em className="text-primary">particular</em>
+            </h2>
+            <p className="mt-7 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+              Nós te entregamos um Especialista de IA particular para você ter <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+            </p>
+
+            <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
+              <figure className="relative min-h-[480px] overflow-hidden rounded-md border border-border bg-background">
+                <img src={sessionImage} alt="Aula particular de inteligência artificial" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+                <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-4 p-7">
+                  <UserRound className="h-7 w-7 shrink-0 text-primary" />
+                  <div><p className="font-editorial text-3xl">Aula particular mensal</p><p className="mt-1 text-sm text-muted-foreground">Direcionada às suas demandas e ao seu trabalho.</p></div>
+                </figcaption>
+              </figure>
+
+              <div className="grid gap-3">
+                {[
+                  { initials: "VY", name: "Vitor Yuji", role: "Expert principal", copy: "Palestrante de IA, jovem aprendiz da Adapta.org e professor de mais de 50 alunos.", image: "/lovable-uploads/vitor-yuji-summit.jpg" },
+                  { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
+                  { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Especialista em tecnologia, construção de soluções e novas ferramentas." },
+                ].map((expert) => (
+                  <article key={expert.name} className="grid min-h-[148px] grid-cols-[112px_1fr] overflow-hidden rounded-md border border-border bg-background">
+                    <div className="relative grid place-items-center overflow-hidden border-r border-border bg-muted">
+                      {expert.image ? <img src={expert.image} alt={expert.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top" /> : <span className="font-editorial text-5xl text-primary/60">{expert.initials}</span>}
+                    </div>
+                    <div className="flex flex-col justify-center p-5">
+                      <p className="text-xs font-bold uppercase text-primary">{expert.role}</p>
+                      <h3 className="mt-1 font-editorial text-3xl">{expert.name}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p>
+                    </div>
+                  </article>
                 ))}
               </div>
-              <div className="grid gap-4 sm:grid-cols-3">
-                <article className="group relative min-h-[510px] overflow-hidden rounded-md bg-muted">
-                  <img src="/lovable-uploads/vitor-yuji-summit.jpg" alt="Vitor Yuji" loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">Expert principal</p><h3 className="mt-2 font-editorial text-4xl">Vitor Yuji</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">Principal palestrante de IA de Sergipe, jovem aprendiz da Adapta.org e professor de mais de 50 alunos.</p></div>
-                </article>
-                {[
-                  { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
-                  { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Entusiasta de engenharia de software, tecnologia, construção de soluções e novas ferramentas." },
-                ].map((expert) => <article key={expert.name} className="group relative flex min-h-[510px] flex-col justify-between overflow-hidden rounded-md border border-border bg-background p-6"><span className="font-editorial text-8xl text-primary/25 transition-colors group-hover:text-primary/50">{expert.initials}</span><div><p className="text-xs font-bold uppercase text-primary">{expert.role}</p><h3 className="mt-2 font-editorial text-4xl">{expert.name}</h3><p className="mt-4 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p></div></article>)}
-              </div>
+            </div>
+
+            <div className="mt-8 grid border-y border-border sm:grid-cols-2">
+              <div className="flex gap-4 py-6 sm:border-r sm:border-border sm:pr-8"><UserRound className="mt-1 h-6 w-6 shrink-0 text-primary" /><div><p className="font-semibold">Aulas mensais</p><p className="mt-1 text-sm text-muted-foreground">Encontros individuais focados no que você precisa resolver.</p></div></div>
+              <div className="flex gap-4 py-6 sm:pl-8"><MessageCircle className="mt-1 h-6 w-6 shrink-0 text-primary" /><div><p className="font-semibold">Contato para dúvidas</p><p className="mt-1 text-sm text-muted-foreground">Acompanhamento para quando uma nova demanda aparecer.</p></div></div>
             </div>
           </div>
         </section>
