@@ -34,6 +34,12 @@ import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
+import betaAula1 from "@/assets/iaexperts-beta-aula-1.png.asset.json";
+import betaAula2 from "@/assets/iaexperts-beta-aula-2.png.asset.json";
+import betaAula3 from "@/assets/iaexperts-beta-aula-3.png.asset.json";
+import betaAula4 from "@/assets/iaexperts-beta-aula-4.png.asset.json";
+import betaAula5 from "@/assets/iaexperts-beta-aula-5.png.asset.json";
+import betaAula6 from "@/assets/iaexperts-beta-aula-6.png.asset.json";
 
 const testimonials = [
   {
@@ -69,12 +75,12 @@ const testimonials = [
 ];
 
 const stageImages = [
-  { src: "/lovable-uploads/vitor-yuji-palestra-1.png", alt: "Vitor Yuji ensinando inteligência artificial" },
-  { src: sessionImage, alt: "Sessão individual de mentoria em IA" },
-  { src: "/lovable-uploads/vitor-yuji-palestra-2.png", alt: "Turma de alunos da IA na Prática" },
-  { src: classroomImage, alt: "Aula presencial de inteligência artificial" },
-  { src: "/lovable-uploads/palestra-shield.jpg", alt: "Palestra sobre inteligência artificial" },
-  { src: "/lovable-uploads/palestra-ivo-prado.png", alt: "Profissionais em uma aula de inteligência artificial" },
+  { src: betaAula1.url, alt: "Aluno usando inteligência artificial durante a aula" },
+  { src: betaAula2.url, alt: "Vitor Yuji orientando uma turma sobre inteligência artificial" },
+  { src: betaAula3.url, alt: "Atendimento individual durante a aula de inteligência artificial" },
+  { src: betaAula4.url, alt: "Aluna aplicando inteligência artificial no computador" },
+  { src: betaAula5.url, alt: "Turma participando de uma aula prática de inteligência artificial" },
+  { src: betaAula6.url, alt: "Vitor Yuji apresentando uma aula de inteligência artificial" },
 ];
 
 const brands = [
@@ -149,14 +155,12 @@ const IAExpertsBeta = () => {
         <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
           <p className="text-sm font-semibold text-primary md:text-base">ACESSO ANTECIPADO · TURMA PILOTO · VAGAS LIMITADAS</p>
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
-            <span>Tenha a ajuda de um&nbsp;</span>
-            <span className="ia-title-mark" aria-label="IA"><span>IA</span></span>
-            <span>&nbsp;Expert de IA</span>
+            <span>Tenha a ajuda de um Expert de IA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
-            <span>Seu trabalho não precisa só de ferramenta, mas sim de resultado.&nbsp;</span>
+            <span>Seu trabalho não precisa só de ferramenta, mas sim de <strong className="ia-hero-emphasis">resultado.</strong>&nbsp;</span>
             <br className="hidden md:block" />
-             <span>O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece</span>
+             <span>O IA Experts te entrega uma <strong className="ia-hero-emphasis">equipe de especialistas de IA</strong> para implementar com você até ele aprece</span>
           </p>
 
           <Button onClick={scrollToOffer} size="lg" className="ia-hero-cta mt-7 h-12 rounded-[12px] pl-5 pr-1.5 text-base font-bold transition-transform hover:-translate-y-0.5">
