@@ -202,24 +202,23 @@ const IAExpertsBeta = () => {
 
       <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-24">
-            <h2 className="max-w-2xl font-editorial text-5xl font-normal leading-[0.98] md:text-7xl">
-              Que <em className="text-primary">problema</em><br />queremos resolver?
-            </h2>
-            <div className="flex flex-col gap-5">
-              <article className="rounded-2xl border border-border bg-card p-7">
-                <p className="text-xs font-bold uppercase text-primary">01 · Demandas individuais</p>
-                <p className="mt-4 text-lg leading-relaxed text-foreground">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
-              </article>
-              <article className="rounded-2xl border border-border bg-card p-7">
-                <p className="text-xs font-bold uppercase text-primary">02 · Cursos solitários</p>
-                <p className="mt-4 text-lg leading-relaxed text-foreground">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
-              </article>
-              <article className="rounded-2xl border border-border bg-card p-7">
-                <p className="text-xs font-bold uppercase text-primary">03 · Cursos genéricos</p>
-                <p className="mt-4 text-lg leading-relaxed text-foreground">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
-              </article>
-            </div>
+          <h2 className="mx-auto max-w-3xl text-center font-editorial text-5xl font-normal leading-[0.98] md:text-8xl">
+            Que <em className="text-primary">problema</em> queremos resolver?
+          </h2>
+          <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
+            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-primary">01 · Demandas individuais</p>
+              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
+            </article>
+            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-primary">02 · Cursos solitários</p>
+              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
+            </article>
+            <article className="rounded-2xl border border-border bg-card p-9 md:p-10">
+              <p className="text-sm font-bold uppercase text-primary">03 · Cursos genéricos</p>
+              <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
+            </article>
+          </div>
           </div>
         </div>
       </section>
