@@ -92,8 +92,8 @@ const courseCards = [
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
   <div className="mb-12 md:mb-16">
-    <span className="text-xs font-semibold uppercase text-primary">{eyebrow}</span>
-    <h2 className="mt-5 max-w-4xl font-editorial text-5xl leading-none md:text-7xl">{children}</h2>
+    <span className="text-xs font-medium uppercase text-primary">{eyebrow}</span>
+    <h2 className="mt-5 max-w-5xl font-editorial text-5xl font-normal leading-[0.98] md:text-7xl">{children}</h2>
     {description && <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{description}</p>}
   </div>
 );
@@ -113,30 +113,28 @@ const IAExperts = () => {
   return (
     <main className="iaexperts min-h-screen overflow-hidden bg-background font-work text-foreground">
       <header className="border-b border-border bg-background/95">
-        <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-5 md:px-8">
-          <span className="text-sm font-bold uppercase"><span className="text-primary">IA</span> Experts</span>
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
+          <span className="text-sm font-semibold uppercase"><span className="text-primary">IA</span> Experts</span>
           <Button onClick={scrollToOffer} variant="ghost" className="text-xs font-semibold text-muted-foreground hover:bg-muted hover:text-foreground">
             Turma fundadora <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </header>
 
-      <section className="relative border-b border-border pt-14 md:pt-20">
-        <div className="mx-auto max-w-5xl px-5 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase text-primary">
-            <span className="h-2 w-2 rounded-full bg-primary" /> Parceria Adapta.org · Mais de 50 alunos
-          </div>
-          <h1 className="mx-auto mt-7 max-w-5xl font-editorial text-6xl leading-[0.9] md:text-8xl lg:text-[7.4rem]">
+      <section className="relative border-b border-border pt-16 md:pt-24">
+        <div className="mx-auto max-w-6xl px-5 text-center">
+          <p className="text-base text-primary md:text-lg">Parceria Adapta.org · Mais de 50 alunos</p>
+          <h1 className="mx-auto mt-7 max-w-6xl font-editorial text-6xl font-normal leading-[0.92] md:text-8xl lg:text-[7.8rem]">
             Tenha a ajuda de um <em className="font-normal text-primary">Expert</em> de IA
           </h1>
-          <p className="mx-auto mt-7 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-[1.35rem]">
             Você não precisa só de cursos gravados, mas sim de um <strong className="font-semibold text-foreground">mentor particular.</strong><br className="hidden md:block" /> O IA Experts te entrega acompanhamento para você ter <strong className="font-semibold text-primary">resultado.</strong>
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button onClick={scrollToOffer} size="lg" className="h-14 w-full px-7 font-bold shadow-[0_16px_40px_-20px_hsl(var(--primary)/0.8)] transition-transform hover:-translate-y-0.5 sm:w-auto">
-              Quero ter um mentor de IA <span className="ml-3 flex h-8 w-8 items-center justify-center rounded-md bg-primary-foreground text-primary"><ArrowRight className="h-4 w-4" /></span>
+            <Button onClick={scrollToOffer} size="lg" className="h-14 w-full rounded-full pl-7 pr-2 font-semibold transition-transform hover:-translate-y-0.5 sm:w-auto">
+              Quero ter um mentor de IA <span className="ml-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground text-primary"><ArrowRight className="h-4 w-4" /></span>
             </Button>
-            <Button onClick={scrollToSolutions} size="lg" variant="outline" className="h-14 w-full px-7 font-semibold sm:w-auto">Conhecer o programa</Button>
+            <Button onClick={scrollToSolutions} size="lg" variant="ghost" className="h-14 w-full px-7 font-medium text-muted-foreground underline decoration-border underline-offset-8 hover:bg-transparent hover:text-foreground sm:w-auto">Conhecer o programa</Button>
           </div>
         </div>
 
@@ -191,7 +189,7 @@ const IAExperts = () => {
                 ))}
               </div>
               <div className="grid gap-4 sm:grid-cols-3">
-                <article className="group relative min-h-[510px] overflow-hidden rounded-2xl bg-muted">
+                <article className="group relative min-h-[510px] overflow-hidden rounded-md bg-muted">
                   <img src="/lovable-uploads/vitor-yuji-summit.jpg" alt="Vitor Yuji" loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">Expert principal</p><h3 className="mt-2 font-editorial text-4xl">Vitor Yuji</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">Principal palestrante de IA de Sergipe, jovem aprendiz da Adapta.org e professor de mais de 50 alunos.</p></div>
@@ -199,7 +197,7 @@ const IAExperts = () => {
                 {[
                   { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
                   { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Entusiasta de engenharia de software, tecnologia, construção de soluções e novas ferramentas." },
-                ].map((expert) => <article key={expert.name} className="group relative flex min-h-[510px] flex-col justify-between overflow-hidden rounded-2xl border border-border bg-background p-6"><span className="font-editorial text-8xl text-primary/25 transition-colors group-hover:text-primary/50">{expert.initials}</span><div><p className="text-xs font-bold uppercase text-primary">{expert.role}</p><h3 className="mt-2 font-editorial text-4xl">{expert.name}</h3><p className="mt-4 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p></div></article>)}
+                ].map((expert) => <article key={expert.name} className="group relative flex min-h-[510px] flex-col justify-between overflow-hidden rounded-md border border-border bg-background p-6"><span className="font-editorial text-8xl text-primary/25 transition-colors group-hover:text-primary/50">{expert.initials}</span><div><p className="text-xs font-bold uppercase text-primary">{expert.role}</p><h3 className="mt-2 font-editorial text-4xl">{expert.name}</h3><p className="mt-4 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p></div></article>)}
               </div>
             </div>
           </div>
@@ -209,7 +207,7 @@ const IAExperts = () => {
           <div className="mx-auto max-w-7xl">
             <SectionTitle eyebrow="02 · Mentoria coletiva" description="Duas aulas por mês para avançar junto, trocar experiências e acompanhar o que há de novo.">Aprenda com especialistas. Evolua com a <em className="text-primary">turma.</em></SectionTitle>
             <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-              <article className="relative min-h-[460px] overflow-hidden rounded-2xl">
+              <article className="relative min-h-[460px] overflow-hidden rounded-md">
                 <img src={classroomImage} alt="Aula coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-7"><div className="flex items-center gap-3 text-primary"><Users className="h-7 w-7" /><span className="font-semibold">2 aulas por mês</span></div><p className="mt-3 max-w-lg text-muted-foreground">Encontros ao vivo, grupo no WhatsApp e acesso às gravações para rever quando quiser.</p></div>
@@ -226,7 +224,7 @@ const IAExperts = () => {
           <div className="mx-auto max-w-7xl">
             <SectionTitle eyebrow="03 · Cursos" description="Uma biblioteca completa para aprender no seu ritmo e chegar às mentorias com dúvidas cada vez melhores.">Conteúdo que continua com você.</SectionTitle>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-2xl bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 font-editorial text-3xl leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
+              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 font-editorial text-3xl leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
             </div>
           </div>
         </section>
@@ -236,7 +234,7 @@ const IAExperts = () => {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end"><SectionTitle eyebrow="Resultados reais">Impacto real em rotinas <em className="text-primary">reais.</em></SectionTitle><div className="mb-12 flex gap-2 md:mb-16"><Button variant="outline" size="icon" aria-label="Depoimento anterior" onClick={() => setTestimonialIndex((current) => (current - 1 + testimonials.length) % testimonials.length)}><ChevronLeft className="h-5 w-5" /></Button><Button variant="outline" size="icon" aria-label="Próximo depoimento" onClick={() => setTestimonialIndex((current) => (current + 1) % testimonials.length)}><ChevronRight className="h-5 w-5" /></Button></div></div>
           <div className="grid gap-5 md:grid-cols-3">
-            {visibleTestimonials.map((testimonial, index) => <article key={`${testimonial.name}-${testimonialIndex}`} className={`${index > 0 ? "hidden md:block" : "block"} overflow-hidden rounded-2xl border border-border bg-card transition-transform duration-300 hover:-translate-y-1`}><img src={testimonial.image} alt={testimonial.name} loading="lazy" className="h-64 w-full object-cover" style={{ objectPosition: testimonial.position }} /><div className="p-7"><span className="text-xs font-semibold uppercase text-primary">{testimonial.result}</span><p className="mt-5 text-lg leading-relaxed text-foreground">“{testimonial.quote}”</p><div className="mt-7 border-t border-border pt-5"><p className="font-semibold">{testimonial.name}</p><p className="mt-1 text-sm text-muted-foreground">{testimonial.role}</p></div></div></article>)}
+            {visibleTestimonials.map((testimonial, index) => <article key={`${testimonial.name}-${testimonialIndex}`} className={`${index > 0 ? "hidden md:block" : "block"} overflow-hidden rounded-md border border-border bg-card transition-transform duration-300 hover:-translate-y-1`}><img src={testimonial.image} alt={testimonial.name} className="h-64 w-full object-cover" style={{ objectPosition: testimonial.position }} /><div className="p-7"><span className="text-xs font-semibold uppercase text-primary">{testimonial.result}</span><p className="mt-5 text-lg leading-relaxed text-foreground">“{testimonial.quote}”</p><div className="mt-7 border-t border-border pt-5"><p className="font-semibold">{testimonial.name}</p><p className="mt-1 text-sm text-muted-foreground">{testimonial.role}</p></div></div></article>)}
           </div>
         </div>
       </section>
@@ -244,7 +242,7 @@ const IAExperts = () => {
       <section id="oferta" className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
           <div><span className="text-xs font-bold uppercase text-primary">Turma fundadora · 10–12 ex-alunos</span><h2 className="mt-5 font-editorial text-5xl leading-none md:text-7xl">Tenha uma equipe de IA ao seu lado por <em className="text-primary">3 meses.</em></h2><p className="mt-6 max-w-xl text-lg text-muted-foreground">Mentor particular, duas aulas coletivas por mês e todos os cursos da biblioteca.</p><div className="mt-8 flex items-start gap-3 border-t border-border pt-6"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Experimente antes de decidir:</strong> você pode participar da próxima aula coletiva gratuitamente.</p></div></div>
-          <div className="rounded-2xl border border-primary/35 bg-background p-7 md:p-9"><p className="font-editorial text-6xl text-primary">R$800</p><p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p><ul className="mt-7 space-y-3 text-sm text-muted-foreground">{["1 aula particular por mês", "Contato para tirar dúvidas", "2 aulas coletivas por mês", "Grupo exclusivo no WhatsApp", "Todos os cursos e gravações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}</ul><Button disabled className="mt-8 h-14 w-full font-bold disabled:opacity-70">Inscrições em breve</Button><p className="mt-3 text-center text-xs text-muted-foreground">O novo link de inscrição ainda será liberado.</p></div>
+          <div className="rounded-md border border-primary/35 bg-background p-7 md:p-9"><p className="font-editorial text-6xl text-primary">R$800</p><p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p><ul className="mt-7 space-y-3 text-sm text-muted-foreground">{["1 aula particular por mês", "Contato para tirar dúvidas", "2 aulas coletivas por mês", "Grupo exclusivo no WhatsApp", "Todos os cursos e gravações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}</ul><Button disabled className="mt-8 h-14 w-full rounded-full font-bold disabled:opacity-70">Inscrições em breve</Button><p className="mt-3 text-center text-xs text-muted-foreground">O novo link de inscrição ainda será liberado.</p></div>
         </div>
       </section>
 

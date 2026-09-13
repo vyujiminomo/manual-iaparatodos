@@ -164,13 +164,13 @@ All colors MUST be HSL.
 /* ===== IA Experts — concierge premium de IA ===== */
 @layer base {
   .iaexperts {
-    --background: 60 6% 3%;
-    --foreground: 47 31% 94%;
-    --card: 43 11% 6%;
+    --background: 60 4% 2%;
+    --foreground: 45 22% 95%;
+    --card: 48 8% 5%;
     --card-foreground: 47 31% 94%;
     --popover: 43 11% 6%;
     --popover-foreground: 47 31% 94%;
-    --primary: 45 79% 54%;
+    --primary: 45 86% 55%;
     --primary-foreground: 60 6% 3%;
     --secondary: 43 27% 13%;
     --secondary-foreground: 47 31% 94%;
@@ -178,25 +178,26 @@ All colors MUST be HSL.
     --muted-foreground: 45 8% 63%;
     --accent: 45 79% 54%;
     --accent-foreground: 60 6% 3%;
-    --border: 43 12% 18%;
-    --input: 43 12% 18%;
+    --border: 45 11% 22%;
+    --input: 45 11% 22%;
     --ring: 45 79% 54%;
-    --radius: 0.75rem;
+    --radius: 0.25rem;
+    letter-spacing: 0;
   }
 }
 
 @layer utilities {
   .ia-stage {
     position: relative;
-    min-height: 330px;
+    min-height: 370px;
     overflow: hidden;
-    padding: 38px 0 22px;
+    padding: 58px 0 28px;
   }
 
   .ia-stage::before {
     position: absolute;
-    inset: 0 -10% auto;
-    height: 220px;
+    inset: 0 -8% auto;
+    height: 285px;
     content: "";
     border-radius: 0 0 50% 50%;
     background: hsl(var(--secondary));
@@ -210,25 +211,25 @@ All colors MUST be HSL.
     width: min(1380px, calc(100% - 32px));
     margin: 0 auto;
     align-items: center;
-    gap: 12px;
+    gap: 7px;
   }
 
   .ia-stage-card {
     aspect-ratio: 0.82;
     overflow: hidden;
     border: 1px solid hsl(var(--border));
-    border-radius: 1rem;
+    border-radius: 0.35rem;
     background: hsl(var(--card));
     transition: transform 350ms ease, border-color 350ms ease;
   }
 
   .ia-stage-card:hover { border-color: hsl(var(--primary) / 0.5); }
-  .ia-stage-card-1 { transform: translateY(16px) rotate(2deg); }
-  .ia-stage-card-2 { transform: translateY(36px); }
-  .ia-stage-card-3 { transform: translateY(-4px); }
-  .ia-stage-card-4 { transform: translateY(26px); }
-  .ia-stage-card-5 { transform: translateY(-10px); }
-  .ia-stage-card-6 { transform: translateY(20px) rotate(-2deg); }
+  .ia-stage-card-1 { transform: translateY(26px) rotate(2deg); }
+  .ia-stage-card-2 { transform: translateY(52px); }
+  .ia-stage-card-3 { transform: translateY(4px); }
+  .ia-stage-card-4 { transform: translateY(4px); }
+  .ia-stage-card-5 { transform: translateY(52px); }
+  .ia-stage-card-6 { transform: translateY(26px) rotate(-2deg); }
 
   .ia-marquee { animation: ia-marquee 28s linear infinite; }
 
@@ -238,9 +239,9 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 767px) {
-    .ia-stage { min-height: 260px; padding-top: 28px; }
+    .ia-stage { min-height: 280px; padding-top: 42px; }
     .ia-stage-track { width: 760px; margin-left: -210px; gap: 8px; }
-    .ia-stage-card { border-radius: 0.75rem; }
+    .ia-stage-card { border-radius: 0.25rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
