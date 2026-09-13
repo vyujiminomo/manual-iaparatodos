@@ -386,61 +386,65 @@ const IAExpertsBeta = () => {
       <section id="oferta" className="bg-black px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 text-center md:mb-10">
-            <span className="inline-block rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">Lote piloto disponível</span>
-            <h2 className="mt-5 text-2xl font-bold leading-tight text-white md:text-3xl">Participe do BETA da IA Experts</h2>
-            <p className="mt-3 text-sm text-gray-400">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
+            <span className="inline-block rounded-full bg-red-600 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Lote piloto disponível</span>
+            <h2 className="mt-5 text-3xl font-bold leading-tight text-white md:text-4xl">Participe do BETA da IA Experts</h2>
+            <p className="mt-3 text-base text-gray-400">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
           </div>
 
           {/* Card branco */}
-          <div className="relative rounded-2xl bg-white p-6 shadow-2xl md:p-8">
-            <span className="inline-block rounded-full bg-emerald-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white md:text-xs">Melhor condição</span>
+          <div className="relative rounded-2xl bg-white p-6 shadow-2xl md:p-10">
+            <span className="inline-block rounded-full bg-emerald-600 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white md:text-sm">Melhor condição</span>
 
-            <div className="mt-2">
-              <div className="flex items-baseline justify-between gap-3">
-                <h3 className="text-base font-bold text-gray-900 md:text-lg">IA Experts Beta <span className="text-sm font-normal text-gray-400 line-through">R$ 1.442</span></h3>
-                <span className="rounded bg-yellow-300 px-2 py-0.5 text-xs font-bold text-gray-900">75% OFF</span>
+            <div className="mt-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <h3 className="text-xl font-bold text-gray-900 md:text-2xl">IA Experts Beta</h3>
+                <span className="rounded bg-yellow-300 px-3 py-1 text-sm font-bold text-gray-900">75% OFF</span>
               </div>
-              <p className="mt-1 text-xs text-gray-500">3 meses de acompanhamento completo</p>
+              <p className="mt-1 text-sm text-gray-500">3 meses de acompanhamento completo</p>
             </div>
 
-            <div className="my-5 h-px bg-gray-200" />
+            <div className="my-6 h-px bg-gray-200" />
 
-            <ul className="space-y-3 text-sm text-gray-700">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-500">O que está incluso:</p>
+            <ul className="space-y-3 text-base text-gray-700 md:text-lg">
               {[
-                "Especialista de IA Particular (3 meses)",
-                "Mentorias Coletivas quinzenais",
-                "Acesso a Todos os Cursos",
-                "Certificações inclusas",
-                "Mapas Mentais e Resumos",
-                "Workbook IA Experts",
-                "Biblioteca de Prompts exclusiva",
-                "Grupo no WhatsApp e networking",
-              ].map((item) => (
+                ["Especialista de IA Particular (3 meses)", "R$ 400"],
+                ["Mentorias Coletivas quinzenais", "R$ 300"],
+                ["Acesso a Todos os Cursos", "R$ 250"],
+                ["Certificações inclusas", "R$ 97"],
+                ["Mapas Mentais e Resumos", "R$ 97"],
+                ["Workbook IA Experts", "R$ 147"],
+                ["Biblioteca de Prompts exclusiva", "R$ 97"],
+                ["Grupo no WhatsApp e networking", "R$ 54"],
+              ].map(([item, price]) => (
                 <li key={item} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 shrink-0 text-emerald-600" />
-                  <span>{item}</span>
+                  <Check className="h-5 w-5 shrink-0 text-emerald-600" />
+                  <span className="flex-1">{item}</span>
+                  <span className="font-semibold text-gray-400 line-through">{price}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="my-5 h-px bg-gray-200" />
+            <div className="my-6 h-px bg-gray-200" />
 
-            <div className="flex items-end justify-between">
+            <div className="flex items-end justify-between gap-4">
               <div>
-                <p className="text-[11px] font-medium uppercase tracking-wider text-gray-400">De R$ 1.442 por apenas</p>
-                <p className="text-xs font-medium text-gray-600">
-                  <span className="text-sm font-bold text-gray-900">R$727</span> à vista · ou <span className="font-bold text-gray-900">3x de R$ 242</span>
-                </p>
+                <p className="text-sm font-medium uppercase tracking-wider text-gray-400">Valor total:</p>
+                <p className="text-2xl font-bold text-red-600 line-through md:text-3xl">R$ 1.442</p>
               </div>
-              <span className="rounded bg-yellow-300 px-2 py-1 text-xs font-bold text-gray-900">Turma piloto</span>
+              <div className="text-right">
+                <p className="text-sm font-medium uppercase tracking-wider text-gray-400">Hoje por apenas:</p>
+                <p className="text-2xl font-extrabold text-gray-900 md:text-4xl">12x de R$60,30</p>
+                <p className="text-sm font-semibold text-gray-700">ou R$747 à vista</p>
+              </div>
             </div>
 
-            <button disabled className="mt-6 h-12 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-sm font-bold text-white">Quero entrar na turma piloto</button>
-            <p className="mt-3 text-center text-xs text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
+            <button disabled className="mt-6 h-14 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-base font-bold text-white md:text-lg">Quero Fazer Parte</button>
+            <p className="mt-3 text-center text-sm text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
 
             <div className="mt-5 flex items-start gap-3 border-t border-gray-200 pt-5">
-              <Clock3 className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" />
-              <p className="text-xs leading-relaxed text-gray-500"><strong className="text-gray-700">Participe do MVP:</strong> entre na turma piloto, ajude a evoluir a experiência e tenha acompanhamento próximo desde o início.</p>
+              <Clock3 className="mt-0.5 h-5 w-5 shrink-0 text-gray-400" />
+              <p className="text-sm leading-relaxed text-gray-500"><strong className="text-gray-700">Participe do MVP:</strong> entre na turma piloto, ajude a evoluir a experiência e tenha acompanhamento próximo desde o início.</p>
             </div>
           </div>
         </div>
