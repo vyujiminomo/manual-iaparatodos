@@ -346,8 +346,8 @@ const IAExpertsBeta = () => {
         <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Cursos</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Conheça </span><em className="font-editorial font-normal text-primary">Nossos Cursos</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">*Certificações inclusas</p></div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></article>)}
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {courseCards.map((course) => <article key={course.title} className="group relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-md border border-border bg-background p-3"><img src={course.image} alt={course.title} loading="lazy" className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105" /></article>)}
             </div>
           </div>
         </section>
