@@ -272,7 +272,7 @@ const IAExperts = () => {
 
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="IA Experts Mentorias" description="Receba mentorias coletivas quinzenais de IA.">Tenha <em className="text-primary">mentorias coletivas</em></SectionTitle>
+            <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Mentorias</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Tenha </span><em className="font-editorial font-normal text-primary">mentorias coletivas</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">Receba mentorias coletivas quinzenais de IA.</p></div>
             <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
               <article className="relative min-h-[460px] overflow-hidden rounded-md">
                 <img src={classroomImage} alt="Mentoria coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
@@ -289,9 +289,9 @@ const IAExperts = () => {
 
         <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="IA Experts Cursos" description="*Certificações inclusas">Conheça <em className="text-primary">Nossos Cursos</em></SectionTitle>
+            <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Cursos</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Conheça </span><em className="font-editorial font-normal text-primary">Nossos Cursos</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">*Certificações inclusas</p></div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 font-editorial text-3xl leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
+              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 text-3xl font-bold leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
             </div>
           </div>
         </section>
