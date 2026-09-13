@@ -480,6 +480,7 @@ All colors MUST be HSL.
     --border: 214 32% 88%;
     --input: 214 32% 88%;
     --ring: 221 83% 53%;
+    --ia-dark-blue: 221 83% 30%;
     --radius: 0.5rem;
     --ia-beta-shadow: 0 12px 30px -18px hsl(221 83% 30% / 0.35);
     --ia-beta-shadow-soft: 0 6px 16px -12px hsl(221 83% 30% / 0.3);
@@ -547,6 +548,11 @@ All colors MUST be HSL.
   .iaexperts-beta .ia-title-mark span { transform: none; font-weight: 800; }
 
   .iaexperts-beta .ia-hero { background: hsl(var(--background)); }
+
+  .iaexperts-beta .ia-hero-emphasis {
+    color: hsl(var(--ia-dark-blue));
+    font-weight: 800;
+  }
 
   .iaexperts-beta .ia-hero-cta {
     color: hsl(0 0% 100%);
