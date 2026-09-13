@@ -365,7 +365,7 @@ const IAExpertsBeta = () => {
             <div className="mt-8 flex items-start gap-3 border-t border-border pt-6"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Participe do MVP:</strong> entre na turma piloto, ajude a evoluir a experiência e tenha acompanhamento próximo desde o início.</p></div>
           </div>
           <div className="rounded-md border border-primary/35 bg-background p-7 md:p-9">
-            <p className="font-editorial text-6xl text-primary">R$800</p>
+            <p className="font-editorial text-6xl text-primary">R$727</p>
             <p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p>
             <ul className="mt-7 space-y-3 text-sm text-muted-foreground">
               {["Acesso Completo a Todos os Cursos", "Especialista de IA Particular", "Mentorias Coletivas", "Cursos e Certificações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}
