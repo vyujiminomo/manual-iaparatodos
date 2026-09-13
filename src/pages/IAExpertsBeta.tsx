@@ -297,17 +297,43 @@ const IAExpertsBeta = () => {
 
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Mentorias</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Tenha </span><em className="font-editorial font-normal text-primary">mentorias coletivas</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">Receba mentorias coletivas quinzenais de IA.</p></div>
-            <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-              <article className="relative min-h-[460px] overflow-hidden rounded-md">
-                <img src={classroomImage} alt="Mentoria coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-7"><div className="flex items-center gap-3 text-primary"><Users className="h-7 w-7" /><span className="font-semibold">Mentorias quinzenais</span></div><p className="mt-3 max-w-lg text-muted-foreground">Encontros ao vivo, grupo no WhatsApp e acesso às gravações para rever quando quiser.</p></div>
-              </article>
+            <div className="mb-12 text-center md:mb-16">
+              <h2 className="mx-auto max-w-5xl text-4xl font-bold leading-[1.02] md:text-6xl">
+                Tenha Mentorias em Grupo com <em className="font-editorial font-normal text-primary">Especialistas e Profissionais</em>
+              </h2>
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                Aulas em grupo quinzenais sobre IA para temas diversos
+              </p>
+            </div>
+            <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="border-y border-border px-1 md:px-6">
-                <div className="flex items-center justify-between border-b border-border py-5"><div><p className="text-xs font-bold uppercase text-primary">Calendário de aulas</p><h3 className="mt-2 font-editorial text-3xl">Próximos temas</h3></div><CalendarDays className="h-8 w-8 text-primary" /></div>
-                <div className="divide-y divide-border">{["IA para Gestão", "IA para Marketing", "IA para Estudos", "Claude Code e VibeCoding"].map((title, index) => <div key={title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5"><span className="font-editorial text-2xl text-primary">0{index + 1}</span><p className="font-semibold">{title}</p><span className="text-xs text-muted-foreground">Em breve</span></div>)}</div>
+                <div className="flex items-center justify-between border-b border-border py-5">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-primary">Aulas do MVP</p>
+                    <h3 className="mt-2 font-editorial text-3xl">Próximos temas</h3>
+                  </div>
+                  <CalendarDays className="h-8 w-8 text-primary" />
+                </div>
+                <div className="divide-y divide-border">
+                  {["IA para Gestão", "IA para Marketing", "IA para Copywriting", "IA para Slides", "Claudecode e Vibecoding", "Criando um Agente no WhatsApp"].map((title, index) => (
+                    <div key={title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5">
+                      <span className="font-editorial text-2xl text-primary">0{index + 1}</span>
+                      <p className="font-semibold">{title}</p>
+                      <span className="text-xs text-muted-foreground">Em breve</span>
+                    </div>
+                  ))}
+                </div>
               </div>
+              <article className="relative min-h-[460px] overflow-hidden rounded-md">
+                <img src={classroomImage} alt="Mentoria ao vivo da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-7">
+                  <div className="flex items-center gap-3 text-primary">
+                    <Users className="h-7 w-7" />
+                    <span className="font-semibold text-xl">Mentoria ao Vivo</span>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
