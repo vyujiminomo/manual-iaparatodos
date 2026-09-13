@@ -216,7 +216,7 @@ const IAExpertsBeta = () => {
               Quando você tiver uma dúvida/demanda particular, <span className="font-semibold text-white">quem vai te ajudar?</span>
             </p>
             <p className="mx-auto max-w-3xl text-2xl font-semibold leading-snug md:text-3xl">
-               Ninguém aprende IA sozinho. <span className="text-[#e12d2e]">{"\n Precisa de uma equipe do lado."}</span>
+               Ninguém aprende IA sozinho. <span className="text-[#e12d2e]">{" \nPrecisa de uma equipe do lado."}</span>
             </p>
           </div>
         </div>
