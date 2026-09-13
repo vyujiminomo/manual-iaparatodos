@@ -13,4 +13,4 @@
 - [x] Redesenhar a solução em composição editorial leve com Instrument Serif e Work Sans
 - [x] Transformar os especialistas em cards quadrados, exibidos um por vez com navegação
 - [x] Criar /iaexpertsbeta como cópia independente com identidade clara azul-marinho e aparência de MVP
-- [ ] Validar /iaexpertsbeta no computador e celular
+- [x] Validar /iaexpertsbeta no computador e celular

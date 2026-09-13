@@ -522,4 +522,5 @@ All colors MUST be HSL.
   .iaexperts-beta .ia-hero-cta > span { color: hsl(var(--primary-foreground)); background: hsl(var(--primary)); }
   .iaexperts-beta .ia-stage::before { border-bottom-color: hsl(var(--primary) / 0.2); box-shadow: none; }
   .iaexperts-beta .ia-stage-card { border-radius: 8px; }
+  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%); opacity: 0.38; }
 }
