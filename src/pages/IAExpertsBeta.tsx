@@ -407,7 +407,7 @@ const IAExpertsBeta = () => {
               <span className="rounded bg-yellow-300 px-2 py-1 text-xs font-bold text-gray-900">Turma piloto</span>
             </div>
 
-            <button disabled className="mt-6 h-12 w-full rounded-full bg-[#e12d2e] text-sm font-bold text-white disabled:opacity-70">Quero entrar na turma piloto</button>
+            <button disabled className="mt-6 h-12 w-full cursor-not-allowed rounded-full bg-[#e12d2e] text-sm font-bold text-white">Quero entrar na turma piloto</button>
             <p className="mt-3 text-center text-xs text-gray-500">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
 
             <div className="mt-5 flex items-start gap-3 border-t border-gray-200 pt-5">
