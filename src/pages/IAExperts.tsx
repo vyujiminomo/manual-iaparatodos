@@ -272,7 +272,7 @@ const IAExperts = () => {
 
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="IA Experts Mentorias" description="Receba mentorias coletivas quinzenais de IA.">Tenha <em className="text-primary">mentorias coletivas</em></SectionTitle>
+            <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Mentorias</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Tenha </span><em className="font-editorial font-normal text-primary">mentorias coletivas</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">Receba mentorias coletivas quinzenais de IA.</p></div>
             <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
               <article className="relative min-h-[460px] overflow-hidden rounded-md">
                 <img src={classroomImage} alt="Mentoria coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
