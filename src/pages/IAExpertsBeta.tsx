@@ -263,10 +263,8 @@ const IAExpertsBeta = () => {
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
                  <span>Receba um&nbsp;</span>
                  <em className="font-editorial font-normal text-primary">Especialista de IA</em>
-                 <span>{` 
-Particular para 
-'Pegar na Sua Mão'
-`}</span>
+                  <span>{`  Particular para
+ 'Pegar na Sua Mão'`}</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
                  <span>Tire suas dúvidas específicas e&nbsp;</span>
