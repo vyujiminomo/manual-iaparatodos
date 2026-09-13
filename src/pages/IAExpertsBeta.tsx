@@ -30,7 +30,7 @@ import depoimentoOsvaldo from "@/assets/iaexperts-osvaldo.png";
 import depoimentoMax from "@/assets/iaexperts-max.png";
 import depoimentoKarina from "@/assets/iaexperts-karina.png";
 import depoimentoCarlos from "@/assets/iaexperts-carlos.png";
-import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json";
+import mapasMentaisComposto from "@/assets/mapa-mental-1.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import whatsappChatImage from "@/assets/iaexperts-beta-whatsapp.png";
