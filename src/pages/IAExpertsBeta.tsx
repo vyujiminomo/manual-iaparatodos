@@ -356,26 +356,64 @@ const IAExpertsBeta = () => {
       </section>
 
       <section id="oferta" className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
-        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div>
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center md:mb-14">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">OFERTA</span>
             <h2 className="mt-5 font-editorial text-5xl leading-none md:text-7xl">Garanta seu <em className="text-primary">Especialista de IA Particular</em></h2>
-            <p className="mt-6 max-w-xl text-lg text-muted-foreground">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
-            <div className="mt-7 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-primary">IA Experts Beta · Turma piloto</span>
-              <span className="text-xs font-bold text-primary">|</span>
-              <span className="text-xs font-bold text-primary">75% OFF*</span>
-            </div>
-            <div className="mt-8 flex items-start gap-3 border-t border-border pt-6"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Participe do MVP:</strong> entre na turma piloto, ajude a evoluir a experiência e tenha acompanhamento próximo desde o início.</p></div>
+            <p className="mt-6 mx-auto max-w-xl text-lg text-muted-foreground">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
           </div>
-          <div className="rounded-md border border-primary/35 bg-background p-7 md:p-9">
-            <p className="font-editorial text-6xl text-primary">R$727</p>
-            <p className="mt-1 text-sm text-muted-foreground">valor total pelos 3 meses</p>
-            <ul className="mt-7 space-y-3 text-sm text-muted-foreground">
-              {["Acesso Completo a Todos os Cursos", "Especialista de IA Particular", "Mentorias Coletivas", "Cursos e Certificações"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}
-            </ul>
-            <Button disabled className="mt-8 h-14 w-full rounded-full font-bold disabled:opacity-70">Quero entrar na turma piloto</Button>
-            <p className="mt-3 text-center text-xs text-muted-foreground">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.82fr] lg:items-start">
+            {/* Coluna esquerda — ancoragem de valor */}
+            <div className="rounded-md border border-border bg-background p-7 md:p-9">
+              <p className="text-sm font-bold text-foreground">Valor de cada um dos produtos incluídos nesta oferta:</p>
+              <ul className="mt-6 divide-y divide-border">
+                {[
+                  { label: "Especialista de IA Particular (3 meses)", price: "R$ 600" },
+                  { label: "Mentorias Coletivas quinzenais", price: "R$ 300" },
+                  { label: "Acesso a Todos os Cursos", price: "R$ 197" },
+                  { label: "Certificações inclusas", price: "R$ 97" },
+                  { label: "Mapas Mentais e Resumos", price: "R$ 67" },
+                  { label: "Workbook IA Experts", price: "R$ 47" },
+                  { label: "Biblioteca de Prompts exclusiva", price: "R$ 87" },
+                  { label: "Grupo no WhatsApp e networking", price: "R$ 47" },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-center justify-between py-3.5">
+                    <span className="text-sm text-muted-foreground md:text-base">{item.label}</span>
+                    <span className="text-sm font-semibold text-red-500 line-through md:text-base">{item.price}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 flex items-center justify-between border-t-2 border-border pt-6">
+                <span className="text-base font-bold text-foreground">VALOR TOTAL:</span>
+                <span className="text-2xl font-bold text-red-500 line-through">R$ 1.442</span>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">Mas adquirindo hoje o <strong className="text-foreground">IA Experts Beta</strong>, você não vai pagar nem perto disso…</p>
+            </div>
+
+            {/* Coluna direita — card de oferta */}
+            <div className="rounded-md border-2 border-primary bg-background p-7 md:p-9">
+              <div className="text-center">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground">DE</p>
+                <p className="mt-1 font-editorial text-3xl text-red-500 line-through md:text-4xl">R$ 1.442</p>
+              </div>
+              <div className="my-5 h-px bg-border" />
+              <div className="text-center">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-primary">POR</p>
+                <p className="mt-2 font-editorial text-6xl leading-none text-primary md:text-7xl">R$727</p>
+                <p className="mt-2 text-sm text-muted-foreground">valor total pelos 3 meses · ou 3x de R$ 242</p>
+              </div>
+              <div className="mt-7 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-primary">IA Experts Beta · Turma piloto</span>
+                <span className="text-xs font-bold text-primary">|</span>
+                <span className="text-xs font-bold text-primary">75% OFF*</span>
+              </div>
+              <ul className="mt-7 space-y-3 text-sm text-muted-foreground">
+                {["Acesso Completo a Todos os Cursos", "Especialista de IA Particular", "Mentorias Coletivas", "Cursos e Certificações", "Todos os Bônus inclusos"].map((item) => <li key={item} className="flex gap-3"><Check className="h-5 w-5 shrink-0 text-primary" />{item}</li>)}
+              </ul>
+              <Button disabled className="mt-8 h-14 w-full rounded-full font-bold disabled:opacity-70">Quero entrar na turma piloto</Button>
+              <p className="mt-3 text-center text-xs text-muted-foreground">Abertura limitada aos primeiros participantes do IA Experts Beta.</p>
+              <div className="mt-5 flex items-start gap-3 border-t border-border pt-5"><Clock3 className="mt-1 h-5 w-5 shrink-0 text-primary" /><p className="text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Participe do MVP:</strong> entre na turma piloto, ajude a evoluir a experiência e tenha acompanhamento próximo desde o início.</p></div>
+            </div>
           </div>
         </div>
       </section>
