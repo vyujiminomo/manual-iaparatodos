@@ -30,7 +30,7 @@ import depoimentoOsvaldo from "@/assets/iaexperts-osvaldo.png";
 import depoimentoMax from "@/assets/iaexperts-max.png";
 import depoimentoKarina from "@/assets/iaexperts-karina.png";
 import depoimentoCarlos from "@/assets/iaexperts-carlos.png";
-import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json";
+import mapasMentaisComposto from "@/assets/mapa-mental-1.png";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
 import whatsappChatImage from "@/assets/iaexperts-beta-whatsapp.png";
@@ -367,7 +367,7 @@ const IAExpertsBeta = () => {
             {[
               { img: webinarWhatsapp, title: "Grupo no WhatsApp" },
               { img: webinarManual, title: "Workbook" },
-              { img: mapasMentaisComposto.url, title: "Apostilas, Resumos e Mapas Mentais", fit: "contain" as const },
+              { img: mapasMentaisComposto, title: "Apostilas, Resumos e Mapas Mentais", fit: "contain" as const },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts" },
             ].map((b, i) => (
               <div key={i} className="group relative flex aspect-square flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] backdrop-blur-sm">
