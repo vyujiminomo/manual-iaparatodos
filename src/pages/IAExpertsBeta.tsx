@@ -219,9 +219,9 @@ const IAExpertsBeta = () => {
               <p className="mt-5 text-xl leading-relaxed text-foreground md:text-2xl">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
             </article>
           </div>
-          </div>
         </div>
       </section>
+
 
       <div id="solucoes">
         <section className="relative border-b border-border px-5 py-24 md:px-8 md:py-32 [background-image:var(--ia-section-glow)]">
