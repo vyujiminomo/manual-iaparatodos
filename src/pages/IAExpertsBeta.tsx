@@ -204,9 +204,9 @@ const IAExpertsBeta = () => {
         <div className="pointer-events-none absolute inset-0 opacity-[0.07] [background-image:radial-gradient(circle_at_30%_20%,#e12d2e_0,transparent_45%),radial-gradient(circle_at_75%_80%,#e12d2e_0,transparent_40%)]" />
         <div className="relative z-10 mx-auto max-w-7xl">
           <p className="text-center text-sm font-bold uppercase tracking-widest text-[#e12d2e]">O problema</p>
-          <h2 className="mx-auto mt-4 max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
-            Que <span className="text-[#e12d2e]">problema</span> queremos resolver?
-          </h2>
+           <h2 className="mx-auto mt-4 max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
+             Aprender IA sozinho não funciona.
+           </h2>
 
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-center">
             <p className="font-editorial text-3xl font-normal leading-tight md:text-5xl">
@@ -219,7 +219,7 @@ const IAExpertsBeta = () => {
               Quando você tiver uma dúvida/demanda particular, <span className="font-semibold text-white">quem vai te ajudar?</span>
             </p>
             <p className="mx-auto max-w-3xl text-2xl font-semibold leading-snug md:text-3xl">
-              Ninguém aprende IA sozinho. <span className="text-[#e12d2e]">Precisa de uma equipe do lado.</span>
+               Ninguém aprende IA sozinho. <span className="text-[#e12d2e]">{"\nPrecisa de uma equipe do lado."}</span>
             </p>
           </div>
         </div>
