@@ -116,31 +116,31 @@ All colors MUST be HSL.
   }
 }
 
-/* ===== IA Experts Beta — identidade clara do MVP ===== */
+/* ===== IA Experts Beta — MVP dark, azul-marinho (estilo Adapta Labs) ===== */
 @layer base {
   .iaexperts-beta {
-    --background: 48 24% 97%;
-    --foreground: 218 53% 20%;
-    --card: 0 0% 100%;
-    --card-foreground: 218 53% 20%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 53% 20%;
-    --primary: 218 53% 20%;
+    --background: 222 47% 5%;
+    --foreground: 0 0% 98%;
+    --card: 222 40% 9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 40% 9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 92% 56%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 216 28% 92%;
-    --secondary-foreground: 218 53% 20%;
-    --muted: 216 24% 94%;
-    --muted-foreground: 216 15% 40%;
-    --accent: 174 73% 32%;
+    --secondary: 220 30% 14%;
+    --secondary-foreground: 0 0% 92%;
+    --muted: 220 26% 13%;
+    --muted-foreground: 218 20% 70%;
+    --accent: 210 92% 56%;
     --accent-foreground: 0 0% 100%;
-    --border: 216 20% 86%;
-    --input: 216 20% 86%;
-    --ring: 218 53% 20%;
+    --border: 220 24% 18%;
+    --input: 220 24% 18%;
+    --ring: 210 92% 56%;
     --radius: 0.5rem;
-    --ia-beta-shadow: 0 10px 28px -14px hsl(218 53% 20% / 0.28);
-    --ia-beta-shadow-soft: 0 6px 18px -10px hsl(218 53% 20% / 0.22);
-    --ia-hero-glow: radial-gradient(ellipse at center, hsl(218 53% 20% / 0.12) 0%, hsl(218 53% 20% / 0.04) 38%, transparent 70%);
-    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(218 53% 20% / 0.06), transparent 38%);
+    --ia-beta-shadow: 0 10px 28px -14px hsl(0 0% 0% / 0.55);
+    --ia-beta-shadow-soft: 0 6px 18px -10px hsl(0 0% 0% / 0.5);
+    --ia-hero-glow: radial-gradient(ellipse at center, hsl(210 92% 56% / 0.35) 0%, hsl(210 92% 56% / 0.12) 38%, transparent 70%);
+    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(210 92% 56% / 0.14), transparent 38%);
     font-family: Inter, system-ui, sans-serif;
   }
 
@@ -175,10 +175,10 @@ All colors MUST be HSL.
     align-items: center;
     min-height: 20px;
     padding: 2px 7px;
-    border: 1px solid hsl(var(--primary) / 0.18);
+    border: 1px solid hsl(var(--primary) / 0.45);
     border-radius: 999px;
     color: hsl(var(--primary));
-    background: hsl(var(--secondary));
+    background: hsl(var(--primary) / 0.12);
     font-size: 9px;
     font-weight: 800;
     line-height: 1;
@@ -207,12 +207,12 @@ All colors MUST be HSL.
   }
 
   .iaexperts-beta .ia-hero-cta {
-    color: hsl(var(--primary));
-    background: hsl(var(--card));
+    color: hsl(222 47% 8%);
+    background: hsl(0 0% 100%);
     box-shadow: var(--ia-beta-shadow);
   }
 
-  .iaexperts-beta .ia-hero-cta:hover { background: hsl(var(--secondary)); }
+  .iaexperts-beta .ia-hero-cta:hover { background: hsl(210 40% 92%); }
 
   .iaexperts-beta .ia-hero-cta > span {
     color: hsl(var(--primary-foreground));
@@ -463,26 +463,26 @@ All colors MUST be HSL.
 /* Beta overrides stay last so the original IA Experts theme cannot override them. */
 @layer base {
   .iaexperts.iaexperts-beta {
-    --background: 48 24% 97%;
-    --foreground: 218 53% 20%;
-    --card: 0 0% 100%;
-    --card-foreground: 218 53% 20%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 53% 20%;
-    --primary: 218 53% 20%;
+    --background: 222 47% 5%;
+    --foreground: 0 0% 98%;
+    --card: 222 40% 9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 40% 9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 92% 56%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 216 28% 92%;
-    --secondary-foreground: 218 53% 20%;
-    --muted: 216 24% 94%;
-    --muted-foreground: 216 15% 40%;
-    --accent: 174 73% 32%;
+    --secondary: 220 30% 14%;
+    --secondary-foreground: 0 0% 92%;
+    --muted: 220 26% 13%;
+    --muted-foreground: 218 20% 70%;
+    --accent: 210 92% 56%;
     --accent-foreground: 0 0% 100%;
-    --border: 216 20% 86%;
-    --input: 216 20% 86%;
-    --ring: 218 53% 20%;
+    --border: 220 24% 18%;
+    --input: 220 24% 18%;
+    --ring: 210 92% 56%;
     --radius: 0.5rem;
-    --ia-hero-glow: radial-gradient(ellipse at center, hsl(218 53% 20% / 0.12) 0%, hsl(218 53% 20% / 0.04) 38%, transparent 70%);
-    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(218 53% 20% / 0.06), transparent 38%);
+    --ia-hero-glow: radial-gradient(ellipse at center, hsl(210 92% 56% / 0.35) 0%, hsl(210 92% 56% / 0.12) 38%, transparent 70%);
+    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(210 92% 56% / 0.14), transparent 38%);
     font-family: Inter, system-ui, sans-serif;
   }
 
@@ -517,10 +517,10 @@ All colors MUST be HSL.
 
   .iaexperts-beta .ia-title-mark span { transform: none; }
   .iaexperts-beta .ia-hero { background: hsl(var(--background)); }
-  .iaexperts-beta .ia-hero-cta { color: hsl(var(--primary)); background: hsl(var(--card)); box-shadow: var(--ia-beta-shadow); }
-  .iaexperts-beta .ia-hero-cta:hover { background: hsl(var(--secondary)); }
+  .iaexperts-beta .ia-hero-cta { color: hsl(222 47% 8%); background: hsl(0 0% 100%); box-shadow: var(--ia-beta-shadow); }
+  .iaexperts-beta .ia-hero-cta:hover { background: hsl(210 40% 92%); }
   .iaexperts-beta .ia-hero-cta > span { color: hsl(var(--primary-foreground)); background: hsl(var(--primary)); }
   .iaexperts-beta .ia-stage::before { border-bottom-color: hsl(var(--primary) / 0.2); box-shadow: none; }
   .iaexperts-beta .ia-stage-card { border-radius: 8px; }
-  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%); opacity: 0.38; }
+  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%) invert(1); opacity: 0.45; }
 }
