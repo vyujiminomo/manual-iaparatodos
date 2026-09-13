@@ -272,17 +272,17 @@ const IAExperts = () => {
 
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="02 · Mentoria coletiva" description="Duas aulas por mês para avançar junto, trocar experiências e acompanhar o que há de novo.">Aprenda com especialistas. Evolua com a <em className="text-primary">turma.</em></SectionTitle>
-            <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-              <article className="relative min-h-[460px] overflow-hidden rounded-md">
-                <img src={classroomImage} alt="Aula coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-7"><div className="flex items-center gap-3 text-primary"><Users className="h-7 w-7" /><span className="font-semibold">2 aulas por mês</span></div><p className="mt-3 max-w-lg text-muted-foreground">Encontros ao vivo, grupo no WhatsApp e acesso às gravações para rever quando quiser.</p></div>
-              </article>
+            <SectionTitle eyebrow="IA Experts Mentorias" description="Receba mentorias coletivas quinzenais de IA.">Tenha <em className="text-primary">mentorias coletivas</em></SectionTitle>
+            <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="border-y border-border px-1 md:px-6">
                 <div className="flex items-center justify-between border-b border-border py-5"><div><p className="text-xs font-bold uppercase text-primary">Calendário de aulas</p><h3 className="mt-2 font-editorial text-3xl">Próximos temas</h3></div><CalendarDays className="h-8 w-8 text-primary" /></div>
-                <div className="divide-y divide-border">{["IA para Gestão", "IA para Estudos", "IA para Slides", "IA para Vibe Coding", "IA para Marketing"].map((title, index) => <div key={title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5"><span className="font-editorial text-2xl text-primary">0{index + 1}</span><p className="font-semibold">{title}</p><span className="text-xs text-muted-foreground">Em breve</span></div>)}</div>
+                <div className="divide-y divide-border">{["IA para Gestão", "IA para Marketing", "IA para Estudos", "Claude Code e VibeCoding"].map((title, index) => <div key={title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5"><span className="font-editorial text-2xl text-primary">0{index + 1}</span><p className="font-semibold">{title}</p><span className="text-xs text-muted-foreground">Em breve</span></div>)}</div>
               </div>
+              <article className="relative min-h-[460px] overflow-hidden rounded-md">
+                <img src={classroomImage} alt="Mentoria coletiva da IA Experts" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-7"><div className="flex items-center gap-3 text-primary"><Users className="h-7 w-7" /><span className="font-semibold">Mentorias quinzenais</span></div><p className="mt-3 max-w-lg text-muted-foreground">Encontros ao vivo, grupo no WhatsApp e acesso às gravações para rever quando quiser.</p></div>
+              </article>
             </div>
           </div>
         </section>
