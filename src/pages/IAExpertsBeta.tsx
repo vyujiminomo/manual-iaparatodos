@@ -225,6 +225,35 @@ const IAExpertsBeta = () => {
       <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
           <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
+            Tenha a ajuda de <em className="text-primary">3 experts de IA</em> para implementar IA no seu trabalho com você para ter resultados
+          </h2>
+          <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
+            {experts.map((expert) => (
+              <article key={expert.name} className="group overflow-hidden rounded-2xl border border-border bg-card">
+                <figure className="relative aspect-[4/3] overflow-hidden bg-muted">
+                  <div className="absolute inset-0 grid place-items-center bg-muted">
+                    <div className="text-center">
+                      <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border border-primary/40 bg-background/40">
+                        <UserRound className="h-10 w-10 text-primary" />
+                      </div>
+                      <p className="mt-4 text-xs font-semibold uppercase text-muted-foreground">Foto de {expert.name}</p>
+                    </div>
+                  </div>
+                </figure>
+                <div className="p-7 md:p-8">
+                  <p className="text-[10px] font-semibold uppercase text-primary">{expert.role}</p>
+                  <h3 className="mt-2 text-2xl font-semibold leading-tight md:text-3xl">{expert.name}</h3>
+                  <p className="mt-4 text-lg leading-relaxed text-muted-foreground md:text-xl">{expert.copy}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
             O que <em className="text-primary">oferecemos</em>
           </h2>
           <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
