@@ -251,42 +251,6 @@ const IAExpertsBeta = () => {
         </div>
       </section>
 
-      <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
-            O que <em className="text-primary">oferecemos</em>
-          </h2>
-          <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
-            <article className="group overflow-hidden rounded-2xl border border-border bg-card">
-              <figure className="relative aspect-[4/3] overflow-hidden bg-muted">
-                <img src={sessionImage} alt="Especialista de IA particular" loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              </figure>
-              <div className="p-7 md:p-8">
-                <h3 className="text-2xl font-semibold leading-tight md:text-3xl">Especialista de IA particular</h3>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground md:text-xl">Um especialista dedicado a você, com aulas mensais e contato direto para tirar dúvidas das suas demandas.</p>
-              </div>
-            </article>
-            <article className="group overflow-hidden rounded-2xl border border-border bg-card">
-              <figure className="relative aspect-[4/3] overflow-hidden bg-muted">
-                <img src={classroomImage} alt="Mentorias coletivas" loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              </figure>
-              <div className="p-7 md:p-8">
-                <h3 className="text-2xl font-semibold leading-tight md:text-3xl">Mentorias Coletivas</h3>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground md:text-xl">Mentorias quinzenais em grupo, com temas de IA para gestão, marketing, estudos e mais para te manter engajado.</p>
-              </div>
-            </article>
-            <article className="group overflow-hidden rounded-2xl border border-border bg-card">
-              <figure className="relative aspect-[4/3] overflow-hidden bg-muted">
-                <img src={webinarManual} alt="Cursos de IA" loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              </figure>
-              <div className="p-7 md:p-8">
-                <h3 className="text-2xl font-semibold leading-tight md:text-3xl">Cursos</h3>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground md:text-xl">Cursos gravados para sua área, com certificações inclusas e conteúdos práticos para aplicar no seu trabalho.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
 
       <div id="solucoes">
         <section className="relative border-b border-border px-5 py-24 md:px-8 md:py-32 [background-image:var(--ia-section-glow)]">
