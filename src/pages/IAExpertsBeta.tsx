@@ -204,11 +204,11 @@ const IAExpertsBeta = () => {
         <div className="pointer-events-none absolute inset-0 opacity-[0.07] [background-image:radial-gradient(circle_at_30%_20%,#e12d2e_0,transparent_45%),radial-gradient(circle_at_75%_80%,#e12d2e_0,transparent_40%)]" />
         <div className="relative z-10 mx-auto max-w-7xl">
           <p className="text-center text-sm font-bold uppercase tracking-widest text-[#e12d2e]">O problema</p>
-           <h2 className="mx-auto mt-4 max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
-             Aprender IA sozinho não funciona.
-           </h2>
+            <h2 className="mx-auto mt-4 max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
+              Aprender IA sozinho <span className="text-[#e12d2e]">não funciona.</span>
+            </h2>
 
-          <div className="mx-auto mt-12 max-w-4xl space-y-6 text-center">
+          <div className="mx-auto mt-6 max-w-4xl space-y-6 text-center">
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl">
               Curso gravado e ferramenta gera um aprendizado passivo.
             </p>
