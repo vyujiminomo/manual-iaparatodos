@@ -206,15 +206,19 @@ const IAExpertsBeta = () => {
             <h2 className="max-w-2xl font-editorial text-5xl font-normal leading-[0.98] md:text-7xl">
               Que <em className="text-primary">problema</em><br />queremos resolver?
             </h2>
-            <div className="max-w-xl text-lg leading-[1.35] text-foreground md:text-[1.35rem]">
-              <p>Os produtos de IA do mercado te entregam ferramentas e cursos gravados.</p>
-              <p className="mt-7">Mas todo dia surgem novas ferramentas, técnicas e demandas do seu trabalho.</p>
-               <p className="mt-7 font-semibold">Quem vai te ajudar com suas demandas particulares?<br />Quem vai te atualizar constantemente?</p>
-              <div className="mt-9 border-y border-border py-6">
-                <p className="text-xs font-bold uppercase text-primary">Estudo Bloom</p>
-                 <p className="mt-3 font-editorial text-3xl leading-tight">Aprender com um tutor particular é <em className="text-primary">3x mais eficaz.</em></p>
-              </div>
-              <p className="mt-8 font-semibold">Por isso, queremos te entregar uma equipe de especialistas de IA.</p>
+            <div className="flex flex-col gap-5">
+              <article className="rounded-2xl border border-border bg-card p-7">
+                <p className="text-xs font-bold uppercase text-primary">01 · Demandas individuais</p>
+                <p className="mt-4 text-lg leading-relaxed text-foreground">No seu trabalho, você tem demandas particulares, e gostaria de implementar IA nelas de forma individualizada. Você precisa de um mentor particular que conheça você.</p>
+              </article>
+              <article className="rounded-2xl border border-border bg-card p-7">
+                <p className="text-xs font-bold uppercase text-primary">02 · Cursos solitários</p>
+                <p className="mt-4 text-lg leading-relaxed text-foreground">Cursos gravados são solitários. Um grupo te mantém engajado e é mais divertido. Você precisa de uma comunidade e aulas coletivas.</p>
+              </article>
+              <article className="rounded-2xl border border-border bg-card p-7">
+                <p className="text-xs font-bold uppercase text-primary">03 · Cursos genéricos</p>
+                <p className="mt-4 text-lg leading-relaxed text-foreground">Muitos cursos são genéricos, sem especificidade para sua área. Você precisa de cursos para sua área.</p>
+              </article>
             </div>
           </div>
         </div>
