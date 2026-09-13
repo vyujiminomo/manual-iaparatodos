@@ -90,6 +90,12 @@ const courseCards = [
   { label: "Masterclass", title: "IA para Estudos", description: "Resuma, revise e aprenda qualquer assunto com mais velocidade.", icon: GraduationCap, image: sessionImage },
 ];
 
+const experts = [
+  { initials: "VY", name: "Vitor Yuji", role: "Expert principal", copy: "Palestrante de IA, jovem aprendiz da Adapta.org e professor de mais de 50 alunos." },
+  { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
+  { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Especialista em tecnologia, construção de soluções e novas ferramentas." },
+];
+
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
   <div className="mb-12 md:mb-16">
     <span className="text-xs font-medium uppercase text-primary">{eyebrow}</span>
@@ -100,7 +106,9 @@ const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; chi
 
 const IAExperts = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
+  const [expertIndex, setExpertIndex] = useState(0);
   const visibleTestimonials = [0, 1, 2].map((offset) => testimonials[(testimonialIndex + offset) % testimonials.length]);
+  const activeExpert = experts[expertIndex];
 
   useDynamicMeta({
     title: "IA Experts | Seu mentor particular de IA",
@@ -212,25 +220,34 @@ const IAExperts = () => {
                 </figcaption>
               </figure>
 
-              <div className="border-t border-border">
-                {[
-                  { initials: "VY", name: "Vitor Yuji", role: "Expert principal", copy: "Palestrante de IA, jovem aprendiz da Adapta.org e professor de mais de 50 alunos.", image: "/lovable-uploads/vitor-yuji-summit.jpg" },
-                  { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
-                  { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Especialista em tecnologia, construção de soluções e novas ferramentas." },
-                ].map((expert) => (
-                  <article key={expert.name} className="grid grid-cols-[72px_1fr] gap-5 border-b border-border py-7 md:grid-cols-[88px_1fr]">
-                    <div className="relative grid aspect-square place-items-center overflow-hidden rounded-full bg-muted">
-                      {expert.image ? <img src={expert.image} alt={expert.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top" /> : <span className="font-editorial text-3xl text-primary">{expert.initials}</span>}
-                    </div>
-                    <div className="flex flex-col justify-center">
-                      <div className="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 className="text-xl font-semibold md:text-2xl">{expert.name}</h3>
-                        <p className="text-[10px] font-semibold uppercase text-primary">{expert.role}</p>
+              <div className="mx-auto w-full max-w-[540px]">
+                <article className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
+                  <div className="absolute inset-0 grid place-items-center bg-muted">
+                    <div className="text-center">
+                      <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border border-primary/40 bg-background/40">
+                        <UserRound className="h-10 w-10 text-primary" />
                       </div>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p>
+                      <p className="mt-4 text-xs font-semibold uppercase text-muted-foreground">Foto de {activeExpert.name}</p>
                     </div>
-                  </article>
-                ))}
+                  </div>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/95 to-transparent px-6 pb-6 pt-24 md:px-8 md:pb-8">
+                    <p className="text-[10px] font-semibold uppercase text-primary">{activeExpert.role}</p>
+                    <h3 className="mt-2 font-editorial text-4xl leading-none md:text-5xl">{activeExpert.name}</h3>
+                    <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">{activeExpert.copy}</p>
+                  </div>
+                </article>
+
+                <div className="mt-5 flex items-center justify-between">
+                  <p className="text-xs font-semibold text-muted-foreground">{String(expertIndex + 1).padStart(2, "0")} / {String(experts.length).padStart(2, "0")}</p>
+                  <div className="flex gap-2">
+                    <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => setExpertIndex((current) => (current - 1 + experts.length) % experts.length)} aria-label="Especialista anterior">
+                      <ChevronLeft className="h-5 w-5" />
+                    </Button>
+                    <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => setExpertIndex((current) => (current + 1) % experts.length)} aria-label="Próximo especialista">
+                      <ChevronRight className="h-5 w-5" />
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
 

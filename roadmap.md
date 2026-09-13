@@ -11,3 +11,4 @@
 - [x] Refazer a seção do problema no padrão editorial da referência
 - [x] Criar a solução de especialista particular com aula e equipe
 - [x] Redesenhar a solução em composição editorial leve com Instrument Serif e Work Sans
+- [x] Transformar os especialistas em cards quadrados, exibidos um por vez com navegação
