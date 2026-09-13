@@ -359,7 +359,7 @@ const IAExpertsBeta = () => {
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 text-center md:mb-10">
             <span className="inline-block rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">Lote piloto disponível</span>
-            <h2 className="mt-5 text-2xl font-bold leading-tight text-white md:text-3xl">Garanta seu Especialista de IA Particular</h2>
+            <h2 className="mt-5 text-2xl font-bold leading-tight text-white md:text-3xl">Participe do BETA da IA Experts</h2>
             <p className="mt-3 text-sm text-gray-400">A primeira "Escola de IA" do Brasil a te entregar um especialista de IA particular.</p>
           </div>
 
