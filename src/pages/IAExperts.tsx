@@ -85,8 +85,8 @@ const brands = [
 
 const courseCards = [
   { label: "Curso completo", title: "Dominando IA Generativa", description: "Fundamentos, bons prompts e aplicação prática no trabalho.", icon: Sparkles, image: "/lovable-uploads/vitor-yuji-palestra-1.png" },
-  { label: "Masterclass", title: "IA para Vendas", description: "Planeje, prospecte e analise conversas comerciais com IA.", icon: TrendingUp, image: "/lovable-uploads/vitor-yuji-palestra-2.png" },
   { label: "Masterclass", title: "IA para Slides", description: "Crie apresentações claras e profissionais em poucos minutos.", icon: Presentation, image: classroomImage },
+  { label: "Masterclass", title: "IA para Vendas", description: "Planeje, prospecte e analise conversas comerciais com IA.", icon: TrendingUp, image: "/lovable-uploads/vitor-yuji-palestra-2.png" },
   { label: "Masterclass", title: "IA para Estudos", description: "Resuma, revise e aprenda qualquer assunto com mais velocidade.", icon: GraduationCap, image: sessionImage },
 ];
 
