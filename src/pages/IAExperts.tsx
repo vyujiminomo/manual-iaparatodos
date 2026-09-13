@@ -208,12 +208,18 @@ const IAExperts = () => {
                 <span className="text-[10px] font-semibold uppercase text-muted-foreground">01 · Especialista particular</span>
               </div>
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
-                Tenha um <em className="font-editorial font-normal text-primary">especialista de IA</em> particular
+                <span>Tenha um </span>
+                <em className="font-editorial font-normal text-primary">especialista de IA</em>
+                <span> particular</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                 Nós te entregamos um Especialista de IA particular para você ter&nbsp;<br />
-                 <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+                <span>Nós te entregamos um Especialista de IA particular para você ter&nbsp;</span>
+                <br />
+                <strong className="font-semibold text-foreground">aulas mensais</strong>
+                <span> e </span>
+                <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
               </p>
+
             </div>
 
             <div className="mt-16 grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-16">
