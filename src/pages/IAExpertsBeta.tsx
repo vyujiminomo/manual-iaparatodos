@@ -33,6 +33,7 @@ import depoimentoCarlos from "@/assets/iaexperts-carlos.png";
 import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json";
 import webinarManual from "@/assets/webinar-manual-novo.png";
 import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
+import whatsappChatImage from "@/assets/iaexperts-beta-whatsapp.png";
 import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 import betaAula1 from "@/assets/iaexperts-beta-aula-1.png.asset.json";
 import betaAula2 from "@/assets/iaexperts-beta-aula-2.png.asset.json";
