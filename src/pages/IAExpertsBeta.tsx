@@ -42,6 +42,10 @@ import betaAula3 from "@/assets/iaexperts-beta-aula-3.png.asset.json";
 import betaAula4 from "@/assets/iaexperts-beta-aula-4.png.asset.json";
 import betaAula5 from "@/assets/iaexperts-beta-aula-5.png.asset.json";
 import betaAula6 from "@/assets/iaexperts-beta-aula-6.png.asset.json";
+import cursoDominando from "@/assets/iaexperts-beta-curso-dominando.png.asset.json";
+import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
+import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
+import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
 
 const testimonials = [
   {
@@ -96,10 +100,10 @@ const brands = [
 ];
 
 const courseCards = [
-  { label: "Curso completo", title: "Dominando IA Generativa", description: "Fundamentos, bons prompts e aplicação prática no trabalho.", icon: Sparkles, image: "/lovable-uploads/vitor-yuji-palestra-1.png" },
-  { label: "Masterclass", title: "IA para Slides", description: "Crie apresentações claras e profissionais em poucos minutos.", icon: Presentation, image: classroomImage },
-  { label: "Masterclass", title: "IA para Vendas", description: "Planeje, prospecte e analise conversas comerciais com IA.", icon: TrendingUp, image: "/lovable-uploads/vitor-yuji-palestra-2.png" },
-  { label: "Masterclass", title: "IA para Estudos", description: "Resuma, revise e aprenda qualquer assunto com mais velocidade.", icon: GraduationCap, image: sessionImage },
+  { title: "Dominando IA Generativa", image: cursoDominando.url },
+  { title: "IA para Slides", image: cursoSlides.url },
+  { title: "IA para Vendas", image: cursoVendas.url },
+  { title: "IA para Estudos", image: cursoEstudos.url },
 ];
 
 const experts = [
@@ -343,7 +347,7 @@ const IAExpertsBeta = () => {
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Cursos</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Conheça </span><em className="font-editorial font-normal text-primary">Nossos Cursos</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">*Certificações inclusas</p></div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 text-3xl font-bold leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
+              {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></article>)}
             </div>
           </div>
         </section>
