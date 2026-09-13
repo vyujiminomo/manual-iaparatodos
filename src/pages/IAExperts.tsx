@@ -30,6 +30,10 @@ import depoimentoOsvaldo from "@/assets/iaexperts-osvaldo.png";
 import depoimentoMax from "@/assets/iaexperts-max.png";
 import depoimentoKarina from "@/assets/iaexperts-karina.png";
 import depoimentoCarlos from "@/assets/iaexperts-carlos.png";
+import mapasMentaisComposto from "@/assets/mapas-mentais-composto.jpg.asset.json";
+import webinarManual from "@/assets/webinar-manual-novo.png";
+import webinarWhatsapp from "@/assets/webinar-whatsapp.png";
+import webinarBiblioteca from "@/assets/webinar-biblioteca-prompts.png";
 
 const testimonials = [
   {
@@ -296,6 +300,47 @@ const IAExperts = () => {
           </div>
         </section>
       </div>
+
+      <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center md:mb-16">
+            <div className="mb-5 inline-block rounded-full border border-primary/40 px-4 py-1.5">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Presentes Especiais</span>
+            </div>
+            <h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl">
+              <span>Além disso, tenha acesso a </span>
+              <em className="font-editorial font-normal text-primary">Bônus Especiais</em>
+            </h2>
+          </div>
+          <div className="space-y-6 md:space-y-8">
+            {[
+              { img: mapasMentaisComposto.url, title: "Mapas Mentais e Resumos das Aulas", desc: "Mapas mentais visuais e resumos das aulas para você estudar, revisar e fixar os principais aprendizados de forma prática.", fit: "contain" as const },
+              { img: webinarManual, title: "Workbook IA Experts", desc: "Seu \"guia de bolso\" de IA — um material que te acompanha durante e depois das aulas para garantir que você extraia o máximo valor." },
+              { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Faça networking com outros profissionais e seja atualizado constantemente sobre as novidades de IA." },
+              { img: webinarBiblioteca, title: "Biblioteca de Prompts", desc: "Tenha acesso a prompts exclusivos da IA Experts, prontos e testados para você aplicar no seu trabalho." },
+            ].map((b, i) => {
+              const reverse = i % 2 === 1;
+              return (
+                <div key={i} className={`grid gap-5 md:grid-cols-5 md:gap-7 ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}>
+                  <div className="flex flex-col justify-center rounded-md border border-border bg-background p-7 md:col-span-2 md:p-8">
+                    <div className="mb-4 flex items-center gap-3">
+                      <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1">
+                        <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                        <span className="text-xs font-bold uppercase tracking-wider text-primary">Bônus {i + 1}</span>
+                      </span>
+                    </div>
+                    <h3 className="mb-3 text-2xl font-bold leading-tight md:text-[26px]">{b.title}</h3>
+                    <p className="text-[15px] leading-relaxed text-muted-foreground md:text-base">{b.desc}</p>
+                  </div>
+                  <div className={`relative min-h-[260px] overflow-hidden rounded-md border border-border md:col-span-3 md:min-h-[300px] ${b.fit === "contain" ? "bg-[#0f1117]" : ""}`}>
+                    <img src={b.img} alt={b.title} loading="lazy" className={`absolute inset-0 h-full w-full ${b.fit === "contain" ? "object-contain p-6" : "object-cover"}`} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       <section className="px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
