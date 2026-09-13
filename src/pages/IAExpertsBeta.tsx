@@ -262,61 +262,35 @@ const IAExpertsBeta = () => {
                 <span className="text-[10px] font-semibold uppercase text-muted-foreground">01 · Especialista particular</span>
               </div>
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
-                 <span>Receba um&nbsp;</span>
-                 <em className="font-editorial font-normal text-primary">Especialista de IA</em>
-                  <span>{`  Particular para
- 'Pegar na Sua Mão'`}</span>
+                <span>Receba um&nbsp;</span>
+                <em className="font-editorial font-normal text-primary">Especialista de IA</em>
+                <span>&nbsp;Particular para&nbsp;'Pegar na Sua Mão'</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
                 Os nossos experts foram treinados por Vitor Yuji para serem didáticos, te ajudarem com suas demandas específicas te ajudarem mesmo se você tiver dificuldade com tecnologia
               </p>
-
             </div>
 
-            <div className="mt-16 grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-16">
-              <figure className="group relative min-h-[520px] overflow-hidden rounded-[2rem] bg-muted">
-                <img src={sessionImage} alt="Aula particular de inteligência artificial" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
-                <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-4 p-8">
-                  <UserRound className="h-7 w-7 shrink-0 text-primary" />
-                  <div><p className="text-2xl font-semibold">Aula particular mensal</p><p className="mt-1 text-sm text-muted-foreground">Direcionada às suas demandas e ao seu trabalho.</p></div>
-                </figcaption>
-              </figure>
-
-              <div className="mx-auto w-full max-w-[540px]">
-                <article className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
-                  <div className="absolute inset-0 grid place-items-center bg-muted">
-                    <div className="text-center">
-                      <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border border-primary/40 bg-background/40">
-                        <UserRound className="h-10 w-10 text-primary" />
-                      </div>
-                      <p className="mt-4 text-xs font-semibold uppercase text-muted-foreground">Foto de {activeExpert.name}</p>
-                    </div>
-                  </div>
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/95 to-transparent px-6 pb-6 pt-24 md:px-8 md:pb-8">
-                    <p className="text-[10px] font-semibold uppercase text-primary">{activeExpert.role}</p>
-                    <h3 className="mt-2 font-editorial text-4xl leading-none md:text-5xl">{activeExpert.name}</h3>
-                    <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">{activeExpert.copy}</p>
-                  </div>
-                </article>
-
-                <div className="mt-5 flex items-center justify-between">
-                  <p className="text-xs font-semibold text-muted-foreground">{String(expertIndex + 1).padStart(2, "0")} / {String(experts.length).padStart(2, "0")}</p>
-                  <div className="flex gap-2">
-                    <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => setExpertIndex((current) => (current - 1 + experts.length) % experts.length)} aria-label="Especialista anterior">
-                      <ChevronLeft className="h-5 w-5" />
-                    </Button>
-                    <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => setExpertIndex((current) => (current + 1) % experts.length)} aria-label="Próximo especialista">
-                      <ChevronRight className="h-5 w-5" />
-                    </Button>
-                  </div>
+            <div className="mx-auto mt-16 grid max-w-5xl gap-8 md:grid-cols-2">
+              <article className="overflow-hidden rounded-2xl border border-border bg-muted">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img src={sessionImage} alt="Consultoria particular mensal de IA" loading="lazy" className="h-full w-full object-cover" />
                 </div>
-              </div>
-            </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-foreground">Consultoria Particular Mensal</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Para te ajudar com suas demandas específicas</p>
+                </div>
+              </article>
 
-            <div className="mx-auto mt-16 grid max-w-4xl border-t border-border pt-10 text-center sm:grid-cols-2">
-              <div className="px-6 py-4 sm:border-r sm:border-border"><p className="font-editorial text-3xl">Aulas mensais</p><p className="mt-2 text-xs font-semibold uppercase text-muted-foreground">Foco nas suas demandas</p></div>
-              <div className="px-6 py-4"><p className="font-editorial text-3xl">Contato direto</p><p className="mt-2 text-xs font-semibold uppercase text-muted-foreground">Dúvidas quando precisar</p></div>
+              <article className="overflow-hidden rounded-2xl border border-border bg-muted">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img src={whatsappChatImage} alt="Conversa de WhatsApp com especialista de IA" loading="lazy" className="h-full w-full object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-foreground">Contato no WhatsApp</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Para tirar suas dúvidas pontuais quando quiser</p>
+                </div>
+              </article>
             </div>
           </div>
         </section>
