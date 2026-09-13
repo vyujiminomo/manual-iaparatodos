@@ -354,43 +354,31 @@ const IAExpertsBeta = () => {
       </div>
 
       <section className="bg-black px-5 py-20 md:px-8 md:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-14 text-center">
-            <div className="mb-5 inline-block rounded-full border border-white/20 px-4 py-1.5">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80">Presentes Especiais</span>
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center md:mb-16">
+            <div className="mb-5 inline-block rounded-full border border-red-500/40 bg-red-500/10 px-4 py-1.5">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500">Presentes Especiais</span>
             </div>
             <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl">
-              Bônus ao adquirir sua <span className="text-white/90">Vaga</span>
+              Além disso, Receba <span className="text-white">Bônus Especiais</span>
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-base text-gray-400 md:text-lg">
-              Garantindo sua vaga hoje, você leva também estes <span className="font-semibold text-white">bônus exclusivos</span> para acelerar seus resultados.
-            </p>
           </div>
-          <div className="space-y-6 md:space-y-8">
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
             {[
-              { img: webinarWhatsapp, title: "Grupo no WhatsApp", desc: "Faça networking com outros profissionais e seja atualizado constantemente sobre as novidades de IA." },
-              { img: webinarManual, title: "Workbook IA Experts", desc: "Seu \"guia de bolso\" de IA — um material que te acompanha durante e depois das aulas para garantir que você extraia o máximo valor." },
-              { img: mapasMentaisComposto.url, title: "Apostilas, Resumos e Mapas Mentais das Aulas", desc: "Mapas mentais visuais e resumos das aulas para você estudar, revisar e fixar os principais aprendizados de forma prática.", fit: "contain" as const },
-            ].map((b, i) => {
-              const reverse = i % 2 === 1;
-              return (
-                <div key={i} className={`grid gap-5 md:grid-cols-5 md:gap-7 ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}>
-                  <div className="flex flex-col justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-7 md:col-span-2 md:p-8 backdrop-blur-sm">
-                    <div className="mb-4 flex items-center gap-3">
-                      <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/15 px-3 py-1">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-300">Bônus {i + 1}</span>
-                      </span>
-                    </div>
-                    <h3 className="mb-3 text-2xl font-bold leading-tight text-white md:text-[26px]">{b.title}</h3>
-                    <p className="text-[15px] leading-relaxed text-gray-400 md:text-base">{b.desc}</p>
-                  </div>
-                  <div className={`relative min-h-[260px] overflow-hidden rounded-2xl border border-white/10 md:col-span-3 md:min-h-[300px] ${(b as any).fit === "contain" ? "bg-[#0f1117]" : ""}`}>
-                    <img src={b.img} alt={b.title} loading="lazy" className={`absolute inset-0 h-full w-full ${(b as any).fit === "contain" ? "object-contain p-4" : "object-cover"}`} />
-                  </div>
+              { img: webinarWhatsapp, title: "Grupo no WhatsApp" },
+              { img: webinarManual, title: "Workbook" },
+              { img: mapasMentaisComposto.url, title: "Apostilas, Resumos e Mapas Mentais", fit: "contain" as const },
+              { img: webinarBiblioteca, title: "Biblioteca de Prompts" },
+            ].map((b, i) => (
+              <div key={i} className="group relative flex aspect-square flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] backdrop-blur-sm">
+                <div className={`relative flex-1 overflow-hidden ${(b as any).fit === "contain" ? "bg-[#0f1117]" : ""}`}>
+                  <img src={b.img} alt={b.title} loading="lazy" className={`absolute inset-0 h-full w-full ${(b as any).fit === "contain" ? "object-contain p-4" : "object-cover"}`} />
                 </div>
-              );
-            })}
+                <div className="flex items-center justify-center px-3 py-4 md:py-5">
+                  <h3 className="text-center text-sm font-bold leading-tight text-white md:text-base">{b.title}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
