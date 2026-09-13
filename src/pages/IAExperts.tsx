@@ -141,11 +141,16 @@ const IAExperts = () => {
         <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
           <p className="text-sm font-semibold text-primary md:text-base">Parceria Adapta.org · Mais de 50 alunos</p>
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
-             Tenha a ajuda de um&nbsp;<span className="ia-title-mark" aria-label="IA"><span>IA</span></span> de IA
+            <span>Tenha a ajuda de um&nbsp;</span>
+            <span className="ia-title-mark" aria-label="IA"><span>IA</span></span>
+            <span> de IA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
-             Seu trabalho não precisa só de ferramenta, mas sim de resultado.&nbsp;<br className="hidden md:block" /> O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece
+            <span>Seu trabalho não precisa só de ferramenta, mas sim de resultado.&nbsp;</span>
+            <br className="hidden md:block" />
+            <span> O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece</span>
           </p>
+
           <Button onClick={scrollToOffer} size="lg" className="ia-hero-cta mt-7 h-12 rounded-[12px] pl-5 pr-1.5 text-base font-bold transition-transform hover:-translate-y-0.5">
             Quero ter um mentor de IA
             <span className="ml-3 flex h-9 w-9 items-center justify-center rounded-[9px] bg-primary-foreground text-primary"><ArrowRight className="h-4 w-4" /></span>
@@ -203,12 +208,18 @@ const IAExperts = () => {
                 <span className="text-[10px] font-semibold uppercase text-muted-foreground">01 · Especialista particular</span>
               </div>
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
-                Tenha um <em className="font-editorial font-normal text-primary">especialista de IA</em> particular
+                <span>Tenha um </span>
+                <em className="font-editorial font-normal text-primary">especialista de IA</em>
+                <span> particular</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                 Nós te entregamos um Especialista de IA particular para você ter&nbsp;<br />
-                 <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+                <span>Nós te entregamos um Especialista de IA particular para você ter&nbsp;</span>
+                <br />
+                <strong className="font-semibold text-foreground">aulas mensais</strong>
+                <span> e </span>
+                <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
               </p>
+
             </div>
 
             <div className="mt-16 grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-16">
