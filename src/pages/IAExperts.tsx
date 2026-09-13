@@ -114,10 +114,10 @@ const IAExperts = () => {
     <main className="iaexperts min-h-screen overflow-hidden bg-background font-sans text-foreground">
       <header className="ia-hero-nav">
         <div className="mx-auto flex h-[52px] max-w-[1240px] items-center justify-between px-5 md:px-8">
-          <button type="button" onClick={scrollToSolutions} className="flex items-center gap-2.5" aria-label="Ir para o programa IA Experts">
+          <Button type="button" variant="ghost" onClick={scrollToSolutions} className="flex h-auto items-center gap-2.5 p-0 hover:bg-transparent" aria-label="Ir para o programa IA Experts">
             <span className="ia-brand-mark" aria-hidden="true"><span>IA</span></span>
             <span className="text-sm font-semibold">IA <strong className="font-bold">EXPERTS</strong></span>
-          </button>
+          </Button>
           <nav className="flex items-center gap-2" aria-label="Navegação principal">
             <Button onClick={scrollToSolutions} variant="ghost" className="ia-nav-action hidden h-9 gap-2 px-3 text-xs font-medium sm:flex">
               <UserRound className="h-4 w-4" /> Mentoria particular
