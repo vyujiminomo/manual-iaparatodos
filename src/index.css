@@ -576,6 +576,12 @@ All colors MUST be HSL.
     box-shadow: none;
   }
 
+  .iaexperts-beta .ia-problem-card {
+    background: #141417 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: none !important;
+  }
+
   .iaexperts-beta em { font-style: normal; font-weight: 800; color: hsl(var(--primary)); }
 
   .iaexperts-beta .beta-footer-logo {
