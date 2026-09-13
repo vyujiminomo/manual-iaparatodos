@@ -141,10 +141,10 @@ const IAExperts = () => {
         <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
           <p className="text-sm font-semibold text-primary md:text-base">Parceria Adapta.org · Mais de 50 alunos</p>
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
-            Tenha a ajuda de um Expert <span className="ia-title-mark" aria-label="IA"><span>IA</span></span> de IA
+             Tenha a ajuda de um&nbsp;<span className="ia-title-mark" aria-label="IA"><span>IA</span></span> de IA
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
-            Você não precisa só de cursos gravados, mas sim de um <strong className="font-semibold">mentor particular.</strong><br className="hidden md:block" /> O IA Experts te acompanha até você ter <em className="font-semibold text-primary">resultado.</em>
+             Seu trabalho não precisa só de ferramenta, mas sim de resultado.&nbsp;<br className="hidden md:block" /> O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece
           </p>
           <Button onClick={scrollToOffer} size="lg" className="ia-hero-cta mt-7 h-12 rounded-[12px] pl-5 pr-1.5 text-base font-bold transition-transform hover:-translate-y-0.5">
             Quero ter um mentor de IA
@@ -183,7 +183,7 @@ const IAExperts = () => {
             <div className="max-w-xl text-lg leading-[1.35] text-foreground md:text-[1.35rem]">
               <p>Os produtos de IA do mercado te entregam ferramentas e cursos gravados.</p>
               <p className="mt-7">Mas todo dia surgem novas ferramentas, técnicas e demandas do seu trabalho.</p>
-              <p className="mt-7 font-semibold">Quem vai te ajudar com suas demandas particulares? Quem vai te atualizar constantemente?</p>
+               <p className="mt-7 font-semibold">Quem vai te ajudar com suas demandas particulares?<br />Quem vai te atualizar constantemente?</p>
               <div className="mt-9 border-y border-border py-6">
                 <p className="text-xs font-bold uppercase text-primary">Estudo Bloom</p>
                 <p className="mt-3 font-editorial text-3xl leading-tight">Aprender com um tutor particular é <em className="text-primary">10x mais eficaz.</em></p>
@@ -206,7 +206,8 @@ const IAExperts = () => {
                 Tenha um <em className="font-editorial font-normal text-primary">especialista de IA</em> particular
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                Nós te entregamos um Especialista de IA particular para você ter <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+                 Nós te entregamos um Especialista de IA particular para você ter&nbsp;<br />
+                 <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
               </p>
             </div>
 
