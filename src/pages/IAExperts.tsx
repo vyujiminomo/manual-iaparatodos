@@ -111,38 +111,44 @@ const IAExperts = () => {
   const scrollToSolutions = () => document.getElementById("solucoes")?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <main className="iaexperts min-h-screen overflow-hidden bg-background font-work text-foreground">
-      <header className="border-b border-border bg-background/95">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
-          <span className="text-sm font-semibold uppercase"><span className="text-primary">IA</span> Experts</span>
-          <Button onClick={scrollToOffer} variant="ghost" className="text-xs font-semibold text-muted-foreground hover:bg-muted hover:text-foreground">
-            Turma fundadora <ArrowRight className="ml-2 h-4 w-4" />
+    <main className="iaexperts min-h-screen overflow-hidden bg-background font-sans text-foreground">
+      <header className="ia-hero-nav">
+        <div className="mx-auto flex h-[52px] max-w-[1240px] items-center justify-between px-5 md:px-8">
+          <Button type="button" variant="ghost" onClick={scrollToSolutions} className="flex h-auto items-center gap-2.5 p-0 hover:bg-transparent" aria-label="Ir para o programa IA Experts">
+            <span className="ia-brand-mark" aria-hidden="true"><span>IA</span></span>
+            <span className="text-sm font-semibold">IA <strong className="font-bold">EXPERTS</strong></span>
           </Button>
+          <nav className="flex items-center gap-2" aria-label="Navegação principal">
+            <Button onClick={scrollToSolutions} variant="ghost" className="ia-nav-action hidden h-9 gap-2 px-3 text-xs font-medium sm:flex">
+              <UserRound className="h-4 w-4" /> Mentoria particular
+            </Button>
+            <Button onClick={scrollToOffer} variant="ghost" className="ia-nav-action h-9 gap-2 px-3 text-xs font-medium">
+              <Users className="h-4 w-4" /> Turma fundadora
+            </Button>
+          </nav>
         </div>
       </header>
 
-      <section className="relative border-b border-border pt-16 md:pt-24">
-        <div className="mx-auto max-w-6xl px-5 text-center">
-          <p className="text-base text-primary md:text-lg">Parceria Adapta.org · Mais de 50 alunos</p>
-          <h1 className="mx-auto mt-7 max-w-6xl font-editorial text-6xl font-normal leading-[0.92] md:text-8xl lg:text-[7.8rem]">
-            Tenha a ajuda de um <em className="font-normal text-primary">Expert</em> de IA
+      <section className="ia-hero relative border-b border-border">
+        <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
+          <p className="text-sm font-semibold text-primary md:text-base">Parceria Adapta.org · Mais de 50 alunos</p>
+          <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
+            Tenha a ajuda de um Expert <span className="ia-title-mark" aria-label="IA"><span>IA</span></span> de IA
           </h1>
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-[1.35rem]">
-            Você não precisa só de cursos gravados, mas sim de um <strong className="font-semibold text-foreground">mentor particular.</strong><br className="hidden md:block" /> O IA Experts te entrega acompanhamento para você ter <strong className="font-semibold text-primary">resultado.</strong>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
+            Você não precisa só de cursos gravados, mas sim de um <strong className="font-semibold">mentor particular.</strong><br className="hidden md:block" /> O IA Experts te acompanha até você ter <em className="font-semibold text-primary">resultado.</em>
           </p>
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button onClick={scrollToOffer} size="lg" className="h-14 w-full rounded-full pl-7 pr-2 font-semibold transition-transform hover:-translate-y-0.5 sm:w-auto">
-              Quero ter um mentor de IA <span className="ml-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground text-primary"><ArrowRight className="h-4 w-4" /></span>
-            </Button>
-            <Button onClick={scrollToSolutions} size="lg" variant="ghost" className="h-14 w-full px-7 font-medium text-muted-foreground underline decoration-border underline-offset-8 hover:bg-transparent hover:text-foreground sm:w-auto">Conhecer o programa</Button>
-          </div>
+          <Button onClick={scrollToOffer} size="lg" className="ia-hero-cta mt-7 h-12 rounded-[12px] pl-5 pr-1.5 text-base font-bold transition-transform hover:-translate-y-0.5">
+            Quero ter um mentor de IA
+            <span className="ml-3 flex h-9 w-9 items-center justify-center rounded-[9px] bg-primary-foreground text-primary"><ArrowRight className="h-4 w-4" /></span>
+          </Button>
         </div>
 
-        <div className="ia-stage mt-14 md:mt-20">
+        <div className="ia-stage">
           <div className="ia-stage-track">
             {stageImages.map((image, index) => (
               <figure key={`${image.src}-${index}`} className={`ia-stage-card ia-stage-card-${index + 1}`}>
-                <img src={image.src} alt={image.alt} loading={index < 3 ? "eager" : "lazy"} className="h-full w-full object-cover" />
+                <img src={image.src} alt={image.alt} loading="eager" className="h-full w-full object-cover" />
               </figure>
             ))}
           </div>
