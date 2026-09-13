@@ -85,8 +85,8 @@ const brands = [
 
 const courseCards = [
   { label: "Curso completo", title: "Dominando IA Generativa", description: "Fundamentos, bons prompts e aplicação prática no trabalho.", icon: Sparkles, image: "/lovable-uploads/vitor-yuji-palestra-1.png" },
-  { label: "Masterclass", title: "IA para Vendas", description: "Planeje, prospecte e analise conversas comerciais com IA.", icon: TrendingUp, image: "/lovable-uploads/vitor-yuji-palestra-2.png" },
   { label: "Masterclass", title: "IA para Slides", description: "Crie apresentações claras e profissionais em poucos minutos.", icon: Presentation, image: classroomImage },
+  { label: "Masterclass", title: "IA para Vendas", description: "Planeje, prospecte e analise conversas comerciais com IA.", icon: TrendingUp, image: "/lovable-uploads/vitor-yuji-palestra-2.png" },
   { label: "Masterclass", title: "IA para Estudos", description: "Resuma, revise e aprenda qualquer assunto com mais velocidade.", icon: GraduationCap, image: sessionImage },
 ];
 
@@ -289,7 +289,7 @@ const IAExperts = () => {
 
         <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
-            <SectionTitle eyebrow="03 · Cursos" description="Uma biblioteca completa para aprender no seu ritmo e chegar às mentorias com dúvidas cada vez melhores.">Conteúdo que continua com você.</SectionTitle>
+            <SectionTitle eyebrow="IA Experts Cursos" description="*Certificações inclusas">Conheça <em className="text-primary">Nossos Cursos</em></SectionTitle>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {courseCards.map((course) => <article key={course.title} className="group relative aspect-[3/4] overflow-hidden rounded-md bg-background"><img src={course.image} alt={course.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" /><course.icon className="absolute right-5 top-5 h-9 w-9 rounded-md border border-primary/40 bg-primary/20 p-2 text-primary" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-xs font-bold uppercase text-primary">{course.label}</p><h3 className="mt-2 font-editorial text-3xl leading-none">{course.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{course.description}</p></div></article>)}
             </div>
