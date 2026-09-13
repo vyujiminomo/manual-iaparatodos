@@ -262,9 +262,9 @@ const IAExpertsBeta = () => {
                 <span className="text-[10px] font-semibold uppercase text-muted-foreground">01 · Especialista particular</span>
               </div>
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
-                <span>Receba um&nbsp;</span>
+                <span>Tenha um&nbsp;</span>
                 <em className="font-editorial font-normal text-primary">Especialista de IA</em>
-                <span>&nbsp;Particular para&nbsp;'Pegar na Sua Mão'</span>
+                <span>&nbsp;Particular para Para&nbsp;suas Demandas Particulares</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
                 Os nossos experts foram treinados por Vitor Yuji para serem didáticos, te ajudarem com suas demandas específicas te ajudarem mesmo se você tiver dificuldade com tecnologia
