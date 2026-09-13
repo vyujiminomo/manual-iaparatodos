@@ -187,39 +187,46 @@ const IAExperts = () => {
       </section>
 
       <div id="solucoes">
-        <section className="border-b border-border bg-card px-5 py-20 md:px-8 md:py-28">
+        <section className="relative border-b border-border px-5 py-24 md:px-8 md:py-32 [background-image:var(--ia-section-glow)]">
           <div className="mx-auto max-w-7xl">
-            <p className="text-xs font-bold uppercase text-primary">01 · Especialista particular</p>
-            <h2 className="mt-5 max-w-5xl font-editorial text-5xl font-normal uppercase leading-[0.98] md:text-7xl">
-              Tenha um especialista<br />de IA <em className="text-primary">particular</em>
-            </h2>
-            <p className="mt-7 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              Nós te entregamos um Especialista de IA particular para você ter <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
-            </p>
+            <div className="mx-auto max-w-5xl text-center">
+              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                <span className="text-[10px] font-semibold uppercase text-muted-foreground">01 · Especialista particular</span>
+              </div>
+              <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
+                Tenha um <em className="font-editorial font-normal text-primary">especialista de IA</em> particular
+              </h2>
+              <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+                Nós te entregamos um Especialista de IA particular para você ter <strong className="font-semibold text-foreground">aulas mensais</strong> e <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+              </p>
+            </div>
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
-              <figure className="relative min-h-[480px] overflow-hidden rounded-md border border-border bg-background">
+            <div className="mt-16 grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-16">
+              <figure className="group relative min-h-[520px] overflow-hidden rounded-[2rem] bg-muted">
                 <img src={sessionImage} alt="Aula particular de inteligência artificial" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
-                <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-4 p-7">
+                <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-4 p-8">
                   <UserRound className="h-7 w-7 shrink-0 text-primary" />
-                  <div><p className="font-editorial text-3xl">Aula particular mensal</p><p className="mt-1 text-sm text-muted-foreground">Direcionada às suas demandas e ao seu trabalho.</p></div>
+                  <div><p className="text-2xl font-semibold">Aula particular mensal</p><p className="mt-1 text-sm text-muted-foreground">Direcionada às suas demandas e ao seu trabalho.</p></div>
                 </figcaption>
               </figure>
 
-              <div className="grid gap-3">
+              <div className="border-t border-border">
                 {[
                   { initials: "VY", name: "Vitor Yuji", role: "Expert principal", copy: "Palestrante de IA, jovem aprendiz da Adapta.org e professor de mais de 50 alunos.", image: "/lovable-uploads/vitor-yuji-summit.jpg" },
                   { initials: "MA", name: "Maria Augusta", role: "Pesquisa e inovação", copy: "Ex-pesquisadora da SHIELD, cofundadora do Mangue Mania e reconhecida com o Selo ODS 2025." },
                   { initials: "B", name: "Bruno", role: "Engenharia de software", copy: "Especialista em tecnologia, construção de soluções e novas ferramentas." },
                 ].map((expert) => (
-                  <article key={expert.name} className="grid min-h-[148px] grid-cols-[112px_1fr] overflow-hidden rounded-md border border-border bg-background">
-                    <div className="relative grid place-items-center overflow-hidden border-r border-border bg-muted">
-                      {expert.image ? <img src={expert.image} alt={expert.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top" /> : <span className="font-editorial text-5xl text-primary/60">{expert.initials}</span>}
+                  <article key={expert.name} className="grid grid-cols-[72px_1fr] gap-5 border-b border-border py-7 md:grid-cols-[88px_1fr]">
+                    <div className="relative grid aspect-square place-items-center overflow-hidden rounded-full bg-muted">
+                      {expert.image ? <img src={expert.image} alt={expert.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top" /> : <span className="font-editorial text-3xl text-primary">{expert.initials}</span>}
                     </div>
-                    <div className="flex flex-col justify-center p-5">
-                      <p className="text-xs font-bold uppercase text-primary">{expert.role}</p>
-                      <h3 className="mt-1 font-editorial text-3xl">{expert.name}</h3>
+                    <div className="flex flex-col justify-center">
+                      <div className="flex flex-wrap items-baseline justify-between gap-2">
+                        <h3 className="text-xl font-semibold md:text-2xl">{expert.name}</h3>
+                        <p className="text-[10px] font-semibold uppercase text-primary">{expert.role}</p>
+                      </div>
                       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{expert.copy}</p>
                     </div>
                   </article>
@@ -227,9 +234,9 @@ const IAExperts = () => {
               </div>
             </div>
 
-            <div className="mt-8 grid border-y border-border sm:grid-cols-2">
-              <div className="flex gap-4 py-6 sm:border-r sm:border-border sm:pr-8"><UserRound className="mt-1 h-6 w-6 shrink-0 text-primary" /><div><p className="font-semibold">Aulas mensais</p><p className="mt-1 text-sm text-muted-foreground">Encontros individuais focados no que você precisa resolver.</p></div></div>
-              <div className="flex gap-4 py-6 sm:pl-8"><MessageCircle className="mt-1 h-6 w-6 shrink-0 text-primary" /><div><p className="font-semibold">Contato para dúvidas</p><p className="mt-1 text-sm text-muted-foreground">Acompanhamento para quando uma nova demanda aparecer.</p></div></div>
+            <div className="mx-auto mt-16 grid max-w-4xl border-t border-border pt-10 text-center sm:grid-cols-2">
+              <div className="px-6 py-4 sm:border-r sm:border-border"><p className="font-editorial text-3xl">Aulas mensais</p><p className="mt-2 text-xs font-semibold uppercase text-muted-foreground">Foco nas suas demandas</p></div>
+              <div className="px-6 py-4"><p className="font-editorial text-3xl">Contato direto</p><p className="mt-2 text-xs font-semibold uppercase text-muted-foreground">Dúvidas quando precisar</p></div>
             </div>
           </div>
         </section>

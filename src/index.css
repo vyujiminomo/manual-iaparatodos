@@ -183,7 +183,13 @@ All colors MUST be HSL.
     --ring: 45 79% 54%;
     --radius: 0.25rem;
     --ia-hero-glow: radial-gradient(ellipse at center, hsl(48 100% 52% / 0.33) 0%, hsl(48 100% 52% / 0.12) 33%, transparent 70%);
+    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(48 100% 52% / 0.08), transparent 38%);
+    font-family: "Work Sans", system-ui, sans-serif;
     letter-spacing: 0;
+  }
+
+  .iaexperts .font-editorial {
+    font-family: "Instrument Serif", Georgia, serif;
   }
 }
 
