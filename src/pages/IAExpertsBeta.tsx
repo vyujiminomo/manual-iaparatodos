@@ -267,11 +267,7 @@ const IAExpertsBeta = () => {
  'Pegar na Sua Mão'`}</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                 <span>Tire suas dúvidas específicas e&nbsp;</span>
-                <br />
-                <strong className="font-semibold text-foreground">aulas mensais</strong>
-                <span> e </span>
-                <strong className="font-semibold text-foreground">contato para tirar dúvidas.</strong>
+                Os nossos experts foram treinados por Vitor Yuji para serem didáticos, te ajudarem com suas demandas específicas te ajudarem mesmo se você tiver dificuldade com tecnologia
               </p>
 
             </div>
