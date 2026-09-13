@@ -463,64 +463,118 @@ All colors MUST be HSL.
 /* Beta overrides stay last so the original IA Experts theme cannot override them. */
 @layer base {
   .iaexperts.iaexperts-beta {
-    --background: 222 47% 5%;
-    --foreground: 0 0% 98%;
-    --card: 222 40% 9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 222 40% 9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 210 92% 56%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 214 100% 98%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 30% 14%;
-    --secondary-foreground: 0 0% 92%;
-    --muted: 220 26% 13%;
-    --muted-foreground: 218 20% 70%;
-    --accent: 210 92% 56%;
-    --accent-foreground: 0 0% 100%;
-    --border: 220 24% 18%;
-    --input: 220 24% 18%;
-    --ring: 210 92% 56%;
+    --secondary: 214 100% 97%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 48 96% 53%;
+    --accent-foreground: 222 47% 11%;
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 221 83% 53%;
     --radius: 0.5rem;
-    --ia-hero-glow: radial-gradient(ellipse at center, hsl(210 92% 56% / 0.35) 0%, hsl(210 92% 56% / 0.12) 38%, transparent 70%);
-    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(210 92% 56% / 0.14), transparent 38%);
+    --ia-beta-shadow: 0 12px 30px -18px hsl(221 83% 30% / 0.35);
+    --ia-beta-shadow-soft: 0 6px 16px -12px hsl(221 83% 30% / 0.3);
+    --ia-hero-glow: radial-gradient(ellipse at center, hsl(221 83% 53% / 0.12) 0%, transparent 68%);
+    --ia-section-glow: radial-gradient(circle at 22% 48%, hsl(221 83% 53% / 0.07), transparent 42%);
     font-family: Inter, system-ui, sans-serif;
+    color: hsl(var(--foreground));
+    background: hsl(var(--background));
   }
 
   .iaexperts.iaexperts-beta .font-editorial {
     font-family: Inter, system-ui, sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
+  /* Faixa de anúncio + navegação escura, como no padrão BETA */
+  .iaexperts-beta .beta-announce {
+    background: hsl(0 84% 52%);
+    color: hsl(0 0% 100%);
+    font-weight: 700;
+  }
+
   .iaexperts-beta .ia-hero-nav {
     position: sticky;
     top: 0;
-    background: hsl(var(--background) / 0.94);
-    backdrop-filter: blur(14px);
+    background: hsl(222 47% 6%);
+    color: hsl(0 0% 100%);
+    border-bottom: 4px solid hsl(var(--primary));
+    backdrop-filter: none;
   }
+
+  .iaexperts-beta .ia-hero-nav button { color: hsl(0 0% 100%); }
+  .iaexperts-beta .ia-hero-nav button:hover { color: hsl(48 96% 53%); }
 
   .iaexperts-beta .ia-brand-mark {
     width: 34px;
     height: 34px;
     border-radius: 8px;
     clip-path: none;
-    box-shadow: var(--ia-beta-shadow-soft);
+    color: hsl(0 0% 100%);
+    background: hsl(var(--primary));
+    box-shadow: none;
+  }
+
+  .iaexperts-beta .beta-chip {
+    border-color: hsl(48 96% 53%);
+    color: hsl(222 47% 8%);
+    background: hsl(48 96% 53%);
+    font-weight: 900;
+    letter-spacing: 0.08em;
   }
 
   .iaexperts-beta .ia-title-mark {
     border-radius: 8px;
     transform: none;
-    box-shadow: var(--ia-beta-shadow);
+    color: hsl(0 0% 100%);
+    background: hsl(var(--primary));
+    box-shadow: none;
   }
 
-  .iaexperts-beta .ia-title-mark span { transform: none; }
+  .iaexperts-beta .ia-title-mark span { transform: none; font-weight: 800; }
+
   .iaexperts-beta .ia-hero { background: hsl(var(--background)); }
-  .iaexperts-beta .ia-hero-cta { color: hsl(222 47% 8%); background: hsl(0 0% 100%); box-shadow: var(--ia-beta-shadow); }
-  .iaexperts-beta .ia-hero-cta:hover { background: hsl(210 40% 92%); }
-  .iaexperts-beta .ia-hero-cta > span { color: hsl(var(--primary-foreground)); background: hsl(var(--primary)); }
-  .iaexperts-beta .ia-stage::before { border-bottom-color: hsl(var(--primary) / 0.2); box-shadow: none; }
-  .iaexperts-beta .ia-stage-card { border-radius: 8px; }
-  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%) invert(1); opacity: 0.45; }
+
+  .iaexperts-beta .ia-hero-cta {
+    color: hsl(0 0% 100%);
+    background: hsl(var(--primary));
+    border-radius: 10px;
+    box-shadow: var(--ia-beta-shadow);
+  }
+  .iaexperts-beta .ia-hero-cta:hover { background: hsl(221 83% 46%); }
+  .iaexperts-beta .ia-hero-cta > span { color: hsl(var(--primary)); background: hsl(0 0% 100%); }
+
+  .iaexperts-beta .ia-stage::before { border-bottom-color: hsl(var(--primary) / 0.18); box-shadow: none; }
+  .iaexperts-beta .ia-stage-card { border-radius: 10px; box-shadow: var(--ia-beta-shadow-soft); }
+
+  .iaexperts-beta .ia-marquee img { filter: brightness(0) saturate(100%); opacity: 0.65; }
+
+  .iaexperts-beta article,
+  .iaexperts-beta [class*="rounded-md"][class*="border"] {
+    border-radius: 10px;
+    border-color: hsl(221 83% 53% / 0.25);
+    background: hsl(var(--card));
+    box-shadow: none;
+  }
+
+  .iaexperts-beta em { font-style: normal; font-weight: 800; color: hsl(var(--primary)); }
+
+  .iaexperts-beta .beta-footer-logo {
+    color: hsl(0 0% 100%);
+    background: hsl(var(--primary));
+  }
 }
+

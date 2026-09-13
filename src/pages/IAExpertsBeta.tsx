@@ -124,7 +124,11 @@ const IAExpertsBeta = () => {
 
   return (
     <main className="iaexperts iaexperts-beta min-h-screen overflow-hidden bg-background font-sans text-foreground">
+      <div className="beta-announce px-5 py-2.5 text-center text-xs md:text-sm">
+        VERSÃO BETA · Turma piloto com vagas limitadas · Acesso antecipado antes do lançamento oficial
+      </div>
       <header className="ia-hero-nav">
+
         <div className="mx-auto flex h-[52px] max-w-[1240px] items-center justify-between px-5 md:px-8">
           <Button type="button" variant="ghost" onClick={scrollToSolutions} className="flex h-auto items-center gap-2.5 p-0 hover:bg-transparent" aria-label="Ir para o programa IA Experts">
             <span className="ia-brand-mark" aria-hidden="true"><span>IA</span></span>
