@@ -147,12 +147,12 @@ const IAExpertsBeta = () => {
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
             <span>Tenha a ajuda de um&nbsp;</span>
             <span className="ia-title-mark" aria-label="IA"><span>IA</span></span>
-            <span> de IA</span>
+            <span>&nbsp;Expert de IA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
             <span>Seu trabalho não precisa só de ferramenta, mas sim de resultado.&nbsp;</span>
             <br className="hidden md:block" />
-            <span> O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece</span>
+             <span>O IA Experts te entrega uma equipe de especialistas de IA para implementar com você até ele aprece</span>
           </p>
 
           <Button onClick={scrollToOffer} size="lg" className="ia-hero-cta mt-7 h-12 rounded-[12px] pl-5 pr-1.5 text-base font-bold transition-transform hover:-translate-y-0.5">
@@ -174,7 +174,7 @@ const IAExpertsBeta = () => {
 
       <section className="border-b border-border py-9">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[280px_1fr] md:items-center md:px-8">
-          <p className="text-base leading-snug text-foreground">Mais de 5.000 empresas<br />confiam na <em className="font-editorial text-lg">IA Experts</em></p>
+           <p className="text-base leading-snug text-foreground">Mais de 50 empresas<br />confiam na <em className="font-editorial text-lg">IA Experts</em></p>
           <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
             <div className="ia-marquee flex w-max items-center gap-12">
               {[...brands, ...brands].map((logo, index) => <img key={`${logo}-${index}`} src={logo} alt="Empresa que confia na IA Experts" loading="lazy" className="h-16 w-40 object-contain grayscale opacity-55" />)}
@@ -204,7 +204,7 @@ const IAExpertsBeta = () => {
                <p className="mt-7 font-semibold">Quem vai te ajudar com suas demandas particulares?<br />Quem vai te atualizar constantemente?</p>
               <div className="mt-9 border-y border-border py-6">
                 <p className="text-xs font-bold uppercase text-primary">Estudo Bloom</p>
-                <p className="mt-3 font-editorial text-3xl leading-tight">Aprender com um tutor particular é <em className="text-primary">10x mais eficaz.</em></p>
+                 <p className="mt-3 font-editorial text-3xl leading-tight">Aprender com um tutor particular é <em className="text-primary">3x mais eficaz.</em></p>
               </div>
               <p className="mt-8 font-semibold">Por isso, queremos te entregar uma equipe de especialistas de IA.</p>
             </div>
