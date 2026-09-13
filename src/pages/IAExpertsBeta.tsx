@@ -155,7 +155,7 @@ const IAExpertsBeta = () => {
         <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
           <p className="text-sm font-semibold text-primary md:text-base">ACESSO ANTECIPADO · TURMA PILOTO · VAGAS LIMITADAS</p>
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
-            <span>Tenha a ajuda de um Expert de IA</span>
+             <span>Tenha a ajuda de 3<br />&nbsp;Experts de IA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
             <span>Seu trabalho não precisa só de ferramenta, mas sim de <strong className="ia-hero-emphasis">resultado.</strong>&nbsp;</span>
