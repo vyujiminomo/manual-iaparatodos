@@ -367,7 +367,7 @@ const IAExpertsBeta = () => {
             {[
               { img: webinarWhatsapp, title: "Grupo no WhatsApp" },
               { img: webinarManual, title: "Workbook" },
-              { img: mapasMentaisComposto.url, title: "Apostilas, Resumos e Mapas Mentais", fit: "contain" as const },
+              { img: mapasMentaisComposto, title: "Apostilas, Resumos e Mapas Mentais", fit: "contain" as const },
               { img: webinarBiblioteca, title: "Biblioteca de Prompts" },
             ].map((b, i) => (
               <div key={i} className="group relative flex aspect-square flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] backdrop-blur-sm">
