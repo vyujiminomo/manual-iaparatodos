@@ -269,7 +269,7 @@ const IAExpertsBeta = () => {
               <h2 className="mt-8 text-5xl font-bold leading-[1.02] md:text-7xl">
                 <span>Tenha um&nbsp;</span>
                 <em className="font-editorial font-normal text-primary">Especialista de IA</em>
-                <span>&nbsp;Particular para Para&nbsp;suas Demandas Particulares</span>
+                <span>&nbsp;Particular para suas Demandas Particulares</span>
               </h2>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
                 Os nossos experts foram treinados por Vitor Yuji para serem didáticos, te ajudarem com suas demandas específicas te ajudarem mesmo se você tiver dificuldade com tecnologia
@@ -439,7 +439,7 @@ const IAExpertsBeta = () => {
               </div>
               <div className="text-right">
                 <p className="text-sm font-medium uppercase tracking-wider text-gray-400">Hoje por apenas:</p>
-                <p className="font-extrabold text-gray-900"><span className="text-base font-bold md:text-lg">12x de</span> <span className="text-2xl md:text-4xl">R$60,30</span></p>
+                <p className="font-extrabold text-gray-900"><span className="text-base font-bold md:text-lg">12x de</span> <span className="text-2xl md:text-4xl">R$62,30</span></p>
                 <p className="text-sm font-semibold text-gray-700">ou R$747 à vista</p>
               </div>
             </div>
