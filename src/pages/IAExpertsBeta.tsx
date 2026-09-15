@@ -307,7 +307,7 @@ const IAExpertsBeta = () => {
                 Tenha Mentorias em Grupo com <em className="font-editorial font-normal text-primary">Especialistas e Profissionais</em>
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-                Aulas em grupo quinzenais sobre IA para temas diversos
+                Aulas em grupo mensais sobre IA para temas diversos
               </p>
             </div>
             <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
@@ -320,11 +320,16 @@ const IAExpertsBeta = () => {
                   <CalendarDays className="h-8 w-8 text-primary" />
                 </div>
                 <div className="divide-y divide-border">
-                  {["IA para Gestão", "IA para Marketing", "IA para Copywriting", "IA para Slides", "Claudecode e Vibecoding", "Criando um Agente no WhatsApp"].map((title, index) => (
-                    <div key={title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5">
+                  {[
+                    { date: "14/10", title: "Boas-vindas" },
+                    { date: "28/10", title: "IA para Gestão" },
+                    { date: "11/11", title: "IA para Slides" },
+                    { date: "09/12", title: "Vibecoding (criar apps e sites)" },
+                  ].map((item, index) => (
+                    <div key={item.title} className="grid grid-cols-[44px_1fr_auto] items-center gap-3 py-5">
                       <span className="font-editorial text-2xl text-primary">0{index + 1}</span>
-                      <p className="font-semibold">{title}</p>
-                      <span className="text-xs text-muted-foreground">Em breve</span>
+                      <p className="font-semibold">{item.title}</p>
+                      <span className="text-xs font-semibold text-primary">{item.date}</span>
                     </div>
                   ))}
                 </div>
@@ -409,7 +414,7 @@ const IAExpertsBeta = () => {
             <ul className="space-y-3 text-base text-gray-700 md:text-lg">
               {[
                 ["Especialista de IA Particular (3 meses)", "R$ 400"],
-                ["Mentorias Coletivas quinzenais", "R$ 600"],
+                ["Mentorias Coletivas mensais", "R$ 600"],
                 ["Acesso a Todos os Cursos", "R$ 250"],
                 ["Certificações inclusas", "R$ 97"],
                 ["Mapas Mentais e Resumos", "R$ 97"],
