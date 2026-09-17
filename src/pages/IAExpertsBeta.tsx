@@ -46,6 +46,9 @@ import cursoDominando from "@/assets/iaexperts-beta-curso-dominando.png.asset.js
 import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
 import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
 import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
+import expertVitor from "@/assets/expert-vitor.jpg";
+import expertMaria from "@/assets/expert-maria.jpg";
+import expertBruno from "@/assets/expert-bruno.jpg";
 
 const testimonials = [
   {
