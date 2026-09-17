@@ -107,9 +107,9 @@ const courseCards = [
 ];
 
 const experts = [
-  { initials: "VY", name: "Vitor Yuji", role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
-  { initials: "MA", name: "Maria Augusta", role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipe de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025" },
-  { initials: "B", name: "Bruno", role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +10 medalhas em olimpíadas científicas\n- Aprendeu 3 linguagens de programação complexas aos 10 anos" },
+  { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
+  { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipe de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025" },
+  { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +10 medalhas em olimpíadas científicas\n- Aprendeu 3 linguagens de programação complexas aos 10 anos" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
