@@ -8,7 +8,6 @@ import { usePageTracking } from "@/hooks/useAnalytics";
 import { usePerformanceMonitor } from "@/hooks/usePerformanceMonitor";
 import { Suspense, lazy } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
-import PurchaseNotification from "@/components/PurchaseNotification";
 
 // Lazy load components for better performance
 const Home = lazy(() => import("./pages/Home"));
@@ -78,7 +77,6 @@ const AppContent = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
-      <PurchaseNotification />
     </>
   );
 };
