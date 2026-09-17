@@ -16,6 +16,6 @@
 - [x] Validar /iaexpertsbeta no computador e celular
 - [x] Adicionar Diran como quarto expert e atualizar os currículos dos quatro experts no Beta
 - [x] Limpar os fundos das fotos de Maria Augusta e Bruno e validar a seção
-- [ ] Usar as fotos originais enviadas de Maria Augusta e Bruno e organizar os experts em grade 2×2
-- [ ] Criar a seção rotativa de sistemas construídos pelos experts com quatro exemplos enviados
-- [ ] Remover a popup de notificações do site
+- [x] Usar as fotos originais enviadas de Maria Augusta e Bruno e organizar os experts em grade 2×2
+- [x] Criar a seção rotativa de sistemas construídos pelos experts com quatro exemplos enviados
+- [x] Remover a popup de notificações do site
