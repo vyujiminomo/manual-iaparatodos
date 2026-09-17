@@ -47,13 +47,13 @@ import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
 import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
 import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
 import expertVitor from "@/assets/expert-vitor.jpg";
-import expertMariaOriginal from "@/assets/expert-maria-original.png.asset.json";
-import expertBrunoOriginal from "@/assets/expert-bruno-original.png.asset.json";
+import expertMariaOriginal from "@/assets/expert-maria-original.png";
+import expertBrunoOriginal from "@/assets/expert-bruno-original.png";
 import expertDiran from "@/assets/expert-diran.png";
-import sistemaOrcamento from "@/assets/sistema-orcamento-engenharia.png.asset.json";
-import sistemaLeads from "@/assets/sistema-trafego-leads.png.asset.json";
-import sistemaMedico from "@/assets/sistema-relatorio-medico.png.asset.json";
-import sistemaVendas from "@/assets/sistema-dashboard-vendas.png.asset.json";
+import sistemaOrcamento from "@/assets/sistema-orcamento-engenharia.png";
+import sistemaLeads from "@/assets/sistema-trafego-leads.png";
+import sistemaMedico from "@/assets/sistema-relatorio-medico.png";
+import sistemaVendas from "@/assets/sistema-dashboard-vendas.png";
 
 const testimonials = [
   {
@@ -116,16 +116,16 @@ const courseCards = [
 
 const experts = [
   { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
-  { initials: "MA", name: "Maria Augusta", photo: expertMariaOriginal.url, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
-  { initials: "B", name: "Bruno", photo: expertBrunoOriginal.url, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
+  { initials: "MA", name: "Maria Augusta", photo: expertMariaOriginal, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
+  { initials: "B", name: "Bruno", photo: expertBrunoOriginal, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
   { initials: "D", name: "Diran", photo: expertDiran, role: "EXPERT DE DESENVOLVIMENTO", copy: "- Criador do aplicativo Cogni, utilizando Dart e Flutter\n- Experiência em projetos utilizando Node.js, Python, Java, HTML, CSS e JavaScript\n- Co-criador do “Reclame Aju”, uma proposta de plataforma para reportar problemas urbanos em Sergipe, desenvolvida para uma competição acadêmica — top 10 entre 34 equipes" },
 ];
 
 const systems = [
-  { image: sistemaOrcamento.url, title: "Orçamento para engenheiros", alt: "Sistema de pesquisa e orçamentos para engenharia" },
-  { image: sistemaLeads.url, title: "Tráfego de leads", alt: "Sistema para acompanhar clientes e o tráfego de leads" },
-  { image: sistemaMedico.url, title: "Relatório médico inteligente", alt: "Sistema inteligente para criar relatórios médicos" },
-  { image: sistemaVendas.url, title: "Dashboard de vendas", alt: "Dashboard para acompanhar metas e resultados de vendas" },
+  { image: sistemaOrcamento, title: "Orçamento para engenheiros", alt: "Sistema de pesquisa e orçamentos para engenharia" },
+  { image: sistemaLeads, title: "Tráfego de leads", alt: "Sistema para acompanhar clientes e o tráfego de leads" },
+  { image: sistemaMedico, title: "Relatório médico inteligente", alt: "Sistema inteligente para criar relatórios médicos" },
+  { image: sistemaVendas, title: "Dashboard de vendas", alt: "Dashboard para acompanhar metas e resultados de vendas" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
