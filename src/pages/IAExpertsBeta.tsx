@@ -47,8 +47,9 @@ import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
 import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
 import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
 import expertVitor from "@/assets/expert-vitor.jpg";
-import expertMaria from "@/assets/expert-maria.jpg";
-import expertBruno from "@/assets/expert-bruno.jpg";
+import expertMaria from "@/assets/expert-maria-clean.jpg";
+import expertBruno from "@/assets/expert-bruno-clean.jpg";
+import expertDiran from "@/assets/expert-diran.png.asset.json";
 
 const testimonials = [
   {
@@ -111,8 +112,9 @@ const courseCards = [
 
 const experts = [
   { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
-  { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipe de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025" },
-  { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +10 medalhas em olimpíadas científicas\n- Aprendeu 3 linguagens de programação complexas aos 10 anos" },
+  { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
+  { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
+  { initials: "D", name: "Diran", photo: expertDiran.url, role: "EXPERT DE DESENVOLVIMENTO", copy: "- Criador do aplicativo Cogni, utilizando Dart e Flutter\n- Experiência em projetos utilizando Node.js, Python, Java, HTML, CSS e JavaScript\n- Co-criador do “Reclame Aju”, uma proposta de plataforma para reportar problemas urbanos em Sergipe, desenvolvida para uma competição acadêmica — top 10 entre 34 equipes" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
@@ -164,7 +166,7 @@ const IAExpertsBeta = () => {
         <div className="relative z-20 mx-auto max-w-5xl px-5 pt-14 text-center md:pt-14">
           <p className="text-sm font-semibold text-primary md:text-base">ACESSO ANTECIPADO · TURMA PILOTO · VAGAS LIMITADAS</p>
           <h1 className="mx-auto mt-4 max-w-4xl font-editorial text-[3.35rem] font-normal leading-[0.95] md:text-[5rem]">
-             <span>Tenha a ajuda de 3<br />&nbsp;Experts de IA</span>
+             <span>Tenha a ajuda de 4<br />&nbsp;Experts de IA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-snug text-foreground md:text-lg">
             <span>Seu trabalho não precisa só de ferramenta, mas sim de <strong className="ia-hero-emphasis">resultado.</strong>&nbsp;</span>
@@ -234,9 +236,9 @@ const IAExpertsBeta = () => {
       <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
           <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
-            Tenha a ajuda de <em className="text-primary">3 experts de IA</em> para implementar IA no seu trabalho com você para ter resultados
+            Tenha a ajuda de <em className="text-primary">4 experts de IA</em> para implementar IA no seu trabalho com você para ter resultados
           </h2>
-          <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {experts.map((expert) => (
               <article key={expert.name} className="group overflow-hidden rounded-2xl border border-border bg-card">
                 <figure className="relative aspect-[4/5] overflow-hidden bg-muted">
