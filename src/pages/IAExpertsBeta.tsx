@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowRight,
   BookOpen,
@@ -47,9 +47,13 @@ import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
 import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
 import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
 import expertVitor from "@/assets/expert-vitor.jpg";
-import expertMaria from "@/assets/expert-maria-clean.jpg";
-import expertBruno from "@/assets/expert-bruno-clean.jpg";
+import expertMariaOriginal from "@/assets/expert-maria-original.png";
+import expertBrunoOriginal from "@/assets/expert-bruno-original.png";
 import expertDiran from "@/assets/expert-diran.png";
+import sistemaOrcamento from "@/assets/sistema-orcamento-engenharia.png";
+import sistemaLeads from "@/assets/sistema-trafego-leads.png";
+import sistemaMedico from "@/assets/sistema-relatorio-medico.png";
+import sistemaVendas from "@/assets/sistema-dashboard-vendas.png";
 
 const testimonials = [
   {
@@ -112,9 +116,16 @@ const courseCards = [
 
 const experts = [
   { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
-  { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
-  { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
+  { initials: "MA", name: "Maria Augusta", photo: expertMariaOriginal, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
+  { initials: "B", name: "Bruno", photo: expertBrunoOriginal, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
   { initials: "D", name: "Diran", photo: expertDiran, role: "EXPERT DE DESENVOLVIMENTO", copy: "- Criador do aplicativo Cogni, utilizando Dart e Flutter\n- Experiência em projetos utilizando Node.js, Python, Java, HTML, CSS e JavaScript\n- Co-criador do “Reclame Aju”, uma proposta de plataforma para reportar problemas urbanos em Sergipe, desenvolvida para uma competição acadêmica — top 10 entre 34 equipes" },
+];
+
+const systems = [
+  { image: sistemaOrcamento, title: "Orçamento para engenheiros", alt: "Sistema de pesquisa e orçamentos para engenharia" },
+  { image: sistemaLeads, title: "Tráfego de leads", alt: "Sistema para acompanhar clientes e o tráfego de leads" },
+  { image: sistemaMedico, title: "Relatório médico inteligente", alt: "Sistema inteligente para criar relatórios médicos" },
+  { image: sistemaVendas, title: "Dashboard de vendas", alt: "Dashboard para acompanhar metas e resultados de vendas" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
@@ -128,8 +139,18 @@ const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; chi
 const IAExpertsBeta = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [expertIndex, setExpertIndex] = useState(0);
+  const [systemIndex, setSystemIndex] = useState(0);
+  const [systemsPaused, setSystemsPaused] = useState(false);
   const visibleTestimonials = [0, 1, 2].map((offset) => testimonials[(testimonialIndex + offset) % testimonials.length]);
   const activeExpert = experts[expertIndex];
+
+  useEffect(() => {
+    if (systemsPaused) return;
+    const interval = window.setInterval(() => {
+      setSystemIndex((current) => (current + 1) % systems.length);
+    }, 4500);
+    return () => window.clearInterval(interval);
+  }, [systemsPaused]);
 
   useDynamicMeta({
     title: "IA Experts Beta | Especialistas que implementam IA com você",
@@ -238,7 +259,7 @@ const IAExpertsBeta = () => {
           <h2 className="mx-auto max-w-5xl text-center font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
             Tenha a ajuda de <em className="text-primary">4 experts de IA</em> para implementar IA no seu trabalho com você para ter resultados
           </h2>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <div className="mx-auto mt-14 grid max-w-5xl gap-6 md:grid-cols-2 lg:gap-8">
             {experts.map((expert) => (
               <article key={expert.name} className="group overflow-hidden rounded-2xl border border-border bg-card">
                 <figure className="relative aspect-[4/5] overflow-hidden bg-muted">
@@ -251,6 +272,61 @@ const IAExpertsBeta = () => {
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-card px-5 py-20 md:px-8 md:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto mb-12 max-w-5xl text-center md:mb-16">
+            <p className="text-sm font-bold uppercase text-primary">Sistemas sob medida</p>
+            <h2 className="mt-4 font-editorial text-4xl font-normal leading-[1.02] md:text-6xl">
+              Descreva o sistema que você precisa. <em className="text-primary">Os experts constroem</em>
+            </h2>
+          </div>
+
+          <div
+            className="mx-auto max-w-6xl"
+            onMouseEnter={() => setSystemsPaused(true)}
+            onMouseLeave={() => setSystemsPaused(false)}
+            onFocusCapture={() => setSystemsPaused(true)}
+            onBlurCapture={() => setSystemsPaused(false)}
+          >
+            <article className="overflow-hidden rounded-lg border border-border bg-background">
+              <div className="flex items-center justify-between border-b border-border px-4 py-3 md:px-6">
+                <div>
+                  <p className="text-xs font-semibold uppercase text-primary">Projeto {String(systemIndex + 1).padStart(2, "0")}</p>
+                  <h3 className="mt-1 text-lg font-bold md:text-2xl">{systems[systemIndex].title}</h3>
+                </div>
+                <div className="flex gap-2">
+                  <Button variant="outline" size="icon" aria-label="Sistema anterior" onClick={() => setSystemIndex((current) => (current - 1 + systems.length) % systems.length)}>
+                    <ChevronLeft className="h-5 w-5" />
+                  </Button>
+                  <Button variant="outline" size="icon" aria-label="Próximo sistema" onClick={() => setSystemIndex((current) => (current + 1) % systems.length)}>
+                    <ChevronRight className="h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+              <div className="aspect-[16/9] bg-muted md:aspect-[2/1]">
+                <img key={systems[systemIndex].image} src={systems[systemIndex].image} alt={systems[systemIndex].alt} className="h-full w-full object-contain" loading="lazy" />
+              </div>
+            </article>
+            <div className="mt-5 flex justify-center gap-2" aria-label="Selecionar sistema">
+              {systems.map((system, index) => (
+                <Button
+                  key={system.title}
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  aria-label={`Ver ${system.title}`}
+                  aria-current={index === systemIndex ? "true" : undefined}
+                  onClick={() => setSystemIndex(index)}
+                  className="h-8 w-8 hover:bg-muted"
+                >
+                  <span className={`h-2.5 w-2.5 rounded-full ${index === systemIndex ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                </Button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
