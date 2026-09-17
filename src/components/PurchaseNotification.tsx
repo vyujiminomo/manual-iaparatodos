@@ -69,7 +69,7 @@ const PurchaseNotification = () => {
             {name} comprou seu produto
           </p>
           <p className="text-xs text-muted-foreground">
-            <span className="font-semibold text-primary">IA EXPERTS</span> · agora mesmo
+            <span className="font-semibold text-primary">IA NA PRÁTICA</span> · agora mesmo
           </p>
         </div>
         <button
