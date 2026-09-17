@@ -49,7 +49,7 @@ import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
 import expertVitor from "@/assets/expert-vitor.jpg";
 import expertMaria from "@/assets/expert-maria-clean.jpg";
 import expertBruno from "@/assets/expert-bruno-clean.jpg";
-import expertDiran from "@/assets/expert-diran.png.asset.json";
+import expertDiran from "@/assets/expert-diran.png";
 
 const testimonials = [
   {
@@ -114,7 +114,7 @@ const experts = [
   { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
   { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipes de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025\n- Criadora da calculadora automática apresentada para engenheiros da NASA no MIB de 2023\n- Medalhista nas OBG, OP e OBLI" },
   { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +5 medalhas em olimpíadas científicas\n- Quando tinha 10 anos, aprendeu C#, Python e Java\n- Assistente de TI de Lauro Fonseca, dono da WERT, focado em habilidades de programação" },
-  { initials: "D", name: "Diran", photo: expertDiran.url, role: "EXPERT DE DESENVOLVIMENTO", copy: "- Criador do aplicativo Cogni, utilizando Dart e Flutter\n- Experiência em projetos utilizando Node.js, Python, Java, HTML, CSS e JavaScript\n- Co-criador do “Reclame Aju”, uma proposta de plataforma para reportar problemas urbanos em Sergipe, desenvolvida para uma competição acadêmica — top 10 entre 34 equipes" },
+  { initials: "D", name: "Diran", photo: expertDiran, role: "EXPERT DE DESENVOLVIMENTO", copy: "- Criador do aplicativo Cogni, utilizando Dart e Flutter\n- Experiência em projetos utilizando Node.js, Python, Java, HTML, CSS e JavaScript\n- Co-criador do “Reclame Aju”, uma proposta de plataforma para reportar problemas urbanos em Sergipe, desenvolvida para uma competição acadêmica — top 10 entre 34 equipes" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (

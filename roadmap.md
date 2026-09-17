@@ -14,5 +14,5 @@
 - [x] Transformar os especialistas em cards quadrados, exibidos um por vez com navegação
 - [x] Criar /iaexpertsbeta como cópia independente com identidade clara azul-marinho e aparência de MVP
 - [x] Validar /iaexpertsbeta no computador e celular
-- [ ] Adicionar Diran como quarto expert e atualizar os currículos dos quatro experts no Beta
-- [ ] Limpar os fundos das fotos de Maria Augusta e Bruno e validar a seção
+- [x] Adicionar Diran como quarto expert e atualizar os currículos dos quatro experts no Beta
+- [x] Limpar os fundos das fotos de Maria Augusta e Bruno e validar a seção
