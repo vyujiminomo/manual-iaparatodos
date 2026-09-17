@@ -46,6 +46,9 @@ import cursoDominando from "@/assets/iaexperts-beta-curso-dominando.png.asset.js
 import cursoVendas from "@/assets/iaexperts-beta-curso-vendas.png.asset.json";
 import cursoEstudos from "@/assets/iaexperts-beta-curso-estudos.png.asset.json";
 import cursoSlides from "@/assets/iaexperts-beta-curso-slides.png.asset.json";
+import expertVitor from "@/assets/expert-vitor.jpg";
+import expertMaria from "@/assets/expert-maria.jpg";
+import expertBruno from "@/assets/expert-bruno.jpg";
 
 const testimonials = [
   {
@@ -107,9 +110,9 @@ const courseCards = [
 ];
 
 const experts = [
-  { initials: "VY", name: "Vitor Yuji", role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
-  { initials: "MA", name: "Maria Augusta", role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipe de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025" },
-  { initials: "B", name: "Bruno", role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +10 medalhas em olimpíadas científicas\n- Aprendeu 3 linguagens de programação complexas aos 10 anos" },
+  { initials: "VY", name: "Vitor Yuji", photo: expertVitor, role: "EXPERT DE MENTORIAS COLETIVAS", copy: "- Principal palestrante de IA de Sergipe\n- Jovem aprendiz da Adapta (maior empresa de IA da América Latina)\n- Professor de +50 alunos\n- 5 temporadas do Torneio de Robótica FLL" },
+  { initials: "MA", name: "Maria Augusta", photo: expertMaria, role: "EXPERT PARTICULAR", copy: "- Ex-pesquisadora da SHIELD (uma das maiores equipe de robótica de Sergipe)\n- Co-fundadora do Mangue Mania, maior metodologia ativa de manguezais de Sergipe\n- Selo ODS 2025" },
+  { initials: "B", name: "Bruno", photo: expertBruno, role: "EXPERT DE AUTOMAÇÕES E AGENTES", copy: "- +10 medalhas em olimpíadas científicas\n- Aprendeu 3 linguagens de programação complexas aos 10 anos" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
@@ -236,20 +239,13 @@ const IAExpertsBeta = () => {
           <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
             {experts.map((expert) => (
               <article key={expert.name} className="group overflow-hidden rounded-2xl border border-border bg-card">
-                <figure className="relative aspect-[4/3] overflow-hidden bg-muted">
-                  <div className="absolute inset-0 grid place-items-center bg-muted">
-                    <div className="text-center">
-                      <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border border-primary/40 bg-background/40">
-                        <UserRound className="h-10 w-10 text-primary" />
-                      </div>
-                      <p className="mt-4 text-xs font-semibold uppercase text-muted-foreground">Foto de {expert.name}</p>
-                    </div>
-                  </div>
+                <figure className="relative aspect-[4/5] overflow-hidden bg-muted">
+                  <img src={expert.photo} alt={`Foto de ${expert.name}`} className="h-full w-full object-cover object-top" loading="lazy" />
                 </figure>
                 <div className="p-7 md:p-8">
                   <p className="text-[10px] font-semibold uppercase text-primary">{expert.role}</p>
                   <h3 className="mt-2 text-2xl font-semibold leading-tight md:text-3xl">{expert.name}</h3>
-                  <p className="mt-4 text-lg leading-relaxed text-muted-foreground md:text-xl">{expert.copy}</p>
+                  <p className="mt-4 whitespace-pre-line text-base leading-relaxed text-muted-foreground md:text-lg">{expert.copy}</p>
                 </div>
               </article>
             ))}
