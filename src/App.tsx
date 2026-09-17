@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { usePageTracking } from "@/hooks/useAnalytics";
 import { usePerformanceMonitor } from "@/hooks/usePerformanceMonitor";
 import { Suspense, lazy } from "react";
+import PurchaseNotification from "@/components/PurchaseNotification";
 import { Skeleton } from "@/components/ui/skeleton";
 
 // Lazy load components for better performance
@@ -77,6 +78,7 @@ const AppContent = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      <PurchaseNotification />
     </>
   );
 };

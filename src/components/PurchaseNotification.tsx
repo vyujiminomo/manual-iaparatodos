@@ -11,7 +11,7 @@ const NAMES = [
   "Alex", "Thiago", "Augusto", "Lucca", "Caleb",
 ];
 
-const INTERVAL_MS = 60_000;
+const INTERVAL_MS = 40_000;
 const VISIBLE_MS = 6_000;
 const FIRST_APPEARANCE_MS = 8_000;
 
@@ -69,7 +69,7 @@ const PurchaseNotification = () => {
             {name} comprou seu produto
           </p>
           <p className="text-xs text-muted-foreground">
-            <span className="font-semibold text-primary">IA EXPERTS</span> · agora mesmo
+            <span className="font-semibold text-primary">IA NA PRÁTICA</span> · agora mesmo
           </p>
         </div>
         <button
