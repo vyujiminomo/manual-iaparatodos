@@ -54,8 +54,8 @@ import sistemaOrcamento from "@/assets/sistema-orcamento-engenharia.png";
 import sistemaLeads from "@/assets/sistema-trafego-leads.png";
 import sistemaMedico from "@/assets/sistema-relatorio-medico.png";
 import sistemaVendas from "@/assets/sistema-dashboard-vendas.png";
-import eventoBetaDia2 from "@/assets/evento-beta-dia-2.jpg.asset.json";
-import eventoBetaAula5 from "@/assets/evento-beta-aula-5.jpg.asset.json";
+import eventoBetaDia2 from "@/assets/evento-beta-dia-2.jpg";
+import eventoBetaAula5 from "@/assets/evento-beta-aula-5.jpg";
 
 const testimonials = [
   {
@@ -131,8 +131,8 @@ const systems = [
 ];
 
 const eventPhotos = [
-  { src: eventoBetaDia2.url, alt: "Participantes praticando criação de prompts na Imersão IA para Todos" },
-  { src: eventoBetaAula5.url, alt: "Aula presencial sobre criação de slides, sites e aplicativos com IA" },
+  { src: eventoBetaDia2, alt: "Participantes praticando criação de prompts na Imersão IA para Todos" },
+  { src: eventoBetaAula5, alt: "Aula presencial sobre criação de slides, sites e aplicativos com IA" },
 ];
 
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
