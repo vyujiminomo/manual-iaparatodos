@@ -54,6 +54,8 @@ import sistemaOrcamento from "@/assets/sistema-orcamento-engenharia.png";
 import sistemaLeads from "@/assets/sistema-trafego-leads.png";
 import sistemaMedico from "@/assets/sistema-relatorio-medico.png";
 import sistemaVendas from "@/assets/sistema-dashboard-vendas.png";
+import eventoBetaDia2 from "@/assets/evento-beta-dia-2.jpg.asset.json";
+import eventoBetaAula5 from "@/assets/evento-beta-aula-5.jpg.asset.json";
 
 const testimonials = [
   {
@@ -128,6 +130,11 @@ const systems = [
   { image: sistemaVendas, title: "Dashboard de vendas", alt: "Dashboard para acompanhar metas e resultados de vendas" },
 ];
 
+const eventPhotos = [
+  { src: eventoBetaDia2.url, alt: "Participantes praticando criação de prompts na Imersão IA para Todos" },
+  { src: eventoBetaAula5.url, alt: "Aula presencial sobre criação de slides, sites e aplicativos com IA" },
+];
+
 const SectionTitle = ({ eyebrow, children, description }: { eyebrow: string; children: React.ReactNode; description?: string }) => (
   <div className="mb-12 md:mb-16">
     <span className="text-xs font-medium uppercase text-primary">{eyebrow}</span>
@@ -141,6 +148,8 @@ const IAExpertsBeta = () => {
   const [expertIndex, setExpertIndex] = useState(0);
   const [systemIndex, setSystemIndex] = useState(0);
   const [systemsPaused, setSystemsPaused] = useState(false);
+  const [eventPhotoIndex, setEventPhotoIndex] = useState(0);
+  const [eventPhotosPaused, setEventPhotosPaused] = useState(false);
   const visibleTestimonials = [0, 1, 2].map((offset) => testimonials[(testimonialIndex + offset) % testimonials.length]);
   const activeExpert = experts[expertIndex];
 
@@ -151,6 +160,14 @@ const IAExpertsBeta = () => {
     }, 4500);
     return () => window.clearInterval(interval);
   }, [systemsPaused]);
+
+  useEffect(() => {
+    if (eventPhotosPaused) return;
+    const interval = window.setInterval(() => {
+      setEventPhotoIndex((current) => (current + 1) % eventPhotos.length);
+    }, 4500);
+    return () => window.clearInterval(interval);
+  }, [eventPhotosPaused]);
 
   useDynamicMeta({
     title: "IA Experts Beta | Especialistas que implementam IA com você",
@@ -423,6 +440,78 @@ const IAExpertsBeta = () => {
         </section>
 
         <section className="border-y border-border bg-card px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-7xl">
+            <div className="mx-auto mb-10 max-w-4xl text-center md:mb-14">
+              <p className="text-xs font-bold uppercase text-primary">Encontro exclusivo</p>
+              <h2 className="mt-4 font-editorial text-5xl font-normal leading-[0.98] md:text-7xl">
+                Evento Presencial dos <em className="text-primary">Beta</em>
+              </h2>
+              <div className="mt-7 inline-flex items-center gap-3 border-y border-border px-5 py-3">
+                <CalendarDays className="h-5 w-5 text-primary" />
+                <p className="text-base font-bold md:text-lg">Sábado, 12 de dezembro</p>
+              </div>
+            </div>
+
+            <div
+              className="mx-auto max-w-2xl"
+              onMouseEnter={() => setEventPhotosPaused(true)}
+              onMouseLeave={() => setEventPhotosPaused(false)}
+              onFocusCapture={() => setEventPhotosPaused(true)}
+              onBlurCapture={() => setEventPhotosPaused(false)}
+            >
+              <div className="relative aspect-[9/16] max-h-[760px] overflow-hidden rounded-md border border-border bg-muted">
+                <img
+                  key={eventPhotos[eventPhotoIndex].src}
+                  src={eventPhotos[eventPhotoIndex].src}
+                  alt={eventPhotos[eventPhotoIndex].alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-background/80 p-3 backdrop-blur-sm md:p-4">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    aria-label="Foto anterior do evento"
+                    onClick={() => setEventPhotoIndex((current) => (current - 1 + eventPhotos.length) % eventPhotos.length)}
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </Button>
+                  <p className="text-xs font-semibold uppercase text-muted-foreground">
+                    {String(eventPhotoIndex + 1).padStart(2, "0")} / {String(eventPhotos.length).padStart(2, "0")}
+                  </p>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    aria-label="Próxima foto do evento"
+                    onClick={() => setEventPhotoIndex((current) => (current + 1) % eventPhotos.length)}
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+              <div className="mt-5 flex justify-center gap-2" aria-label="Selecionar foto do evento">
+                {eventPhotos.map((photo, index) => (
+                  <Button
+                    key={photo.src}
+                    type="button"
+                    variant="ghost"
+                    size="icon"
+                    aria-label={`Ver foto ${index + 1} do evento`}
+                    aria-current={index === eventPhotoIndex ? "true" : undefined}
+                    onClick={() => setEventPhotoIndex(index)}
+                    className="h-8 w-8 hover:bg-muted"
+                  >
+                    <span className={`h-2.5 w-2.5 rounded-full ${index === eventPhotoIndex ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-border px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 md:mb-16"><span className="text-xs font-medium uppercase text-primary">IA Experts Cursos</span><h2 className="mt-5 text-5xl font-bold leading-[1.02] md:text-7xl"><span>Conheça </span><em className="font-editorial font-normal text-primary">Nossos Cursos</em></h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">*Certificações inclusas</p></div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
